@@ -13,7 +13,7 @@ Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/
 
 Find and Edit these commands are already in the file:
 MaxChannels=64  (Faster cpu's use 96 or default 128)
-Turn off logging: *Find:*[Core.Log] Remove:*LogAnalytics=log Add this:*Global=off
+Turn off logging: Find: [Core.Log] Remove: LogAnalytics=log Add this: Global=off
 r.GBufferFormat=0 ;
 
 Find: Steam\steamapps\common\Squad\Squad\Config\DefaultEngine.ini
@@ -169,6 +169,7 @@ r.Decal.FadeScreenSizeMult=0
 t.MaxFPS=400
 ; END
 
+
 For NVIDIA users in control panel change:
 
 Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
@@ -178,6 +179,7 @@ Preferred refresh rate: Highest available
 Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
+
 
 Change shadows in game:
 
