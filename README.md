@@ -169,7 +169,6 @@ r.Decal.FadeScreenSizeMult=0
 t.MaxFPS=400
 ; END
 
-
 For NVIDIA users in control panel change:
 
 Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
@@ -179,7 +178,6 @@ Preferred refresh rate: Highest available
 Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
-
 
 Change shadows in game:
 
