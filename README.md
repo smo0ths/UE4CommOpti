@@ -13,8 +13,8 @@ Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/
 
 Find and Edit these commands are already in the file:
 MaxChannels=64  (Faster cpu's use 96 or default 128)
-Turn off logging: Find: [Core.Log] Remove: LogAnalytics=log Add this: Global=off
-r.GBufferFormat=0 ;
+Turn off logging: Find: [Core.Log] Add this: Global=off (remove all blahblah=log stuff)
+r.GBufferFormat=0
 
 Find: Steam\steamapps\common\Squad\Squad\Config\DefaultEngine.ini
 Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultEngine.ini
@@ -80,17 +80,20 @@ foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 foliage.DiscardDataOnLoad=1
-grass.DiscardDataOnLoad=1
+grass.DiscardDataOnLoad=1 
 ; EXTRA
 r.ReflectionEnvironment=0  
 r.TiledDeferredShading=0  
 r.Decal.FadeScreenSizeMult=0
-r.SkeletalMeshLODRadiusScale=0.25
+r.Decal.StencilSizeThreshold=0
+r.SkeletalMeshLODRadiusScale=0.25 
 t.MaxFPS=400
 ; END
 
-Set in-game graphics settings to medium to get FXAA/TXAA to work when you want to change them on or off.
-Updated for Squad v9~
+Set in-game graphics settings to medium to get AA to work in game on/off.
+
+Updated for Squad v9.1
+
 The above is for max fps, below for more configs and stuff.
 
 Skip intro video:
@@ -106,16 +109,16 @@ r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.4
 r.MipMapLODBias=0
 ; SHADOW
-r.LightFunctionQuality=1
-r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=3
-r.Shadow.MaxResolution=4096
-r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.45
-r.Shadow.CSM.TransitionScale=0.8
-r.DistanceFieldShadowing=0
-r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
+;r.LightFunctionQuality=1
+;r.ShadowQuality=3
+;r.Shadow.CSM.MaxCascades=3
+;r.Shadow.MaxResolution=4096
+;r.Shadow.RadiusThreshold=0.03
+;r.Shadow.DistanceScale=0.45
+;r.Shadow.CSM.TransitionScale=0.8
+;r.DistanceFieldShadowing=0
+;r.DistanceFieldAO=0
+;r.AllowLandscapeShadows=0
 ; POSTPROCESS
 r.MotionBlurQuality=0
 ;r.AmbientOcclusionMipLevelFactor=0
@@ -141,7 +144,7 @@ r.MaxAnisotropy=8
 ;r.Streaming.PoolSize=6144 ; nul
 ; EFFECTS
 r.TranslucencyLightingVolumeDim=64
-r.RefractionQuality=0
+r.RefractionQuality=1
 r.SSR.Quality=0
 r.SceneColorFormat=3
 r.DetailMode=0
@@ -160,26 +163,16 @@ foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 foliage.DiscardDataOnLoad=1
-grass.DiscardDataOnLoad=1
+grass.DiscardDataOnLoad=1 
 ; EXTRA
 r.ReflectionEnvironment=0
-;r.TiledDeferredShading=0
+;r.TiledDeferredShading=0 
 r.SceneColorFringe.Max=0.35
 r.Decal.FadeScreenSizeMult=0
+r.Decal.StencilSizeThreshold=0
 t.MaxFPS=400
+;r.OneFrameThreadLag=0
 ; END
-
-
-For NVIDIA users in control panel change:
-
-Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
-Multi/mixed gpu accel: Single display performance mode
-Power management mode: Prefer max performance
-Preferred refresh rate: Highest available
-Texture filtering anisotropic sample optimization: On
-Texture filtering quality: High performance
-Vertical sync: Off
-
 
 Change shadows in game:
 
@@ -294,3 +287,13 @@ Load up any map to test:
 Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
 Change: MainMenuMap=/Game/Maps/EntryMap
 Example: MainMenuMap=/Game/Maps/Chora/Chora_AAS_v1
+
+For NVIDIA users in control panel change:
+
+Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
+Multi/mixed gpu accel: Single display performance mode
+Power management mode: Prefer max performance
+Preferred refresh rate: Highest available
+Texture filtering anisotropic sample optimization: On
+Texture filtering quality: High performance
+Vertical sync: Off
