@@ -79,8 +79,8 @@ r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-foliage.DiscardDataOnLoad=1
-grass.DiscardDataOnLoad=1 
+;foliage.DiscardDataOnLoad=1
+;grass.DiscardDataOnLoad=1 
 ; EXTRA
 r.ReflectionEnvironment=0  
 r.TiledDeferredShading=0  
@@ -162,8 +162,8 @@ r.ParticleLightQuality=2
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-foliage.DiscardDataOnLoad=1
-grass.DiscardDataOnLoad=1 
+;foliage.DiscardDataOnLoad=1
+;grass.DiscardDataOnLoad=1 
 ; EXTRA
 r.ReflectionEnvironment=0
 ;r.TiledDeferredShading=0 
