@@ -60,7 +60,7 @@ r.MaxAnisotropy=0
 ;r.Streaming.LimitPoolSizeToVRAM=0 ; nul
 ;r.Streaming.PoolSize=1024 ; nul
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=16
+r.TranslucencyLightingVolumeDim=1
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=2  
