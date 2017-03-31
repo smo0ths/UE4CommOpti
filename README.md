@@ -94,6 +94,8 @@ Set in-game graphics settings to medium to get AA to work in game on/off.
 
 Updated for Squad v9.1
 
+Updated 3/31/2017
+
 The above is for max fps, below for more configs and stuff.
 
 Skip intro video:
@@ -211,9 +213,9 @@ r.AllowLandscapeShadows=0
 [ShadowQuality@2]
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=3
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=2048
-r.Shadow.RadiusThreshold=0.03
+r.Shadow.RadiusThreshold=0.04
 r.Shadow.DistanceScale=0.45
 r.Shadow.CSM.TransitionScale=0.8
 r.DistanceFieldShadowing=0
@@ -223,9 +225,9 @@ r.AllowLandscapeShadows=0
 [ShadowQuality@3]
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=3
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=4096
-r.Shadow.RadiusThreshold=0.03
+r.Shadow.RadiusThreshold=0.02
 r.Shadow.DistanceScale=0.45
 r.Shadow.CSM.TransitionScale=0.8
 r.DistanceFieldShadowing=0
@@ -261,9 +263,9 @@ r.AllowLandscapeShadows=0
 [ShadowQuality@2]
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=3
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=2048
-r.Shadow.RadiusThreshold=0.03
+r.Shadow.RadiusThreshold=0.04
 r.Shadow.DistanceScale=0.45
 r.Shadow.CSM.TransitionScale=0.8
 r.DistanceFieldShadowing=0
@@ -273,9 +275,9 @@ r.AllowLandscapeShadows=0
 [ShadowQuality@3]
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=3
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=4096
-r.Shadow.RadiusThreshold=0.03
+r.Shadow.RadiusThreshold=0.02
 r.Shadow.DistanceScale=0.45
 r.Shadow.CSM.TransitionScale=0.8
 r.DistanceFieldShadowing=0
