@@ -130,7 +130,7 @@ r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=300
 r.LensFlareQuality=2
-r.SceneColorFringeQuality=1
+r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
@@ -142,10 +142,10 @@ r.Tonemapper.Quality=2
 ; TEXTURE
 r.Streaming.MipBias=0
 r.MaxAnisotropy=8
-;r.Streaming.LimitPoolSizeToVRAM=1 ; nul
-;r.Streaming.PoolSize=6144 ; nul
+;r.Streaming.LimitPoolSizeToVRAM=1 
+;r.Streaming.PoolSize=6144
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=64
+r.TranslucencyLightingVolumeDim=1
 r.RefractionQuality=1
 r.SSR.Quality=0
 r.SceneColorFormat=3
@@ -158,7 +158,7 @@ r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=1
 r.DefaultFeature.AutoExposure=0
-r.ParticleMinTimeBetweenTicks=8
+r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=2
 ; FOLIAGE
 foliage.DensityScale=0.6
@@ -169,7 +169,7 @@ grass.MaxUpdateFrequency=10
 ; EXTRA
 r.ReflectionEnvironment=0
 ;r.TiledDeferredShading=0 
-r.SceneColorFringe.Max=0.35
+;r.SceneColorFringe.Max=0.35
 r.Decal.FadeScreenSizeMult=0
 r.Decal.StencilSizeThreshold=0
 t.MaxFPS=400
