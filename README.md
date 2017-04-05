@@ -15,6 +15,8 @@ Find and Edit these commands are already in the file:
 MaxChannels=64  (Faster cpu's use 96 or default 128)
 Turn off logging: Find: [Core.Log] Add this: Global=off (remove all blahblah=log stuff)
 r.GBufferFormat=0
+r.SeparateTranslucency=0
+r.EarlyZPass=0
 
 Find: Steam\steamapps\common\Squad\Squad\Config\DefaultEngine.ini
 Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultEngine.ini
@@ -57,10 +59,12 @@ r.Tonemapper.Quality=2
 ; TEXTURE
 r.Streaming.MipBias=2  
 r.MaxAnisotropy=0
-;r.Streaming.LimitPoolSizeToVRAM=0 ; nul
-;r.Streaming.PoolSize=1024 ; nul
+;r.Streaming.LimitPoolSizeToVRAM=0 
+;r.Streaming.PoolSize=1024 
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=1
+r.TranslucencyLightingVolumeDim=8
+r.TranslucencyLightingVolumeInnerDistance=100   
+r.TranslucencyLightingVolumeOuterDistance=100  
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=2  
@@ -90,25 +94,20 @@ r.SkeletalMeshLODRadiusScale=0.25
 t.MaxFPS=400
 ; END
 
+
 Set in-game graphics settings to medium to get AA to work in game on/off.
-
-Updated for Squad v9.1
-
-Updated 3/31/2017
-
+Updated for Squad v9.2
+Updated 4/5/2017
 The above is for max fps, below for more configs and stuff.
 
-Skip intro video:
 
-Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
-Add a ; in front of the command below:
-;+StartupMovies=squad_intro_movie
+
 
 My config:
 
 ; VIEWDISTANCE
-r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.4
+r.SkeletalMeshLODBias=-1
+r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 ; SHADOW
 ;r.LightFunctionQuality=1
@@ -128,26 +127,28 @@ r.MotionBlurQuality=0
 ;r.AmbientOcclusionLevels=0
 ;r.AmbientOcclusionRadiusScale=0
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=300
-r.LensFlareQuality=2
+r.RenderTargetPoolMin=400
+r.LensFlareQuality=3
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
 r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=0
-r.LightShaftQuality=1
+r.LightShaftQuality=0
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=2
+r.Tonemapper.Quality=5
 ; TEXTURE
 r.Streaming.MipBias=0
 r.MaxAnisotropy=8
 ;r.Streaming.LimitPoolSizeToVRAM=1 
 ;r.Streaming.PoolSize=6144
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=1
+r.TranslucencyLightingVolumeDim=8
+r.TranslucencyLightingVolumeInnerDistance=100   
+r.TranslucencyLightingVolumeOuterDistance=100  
 r.RefractionQuality=1
-r.SSR.Quality=0
+r.SSR.Quality=1
 r.SceneColorFormat=3
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
@@ -159,7 +160,7 @@ r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=1
 r.DefaultFeature.AutoExposure=0
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=2
+r.ParticleLightQuality=1
 ; FOLIAGE
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
@@ -167,7 +168,7 @@ grass.MaxUpdateFrequency=10
 ;foliage.DiscardDataOnLoad=1
 ;grass.DiscardDataOnLoad=1 
 ; EXTRA
-r.ReflectionEnvironment=0
+;r.ReflectionEnvironment=0
 ;r.TiledDeferredShading=0 
 ;r.SceneColorFringe.Max=0.35
 r.Decal.FadeScreenSizeMult=0
@@ -215,7 +216,7 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=2048
-r.Shadow.RadiusThreshold=0.04
+r.Shadow.RadiusThreshold=0.02
 r.Shadow.DistanceScale=0.45
 r.Shadow.CSM.TransitionScale=0.8
 r.DistanceFieldShadowing=0
@@ -265,7 +266,7 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=2048
-r.Shadow.RadiusThreshold=0.04
+r.Shadow.RadiusThreshold=0.02
 r.Shadow.DistanceScale=0.45
 r.Shadow.CSM.TransitionScale=0.8
 r.DistanceFieldShadowing=0
@@ -284,11 +285,17 @@ r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
 
+Skip intro video:
+
+Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
+Add a ; in front of the command below:
+;+StartupMovies=squad_intro_movie
+
 Load up any map to test:
 
 Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
 Change: MainMenuMap=/Game/Maps/EntryMap
-Example: MainMenuMap=/Game/Maps/Chora/Chora_AAS_v1
+Example: MainMenuMap=/Game/Maps/BASRAH_CITY/Albasrah_invasion_v1
 
 For NVIDIA users in control panel change:
 
