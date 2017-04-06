@@ -1,7 +1,7 @@
 # SquadOpti
 This is my attempts at helping optimize the game. I'll update this thread as time goes on and i learn more about the engine. I just want everyone to have the best fps they can without messing with the game and helping devs out with the game, thanks.
 
-Launch options:  -sm4 (same as -d3d10, results vary)
+Launch options:  -sm4 (same as -d3d10, results vary, test yourself)
 
 Download: UE4PakUnpacker.exe (941,568 bytes) (you need to find the download link from google)
 Unpack: pakchunk0-WindowsNoEditor.pak
@@ -95,11 +95,12 @@ t.MaxFPS=400
 ; END
 
 
-Set in-game graphics settings to medium to get AA to work in game on/off.
-Updated for Squad v9.2
-Updated 4/5/2017
-The above is for max fps, below for more configs and stuff.
 
+Set in-game graphics settings to medium to get AA to work in game on/off.
+
+Updated for Squad v9.2 (4/5/2017)
+
+The above is for max fps, below for more configs and stuff.
 
 
 
