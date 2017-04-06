@@ -25,7 +25,7 @@ Copy and Paste under [systemSettings]
 
 ; VIEWDISTANCE
 r.SkeletalMeshLODBias=1.5
-r.ViewDistanceScale=0.4
+r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 ; SHADOW  
 r.LightFunctionQuality=0
