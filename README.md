@@ -1,8 +1,6 @@
 # SquadOpti
 This is my attempts at helping optimize the game. I'll update this thread as time goes on and i learn more about the engine. I just want everyone to have the best fps they can without messing with the game and helping devs out with the game, thanks.
 
-Launch options:  -sm4 (same as -d3d10, results vary, test yourself)
-
 Download: UE4PakUnpacker.exe (941,568 bytes) (you need to find the download link from google)
 Unpack: pakchunk0-WindowsNoEditor.pak
 Found in:
@@ -59,8 +57,8 @@ r.Tonemapper.Quality=2
 ; TEXTURE
 r.Streaming.MipBias=2  
 r.MaxAnisotropy=0
-;r.Streaming.LimitPoolSizeToVRAM=0 
-;r.Streaming.PoolSize=1024 
+;r.Streaming.LimitPoolSizeToVRAM=0 ; nul
+;r.Streaming.PoolSize=1024 ; nul
 ; EFFECTS
 r.TranslucencyLightingVolumeDim=8
 r.TranslucencyLightingVolumeInnerDistance=100   
@@ -83,26 +81,23 @@ r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-;foliage.DiscardDataOnLoad=1
-;grass.DiscardDataOnLoad=1 
+;foliage.DiscardDataOnLoad=1 ; nul
+;grass.DiscardDataOnLoad=1 ; nul 
 ; EXTRA
 r.ReflectionEnvironment=0  
 r.TiledDeferredShading=0  
 r.Decal.FadeScreenSizeMult=0
-r.Decal.StencilSizeThreshold=0
 r.SkeletalMeshLODRadiusScale=0.25 
 t.MaxFPS=400
 ; END
 
 
-
 Set in-game graphics settings to medium to get AA to work in game on/off.
-
-Updated for Squad v9.2 (4/5/2017)
+Updated for Squad v9.3 (4/12/2017)
 
 The above is for max fps, below for more configs and stuff.
 
-
+Set sg.PostProcessQuality=3 in GameUserSettings.ini to make sure you are getting highest quality SSAO when set on.
 
 My config:
 
@@ -112,12 +107,12 @@ r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 ; SHADOW
 ;r.LightFunctionQuality=1
-;r.ShadowQuality=3
-;r.Shadow.CSM.MaxCascades=3
-;r.Shadow.MaxResolution=4096
-;r.Shadow.RadiusThreshold=0.03
-;r.Shadow.DistanceScale=0.45
-;r.Shadow.CSM.TransitionScale=0.8
+;r.ShadowQuality=0
+;r.Shadow.CSM.MaxCascades=0
+;r.Shadow.MaxResolution=0
+;r.Shadow.RadiusThreshold=0
+;r.Shadow.DistanceScale=0
+;r.Shadow.CSM.TransitionScale=0
 ;r.DistanceFieldShadowing=0
 ;r.DistanceFieldAO=0
 ;r.AllowLandscapeShadows=0
@@ -138,17 +133,17 @@ r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=0
 r.LightShaftQuality=0
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
+r.Tonemapper.Quality=2
 ; TEXTURE
 r.Streaming.MipBias=0
-r.MaxAnisotropy=8
-;r.Streaming.LimitPoolSizeToVRAM=1 
-;r.Streaming.PoolSize=6144
+r.MaxAnisotropy=16
+;r.Streaming.LimitPoolSizeToVRAM=0 ; nul
+;r.Streaming.PoolSize=6144 ; nul
 ; EFFECTS
 r.TranslucencyLightingVolumeDim=8
 r.TranslucencyLightingVolumeInnerDistance=100   
 r.TranslucencyLightingVolumeOuterDistance=100  
-r.RefractionQuality=1
+r.RefractionQuality=0
 r.SSR.Quality=1
 r.SceneColorFormat=3
 r.DetailMode=0
@@ -158,22 +153,21 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=1
+r.EmitterSpawnRateScale=0.75
 r.DefaultFeature.AutoExposure=0
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=1
+r.ParticleLightQuality=2
 ; FOLIAGE
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-;foliage.DiscardDataOnLoad=1
-;grass.DiscardDataOnLoad=1 
+;foliage.DiscardDataOnLoad=1 ; nul 
+;grass.DiscardDataOnLoad=1 ; nul  
 ; EXTRA
-;r.ReflectionEnvironment=0
+r.ReflectionEnvironment=0
 ;r.TiledDeferredShading=0 
 ;r.SceneColorFringe.Max=0.35
 r.Decal.FadeScreenSizeMult=0
-r.Decal.StencilSizeThreshold=0
 t.MaxFPS=400
 ;r.OneFrameThreadLag=0
 ; END
@@ -186,60 +180,8 @@ Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/
 
 i use this....
 
-DefaultScalability.ini:
-
 [ShadowQuality@0]
-r.LightFunctionQuality=0
-r.ShadowQuality=0
-r.Shadow.CSM.MaxCascades=0
-r.Shadow.MaxResolution=512
-r.Shadow.RadiusThreshold=0
-r.Shadow.DistanceScale=0
-r.Shadow.CSM.TransitionScale=0
-r.DistanceFieldShadowing=0
-r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
-
-[ShadowQuality@1]
 r.LightFunctionQuality=1
-r.ShadowQuality=0
-r.Shadow.CSM.MaxCascades=0
-r.Shadow.MaxResolution=512
-r.Shadow.RadiusThreshold=0
-r.Shadow.DistanceScale=0
-r.Shadow.CSM.TransitionScale=0
-r.DistanceFieldShadowing=0
-r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
-
-[ShadowQuality@2]
-r.LightFunctionQuality=1
-r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=2
-r.Shadow.MaxResolution=2048
-r.Shadow.RadiusThreshold=0.02
-r.Shadow.DistanceScale=0.45
-r.Shadow.CSM.TransitionScale=0.8
-r.DistanceFieldShadowing=0
-r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
-
-[ShadowQuality@3]
-r.LightFunctionQuality=1
-r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=2
-r.Shadow.MaxResolution=4096
-r.Shadow.RadiusThreshold=0.02
-r.Shadow.DistanceScale=0.45
-r.Shadow.CSM.TransitionScale=0.8
-r.DistanceFieldShadowing=0
-r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
-
-BaseScalability.ini:
-
-[ShadowQuality@0]
-r.LightFunctionQuality=0
 r.ShadowQuality=0
 r.Shadow.CSM.MaxCascades=0
 r.Shadow.MaxResolution=0
@@ -252,19 +194,19 @@ r.AllowLandscapeShadows=0
 
 [ShadowQuality@1]
 r.LightFunctionQuality=1
-r.ShadowQuality=0
-r.Shadow.CSM.MaxCascades=0
-r.Shadow.MaxResolution=0
-r.Shadow.RadiusThreshold=0
-r.Shadow.DistanceScale=0
-r.Shadow.CSM.TransitionScale=0
+r.ShadowQuality=5
+r.Shadow.CSM.MaxCascades=2
+r.Shadow.MaxResolution=1024
+r.Shadow.RadiusThreshold=0.02
+r.Shadow.DistanceScale=0.45
+r.Shadow.CSM.TransitionScale=0.8
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
 
 [ShadowQuality@2]
 r.LightFunctionQuality=1
-r.ShadowQuality=3
+r.ShadowQuality=5
 r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=2048
 r.Shadow.RadiusThreshold=0.02
@@ -297,6 +239,9 @@ Load up any map to test:
 Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
 Change: MainMenuMap=/Game/Maps/EntryMap
 Example: MainMenuMap=/Game/Maps/BASRAH_CITY/Albasrah_invasion_v1
+
+Launch options:  
+-sm4 (same as -d3d10, test yourself)
 
 For NVIDIA users in control panel change:
 
