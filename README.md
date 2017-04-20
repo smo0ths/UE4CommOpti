@@ -93,7 +93,7 @@ t.MaxFPS=400
 
 
 Set in-game graphics settings to medium to get AA to work in game on/off.
-Updated for Squad v9.3 (4/12/2017)
+Updated for Squad v9.3 (4/20/2017)
 
 The above is for max fps, below for more configs and stuff.
 
