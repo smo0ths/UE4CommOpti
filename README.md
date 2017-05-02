@@ -93,7 +93,7 @@ t.MaxFPS=400
 
 
 Set in-game graphics settings to medium to get AA to work in game on/off.
-Updated for Squad v9.3 (4/20/2017)
+Updated for Squad v9.4
 
 The above is for max fps, below for more configs and stuff.
 
@@ -104,7 +104,7 @@ My config:
 ; VIEWDISTANCE
 r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
+r.MipMapLODBias=-1
 ; SHADOW
 ;r.LightFunctionQuality=1
 ;r.ShadowQuality=0
@@ -118,10 +118,13 @@ r.MipMapLODBias=0
 ;r.AllowLandscapeShadows=0
 ; POSTPROCESS
 r.MotionBlurQuality=0
-;r.AmbientOcclusionMipLevelFactor=0
-;r.AmbientOcclusionMaxQuality=0
-;r.AmbientOcclusionLevels=0
-;r.AmbientOcclusionRadiusScale=0
+;r.AmbientOcclusionMipLevelFactor=1 ; def
+;r.AmbientOcclusionMaxQuality=100 ; def
+;r.AmbientOcclusionLevels=3 ; def -1
+;r.AmbientOcclusionRadiusScale=0.4 ; def test 0.2
+;r.AmbientOcclusionStaticFraction=0
+;r.AmbientOcclusionSampleSetQuality=1
+;r.AmbientOcclusion.Compute=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=400
 r.LensFlareQuality=2
@@ -137,15 +140,15 @@ r.Tonemapper.Quality=5
 ; TEXTURE
 r.Streaming.MipBias=0
 r.MaxAnisotropy=16
-;r.Streaming.LimitPoolSizeToVRAM=0
-;r.Streaming.PoolSize=6144
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=6144
 ; EFFECTS
 r.TranslucencyLightingVolumeDim=16
 r.TranslucencyLightingVolumeInnerDistance=16  
 r.TranslucencyLightingVolumeOuterDistance=16
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=3
+r.SceneColorFormat=4
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
@@ -153,9 +156,9 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.5
+r.EmitterSpawnRateScale=1
 r.DefaultFeature.AutoExposure=0
-r.ParticleMinTimeBetweenTicks=16
+r.ParticleMinTimeBetweenTicks=8
 r.ParticleLightQuality=2
 ; FOLIAGE
 foliage.DensityScale=0.6
@@ -164,12 +167,13 @@ grass.MaxUpdateFrequency=10
 ;foliage.DiscardDataOnLoad=1 
 ;grass.DiscardDataOnLoad=1  
 ; EXTRA
-r.ReflectionEnvironment=0
+;r.ReflectionEnvironment=0
 ;r.TiledDeferredShading=0 
-r.SceneColorFringe.Max=0.6
-r.Decal.FadeScreenSizeMult=0
+;r.SceneColorFringe.Max=0.25
+;r.Decal.FadeScreenSizeMult=0
 t.MaxFPS=400
 ;r.OneFrameThreadLag=0
+r.ScreenPercentage=100
 ; END
 
 Change shadows in game:
