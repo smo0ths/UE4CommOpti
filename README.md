@@ -57,8 +57,8 @@ r.Tonemapper.Quality=2
 ; TEXTURE
 r.Streaming.MipBias=2  
 r.MaxAnisotropy=0
-;r.Streaming.LimitPoolSizeToVRAM=0 ; nul
-;r.Streaming.PoolSize=1024 ; nul
+;r.Streaming.LimitPoolSizeToVRAM=0 
+;r.Streaming.PoolSize=1024 
 ; EFFECTS
 r.TranslucencyLightingVolumeDim=8
 r.TranslucencyLightingVolumeInnerDistance=16  
@@ -81,13 +81,12 @@ r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-;foliage.DiscardDataOnLoad=1 ; nul
-;grass.DiscardDataOnLoad=1 ; nul 
 ; EXTRA
 r.ReflectionEnvironment=0  
 r.TiledDeferredShading=0  
 r.Decal.FadeScreenSizeMult=0
-r.SkeletalMeshLODRadiusScale=0.25 
+r.SkeletalMeshLODRadiusScale=0.25
+r.VirtualTexture=0
 t.MaxFPS=400
 ; END
 
@@ -104,7 +103,7 @@ My config:
 ; VIEWDISTANCE
 r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=-1
+r.MipMapLODBias=0
 ; SHADOW
 ;r.LightFunctionQuality=1
 ;r.ShadowQuality=0
@@ -118,39 +117,36 @@ r.MipMapLODBias=-1
 ;r.AllowLandscapeShadows=0
 ; POSTPROCESS
 r.MotionBlurQuality=0
-;r.AmbientOcclusionMipLevelFactor=1 ; def
-;r.AmbientOcclusionMaxQuality=100 ; def
-;r.AmbientOcclusionLevels=3 ; def -1
-;r.AmbientOcclusionRadiusScale=0.4 ; def test 0.2
-;r.AmbientOcclusionStaticFraction=0
-;r.AmbientOcclusionSampleSetQuality=1
-;r.AmbientOcclusion.Compute=0
+;r.AmbientOcclusionMipLevelFactor=0.4
+;r.AmbientOcclusionMaxQuality=100
+;r.AmbientOcclusionLevels=-1
+;r.AmbientOcclusionRadiusScale=1
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=400
-r.LensFlareQuality=2
-r.SceneColorFringeQuality=1
+r.LensFlareQuality=3
+r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
 r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=0
 r.LightShaftQuality=0
-r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
+r.Filter.SizeScale=0
+r.Tonemapper.Quality=2
 ; TEXTURE
 r.Streaming.MipBias=0
-r.MaxAnisotropy=16
+r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=6144
+r.Streaming.PoolSize=8192
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=16
-r.TranslucencyLightingVolumeInnerDistance=16  
-r.TranslucencyLightingVolumeOuterDistance=16
+r.TranslucencyLightingVolumeDim=128
+r.TranslucencyLightingVolumeInnerDistance=1000 
+r.TranslucencyLightingVolumeOuterDistance=1000 
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=4
 r.DetailMode=0
-r.TranslucencyVolumeBlur=0
+r.TranslucencyVolumeBlur=1
 r.MaterialQualityLevel=1
 r.SSS.Scale=0
 r.SSS.SampleSet=0
@@ -164,16 +160,11 @@ r.ParticleLightQuality=2
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-;foliage.DiscardDataOnLoad=1 
-;grass.DiscardDataOnLoad=1  
 ; EXTRA
-;r.ReflectionEnvironment=0
-;r.TiledDeferredShading=0 
-;r.SceneColorFringe.Max=0.25
-;r.Decal.FadeScreenSizeMult=0
+;r.SceneColorFringe.Max=0.5
+r.Decal.FadeScreenSizeMult=0
 t.MaxFPS=400
-;r.OneFrameThreadLag=0
-r.ScreenPercentage=100
+r.VirtualTexture=0
 ; END
 
 Change shadows in game:
