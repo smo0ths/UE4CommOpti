@@ -95,7 +95,7 @@ Set in-game graphics settings to medium to get AA to work in game on/off.
 Updated for Squad v9.4
 
 The above is for max fps, below for more configs and stuff.
-
+Bloom/eye adapt/lensflare on/off works in game now threw GameUserSettings.ini
 Set sg.PostProcessQuality=3 in GameUserSettings.ini to make sure you are getting highest quality SSAO when set on.
 
 My config:
@@ -190,11 +190,11 @@ r.AllowLandscapeShadows=0
 [ShadowQuality@1]
 r.LightFunctionQuality=1
 r.ShadowQuality=5
-r.Shadow.CSM.MaxCascades=2
+r.Shadow.CSM.MaxCascades=4
 r.Shadow.MaxResolution=1024
-r.Shadow.RadiusThreshold=0.02
-r.Shadow.DistanceScale=0.45
-r.Shadow.CSM.TransitionScale=0.8
+r.Shadow.RadiusThreshold=0.03
+r.Shadow.DistanceScale=0.5
+r.Shadow.CSM.TransitionScale=1
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
@@ -202,11 +202,11 @@ r.AllowLandscapeShadows=0
 [ShadowQuality@2]
 r.LightFunctionQuality=1
 r.ShadowQuality=5
-r.Shadow.CSM.MaxCascades=2
+r.Shadow.CSM.MaxCascades=4
 r.Shadow.MaxResolution=2048
-r.Shadow.RadiusThreshold=0.02
-r.Shadow.DistanceScale=0.45
-r.Shadow.CSM.TransitionScale=0.8
+r.Shadow.RadiusThreshold=0.03
+r.Shadow.DistanceScale=0.5
+r.Shadow.CSM.TransitionScale=1
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
@@ -214,11 +214,11 @@ r.AllowLandscapeShadows=0
 [ShadowQuality@3]
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=2
+r.Shadow.CSM.MaxCascades=4
 r.Shadow.MaxResolution=4096
-r.Shadow.RadiusThreshold=0.02
-r.Shadow.DistanceScale=0.45
-r.Shadow.CSM.TransitionScale=0.8
+r.Shadow.RadiusThreshold=0.03
+r.Shadow.DistanceScale=0.5
+r.Shadow.CSM.TransitionScale=1
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
