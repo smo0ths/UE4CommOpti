@@ -103,7 +103,7 @@ My config:
 ; VIEWDISTANCE
 r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
+r.MipMapLODBias=-1
 ; SHADOW
 ;r.LightFunctionQuality=1
 ;r.ShadowQuality=0
@@ -131,17 +131,17 @@ r.FastBlurThreshold=0
 r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=0
 r.LightShaftQuality=0
-r.Filter.SizeScale=0
-r.Tonemapper.Quality=2
+r.Filter.SizeScale=1
+r.Tonemapper.Quality=5
 ; TEXTURE
 r.Streaming.MipBias=0
-r.MaxAnisotropy=8
+r.MaxAnisotropy=16
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=8192
+r.Streaming.PoolSize=7000
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=128
-r.TranslucencyLightingVolumeInnerDistance=1000 
-r.TranslucencyLightingVolumeOuterDistance=1000 
+r.TranslucencyLightingVolumeDim=32
+r.TranslucencyLightingVolumeInnerDistance=100 
+r.TranslucencyLightingVolumeOuterDistance=100 
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=4
@@ -159,12 +159,16 @@ r.ParticleLightQuality=2
 ; FOLIAGE
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=10
+grass.MaxUpdateFrequency=30
 ; EXTRA
 ;r.SceneColorFringe.Max=0.5
-r.Decal.FadeScreenSizeMult=0
+;r.Decal.FadeScreenSizeMult=0
 t.MaxFPS=400
 r.VirtualTexture=0
+r.TiledDeferredShading=1
+r.TiledDeferredShading.MinimumCount=50
+r.TiledReflectionEnvironmentMinimumCount=10
+;r.RHICmdBypass=0
 ; END
 
 Change shadows in game:
