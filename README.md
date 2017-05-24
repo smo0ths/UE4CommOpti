@@ -87,6 +87,7 @@ r.TiledDeferredShading=0
 r.Decal.FadeScreenSizeMult=0
 r.SkeletalMeshLODRadiusScale=0.25
 r.VirtualTexture=0
+r.RHICmdBypass=0
 t.MaxFPS=400
 ; END
 
@@ -101,74 +102,75 @@ Set sg.PostProcessQuality=3 in GameUserSettings.ini to make sure you are getting
 My config:
 
 ; VIEWDISTANCE
-r.SkeletalMeshLODBias=-1
+r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=-1
+r.MipMapLODBias=0
 ; SHADOW
-;r.LightFunctionQuality=1
-;r.ShadowQuality=0
-;r.Shadow.CSM.MaxCascades=0
-;r.Shadow.MaxResolution=0
-;r.Shadow.RadiusThreshold=0
-;r.Shadow.DistanceScale=0
-;r.Shadow.CSM.TransitionScale=0
-;r.DistanceFieldShadowing=0
-;r.DistanceFieldAO=0
-;r.AllowLandscapeShadows=0
+;r.LightFunctionQuality=
+;r.ShadowQuality=
+;r.Shadow.CSM.MaxCascades=
+;r.Shadow.MaxResolution=
+;r.Shadow.RadiusThreshold=
+;r.Shadow.DistanceScale=
+;r.Shadow.CSM.TransitionScale=
+;r.DistanceFieldShadowing=
+;r.DistanceFieldAO=
+;r.AllowLandscapeShadows=
 ; POSTPROCESS
 r.MotionBlurQuality=0
-;r.AmbientOcclusionMipLevelFactor=0.4
-;r.AmbientOcclusionMaxQuality=100
-;r.AmbientOcclusionLevels=-1
-;r.AmbientOcclusionRadiusScale=1
+;r.AmbientOcclusionMipLevelFactor=
+;r.AmbientOcclusionMaxQuality=
+;r.AmbientOcclusionLevels=
+;r.AmbientOcclusionRadiusScale=
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=400
-r.LensFlareQuality=3
-r.SceneColorFringeQuality=0
+r.LensFlareQuality=2
+r.SceneColorFringeQuality=1
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
-r.Upscale.Quality=0
+r.Upscale.Quality=3
 r.Tonemapper.GrainQuantization=0
 r.LightShaftQuality=0
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
 ; TEXTURE
 r.Streaming.MipBias=0
-r.MaxAnisotropy=16
+r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=7000
+r.Streaming.PoolSize=5000
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=32
-r.TranslucencyLightingVolumeInnerDistance=100 
-r.TranslucencyLightingVolumeOuterDistance=100 
+r.TranslucencyLightingVolumeDim=16
+r.TranslucencyLightingVolumeInnerDistance=16
+r.TranslucencyLightingVolumeOuterDistance=16
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=4
-r.DetailMode=0
-r.TranslucencyVolumeBlur=1
+r.DetailMode=2
+r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=1
+r.EmitterSpawnRateScale=0.75
 r.DefaultFeature.AutoExposure=0
-r.ParticleMinTimeBetweenTicks=8
+r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=2
 ; FOLIAGE
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=30
+grass.MaxUpdateFrequency=10
 ; EXTRA
-;r.SceneColorFringe.Max=0.5
-;r.Decal.FadeScreenSizeMult=0
+r.SceneColorFringe.Max=0.1
+r.Decal.FadeScreenSizeMult=0.25
 t.MaxFPS=400
+r.ReflectionEnvironment=0
 r.VirtualTexture=0
 r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=50
+r.TiledDeferredShading.MinimumCount=40
 r.TiledReflectionEnvironmentMinimumCount=10
-;r.RHICmdBypass=0
+r.RHICmdBypass=0
 ; END
 
 Change shadows in game:
@@ -193,39 +195,39 @@ r.AllowLandscapeShadows=0
 
 [ShadowQuality@1]
 r.LightFunctionQuality=1
-r.ShadowQuality=5
-r.Shadow.CSM.MaxCascades=4
-r.Shadow.MaxResolution=1024
-r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.5
-r.Shadow.CSM.TransitionScale=1
-r.DistanceFieldShadowing=0
+r.ShadowQuality=0
+r.Shadow.CSM.MaxCascades=0
+r.Shadow.MaxResolution=0
+r.Shadow.RadiusThreshold=0
+r.Shadow.DistanceScale=0
+r.Shadow.CSM.TransitionScale=0.5
+r.DistanceFieldShadowing=1
 r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
+r.AllowLandscapeShadows=1
 
 [ShadowQuality@2]
 r.LightFunctionQuality=1
-r.ShadowQuality=5
-r.Shadow.CSM.MaxCascades=4
+r.ShadowQuality=3
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=2048
 r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.5
-r.Shadow.CSM.TransitionScale=1
-r.DistanceFieldShadowing=0
+r.Shadow.DistanceScale=0.35
+r.Shadow.CSM.TransitionScale=0.5
+r.DistanceFieldShadowing=1
 r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
+r.AllowLandscapeShadows=1
 
 [ShadowQuality@3]
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=4
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=4096
 r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.5
-r.Shadow.CSM.TransitionScale=1
-r.DistanceFieldShadowing=0
+r.Shadow.DistanceScale=0.35
+r.Shadow.CSM.TransitionScale=0.5
+r.DistanceFieldShadowing=1
 r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
+r.AllowLandscapeShadows=1
 
 Skip intro video:
 
