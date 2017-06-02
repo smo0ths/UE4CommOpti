@@ -102,9 +102,9 @@ Set sg.PostProcessQuality=3 in GameUserSettings.ini to make sure you are getting
 My config:
 
 ; VIEWDISTANCE
-r.SkeletalMeshLODBias=0
+r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
+r.MipMapLODBias=-1
 ; SHADOW
 ;r.LightFunctionQuality=
 ;r.ShadowQuality=
@@ -123,30 +123,30 @@ r.MotionBlurQuality=0
 ;r.AmbientOcclusionLevels=
 ;r.AmbientOcclusionRadiusScale=
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=400
+r.RenderTargetPoolMin=1000
 r.LensFlareQuality=2
 r.SceneColorFringeQuality=1
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
-r.Upscale.Quality=3
+r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=0
 r.LightShaftQuality=0
-r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
+r.Filter.SizeScale=0
+r.Tonemapper.Quality=2
 ; TEXTURE
 r.Streaming.MipBias=0
-r.MaxAnisotropy=8
+r.MaxAnisotropy=16
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=5000
+r.Streaming.PoolSize=3000
 ; EFFECTS
-r.TranslucencyLightingVolumeDim=16
-r.TranslucencyLightingVolumeInnerDistance=16
-r.TranslucencyLightingVolumeOuterDistance=16
+r.TranslucencyLightingVolumeDim=24
+r.TranslucencyLightingVolumeInnerDistance=24
+r.TranslucencyLightingVolumeOuterDistance=24
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=4
-r.DetailMode=2
+r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
 r.SSS.Scale=0
@@ -154,9 +154,9 @@ r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0.75
-r.DefaultFeature.AutoExposure=0
+;r.DefaultFeature.AutoExposure=0
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=2
+r.ParticleLightQuality=1
 ; FOLIAGE
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
@@ -165,12 +165,13 @@ grass.MaxUpdateFrequency=10
 r.SceneColorFringe.Max=0.1
 r.Decal.FadeScreenSizeMult=0.25
 t.MaxFPS=400
-r.ReflectionEnvironment=0
+;r.ReflectionEnvironment=0
 r.VirtualTexture=0
-r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=40
-r.TiledReflectionEnvironmentMinimumCount=10
+r.TiledDeferredShading=0
+r.TiledDeferredShading.MinimumCount=0
+r.TiledReflectionEnvironmentMinimumCount=0
 r.RHICmdBypass=0
+r.AmbientOcclusionSampleSetQuality=0
 ; END
 
 Change shadows in game:
