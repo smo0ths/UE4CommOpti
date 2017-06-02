@@ -201,10 +201,10 @@ r.Shadow.CSM.MaxCascades=0
 r.Shadow.MaxResolution=0
 r.Shadow.RadiusThreshold=0
 r.Shadow.DistanceScale=0
-r.Shadow.CSM.TransitionScale=0.5
-r.DistanceFieldShadowing=1
+r.Shadow.CSM.TransitionScale=0
+r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
-r.AllowLandscapeShadows=1
+r.AllowLandscapeShadows=0
 
 [ShadowQuality@2]
 r.LightFunctionQuality=1
@@ -214,9 +214,9 @@ r.Shadow.MaxResolution=2048
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.35
 r.Shadow.CSM.TransitionScale=0.5
-r.DistanceFieldShadowing=1
+r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
-r.AllowLandscapeShadows=1
+r.AllowLandscapeShadows=0
 
 [ShadowQuality@3]
 r.LightFunctionQuality=1
@@ -226,9 +226,9 @@ r.Shadow.MaxResolution=4096
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.35
 r.Shadow.CSM.TransitionScale=0.5
-r.DistanceFieldShadowing=1
+r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
-r.AllowLandscapeShadows=1
+r.AllowLandscapeShadows=0
 
 Skip intro video:
 
