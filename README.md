@@ -134,7 +134,7 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.75
+r.EmitterSpawnRateScale=1.0
 r.DefaultFeature.AutoExposure=0
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=1
@@ -146,9 +146,10 @@ t.MaxFPS=400
 r.VirtualTexture=0
 r.RHICmdBypass=0
 r.OneFrameThreadLag=0
-r.HFShadowQuality=0      ; testing prob nul
-r.GroundClutterQuality=0      ; testing prob nul
-r.IBLQuality=0      ; testing prob nul
+r.HFShadowQuality=0      
+r.GroundClutterQuality=0      
+r.IBLQuality=0     
+r.Decal.FadeScreenSizeMult=0
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
