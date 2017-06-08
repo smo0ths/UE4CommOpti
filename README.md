@@ -1,6 +1,160 @@
 # SquadOpti
 This is my attempts at helping optimize the game. I'll update this thread as time goes on and i learn more about the engine. I just want everyone to have the best fps they can without messing with the game and helping devs out with the game, thanks.
 
+New simple method no need to unpak :)
+
+;Max fps config:
+
+( Windows Key + R ) ( Copy Paste ) ( %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini )
+
+[/Script/Engine.RendererSettings]
+r.GBufferFormat=0
+r.SeparateTranslucency=0
+r.EarlyZPass=0
+r.SkeletalMeshLODBias=1.5
+r.ViewDistanceScale=0.8
+r.MipMapLODBias=0
+r.LightFunctionQuality=0
+r.ShadowQuality=0
+r.Shadow.CSM.MaxCascades=0
+r.Shadow.MaxResolution=0
+r.Shadow.RadiusThreshold=0
+r.Shadow.DistanceScale=0
+r.Shadow.CSM.TransitionScale=0
+r.DistanceFieldShadowing=0
+r.DistanceFieldAO=0
+r.AllowLandscapeShadows=0
+r.MotionBlurQuality=0
+r.AmbientOcclusionMipLevelFactor=0
+r.AmbientOcclusionMaxQuality=0
+r.AmbientOcclusionLevels=0
+r.AmbientOcclusionRadiusScale=0
+r.DepthOfFieldQuality=0
+r.RenderTargetPoolMin=300
+r.LensFlareQuality=0
+r.SceneColorFringeQuality=0
+r.EyeAdaptationQuality=0
+r.BloomQuality=0
+r.FastBlurThreshold=0
+r.Upscale.Quality=0
+r.Tonemapper.GrainQuantization=0
+r.LightShaftQuality=0
+r.Filter.SizeScale=0
+r.Tonemapper.Quality=2
+r.Streaming.MipBias=2  
+r.MaxAnisotropy=0
+r.Streaming.LimitPoolSizeToVRAM=1
+r.TranslucencyLightingVolumeDim=16 
+r.TranslucencyLightingVolumeInnerDistance=16  
+r.TranslucencyLightingVolumeOuterDistance=16 
+r.RefractionQuality=0
+r.SSR.Quality=0
+r.SceneColorFormat=2      ; Set to 3 or you will have TXAA ghosting (when using TXAA types)  
+r.DetailMode=0
+r.TranslucencyVolumeBlur=0
+r.MaterialQualityLevel=0
+r.SSS.Scale=0
+r.SSS.SampleSet=0
+r.SSS.Quality=0
+r.SSS.HalfRes=1
+r.EmitterSpawnRateScale=0
+r.DefaultFeature.AutoExposure=0
+r.ParticleMinTimeBetweenTicks=24
+r.ParticleLightQuality=0
+foliage.DensityScale=0.6
+grass.DensityScale=0.6
+grass.MaxUpdateFrequency=10
+r.ReflectionEnvironment=0      ; Set to 1 if you want to use TXAA type AA (black flicker if not)
+r.TiledDeferredShading=0  
+r.TiledDeferredShading.MinimumCount=0
+r.TiledReflectionEnvironmentMinimumCount=0
+r.Decal.FadeScreenSizeMult=0
+r.SkeletalMeshLODRadiusScale=0.25
+r.VirtualTexture=0
+r.RHICmdBypass=0
+t.MaxFPS=400
+r.HFShadowQuality=0      ; testing prob nul 
+r.IBLQuality=0      ; testing prob nul 
+r.GroundClutterQuality=0      ; testing prob nul 
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+My Config:
+
+( Windows Key + R ) ( Copy Paste ) ( %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini )
+
+[/Script/Engine.RendererSettings]
+r.EarlyZPass=0
+r.SkeletalMeshLODBias=0
+r.ViewDistanceScale=0.8
+r.MipMapLODBias=0
+r.LightFunctionQuality=1
+r.ShadowQuality=3
+r.Shadow.CSM.MaxCascades=2
+r.Shadow.MaxResolution=3072
+r.Shadow.RadiusThreshold=0.03
+r.Shadow.DistanceScale=0.35
+r.Shadow.CSM.TransitionScale=0.75
+r.DistanceFieldShadowing=0
+r.DistanceFieldAO=0
+r.AllowLandscapeShadows=0
+r.MotionBlurQuality=0
+r.AmbientOcclusionMipLevelFactor=0.4
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=-1
+r.AmbientOcclusionRadiusScale=0.35
+r.DepthOfFieldQuality=0
+r.RenderTargetPoolMin=512
+r.LensFlareQuality=2
+r.SceneColorFringeQuality=1
+r.EyeAdaptationQuality=0
+r.BloomQuality=1
+r.FastBlurThreshold=0
+r.Upscale.Quality=0
+r.Tonemapper.GrainQuantization=0
+r.LightShaftQuality=0
+r.Filter.SizeScale=0
+r.Tonemapper.Quality=2
+r.Streaming.MipBias=0
+r.MaxAnisotropy=8
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=3000
+r.TranslucencyLightingVolumeDim=16
+r.TranslucencyLightingVolumeInnerDistance=24
+r.TranslucencyLightingVolumeOuterDistance=24
+r.RefractionQuality=0
+r.SSR.Quality=0
+r.SceneColorFormat=4
+r.DetailMode=0
+r.TranslucencyVolumeBlur=0
+r.MaterialQualityLevel=0
+r.SSS.Scale=0
+r.SSS.SampleSet=0
+r.SSS.Quality=0
+r.SSS.HalfRes=1
+r.EmitterSpawnRateScale=0.75
+r.DefaultFeature.AutoExposure=0
+r.ParticleMinTimeBetweenTicks=16
+r.ParticleLightQuality=1
+foliage.DensityScale=0.6
+grass.DensityScale=0.6
+grass.MaxUpdateFrequency=10
+r.SceneColorFringe.Max=0.5
+t.MaxFPS=400
+r.VirtualTexture=0
+r.RHICmdBypass=0
+r.OneFrameThreadLag=0
+r.HFShadowQuality=0      ; testing prob nul
+r.GroundClutterQuality=0      ; testing prob nul
+r.IBLQuality=0      ; testing prob nul
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Unpack method below (above configs have the latest updated commands)
+
 Download: UE4PakUnpacker.exe (941,568 bytes) (you need to find the download link from google)
 Unpack: pakchunk0-WindowsNoEditor.pak
 Found in:
@@ -201,7 +355,7 @@ r.Shadow.CSM.MaxCascades=1
 r.Shadow.MaxResolution=1024
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.35
-r.Shadow.CSM.TransitionScale=0.75
+r.Shadow.CSM.TransitionScale=1
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
@@ -213,7 +367,7 @@ r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=2048
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.35
-r.Shadow.CSM.TransitionScale=0.75
+r.Shadow.CSM.TransitionScale=1
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
@@ -225,7 +379,7 @@ r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=4096
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.35
-r.Shadow.CSM.TransitionScale=0.75
+r.Shadow.CSM.TransitionScale=1
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.AllowLandscapeShadows=0
