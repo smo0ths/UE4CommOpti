@@ -1,5 +1,5 @@
 # SquadOpti
-This is my attempts at helping optimize the game. I'll update this thread as time goes on and i learn more about the engine. I just want everyone to have the best fps they can without messing with the game and helping devs out with the game, thanks.
+This is my attempts at helping optimize the game. I'll update this as time goes on and i learn more about the engine. I just want everyone to have the best fps they can without messing with the game and helping devs out with the game. Don't like it? go cry on reddit where your friends are.
 
 New simple method no need to unpak :) 
 Works with any unreal game.
