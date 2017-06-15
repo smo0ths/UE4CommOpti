@@ -3,7 +3,7 @@ This is my attempts at helping optimize the game. I'll update this as time goes 
 
 New simple method no need to unpak :) 
 Works with any unreal game.
-Past under code in Engine.ini
+Paste under code in Engine.ini
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 MY CONFIG:
