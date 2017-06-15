@@ -1,9 +1,9 @@
 # SquadOpti
-This is my attempts at helping optimize the game. I'll update this as time goes on and i learn more about the engine. I just want everyone to have the best fps they can without messing with the game and helping devs out with the game. Don't like it? go cry on reddit where your friends are.
+This is my attempts at helping optimize the game. I'll update this as time goes on and i learn more about the engine. I just want everyone to have the best fps they can without messing with the game and helping devs out with the game.
 
 New simple method no need to unpak :) 
 Works with any unreal game.
-Past under cod in Engine.ini
+Past under code in Engine.ini
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 MY CONFIG:
