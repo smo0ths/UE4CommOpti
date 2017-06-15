@@ -337,7 +337,7 @@ r.StaticMeshLODDistanceScale=1
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Unpack method below (above configs have the latest updated commands)
+Unpack method below
 
 Download: UE4PakUnpacker.exe (941,568 bytes) (you need to find the download link from google)
 Unpack: pakchunk0-WindowsNoEditor.pak
@@ -362,7 +362,6 @@ Copy and Paste under [systemSettings]
 ( SCROLL UP FOR THE CONFIGS )
 
 Set in-game graphics settings to medium to get AA to work in game on/off.
-Updated for Squad v9.4
 
 The above is for max fps, below for more configs and stuff.
 Bloom/eye adapt/lensflare on/off works in game now threw GameUserSettings.ini
