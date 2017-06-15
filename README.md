@@ -3,6 +3,8 @@ This is my attempts at helping optimize the game. I'll update this as time goes 
 
 New simple method no need to unpak :) 
 Works with any unreal game.
+Past under cod in Engine.ini
+Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 MY CONFIG:
 
@@ -13,51 +15,52 @@ Global=off
 
 [Audio]
 MaxChannels=96
+UseAudioThread=True
 
 [/Script/Engine.RendererSettings]
-r.SkeletalMeshLODBias=0
+r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
+r.MipMapLODBias=-1
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=2
-r.Shadow.MaxResolution=2048
+r.Shadow.CSM.MaxCascades=3
+r.Shadow.MaxResolution=4096
 r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.35
+r.Shadow.DistanceScale=0.5
 r.Shadow.CSM.TransitionScale=1
-r.DistanceFieldShadowing=0
+r.DistanceFieldShadowing=1
 r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
+r.AllowLandscapeShadows=1
 r.MotionBlurQuality=0
 r.AmbientOcclusionMipLevelFactor=0.4
 r.AmbientOcclusionMaxQuality=100
 r.AmbientOcclusionLevels=-1
 r.AmbientOcclusionRadiusScale=0.35
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=300
-r.LensFlareQuality=2
+r.RenderTargetPoolMin=1000
+r.LensFlareQuality=3
 r.SceneColorFringeQuality=1
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
-r.Upscale.Quality=0
+r.Upscale.Quality=3
 r.Tonemapper.GrainQuantization=0
-r.LightShaftQuality=0
-r.Filter.SizeScale=0
-r.Tonemapper.Quality=2
+r.LightShaftQuality=1
+r.Filter.SizeScale=1
+r.Tonemapper.Quality=5
 r.Streaming.MipBias=0
-r.MaxAnisotropy=8
+r.MaxAnisotropy=16
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
-r.TranslucencyLightingVolumeDim=24
-r.TranslucencyLightingVolumeInnerDistance=24
-r.TranslucencyLightingVolumeOuterDistance=24
-r.RefractionQuality=0
-r.SSR.Quality=0
+r.TranslucencyLightingVolumeDim=64
+r.TranslucencyLightingVolumeInnerDistance=64
+r.TranslucencyLightingVolumeOuterDistance=64
+r.RefractionQuality=1
+r.SSR.Quality=1
 r.SceneColorFormat=4
-r.DetailMode=0
-r.TranslucencyVolumeBlur=0
-r.MaterialQualityLevel=0
+r.DetailMode=2
+r.TranslucencyVolumeBlur=1
+r.MaterialQualityLevel=1
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
@@ -67,16 +70,17 @@ r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=2
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=10
-r.SceneColorFringe.Max=0.5
-t.MaxFPS=400
+grass.MaxUpdateFrequency=30
+t.MaxFPS=300
 r.VirtualTexture=0
 r.RHICmdBypass=0
 r.OneFrameThreadLag=1
-r.Decal.FadeScreenSizeMult=0
-r.SkeletalMeshLODRadiusScale=1
-r.StaticMeshLODDistanceScale=1
+r.DefaultFeature.AutoExposure=0
 r.EarlyZPass=0
+r.BlurGBuffer=0
+r.SkeletalMeshLODRadiusScale=1.0
+r.StaticMeshLODDistanceScale=1.0
+r.TextureStreaming=1
 
 
 
@@ -355,76 +359,7 @@ Windows key + R: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/
 
 Copy and Paste under [systemSettings]
 
-; VIEWDISTANCE
-r.SkeletalMeshLODBias=1.5
-r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
-; SHADOW  
-r.LightFunctionQuality=0
-r.ShadowQuality=0
-r.Shadow.CSM.MaxCascades=0
-r.Shadow.MaxResolution=0
-r.Shadow.RadiusThreshold=0
-r.Shadow.DistanceScale=0
-r.Shadow.CSM.TransitionScale=0
-r.DistanceFieldShadowing=0
-r.DistanceFieldAO=0
-r.AllowLandscapeShadows=0
-; POSTPROCESS
-r.MotionBlurQuality=0
-r.AmbientOcclusionMipLevelFactor=0
-r.AmbientOcclusionMaxQuality=0
-r.AmbientOcclusionLevels=0
-r.AmbientOcclusionRadiusScale=0
-r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=300
-r.LensFlareQuality=0
-r.SceneColorFringeQuality=0
-r.EyeAdaptationQuality=0
-r.BloomQuality=0
-r.FastBlurThreshold=0
-r.Upscale.Quality=0
-r.Tonemapper.GrainQuantization=0
-r.LightShaftQuality=0
-r.Filter.SizeScale=0
-r.Tonemapper.Quality=2
-; TEXTURE
-r.Streaming.MipBias=2  
-r.MaxAnisotropy=0
-;r.Streaming.LimitPoolSizeToVRAM=0 
-;r.Streaming.PoolSize=1024 
-; EFFECTS
-r.TranslucencyLightingVolumeDim=8
-r.TranslucencyLightingVolumeInnerDistance=16  
-r.TranslucencyLightingVolumeOuterDistance=16 
-r.RefractionQuality=0
-r.SSR.Quality=0
-r.SceneColorFormat=2  
-r.DetailMode=0
-r.TranslucencyVolumeBlur=0
-r.MaterialQualityLevel=0
-r.SSS.Scale=0
-r.SSS.SampleSet=0
-r.SSS.Quality=0
-r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0
-r.DefaultFeature.AutoExposure=0
-r.ParticleMinTimeBetweenTicks=33
-r.ParticleLightQuality=0
-; FOLIAGE
-foliage.DensityScale=0.6
-grass.DensityScale=0.6
-grass.MaxUpdateFrequency=10
-; EXTRA
-r.ReflectionEnvironment=0  
-r.TiledDeferredShading=0  
-r.Decal.FadeScreenSizeMult=0
-r.SkeletalMeshLODRadiusScale=0.25
-r.VirtualTexture=0
-r.RHICmdBypass=0
-t.MaxFPS=400
-; END
-
+( SCROLL UP FOR THE CONFIGS )
 
 Set in-game graphics settings to medium to get AA to work in game on/off.
 Updated for Squad v9.4
@@ -435,78 +370,7 @@ Set sg.PostProcessQuality=3 in GameUserSettings.ini to make sure you are getting
 
 My config:
 
-; VIEWDISTANCE
-r.SkeletalMeshLODBias=-1
-r.ViewDistanceScale=0.8
-r.MipMapLODBias=-1
-; SHADOW
-;r.LightFunctionQuality=
-;r.ShadowQuality=
-;r.Shadow.CSM.MaxCascades=
-;r.Shadow.MaxResolution=
-;r.Shadow.RadiusThreshold=
-;r.Shadow.DistanceScale=
-;r.Shadow.CSM.TransitionScale=
-;r.DistanceFieldShadowing=
-;r.DistanceFieldAO=
-;r.AllowLandscapeShadows=
-; POSTPROCESS
-r.MotionBlurQuality=0
-;r.AmbientOcclusionMipLevelFactor=
-;r.AmbientOcclusionMaxQuality=
-;r.AmbientOcclusionLevels=
-;r.AmbientOcclusionRadiusScale=
-r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=1000
-r.LensFlareQuality=2
-r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=0
-r.BloomQuality=1
-r.FastBlurThreshold=0
-r.Upscale.Quality=0
-r.Tonemapper.GrainQuantization=0
-r.LightShaftQuality=0
-r.Filter.SizeScale=0
-r.Tonemapper.Quality=2
-; TEXTURE
-r.Streaming.MipBias=0
-r.MaxAnisotropy=16
-r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
-; EFFECTS
-r.TranslucencyLightingVolumeDim=24
-r.TranslucencyLightingVolumeInnerDistance=24
-r.TranslucencyLightingVolumeOuterDistance=24
-r.RefractionQuality=0
-r.SSR.Quality=0
-r.SceneColorFormat=4
-r.DetailMode=0
-r.TranslucencyVolumeBlur=0
-r.MaterialQualityLevel=1
-r.SSS.Scale=0
-r.SSS.SampleSet=0
-r.SSS.Quality=0
-r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.75
-;r.DefaultFeature.AutoExposure=0
-r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=1
-; FOLIAGE
-foliage.DensityScale=0.6
-grass.DensityScale=0.6
-grass.MaxUpdateFrequency=10
-; EXTRA
-r.SceneColorFringe.Max=0.1
-r.Decal.FadeScreenSizeMult=0.25
-t.MaxFPS=400
-;r.ReflectionEnvironment=0
-r.VirtualTexture=0
-r.TiledDeferredShading=0
-r.TiledDeferredShading.MinimumCount=0
-r.TiledReflectionEnvironmentMinimumCount=0
-r.RHICmdBypass=0
-r.AmbientOcclusionSampleSetQuality=0
-; END
+( SCROLL UP FOR THE CONFIGS )
 
 Change shadows in game:
 
