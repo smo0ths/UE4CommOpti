@@ -37,9 +37,9 @@ r.AmbientOcclusionMaxQuality=100
 r.AmbientOcclusionLevels=-1
 r.AmbientOcclusionRadiusScale=0.35
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=1000
+r.RenderTargetPoolMin=5120
 r.LensFlareQuality=3
-r.SceneColorFringeQuality=0
+r.SceneColorFringeQuality=1
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
@@ -51,7 +51,7 @@ r.Tonemapper.Quality=5
 r.Streaming.MipBias=0
 r.MaxAnisotropy=16
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
+r.Streaming.PoolSize=3072
 r.TranslucencyLightingVolumeDim=64
 r.TranslucencyLightingVolumeInnerDistance=64
 r.TranslucencyLightingVolumeOuterDistance=64
@@ -81,6 +81,7 @@ r.BlurGBuffer=0
 r.SkeletalMeshLODRadiusScale=1.0
 r.StaticMeshLODDistanceScale=1.0
 r.TextureStreaming=1
+r.LightShaftDownSampleFactor=0
 
 
 
