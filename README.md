@@ -84,7 +84,6 @@ r.LightShaftDownSampleFactor=0
 r.SceneColorFringe.Max=0.5
 r.TessellationAdaptivePixelsPerTriangle=0
 r.SeparateTranslucency=0
-r.Color.Min=-0.02
 
 
 
