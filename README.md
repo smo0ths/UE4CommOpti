@@ -22,7 +22,7 @@ Set in-game graphics settings to medium to get anti aliasing options to work* in
 Bloom has to be on in-game for lens flare to work b/c they have values in GameUserSettings.ini like other settings.
 
 They need to fix the SSAO on/off resets settings to AmbientOcclusionLevels=2 and AmbientOcclusionRadiusScale=1.200000 default engine is levels=3 and radiusscale=1.2 is too much and looks bad.
-You can leave SSAO on in-game and then set the settings AmbientOcclusionLevels=3 or 4 and AmbientOcclusionRadiusScale=0.100000 and restart to make SSAO look better but if you turn it off will you need to do this again.
+You can leave SSAO on in-game and then set the settings AmbientOcclusionLevels=3 or 4 and AmbientOcclusionRadiusScale=0.100000 and restart to make SSAO look better but if you turn it off you need to do this again.
 
 
 
