@@ -1,36 +1,70 @@
 # SquadOpti
 
+
+
+
 Updated 11/8
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 shout out to the mod who deleted my forum post
 
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
 
 Set in-game graphics settings to medium to get anti aliasing options to work* in game on/off after applying these configs commands in configs will still work.
 
 Bloom has to be on in-game for lens flare to work b/c they have values in GameUserSettings.ini like other settings.
 
+They need to fix the SSAO on/off resets settings to AmbientOcclusionLevels=2 and AmbientOcclusionRadiusScale=1.200000 default engine is levels=3 and radiusscale=1.2 is too much and looks bad.
+You can leave SSAO on in-game and then set the settings AmbientOcclusionLevels=3 or 4 and AmbientOcclusionRadiusScale=0.100000 and restart to make SSAO look better but if you turn it off will you need to do this again.
+
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
 
 Open DefaultEngine.ini:
 
 %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultEngine.ini
 
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
 
 Disable-ish logs: 
 
 [Core.Log] 
 Global=off ; delete LogAnalytics=log and LogEasyAntiCheatServer=log
 
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
 
 Lower audio channels: 
 MaxChannels=96  ; find and edit lowest i would use is 64
 
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
 
 Paste under [systemSettings] code 
 
@@ -39,7 +73,7 @@ Paste under [systemSettings] code
 ;ViewDistanceQuality
 
 r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.8
+r.ViewDistanceScale=0.8 ; Lowest hardcoded
 
 ;ShadowQuality ; Use shadow config to change them in game
 
@@ -91,8 +125,8 @@ r.ParticleMinTimeBetweenTicks=16  ; set to 16
 
 ;FoliageQuality
 
-foliage.DensityScale=0.6
-grass.DensityScale=0.6
+foliage.DensityScale=0.6 ; Lowest hardcoded
+grass.DensityScale=0.6 ; Lowest hardcoded
 ;foliage.DiscardDataOnLoad=0 ; void 
 ;grass.DiscardDataOnLoad=0 ; void
 grass.MaxUpdateFrequency=30 ; added 
@@ -104,7 +138,14 @@ r.SceneColorFringe.Max=0.5
 
 
 
+
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
 
 
 
@@ -146,7 +187,14 @@ r.DefaultFeature.MotionBlur=0
 
 
 
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
+
 
 
 
@@ -230,7 +278,13 @@ r.AllowLandscapeShadows=1 ; Added
 
 
 
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
 
 
 
@@ -245,7 +299,14 @@ Add a ; in front of the command below:
 
 
 
+
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
 
 
 
@@ -255,7 +316,12 @@ Max fps config soon or you can scroll down and make one real quick using my othe
 
 
 
+
+
+
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
 
 
 
@@ -359,7 +425,6 @@ t.MaxFPS=300
 
 
 Latest stuff is ABOVE this^
-
 
 
 
