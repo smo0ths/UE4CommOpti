@@ -1,9 +1,8 @@
 # SquadOpti
 
+Got to unpak or use the Engine.ini method again
 
-
-
-Updated 11/10
+Updated 11/19
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -136,6 +135,8 @@ grass.MaxUpdateFrequency=30 ; added
 ;Extra
 t.MaxFPS=300
 r.SceneColorFringe.Max=0.5
+r.FinishCurrentFrame=0 
+r.OneFrameThreadLag=1
 
 
 
