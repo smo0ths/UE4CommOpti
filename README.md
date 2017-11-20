@@ -1,5 +1,24 @@
 # SquadOpti
 
+
+Updated 11/20
+
+
+
+Unpack Squad-Root.pak located here then edit the files: 
+
+%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Content/Paks/
+
+
+
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
+
+
+
 Got to unpak or use the Engine.ini method again
 
 Updated 11/19
@@ -72,9 +91,9 @@ Paste under [systemSettings] code
 
 ;ViewDistanceQuality
 
-r.SkeletalMeshLODBias=-1
+r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.8 ; Lowest hardcoded
-r.MipMapLODBias=-1 ; added 
+r.MipMapLODBias=0 ; added 
 
 ;ShadowQuality ; Use shadow config to change them in game
 
