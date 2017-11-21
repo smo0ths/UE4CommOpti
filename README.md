@@ -11,10 +11,63 @@ Unpack Squad-Root.pak located here then edit the files:
 
 
 
-~~Unpack Engine.pak located here then edit BaseScalability.ini:~~ (This causes crash)
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
-~~%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Engine/Content/Paks/~~
 
+Open Engine.ini and copy paste this or other configs under code:
+%localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
+
+
+
+
+[/Script/Engine.RendererSettings]
+r.SkeletalMeshLODBias=0
+r.ViewDistanceScale=0.8 ; Lowest hardcoded
+r.MipMapLODBias=0 ; added 
+r.MotionBlurQuality=0
+r.AmbientOcclusionMipLevelFactor=0.4
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=-1
+r.AmbientOcclusionRadiusScale=0.2
+r.DepthOfFieldQuality=0
+r.RenderTargetPoolMin=1000
+r.LensFlareQuality=3
+r.SceneColorFringeQuality=1
+r.EyeAdaptationQuality=0
+r.BloomQuality=1
+r.FastBlurThreshold=0
+r.Upscale.Quality=3
+r.Tonemapper.GrainQuantization=1
+r.LightShaftQuality=1
+r.Filter.SizeScale=1
+r.Tonemapper.Quality=5
+r.Streaming.MipBias=0
+r.MaxAnisotropy=16 ; Set to 16
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=3000
+r.Streaming.MaxEffectiveScreenSize=0
+r.TranslucencyLightingVolumeDim=64
+r.RefractionQuality=1
+r.SSR.Quality=1
+r.SceneColorFormat=4
+r.DetailMode=2
+r.TranslucencyVolumeBlur=1
+r.MaterialQualityLevel=1 ; High quality
+r.SSS.Scale=0
+r.SSS.SampleSet=0
+r.SSS.Quality=0
+r.SSS.HalfRes=1
+r.EmitterSpawnRateScale=1.0
+r.ParticleLightQuality=2
+r.MinTimeBetweenTicks=8
+r.ParticleMinTimeBetweenTicks=16  ; set to 16
+foliage.DensityScale=0.6 ; Lowest hardcoded
+grass.DensityScale=0.6 ; Lowest hardcoded
+grass.MaxUpdateFrequency=30 ; added 
+t.MaxFPS=300
+r.SceneColorFringe.Max=0.5
+r.FinishCurrentFrame=0 
+r.OneFrameThreadLag=1
 
 
 
@@ -23,12 +76,6 @@ Unpack Squad-Root.pak located here then edit the files:
 
 
 
-
-
-
-Got to unpak or use the Engine.ini method again
-
-Updated 11/19
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -87,94 +134,8 @@ MaxChannels=96  ; find and edit lowest i would use is 64
 
 
 
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-
-
-
-Paste under [systemSettings] code 
-
-;My Config
-
-;ViewDistanceQuality
-
-r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.8 ; Lowest hardcoded
-r.MipMapLODBias=0 ; added 
-
-;ShadowQuality ; Use shadow config to change them in game
-
-;PostProcessQuality
-
-r.MotionBlurQuality=0
-r.AmbientOcclusionMipLevelFactor=0.4
-r.AmbientOcclusionMaxQuality=100
-r.AmbientOcclusionLevels=-1
-r.AmbientOcclusionRadiusScale=0.2
-r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=1000
-r.LensFlareQuality=3
-r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=0
-r.BloomQuality=1
-r.FastBlurThreshold=0
-r.Upscale.Quality=3
-r.Tonemapper.GrainQuantization=1
-r.LightShaftQuality=1
-r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
-
-;TextureQuality
-
-r.Streaming.MipBias=0
-r.MaxAnisotropy=16 ; Set to 16
-r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
-r.Streaming.MaxEffectiveScreenSize=0
-
-;EffectsQuality
-
-r.TranslucencyLightingVolumeDim=64
-r.RefractionQuality=1
-r.SSR.Quality=1
-r.SceneColorFormat=4
-r.DetailMode=2
-r.TranslucencyVolumeBlur=1
-r.MaterialQualityLevel=1 ; High quality
-r.SSS.Scale=0
-r.SSS.SampleSet=0
-r.SSS.Quality=0
-r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=1.0
-r.ParticleLightQuality=2
-r.MinTimeBetweenTicks=8
-r.ParticleMinTimeBetweenTicks=16  ; set to 16
-
-;FoliageQuality
-
-foliage.DensityScale=0.6 ; Lowest hardcoded
-grass.DensityScale=0.6 ; Lowest hardcoded
-;foliage.DiscardDataOnLoad=0 ; void 
-;grass.DiscardDataOnLoad=0 ; void
-grass.MaxUpdateFrequency=30 ; added 
-
-;Extra
-t.MaxFPS=300
-r.SceneColorFringe.Max=0.5
-r.FinishCurrentFrame=0 
-r.OneFrameThreadLag=1
-
-
-
-
-
-
-
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-
-
 
 
 
@@ -231,9 +192,9 @@ r.DefaultFeature.MotionBlur=0
 
 Change shadows in game:
 
-Edit DefaultScalability.ini and BaseScalability.ini: ShadowQuality @ 0 @ 1 @ 2 @ 3 to whatever you like and you can change them in game
+Edit DefaultScalability.ini ShadowQuality @ 0 @ 1 @ 2 @ 3 to whatever you like and you can change them in game
+
 %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultScalability.ini
-%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Engine/Config/BaseScalability.ini
 
 i use this....
 
@@ -468,6 +429,18 @@ Latest stuff is ABOVE this^
 
 
 
+
+
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+
+
+
+~~Unpack Engine.pak located here then edit BaseScalability.ini:~~ (This causes crash)
+
+~~%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Engine/Content/Paks/~~
 
 
 
