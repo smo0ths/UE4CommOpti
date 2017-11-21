@@ -13,8 +13,7 @@ Unpack Squad-Root.pak located here then edit the files:
 
 ~~Unpack Engine.pak located here then edit BaseScalability.ini:~~ (This causes crash)
 
-~~%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Engine/Content/Paks/
-
+~~%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Engine/Content/Paks/~~
 
 
 
