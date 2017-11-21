@@ -73,6 +73,7 @@ t.MaxFPS=300
 r.SceneColorFringe.Max=0.5
 r.FinishCurrentFrame=0 
 r.OneFrameThreadLag=1
+r.LightShaftDownSampleFactor=-1
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -101,7 +102,7 @@ Global=off ; delete LogAnalytics=log and LogEasyAntiCheatServer=log
 
 Lower audio channels: 
 
-MaxChannels=96  ; find and edit lowest i would use is 64
+MaxChannels=96 ; find and edit lowest i would use is 64
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
