@@ -1,7 +1,7 @@
 # SquadOpti
 
 
-Updated 11/21
+Updated 11/22
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -73,7 +73,7 @@ t.MaxFPS=300
 r.SceneColorFringe.Max=0.5
 r.FinishCurrentFrame=0 
 r.OneFrameThreadLag=1
-r.LightShaftDownSampleFactor=-1
+r.LightShaftDownSampleFactor=0
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
