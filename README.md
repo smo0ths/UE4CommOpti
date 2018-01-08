@@ -1,7 +1,7 @@
 # SquadOpti
 
 
-Updated 11/22
+Updated 1/7
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -24,11 +24,12 @@ Open Engine.ini and copy paste this or other configs under code:
 
 %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
 
+My config: 
 
 [/Script/Engine.RendererSettings]
 r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.8 ; Lowest hardcoded
-r.MipMapLODBias=0 ; added 
+r.MipMapLODBias=0
 r.MotionBlurQuality=0
 r.AmbientOcclusionMipLevelFactor=0.4
 r.AmbientOcclusionMaxQuality=100
@@ -43,17 +44,17 @@ r.BloomQuality=1
 r.FastBlurThreshold=0
 r.Upscale.Quality=3
 r.Tonemapper.GrainQuantization=1
-r.LightShaftQuality=1
+r.LightShaftQuality=0
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
 r.Streaming.MipBias=0
-r.MaxAnisotropy=16 ; Set to 16
+r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
+r.Streaming.PoolSize=6000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=64
-r.RefractionQuality=1
-r.SSR.Quality=1
+r.RefractionQuality=0
+r.SSR.Quality=0
 r.SceneColorFormat=4
 r.DetailMode=2
 r.TranslucencyVolumeBlur=1
@@ -68,12 +69,99 @@ r.MinTimeBetweenTicks=8
 r.ParticleMinTimeBetweenTicks=16  ; set to 16
 foliage.DensityScale=0.6 ; Lowest hardcoded
 grass.DensityScale=0.6 ; Lowest hardcoded
-grass.MaxUpdateFrequency=30 ; added 
+grass.MaxUpdateFrequency=10
 t.MaxFPS=300
 r.SceneColorFringe.Max=0.5
-r.FinishCurrentFrame=0 
-r.OneFrameThreadLag=1
 r.LightShaftDownSampleFactor=0
+r.FinishCurrentFrame=0
+r.OneFrameThreadLag=1
+r.SeparateTranslucency=0
+r.VirtualTexture=0
+r.EarlyZPass=0
+
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+Max FPS: 
+
+
+[/Script/Engine.RendererSettings]
+r.SkeletalMeshLODBias=1.5
+r.ViewDistanceScale=0.8 ; Lowest hardcoded
+r.MipMapLODBias=0
+r.LightFunctionQuality=0
+r.ShadowQuality=0
+r.Shadow.CSM.MaxCascades=0
+r.Shadow.MaxResolution=0
+r.Shadow.RadiusThreshold=0
+r.Shadow.DistanceScale=0
+r.Shadow.CSM.TransitionScale=0
+r.DistanceFieldShadowing=0
+r.DistanceFieldAO=0
+r.AllowLandscapeShadows=0
+r.MotionBlurQuality=0
+r.AmbientOcclusionMipLevelFactor=0
+r.AmbientOcclusionMaxQuality=0
+r.AmbientOcclusionLevels=0
+r.AmbientOcclusionRadiusScale=0
+r.DepthOfFieldQuality=0
+r.RenderTargetPoolMin=300
+r.LensFlareQuality=0
+r.SceneColorFringeQuality=0
+r.EyeAdaptationQuality=0
+r.BloomQuality=0
+r.FastBlurThreshold=0
+r.Upscale.Quality=0
+r.Tonemapper.GrainQuantization=1
+r.LightShaftQuality=0
+r.Filter.SizeScale=0
+r.Tonemapper.Quality=2
+r.Streaming.MipBias=2  
+r.MaxAnisotropy=0
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=1000
+r.TranslucencyLightingVolumeDim=16 
+r.TranslucencyLightingVolumeInnerDistance=16  
+r.TranslucencyLightingVolumeOuterDistance=16 
+r.RefractionQuality=0
+r.SSR.Quality=0
+r.SceneColorFormat=2          ; Use 4 if you use TXAA/MIX to prevent TXAA ghosting      
+r.DetailMode=0
+r.TranslucencyVolumeBlur=0
+r.MaterialQualityLevel=0
+r.SSS.Scale=0
+r.SSS.SampleSet=0
+r.SSS.Quality=0
+r.SSS.HalfRes=1
+r.EmitterSpawnRateScale=0
+r.ParticleMinTimeBetweenTicks=24
+r.ParticleLightQuality=0
+foliage.DensityScale=0.6 ; Lowest hardcoded
+grass.DensityScale=0.6 ; Lowest hardcoded
+grass.MaxUpdateFrequency=10
+r.ReflectionEnvironment=0          ; Use 1 if you want to use TXAA/MIX to prevent flickering      
+r.TiledDeferredShading=0  
+r.TiledDeferredShading.MinimumCount=0
+r.TiledReflectionEnvironmentMinimumCount=0
+r.Decal.FadeScreenSizeMult=0
+r.SkeletalMeshLODRadiusScale=0.25
+r.StaticMeshLODDistanceScale=0.25
+r.VirtualTexture=0
+r.RHICmdBypass=0
+t.MaxFPS=400      
+r.GBufferFormat=0
+r.SeparateTranslucency=0
+r.EarlyZPass=0
+r.TextureStreaming=1
+r.DefaultFeature.AmbientOcclusion=0
+r.DefaultFeature.AmbientOcclusionStaticFraction=0
+r.DefaultFeature.AntiAliasing=0
+r.DefaultFeature.AutoExposure=0
+r.DefaultFeature.Bloom=0
+r.DefaultFeature.LensFlare=0
+r.DefaultFeature.MotionBlur=0
+
+
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
