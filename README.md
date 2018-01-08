@@ -323,12 +323,6 @@ Add a ; in front of the command below:
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
 
-Max fps config soon or you can scroll down and make one real quick using my other lowest settings configs 
-
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-
 Max/Ultra raw settings: 
 
 ;ViewDistanceQuality
