@@ -1,11 +1,11 @@
 # SquadOpti
 
 
-Updated 1/7
+Updated 1/30
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
-shout out to the mod who deleted my forum post
+WHERE IS V10?
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -31,10 +31,6 @@ r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.8 ; Lowest hardcoded
 r.MipMapLODBias=0
 r.MotionBlurQuality=0
-r.AmbientOcclusionMipLevelFactor=0.4
-r.AmbientOcclusionMaxQuality=100
-r.AmbientOcclusionLevels=-1
-r.AmbientOcclusionRadiusScale=0.2
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=1000
 r.LensFlareQuality=3
@@ -48,13 +44,13 @@ r.LightShaftQuality=0
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
 r.Streaming.MipBias=0
-r.MaxAnisotropy=8
+r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=6000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=64
-r.RefractionQuality=0
-r.SSR.Quality=0
+r.RefractionQuality=1
+r.SSR.Quality=1
 r.SceneColorFormat=4
 r.DetailMode=2
 r.TranslucencyVolumeBlur=1
@@ -74,10 +70,11 @@ t.MaxFPS=300
 r.SceneColorFringe.Max=0.5
 r.LightShaftDownSampleFactor=0
 r.FinishCurrentFrame=0
-r.OneFrameThreadLag=1
+r.OneFrameThreadLag=0
 r.SeparateTranslucency=0
 r.VirtualTexture=0
 r.EarlyZPass=0
+r.Decal.FadeScreenSizeMult=0
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
