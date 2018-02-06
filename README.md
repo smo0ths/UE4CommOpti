@@ -1,12 +1,11 @@
 # SquadOpti
 
 
-Updated 1/30
+Updated 2/6
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
-WHERE IS V10?
-
+v10 lowers fps guys not much you can do 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
@@ -28,53 +27,79 @@ My config:
 
 [/Script/Engine.RendererSettings]
 r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.8 ; Lowest hardcoded
+r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
+r.LightFunctionQuality=1
+r.ShadowQuality=3
+r.Shadow.CSM.MaxCascades=3
+r.Shadow.MaxResolution=2048
+r.Shadow.MaxCSMResolution=2048
+r.Shadow.RadiusThreshold=0.03
+r.Shadow.DistanceScale=0.4
+r.Shadow.CSM.TransitionScale=1.0
+r.DistanceFieldShadowing=0
+r.DistanceFieldAO=0
+r.VolumetricFog=0
+r.VolumetricFog.GridPixelSize=0
+r.VolumetricFog.GridSizeZ=0
+r.AllowLandscapeShadows=0
+r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
-r.DepthOfFieldQuality=0
+r.AmbientOcclusionMipLevelFactor=0
+r.AmbientOcclusionMaxQuality=0
+r.AmbientOcclusionLevels=0
+r.AmbientOcclusionRadiusScale=0
+r.DepthOfFieldQuality=1
 r.RenderTargetPoolMin=1000
-r.LensFlareQuality=3
+r.LensFlareQuality=1
 r.SceneColorFringeQuality=1
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
-r.Upscale.Quality=3
+r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=0
-r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
-r.Streaming.MipBias=0
-r.MaxAnisotropy=0
+r.Filter.SizeScale=0
+r.Tonemapper.Quality=2
+r.Streaming.MipBias=1
+r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=6000
-r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=64
-r.RefractionQuality=1
-r.SSR.Quality=1
-r.SceneColorFormat=4
-r.DetailMode=2
-r.TranslucencyVolumeBlur=1
-r.MaterialQualityLevel=1 ; High quality
+r.Streaming.PoolSize=5000
+r.TranslucencyLightingVolumeDim=24
+r.TranslucencyLightingVolumeInnerDistance=24
+r.TranslucencyLightingVolumeOuterDistance=24
+r.RefractionQuality=0
+r.SSR.Quality=0
+r.SceneColorFormat=2
+r.DetailMode=0
+r.TranslucencyVolumeBlur=0
+r.MaterialQualityLevel=0
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=1.0
-r.ParticleLightQuality=2
-r.MinTimeBetweenTicks=8
-r.ParticleMinTimeBetweenTicks=16  ; set to 16
-foliage.DensityScale=0.6 ; Lowest hardcoded
-grass.DensityScale=0.6 ; Lowest hardcoded
+r.EmitterSpawnRateScale=0
+r.ParticleMinTimeBetweenTicks=16
+r.ParticleLightQuality=0
+foliage.DensityScale=0.6
+grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 t.MaxFPS=300
-r.SceneColorFringe.Max=0.5
-r.LightShaftDownSampleFactor=0
+r.ReflectionEnvironment=0
+r.TiledDeferredShading=0
+r.TiledDeferredShading.MinimumCount=0
+r.TiledReflectionEnvironmentMinimumCount=0
+r.Decal.FadeScreenSizeMult=0
+r.SkeletalMeshLODRadiusScale=0.25
+r.StaticMeshLODDistanceScale=0.25
+r.VirtualTexture=0
+r.SeparateTranslucency=0
+r.EarlyZPass=0
+r.TextureStreaming=1
 r.FinishCurrentFrame=0
 r.OneFrameThreadLag=0
-r.SeparateTranslucency=0
-r.VirtualTexture=0
-r.EarlyZPass=0
-r.Decal.FadeScreenSizeMult=0
+r.LightShaftDownSampleFactor=0
+r.SceneColorFringe.Max=0.5
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -260,7 +285,7 @@ r.Shadow.CSM.MaxCascades=3
 r.Shadow.MaxResolution=2048
 r.Shadow.MaxCSMResolution=2048
 r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=1.0
+r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
@@ -268,7 +293,7 @@ r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0 ; Added
-r.LightMaxDrawDistanceScale=1.0 ; Added
+r.LightMaxDrawDistanceScale=0 ; Added
 
 [ShadowQuality@2]
 r.LightFunctionQuality=1
@@ -285,7 +310,7 @@ r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0 ; Added
-r.LightMaxDrawDistanceScale=1.0 ; Added
+r.LightMaxDrawDistanceScale=0 ; Added
 
 [ShadowQuality@3]
 r.LightFunctionQuality=1
@@ -302,7 +327,7 @@ r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0 ; Added
-r.LightMaxDrawDistanceScale=1.0 ; Added
+r.LightMaxDrawDistanceScale=0 ; Added
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
