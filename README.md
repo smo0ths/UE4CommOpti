@@ -1,23 +1,10 @@
 # SquadOpti
 
-
-Updated 2/6
+Updated 2/6/2018
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
-v10 lowers fps guys not much you can do 
-
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-Download: UE4PakUnpacker.exe (941,568 bytes) (find the download link from google)
-
-Unpack Squad-Root.pak located here then edit the files: 
-
-%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Content/Paks/
-
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
 
 Open Engine.ini and copy paste this or other configs under code:
 
@@ -25,10 +12,16 @@ Open Engine.ini and copy paste this or other configs under code:
 
 My config: 
 
+[Core.Log]
+Global=off
+
+[Audio]
+MaxChannels=96
+
 [/Script/Engine.RendererSettings]
-r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.8
-r.MipMapLODBias=1
+r.SkeletalMeshLODBias=1
+r.ViewDistanceScale=0.8          ; Lowest hardcoded 
+r.MipMapLODBias=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=3
@@ -45,14 +38,10 @@ r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
-r.AmbientOcclusionMipLevelFactor=0
-r.AmbientOcclusionMaxQuality=0
-r.AmbientOcclusionLevels=0
-r.AmbientOcclusionRadiusScale=0
-r.DepthOfFieldQuality=1
-r.RenderTargetPoolMin=1000
-r.LensFlareQuality=1
-r.SceneColorFringeQuality=1
+r.DepthOfFieldQuality=0
+r.RenderTargetPoolMin=300
+r.LensFlareQuality=3
+r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=1
 r.FastBlurThreshold=0
@@ -61,13 +50,16 @@ r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=0
 r.Filter.SizeScale=0
 r.Tonemapper.Quality=2
-r.Streaming.MipBias=0
-r.MaxAnisotropy=8
+r.Streaming.MipBias=2
+r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=5000
+r.Streaming.PoolSize=1000
+r.TranslucencyLightingVolumeDim=16
+r.TranslucencyLightingVolumeInnerDistance=16
+r.TranslucencyLightingVolumeOuterDistance=16
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=3
+r.SceneColorFormat=2          ; when using TAA types you might see ghosting even with 4       
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -78,48 +70,52 @@ r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
-foliage.DensityScale=0.6
-grass.DensityScale=0.6
+foliage.DensityScale=0.6          ; Lowest hardcoded 
+grass.DensityScale=0.6          ; Lowest hardcoded 
 grass.MaxUpdateFrequency=10
-t.MaxFPS=400
-r.ReflectionEnvironment=0
+r.ReflectionEnvironment=0          ; when using TAA types 0 causes black flickering          
 r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.TiledReflectionEnvironmentMinimumCount=0
-r.Decal.FadeScreenSizeMult=0
 r.VirtualTexture=0
+t.MaxFPS=400
 r.SeparateTranslucency=0
 r.EarlyZPass=0
-r.FinishCurrentFrame=0
-r.OneFrameThreadLag=0
-r.LightShaftDownSampleFactor=0
-r.SceneColorFringe.Max=0.5
+r.HZBOcclusion=0
+ShowFlag.Decals=0
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
+
 Max FPS: 
 
+[Core.Log]
+Global=off
+
+[Audio]
+MaxChannels=64
 
 [/Script/Engine.RendererSettings]
-r.SkeletalMeshLODBias=1.5
-r.ViewDistanceScale=0.8 ; Lowest hardcoded
+r.SkeletalMeshLODBias=1
+r.ViewDistanceScale=0.8          ; Lowest hardcoded
 r.MipMapLODBias=0
 r.LightFunctionQuality=0
 r.ShadowQuality=0
-r.Shadow.CSM.MaxCascades=0
-r.Shadow.MaxResolution=0
-r.Shadow.RadiusThreshold=0
-r.Shadow.DistanceScale=0
+r.Shadow.CSM.MaxCascades=1
+r.Shadow.MaxResolution=512
+r.Shadow.MaxCSMResolution=512
+r.Shadow.RadiusThreshold=0.06
+r.Shadow.DistanceScale=0.6
 r.Shadow.CSM.TransitionScale=0
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
+r.VolumetricFog=0
+r.VolumetricFog.GridPixelSize=0
+r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
+r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
-r.AmbientOcclusionMipLevelFactor=0
-r.AmbientOcclusionMaxQuality=0
-r.AmbientOcclusionLevels=0
-r.AmbientOcclusionRadiusScale=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=300
 r.LensFlareQuality=0
@@ -132,16 +128,16 @@ r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=0
 r.Filter.SizeScale=0
 r.Tonemapper.Quality=2
-r.Streaming.MipBias=2  
+r.Streaming.MipBias=2
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=1000
-r.TranslucencyLightingVolumeDim=16 
-r.TranslucencyLightingVolumeInnerDistance=16  
-r.TranslucencyLightingVolumeOuterDistance=16 
+r.TranslucencyLightingVolumeDim=16
+r.TranslucencyLightingVolumeInnerDistance=16
+r.TranslucencyLightingVolumeOuterDistance=16
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2          ; Use 4 if you use TXAA/MIX to prevent TXAA ghosting      
+r.SceneColorFormat=2          ; when using TAA types you might see ghosting even with 4
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -150,34 +146,22 @@ r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0
-r.ParticleMinTimeBetweenTicks=24
+r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
-foliage.DensityScale=0.6 ; Lowest hardcoded
-grass.DensityScale=0.6 ; Lowest hardcoded
+foliage.DensityScale=0.6          ; Lowest hardcoded
+grass.DensityScale=0.6          ; Lowest hardcoded
 grass.MaxUpdateFrequency=10
-r.ReflectionEnvironment=0          ; Use 1 if you want to use TXAA/MIX to prevent flickering      
-r.TiledDeferredShading=0  
+r.ReflectionEnvironment=0          ; when using TAA types 0 causes black flickering 
+r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.TiledReflectionEnvironmentMinimumCount=0
-r.Decal.FadeScreenSizeMult=0
-r.SkeletalMeshLODRadiusScale=0.25
 r.StaticMeshLODDistanceScale=0.25
 r.VirtualTexture=0
-r.RHICmdBypass=0
-t.MaxFPS=400      
-r.GBufferFormat=0
+t.MaxFPS=400
 r.SeparateTranslucency=0
 r.EarlyZPass=0
-r.TextureStreaming=1
-r.DefaultFeature.AmbientOcclusion=0
-r.DefaultFeature.AmbientOcclusionStaticFraction=0
-r.DefaultFeature.AntiAliasing=0
-r.DefaultFeature.AutoExposure=0
-r.DefaultFeature.Bloom=0
-r.DefaultFeature.LensFlare=0
-r.DefaultFeature.MotionBlur=0
-
-
+r.HZBOcclusion=0
+ShowFlag.Decals=0
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -193,55 +177,28 @@ You can leave SSAO on in-game and then set the settings AmbientOcclusionLevels=3
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
 
+Download: UE4PakUnpacker.exe (941,568 bytes) (find the download link from google)
+
+Unpack Squad-Root.pak located here then edit the files: 
+
+%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Content/Paks/
+
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
 Open DefaultEngine.ini:
 
 %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultEngine.ini
-
 
 Disable logs: 
 
 [Core.Log] 
 Global=off ; delete LogAnalytics=log and LogEasyAntiCheatServer=log
 
-
 Lower audio channels: 
 
 MaxChannels=96 ; find and edit lowest i would use is 64
-
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-
-;Extra Add what you want   
-r.TranslucencyLightingVolumeInnerDistance=64
-r.TranslucencyLightingVolumeOuterDistance=64
-t.MaxFPS=300
-r.VirtualTexture=0
-r.RHICmdBypass=0
-r.FinishCurrentFrame=0
-r.OneFrameThreadLag=1
-r.EarlyZPass=0
-r.BlurGBuffer=0
-r.SkeletalMeshLODRadiusScale=1.0 ; low 0.25
-r.StaticMeshLODDistanceScale=1.0 ; low 0.25
-r.LightShaftDownSampleFactor=0
-r.SceneColorFringe.Max=0.5
-r.SeparateTranslucency=0
-r.Decal.FadeScreenSizeMult=0
-r.ReflectionEnvironment=0 ; Use 1 if you want to use TXAA/MIX to prevent flickering      
-r.TiledDeferredShading=0  
-r.TiledDeferredShading.MinimumCount=0
-r.TiledReflectionEnvironmentMinimumCount=0
-r.GBufferFormat=0
-r.TextureStreaming=1
-r.LightShaftDownSampleFactor=0
-r.DefaultFeature.AmbientOcclusion=0
-r.DefaultFeature.AmbientOcclusionStaticFraction=0
-r.DefaultFeature.AntiAliasing=0
-r.DefaultFeature.AutoExposure=0
-r.DefaultFeature.Bloom=0
-r.DefaultFeature.LensFlare=0
-r.DefaultFeature.MotionBlur=0
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -252,8 +209,6 @@ Change shadows in game:
 Edit DefaultScalability.ini ShadowQuality @ 0 @ 1 @ 2 @ 3 to whatever you like and you can change them in game
 
 %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultScalability.ini
-
-i use this....
 
 [ShadowQuality@0]
 r.LightFunctionQuality=0
@@ -276,7 +231,7 @@ r.LightMaxDrawDistanceScale=0 ; Added
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=3
-r.Shadow.MaxResolution=2048
+r.Shadow.MaxResolution=1024
 r.Shadow.MaxCSMResolution=2048
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
@@ -310,7 +265,7 @@ r.LightMaxDrawDistanceScale=0 ; Added
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=3
-r.Shadow.MaxResolution=4096
+r.Shadow.MaxResolution=2048
 r.Shadow.MaxCSMResolution=4096
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
@@ -334,6 +289,37 @@ Skip intro video:
 Add a ; in front of the command below:
 
 ;+StartupMovies=squad_intro_movie
+
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+Load up any map to test:
+
+%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
+Change: MainMenuMap=/Game/Maps/EntryMap
+Example: MainMenuMap=/Game/Maps/BASRAH_CITY/Albasrah_invasion_v1
+
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+Launch options: 
+-sm4 (same as -d3d10, test yourself but prob leave it default)
+
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+
+
+For NVIDIA users in control panel change:
+
+Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
+Multi/mixed gpu accel: Single display performance mode
+Power management mode: Prefer max performance
+Preferred refresh rate: Highest available
+Texture filtering anisotropic sample optimization: On
+Texture filtering quality: High performance
+Vertical sync: Off
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -419,44 +405,4 @@ grass.DensityScale=1.0
 grass.MaxUpdateFrequency=30 ; added 
 
 ;Extra
-t.MaxFPS=300
-
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-Load up any map to test:
-
-%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
-Change: MainMenuMap=/Game/Maps/EntryMap
-Example: MainMenuMap=/Game/Maps/BASRAH_CITY/Albasrah_invasion_v1
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-Launch options: 
--sm4 (same as -d3d10, test yourself but prob leave it default)
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-For NVIDIA users in control panel change:
-
-Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
-Multi/mixed gpu accel: Single display performance mode
-Power management mode: Prefer max performance
-Preferred refresh rate: Highest available
-Texture filtering anisotropic sample optimization: On
-Texture filtering quality: High performance
-Vertical sync: Off
-
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-           Latest stuff is ABOVE this^
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-
-~~Unpack Engine.pak located here then edit BaseScalability.ini:~~ (This causes crash)
-
-~~%SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Engine/Content/Paks/~~
+t.MaxFPS=400
