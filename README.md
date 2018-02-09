@@ -23,7 +23,7 @@ MaxChannels=96
 
 [/Script/Engine.RendererSettings]
 r.SkeletalMeshLODBias=1
-r.ViewDistanceScale=0.8          ; Lowest hardcoded 
+r.ViewDistanceScale=0.8          ; Lowest hardcoded
 r.MipMapLODBias=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
@@ -43,10 +43,10 @@ r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=300
-r.LensFlareQuality=3
+r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
-r.BloomQuality=1
+r.BloomQuality=0
 r.FastBlurThreshold=0
 r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=1
@@ -62,7 +62,7 @@ r.TranslucencyLightingVolumeInnerDistance=16
 r.TranslucencyLightingVolumeOuterDistance=16
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2          ; When using TXAA types you might see ghosting even with 4       
+r.SceneColorFormat=2          ; When using TXAA types you might see ghosting even with 4
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -73,10 +73,10 @@ r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
-foliage.DensityScale=0.6          ; Lowest hardcoded 
-grass.DensityScale=0.6          ; Lowest hardcoded 
+foliage.DensityScale=0.6          ; Lowest hardcoded
+grass.DensityScale=0.6          ; Lowest hardcoded
 grass.MaxUpdateFrequency=10
-r.ReflectionEnvironment=0          ; When using TXAA types 0 causes black flickering          
+r.ReflectionEnvironment=0          ; When using TXAA types 0 causes black flickering
 r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.TiledReflectionEnvironmentMinimumCount=0
@@ -165,14 +165,6 @@ r.SeparateTranslucency=0
 r.EarlyZPass=0
 r.HZBOcclusion=0
 ShowFlag.Decals=0
-
-
-<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
-
-
-Set in-game graphics settings to medium to get anti aliasing options to work* in game on/off after applying these configs commands in configs will still work.
-
-Bloom has to be on in-game for lens flare to work b/c they have values in GameUserSettings.ini like other settings.
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
