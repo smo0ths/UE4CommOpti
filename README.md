@@ -1,16 +1,19 @@
 # SquadOpti
 
-Updated 2/6/2018
+Updated 2/9/2018
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
-Open Engine.ini and copy paste this or other configs under code:
+Press:       Windows key + R       
+Copy/Paste:       %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
 
-%localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
-My config: 
+Open Engine.ini and copy paste configs under code:
+
+My config:  (my config always changes so just use max fps config and turn on settings you want from there) 
 
 [Core.Log]
 Global=off
@@ -59,7 +62,7 @@ r.TranslucencyLightingVolumeInnerDistance=16
 r.TranslucencyLightingVolumeOuterDistance=16
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2          ; when using TAA types you might see ghosting even with 4       
+r.SceneColorFormat=2          ; When using TAA types you might see ghosting even with 4       
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -73,7 +76,7 @@ r.ParticleLightQuality=0
 foliage.DensityScale=0.6          ; Lowest hardcoded 
 grass.DensityScale=0.6          ; Lowest hardcoded 
 grass.MaxUpdateFrequency=10
-r.ReflectionEnvironment=0          ; when using TAA types 0 causes black flickering          
+r.ReflectionEnvironment=0          ; When using TAA types 0 causes black flickering          
 r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.TiledReflectionEnvironmentMinimumCount=0
@@ -137,7 +140,7 @@ r.TranslucencyLightingVolumeInnerDistance=16
 r.TranslucencyLightingVolumeOuterDistance=16
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2          ; when using TAA types you might see ghosting even with 4
+r.SceneColorFormat=2          ; When using TAA types you might see ghosting even with 4
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -151,7 +154,7 @@ r.ParticleLightQuality=0
 foliage.DensityScale=0.6          ; Lowest hardcoded
 grass.DensityScale=0.6          ; Lowest hardcoded
 grass.MaxUpdateFrequency=10
-r.ReflectionEnvironment=0          ; when using TAA types 0 causes black flickering 
+r.ReflectionEnvironment=0          ; When using TAA types 0 causes black flickering 
 r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.TiledReflectionEnvironmentMinimumCount=0
@@ -171,9 +174,15 @@ Set in-game graphics settings to medium to get anti aliasing options to work* in
 
 Bloom has to be on in-game for lens flare to work b/c they have values in GameUserSettings.ini like other settings.
 
-You can leave SSAO on in-game and then set the settings AmbientOcclusionLevels=3 or 4 and AmbientOcclusionRadiusScale=0.1 or 0.2 and restart to make SSAO look better but if you turn it off you need to do this again.
 
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
+Below this is a unpak method if you are a noob just do the above because it only takes seconds
+
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
+<<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
 
@@ -194,11 +203,11 @@ Open DefaultEngine.ini:
 Disable logs: 
 
 [Core.Log] 
-Global=off ; delete LogAnalytics=log and LogEasyAntiCheatServer=log
+Global=off          ; delete LogAnalytics=log and LogEasyAntiCheatServer=log
 
 Lower audio channels: 
 
-MaxChannels=96 ; find and edit lowest i would use is 64
+MaxChannels=96          ; find and edit lowest i would use is 64
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -224,8 +233,8 @@ r.DistanceFieldAO=0
 r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
-r.AllowLandscapeShadows=0 ; Added
-r.LightMaxDrawDistanceScale=0 ; Added
+r.AllowLandscapeShadows=0          ; Added
+r.LightMaxDrawDistanceScale=0          ; Added
 
 [ShadowQuality@1]
 r.LightFunctionQuality=1
@@ -241,8 +250,8 @@ r.DistanceFieldAO=0
 r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
-r.AllowLandscapeShadows=0 ; Added
-r.LightMaxDrawDistanceScale=0 ; Added
+r.AllowLandscapeShadows=0          ; Added
+r.LightMaxDrawDistanceScale=0          ; Added
 
 [ShadowQuality@2]
 r.LightFunctionQuality=1
@@ -258,8 +267,8 @@ r.DistanceFieldAO=0
 r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
-r.AllowLandscapeShadows=0 ; Added
-r.LightMaxDrawDistanceScale=0 ; Added
+r.AllowLandscapeShadows=0          ; Added
+r.LightMaxDrawDistanceScale=0          ; Added
 
 [ShadowQuality@3]
 r.LightFunctionQuality=1
@@ -275,8 +284,8 @@ r.DistanceFieldAO=0
 r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
-r.AllowLandscapeShadows=0 ; Added
-r.LightMaxDrawDistanceScale=0 ; Added
+r.AllowLandscapeShadows=0          ; Added
+r.LightMaxDrawDistanceScale=0          ; Added
 
 
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
@@ -294,7 +303,7 @@ Add a ; in front of the command below:
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
 
-Load up any map to test:
+Load up any map to test: (not working anymore maybe there is some other way)
 
 %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
 Change: MainMenuMap=/Game/Maps/EntryMap
@@ -325,13 +334,13 @@ Vertical sync: Off
 <<<<<<<<<<<<<=======================>>>>>>>>>>>>>
 
 
-Max/Ultra raw settings: 
+Max/Ultra raw settings for reference: 
 
 ;ViewDistanceQuality
 
 r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=10.0
-r.MipMapLODBias=-1 ; added 
+r.MipMapLODBias=-1          ; Added 
 
 ;ShadowQuality
 
@@ -348,7 +357,7 @@ r.DistanceFieldAO=1
 r.VolumetricFog=1
 r.VolumetricFog.GridPixelSize=4
 r.VolumetricFog.GridSizeZ=128
-r.AllowLandscapeShadows=1 ; Added
+r.AllowLandscapeShadows=1          ; Added
 
 ;PostProcessQuality
 
@@ -373,7 +382,7 @@ r.Tonemapper.Quality=5
 ;TextureQuality
 
 r.Streaming.MipBias=0
-r.MaxAnisotropy=16 ; Set to 16
+r.MaxAnisotropy=16          ; Set to 16
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
@@ -386,7 +395,7 @@ r.SSR.Quality=4
 r.SceneColorFormat=4
 r.DetailMode=2
 r.TranslucencyVolumeBlur=1
-r.MaterialQualityLevel=1 ; High quality
+r.MaterialQualityLevel=1          ; High quality
 r.SSS.Scale=1
 r.SSS.SampleSet=2
 r.SSS.Quality=1
@@ -394,15 +403,15 @@ r.SSS.HalfRes=0
 r.EmitterSpawnRateScale=1.0
 r.ParticleLightQuality=2
 r.MinTimeBetweenTicks=8
-r.ParticleMinTimeBetweenTicks=16  ; set to 16
+r.ParticleMinTimeBetweenTicks=16          ; Set to 16
 
 ;FoliageQuality
 
 foliage.DensityScale=1.0
 grass.DensityScale=1.0
-;foliage.DiscardDataOnLoad=0 ; void 
-;grass.DiscardDataOnLoad=0 ; void
-grass.MaxUpdateFrequency=30 ; added 
+;foliage.DiscardDataOnLoad=0          ; Void 
+;grass.DiscardDataOnLoad=0          ; Void
+grass.MaxUpdateFrequency=30          ; Added 
 
 ;Extra
 t.MaxFPS=400
