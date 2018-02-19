@@ -1,16 +1,8 @@
 # SquadOpti
 
-Updated 2/18/2018
+Updated 2/18
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
-New better color settings just add these commands:
-
-r.Color.Max=1.75 ; 1 def.
-r.Color.Min=-0.001 ; 0 def.
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -115,7 +107,7 @@ r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=300
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
-r.EyeAdaptationQuality=1
+r.EyeAdaptationQuality=2
 r.BloomQuality=0
 r.FastBlurThreshold=0
 r.Upscale.Quality=1
@@ -135,7 +127,7 @@ r.SSR.Quality=0
 r.SceneColorFormat=3 ; When using TXAA types you might see ghosting even with 4
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
-r.MaterialQualityLevel=1
+r.MaterialQualityLevel=0
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
@@ -145,7 +137,7 @@ r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 foliage.DensityScale=0.6 ; Lowest hardcoded
 grass.DensityScale=0.6 ; Lowest hardcoded
-grass.MaxUpdateFrequency=10
+grass.MaxUpdateFrequency=30
 r.ReflectionEnvironment=0 ; When using TXAA types 0 causes black flickering
 r.TiledDeferredShading=0
 r.VirtualTexture=0
@@ -157,9 +149,19 @@ ShowFlag.Decals=0
 r.FinishCurrentFrame=0
 r.OneFrameThreadLag=1
 r.Tonemapper.Sharpen=0.5
-r.Color.Max=1.75 ; 1 def.
-r.Color.Min=-0.001 ; 0 def.
- 
+r.Color.Max=1.8 ; 1 def.
+r.Color.Min=0.0025 ; 0 def.
+r.Color.Mid=0.55 ; 0.5 def.
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+New better color settings just add these commands:
+
+r.Color.Max=1.8 ; 1 def.
+r.Color.Min=0.0025 ; 0 def.
+r.Color.Mid=0.55 ; 0.5 def.
+
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -206,7 +208,7 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=3
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=2048
+r.Shadow.MaxCSMResolution=1024
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
@@ -223,10 +225,10 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=3
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=4096
+r.Shadow.MaxCSMResolution=2048
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
-r.Shadow.CSM.TransitionScale=1
+r.Shadow.CSM.TransitionScale=1.0
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.VolumetricFog=0
@@ -239,7 +241,7 @@ r.LightMaxDrawDistanceScale=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=3
-r.Shadow.MaxResolution=2048
+r.Shadow.MaxResolution=1024
 r.Shadow.MaxCSMResolution=4096
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
