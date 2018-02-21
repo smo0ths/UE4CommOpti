@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 2/18
+Updated 2/20
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -107,7 +107,7 @@ r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=300
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
-r.EyeAdaptationQuality=2
+r.EyeAdaptationQuality=1
 r.BloomQuality=0
 r.FastBlurThreshold=0
 r.Upscale.Quality=1
@@ -149,16 +149,15 @@ ShowFlag.Decals=0
 r.FinishCurrentFrame=0
 r.OneFrameThreadLag=1
 r.Tonemapper.Sharpen=0.5
-r.Color.Max=1.8 ; 1 def.
-r.Color.Min=0.0025 ; 0 def.
-r.Color.Mid=0.55 ; 0.5 def.
+r.Color.Max=1.25 ; 1 def.
+r.Color.Min=-0.001 ; 0 def.
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-New better color settings just add these commands:
+better color when using eye adaptation:  (mess around with it since no more reshade)
 
-r.Color.Max=1.8 ; 1 def.
+r.Color.Max=1.8 ; 1 def. 
 r.Color.Min=0.0025 ; 0 def.
 r.Color.Mid=0.55 ; 0.5 def.
 
@@ -167,22 +166,20 @@ r.Color.Mid=0.55 ; 0.5 def.
 
 Unpack and change shadows/skip intro/test maps offline ect.
 
-  1ST STEP: 
-  Download: UE4PakUnpacker.exe (941,568 bytes) (find the download link from google)
+  Download:       UE4PakUnpacker.exe (941,568 bytes) (find the download link from google)
 
+Unpack Squad-Root.pak located here then edit the files: 
 
-  2ND STEP: Unpack Squad-Root.pak located here then edit the files: 
-
-     Press: Windows key + R       
-Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Content/Paks/
+     Press:       Windows key + R       
+Copy/Paste:       %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Content/Paks/
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Change shadows in game:
 
-     Press: Windows key + R       
-Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultScalability.ini 
+     Press:       Windows key + R       
+Copy/Paste:       %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultScalability.ini 
 
 Paste these and change settings in game:
 
@@ -257,11 +254,10 @@ r.LightMaxDrawDistanceScale=0
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 Skip intro video:
 
-           Press: Windows key + R       
-      Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
+     Press:       Windows key + R       
+Copy/Paste:       %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
 
 ;+StartupMovies=squad_intro_movie ; Add a ; infront of this
 
@@ -270,11 +266,11 @@ Skip intro video:
 
 Load up any map to test quickly: 
 
-     Press: Windows key + R       
-Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
+     Press:       Windows key + R       
+Copy/Paste:       %SystemDrive%/Program Files (x86)/Steam/steamapps/common/Squad/Squad/Config/DefaultGame.ini
 
-    Change: MainMenuMap=/Game/Maps/EntryMap
-   Example: MainMenuMap=/Game/Maps/Chora/Chora_AAS_v1
+    Change:       MainMenuMap=/Game/Maps/EntryMap
+   Example:       MainMenuMap=/Game/Maps/Chora/Chora_AAS_v1
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
