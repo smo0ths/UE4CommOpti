@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 2/20
+Updated 2/23
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -95,9 +95,6 @@ My config:  (using my shadow config)
 [Core.Log]
 Global=off
 
-[Audio]
-MaxChannels=96
-
 [/Script/Engine.RendererSettings]
 r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8 ; Lowest hardcoded
@@ -116,7 +113,7 @@ r.LightShaftQuality=0
 r.Filter.SizeScale=0
 r.Tonemapper.Quality=3
 r.Streaming.MipBias=0
-r.MaxAnisotropy=16
+r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=1000
 r.TranslucencyLightingVolumeDim=128
@@ -148,18 +145,14 @@ r.HZBOcclusion=0
 ShowFlag.Decals=0
 r.FinishCurrentFrame=0
 r.OneFrameThreadLag=1
-r.Tonemapper.Sharpen=0.5
-r.Color.Max=1.25 ; 1 def.
-r.Color.Min=-0.001 ; 0 def.
+r.Color.Max=2 ; 1 def.
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-better color when using eye adaptation:  (mess around with it since no more reshade)
+better color with eye adaptation or without makes it darker test yourself
 
-r.Color.Max=1.8 ; 1 def. 
-r.Color.Min=0.0025 ; 0 def.
-r.Color.Mid=0.55 ; 0.5 def.
+r.Color.Max=2 ; 1 def. 
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////////////////////////////////////////////////
