@@ -1,13 +1,13 @@
 # SquadOpti
 
-Updated 3/3
+Updated 3/4
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
 
 Open Engine.ini and copy paste configs under code:
 
@@ -89,10 +89,10 @@ r.EarlyZPass=0
 r.HZBOcclusion=0
 ShowFlag.Decals=0
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
 
 My config: 
 
@@ -105,53 +105,55 @@ r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=3
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=2048
+r.Shadow.MaxCSMResolution=4096
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
-r.DistanceFieldShadowing=0
+r.DistanceFieldShadowing=1
 r.DistanceFieldAO=0
-r.VolumetricFog=0
-r.VolumetricFog.GridPixelSize=0
-r.VolumetricFog.GridSizeZ=0
+r.VolumetricFog=1
+r.VolumetricFog.GridPixelSize=4
+r.VolumetricFog.GridSizeZ=128
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=1000
-r.LensFlareQuality=0
+r.LensFlareQuality=3
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
-r.BloomQuality=0
+r.BloomQuality=1
 r.FastBlurThreshold=0
-r.Upscale.Quality=0
+r.Upscale.Quality=3
 r.Tonemapper.GrainQuantization=0
-r.LightShaftQuality=0
+r.LightShaftQuality=1
 r.LightShaftDownSampleFactor=0
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=2
+r.Tonemapper.Quality=3
 r.Streaming.MipBias=0
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
-r.TranslucencyLightingVolumeDim=128
-r.TranslucencyLightingVolumeInnerDistance=128
-r.TranslucencyLightingVolumeOuterDistance=128
+r.Streaming.PoolSize=2100
+r.Streaming.MaxEffectiveScreenSize=0
+r.TranslucencyLightingVolumeDim=8
+r.TranslucencyLightingVolumeInnerDistance=8
+r.TranslucencyLightingVolumeOuterDistance=8
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2
-r.DetailMode=0
-r.TranslucencyVolumeBlur=1
+r.SceneColorFormat=4
+r.DetailMode=2
+r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=1.0
+r.MinTimeBetweenTicks=16
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=2
+r.ParticleLightQuality=1
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=30
@@ -160,11 +162,12 @@ r.ReflectionEnvironment=0
 r.EarlyZPass=0
 r.HZBOcclusion=0
 r.OneFrameThreadLag=1
+r.ReflectionCaptureResolution=0
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
 
 For NVIDIA users in control panel change:
 
@@ -176,10 +179,10 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////
 
 Max/Ultra raw settings for reference: 
 
