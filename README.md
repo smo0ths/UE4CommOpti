@@ -50,7 +50,7 @@ r.EyeAdaptationQuality=0
 r.BloomQuality=0
 r.FastBlurThreshold=0
 r.Upscale.Quality=0
-r.Tonemapper.GrainQuantization=1
+r.Tonemapper.GrainQuantization=0
 r.LightShaftQuality=0
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=2
@@ -58,9 +58,10 @@ r.Streaming.MipBias=2
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=1000
-r.TranslucencyLightingVolumeDim=16
-r.TranslucencyLightingVolumeInnerDistance=16
-r.TranslucencyLightingVolumeOuterDistance=16
+r.Streaming.MaxEffectiveScreenSize=0
+r.TranslucencyLightingVolumeDim=8
+r.TranslucencyLightingVolumeInnerDistance=8
+r.TranslucencyLightingVolumeOuterDistance=8
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=2 ; When using TXAA types you might see ghosting even with 4
@@ -77,17 +78,17 @@ r.ParticleLightQuality=0
 foliage.DensityScale=0.6 ; Lowest hardcoded
 grass.DensityScale=0.6 ; Lowest hardcoded
 grass.MaxUpdateFrequency=10
+t.MaxFPS=400
 r.ReflectionEnvironment=0 ; When using TXAA types 0 causes black flickering 
 r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.TiledReflectionEnvironmentMinimumCount=0
 r.StaticMeshLODDistanceScale=0.25
 r.VirtualTexture=0
-t.MaxFPS=400
-r.SeparateTranslucency=0
 r.EarlyZPass=0
 r.HZBOcclusion=0
-ShowFlag.Decals=0
+r.TranslucentLightingVolume=0
+r.NoTiledReflections=1
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
@@ -163,6 +164,8 @@ r.EarlyZPass=0
 r.HZBOcclusion=0
 r.OneFrameThreadLag=1
 r.ReflectionCaptureResolution=0
+r.TranslucentLightingVolume=0
+r.NoTiledReflections=1
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
