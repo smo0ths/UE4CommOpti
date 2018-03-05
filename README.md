@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/4
+Updated 3/5
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -113,9 +113,9 @@ r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
 r.DistanceFieldShadowing=1
 r.DistanceFieldAO=0
-r.VolumetricFog=1
-r.VolumetricFog.GridPixelSize=4
-r.VolumetricFog.GridSizeZ=128
+r.VolumetricFog=0
+r.VolumetricFog.GridPixelSize=0
+r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
@@ -135,14 +135,14 @@ r.Tonemapper.Quality=3
 r.Streaming.MipBias=0
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=2100
+r.Streaming.PoolSize=4000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
 r.TranslucencyLightingVolumeInnerDistance=8
 r.TranslucencyLightingVolumeOuterDistance=8
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=4
+r.SceneColorFormat=3
 r.DetailMode=2
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -150,10 +150,10 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=1.0
+r.EmitterSpawnRateScale=0
 r.MinTimeBetweenTicks=16
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=1
+r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=30
