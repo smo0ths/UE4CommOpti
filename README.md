@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/5
+Updated 3/13
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -101,9 +101,6 @@ My config:
 Global=all off
 
 [/Script/Engine.RendererSettings]
-r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=2
@@ -119,12 +116,16 @@ r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
+r.SkeletalMeshLODBias=0
+r.ViewDistanceScale=0.8
+r.MipMapLODBias=0
 r.MotionBlurQuality=0
-r.DepthOfFieldQuality=0
+r.DepthOfFieldQuality=4
 r.RenderTargetPoolMin=1000
 r.LensFlareQuality=3
-r.SceneColorFringeQuality=0
-r.EyeAdaptationQuality=0
+r.SceneColorFringeQuality=1
+r.SceneColorFringe.Max=0.5
+r.EyeAdaptationQuality=2
 r.BloomQuality=1
 r.FastBlurThreshold=0
 r.Upscale.Quality=3
@@ -138,33 +139,33 @@ r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=4000
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=8
-r.TranslucencyLightingVolumeInnerDistance=8
-r.TranslucencyLightingVolumeOuterDistance=8
+r.TranslucentLightingVolume=1
+r.TranslucencyLightingVolumeDim=32
+r.TranslucencyVolumeBlur=0
+r.TranslucencyLightingVolumeInnerDistance=1600
+r.TranslucencyLightingVolumeOuterDistance=1600
+r.SceneColorFormat=3
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=3
 r.DetailMode=2
-r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0
-r.MinTimeBetweenTicks=16
+r.MinTimeBetweenTicks=8
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=30
 t.MaxFPS=400
-r.ReflectionEnvironment=0
 r.EarlyZPass=0
 r.HZBOcclusion=0
 r.OneFrameThreadLag=1
-r.ReflectionCaptureResolution=0
-r.TranslucentLightingVolume=0
+r.ReflectionEnvironment=0
+r.ReflectionCaptureResolution=32
 r.NoTiledReflections=1
 
 \\\\\\\\\\\\\\\\\\\\\\\
