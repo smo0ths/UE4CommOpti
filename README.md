@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/13
+Updated 3/14
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
