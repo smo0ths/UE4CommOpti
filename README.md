@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/14
+Updated 3/15
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -105,11 +105,11 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=4096
+r.Shadow.MaxCSMResolution=2048
 r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.5
+r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
-r.DistanceFieldShadowing=1
+r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=0
@@ -122,11 +122,11 @@ r.MipMapLODBias=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=1
 r.RenderTargetPoolMin=1000
-r.LensFlareQuality=3
+r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.SceneColorFringe.Max=0.5
-r.EyeAdaptationQuality=2
-r.BloomQuality=1
+r.EyeAdaptationQuality=0
+r.BloomQuality=0
 r.FastBlurThreshold=0
 r.Upscale.Quality=0
 r.LightShaftQuality=1
@@ -134,18 +134,17 @@ r.LightShaftDownSampleFactor=0
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
 r.Tonemapper.GrainQuantization=0
-r.TonemapperHDR=1
 r.Streaming.MipBias=0
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=4000
+r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucentLightingVolume=1
+r.TranslucentLightingVolume=0
 r.TranslucencyLightingVolumeDim=32
 r.TranslucencyVolumeBlur=0
-r.TranslucencyLightingVolumeInnerDistance=1600
-r.TranslucencyLightingVolumeOuterDistance=1600
-r.SceneColorFormat=4
+r.TranslucencyLightingVolumeInnerDistance=16
+r.TranslucencyLightingVolumeOuterDistance=32
+r.SceneColorFormat=3
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.DetailMode=2
@@ -155,22 +154,22 @@ r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0
-r.MinTimeBetweenTicks=8
+r.MinTimeBetweenTicks=16
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=30
+grass.MaxUpdateFrequency=10
 t.MaxFPS=400
 r.EarlyZPass=0
 r.HZBOcclusion=0
 r.OneFrameThreadLag=0
 r.ReflectionEnvironment=0
-r.ReflectionCaptureResolution=0
+r.ReflectionCaptureResolution=32
 r.NoTiledReflections=1
-r.Color.Max=1	  ; > move more colors towards white, < darken the highlights               Default: 1
-r.Color.Mid=0.3	  ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
-r.Color.Min=0.001 ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
+r.Color.Max=1.1	  ; > move more colors towards white, < darken the highlights               Default: 1
+r.Color.Mid=0.6	  ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
+r.Color.Min=-0.001 ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
