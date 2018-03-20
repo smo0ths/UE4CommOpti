@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/15
+Updated 3/20
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -140,14 +140,14 @@ r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucentLightingVolume=0
-r.TranslucencyLightingVolumeDim=32
+r.TranslucencyLightingVolumeDim=1
 r.TranslucencyVolumeBlur=0
-r.TranslucencyLightingVolumeInnerDistance=16
-r.TranslucencyLightingVolumeOuterDistance=32
+r.TranslucencyLightingVolumeInnerDistance=0
+r.TranslucencyLightingVolumeOuterDistance=0
 r.SceneColorFormat=3
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.DetailMode=2
+r.DetailMode=0
 r.MaterialQualityLevel=0
 r.SSS.Scale=0
 r.SSS.SampleSet=0
@@ -160,16 +160,24 @@ r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-t.MaxFPS=400
-r.EarlyZPass=0
-r.HZBOcclusion=0
-r.OneFrameThreadLag=0
-r.ReflectionEnvironment=0
-r.ReflectionCaptureResolution=32
-r.NoTiledReflections=1
-r.Color.Max=1.1	  ; > move more colors towards white, < darken the highlights               Default: 1
-r.Color.Mid=0.6	  ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
+r.Color.Max=1.1	   ; > move more colors towards white, < darken the highlights               Default: 1
+r.Color.Mid=0.6	   ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
 r.Color.Min=-0.001 ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
+t.MaxFPS=400
+r.OneFrameThreadLag=0 ; 0 lower fps for less input lag
+r.VSync=0
+r.EarlyZPass=0
+r.EarlyZPassMovable=0
+r.HZBOcclusion=0
+r.HalfResReflections=1
+r.OptimizeForUAVPerformance=1
+r.CompileShadersForDevelopment=0
+r.Atmosphere=0
+r.TiledDeferredShading=0
+r.TiledDeferredShading.MinimumCount=0
+r.ReflectionEnvironment=0
+r.DoTiledReflections=1
+FX.AllowGPUSorting=1
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
