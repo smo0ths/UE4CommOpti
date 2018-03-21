@@ -178,6 +178,7 @@ r.TiledDeferredShading.MinimumCount=0
 r.ReflectionEnvironment=0
 r.DoTiledReflections=1
 FX.AllowGPUSorting=1
+r.VirtualTexture=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
