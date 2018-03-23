@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/22
+Updated 3/23
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -148,7 +148,7 @@ r.SceneColorFormat=2
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.DetailMode=0
-r.MaterialQualityLevel=1
+r.MaterialQualityLevel=0
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
@@ -164,7 +164,7 @@ r.Color.Max=1.0	   ; > move more colors towards white, < darken the highlights  
 r.Color.Mid=0.475  ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
 r.Color.Min=0      ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
 t.MaxFPS=400
-r.OneFrameThreadLag=0 ; 0 lower fps for less input lag
+r.OneFrameThreadLag=1 ; 0 lower fps for less input lag
 r.VSync=0
 r.EarlyZPass=0
 r.EarlyZPassMovable=0
@@ -173,7 +173,7 @@ r.HalfResReflections=1
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.Atmosphere=0
-r.TiledDeferredShading=1
+r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.ReflectionEnvironment=0
 r.DoTiledReflections=1
