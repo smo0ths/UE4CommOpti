@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/23
+Updated 3/29
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -102,13 +102,13 @@ Global=all off
 
 [/Script/Engine.RendererSettings]
 r.LightFunctionQuality=1
-r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=2
-r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=2048
-r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.4
-r.Shadow.CSM.TransitionScale=1.0
+r.ShadowQuality=0
+r.Shadow.CSM.MaxCascades=1
+r.Shadow.MaxResolution=512
+r.Shadow.MaxCSMResolution=512
+r.Shadow.RadiusThreshold=0.06
+r.Shadow.DistanceScale=0.6
+r.Shadow.CSM.TransitionScale=0
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.VolumetricFog=0
@@ -116,7 +116,7 @@ r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
-r.SkeletalMeshLODBias=0
+r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 r.MotionBlurQuality=0
@@ -128,11 +128,11 @@ r.SceneColorFringe.Max=0.5
 r.EyeAdaptationQuality=0
 r.BloomQuality=0
 r.FastBlurThreshold=0
-r.Upscale.Quality=1
-r.LightShaftQuality=0
+r.Upscale.Quality=3
+r.LightShaftQuality=1
 r.LightShaftDownSampleFactor=0
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=2
+r.Tonemapper.Quality=5
 r.Tonemapper.GrainQuantization=0
 r.Streaming.MipBias=0
 r.MaxAnisotropy=0
@@ -144,19 +144,19 @@ r.TranslucencyLightingVolumeDim=1
 r.TranslucencyVolumeBlur=0
 r.TranslucencyLightingVolumeInnerDistance=0
 r.TranslucencyLightingVolumeOuterDistance=0
-r.SceneColorFormat=2
-r.RefractionQuality=0
-r.SSR.Quality=0
-r.DetailMode=0
-r.MaterialQualityLevel=0
+r.SceneColorFormat=4
+r.RefractionQuality=1
+r.SSR.Quality=1
+r.DetailMode=2
+r.MaterialQualityLevel=1
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.5
+r.EmitterSpawnRateScale=1.0
 r.MinTimeBetweenTicks=16
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=0
+r.ParticleLightQuality=2
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
@@ -173,12 +173,14 @@ r.HalfResReflections=1
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.Atmosphere=0
-r.TiledDeferredShading=0
+r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=0
-r.ReflectionEnvironment=0
+r.ReflectionEnvironment=1
 r.DoTiledReflections=1
 FX.AllowGPUSorting=1
 r.VirtualTexture=0
+ShowFlag.Translucency=0
+ShowFlag.SeparateTranslucency=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
