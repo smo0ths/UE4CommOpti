@@ -103,6 +103,9 @@ r.TranslucentLightingVolume=0
 [Core.Log]
 Global=all off
 
+[Audio]
+UseAudioThread=true
+
 [/Script/Engine.RendererSettings]
 r.LightFunctionQuality=1
 r.ShadowQuality=0
@@ -166,6 +169,7 @@ r.Color.Max=1.0	   ; > move more colors towards white, < darken the highlights  
 r.Color.Mid=0.5    ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
 r.Color.Min=0      ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
 t.MaxFPS=400
+FX.AllowGPUSorting=1
 r.OneFrameThreadLag=1 ; 0 lower fps for less input lag
 r.VSync=0
 r.EarlyZPass=0
@@ -180,7 +184,7 @@ r.TiledDeferredShading.MinimumCount=10
 r.ReflectionEnvironment=1
 r.DoTiledReflections=1
 r.VirtualTexture=0
-FX.AllowGPUSorting=1
+r.GBufferFormat=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
