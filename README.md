@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/29
+Updated 3/30
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -97,6 +97,9 @@ r.NoTiledReflections=1
 
 My config: 
 
+[SystemSettings]
+r.TranslucentLightingVolume=0
+
 [Core.Log]
 Global=all off
 
@@ -116,7 +119,7 @@ r.VolumetricFog.GridPixelSize=0
 r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
-r.SkeletalMeshLODBias=-1
+r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 r.MotionBlurQuality=0
@@ -128,7 +131,7 @@ r.SceneColorFringe.Max=0.5
 r.EyeAdaptationQuality=0
 r.BloomQuality=0
 r.FastBlurThreshold=0
-r.Upscale.Quality=3
+r.Upscale.Quality=0
 r.LightShaftQuality=1
 r.LightShaftDownSampleFactor=0
 r.Filter.SizeScale=1
@@ -137,16 +140,15 @@ r.Tonemapper.GrainQuantization=0
 r.Streaming.MipBias=0
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=5000
+r.Streaming.PoolSize=4000
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucentLightingVolume=0
-r.TranslucencyLightingVolumeDim=1
+r.TranslucencyLightingVolumeDim=64
 r.TranslucencyVolumeBlur=0
-r.TranslucencyLightingVolumeInnerDistance=0
-r.TranslucencyLightingVolumeOuterDistance=0
+r.TranslucencyLightingVolumeInnerDistance=1500
+r.TranslucencyLightingVolumeOuterDistance=5000
 r.SceneColorFormat=4
-r.RefractionQuality=1
-r.SSR.Quality=1
+r.RefractionQuality=0
+r.SSR.Quality=0
 r.DetailMode=2
 r.MaterialQualityLevel=1
 r.SSS.Scale=0
@@ -161,7 +163,7 @@ foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 r.Color.Max=1.0	   ; > move more colors towards white, < darken the highlights               Default: 1
-r.Color.Mid=0.475  ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
+r.Color.Mid=0.5    ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
 r.Color.Min=0      ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
 t.MaxFPS=400
 r.OneFrameThreadLag=1 ; 0 lower fps for less input lag
@@ -174,13 +176,11 @@ r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.Atmosphere=0
 r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=0
+r.TiledDeferredShading.MinimumCount=10
 r.ReflectionEnvironment=1
 r.DoTiledReflections=1
-FX.AllowGPUSorting=1
 r.VirtualTexture=0
-ShowFlag.Translucency=0
-ShowFlag.SeparateTranslucency=0
+FX.AllowGPUSorting=1
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
