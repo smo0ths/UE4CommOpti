@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 3/30
+Updated 4/4/2018
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -17,14 +17,15 @@ Copy/Paste:       %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini
 Max FPS: 
 
 [Core.Log]
-Global=off
+Global=all off
 
 [Audio]
 MaxChannels=64
+UseAudioThread=true
 
 [/Script/Engine.RendererSettings]
 r.SkeletalMeshLODBias=1
-r.ViewDistanceScale=0.8 ; Lowest hardcoded
+r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 r.LightFunctionQuality=0
 r.ShadowQuality=0
@@ -59,12 +60,10 @@ r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=1000
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=8
-r.TranslucencyLightingVolumeInnerDistance=8
-r.TranslucencyLightingVolumeOuterDistance=8
+r.TranslucencyLightingVolumeDim=1
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2 ; When using TXAA types you might see ghosting even with 4
+r.SceneColorFormat=2
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -75,20 +74,24 @@ r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
-foliage.DensityScale=0.6 ; Lowest hardcoded
-grass.DensityScale=0.6 ; Lowest hardcoded
+foliage.DensityScale=0.6
+grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 t.MaxFPS=400
-r.ReflectionEnvironment=0 ; When using TXAA types 0 causes black flickering 
+r.ReflectionEnvironment=0
 r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
-r.TiledReflectionEnvironmentMinimumCount=0
 r.StaticMeshLODDistanceScale=0.25
 r.VirtualTexture=0
 r.EarlyZPass=0
+r.EarlyZPassMovable=0
 r.HZBOcclusion=0
 r.TranslucentLightingVolume=0
-r.NoTiledReflections=1
+r.DoTiledReflections=0
+r.OptimizeForUAVPerformance=1
+r.CompileShadersForDevelopment=0
+r.Atmosphere=0
+r.MinTimeBetweenTicks=16
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
@@ -97,13 +100,11 @@ r.NoTiledReflections=1
 
 My config: 
 
-[SystemSettings]
-r.TranslucentLightingVolume=0
-
 [Core.Log]
 Global=all off
 
 [Audio]
+MaxChannels=96
 UseAudioThread=true
 
 [/Script/Engine.RendererSettings]
@@ -145,7 +146,8 @@ r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=4000
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=64
+r.TranslucentLightingVolume=1
+r.TranslucencyLightingVolumeDim=1
 r.TranslucencyVolumeBlur=0
 r.TranslucencyLightingVolumeInnerDistance=1500
 r.TranslucencyLightingVolumeOuterDistance=5000
@@ -182,9 +184,8 @@ r.Atmosphere=0
 r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=10
 r.ReflectionEnvironment=1
-r.DoTiledReflections=1
+r.DoTiledReflections=0
 r.VirtualTexture=0
-r.GBufferFormat=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
