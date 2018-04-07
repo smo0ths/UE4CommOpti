@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 4/4/2018
+Updated 4/7/2018
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -109,13 +109,13 @@ UseAudioThread=true
 
 [/Script/Engine.RendererSettings]
 r.LightFunctionQuality=1
-r.ShadowQuality=0
-r.Shadow.CSM.MaxCascades=1
+r.ShadowQuality=3
+r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=512
 r.Shadow.MaxCSMResolution=512
-r.Shadow.RadiusThreshold=0.06
-r.Shadow.DistanceScale=0.6
-r.Shadow.CSM.TransitionScale=0
+r.Shadow.RadiusThreshold=0.03
+r.Shadow.DistanceScale=0.4
+r.Shadow.CSM.TransitionScale=1.0
 r.DistanceFieldShadowing=0
 r.DistanceFieldAO=0
 r.VolumetricFog=0
@@ -130,9 +130,10 @@ r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=1000
 r.LensFlareQuality=0
-r.SceneColorFringeQuality=0
+r.SceneColorFringeQuality=1
 r.SceneColorFringe.Max=0.5
 r.EyeAdaptationQuality=0
+r.DefaultFeature.AutoExposure=0
 r.BloomQuality=0
 r.FastBlurThreshold=0
 r.Upscale.Quality=0
@@ -144,11 +145,11 @@ r.Tonemapper.GrainQuantization=0
 r.Streaming.MipBias=0
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=4000
+r.Streaming.PoolSize=6000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucentLightingVolume=1
-r.TranslucencyLightingVolumeDim=1
-r.TranslucencyVolumeBlur=0
+r.TranslucencyLightingVolumeDim=128
+r.TranslucencyVolumeBlur=1
 r.TranslucencyLightingVolumeInnerDistance=1500
 r.TranslucencyLightingVolumeOuterDistance=5000
 r.SceneColorFormat=4
@@ -171,7 +172,6 @@ r.Color.Max=1.0	   ; > move more colors towards white, < darken the highlights  
 r.Color.Mid=0.5    ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
 r.Color.Min=0      ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
 t.MaxFPS=400
-FX.AllowGPUSorting=1
 r.OneFrameThreadLag=1 ; 0 lower fps for less input lag
 r.VSync=0
 r.EarlyZPass=0
@@ -184,8 +184,9 @@ r.Atmosphere=0
 r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=10
 r.ReflectionEnvironment=1
-r.DoTiledReflections=0
+r.DoTiledReflections=1
 r.VirtualTexture=0
+FX.AllowGPUSorting=1
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
