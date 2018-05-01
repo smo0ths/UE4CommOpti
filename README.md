@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 4/7/2018
+Updated 5/1
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -107,12 +107,12 @@ Global=all off
 MaxChannels=96
 UseAudioThread=true
 
-[/Script/Engine.RendererSettings]
+[SystemSettings]
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=2
-r.Shadow.MaxResolution=512
-r.Shadow.MaxCSMResolution=512
+r.Shadow.MaxResolution=1024
+r.Shadow.MaxCSMResolution=1024
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
@@ -125,68 +125,63 @@ r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
+r.MipMapLODBias=1
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=1000
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=1
-r.SceneColorFringe.Max=0.5
+r.SceneColorFringe.Max=0.4
 r.EyeAdaptationQuality=0
 r.DefaultFeature.AutoExposure=0
 r.BloomQuality=0
 r.FastBlurThreshold=0
 r.Upscale.Quality=0
-r.LightShaftQuality=1
+r.LightShaftQuality=0
 r.LightShaftDownSampleFactor=0
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
+r.Tonemapper.Quality=2
 r.Tonemapper.GrainQuantization=0
 r.Streaming.MipBias=0
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=6000
+r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucentLightingVolume=1
-r.TranslucencyLightingVolumeDim=128
-r.TranslucencyVolumeBlur=1
+r.TranslucencyLightingVolumeDim=8
+r.TranslucencyVolumeBlur=0
 r.TranslucencyLightingVolumeInnerDistance=1500
 r.TranslucencyLightingVolumeOuterDistance=5000
-r.SceneColorFormat=4
+r.SceneColorFormat=2
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.DetailMode=2
+r.DetailMode=0
 r.MaterialQualityLevel=1
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=1.0
+r.EmitterSpawnRateScale=0
 r.MinTimeBetweenTicks=16
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=2
+r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
-r.Color.Max=1.0	   ; > move more colors towards white, < darken the highlights               Default: 1
-r.Color.Mid=0.5    ; > darken the mid tones,           < brighten the mid tones              Default: 0.5
-r.Color.Min=0      ; > more dark values become black,  < a gray scale is added to the darks  Default: 0
 t.MaxFPS=400
-r.OneFrameThreadLag=1 ; 0 lower fps for less input lag
+r.OneFrameThreadLag=0
+r.HZBOcclusion=1
 r.VSync=0
 r.EarlyZPass=0
 r.EarlyZPassMovable=0
-r.HZBOcclusion=0
 r.HalfResReflections=1
+r.TiledDeferredShading=0
+r.TiledDeferredShading.MinimumCount=80
+r.ReflectionEnvironment=0
+r.DoTiledReflections=0
+r.VirtualTexture=0
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
-r.Atmosphere=0
-r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=10
-r.ReflectionEnvironment=1
-r.DoTiledReflections=1
-r.VirtualTexture=0
-FX.AllowGPUSorting=1
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
