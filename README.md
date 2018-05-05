@@ -101,6 +101,7 @@ My config:
 
 [Core.Log]
 Global=all off
+LogEasyAntiCheatServer=all off
 
 [Audio]
 MaxChannels=96
@@ -138,8 +139,8 @@ r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=1
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
-r.Streaming.MipBias=0
-r.MaxAnisotropy=16
+r.Streaming.MipBias=1
+r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
@@ -159,13 +160,13 @@ r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=30
+grass.MaxUpdateFrequency=15
 t.MaxFPS=400
 r.OneFrameThreadLag=0
 r.VSync=0
 r.ReflectionEnvironment=0
 r.HalfResReflections=1
-r.DoTiledReflections=0
+r.DoTiledReflections=0    
 r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=80
 r.TranslucentLightingVolume=1
@@ -182,6 +183,7 @@ r.SceneColorFringe.Max=0.45
 r.LightShaftDownSampleFactor=0
 r.GBufferFormat=1
 ShowFlag.Tessellation=0
+r.SeparateTranslucency=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
