@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 5/1
+Updated 5/5
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -90,7 +90,6 @@ r.TranslucentLightingVolume=0
 r.DoTiledReflections=0
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
-r.Atmosphere=0
 r.MinTimeBetweenTicks=16
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -108,14 +107,14 @@ MaxChannels=96
 UseAudioThread=true
 
 [SystemSettings]
-r.SkeletalMeshLODBias=1
+r.SkeletalMeshLODBias=0
 r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=2
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=2048
+r.Shadow.MaxCSMResolution=1024
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
@@ -129,58 +128,60 @@ r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=1000
-r.LensFlareQuality=0
-r.SceneColorFringeQuality=0
-r.EyeAdaptationQuality=0
-r.BloomQuality=0
+r.LensFlareQuality=3
+r.SceneColorFringeQuality=1
+r.EyeAdaptationQuality=2
+r.BloomQuality=1
 r.FastBlurThreshold=0
-r.Upscale.Quality=0
-r.Tonemapper.GrainQuantization=0
-r.LightShaftQuality=0
+r.Upscale.Quality=3
+r.Tonemapper.GrainQuantization=1
+r.LightShaftQuality=1
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=2
-r.Streaming.MipBias=2
-r.MaxAnisotropy=0
+r.Tonemapper.Quality=5
+r.Streaming.MipBias=0
+r.MaxAnisotropy=16
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2
-r.DetailMode=0
+r.SceneColorFormat=3
+r.DetailMode=2
 r.TranslucencyVolumeBlur=0
-r.MaterialQualityLevel=0
+r.MaterialQualityLevel=1
 r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0
+r.EmitterSpawnRateScale=1.0
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=10
+grass.MaxUpdateFrequency=30
 t.MaxFPS=400
 r.OneFrameThreadLag=0
 r.VSync=0
 r.ReflectionEnvironment=0
-r.TiledDeferredShading=0
-r.TiledDeferredShading.MinimumCount=0
-r.StaticMeshLODDistanceScale=0.25
+r.HalfResReflections=1
+r.DoTiledReflections=0
+r.TiledDeferredShading=1
+r.TiledDeferredShading.MinimumCount=80
 r.TranslucentLightingVolume=1
 r.TranslucencyLightingVolumeInnerDistance=750
 r.TranslucencyLightingVolumeOuterDistance=2500
-r.DoTiledReflections=0
-r.Atmosphere=0
-r.MinTimeBetweenTicks=16
+r.MinTimeBetweenTicks=8
 r.VirtualTexture=0
 r.EarlyZPass=0
 r.EarlyZPassMovable=0
 r.HZBOcclusion=0
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
-r.HalfResReflections=1
+r.SceneColorFringe.Max=0.45
+r.LightShaftDownSampleFactor=0
+r.GBufferFormat=1
+ShowFlag.Tessellation=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
