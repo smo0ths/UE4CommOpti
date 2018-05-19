@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 5/6
+Updated 5/15
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -18,12 +18,12 @@ Max FPS:
 
 [Core.Log]
 Global=all off
+LogEasyAntiCheatServer=all off
 
 [Audio]
 MaxChannels=64
-UseAudioThread=true
 
-[/Script/Engine.RendererSettings]
+[SystemSettings]
 r.SkeletalMeshLODBias=1
 r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
@@ -60,7 +60,7 @@ r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=1000
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=1
+r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=2
@@ -112,10 +112,10 @@ r.ViewDistanceScale=0.8
 r.MipMapLODBias=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=2
+r.Shadow.CSM.MaxCascades=1
 r.Shadow.MaxResolution=1024
 r.Shadow.MaxCSMResolution=1024
-r.Shadow.RadiusThreshold=0.03
+r.Shadow.RadiusThreshold=0.04
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
 r.DistanceFieldShadowing=0
@@ -154,7 +154,7 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=1.0
+r.EmitterSpawnRateScale=0.5
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 foliage.DensityScale=0.6
@@ -183,6 +183,7 @@ r.LightShaftDownSampleFactor=0
 r.GBufferFormat=0
 ShowFlag.Tessellation=0
 r.SeparateTranslucency=0
+r.Tonemapper.Sharpen=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
