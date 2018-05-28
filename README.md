@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 5/15
+Updated 5/28
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -114,7 +114,7 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=1
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=1024
+r.Shadow.MaxCSMResolution=4096
 r.Shadow.RadiusThreshold=0.04
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
@@ -128,12 +128,12 @@ r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=1000
-r.LensFlareQuality=3
+r.LensFlareQuality=0
 r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=2
-r.BloomQuality=1
+r.EyeAdaptationQuality=0
+r.BloomQuality=0
 r.FastBlurThreshold=0
-r.Upscale.Quality=3
+r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=0
 r.Filter.SizeScale=1
@@ -167,7 +167,7 @@ r.ReflectionEnvironment=0
 r.HalfResReflections=1
 r.DoTiledReflections=0
 r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=80
+r.TiledDeferredShading.MinimumCount=1
 r.TranslucentLightingVolume=1
 r.TranslucencyLightingVolumeInnerDistance=750
 r.TranslucencyLightingVolumeOuterDistance=2500
