@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 5/28
+Updated 6/7/18
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -114,8 +114,8 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=1
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=4096
-r.Shadow.RadiusThreshold=0.04
+r.Shadow.MaxCSMResolution=1024
+r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
 r.DistanceFieldShadowing=0
@@ -126,6 +126,10 @@ r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
+r.AmbientOcclusionMipLevelFactor=1
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=3
+r.AmbientOcclusionRadiusScale=0.3
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=1000
 r.LensFlareQuality=0
@@ -137,14 +141,14 @@ r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=0
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
+r.Tonemapper.Quality=2
 r.Streaming.MipBias=1
 r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
+r.Streaming.PoolSize=4000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
-r.RefractionQuality=0
+r.RefractionQuality=1
 r.SSR.Quality=0
 r.SceneColorFormat=3
 r.DetailMode=0
@@ -154,12 +158,12 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.5
+r.EmitterSpawnRateScale=0.75
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=15
+grass.MaxUpdateFrequency=10
 t.MaxFPS=400
 r.OneFrameThreadLag=0
 r.VSync=0
