@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 6/7/18
+Updated 6/26/18
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -114,7 +114,7 @@ r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=1
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=1024
+r.Shadow.MaxCSMResolution=4096
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
@@ -126,12 +126,12 @@ r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
-r.AmbientOcclusionMipLevelFactor=1
-r.AmbientOcclusionMaxQuality=100
-r.AmbientOcclusionLevels=3
-r.AmbientOcclusionRadiusScale=0.3
+r.AmbientOcclusionMipLevelFactor=0
+r.AmbientOcclusionMaxQuality=0
+r.AmbientOcclusionLevels=0
+r.AmbientOcclusionRadiusScale=0
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=1000
+r.RenderTargetPoolMin=400
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=1
 r.EyeAdaptationQuality=0
@@ -148,7 +148,7 @@ r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=4000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
-r.RefractionQuality=1
+r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=3
 r.DetailMode=0
@@ -169,25 +169,28 @@ r.OneFrameThreadLag=0
 r.VSync=0
 r.ReflectionEnvironment=0
 r.HalfResReflections=1
-r.DoTiledReflections=0
+r.DoTiledReflections=1
+r.GBufferFormat=1
 r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=1
-r.TranslucentLightingVolume=1
+r.TiledDeferredShading.MinimumCount=80
+r.TranslucentLightingVolume=0
 r.TranslucencyLightingVolumeInnerDistance=750
 r.TranslucencyLightingVolumeOuterDistance=2500
 r.MinTimeBetweenTicks=16
 r.VirtualTexture=0
-r.EarlyZPass=0
+r.EarlyZPass=2
 r.EarlyZPassMovable=0
 r.HZBOcclusion=0
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.SceneColorFringe.Max=0.45
 r.LightShaftDownSampleFactor=0
-r.GBufferFormat=0
 ShowFlag.Tessellation=0
 r.SeparateTranslucency=0
 r.Tonemapper.Sharpen=0
+bSmoothFrameRate=False
+s.AsyncLoadingThreadEnabled=True
+bUseVSync=False
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
