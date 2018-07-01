@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 6/26/18
+Updated 7/1/18
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -107,14 +107,14 @@ LogEasyAntiCheatServer=all off
 MaxChannels=96
 
 [SystemSettings]
-r.SkeletalMeshLODBias=0
+r.SkeletalMeshLODBias=1
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
+r.MipMapLODBias=1
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=1
 r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=4096
+r.Shadow.MaxCSMResolution=2048
 r.Shadow.RadiusThreshold=0.03
 r.Shadow.DistanceScale=0.4
 r.Shadow.CSM.TransitionScale=1.0
@@ -126,10 +126,6 @@ r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
-r.AmbientOcclusionMipLevelFactor=0
-r.AmbientOcclusionMaxQuality=0
-r.AmbientOcclusionLevels=0
-r.AmbientOcclusionRadiusScale=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=400
 r.LensFlareQuality=0
@@ -158,9 +154,9 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.75
+r.EmitterSpawnRateScale=0.5
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=0
+r.ParticleLightQuality=2
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
@@ -173,12 +169,10 @@ r.DoTiledReflections=1
 r.GBufferFormat=1
 r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=80
-r.TranslucentLightingVolume=0
-r.TranslucencyLightingVolumeInnerDistance=750
-r.TranslucencyLightingVolumeOuterDistance=2500
+r.TranslucentLightingVolume=1
 r.MinTimeBetweenTicks=16
 r.VirtualTexture=0
-r.EarlyZPass=2
+r.EarlyZPass=0
 r.EarlyZPassMovable=0
 r.HZBOcclusion=0
 r.OptimizeForUAVPerformance=1
