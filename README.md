@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 7/1/18
+Updated 7/2/18
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -107,9 +107,9 @@ LogEasyAntiCheatServer=all off
 MaxChannels=96
 
 [SystemSettings]
-r.SkeletalMeshLODBias=1
+r.SkeletalMeshLODBias=-1
 r.ViewDistanceScale=0.8
-r.MipMapLODBias=1
+r.MipMapLODBias=0
 r.LightFunctionQuality=1
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=1
@@ -156,7 +156,7 @@ r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0.5
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=2
+r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
