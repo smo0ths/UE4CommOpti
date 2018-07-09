@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 7/8/18
+Updated 7/8/18 x2
 
 *Added post scriptum smooth ultra/fps config scroll down!
 
@@ -293,7 +293,15 @@ t.MaxFPS=400
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
 
-PS smooth ultra./fps config: 
+post scriptum smooth ultra/fps config: 
+
+sg.ViewDistanceQuality=4
+sg.AntiAliasingQuality=1
+sg.ShadowQuality=4
+sg.PostProcessQuality=4
+sg.TextureQuality=4
+sg.EffectsQuality=4
+sg.FoliageQuality=4
 
 [Core.Log]
 Global=all off
@@ -334,7 +342,7 @@ r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=1
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
-r.Streaming.MipBias=1
+r.Streaming.MipBias=0
 r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=5000
@@ -357,12 +365,12 @@ foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 t.MaxFPS=400
-r.OneFrameThreadLag=0
+r.OneFrameThreadLag=1
 r.VSync=0
 r.ReflectionEnvironment=1
 r.HalfResReflections=1
 r.DoTiledReflections=0
-r.GBufferFormat=1
+r.GBufferFormat=0
 r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=80
 r.TranslucentLightingVolume=1
@@ -383,9 +391,7 @@ s.AsyncLoadingThreadEnabled=True
 bUseVSync=False
 r.DefaultFeature.AmbientOcclusionStaticFraction=False
 r.AmbientOcclusionMipLevelFactor=0.4
-r.AmbientOcclusionRadiusScale=0.5
-
-
+r.AmbientOcclusionRadiusScale=0.4
 
 
 
