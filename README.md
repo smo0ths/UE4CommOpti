@@ -1,6 +1,6 @@
 # SquadOpti
 
-Updated 7/10/2018
+Updated 7/10/2018 
 
 *Post Scriptum works with this aswell
 
@@ -105,101 +105,7 @@ r.MinTimeBetweenTicks=16
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
 
-My squad high/fps config paste this: 
-
-[Core.Log]
-Global=all off
-LogEasyAntiCheatServer=all off
-
-[Audio]
-MaxChannels=96
-
-[SystemSettings]
-r.SkeletalMeshLODBias=-1
-r.ViewDistanceScale=0.8
-r.MipMapLODBias=0
-r.LightFunctionQuality=1
-r.ShadowQuality=3
-r.Shadow.CSM.MaxCascades=1
-r.Shadow.MaxResolution=1024
-r.Shadow.MaxCSMResolution=2048
-r.Shadow.RadiusThreshold=0.03
-r.Shadow.DistanceScale=0.4
-r.Shadow.CSM.TransitionScale=1.0
-r.DistanceFieldShadowing=0
-r.DistanceFieldAO=0
-r.VolumetricFog=0
-r.VolumetricFog.GridPixelSize=0
-r.VolumetricFog.GridSizeZ=0
-r.AllowLandscapeShadows=0
-r.LightMaxDrawDistanceScale=0
-r.MotionBlurQuality=0
-r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=400
-r.LensFlareQuality=0
-r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=0
-r.BloomQuality=0
-r.FastBlurThreshold=0
-r.Upscale.Quality=0
-r.Tonemapper.GrainQuantization=1
-r.LightShaftQuality=0
-r.Filter.SizeScale=1
-r.Tonemapper.Quality=2
-r.Streaming.MipBias=1
-r.MaxAnisotropy=8
-r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=4000
-r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=8
-r.RefractionQuality=0
-r.SSR.Quality=0
-r.SceneColorFormat=3
-r.DetailMode=0
-r.TranslucencyVolumeBlur=0
-r.MaterialQualityLevel=1
-r.SSS.Scale=0
-r.SSS.SampleSet=0
-r.SSS.Quality=0
-r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.5
-r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=0
-foliage.DensityScale=0.6
-grass.DensityScale=0.6
-grass.MaxUpdateFrequency=10
-t.MaxFPS=400
-r.OneFrameThreadLag=0
-r.VSync=0
-r.ReflectionEnvironment=0
-r.HalfResReflections=1
-r.DoTiledReflections=1
-r.GBufferFormat=1
-r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=80
-r.TranslucentLightingVolume=1
-r.MinTimeBetweenTicks=16
-r.VirtualTexture=0
-r.EarlyZPass=0
-r.EarlyZPassMovable=0
-r.HZBOcclusion=0
-r.OptimizeForUAVPerformance=1
-r.CompileShadersForDevelopment=0
-r.SceneColorFringe.Max=0.45
-r.LightShaftDownSampleFactor=0
-ShowFlag.Tessellation=0
-r.SeparateTranslucency=0
-r.Tonemapper.Sharpen=0
-bSmoothFrameRate=False
-s.AsyncLoadingThreadEnabled=True
-bUseVSync=False
-
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
-
-my post scriptum high/fps config paste this: 
+My squad and post scriptum high/fps config paste this: 
 
 [Core.Log]
 Global=all off
