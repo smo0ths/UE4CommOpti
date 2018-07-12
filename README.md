@@ -1,13 +1,11 @@
-# SquadOpti
-
-Updated 7/10/2018 
+Updated 7/12/2018 
 
 *Post Scriptum works with this aswell
 
 Always testing stuff contact me twitch.tv/smoothschannel or discord
 
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
+r.OneFrameThreadLag=0 ; lowers input delay test yourself default is 1 
+
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
 
@@ -96,9 +94,9 @@ r.EarlyZPassMovable=0
 r.HZBOcclusion=0
 r.TranslucentLightingVolume=0
 r.DoTiledReflections=0
-r.OptimizeForUAVPerformance=1
+r.OptimizeForUAVPerformance=1 ; set to 0 for GPU memory savings test yourself 
 r.CompileShadersForDevelopment=0
-r.MinTimeBetweenTicks=16
+r.MinTimeBetweenTicks=16         
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
@@ -112,7 +110,7 @@ Global=all off
 LogEasyAntiCheatServer=all off
 
 [Audio]
-MaxChannels=96
+MaxChannels=64
 
 [SystemSettings]
 r.SkeletalMeshLODBias=0
@@ -154,7 +152,7 @@ r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=0
 r.SSR.Quality=1
-r.SceneColorFormat=4
+r.SceneColorFormat=2
 r.DetailMode=2
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
@@ -169,11 +167,10 @@ foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 t.MaxFPS=400
-r.OneFrameThreadLag=1
+r.OneFrameThreadLag=0
 r.VSync=0
-r.ReflectionEnvironment=1
+r.ReflectionEnvironment=0
 r.HalfResReflections=1
-r.DoTiledReflections=0
 r.GBufferFormat=0
 r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=80
@@ -183,10 +180,10 @@ r.VirtualTexture=0
 r.EarlyZPass=0
 r.EarlyZPassMovable=0
 r.HZBOcclusion=0
-r.OptimizeForUAVPerformance=1
+r.OptimizeForUAVPerformance=0
 r.CompileShadersForDevelopment=0
 r.SceneColorFringe.Max=0.45
-r.LightShaftDownSampleFactor=0
+r.LightShaftDownSampleFactor=4
 ShowFlag.Tessellation=0
 r.SeparateTranslucency=0
 r.Tonemapper.Sharpen=0
