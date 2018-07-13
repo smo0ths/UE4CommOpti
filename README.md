@@ -1,4 +1,4 @@
-Updated 7/12/2018 
+Updated 7/13/2018 
 
 *Post Scriptum works with this aswell
 
@@ -50,7 +50,7 @@ r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=300
+r.RenderTargetPoolMin=300 ; lowest is 200 before no deallocation test yourself
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
@@ -133,7 +133,7 @@ r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=400
+r.RenderTargetPoolMin=200
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
@@ -147,7 +147,7 @@ r.Tonemapper.Quality=5
 r.Streaming.MipBias=0
 r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=5000
+r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=0
@@ -180,7 +180,7 @@ r.VirtualTexture=0
 r.EarlyZPass=0
 r.EarlyZPassMovable=0
 r.HZBOcclusion=0
-r.OptimizeForUAVPerformance=0
+r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.SceneColorFringe.Max=0.45
 r.LightShaftDownSampleFactor=4
@@ -190,9 +190,11 @@ r.Tonemapper.Sharpen=0
 r.DefaultFeature.AmbientOcclusionStaticFraction=False
 r.AmbientOcclusionMipLevelFactor=0.4
 r.AmbientOcclusionRadiusScale=0.4
+r.TextureStreaming=1
 bSmoothFrameRate=False
 bUseVSync=False
 s.AsyncLoadingThreadEnabled=True
+r.Streaming.HLODStrategy=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
