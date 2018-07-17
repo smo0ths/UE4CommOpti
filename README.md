@@ -1,4 +1,4 @@
-Updated 7/13/2018 
+Updated 7/17/2018 
 
 *Post Scriptum works with this aswell
 
@@ -133,7 +133,7 @@ r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=200
+r.RenderTargetPoolMin=500
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
@@ -151,7 +151,7 @@ r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=0
-r.SSR.Quality=1
+r.SSR.Quality=0
 r.SceneColorFormat=2
 r.DetailMode=2
 r.TranslucencyVolumeBlur=0
@@ -184,7 +184,6 @@ r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.SceneColorFringe.Max=0.45
 r.LightShaftDownSampleFactor=4
-ShowFlag.Tessellation=0
 r.SeparateTranslucency=0
 r.Tonemapper.Sharpen=0
 r.DefaultFeature.AmbientOcclusionStaticFraction=False
