@@ -1,4 +1,4 @@
-Updated 7/17/2018 
+Updated 7/19/2018 
 
 *Post Scriptum works with this aswell
 
@@ -6,19 +6,13 @@ Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 r.OneFrameThreadLag=0 ; lowers input delay test yourself default is 1 
 
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
-
 Open Engine.ini and copy paste configs under code:
 
-     Press:       Windows key + R       
-Copy/Paste:       %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
-Copy/Paste:       %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
+Press: Windows key + R       
+Copy/Paste: %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
+Copy/Paste: %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
 
 \\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
 
 Max FPS paste this: 
 
@@ -65,11 +59,11 @@ r.Streaming.MipBias=2
 r.MaxAnisotropy=0
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=1000
-r.Streaming.MaxEffectiveScreenSize=0
+r.Streaming.MaxEffectiveScreenSize=0 ; 1 gains fps but some textures are gone
 r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2
+r.SceneColorFormat=2 ; 4 for taa/aa no flicker
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -84,7 +78,7 @@ foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 t.MaxFPS=400
-r.ReflectionEnvironment=0
+r.ReflectionEnvironment=0 ; 1 for txaa/aa no flicker
 r.TiledDeferredShading=0
 r.TiledDeferredShading.MinimumCount=0
 r.StaticMeshLODDistanceScale=0.25
@@ -132,27 +126,31 @@ r.VolumetricFog.GridSizeZ=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.MotionBlurQuality=0
-r.DepthOfFieldQuality=0
-r.RenderTargetPoolMin=500
+r.AmbientOcclusionMipLevelFactor=0.5
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=3
+r.AmbientOcclusionRadiusScale=0.5
+r.DepthOfFieldQuality=1
+r.RenderTargetPoolMin=400
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=0
 r.FastBlurThreshold=0
-r.Upscale.Quality=0
+r.Upscale.Quality=3
 r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=1
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
+r.Tonemapper.Quality=2
 r.Streaming.MipBias=0
-r.MaxAnisotropy=8
+r.MaxAnisotropy=16
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
-r.RefractionQuality=0
-r.SSR.Quality=0
-r.SceneColorFormat=2
+r.RefractionQuality=1
+r.SSR.Quality=1
+r.SceneColorFormat=4
 r.DetailMode=2
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
@@ -160,40 +158,40 @@ r.SSS.Scale=0
 r.SSS.SampleSet=0
 r.SSS.Quality=0
 r.SSS.HalfRes=1
-r.EmitterSpawnRateScale=0.5
+r.EmitterSpawnRateScale=1.0
 r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=2
+r.ParticleLightQuality=1
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
+bSmoothFrameRate=0
+s.AsyncLoadingThreadEnabled=1
 t.MaxFPS=400
-r.OneFrameThreadLag=0
 r.VSync=0
-r.ReflectionEnvironment=0
+r.ReflectionEnvironment=1
 r.HalfResReflections=1
-r.GBufferFormat=0
 r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=80
+r.TiledDeferredShading.MinimumCount=0
 r.TranslucentLightingVolume=1
 r.MinTimeBetweenTicks=16
-r.VirtualTexture=0
-r.EarlyZPass=0
-r.EarlyZPassMovable=0
+r.GBufferFormat=3
+r.VirtualTexture=1
+r.VirtualTextureReducedMemory=1
+r.OneFrameThreadLag=0
+r.EarlyZPass=2
+r.EarlyZPassOnlyMaterialMasking=1
 r.HZBOcclusion=0
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.SceneColorFringe.Max=0.45
 r.LightShaftDownSampleFactor=4
-r.SeparateTranslucency=0
+r.SeparateTranslucency=1
 r.Tonemapper.Sharpen=0
-r.DefaultFeature.AmbientOcclusionStaticFraction=False
-r.AmbientOcclusionMipLevelFactor=0.4
-r.AmbientOcclusionRadiusScale=0.4
 r.TextureStreaming=1
-bSmoothFrameRate=False
-bUseVSync=False
-s.AsyncLoadingThreadEnabled=True
 r.Streaming.HLODStrategy=0
+r.SSR.MaxRoughness=0.1
+r.DefaultFeature.AmbientOcclusionStaticFraction=0
+r.AmbientOcclusion.FadeRadiusScale=0.5
 
 \\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////
