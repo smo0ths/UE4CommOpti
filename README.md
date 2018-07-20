@@ -1,4 +1,4 @@
-Updated 7/19/2018 x2
+Updated 7/20/2018
 
 *Post Scriptum works with this aswell
 
@@ -92,10 +92,9 @@ r.OptimizeForUAVPerformance=1 ; set to 0 for GPU memory savings test yourself
 r.CompileShadersForDevelopment=0
 r.MinTimeBetweenTicks=16         
 
+
 \\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
+
 
 My squad and post scriptum high/fps config paste this: 
 
@@ -104,7 +103,7 @@ Global=all off
 LogEasyAntiCheatServer=all off
 
 [Audio]
-MaxChannels=64
+MaxChannels=128
 
 [SystemSettings]
 r.SkeletalMeshLODBias=0
@@ -193,10 +192,9 @@ r.SSR.MaxRoughness=0.1
 r.DefaultFeature.AmbientOcclusionStaticFraction=0
 r.AmbientOcclusion.FadeRadiusScale=0.5
 
+
 \\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
+
 
 For NVIDIA users in control panel change:
 
@@ -208,10 +206,9 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
+
 \\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////
+
 
 Max/Ultra raw settings for reference: 
 
