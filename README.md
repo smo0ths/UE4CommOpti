@@ -1,4 +1,4 @@
-Updated 7/19/2018 
+Updated 7/19/2018 x2
 
 *Post Scriptum works with this aswell
 
@@ -130,7 +130,7 @@ r.AmbientOcclusionMipLevelFactor=0.5
 r.AmbientOcclusionMaxQuality=100
 r.AmbientOcclusionLevels=3
 r.AmbientOcclusionRadiusScale=0.5
-r.DepthOfFieldQuality=1
+r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=400
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
@@ -149,8 +149,8 @@ r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=1
-r.SSR.Quality=1
-r.SceneColorFormat=4
+r.SSR.Quality=0
+r.SceneColorFormat=3
 r.DetailMode=2
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
@@ -180,7 +180,7 @@ r.VirtualTextureReducedMemory=1
 r.OneFrameThreadLag=0
 r.EarlyZPass=2
 r.EarlyZPassOnlyMaterialMasking=1
-r.HZBOcclusion=0
+r.HZBOcclusion=1
 r.OptimizeForUAVPerformance=1
 r.CompileShadersForDevelopment=0
 r.SceneColorFringe.Max=0.45
