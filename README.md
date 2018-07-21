@@ -1,4 +1,4 @@
-Updated 7/20/2018
+Updated 7/21/2018
 
 *Post Scriptum works with this aswell
 
@@ -63,7 +63,7 @@ r.Streaming.MaxEffectiveScreenSize=0 ; 1 gains fps but some textures are gone
 r.TranslucencyLightingVolumeDim=8
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2 
+r.SceneColorFormat=2
 r.DetailMode=0
 r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
@@ -136,7 +136,7 @@ r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=0
 r.FastBlurThreshold=0
-r.Upscale.Quality=3
+r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=1
 r.Filter.SizeScale=1
@@ -147,7 +147,7 @@ r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8
-r.RefractionQuality=1
+r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=3
 r.DetailMode=2
@@ -167,7 +167,7 @@ bSmoothFrameRate=0
 s.AsyncLoadingThreadEnabled=1
 t.MaxFPS=400
 r.VSync=0
-r.ReflectionEnvironment=1
+r.ReflectionEnvironment=0
 r.HalfResReflections=1
 r.TiledDeferredShading=1
 r.TiledDeferredShading.MinimumCount=0
@@ -177,10 +177,10 @@ r.GBufferFormat=3
 r.VirtualTexture=1
 r.VirtualTextureReducedMemory=1
 r.OneFrameThreadLag=0
-r.EarlyZPass=2
-r.EarlyZPassOnlyMaterialMasking=1
-r.HZBOcclusion=1
-r.OptimizeForUAVPerformance=1
+r.EarlyZPass=0
+r.EarlyZPassOnlyMaterialMasking=0
+r.HZBOcclusion=0
+r.OptimizeForUAVPerformance=0
 r.CompileShadersForDevelopment=0
 r.SceneColorFringe.Max=0.45
 r.LightShaftDownSampleFactor=4
