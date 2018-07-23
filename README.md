@@ -192,9 +192,9 @@ r.TiledDeferredShading.MinimumCount=10
 r.DoTiledReflections=1                                 ; test
 r.ReflectionCaptureResolution=128
 r.ReflectionEnvironment=1
-r.ReflectionEnvironmentBeginMixingRoughness=0          ; def 0.1
-r.ReflectionEnvironmentEndMixingRoughness=1            ; def 0.3
-r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1   ; def 1
+r.ReflectionEnvironmentBeginMixingRoughness=0.1        ; def 0.1
+r.ReflectionEnvironmentEndMixingRoughness=0.3          ; def 0.3
+r.ReflectionEnvironmentLightmapMixBasedOnRoughness=0   ; def 1
 r.ReflectionEnvironmentLightmapMixing=1                ; def idk
 r.ReflectionEnvironmentLightmapMixLargestWeight=1000   ; def 1000
 
