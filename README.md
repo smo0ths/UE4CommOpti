@@ -1,4 +1,4 @@
-Updated 7/23/2018
+Updated 7/24/2018
 
 *Post Scriptum works with this aswell
 
@@ -107,6 +107,7 @@ LogEasyAntiCheatServer=all off
 
 [Audio]
 MaxChannels=96
+UseAudioThread=true
 
 [SystemSettings]
 t.MaxFPS=400
@@ -155,8 +156,10 @@ r.DistanceFieldShadowing=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.VolumetricFog=0
-r.TranslucentLightingVolume=1
+r.TranslucentLightingVolume=0
 r.TranslucencyLightingVolumeDim=8
+r.TranslucencyLightingVolumeInnerDistance=1500
+r.TranslucencyLightingVolumeOuterDistance=5000
 r.TranslucencyVolumeBlur=0
 r.Upscale.Quality=0
 r.MotionBlurQuality=0
@@ -173,11 +176,11 @@ r.Tonemapper.GrainQuantization=1
 r.Tonemapper.Sharpen=0
 r.LightShaftQuality=1
 r.LightShaftDownSampleFactor=4
-r.Filter.SizeScale=1
+r.Filter.SizeScale=0
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SSR.MaxRoughness=0.1
-r.DetailMode=2
+r.DetailMode=0
 r.MaterialQualityLevel=1
 r.SubsurfaceScattering=0
 r.ParticleLightQuality=1
@@ -188,14 +191,14 @@ foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 r.TiledDeferredShading=1
-r.TiledDeferredShading.MinimumCount=10
+r.TiledDeferredShading.MinimumCount=0
 r.DoTiledReflections=1                                 ; test
 r.ReflectionCaptureResolution=128
 r.ReflectionEnvironment=1
 r.ReflectionEnvironmentBeginMixingRoughness=0.1        ; def 0.1
 r.ReflectionEnvironmentEndMixingRoughness=0.3          ; def 0.3
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=0   ; def 1
-r.ReflectionEnvironmentLightmapMixing=1                ; def idk
+r.ReflectionEnvironmentLightmapMixing=0                ; def idk
 r.ReflectionEnvironmentLightmapMixLargestWeight=1000   ; def 1000
 
 
