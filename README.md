@@ -1,4 +1,4 @@
-Updated 8/5/2018
+Updated 8/5/2018 x2
 
 *Post Scriptum works with this aswell
 
@@ -114,7 +114,7 @@ bUseFixedFrameRate=0
 t.MaxFPS=400
 r.VSync=0
 r.OneFrameThreadLag=0
-r.GBufferFormat=0 
+r.GBufferFormat=0
 r.DefaultFeature.AmbientOcclusionStaticFraction=0
 r.EarlyZPass=0
 r.EarlyZPassMovable=0
@@ -126,20 +126,20 @@ Compat.UseDXT5NormalMaps=0
 r.CompileShadersForDevelopment=0
 r.RHICmdBypass=0
 r.SeparateTranslucency=0
-r.TiledDeferredShading=1 
-r.TiledDeferredShading.MinimumCount=0 
-r.DoTiledReflections=0 
-r.ReflectionEnvironment=0 
+r.TiledDeferredShading=0
+r.TiledDeferredShading.MinimumCount=0
+r.DoTiledReflections=0
+r.ReflectionEnvironment=0
 r.ReflectionCaptureResolution=128
 r.ReflectionEnvironmentBeginMixingRoughness=0.1
 r.ReflectionEnvironmentEndMixingRoughness=0.3
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1
-r.ReflectionEnvironmentLightmapMixing=1 
+r.ReflectionEnvironmentLightmapMixing=1
 r.ReflectionEnvironmentLightmapMixLargestWeight=1000
-r.TranslucentLightingVolume=1 
+r.TranslucentLightingVolume=0
 r.TranslucencyVolumeBlur=1
 r.TranslucencyLightingVolumeDim=8
-r.ParticleLightQuality=1 
+r.ParticleLightQuality=0
 r.EmitterSpawnRateScale=0.1
 r.ParticleMinTimeBetweenTicks=16
 r.MinTimeBetweenTicks=16
@@ -153,7 +153,7 @@ r.Streaming.MipBias=2
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=1000
 r.Streaming.MaxEffectiveScreenSize=0
-r.LightFunctionQuality=1 
+r.LightFunctionQuality=1
 r.AllowStaticLighting=0
 r.ShadowQuality=3
 r.Shadow.CSM.MaxCascades=2
@@ -190,7 +190,7 @@ r.MaterialQualityLevel=0
 r.SubsurfaceScattering=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
-grass.MaxUpdateFrequency=30
+grass.MaxUpdateFrequency=10
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
