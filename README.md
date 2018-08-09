@@ -1,4 +1,4 @@
-Updated 8/9/2018 x2
+Updated 8/9/2018 x3
 
 *Insurgency sandstorm config added
 
@@ -198,20 +198,6 @@ grass.MaxUpdateFrequency=10
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-For NVIDIA users in control panel change:
-
-Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
-Multi/mixed gpu accel: Single display performance mode
-Power management mode: Prefer max performance
-Preferred refresh rate: Highest available
-Texture filtering anisotropic sample optimization: On
-Texture filtering quality: High performance
-Vertical sync: Off
-
-
-\\\\\\\\\\\\\\\\\\\\\\\
-
-
 insurgency sandstorm config:
 
 [SystemSettings]
@@ -232,7 +218,7 @@ r.TranslucentLightingVolume=0
 r.TranslucencyVolumeBlur=0
 r.TranslucencyLightingVolumeDim=8
 r.EmitterSpawnRateScale=0.5
-r.LightMaxDrawDistanceScale=0
+r.LightMaxDrawDistanceScale=1
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 r.MinTimeBetweenTicks=16
@@ -270,8 +256,7 @@ r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=0
 r.Upscale.Quality=0
-r.LightShaftQuality=1
-r.LightShaftDownSampleFactor=4
+r.LightShaftQuality=0
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.SceneColorFormat=3
@@ -280,3 +265,17 @@ r.MaterialQualityLevel=1
 r.SubsurfaceScattering=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
+
+
+\\\\\\\\\\\\\\\\\\\\\\\
+
+
+For NVIDIA users in control panel change:
+
+Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
+Multi/mixed gpu accel: Single display performance mode
+Power management mode: Prefer max performance
+Preferred refresh rate: Highest available
+Texture filtering anisotropic sample optimization: On
+Texture filtering quality: High performance
+Vertical sync: Off
