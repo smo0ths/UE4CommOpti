@@ -1,7 +1,7 @@
-Updated 8/10/2018 x2
+Updated 8/11/2018
 
 
-*Insurgency sandstorm config added
+*Insurgency sandstorm configs added
 
 *Post Scriptum works with this aswell
 
@@ -17,6 +17,9 @@ Copy/Paste: %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste: %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
 
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
@@ -100,6 +103,9 @@ grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
 
 
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
@@ -198,93 +204,280 @@ grass.MaxUpdateFrequency=10
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 
 
 Sandstorm disable intro vids add .mp4.bak: 
 Steam\steamapps\common\sandstorm\Insurgency\Content\Movies
 
+Make sure you are on fullscreen i have to switch back from fullscreen boarderless to fullscreen mode to get it to work right*
 
-insurgency sandstorm config paste this:
+
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+
+
+my IS config: 
 
 [SystemSettings]
-bSmoothFrameRate=0
-bUseFixedFrameRate=0
-r.FullScreenMode=0
-t.MaxFPS=400
-r.VSync=0
-r.OneFrameThreadLag=1
-r.SceneColorFormat=4 ;
-r.GBufferFormat=0
-r.DoTiledReflections=0
-r.ReflectionEnvironment=0
-r.ReflectionCaptureResolution=128
-r.ReflectionEnvironmentBeginMixingRoughness=0.1
-r.ReflectionEnvironmentEndMixingRoughness=0.3
-r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1
-r.ReflectionEnvironmentLightmapMixing=1
-r.ReflectionEnvironmentLightmapMixLargestWeight=1000
-r.TiledDeferredShading=0
-r.TiledDeferredShading.MinimumCount=80
-r.TranslucentLightingVolume=1 ;
-r.TranslucencyVolumeBlur=0
-r.TranslucencyLightingVolumeDim=8
-r.EmitterSpawnRateScale=0.5 ;
+r.PostProcessAAQuality=1                              ; PPAA 0=off 1/2=fxaa 3/4/5/6=taa
+r.SkeletalMeshLODBias=0
+r.ViewDistanceScale=0.4                               ; from 1.0
+r.LightFunctionQuality=1
+r.ShadowQuality=3                                     ; from 5
+r.Shadow.CSM.MaxCascades=2                            ; from 10
+r.Shadow.MaxResolution=1024                           ; from 4096
+r.Shadow.MaxCSMResolution=2048                        ; from 4096
+r.Shadow.RadiusThreshold=0.03                         ; from 0
+r.Shadow.DistanceScale=0.6                            ; from 1.0
+r.Shadow.CSM.TransitionScale=1.0
+r.Shadow.PreShadowResolutionFactor=0.5                ; from 1.0
+r.DistanceFieldShadowing=0                            ; from 1
+r.DistanceFieldAO=0                                   ; from 1
+r.VolumetricFog=1
+r.VolumetricFog.GridPixelSize=4
+r.VolumetricFog.GridSizeZ=128
+r.VolumetricFog.HistoryMissSupersampleCount=16
 r.LightMaxDrawDistanceScale=1
-r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=0
-r.MinTimeBetweenTicks=16
-r.PostProcessAAQuality=1
-r.CustomDepth=3
-r.CustomDepth.Order=0
-r.ViewDistanceScale=0.4 ;
-r.SkeletalMeshLODBias=0 ;
-r.RenderTargetViewportSize=1.0
-r.MaxAnisotropy=8
-r.Streaming.MipBias=2 ;
+r.CapsuleShadows=1
+r.MotionBlurQuality=0                                 ; from 4
+r.AmbientOcclusionMipLevelFactor=0.4
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=0                            ; from -1
+r.AmbientOcclusionRadiusScale=1.0
+r.DepthOfFieldQuality=4
+r.RenderTargetPoolMin=1000
+r.LensFlareQuality=3
+r.SceneColorFringeQuality=1
+r.EyeAdaptationQuality=2
+r.BloomQuality=5
+r.FastBlurThreshold=100
+r.Upscale.Quality=3
+r.Tonemapper.GrainQuantization=1
+r.LightShaftQuality=1
+r.Filter.SizeScale=1
+r.Tonemapper.Quality=5
+r.Streaming.MipBias=0
+r.MaxAnisotropy=16                                    ; to 16
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
-r.HLOD.DistanceScale=0.6 ;
-r.RenderTargetPoolMin=1000
-r.LightFunctionQuality=1 ;
-r.AllowStaticLighting=1
-r.ShadowQuality=0
-r.Shadow.CSM.MaxCascades=1
-r.Shadow.MaxResolution=512
-r.Shadow.MaxCSMResolution=512
-r.Shadow.RadiusThreshold=0.06
-r.Shadow.DistanceScale=0.6
-r.Shadow.CSM.TransitionScale=0
-r.Shadow.PreShadowResolutionFactor=0.5
+r.TranslucencyLightingVolumeDim=64
+r.RefractionQuality=2
+r.SSR.Quality=3                                       ; from 4
+r.SceneColorFormat=4
+r.DetailMode=2
+r.TranslucencyVolumeBlur=1
+r.MaterialQualityLevel=1
+r.SSS.Scale=1
+r.SSS.SampleSet=2
+r.SSS.Quality=1
+r.SSS.HalfRes=0
+r.EmitterSpawnRateScale=1.0
+r.ParticleLightQuality=2
+foliage.DensityScale=1.0
+grass.DensityScale=1.0
+t.MaxFPS=400
+r.FoliageInteractionQuality=0                         ; from 1
+r.HLOD.DistanceScale=0.6                              ; from 1.0
+r.RenderTargetViewportSize=1.0
+r.HZBOcclusion=0                                      ; hardware occlusion queries
 r.Shadow.ForceSingleSampleShadowingFromStationary=0
-r.CapsuleShadows=0
-r.DistanceFieldShadowing=0
+r.AllowStaticLighting=1
 r.AllowLandscapeShadows=0
-r.DistanceFieldAO=0
-r.DefaultFeature.AmbientOcclusionStaticFraction=0
-r.VolumetricFog=0
-r.Tonemapper.Quality=0
-r.Tonemapper.GrainQuantization=0 ;
-r.Tonemapper.Sharpen=0.5 ;
-r.Filter.SizeScale=0
-r.MotionBlurQuality=0
-r.DepthOfFieldQuality=0
-r.LensFlareQuality=0
-r.SceneColorFringeQuality=0
-r.EyeAdaptationQuality=0
-r.BloomQuality=0
-r.Upscale.Quality=0
-r.LightShaftQuality=0
-r.RefractionQuality=0
-r.SSR.Quality=0
-r.DetailMode=0
-r.MaterialQualityLevel=1 ;
+bSmoothFrameRate=0
+bUseFixedFrameRate=0
+r.FullScreenMode=0
+r.VSync=0
+r.GBufferFormat=0
+r.CustomDepth=3
+r.CustomDepth.Order=0
+r.OneFrameThreadLag=0
+r.TranslucentLightingVolume=1
+r.ParticleMinTimeBetweenTicks=16
+r.MinTimeBetweenTicks=16
 r.SubsurfaceScattering=0
-r.FoliageInteractionQuality=0
-foliage.DensityScale=0 ;
-grass.DensityScale=0 ;
+r.ParticleLODBias=0                                   ; from 0
+r.DefaultFeature.AmbientOcclusionStaticFraction=0     ; from 1
+r.CompileShadersForDevelopment=0
+r.RHICmdBypass=0
+r.SeparateTranslucency=0
 
 
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+
+
+IS Max FPS:
+
+[SystemSettings]
+r.PostProcessAAQuality=0                              ; PPAA 0=off 1/2=fxaa 3/4/5/6=taa
+r.SkeletalMeshLODBias=2                               ; from 0 
+r.ViewDistanceScale=0.4                               ; from 1.0
+r.LightFunctionQuality=0                              ; from 1
+r.ShadowQuality=0                                     ; from 5
+r.Shadow.CSM.MaxCascades=2                            ; from 10
+r.Shadow.MaxResolution=1024                           ; from 4096
+r.Shadow.MaxCSMResolution=2048                        ; from 4096
+r.Shadow.RadiusThreshold=0.03                         ; from 0
+r.Shadow.DistanceScale=0.6                            ; from 1.0
+r.Shadow.CSM.TransitionScale=1.0
+r.Shadow.PreShadowResolutionFactor=0.5                ; from 1.0
+r.DistanceFieldShadowing=0                            ; from 1
+r.DistanceFieldAO=0                                   ; from 1
+r.VolumetricFog=0                                     ; from 1
+r.VolumetricFog.GridPixelSize=4
+r.VolumetricFog.GridSizeZ=128
+r.VolumetricFog.HistoryMissSupersampleCount=16
+r.LightMaxDrawDistanceScale=0                         ; from 1
+r.CapsuleShadows=1
+r.MotionBlurQuality=0                                 ; from 4
+r.AmbientOcclusionMipLevelFactor=0.4
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=0                            ; from -1
+r.AmbientOcclusionRadiusScale=1.0
+r.DepthOfFieldQuality=0                               ; from 4
+r.RenderTargetPoolMin=300                             ; from 1000 lowest 200
+r.LensFlareQuality=0                                  ; from 3 
+r.SceneColorFringeQuality=0                           ; from 0 
+r.EyeAdaptationQuality=0                              ; from 2
+r.BloomQuality=0                                      ; from 5
+r.FastBlurThreshold=100
+r.Upscale.Quality=0                                   ; from 3
+r.Tonemapper.GrainQuantization=0                      ; from 1 
+r.LightShaftQuality=0                                 ; from 1 
+r.Filter.SizeScale=1
+r.Tonemapper.Quality=0                                ; from 5
+r.Streaming.MipBias=2                                 ; from 0 
+r.MaxAnisotropy=16                                    ; to 16
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=400                              ; from 3000
+r.Streaming.MaxEffectiveScreenSize=0
+r.TranslucencyLightingVolumeDim=8                     ; from 64
+r.RefractionQuality=0                                 ; from 2 
+r.SSR.Quality=0                                       ; from 4
+r.SceneColorFormat=3                                  ; from 4
+r.DetailMode=0                                        ; from 2 
+r.TranslucencyVolumeBlur=0                            ; from 1
+r.MaterialQualityLevel=0                              ; from 1 
+r.SSS.Scale=1
+r.SSS.SampleSet=2
+r.SSS.Quality=1
+r.SSS.HalfRes=0
+r.EmitterSpawnRateScale=0.1                           ; from 1.0 
+r.ParticleLightQuality=0                              ; from 2 
+foliage.DensityScale=0                                ; from 1.0
+grass.DensityScale=0                                  ; from 1.0
+t.MaxFPS=400
+r.FoliageInteractionQuality=0                         ; from 1
+r.HLOD.DistanceScale=0.6                              ; from 1.0
+r.RenderTargetViewportSize=1.0
+r.HZBOcclusion=0                                      ; hardware occlusion queries
+r.Shadow.ForceSingleSampleShadowingFromStationary=1
+r.AllowStaticLighting=1
+r.AllowLandscapeShadows=0
+bSmoothFrameRate=0
+bUseFixedFrameRate=0
+r.FullScreenMode=0
+r.VSync=0
+r.GBufferFormat=0
+r.CustomDepth=3
+r.CustomDepth.Order=0
+r.TranslucentLightingVolume=1
+r.ParticleMinTimeBetweenTicks=16
+r.MinTimeBetweenTicks=16
+r.SubsurfaceScattering=0
+r.ParticleLODBias=0                                   ; from 0
+r.CompileShadersForDevelopment=0
+r.RHICmdBypass=0
+r.SeparateTranslucency=0
+r.TiledDeferredShading=0
+r.DoTiledReflections=0
+r.ReflectionEnvironment=0
+
+
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+
+
+IS Cine quality: 
+
+[SystemSettings]
+r.PostProcessAAQuality=6                            
+r.SkeletalMeshLODBias=0                             
+r.ViewDistanceScale=10.0
+r.LightFunctionQuality=1                             
+r.ShadowQuality=5
+r.Shadow.CSM.MaxCascades=10
+r.Shadow.MaxResolution=4096
+r.Shadow.MaxCSMResolution=4096
+r.Shadow.RadiusThreshold=0
+r.Shadow.DistanceScale=1.0
+r.Shadow.CSM.TransitionScale=1.0
+r.Shadow.PreShadowResolutionFactor=1.0
+r.DistanceFieldShadowing=1
+r.DistanceFieldAO=1
+r.VolumetricFog=1
+r.VolumetricFog.GridPixelSize=4
+r.VolumetricFog.GridSizeZ=128
+r.VolumetricFog.HistoryMissSupersampleCount=16
+r.LightMaxDrawDistanceScale=1
+r.CapsuleShadows=1 
+r.MotionBlurQuality=4                               
+r.AmbientOcclusionMipLevelFactor=0.4
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=-1
+r.AmbientOcclusionRadiusScale=1.0
+r.DepthOfFieldQuality=4
+r.RenderTargetPoolMin=1000
+r.LensFlareQuality=3
+r.SceneColorFringeQuality=1
+r.EyeAdaptationQuality=2
+r.BloomQuality=5
+r.FastBlurThreshold=100
+r.Upscale.Quality=3
+r.Tonemapper.GrainQuantization=1
+r.LightShaftQuality=1
+r.Filter.SizeScale=1
+r.Tonemapper.Quality=5
+r.Streaming.MipBias=0                             
+r.MaxAnisotropy=16                                  ; added 16
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=3000
+r.Streaming.MaxEffectiveScreenSize=0
+r.TranslucencyLightingVolumeDim=64                 
+r.RefractionQuality=2
+r.SSR.Quality=4
+r.SceneColorFormat=4
+r.DetailMode=2
+r.TranslucencyVolumeBlur=1
+r.MaterialQualityLevel=1 
+r.SSS.Scale=1
+r.SSS.SampleSet=2
+r.SSS.Quality=1
+r.SSS.HalfRes=0
+r.EmitterSpawnRateScale=1.0 
+r.ParticleLightQuality=2
+foliage.DensityScale=1.0                            
+grass.DensityScale=1.0
+r.FoliageInteractionQuality=1
+r.HLOD.DistanceScale=1.0                            
+r.RenderTargetViewportSize=1.0
+t.MaxFPS=400
+r.Shadow.ForceSingleSampleShadowingFromStationary=0
+
+
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
