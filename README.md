@@ -1,4 +1,4 @@
-Updated 8/10/2018
+Updated 8/10/2018 x2
 
 
 *Insurgency sandstorm config added
@@ -213,8 +213,7 @@ r.FullScreenMode=0
 t.MaxFPS=400
 r.VSync=0
 r.OneFrameThreadLag=1
-r.HZBOcclusion=0
-r.SceneColorFormat=0
+r.SceneColorFormat=4 ;
 r.GBufferFormat=0
 r.DoTiledReflections=0
 r.ReflectionEnvironment=0
@@ -229,25 +228,25 @@ r.TiledDeferredShading.MinimumCount=80
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyVolumeBlur=0
 r.TranslucencyLightingVolumeDim=8
-r.EmitterSpawnRateScale=0.5
+r.EmitterSpawnRateScale=0.5 ;
 r.LightMaxDrawDistanceScale=1
 r.ParticleMinTimeBetweenTicks=16
 r.ParticleLightQuality=0
 r.MinTimeBetweenTicks=16
-r.PostProcessAAQuality=2
+r.PostProcessAAQuality=1
 r.CustomDepth=3
 r.CustomDepth.Order=0
 r.ViewDistanceScale=0.4 ;
 r.SkeletalMeshLODBias=0 ;
 r.RenderTargetViewportSize=1.0
 r.MaxAnisotropy=8
-r.Streaming.MipBias=0 ; 
+r.Streaming.MipBias=2 ;
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.HLOD.DistanceScale=0.6 ;
 r.RenderTargetPoolMin=1000
-r.LightFunctionQuality=1 ; 
+r.LightFunctionQuality=1 ;
 r.AllowStaticLighting=1
 r.ShadowQuality=0
 r.Shadow.CSM.MaxCascades=1
@@ -265,7 +264,8 @@ r.DistanceFieldAO=0
 r.DefaultFeature.AmbientOcclusionStaticFraction=0
 r.VolumetricFog=0
 r.Tonemapper.Quality=0
-r.Tonemapper.GrainQuantization=1
+r.Tonemapper.GrainQuantization=0 ;
+r.Tonemapper.Sharpen=0.5 ;
 r.Filter.SizeScale=0
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
@@ -278,11 +278,11 @@ r.LightShaftQuality=0
 r.RefractionQuality=0
 r.SSR.Quality=0
 r.DetailMode=0
-r.MaterialQualityLevel=1 ; 
+r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=0
 r.FoliageInteractionQuality=0
-foliage.DensityScale=0.6 ;
-grass.DensityScale=0.6 ;
+foliage.DensityScale=0 ;
+grass.DensityScale=0 ;
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
