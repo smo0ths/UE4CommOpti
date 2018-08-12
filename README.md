@@ -1,4 +1,4 @@
-Updated 8/11/2018 x3
+Updated 8/12/2018 
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -65,7 +65,7 @@ r.AmbientOcclusionMipLevelFactor=0.4
 r.AmbientOcclusionMaxQuality=100
 r.AmbientOcclusionLevels=0                            ; from -1
 r.AmbientOcclusionRadiusScale=1.0
-r.DepthOfFieldQuality=4
+r.DepthOfFieldQuality=0                               ; from 4
 r.RenderTargetPoolMin=1000
 r.LensFlareQuality=3
 r.SceneColorFringeQuality=1
@@ -74,7 +74,7 @@ r.BloomQuality=5
 r.FastBlurThreshold=100
 r.Upscale.Quality=3
 r.Tonemapper.GrainQuantization=1
-r.LightShaftQuality=1
+r.LightShaftQuality=0                                 ; from 1
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
 r.Streaming.MipBias=2                                 ; from 0
@@ -86,17 +86,17 @@ r.TranslucencyLightingVolumeDim=64
 r.RefractionQuality=2
 r.SSR.Quality=1                                       ; from 4
 r.SceneColorFormat=4
-r.DetailMode=2
-r.TranslucencyVolumeBlur=1
+r.DetailMode=0                                        ; from 2
+r.TranslucencyVolumeBlur=0                            ; from 0
 r.MaterialQualityLevel=1
 r.SSS.Scale=1
 r.SSS.SampleSet=2
 r.SSS.Quality=1
 r.SSS.HalfRes=0
 r.EmitterSpawnRateScale=1.0
-r.ParticleLightQuality=2
-foliage.DensityScale=1.0
-grass.DensityScale=1.0
+r.ParticleLightQuality=1                              ; from 2
+foliage.DensityScale=0                                ; from 1.0
+grass.DensityScale=0                                  ; from 1.0
 t.MaxFPS=400
 r.FoliageInteractionQuality=0                         ; from 1
 r.HLOD.DistanceScale=0.6                              ; from 1.0
