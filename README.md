@@ -1,4 +1,4 @@
-Updated 8/11/2018 x2
+Updated 8/11/2018 x3
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -77,14 +77,14 @@ r.Tonemapper.GrainQuantization=1
 r.LightShaftQuality=1
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
-r.Streaming.MipBias=0
+r.Streaming.MipBias=2                                 ; from 0
 r.MaxAnisotropy=16                                    ; to 16
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=64
 r.RefractionQuality=2
-r.SSR.Quality=3                                       ; from 4
+r.SSR.Quality=1                                       ; from 4
 r.SceneColorFormat=4
 r.DetailMode=2
 r.TranslucencyVolumeBlur=1
@@ -112,7 +112,7 @@ r.VSync=0
 r.GBufferFormat=0
 r.CustomDepth=3
 r.CustomDepth.Order=0
-r.OneFrameThreadLag=0
+r.OneFrameThreadLag=1                                 ; def 1
 r.TranslucentLightingVolume=1
 r.ParticleMinTimeBetweenTicks=16
 r.MinTimeBetweenTicks=16
