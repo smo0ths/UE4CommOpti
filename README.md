@@ -1,4 +1,4 @@
-Updated 8/12/2018 x 
+Updated 8/12/2018 xx 
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -114,8 +114,8 @@ r.DefaultFeature.AmbientOcclusionStaticFraction=0 ; from 1
 r.CompileShadersForDevelopment=0
 r.RHICmdBypass=0
 r.SeparateTranslucency=0
-FX.MaxCPUParticlesPerEmitter=20 ; test
-FX.MaxGPUParticlesSpawnedPerFrame=20 ; test
+FX.MaxCPUParticlesPerEmitter=100 ; test
+FX.MaxGPUParticlesSpawnedPerFrame=100 ; test
 r.MipMapLODBias=0 ; test
 
 
