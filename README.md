@@ -1,4 +1,4 @@
-Updated 8/12/2018 x3
+Updated 8/12/2018 x4
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -91,10 +91,10 @@ foliage.DensityScale=0 ; from 1.0
 grass.DensityScale=0 ; from 1.0
 t.MaxFPS=400
 r.FoliageInteractionQuality=0 ; from 1
-r.HLOD.DistanceScale=0.6 ; from 1.0
+r.HLOD.DistanceScale=1.0 ; from 1.0
 r.RenderTargetViewportSize=1.0
 r.HZBOcclusion=1 ; test
-r.Shadow.ForceSingleSampleShadowingFromStationary=0
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ; low=1
 r.AllowStaticLighting=1
 r.AllowLandscapeShadows=0
 bSmoothFrameRate=0
