@@ -1,4 +1,4 @@
-Updated 8/12/2018 xx 
+Updated 8/12/2018 x3
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -59,16 +59,16 @@ r.AmbientOcclusionLevels=0 ; from -1
 r.AmbientOcclusionRadiusScale=1.0
 r.DepthOfFieldQuality=0 ; from 4
 r.RenderTargetPoolMin=1000
-r.LensFlareQuality=3
+r.LensFlareQuality=0 ; from 3
 r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=2
+r.EyeAdaptationQuality=0 ; from 2
 r.BloomQuality=3 ; from 5
 r.FastBlurThreshold=100
-r.Upscale.Quality=3
-r.Tonemapper.GrainQuantization=1
+r.Upscale.Quality=0 ; from 3
+r.Tonemapper.GrainQuantization=0 ; from 1
 r.LightShaftQuality=0 ; from 1
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
+r.Tonemapper.Quality=0 ; from 5
 r.Streaming.MipBias=2 ; from 0
 r.MaxAnisotropy=16 ; to 16
 r.Streaming.LimitPoolSizeToVRAM=0
@@ -114,8 +114,8 @@ r.DefaultFeature.AmbientOcclusionStaticFraction=0 ; from 1
 r.CompileShadersForDevelopment=0
 r.RHICmdBypass=0
 r.SeparateTranslucency=0
-FX.MaxCPUParticlesPerEmitter=100 ; test
-FX.MaxGPUParticlesSpawnedPerFrame=100 ; test
+FX.MaxCPUParticlesPerEmitter=60 ; test
+FX.MaxGPUParticlesSpawnedPerFrame=60 ; test
 r.MipMapLODBias=0 ; test
 
 
