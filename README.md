@@ -1,4 +1,4 @@
-Updated 8/23/2018
+Updated 8/28/2018
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -409,7 +409,7 @@ r.DistanceFieldShadowing=0
 r.AllowLandscapeShadows=0
 r.LightMaxDrawDistanceScale=0
 r.VolumetricFog=0
-r.TranslucencyLightingVolumeDim=8
+r.TranslucencyLightingVolumeDim=16
 r.TranslucencyVolumeBlur=0
 r.Upscale.Quality=0
 r.MotionBlurQuality=0
@@ -439,7 +439,7 @@ bUseFixedFrameRate=0
 r.FullScreenMode=0
 r.VSync=0
 r.GBufferFormat=0
-r.CustomDepth=3 
+r.CustomDepth=3
 r.CustomDepth.Order=0
 r.OneFrameThreadLag=1 ; test
 r.TranslucentLightingVolume=1
@@ -450,9 +450,10 @@ r.ParticleLODBias=0 ; test
 r.CompileShadersForDevelopment=0
 r.RHICmdBypass=0
 r.SeparateTranslucency=1
-r.EarlyZPass=2
-r.EarlyZPassMovable=1
-r.EarlyZPassOnlyMaterialMasking=1
+r.EarlyZPass=0
+r.EarlyZPassMovable=0
+r.EarlyZPassOnlyMaterialMasking=0
+r.HZBOcclusion=0
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
