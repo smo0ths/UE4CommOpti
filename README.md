@@ -1,4 +1,4 @@
-Updated 8/28/2018
+Updated 8/30/2018
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -74,7 +74,7 @@ r.MaxAnisotropy=16 ; to 16
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=3000
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=8
+r.TranslucencyLightingVolumeDim=16
 r.RefractionQuality=0 ; from 2
 r.SSR.Quality=0 ; from 4
 r.SceneColorFormat=4
@@ -93,6 +93,7 @@ t.MaxFPS=400
 r.FoliageInteractionQuality=0 ; from 1
 r.HLOD.DistanceScale=1.0 ; from 1.0
 r.RenderTargetViewportSize=1.0
+r.TessellationAdaptivePixelsPerTriangle=9999999
 r.HZBOcclusion=1 ; test
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ; low=1
 r.AllowStaticLighting=1
@@ -113,7 +114,7 @@ r.ParticleLODBias=0 ; test
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ; from 1
 r.CompileShadersForDevelopment=0
 r.RHICmdBypass=0
-r.SeparateTranslucency=0
+r.SeparateTranslucency=0 ; test
 FX.MaxCPUParticlesPerEmitter=60 ; test
 FX.MaxGPUParticlesSpawnedPerFrame=60 ; test
 r.MipMapLODBias=0 ; test
