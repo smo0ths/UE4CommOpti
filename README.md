@@ -1,4 +1,4 @@
-Updated 8/30/2018
+Updated 9/3/2018
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -18,113 +18,16 @@ Copy/Paste: %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 \\\\\\\\\\\\\\\\\\\\\\\
 
 Sandstorm disable intro vids add .mp4.bak: 
-Steam\steamapps\common\sandstorm\Insurgency\Content\Movies
+
+Press: Windows key + R     
+Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
+
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 
 Make sure you are on fullscreen i have to switch back from fullscreen boarderless to fullscreen mode to get it to work right*
 
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
-
-
-my IS config: 
-
-[Core.Log]
-Global=all off
-
-[SystemSettings]
-r.PostProcessAAQuality=1 ; PPAA 0=off 1/2=fxaa 3/4/5/6=taa
-r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.4 ; from 1.0
-r.LightFunctionQuality=1
-r.ShadowQuality=0 ; from 5
-r.Shadow.CSM.MaxCascades=2 ; from 10
-r.Shadow.MaxResolution=1024 ; from 4096
-r.Shadow.MaxCSMResolution=2048 ; from 4096
-r.Shadow.RadiusThreshold=0.03 ; from 0
-r.Shadow.DistanceScale=0.6 ; from 1.0
-r.Shadow.CSM.TransitionScale=1.0
-r.Shadow.PreShadowResolutionFactor=1.0 ; from 1.0
-r.DistanceFieldShadowing=0 ; from 1
-r.DistanceFieldAO=0 ; from 1
-r.VolumetricFog=0 ; from 1
-r.VolumetricFog.GridPixelSize=4
-r.VolumetricFog.GridSizeZ=128
-r.VolumetricFog.HistoryMissSupersampleCount=16
-r.LightMaxDrawDistanceScale=1
-r.CapsuleShadows=1
-r.MotionBlurQuality=0 ; from 4
-r.AmbientOcclusionMipLevelFactor=0.4
-r.AmbientOcclusionMaxQuality=100
-r.AmbientOcclusionLevels=0 ; from -1
-r.AmbientOcclusionRadiusScale=1.0
-r.DepthOfFieldQuality=0 ; from 4
-r.RenderTargetPoolMin=1000
-r.LensFlareQuality=0 ; from 3
-r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=0 ; from 2
-r.BloomQuality=3 ; from 5
-r.FastBlurThreshold=100
-r.Upscale.Quality=0 ; from 3
-r.Tonemapper.GrainQuantization=0 ; from 1
-r.LightShaftQuality=0 ; from 1
-r.Filter.SizeScale=1
-r.Tonemapper.Quality=0 ; from 5
-r.Streaming.MipBias=2 ; from 0
-r.MaxAnisotropy=16 ; to 16
-r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
-r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=16
-r.RefractionQuality=0 ; from 2
-r.SSR.Quality=0 ; from 4
-r.SceneColorFormat=4
-r.DetailMode=0 ; from 2
-r.TranslucencyVolumeBlur=0 ; from 0
-r.MaterialQualityLevel=1
-r.SSS.Scale=1
-r.SSS.SampleSet=2
-r.SSS.Quality=1
-r.SSS.HalfRes=0
-r.EmitterSpawnRateScale=0.1
-r.ParticleLightQuality=1 ; from 2
-foliage.DensityScale=0 ; from 1.0
-grass.DensityScale=0 ; from 1.0
-t.MaxFPS=400
-r.FoliageInteractionQuality=0 ; from 1
-r.HLOD.DistanceScale=1.0 ; from 1.0
-r.RenderTargetViewportSize=1.0
-r.TessellationAdaptivePixelsPerTriangle=9999999
-r.HZBOcclusion=1 ; test
-r.Shadow.ForceSingleSampleShadowingFromStationary=1 ; low=1
-r.AllowStaticLighting=1
-r.AllowLandscapeShadows=0
-bSmoothFrameRate=0
-bUseFixedFrameRate=0
-r.FullScreenMode=0
-r.VSync=0
-r.GBufferFormat=0
-r.CustomDepth=0 ; test
-r.CustomDepth.Order=0
-r.OneFrameThreadLag=1 ; test
-r.TranslucentLightingVolume=1
-r.ParticleMinTimeBetweenTicks=16
-r.MinTimeBetweenTicks=16
-r.SubsurfaceScattering=0
-r.ParticleLODBias=0 ; test
-r.DefaultFeature.AmbientOcclusionStaticFraction=0 ; from 1
-r.CompileShadersForDevelopment=0
-r.RHICmdBypass=0
-r.SeparateTranslucency=0 ; test
-FX.MaxCPUParticlesPerEmitter=60 ; test
-FX.MaxGPUParticlesSpawnedPerFrame=60 ; test
-r.MipMapLODBias=0 ; test
-
-
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
-
-
-IS Max FPS:
+sandstorm Max FPS:
 
 [Core.Log]
 Global=all off
@@ -156,7 +59,7 @@ r.AmbientOcclusionMaxQuality=100
 r.AmbientOcclusionLevels=0                            
 r.AmbientOcclusionRadiusScale=1.0
 r.DepthOfFieldQuality=0                               
-r.RenderTargetPoolMin=300                             
+r.RenderTargetPoolMin=300 ;                              
 r.LensFlareQuality=0                                  
 r.SceneColorFringeQuality=0                          
 r.EyeAdaptationQuality=0                              
@@ -168,7 +71,7 @@ r.LightShaftQuality=0
 r.Filter.SizeScale=1
 r.Tonemapper.Quality=0                              
 r.Streaming.MipBias=2                                
-r.MaxAnisotropy=16                                    
+r.MaxAnisotropy=0                                  
 r.Streaming.LimitPoolSizeToVRAM=0
 r.Streaming.PoolSize=400                              
 r.Streaming.MaxEffectiveScreenSize=0
@@ -187,21 +90,22 @@ r.EmitterSpawnRateScale=0.1
 r.ParticleLightQuality=0                              
 foliage.DensityScale=0                                
 grass.DensityScale=0                                 
-t.MaxFPS=400
 r.FoliageInteractionQuality=0                         
 r.HLOD.DistanceScale=0.6                              
 r.RenderTargetViewportSize=1.0
-r.Shadow.ForceSingleSampleShadowingFromStationary=0  
-r.AllowStaticLighting=1
-r.AllowLandscapeShadows=0
+r.TessellationAdaptivePixelsPerTriangle=9999999
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 bSmoothFrameRate=0
 bUseFixedFrameRate=0
+t.MaxFPS=400
 r.FullScreenMode=0
 r.VSync=0
+r.AllowStaticLighting=1 ;
+r.AllowLandscapeShadows=0
 r.GBufferFormat=0
-r.CustomDepth=3
+r.CustomDepth=0 ;
 r.CustomDepth.Order=0
-r.TranslucentLightingVolume=1
+r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16
 r.MinTimeBetweenTicks=16
 r.SubsurfaceScattering=0
@@ -211,82 +115,113 @@ r.SeparateTranslucency=0
 r.TiledDeferredShading=0
 r.DoTiledReflections=0
 r.ReflectionEnvironment=0
+r.LandscapeLODBias=0 ;
+r.ParticleLODBias=0 ;      
+r.MipMapLODBias=0   
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-IS Cine quality: 
+my sandstorm config: 
 
 [Core.Log]
 Global=all off
 
 [SystemSettings]
-r.PostProcessAAQuality=6                            
-r.SkeletalMeshLODBias=0                             
-r.ViewDistanceScale=10.0
-r.LightFunctionQuality=1                             
-r.ShadowQuality=5
-r.Shadow.CSM.MaxCascades=10
-r.Shadow.MaxResolution=4096
-r.Shadow.MaxCSMResolution=4096
-r.Shadow.RadiusThreshold=0
-r.Shadow.DistanceScale=1.0
+r.PostProcessAAQuality=1 ; PPAA 0=off 1/2=fxaa 3/4/5/6=taa
+r.SkeletalMeshLODBias=0
+r.ViewDistanceScale=0.4    
+r.LightFunctionQuality=1
+r.ShadowQuality=0    
+r.Shadow.CSM.MaxCascades=2    
+r.Shadow.MaxResolution=1024   
+r.Shadow.MaxCSMResolution=2048    
+r.Shadow.RadiusThreshold=0.03    
+r.Shadow.DistanceScale=0.6    
 r.Shadow.CSM.TransitionScale=1.0
-r.Shadow.PreShadowResolutionFactor=1.0
-r.DistanceFieldShadowing=1
-r.DistanceFieldAO=1
-r.VolumetricFog=1
+r.Shadow.PreShadowResolutionFactor=1.0    
+r.DistanceFieldShadowing=0    
+r.DistanceFieldAO=0    
+r.VolumetricFog=0    
 r.VolumetricFog.GridPixelSize=4
 r.VolumetricFog.GridSizeZ=128
 r.VolumetricFog.HistoryMissSupersampleCount=16
 r.LightMaxDrawDistanceScale=1
-r.CapsuleShadows=1 
-r.MotionBlurQuality=4                               
+r.CapsuleShadows=1
+r.MotionBlurQuality=0  
 r.AmbientOcclusionMipLevelFactor=0.4
 r.AmbientOcclusionMaxQuality=100
-r.AmbientOcclusionLevels=-1
+r.AmbientOcclusionLevels=0    
 r.AmbientOcclusionRadiusScale=1.0
-r.DepthOfFieldQuality=4
+r.DepthOfFieldQuality=0    
 r.RenderTargetPoolMin=1000
-r.LensFlareQuality=3
+r.LensFlareQuality=0   
 r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=2
-r.BloomQuality=5
+r.EyeAdaptationQuality=0   
+r.BloomQuality=3    
 r.FastBlurThreshold=100
-r.Upscale.Quality=3
-r.Tonemapper.GrainQuantization=1
-r.LightShaftQuality=1
+r.Upscale.Quality=0    
+r.Tonemapper.GrainQuantization=1    
+r.LightShaftQuality=0    
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=5
-r.Streaming.MipBias=0                             
-r.MaxAnisotropy=16 ; added 16
+r.Tonemapper.Quality=0   
+r.Streaming.MipBias=2    
+r.MaxAnisotropy=8   
 r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000
+r.Streaming.PoolSize=3000 ;
 r.Streaming.MaxEffectiveScreenSize=0
-r.TranslucencyLightingVolumeDim=64                 
-r.RefractionQuality=2
-r.SSR.Quality=4
-r.SceneColorFormat=4
-r.DetailMode=2
-r.TranslucencyVolumeBlur=1
-r.MaterialQualityLevel=1 
+r.TranslucencyLightingVolumeDim=16
+r.RefractionQuality=0   
+r.SSR.Quality=0    
+r.SceneColorFormat=3
+r.DetailMode=0    
+r.TranslucencyVolumeBlur=0   
+r.MaterialQualityLevel=1
 r.SSS.Scale=1
 r.SSS.SampleSet=2
 r.SSS.Quality=1
 r.SSS.HalfRes=0
-r.EmitterSpawnRateScale=1.0 
-r.ParticleLightQuality=2
-foliage.DensityScale=1.0                            
-grass.DensityScale=1.0
-r.FoliageInteractionQuality=1
-r.HLOD.DistanceScale=1.0                            
+r.EmitterSpawnRateScale=0.1
+r.ParticleLightQuality=1    
+foliage.DensityScale=0    
+grass.DensityScale=0    
+r.FoliageInteractionQuality=0    
+r.HLOD.DistanceScale=1.0   
 r.RenderTargetViewportSize=1.0
+r.TessellationAdaptivePixelsPerTriangle=9999999 
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;   
+bSmoothFrameRate=0
+bUseFixedFrameRate=0
 t.MaxFPS=400
-r.Shadow.ForceSingleSampleShadowingFromStationary=0
+r.FullScreenMode=0
+r.VSync=0
+r.AllowStaticLighting=1 ;
+r.AllowLandscapeShadows=0
+r.HZBOcclusion=0 ;
+r.GBufferFormat=1
+r.CustomDepth=3    
+r.CustomDepth.Order=1 ; 
+r.OneFrameThreadLag=1   
+r.TranslucentLightingVolume=1 ;
+r.ParticleMinTimeBetweenTicks=16
+r.MinTimeBetweenTicks=16
+r.SubsurfaceScattering=0
+r.CompileShadersForDevelopment=0
+r.RHICmdBypass=0
+r.SeparateTranslucency=1  
+r.TiledDeferredShading=1 ;
+r.DoTiledReflections=1 ;
+r.ReflectionEnvironment=1 ;
+r.LandscapeLODBias=0 ;
+r.ParticleLODBias=0 ;     
+r.MipMapLODBias=0    
+r.AmbientOcclusionStaticFraction=0 ;
 
 
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
@@ -373,6 +308,8 @@ grass.MaxUpdateFrequency=10
 
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 
 
 My high/fps config paste this: (for squad and ps) 
@@ -457,6 +394,8 @@ r.EarlyZPassOnlyMaterialMasking=0
 r.HZBOcclusion=0
 
 
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
