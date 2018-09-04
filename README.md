@@ -1,31 +1,23 @@
-Updated 9/3/2018 ~
+Updated 9/4/2018
 
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
-
-Open Engine.ini and copy paste configs under code:
-
-Press: Windows key + R       
-Copy/Paste: %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
-Copy/Paste: %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
-Copy/Paste: %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
-
-Sandstorm disable intro vids add .mp4.bak: 
-
-Press: Windows key + R     
-Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
-
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
-Make sure you are on fullscreen i have to switch back from fullscreen boarderless to fullscreen mode to get it to work right*
+
+Open Engine.ini and Copy/Paste unreal engine 4 graphics commands:
+
+Press:         Windows key + R      
+
+Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
+Copy/Paste:    %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
+Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -34,7 +26,9 @@ Make sure you are on fullscreen i have to switch back from fullscreen boarderles
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-Max FPS paste this:  (for Insurgency Sandstorm)
+Max FPS (for Insurgency Sandstorm)
+
+Copy/Paste:  
 
 [Core.Log]
 Global=all off
@@ -71,7 +65,7 @@ r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=0
-r.FastBlurThreshold=0
+r.FastBlurThreshold=7
 r.Upscale.Quality=0
 r.Tonemapper.GrainQuantization=0
 r.LightShaftQuality=0
@@ -105,6 +99,7 @@ r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 bSmoothFrameRate=0
 bUseFixedFrameRate=0
 t.MaxFPS=400
+r.ScreenPercentage=100
 r.FullScreenMode=0
 r.VSync=0
 r.AllowStaticLighting=1 ;
@@ -133,100 +128,98 @@ r.MipMapLODBias=0
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-My high/fps config paste this:  (for Insurgency Sandstorm)
+My High/FPS config paste this:  (for Insurgency Sandstorm)
 
 [Core.Log]
 Global=all off
 
 [SystemSettings]
-r.PostProcessAAQuality=1 ; PPAA 0=off 1/2=fxaa 3/4/5/6=taa
+r.PostProcessAAQuality=1 ; 1/2=FXAA 3/4/5/6=TAA
 r.SkeletalMeshLODBias=0
-r.ViewDistanceScale=0.4    
+r.ViewDistanceScale=0.4
 r.LightFunctionQuality=1
-r.ShadowQuality=0    
-r.Shadow.CSM.MaxCascades=2    
-r.Shadow.MaxResolution=1024   
-r.Shadow.MaxCSMResolution=2048    
-r.Shadow.RadiusThreshold=0.03    
-r.Shadow.DistanceScale=0.6    
+r.ShadowQuality=0
+r.Shadow.CSM.MaxCascades=2
+r.Shadow.MaxResolution=1024
+r.Shadow.MaxCSMResolution=2048
+r.Shadow.RadiusThreshold=0.03
+r.Shadow.DistanceScale=0.6
 r.Shadow.CSM.TransitionScale=1.0
-r.Shadow.PreShadowResolutionFactor=1.0    
-r.DistanceFieldShadowing=0    
-r.DistanceFieldAO=0    
-r.VolumetricFog=0    
+r.Shadow.PreShadowResolutionFactor=1.0
+r.DistanceFieldShadowing=0
+r.DistanceFieldAO=0
+r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=16
 r.VolumetricFog.GridSizeZ=64
 r.VolumetricFog.HistoryMissSupersampleCount=4
-r.LightMaxDrawDistanceScale=0.5 ;
+r.LightMaxDrawDistanceScale=0.5
 r.CapsuleShadows=1
-r.MotionBlurQuality=0  
-r.AmbientOcclusionMipLevelFactor=0.5
-r.AmbientOcclusionMaxQuality=100
-r.AmbientOcclusionLevels=-1 ;     
-r.AmbientOcclusionRadiusScale=1.0
-r.DepthOfFieldQuality=0    
-r.RenderTargetPoolMin=400 ;
-r.LensFlareQuality=0   
-r.SceneColorFringeQuality=1
-r.EyeAdaptationQuality=0   
-r.BloomQuality=3    
-r.FastBlurThreshold=100
-r.Upscale.Quality=0    
-r.Tonemapper.GrainQuantization=1    
-r.LightShaftQuality=0    
+r.MotionBlurQuality=0
+r.DepthOfFieldQuality=0
+r.RenderTargetPoolMin=400
+r.LensFlareQuality=2 
+r.SceneColorFringeQuality=0
+r.EyeAdaptationQuality=0
+r.BloomQuality=3
+r.FastBlurThreshold=7
+r.Upscale.Quality=3
+r.Tonemapper.GrainQuantization=1
+r.LightShaftQuality=0
 r.Filter.SizeScale=1
-r.Tonemapper.Quality=0   
-r.Streaming.MipBias=2    
-r.MaxAnisotropy=8   
+r.Tonemapper.Quality=5
+r.Streaming.MipBias=2
+r.MaxAnisotropy=8
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=2000 ;
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=16
-r.RefractionQuality=0   
-r.SSR.Quality=0    
+r.RefractionQuality=0
+r.SSR.Quality=0
 r.SceneColorFormat=3
-r.DetailMode=0    
-r.TranslucencyVolumeBlur=0   
+r.DetailMode=1
+r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
 r.SSS.Scale=1
 r.SSS.SampleSet=2
 r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0.1
-r.ParticleLightQuality=1    
-foliage.DensityScale=0.8 ;   
-grass.DensityScale=0.8 ;     
-r.FoliageInteractionQuality=0    
-r.HLOD.DistanceScale=1.0   
+r.ParticleLightQuality=1
+foliage.DensityScale=1.0 ;
+grass.DensityScale=1.0 ;
+r.FoliageInteractionQuality=0
+r.HLOD.DistanceScale=1.0
 r.RenderTargetViewportSize=1.0
-r.TessellationAdaptivePixelsPerTriangle=9999999 
-r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;   
+r.TessellationAdaptivePixelsPerTriangle=9999999
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 bSmoothFrameRate=0
 bUseFixedFrameRate=0
 t.MaxFPS=400
+r.ScreenPercentage=100
 r.FullScreenMode=0
 r.VSync=0
 r.AllowStaticLighting=1 ;
 r.AllowLandscapeShadows=0
 r.HZBOcclusion=0 ;
 r.GBufferFormat=1
-r.CustomDepth=3    
-r.CustomDepth.Order=1 ; 
-r.OneFrameThreadLag=1   
+r.CustomDepth=3
+r.CustomDepth.Order=1 ;
+r.OneFrameThreadLag=1
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16
 r.MinTimeBetweenTicks=16
 r.SubsurfaceScattering=1 ;
 r.CompileShadersForDevelopment=0
 r.RHICmdBypass=0
-r.SeparateTranslucency=1  
+r.SeparateTranslucency=1
 r.TiledDeferredShading=1 ;
 r.DoTiledReflections=1 ;
 r.ReflectionEnvironment=1 ;
 r.LandscapeLODBias=0 ;
-r.ParticleLODBias=0 ;     
-r.MipMapLODBias=0    
-r.AmbientOcclusionStaticFraction=0 ;  
+r.ParticleLODBias=0 ;
+r.MipMapLODBias=0
+r.AmbientOcclusionStaticFraction=0 ;
+ShowFlag.Vignette=0
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -321,7 +314,7 @@ grass.MaxUpdateFrequency=10
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-My high/fps config paste this:  (for Squad and Post Scriptum)
+My High/FPS config paste this:  (for Squad and Post Scriptum)
 
 [Core.Log]
 Global=all off
@@ -409,6 +402,8 @@ r.HZBOcclusion=0
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
+Extra:
+
 For NVIDIA users in control panel change:
 
 Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
@@ -418,3 +413,15 @@ Preferred refresh rate: Highest available
 Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
+
+
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+
+
+Sandstorm disable intro vids add .bak after .mp4
+
+Press: Windows key + R     
+Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
