@@ -1,7 +1,7 @@
-Updated 9/3/2018 x2
+Updated 9/3/2018 x3
 
-*Insurgency sandstorm configs added
-*Post Scriptum and squad configs 
+*Insurgency Sandstorm configs added
+*Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -22,16 +22,19 @@ Sandstorm disable intro vids add .mp4.bak:
 Press: Windows key + R     
 Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
 
-
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
-
 
 Make sure you are on fullscreen i have to switch back from fullscreen boarderless to fullscreen mode to get it to work right*
 
-sandstorm Max FPS:
+
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+
+
+Max FPS paste this:  (for Insurgency Sandstorm)
 
 [Core.Log]
 Global=all off
@@ -130,7 +133,7 @@ r.MipMapLODBias=0
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-my sandstorm config: 
+My high/fps config paste this:  (for Insurgency Sandstorm)
 
 [Core.Log]
 Global=all off
@@ -159,10 +162,10 @@ r.CapsuleShadows=1
 r.MotionBlurQuality=0  
 r.AmbientOcclusionMipLevelFactor=0.4
 r.AmbientOcclusionMaxQuality=100
-r.AmbientOcclusionLevels=0    
+r.AmbientOcclusionLevels=-1 ;     
 r.AmbientOcclusionRadiusScale=1.0
 r.DepthOfFieldQuality=0    
-r.RenderTargetPoolMin=1000
+r.RenderTargetPoolMin=400 ;
 r.LensFlareQuality=0   
 r.SceneColorFringeQuality=1
 r.EyeAdaptationQuality=0   
@@ -187,12 +190,12 @@ r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=1
 r.SSS.Scale=1
 r.SSS.SampleSet=2
-r.SSS.Quality=1
-r.SSS.HalfRes=0
+r.SSS.Quality=0
+r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0.1
 r.ParticleLightQuality=1    
-foliage.DensityScale=0    
-grass.DensityScale=0    
+foliage.DensityScale=0.8 ;   
+grass.DensityScale=0.8 ;     
 r.FoliageInteractionQuality=0    
 r.HLOD.DistanceScale=1.0   
 r.RenderTargetViewportSize=1.0
@@ -213,7 +216,7 @@ r.OneFrameThreadLag=1
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16
 r.MinTimeBetweenTicks=16
-r.SubsurfaceScattering=0
+r.SubsurfaceScattering=1 ;
 r.CompileShadersForDevelopment=0
 r.RHICmdBypass=0
 r.SeparateTranslucency=1  
@@ -223,7 +226,7 @@ r.ReflectionEnvironment=1 ;
 r.LandscapeLODBias=0 ;
 r.ParticleLODBias=0 ;     
 r.MipMapLODBias=0    
-r.AmbientOcclusionStaticFraction=0 ;
+r.AmbientOcclusionStaticFraction=0 ;  
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -232,7 +235,7 @@ r.AmbientOcclusionStaticFraction=0 ;
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-Max FPS paste this:  (for squad and ps)
+Max FPS paste this:  (for Squad and Post Scriptum)
 
 [Core.Log]
 Global=all off
@@ -318,7 +321,7 @@ grass.MaxUpdateFrequency=10
 \\\\\\\\\\\\\\\\\\\\\\\
 
 
-My high/fps config paste this: (for squad and ps) 
+My high/fps config paste this:  (for Squad and Post Scriptum)
 
 [Core.Log]
 Global=all off
