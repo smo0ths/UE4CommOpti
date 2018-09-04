@@ -1,4 +1,4 @@
-Updated 9/3/2018
+Updated 9/3/2018 x1
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -22,8 +22,12 @@ Sandstorm disable intro vids add .mp4.bak:
 Press: Windows key + R     
 Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
 
+
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+
 
 Make sure you are on fullscreen i have to switch back from fullscreen boarderless to fullscreen mode to get it to work right*
 
@@ -122,6 +126,8 @@ r.MipMapLODBias=0
 
 \\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\
 
 
 my sandstorm config: 
@@ -148,7 +154,7 @@ r.VolumetricFog=0
 r.VolumetricFog.GridPixelSize=4
 r.VolumetricFog.GridSizeZ=128
 r.VolumetricFog.HistoryMissSupersampleCount=16
-r.LightMaxDrawDistanceScale=1
+r.LightMaxDrawDistanceScale=0.5 ;
 r.CapsuleShadows=1
 r.MotionBlurQuality=0  
 r.AmbientOcclusionMipLevelFactor=0.4
