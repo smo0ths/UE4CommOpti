@@ -1,4 +1,4 @@
-Updated 9/3/2018 x1
+Updated 9/3/2018 x2
 
 *Insurgency sandstorm configs added
 *Post Scriptum and squad configs 
@@ -76,7 +76,7 @@ r.Filter.SizeScale=1
 r.Tonemapper.Quality=0                              
 r.Streaming.MipBias=2                                
 r.MaxAnisotropy=0                                  
-r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=400                              
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=8                     
@@ -175,8 +175,8 @@ r.Filter.SizeScale=1
 r.Tonemapper.Quality=0   
 r.Streaming.MipBias=2    
 r.MaxAnisotropy=8   
-r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=3000 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.PoolSize=2000 ;
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=16
 r.RefractionQuality=0   
