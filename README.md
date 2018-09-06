@@ -1,4 +1,4 @@
-Updated 9/4/2018
+Updated 9/5/2018
 
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
@@ -157,7 +157,7 @@ r.CapsuleShadows=1
 r.MotionBlurQuality=0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=400
-r.LensFlareQuality=2 
+r.LensFlareQuality=2
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=3
@@ -185,8 +185,8 @@ r.SSS.Quality=0
 r.SSS.HalfRes=1
 r.EmitterSpawnRateScale=0.1
 r.ParticleLightQuality=1
-foliage.DensityScale=1.0 ;
-grass.DensityScale=1.0 ;
+foliage.DensityScale=0 ;
+grass.DensityScale=0 ;
 r.FoliageInteractionQuality=0
 r.HLOD.DistanceScale=1.0
 r.RenderTargetViewportSize=1.0
