@@ -1,4 +1,4 @@
-*Updated 9/9/2018
+*Updated 9/9/2018 ~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -163,7 +163,7 @@ r.RenderTargetPoolMin=400
 r.LensFlareQuality=2
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=2 ; test
-r.BloomQuality=3
+r.BloomQuality=0
 r.FastBlurThreshold=7
 r.Upscale.Quality=3
 r.Tonemapper.GrainQuantization=1
@@ -194,7 +194,7 @@ r.FoliageInteractionQuality=0
 r.HLOD.DistanceScale=1.0
 r.RenderTargetViewportSize=1.0
 r.TessellationAdaptivePixelsPerTriangle=9999999
-r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
+r.Shadow.ForceSingleSampleShadowingFromStationary=0 ; test
 bSmoothFrameRate=0
 bUseFixedFrameRate=0
 t.MaxFPS=200
@@ -224,7 +224,7 @@ r.MipMapLODBias=0
 r.AmbientOcclusionStaticFraction=0 ;
 ShowFlag.Vignette=0
 ShowFlag.Grain=0 ;
-r.ToneMapperFilm=0 ;
+r.ToneMapperFilm=1
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
