@@ -1,22 +1,18 @@
-Updated 9/5/2018
-
+*Updated 9/9/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
-
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
+Open Engine.ini and Copy/Paste commands/configs:
 
-Open Engine.ini and Copy/Paste unreal engine 4 graphics commands:
-
-Press:         Windows key + R      
+Press:    Windows key + R      
 
 Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
+
 Copy/Paste:    %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
+
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
 
@@ -27,6 +23,7 @@ Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 
 
 Max FPS (for Insurgency Sandstorm)
+
 
 Copy/Paste:  
 
@@ -98,7 +95,7 @@ r.TessellationAdaptivePixelsPerTriangle=9999999
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 bSmoothFrameRate=0
 bUseFixedFrameRate=0
-t.MaxFPS=400
+t.MaxFPS=200
 r.ScreenPercentage=100
 r.FullScreenMode=0
 r.VSync=0
@@ -120,6 +117,7 @@ r.ReflectionEnvironment=0
 r.LandscapeLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.MipMapLODBias=0
+ShowFlag.Decals=0 ; test
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -129,6 +127,7 @@ r.MipMapLODBias=0
 
 
 My High/FPS config paste this:  (for Insurgency Sandstorm)
+
 
 [Core.Log]
 Global=all off
@@ -155,11 +154,15 @@ r.VolumetricFog.HistoryMissSupersampleCount=4
 r.LightMaxDrawDistanceScale=0.5
 r.CapsuleShadows=1
 r.MotionBlurQuality=0
+r.AmbientOcclusionMipLevelFactor=0.5
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=0
+r.AmbientOcclusionRadiusScale=1.0
 r.DepthOfFieldQuality=0
 r.RenderTargetPoolMin=400
 r.LensFlareQuality=2
 r.SceneColorFringeQuality=0
-r.EyeAdaptationQuality=0
+r.EyeAdaptationQuality=2 ; test
 r.BloomQuality=3
 r.FastBlurThreshold=7
 r.Upscale.Quality=3
@@ -169,8 +172,8 @@ r.Filter.SizeScale=1
 r.Tonemapper.Quality=5
 r.Streaming.MipBias=2
 r.MaxAnisotropy=8
-r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=2000 ;
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=3000 ; test
 r.Streaming.MaxEffectiveScreenSize=0
 r.TranslucencyLightingVolumeDim=16
 r.RefractionQuality=0
@@ -194,16 +197,16 @@ r.TessellationAdaptivePixelsPerTriangle=9999999
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 bSmoothFrameRate=0
 bUseFixedFrameRate=0
-t.MaxFPS=400
+t.MaxFPS=200
 r.ScreenPercentage=100
 r.FullScreenMode=0
 r.VSync=0
 r.AllowStaticLighting=1 ;
 r.AllowLandscapeShadows=0
 r.HZBOcclusion=0 ;
-r.GBufferFormat=1
+r.GBufferFormat=1 ;
 r.CustomDepth=3
-r.CustomDepth.Order=1 ;
+r.CustomDepth.Order=0 ; test
 r.OneFrameThreadLag=1
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16
@@ -220,6 +223,8 @@ r.ParticleLODBias=0 ;
 r.MipMapLODBias=0
 r.AmbientOcclusionStaticFraction=0 ;
 ShowFlag.Vignette=0
+ShowFlag.Grain=0 ;
+r.ToneMapperFilm=0 ;
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -229,6 +234,7 @@ ShowFlag.Vignette=0
 
 
 Max FPS paste this:  (for Squad and Post Scriptum)
+
 
 [Core.Log]
 Global=all off
@@ -315,6 +321,7 @@ grass.MaxUpdateFrequency=10
 
 
 My High/FPS config paste this:  (for Squad and Post Scriptum)
+
 
 [Core.Log]
 Global=all off
@@ -404,6 +411,7 @@ r.HZBOcclusion=0
 
 Extra:
 
+
 For NVIDIA users in control panel change:
 
 Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
@@ -414,14 +422,10 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\
 
+Disable Insurgency Sandstorm intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
-Sandstorm disable intro vids add .bak after .mp4
+Press:    Windows key + R    
 
-Press: Windows key + R     
-Copy/Paste: %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
+Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
