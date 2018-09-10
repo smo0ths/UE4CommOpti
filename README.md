@@ -1,4 +1,4 @@
-*Updated 9/10/2018
+*Updated 9/10/2018 ~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -118,6 +118,7 @@ r.LandscapeLODBias=0
 r.ParticleLODBias=0 
 r.MipMapLODBias=0
 ShowFlag.Decals=0 
+Compat.UseDXT5NormalMaps=0 ;
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -225,6 +226,7 @@ r.AmbientOcclusionStaticFraction=0
 ShowFlag.Vignette=0
 ShowFlag.Grain=0 
 r.ToneMapperFilm=1
+Compat.UseDXT5NormalMaps=0 ;
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -244,40 +246,10 @@ LogEasyAntiCheatServer=all off
 MaxChannels=64
 
 [SystemSettings]
-t.MaxFPS=400
-bSmoothFrameRate=0
-bUseFixedFrameRate=0
-r.EarlyZPass=0
-r.EarlyZPassMovable=0
-r.EarlyZPassOnlyMaterialMasking=0
-r.HZBOcclusion=0
-r.CustomDepth=3
-r.CustomDepth.Order=0
-Compat.UseDXT5NormalMaps=0
-r.CompileShadersForDevelopment=0
-r.SeparateTranslucency=0
-r.DoTiledReflections=0
-r.ReflectionEnvironment=0
-r.ReflectionCaptureResolution=0
-r.TiledDeferredShading=0
-r.TranslucencyVolumeBlur=0
-r.TranslucentLightingVolume=0
-r.TranslucencyLightingVolumeDim=8
-r.EmitterSpawnRateScale=0
-r.ParticleMinTimeBetweenTicks=16
-r.ParticleLightQuality=0
-r.MinTimeBetweenTicks=16
-r.ViewDistanceScale=0.8
-r.StaticMeshLODDistanceScale=0.25
+r.PostProcessAAQuality=0 ; 1/2=FXAA 3/4/5/6=TAA
 r.SkeletalMeshLODBias=1
-r.MipMapLODBias=0
-r.MaxAnisotropy=0
-r.Streaming.MipBias=2
-r.Streaming.LimitPoolSizeToVRAM=0
-r.Streaming.PoolSize=1000
-r.Streaming.MaxEffectiveScreenSize=0
+r.ViewDistanceScale=0.8
 r.LightFunctionQuality=0
-r.AllowStaticLighting=0
 r.ShadowQuality=0
 r.Shadow.CSM.MaxCascades=1
 r.Shadow.MaxResolution=512
@@ -285,33 +257,92 @@ r.Shadow.MaxCSMResolution=512
 r.Shadow.RadiusThreshold=0.06
 r.Shadow.DistanceScale=0.6
 r.Shadow.CSM.TransitionScale=0
+r.Shadow.PreShadowResolutionFactor=0.5
 r.DistanceFieldShadowing=0
-r.AllowLandscapeShadows=0
 r.DistanceFieldAO=0
 r.VolumetricFog=0
+r.VolumetricFog.GridPixelSize=16
+r.VolumetricFog.GridSizeZ=64
+r.VolumetricFog.HistoryMissSupersampleCount=4
 r.LightMaxDrawDistanceScale=0
-r.RenderTargetPoolMin=200
-r.Tonemapper.Quality=2
-r.Tonemapper.GrainQuantization=0
-r.Filter.SizeScale=0
+r.CapsuleShadows=0
 r.MotionBlurQuality=0
+r.AmbientOcclusionMipLevelFactor=0.5
+r.AmbientOcclusionMaxQuality=100
+r.AmbientOcclusionLevels=0
+r.AmbientOcclusionRadiusScale=1.0
 r.DepthOfFieldQuality=0
+r.RenderTargetPoolMin=300 ;
 r.LensFlareQuality=0
 r.SceneColorFringeQuality=0
 r.EyeAdaptationQuality=0
 r.BloomQuality=0
-r.FastBlurThreshold=0
+r.FastBlurThreshold=7
 r.Upscale.Quality=0
+r.Tonemapper.GrainQuantization=0 ;
 r.LightShaftQuality=0
+r.Filter.SizeScale=1
+r.Tonemapper.Quality=2
+r.Streaming.MipBias=2
+r.MaxAnisotropy=0
+r.Streaming.LimitPoolSizeToVRAM=0
+r.Streaming.PoolSize=1000
+r.Streaming.MaxEffectiveScreenSize=0
+r.TranslucencyLightingVolumeDim=16
 r.RefractionQuality=0
 r.SSR.Quality=0
-r.SceneColorFormat=2
+r.SceneColorFormat=2 ;
 r.DetailMode=0
+r.TranslucencyVolumeBlur=0
 r.MaterialQualityLevel=0
-r.SubsurfaceScattering=0
+r.SSS.Scale=1
+r.SSS.SampleSet=2
+r.SSS.Quality=0
+r.SSS.HalfRes=1
+r.EmitterSpawnRateScale=0.1 ;
+r.ParticleLightQuality=0
 foliage.DensityScale=0.6
 grass.DensityScale=0.6
 grass.MaxUpdateFrequency=10
+r.FoliageInteractionQuality=0
+r.HLOD.DistanceScale=1.0 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999
+bSmoothFrameRate=0
+bUseFixedFrameRate=0
+t.MaxFPS=400
+r.ScreenPercentage=100 ;
+r.FullScreenMode=0
+r.VSync=0
+r.AllowStaticLighting=0
+r.AllowLandscapeShadows=0
+r.HZBOcclusion=0
+r.GBufferFormat=0 ;
+r.CustomDepth=3
+r.CustomDepth.Order=0
+r.OneFrameThreadLag=1
+r.TranslucentLightingVolume=1 ;
+r.ParticleMinTimeBetweenTicks=16
+r.MinTimeBetweenTicks=16
+r.SubsurfaceScattering=0
+r.CompileShadersForDevelopment=0
+r.RHICmdBypass=0
+r.SeparateTranslucency=0
+r.TiledDeferredShading=0
+r.DoTiledReflections=0
+r.ReflectionEnvironment=0
+r.LandscapeLODBias=0
+r.ParticleLODBias=0
+r.MipMapLODBias=0
+r.AmbientOcclusionStaticFraction=0
+ShowFlag.Vignette=0
+ShowFlag.Grain=0
+r.TonemapperFilm=1 ;
+r.SceneColorFringe.Max=0.4
+r.EarlyZPass=0 ;
+r.EarlyZPassMovable=0 ;
+r.EarlyZPassOnlyMaterialMasking=0 ;
+Compat.UseDXT5NormalMaps=0 ;
+r.StaticMeshLODDistanceScale=0.25 ;
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
@@ -426,6 +457,7 @@ r.SceneColorFringe.Max=0.4
 r.EarlyZPass=0 ;
 r.EarlyZPassMovable=0 ;
 r.EarlyZPassOnlyMaterialMasking=0 ;
+Compat.UseDXT5NormalMaps=0 ;
 
 
 \\\\\\\\\\\\\\\\\\\\\\\
