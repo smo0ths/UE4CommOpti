@@ -1,4 +1,4 @@
-*Updated 9/12/2018
+*Updated 9/12/2018 ~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -165,14 +165,14 @@ r.FoliageInteractionQuality=0 ;
 r.HLOD.DistanceScale=1.0 ;
 r.RenderTargetViewportSize=1.0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.Shadow.ForceSingleSampleShadowingFromStationary=0 ;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 bSmoothFrameRate=0 ;
 bUseFixedFrameRate=0 ;
 t.MaxFPS=200 ;
 r.ScreenPercentage=100 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
-r.HZBOcclusion=0 ;
+r.HZBOcclusion=1 ;
 r.GBufferFormat=1 ;
 r.OneFrameThreadLag=1 ;
 r.FinishCurrentFrame=0 ;
