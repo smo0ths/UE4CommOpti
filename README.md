@@ -1,4 +1,4 @@
-*Updated 9/12/2018 ~
+*Updated 9/12/2018 ~~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -45,7 +45,7 @@ r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=0 ;
 r.Streaming.MipBias=2 ;
 r.MaxAnisotropy=0 ;
-r.Streaming.LimitPoolSizeToVRAM=0 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=400 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.TranslucencyLightingVolumeDim=8 ;
@@ -94,7 +94,7 @@ r.ReflectionEnvironment=0 ;
 r.LandscapeLODBias=0 ;
 r.ParticleLODBias=0 ; 
 r.MipMapLODBias=0 ;
-ShowFlag.Decals=0 ; 
+ShowFlag.Decals=0 ; NEEDS TEST
 
 \\\\\\\\\\\\\\\\\\\\\\\
 
@@ -150,7 +150,7 @@ r.TranslucencyLightingVolumeDim=16 ;
 r.RefractionQuality=0 ;
 r.SSR.Quality=0 ;
 r.SceneColorFormat=3 ;
-r.DetailMode=1 ;
+r.DetailMode=2 ; testing
 r.TranslucencyVolumeBlur=0 ;
 r.MaterialQualityLevel=1 ;
 r.SSS.Scale=1 ;
@@ -173,18 +173,18 @@ r.ScreenPercentage=100 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
 r.HZBOcclusion=1 ;
-r.GBufferFormat=1 ;
+r.GBufferFormat=0 ; testing
 r.OneFrameThreadLag=1 ;
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
-r.EarlyZPass=2 ;
+r.EarlyZPass=3 ; testing
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.AllowStaticLighting=1 ;
 r.AllowLandscapeShadows=0 ;
-r.CustomDepth=3 ;
+r.CustomDepth=0 ; testing
 r.CustomDepth.Order=1 ;
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16 ;
@@ -201,7 +201,10 @@ r.AmbientOcclusionStaticFraction=0 ;
 r.ToneMapperFilm=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
-r.Streaming.Boost=2 ;
+r.Streaming.Boost=1 ; testing
+r.BlurGBuffer=0 ; testing
+FX.MaxCPUParticlesPerEmitter=500 ; testing
+FX.MaxGPUParticlesSpawnedPerFrame=100 ; testing
 
 \\\\\\\\\\\\\\\\\\\\\\\
 
