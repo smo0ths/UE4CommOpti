@@ -1,4 +1,4 @@
-*Updated 9/12/2018 ~~
+*Updated 9/13/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -300,6 +300,9 @@ ShowFlag.Vignette=0 ;
 
 My High/FPS config paste this:  (for Squad and Post Scriptum)
 
+[Internationalization]
+Culture=en-US
+
 [Core.Log]
 Global=all off
 LogEasyAntiCheatServer=all off
@@ -381,7 +384,7 @@ r.OneFrameThreadLag=1 ;
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
-r.EarlyZPass=2 ;
+r.EarlyZPass=3 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -396,15 +399,15 @@ r.SubsurfaceScattering=0 ;
 r.SeparateTranslucency=1 ;
 r.TiledDeferredShading=1 ;
 r.DoTiledReflections=1 ;
-r.ReflectionEnvironment=1 ; 
-r.LandscapeLODBias=0 ; 
+r.ReflectionEnvironment=1 ;
+r.LandscapeLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.MipMapLODBias=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
-r.ToneMapperFilm=1 ;
+r.TonemapperFilm=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
-r.Streaming.Boost=2 ;
+r.Streaming.Boost=1 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\
 
