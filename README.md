@@ -1,4 +1,4 @@
-*Updated 9/13/2018
+*Updated 9/17/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -36,7 +36,7 @@ r.DepthOfFieldQuality=0 ;
 r.RenderTargetPoolMin=300 ;
 r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
-r.EyeAdaptationQuality=0 ;
+r.EyeAdaptationQuality=2 ;
 r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=0 ;
@@ -136,7 +136,7 @@ r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.BloomQuality=0 ;
 r.FastBlurThreshold=7 ;
-r.Upscale.Quality=3 ;
+r.Upscale.Quality=0 ; testing
 r.Tonemapper.GrainQuantization=1 ;
 r.LightShaftQuality=0 ;
 r.Filter.SizeScale=1 ;
@@ -150,14 +150,14 @@ r.TranslucencyLightingVolumeDim=16 ;
 r.RefractionQuality=0 ;
 r.SSR.Quality=0 ;
 r.SceneColorFormat=3 ;
-r.DetailMode=2 ; testing
+r.DetailMode=0 ; testing
 r.TranslucencyVolumeBlur=0 ;
 r.MaterialQualityLevel=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
-r.EmitterSpawnRateScale=0.1 ;
+r.EmitterSpawnRateScale=0.2 ; testing
 r.ParticleLightQuality=1 ;
 foliage.DensityScale=0 ;
 grass.DensityScale=0 ;
@@ -178,7 +178,7 @@ r.OneFrameThreadLag=1 ;
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
-r.EarlyZPass=3 ; testing
+r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -189,11 +189,11 @@ r.CustomDepth.Order=1 ;
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
-r.SubsurfaceScattering=1 ;
+r.SubsurfaceScattering=0 ; testing
 r.SeparateTranslucency=1 ;
 r.TiledDeferredShading=1 ;
 r.DoTiledReflections=1 ;
-r.ReflectionEnvironment=1 ;
+r.ReflectionEnvironment=0 ; testing
 r.LandscapeLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.MipMapLODBias=0 ;
@@ -201,10 +201,8 @@ r.AmbientOcclusionStaticFraction=0 ;
 r.ToneMapperFilm=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
-r.Streaming.Boost=1 ; testing
-r.BlurGBuffer=0 ; testing
-FX.MaxCPUParticlesPerEmitter=500 ; testing
-FX.MaxGPUParticlesSpawnedPerFrame=100 ; testing
+r.Streaming.Boost=1 ;
+r.BlurGBuffer=0 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\
 
@@ -299,9 +297,6 @@ ShowFlag.Vignette=0 ;
 \\\\\\\\\\\\\\\\\\\\\\\
 
 My High/FPS config paste this:  (for Squad and Post Scriptum)
-
-[Internationalization]
-Culture=en-US
 
 [Core.Log]
 Global=all off
