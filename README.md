@@ -1,4 +1,4 @@
-*Updated 9/18/2018
+*Updated 9/18/2018 ~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -345,7 +345,7 @@ r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.BloomQuality=0 ;
 r.FastBlurThreshold=7 ;
-r.Upscale.Quality=3 ;
+r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.LightShaftQuality=0 ;
 r.Filter.SizeScale=1 ;
@@ -359,14 +359,14 @@ r.TranslucencyLightingVolumeDim=16 ;
 r.RefractionQuality=0 ;
 r.SSR.Quality=0 ;
 r.SceneColorFormat=3 ;
-r.DetailMode=1 ;
+r.DetailMode=0 ;
 r.TranslucencyVolumeBlur=0 ;
 r.MaterialQualityLevel=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
-r.EmitterSpawnRateScale=0.1 ;
+r.EmitterSpawnRateScale=1.0 ;
 r.ParticleLightQuality=1 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
@@ -378,19 +378,21 @@ bSmoothFrameRate=0 ;
 bUseFixedFrameRate=0 ;
 t.MaxFPS=400 ;
 r.ScreenPercentage=100 ;
+r.SceneRenderTargetResizeMethod=1 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
 r.HZBOcclusion=1 ;
-r.GBufferFormat=1 ;
-r.OneFrameThreadLag=1 ;
+r.GBufferFormat=0 ; test
+r.OneFrameThreadLag=0 ;
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
-r.EarlyZPass=3 ;
+r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.AllowStaticLighting=0 ;
+r.AllowStaticLighting=1 ; test
+r.HighQualityLightMaps=0 ; test
 r.AllowLandscapeShadows=0 ;
 r.CustomDepth=3 ;
 r.CustomDepth.Order=1 ;
@@ -410,6 +412,10 @@ r.TonemapperFilm=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
 r.Streaming.Boost=1 ;
+r.Fog=0 ;
+r.CreateShadersOnLoad=1 ; test
+r.OcclusionQueryLocation=0 ; test
+r.DownsampledOcclusionQueries=1 ; test
 
 \\\\\\\\\\\\\\\\\\\\\\\
 
