@@ -1,4 +1,4 @@
-*Updated 9/17/2018 ~
+*Updated 9/18/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -138,7 +138,7 @@ r.BloomQuality=0 ;
 r.FastBlurThreshold=7 ;
 r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=1 ;
-r.LightShaftQuality=0 ; 
+r.LightShaftQuality=0 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
 r.Streaming.MipBias=2 ;
@@ -173,8 +173,8 @@ r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=1 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
-r.HZBOcclusion=0 ; test
-r.GBufferFormat=0 ; 
+r.HZBOcclusion=1 ;
+r.GBufferFormat=0 ;
 r.OneFrameThreadLag=0 ; test
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
@@ -184,7 +184,7 @@ r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.AllowStaticLighting=1 ;
-r.HighQualityLightMaps=1 ; test 
+r.HighQualityLightMaps=1 ; test
 r.AllowLandscapeShadows=0 ;
 r.CustomDepth=0 ;
 r.CustomDepth.Order=1 ;
@@ -206,10 +206,10 @@ ShowFlag.Grain=0 ;
 r.Streaming.Boost=1 ;
 r.BlurGBuffer=0 ;
 r.Fog=0 ;
+r.CreateShadersOnLoad=1 ; test
 r.OcclusionQueryLocation=0 ; test
-r.CreateShadersOnLoad=1 ; test 
-r.SkinCaching=1 ; test
-FX.AllowGPUSorting=1 ; test
+r.DownsampledOcclusionQueries=1 ; test
+ShowFlag.Decals=0 ; test
 
 \\\\\\\\\\\\\\\\\\\\\\\
 
