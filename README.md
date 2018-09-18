@@ -1,4 +1,4 @@
-*Updated 9/17/2018
+*Updated 9/17/2018 ~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -136,9 +136,9 @@ r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.BloomQuality=0 ;
 r.FastBlurThreshold=7 ;
-r.Upscale.Quality=0 ; testing
+r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=1 ;
-r.LightShaftQuality=0 ;
+r.LightShaftQuality=0 ; 
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
 r.Streaming.MipBias=2 ;
@@ -150,7 +150,7 @@ r.TranslucencyLightingVolumeDim=16 ;
 r.RefractionQuality=0 ;
 r.SSR.Quality=0 ;
 r.SceneColorFormat=3 ;
-r.DetailMode=0 ; testing
+r.DetailMode=0 ;
 r.TranslucencyVolumeBlur=0 ;
 r.MaterialQualityLevel=1 ;
 r.SSS.Scale=1 ;
@@ -170,11 +170,12 @@ bSmoothFrameRate=0 ;
 bUseFixedFrameRate=0 ;
 t.MaxFPS=200 ;
 r.ScreenPercentage=100 ;
+r.SceneRenderTargetResizeMethod=1 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
-r.HZBOcclusion=1 ;
-r.GBufferFormat=0 ; testing
-r.OneFrameThreadLag=1 ;
+r.HZBOcclusion=0 ; test
+r.GBufferFormat=0 ; 
+r.OneFrameThreadLag=0 ; test
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
@@ -183,17 +184,18 @@ r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.AllowStaticLighting=1 ;
+r.HighQualityLightMaps=1 ; test 
 r.AllowLandscapeShadows=0 ;
-r.CustomDepth=0 ; testing
+r.CustomDepth=0 ;
 r.CustomDepth.Order=1 ;
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
-r.SubsurfaceScattering=0 ; testing
+r.SubsurfaceScattering=0 ;
 r.SeparateTranslucency=1 ;
 r.TiledDeferredShading=1 ;
 r.DoTiledReflections=1 ;
-r.ReflectionEnvironment=1 ; testing
+r.ReflectionEnvironment=1 ;
 r.LandscapeLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.MipMapLODBias=0 ;
@@ -203,6 +205,11 @@ ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
 r.Streaming.Boost=1 ;
 r.BlurGBuffer=0 ;
+r.Fog=0 ;
+r.OcclusionQueryLocation=0 ; test
+r.CreateShadersOnLoad=1 ; test 
+r.SkinCaching=1 ; test
+FX.AllowGPUSorting=1 ; test
 
 \\\\\\\\\\\\\\\\\\\\\\\
 
