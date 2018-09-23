@@ -1,4 +1,4 @@
-*Updated 9/21/2018
+*Updated 9/23/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -10,7 +10,13 @@ Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:    %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
-\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 Max FPS paste this:  (for Insurgency Sandstorm)******************
 
@@ -81,6 +87,7 @@ r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.AllowStaticLighting=1 ; 
+r.HighQualityLightMaps=0 ;
 r.AllowLandscapeShadows=0 ;
 r.CustomDepth=0 ;
 r.TranslucentLightingVolume=1 ;
@@ -94,9 +101,18 @@ r.ReflectionEnvironment=0 ;
 r.LandscapeLODBias=0 ;
 r.ParticleLODBias=0 ; 
 r.MipMapLODBias=0 ;
-ShowFlag.Decals=0 ; NEEDS TEST
+ShowFlag.Decals=0 ;
+r.BlurGBuffer=0 ;
+r.Fog=0 ;
+r.ClearCoatNormal=0 ;
 
-\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 My High/FPS config paste this:  (for Insurgency Sandstorm)******************
 
@@ -123,7 +139,7 @@ r.VolumetricFog.GridPixelSize=16 ;
 r.VolumetricFog.GridSizeZ=64 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
 r.LightMaxDrawDistanceScale=0.5 ;
-r.CapsuleShadows=1 ;
+r.CapsuleShadows=0 ;
 r.MotionBlurQuality=0 ;
 r.AmbientOcclusionMipLevelFactor=0.5 ;
 r.AmbientOcclusionMaxQuality=0 ;
@@ -173,45 +189,169 @@ r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=1 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
-r.HZBOcclusion=1 ; 
+r.HZBOcclusion=0 ;
+r.CreateShadersOnLoad=1 ;
+r.OcclusionQueryLocation=0 ;
+r.DownsampledOcclusionQueries=1 ;
 r.GBufferFormat=0 ;
-r.OneFrameThreadLag=0 ; 
+r.OneFrameThreadLag=0 ;
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
+a.ParallelBlendPhysics=0 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.AllowStaticLighting=1 ;
-r.HighQualityLightMaps=1 ; 
-r.AllowLandscapeShadows=0 ;
 r.CustomDepth=0 ;
 r.CustomDepth.Order=1 ;
-r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
+r.AllowStaticLighting=1 ;
+r.HighQualityLightMaps=1 ;
+r.AllowLandscapeShadows=0 ;
+r.TranslucentLightingVolume=1 ;
 r.SubsurfaceScattering=0 ;
-r.SeparateTranslucency=1 ;
+r.SeparateTranslucency=0 ;
 r.TiledDeferredShading=1 ;
 r.DoTiledReflections=1 ;
 r.ReflectionEnvironment=1 ;
-r.LandscapeLODBias=0 ;
-r.ParticleLODBias=0 ;
-r.MipMapLODBias=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.ToneMapperFilm=1 ;
 r.Streaming.Boost=1 ;
 r.BlurGBuffer=0 ;
 r.Fog=0 ;
-r.CreateShadersOnLoad=1 ;
-r.OcclusionQueryLocation=0 ; 
-r.DownsampledOcclusionQueries=1 ; 
+r.ClearCoatNormal=0 ;
+r.Decal.FadeDurationScale=0.25 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
 ShowFlag.Decals=0 ;
 
-\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+My Higher/FPS config paste this:  (for Insurgency Sandstorm)******************
+
+[Core.Log]
+Global=all off
+
+[SystemSettings]
+bSmoothFrameRate=0 ;
+bUseFixedFrameRate=0 ;
+t.MaxFPS=200 ;
+r.ScreenPercentage=100 ;
+r.SceneRenderTargetResizeMethod=1 ;
+r.FullScreenMode=0 ;
+r.VSync=0 ;
+r.SkeletalMeshLODBias=0 ;
+r.ViewDistanceScale=1.0 ;
+r.HLOD.DistanceScale=1.0 ;
+r.Streaming.MipBias=0 ;
+r.MaxAnisotropy=16 ;
+r.Streaming.Boost=1 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.PoolSize=2000 ;
+r.Streaming.MaxEffectiveScreenSize=0 ;
+r.LightFunctionQuality=1 ;
+r.ShadowQuality=0 ;
+r.Shadow.CSM.MaxCascades=4 ;
+r.Shadow.MaxResolution=1024 ;
+r.Shadow.MaxCSMResolution=2048 ;
+r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.DistanceScale=1.0 ;
+r.Shadow.CSM.TransitionScale=1.0 ;
+r.Shadow.PreShadowResolutionFactor=1.0 ;
+r.DistanceFieldShadowing=1 ;
+r.DistanceFieldAO=0 ;
+r.AllowStaticLighting=1 ;
+r.HighQualityLightMaps=1 ;
+r.AllowLandscapeShadows=1 ;
+r.TranslucentLightingVolume=1 ;
+r.TranslucencyVolumeBlur=0 ;
+r.TranslucencyLightingVolumeDim=16 ;
+r.LightShaftQuality=0 ;
+r.Fog=0 ;
+r.VolumetricFog=0 ;
+r.VolumetricFog.GridPixelSize=16 ;
+r.VolumetricFog.GridSizeZ=64 ;
+r.VolumetricFog.HistoryMissSupersampleCount=4 ;
+r.LightMaxDrawDistanceScale=1.0 ;
+r.BlurGBuffer=0 ;
+r.MotionBlurQuality=0 ;
+r.FastBlurThreshold=7 ;
+r.AmbientOcclusionStaticFraction=0 ;
+r.AmbientOcclusionMipLevelFactor=0.5 ;
+r.AmbientOcclusionMaxQuality=0 ;
+r.AmbientOcclusionLevels=0 ;
+r.AmbientOcclusionRadiusScale=1.0 ;
+r.DepthOfFieldQuality=0 ;
+r.RenderTargetPoolMin=400 ;
+r.LensFlareQuality=2 ;
+r.SceneColorFringeQuality=0 ;
+r.EyeAdaptationQuality=2 ;
+r.BloomQuality=0 ;
+r.Filter.SizeScale=1 ;
+r.Upscale.Quality=3 ;
+r.ToneMapperFilm=1 ;
+r.Tonemapper.Quality=5 ;
+r.Tonemapper.GrainQuantization=1 ;
+ShowFlag.Vignette=0 ;
+ShowFlag.Grain=0 ;
+r.RefractionQuality=2 ;
+r.SSR.Quality=3 ;
+r.SSR.MaxRoughness=0.7 ;
+r.GBufferFormat=1 ;
+r.SceneColorFormat=4 ;
+r.DetailMode=2 ;
+r.MaterialQualityLevel=1 ;
+r.SubsurfaceScattering=1 ;
+r.SSS.Scale=1 ;
+r.SSS.SampleSet=2 ;
+r.SSS.Quality=0 ;
+r.SSS.HalfRes=1 ;
+r.ParticleMinTimeBetweenTicks=16 ;
+r.MinTimeBetweenTicks=16 ;
+r.EmitterSpawnRateScale=1.0 ;
+r.ParticleLightQuality=2 ;
+foliage.DensityScale=0 ;
+grass.DensityScale=0 ;
+r.FoliageInteractionQuality=0 ;
+r.RenderTargetViewportSize=1.0 ;
+r.CustomDepth=0 ;
+r.CustomDepth.Order=1 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.TiledDeferredShading=1 ;
+r.DoTiledReflections=1 ;
+r.ReflectionEnvironment=1 ;
+r.ClearCoatNormal=1 ;
+ShowFlag.Decals=0 ;
+r.SkyLightingQuality=1 ;
+r.SeparateTranslucency=1 ;
+a.ParallelBlendPhysics=0 ;
+r.HZBOcclusion=0 ;
+r.OcclusionQueryLocation=0 ;
+r.DownsampledOcclusionQueries=1 ;
+r.OneFrameThreadLag=0 ;
+r.FinishCurrentFrame=0 ;
+r.CompileShadersForDevelopment=0 ;
+r.RHICmdBypass=0 ;
+r.CreateShadersOnLoad=1 ;
+r.EarlyZPass=2 ;
+r.EarlyZPassMovable=1 ;
+r.EarlyZPassOnlyMaterialMasking=1 ;
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 Max FPS paste this:  (for Squad and Post Scriptum)******************
 
@@ -248,7 +388,7 @@ r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=2 ;
 r.Streaming.MipBias=2 ;
 r.MaxAnisotropy=0 ;
-r.Streaming.LimitPoolSizeToVRAM=0 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=1000 ;
 r.Streaming.MaxEffectiveScreenSize=0 ; 
 r.TranslucencyLightingVolumeDim=16 ;
@@ -263,9 +403,6 @@ r.ParticleLightQuality=0 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
-r.FoliageInteractionQuality=0 ;
-r.HLOD.DistanceScale=1.0 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 bSmoothFrameRate=0 ;
 bUseFixedFrameRate=0 ;
 t.MaxFPS=400 ;
@@ -284,24 +421,30 @@ r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ; 
 r.AllowStaticLighting=0 ;
 r.AllowLandscapeShadows=0 ;
-r.CustomDepth=3 ;
+r.CustomDepth=1 ;
 r.CustomDepth.Order=1 ; 
 r.TranslucentLightingVolume=1 ; 
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
 r.SubsurfaceScattering=0 ;
-r.SeparateTranslucency=1 ;
+r.SeparateTranslucency=0 ;
 r.TiledDeferredShading=0 ;
 r.DoTiledReflections=0 ;
 r.ReflectionEnvironment=0 ;
-r.LandscapeLODBias=0 ;
-r.ParticleLODBias=0 ; 
-r.MipMapLODBias=0 ;
 r.ToneMapperFilm=1 ;
 r.StaticMeshLODDistanceScale=0.25 ;
+r.FoliageInteractionQuality=0 ;
+r.HLOD.DistanceScale=1.0 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 ShowFlag.Vignette=0 ;
 
-\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 My High/FPS config paste this:  (for Squad)******************
 
@@ -317,6 +460,7 @@ r.PostProcessAAQuality=1 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
+r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
@@ -326,23 +470,16 @@ r.Shadow.CSM.TransitionScale=1.0 ;
 r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
-r.VolumetricFog.GridPixelSize=16 ;
-r.VolumetricFog.GridSizeZ=64 ;
-r.VolumetricFog.HistoryMissSupersampleCount=4 ;
 r.LightMaxDrawDistanceScale=0.5 ;
-r.CapsuleShadows=1 ;
 r.MotionBlurQuality=0 ;
-r.AmbientOcclusionMipLevelFactor=0.5 ;
 r.AmbientOcclusionMaxQuality=0 ;
 r.AmbientOcclusionLevels=0 ;
-r.AmbientOcclusionRadiusScale=1.0 ;
 r.DepthOfFieldQuality=0 ;
 r.RenderTargetPoolMin=400 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.BloomQuality=0 ;
-r.FastBlurThreshold=7 ;
 r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.LightShaftQuality=0 ;
@@ -360,18 +497,11 @@ r.SceneColorFormat=3 ;
 r.DetailMode=0 ;
 r.TranslucencyVolumeBlur=0 ;
 r.MaterialQualityLevel=1 ;
-r.SSS.Scale=1 ;
-r.SSS.SampleSet=2 ;
-r.SSS.Quality=0 ;
-r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.ParticleLightQuality=1 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
-r.FoliageInteractionQuality=0 ;
-r.HLOD.DistanceScale=1.0 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 bSmoothFrameRate=0 ;
 bUseFixedFrameRate=0 ;
 t.MaxFPS=400 ;
@@ -379,7 +509,7 @@ r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=1 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
-r.HZBOcclusion=1 ;
+r.HZBOcclusion=0 ;
 r.GBufferFormat=0 ; 
 r.OneFrameThreadLag=0 ;
 r.FinishCurrentFrame=0 ;
@@ -392,19 +522,16 @@ Compat.UseDXT5NormalMaps=0 ;
 r.AllowStaticLighting=1 ;
 r.HighQualityLightMaps=1 ;
 r.AllowLandscapeShadows=0 ;
-r.CustomDepth=3 ;
+r.CustomDepth=1 ;
 r.CustomDepth.Order=1 ;
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
 r.SubsurfaceScattering=0 ;
-r.SeparateTranslucency=1 ;
+r.SeparateTranslucency=0 ;
 r.TiledDeferredShading=1 ;
 r.DoTiledReflections=1 ;
 r.ReflectionEnvironment=1 ;
-r.LandscapeLODBias=0 ;
-r.ParticleLODBias=0 ;
-r.MipMapLODBias=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.TonemapperFilm=1 ;
 r.Streaming.Boost=1 ;
@@ -412,10 +539,19 @@ r.Fog=0 ;
 r.CreateShadersOnLoad=1 ; 
 r.OcclusionQueryLocation=0 ;
 r.DownsampledOcclusionQueries=1 ; 
+r.FoliageInteractionQuality=0 ;
+r.HLOD.DistanceScale=1.0 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
 
-\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 My High/FPS config paste this:  (for Post Scriptum)******************
 
@@ -431,27 +567,26 @@ r.PostProcessAAQuality=1 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
-r.ShadowQuality=0 ;
+r.ShadowQuality=3 ;
+r.Shadow.CSM.MaxCascades=2 ;
+r.Shadow.MaxResolution=1024 ;
+r.Shadow.MaxCSMResolution=2048 ;
+r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.DistanceScale=0.4 ;
+r.Shadow.CSM.TransitionScale=1.0 ;
 r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
-r.VolumetricFog.GridPixelSize=16 ;
-r.VolumetricFog.GridSizeZ=64 ;
-r.VolumetricFog.HistoryMissSupersampleCount=4 ;
 r.LightMaxDrawDistanceScale=0.5 ;
-r.CapsuleShadows=1 ;
 r.MotionBlurQuality=0 ;
-r.AmbientOcclusionMipLevelFactor=0.5 ;
 r.AmbientOcclusionMaxQuality=0 ;
 r.AmbientOcclusionLevels=0 ;
-r.AmbientOcclusionRadiusScale=1.0 ;
 r.DepthOfFieldQuality=0 ;
 r.RenderTargetPoolMin=400 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.BloomQuality=0 ;
-r.FastBlurThreshold=7 ;
 r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.LightShaftQuality=0 ;
@@ -469,18 +604,11 @@ r.SceneColorFormat=3 ;
 r.DetailMode=0 ;
 r.TranslucencyVolumeBlur=0 ;
 r.MaterialQualityLevel=1 ;
-r.SSS.Scale=1 ;
-r.SSS.SampleSet=2 ;
-r.SSS.Quality=0 ;
-r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.ParticleLightQuality=1 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
-r.FoliageInteractionQuality=0 ;
-r.HLOD.DistanceScale=1.0 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 bSmoothFrameRate=0 ;
 bUseFixedFrameRate=0 ;
 t.MaxFPS=400 ;
@@ -488,8 +616,8 @@ r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=1 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
-r.HZBOcclusion=1 ;
-r.GBufferFormat=0 ; 
+r.HZBOcclusion=0 ;
+r.GBufferFormat=0 ;
 r.OneFrameThreadLag=0 ;
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
@@ -498,33 +626,39 @@ r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.AllowStaticLighting=1 ;
-r.HighQualityLightMaps=1 ;
+r.AllowStaticLighting=0 ;
+r.HighQualityLightMaps=0 ;
 r.AllowLandscapeShadows=0 ;
-r.CustomDepth=3 ;
+r.CustomDepth=1 ;
 r.CustomDepth.Order=1 ;
 r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
 r.SubsurfaceScattering=0 ;
-r.SeparateTranslucency=1 ;
+r.SeparateTranslucency=0 ;
 r.TiledDeferredShading=1 ;
 r.DoTiledReflections=1 ;
 r.ReflectionEnvironment=1 ;
-r.LandscapeLODBias=0 ;
-r.ParticleLODBias=0 ;
-r.MipMapLODBias=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.TonemapperFilm=1 ;
 r.Streaming.Boost=1 ;
 r.Fog=0 ;
-r.CreateShadersOnLoad=1 ; 
+r.CreateShadersOnLoad=1 ;
 r.OcclusionQueryLocation=0 ;
-r.DownsampledOcclusionQueries=1 ; 
+r.DownsampledOcclusionQueries=1 ;
+r.FoliageInteractionQuality=0 ;
+r.HLOD.DistanceScale=1.0 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
 
-\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 Extra:
 
@@ -538,7 +672,13 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 Disable Insurgency Sandstorm intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
