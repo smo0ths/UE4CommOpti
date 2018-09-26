@@ -1,11 +1,11 @@
-*Updated 9/23/2018
+*Updated 9/25/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 Open Engine.ini and Copy/Paste commands/configs:
 
-Press:    Windows key + R      
+Press:         Windows key + R      
 Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
@@ -18,7 +18,7 @@ Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-Max FPS paste this:  (for Insurgency Sandstorm)******************
+Max FPS for Insurgency Sandstorm* paste this:
 
 Copy/Paste:  
 
@@ -98,10 +98,6 @@ r.SeparateTranslucency=0 ;
 r.TiledDeferredShading=0 ;
 r.DoTiledReflections=0 ;
 r.ReflectionEnvironment=0 ;
-r.LandscapeLODBias=0 ;
-r.ParticleLODBias=0 ; 
-r.MipMapLODBias=0 ;
-ShowFlag.Decals=0 ;
 r.BlurGBuffer=0 ;
 r.Fog=0 ;
 r.ClearCoatNormal=0 ;
@@ -114,199 +110,97 @@ r.ClearCoatNormal=0 ;
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-My High/FPS config paste this:  (for Insurgency Sandstorm)******************
+My config for Insurgency Sandstorm* paste this:
 
 [Core.Log]
 Global=all off
 
 [SystemSettings]
-r.PostProcessAAQuality=1 ;
+bSmoothFrameRate=0 ;
+bUseFixedFrameRate=0 ;
+bEnableMouseSmoothing=0 ;
+bDisablePhysXHardwareSupport=0 ;
+bPauseOnLossOfFocus=0 ;
+t.MaxFPS=200 ;
+t.OverrideFPS=0 ;
+r.FullScreenMode=0 ;
+r.VSync=0 ;
+r.ScreenPercentage=100 ;
+r.SceneRenderTargetResizeMethod=1 ;
+r.RenderTargetPoolMin=400 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.4 ;
+r.ForceLOD=-1 ;
+r.HLOD=1 ;
+r.HLOD.MaximumLevel=-1 ;
+r.HLOD.DistanceScale=1.0 ;
+r.TextureStreaming=1 ;
+r.Streaming.HLODStrategy=0 ;
+r.Streaming.MipBias=2 ;
+r.Streaming.Boost=1 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.PoolSize=2000 ;
+r.Streaming.MaxEffectiveScreenSize=0 ;
+r.MaxAnisotropy=8 ;
+r.SkyLightingQuality=0 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=0 ;
-r.Shadow.CSM.MaxCascades=2 ;
+r.Shadow.CSM.MaxCascades=1 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.4 ;
 r.Shadow.CSM.TransitionScale=1.0 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
+r.Shadow.CSMDepthBias=0 ;
+r.CapsuleShadows=0 ;
+r.CapsuleShadowsFullResolution=0 ;
 r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
-r.VolumetricFog=0 ;
-r.VolumetricFog.GridPixelSize=16 ;
-r.VolumetricFog.GridSizeZ=64 ;
-r.VolumetricFog.HistoryMissSupersampleCount=4 ;
-r.LightMaxDrawDistanceScale=0.5 ;
-r.CapsuleShadows=0 ;
-r.MotionBlurQuality=0 ;
-r.AmbientOcclusionMipLevelFactor=0.5 ;
-r.AmbientOcclusionMaxQuality=0 ;
-r.AmbientOcclusionLevels=0 ;
-r.AmbientOcclusionRadiusScale=1.0 ;
-r.DepthOfFieldQuality=0 ;
-r.RenderTargetPoolMin=400 ;
-r.LensFlareQuality=2 ;
-r.SceneColorFringeQuality=0 ;
-r.EyeAdaptationQuality=2 ;
-r.BloomQuality=0 ;
-r.FastBlurThreshold=7 ;
-r.Upscale.Quality=0 ;
-r.Tonemapper.GrainQuantization=1 ;
-r.LightShaftQuality=0 ;
-r.Filter.SizeScale=1 ;
-r.Tonemapper.Quality=5 ;
-r.Streaming.MipBias=2 ;
-r.MaxAnisotropy=16 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=2000 ;
-r.Streaming.MaxEffectiveScreenSize=0 ;
-r.TranslucencyLightingVolumeDim=16 ;
-r.RefractionQuality=0 ;
-r.SSR.Quality=0 ;
-r.SceneColorFormat=3 ;
-r.DetailMode=0 ;
-r.TranslucencyVolumeBlur=0 ;
-r.MaterialQualityLevel=1 ;
-r.SSS.Scale=1 ;
-r.SSS.SampleSet=2 ;
-r.SSS.Quality=0 ;
-r.SSS.HalfRes=1 ;
-r.EmitterSpawnRateScale=0.5 ;
-r.ParticleLightQuality=1 ;
-foliage.DensityScale=0 ;
-grass.DensityScale=0 ;
-r.FoliageInteractionQuality=0 ;
-r.HLOD.DistanceScale=1.0 ;
-r.RenderTargetViewportSize=1.0 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
-bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
-t.MaxFPS=200 ;
-r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=1 ;
-r.FullScreenMode=0 ;
-r.VSync=0 ;
-r.HZBOcclusion=0 ;
-r.CreateShadersOnLoad=1 ;
-r.OcclusionQueryLocation=0 ;
-r.DownsampledOcclusionQueries=1 ;
-r.GBufferFormat=0 ;
-r.OneFrameThreadLag=0 ;
-r.FinishCurrentFrame=0 ;
-r.CompileShadersForDevelopment=0 ;
-r.RHICmdBypass=0 ;
-a.ParallelBlendPhysics=0 ;
-r.EarlyZPass=2 ;
-r.EarlyZPassMovable=1 ;
-r.EarlyZPassOnlyMaterialMasking=1 ;
-Compat.UseDXT5NormalMaps=0 ;
-r.CustomDepth=0 ;
-r.CustomDepth.Order=1 ;
-r.ParticleMinTimeBetweenTicks=16 ;
-r.MinTimeBetweenTicks=16 ;
 r.AllowStaticLighting=1 ;
 r.HighQualityLightMaps=1 ;
 r.AllowLandscapeShadows=0 ;
 r.TranslucentLightingVolume=1 ;
-r.SubsurfaceScattering=0 ;
-r.SeparateTranslucency=0 ;
-r.TiledDeferredShading=1 ;
-r.DoTiledReflections=1 ;
-r.ReflectionEnvironment=1 ;
-r.AmbientOcclusionStaticFraction=0 ;
-r.ToneMapperFilm=1 ;
-r.Streaming.Boost=1 ;
-r.BlurGBuffer=0 ;
-r.Fog=0 ;
-r.ClearCoatNormal=0 ;
-r.Decal.FadeDurationScale=0.25 ;
-ShowFlag.Vignette=0 ;
-ShowFlag.Grain=0 ;
-ShowFlag.Decals=0 ;
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-My Higher/FPS config paste this:  (for Insurgency Sandstorm)******************
-
-[Core.Log]
-Global=all off
-
-[SystemSettings]
-bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
-t.MaxFPS=200 ;
-r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=1 ;
-r.FullScreenMode=0 ;
-r.VSync=0 ;
-r.SkeletalMeshLODBias=0 ;
-r.ViewDistanceScale=1.0 ;
-r.HLOD.DistanceScale=1.0 ;
-r.Streaming.MipBias=0 ;
-r.MaxAnisotropy=16 ;
-r.Streaming.Boost=1 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=2000 ;
-r.Streaming.MaxEffectiveScreenSize=0 ;
-r.LightFunctionQuality=1 ;
-r.ShadowQuality=0 ;
-r.Shadow.CSM.MaxCascades=4 ;
-r.Shadow.MaxResolution=1024 ;
-r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.RadiusThreshold=0.03 ;
-r.Shadow.DistanceScale=1.0 ;
-r.Shadow.CSM.TransitionScale=1.0 ;
-r.Shadow.PreShadowResolutionFactor=1.0 ;
-r.DistanceFieldShadowing=1 ;
-r.DistanceFieldAO=0 ;
-r.AllowStaticLighting=1 ;
-r.HighQualityLightMaps=1 ;
-r.AllowLandscapeShadows=1 ;
-r.TranslucentLightingVolume=1 ;
 r.TranslucencyVolumeBlur=0 ;
 r.TranslucencyLightingVolumeDim=16 ;
+r.TranslucencyLightingVolumeInnerDistance=1500 ;
+r.TranslucencyLightingVolumeOuterDistance=5000 ;
 r.LightShaftQuality=0 ;
+r.LightShaftDownSampleFactor=1 ;
 r.Fog=0 ;
 r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=16 ;
 r.VolumetricFog.GridSizeZ=64 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
-r.LightMaxDrawDistanceScale=1.0 ;
-r.BlurGBuffer=0 ;
-r.MotionBlurQuality=0 ;
-r.FastBlurThreshold=7 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.5 ;
 r.AmbientOcclusionMaxQuality=0 ;
 r.AmbientOcclusionLevels=0 ;
 r.AmbientOcclusionRadiusScale=1.0 ;
-r.DepthOfFieldQuality=0 ;
-r.RenderTargetPoolMin=400 ;
-r.LensFlareQuality=2 ;
-r.SceneColorFringeQuality=0 ;
-r.EyeAdaptationQuality=2 ;
-r.BloomQuality=0 ;
-r.Filter.SizeScale=1 ;
-r.Upscale.Quality=3 ;
+r.AmbientOcclusion.Compute=0 ;
+r.LightMaxDrawDistanceScale=1.0 ;
 r.ToneMapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.GrainQuantization=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
+r.BlurGBuffer=0 ;
+r.MotionBlurQuality=0 ;
+r.FastBlurThreshold=7 ;
+r.DepthOfFieldQuality=0 ;
+r.LensFlareQuality=2 ;
+r.EyeAdaptationQuality=2 ;
+r.BloomQuality=0 ;
+r.Filter.SizeScale=1 ;
+r.Upscale.Quality=3 ;
 r.RefractionQuality=2 ;
-r.SSR.Quality=3 ;
-r.SSR.MaxRoughness=0.7 ;
+r.SSR.Quality=1 ;
+r.SSR.MaxRoughness=-1 ;
 r.GBufferFormat=1 ;
-r.SceneColorFormat=4 ;
+r.SceneColorFormat=3 ;
+r.SceneColorFringeQuality=0 ;
+r.SceneColorFringe.Max=0.5 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=1 ;
@@ -314,10 +208,10 @@ r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
+r.ParticleLightQuality=2 ;
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
 r.EmitterSpawnRateScale=1.0 ;
-r.ParticleLightQuality=2 ;
 foliage.DensityScale=0 ;
 grass.DensityScale=0 ;
 r.FoliageInteractionQuality=0 ;
@@ -325,18 +219,31 @@ r.RenderTargetViewportSize=1.0 ;
 r.CustomDepth=0 ;
 r.CustomDepth.Order=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.ForwardShading=0 ;
+r.SupportSimpleForwardShading=0 ;
+r.SimpleForwardShading=0 ;
 r.TiledDeferredShading=1 ;
+r.TiledDeferredShading.MinimumCount=80 ;
 r.DoTiledReflections=1 ;
 r.ReflectionEnvironment=1 ;
-r.ClearCoatNormal=1 ;
-ShowFlag.Decals=0 ;
-r.SkyLightingQuality=1 ;
-r.SeparateTranslucency=1 ;
-a.ParallelBlendPhysics=0 ;
-r.HZBOcclusion=0 ;
-r.OcclusionQueryLocation=0 ;
-r.DownsampledOcclusionQueries=1 ;
-r.OneFrameThreadLag=0 ;
+r.ReflectionCaptureResolution=128 ;
+r.ReflectionEnvironmentBeginMixingRoughness=0.1 ;
+r.ReflectionEnvironmentEndMixingRoughness=0.3 ;
+r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
+r.ReflectionEnvironmentLightmapMixing=1 ;
+r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
+r.NoTiledReflections=0 ;
+r.TiledReflectionEnvironmentMinimumCount=10 ;
+r.HalfResReflections=1 ;
+r.ClearCoatNormal=0 ;
+r.SeparateTranslucency=0 ;
+r.ClearSceneMethod=1 ;
+r.HZBOcclusion=1 ; test
+r.OneFrameThreadLag=1 ; test
+r.AllowOcclusionQueries=1 ;
+r.AllowSubPrimitiveQueries=0 ; test
+r.NumBufferedOcclusionQueries=2 test
+r.DownsampledOcclusionQueries=0 ; test
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
@@ -344,6 +251,19 @@ r.CreateShadersOnLoad=1 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
+r.MultithreadedLightmapEncode=1 ;
+r.Cache.LimitQuerySize=1 ;
+r.BasePassOutputsVelocity=1 ;
+r.SkinCaching=1 ;
+r.IndirectLightingCache=1 ;
+r.VirtualTexture=0 ;
+r.StaticMeshLODDistanceScale=1 ;
+r.AlsoUseSphereForFrustumCull=-1 ;
+r.Atmosphere=0 ;
+r.SkeletalMeshLODRadiusScale=1.0 ;
+r.DistanceFieldGI=1 ;
+r.GenerateMeshDistanceFields=0 ;
+a.ParallelBlendPhysics=0 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -353,7 +273,7 @@ r.EarlyZPassOnlyMaterialMasking=1 ;
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-Max FPS paste this:  (for Squad and Post Scriptum)******************
+Max FPS for Squad* and Post Scriptum* paste this:
 
 [Core.Log]
 Global=all off
@@ -390,11 +310,11 @@ r.Streaming.MipBias=2 ;
 r.MaxAnisotropy=0 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=1000 ;
-r.Streaming.MaxEffectiveScreenSize=0 ; 
+r.Streaming.MaxEffectiveScreenSize=0 ;
 r.TranslucencyLightingVolumeDim=16 ;
 r.RefractionQuality=0 ;
 r.SSR.Quality=0 ;
-r.SceneColorFormat=2 ; test
+r.SceneColorFormat=2 ;
 r.DetailMode=0 ;
 r.TranslucencyVolumeBlur=0 ;
 r.MaterialQualityLevel=0 ;
@@ -409,21 +329,21 @@ t.MaxFPS=400 ;
 r.ScreenPercentage=100 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
-r.HZBOcclusion=1 ; 
 r.GBufferFormat=0 ;
-r.OneFrameThreadLag=1 ; 
 r.FinishCurrentFrame=0 ;
 r.CompileShadersForDevelopment=0 ;
 r.RHICmdBypass=0 ;
-r.EarlyZPass=2 ; 
-r.EarlyZPassMovable=1 ; 
-r.EarlyZPassOnlyMaterialMasking=1 ; 
-Compat.UseDXT5NormalMaps=0 ; 
+r.OneFrameThreadLag=1 ;
+r.HZBOcclusion=1 ;
+r.EarlyZPass=2 ;
+r.EarlyZPassMovable=1 ;
+r.EarlyZPassOnlyMaterialMasking=1 ;
+Compat.UseDXT5NormalMaps=0 ;
+r.CustomDepth=1 ;
+r.CustomDepth.Order=1 ;
 r.AllowStaticLighting=0 ;
 r.AllowLandscapeShadows=0 ;
-r.CustomDepth=1 ;
-r.CustomDepth.Order=1 ; 
-r.TranslucentLightingVolume=1 ; 
+r.TranslucentLightingVolume=1 ;
 r.ParticleMinTimeBetweenTicks=16 ;
 r.MinTimeBetweenTicks=16 ;
 r.SubsurfaceScattering=0 ;
@@ -431,119 +351,10 @@ r.SeparateTranslucency=0 ;
 r.TiledDeferredShading=0 ;
 r.DoTiledReflections=0 ;
 r.ReflectionEnvironment=0 ;
-r.ToneMapperFilm=1 ;
-r.StaticMeshLODDistanceScale=0.25 ;
-r.FoliageInteractionQuality=0 ;
-r.HLOD.DistanceScale=1.0 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-ShowFlag.Vignette=0 ;
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-My High/FPS config paste this:  (for Squad)******************
-
-[Core.Log]
-Global=all off
-LogEasyAntiCheatServer=all off
-
-[Audio]
-MaxChannels=96
-
-[SystemSettings]
-r.PostProcessAAQuality=1 ;
-r.SkeletalMeshLODBias=0 ;
-r.ViewDistanceScale=0.8 ;
-r.LightFunctionQuality=1 ;
-r.ShadowQuality=3 ;
-r.Shadow.CSM.MaxCascades=2 ;
-r.Shadow.MaxResolution=1024 ;
-r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.RadiusThreshold=0.03 ;
-r.Shadow.DistanceScale=0.4 ;
-r.Shadow.CSM.TransitionScale=1.0 ;
-r.DistanceFieldShadowing=0 ;
-r.DistanceFieldAO=0 ;
-r.VolumetricFog=0 ;
-r.LightMaxDrawDistanceScale=0.5 ;
-r.MotionBlurQuality=0 ;
-r.AmbientOcclusionMaxQuality=0 ;
-r.AmbientOcclusionLevels=0 ;
-r.DepthOfFieldQuality=0 ;
-r.RenderTargetPoolMin=400 ;
-r.LensFlareQuality=2 ;
-r.SceneColorFringeQuality=0 ;
-r.EyeAdaptationQuality=2 ;
-r.BloomQuality=0 ;
-r.Upscale.Quality=0 ;
-r.Tonemapper.GrainQuantization=1 ;
-r.LightShaftQuality=0 ;
-r.Filter.SizeScale=1 ;
-r.Tonemapper.Quality=5 ;
-r.Streaming.MipBias=2 ;
-r.MaxAnisotropy=16 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=2000 ;
-r.Streaming.MaxEffectiveScreenSize=0 ;
-r.TranslucencyLightingVolumeDim=16 ;
-r.RefractionQuality=0 ;
-r.SSR.Quality=0 ;
-r.SceneColorFormat=3 ;
-r.DetailMode=0 ;
-r.TranslucencyVolumeBlur=0 ;
-r.MaterialQualityLevel=1 ;
-r.EmitterSpawnRateScale=0.5 ;
-r.ParticleLightQuality=1 ;
-foliage.DensityScale=0.6 ;
-grass.DensityScale=0.6 ;
-grass.MaxUpdateFrequency=10 ;
-bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
-t.MaxFPS=400 ;
-r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=1 ;
-r.FullScreenMode=0 ;
-r.VSync=0 ;
-r.HZBOcclusion=0 ;
-r.GBufferFormat=0 ; 
-r.OneFrameThreadLag=0 ;
-r.FinishCurrentFrame=0 ;
-r.CompileShadersForDevelopment=0 ;
-r.RHICmdBypass=0 ;
-r.EarlyZPass=2 ;
-r.EarlyZPassMovable=1 ;
-r.EarlyZPassOnlyMaterialMasking=1 ;
-Compat.UseDXT5NormalMaps=0 ;
-r.AllowStaticLighting=1 ;
-r.HighQualityLightMaps=1 ;
-r.AllowLandscapeShadows=0 ;
-r.CustomDepth=1 ;
-r.CustomDepth.Order=1 ;
-r.TranslucentLightingVolume=1 ;
-r.ParticleMinTimeBetweenTicks=16 ;
-r.MinTimeBetweenTicks=16 ;
-r.SubsurfaceScattering=0 ;
-r.SeparateTranslucency=0 ;
-r.TiledDeferredShading=1 ;
-r.DoTiledReflections=1 ;
-r.ReflectionEnvironment=1 ;
-r.AmbientOcclusionStaticFraction=0 ;
 r.TonemapperFilm=1 ;
-r.Streaming.Boost=1 ;
-r.Fog=0 ;
-r.CreateShadersOnLoad=1 ; 
-r.OcclusionQueryLocation=0 ;
-r.DownsampledOcclusionQueries=1 ; 
-r.FoliageInteractionQuality=0 ;
-r.HLOD.DistanceScale=1.0 ;
+r.StaticMeshLODDistanceScale=0.25 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 ShowFlag.Vignette=0 ;
-ShowFlag.Grain=0 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -553,7 +364,7 @@ ShowFlag.Grain=0 ;
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-My High/FPS config paste this:  (for Post Scriptum)******************
+My config for Squad* and Post Scriptum* paste this:
 
 [Core.Log]
 Global=all off
@@ -563,9 +374,33 @@ LogEasyAntiCheatServer=all off
 MaxChannels=96
 
 [SystemSettings]
-r.PostProcessAAQuality=1 ;
+bSmoothFrameRate=0 ;
+bUseFixedFrameRate=0 ;
+bEnableMouseSmoothing=0 ;
+bDisablePhysXHardwareSupport=0 ;
+bPauseOnLossOfFocus=0 ;
+t.MaxFPS=200 ;
+t.OverrideFPS=0 ;
+r.FullScreenMode=0 ;
+r.VSync=0 ;
+r.ScreenPercentage=100 ;
+r.SceneRenderTargetResizeMethod=1 ;
+r.RenderTargetPoolMin=400 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
+r.ForceLOD=-1 ;
+r.HLOD=1 ;
+r.HLOD.MaximumLevel=-1 ;
+r.HLOD.DistanceScale=1.0 ;
+r.TextureStreaming=1 ;
+r.Streaming.HLODStrategy=0 ;
+r.Streaming.MipBias=2 ;
+r.Streaming.Boost=1 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.PoolSize=2000 ;
+r.Streaming.MaxEffectiveScreenSize=0 ;
+r.MaxAnisotropy=8 ;
+r.SkyLightingQuality=0 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
@@ -574,83 +409,120 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.4 ;
 r.Shadow.CSM.TransitionScale=1.0 ;
+r.Shadow.PreShadowResolutionFactor=0.5 ;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
+r.Shadow.CSMDepthBias=10 ;
+r.CapsuleShadows=0 ;
+r.CapsuleShadowsFullResolution=0 ;
 r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
-r.VolumetricFog=0 ;
-r.LightMaxDrawDistanceScale=0.5 ;
-r.MotionBlurQuality=0 ;
-r.AmbientOcclusionMaxQuality=0 ;
-r.AmbientOcclusionLevels=0 ;
-r.DepthOfFieldQuality=0 ;
-r.RenderTargetPoolMin=400 ;
-r.LensFlareQuality=2 ;
-r.SceneColorFringeQuality=0 ;
-r.EyeAdaptationQuality=2 ;
-r.BloomQuality=0 ;
-r.Upscale.Quality=0 ;
-r.Tonemapper.GrainQuantization=1 ;
-r.LightShaftQuality=0 ;
-r.Filter.SizeScale=1 ;
-r.Tonemapper.Quality=5 ;
-r.Streaming.MipBias=2 ;
-r.MaxAnisotropy=16 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=2000 ;
-r.Streaming.MaxEffectiveScreenSize=0 ;
-r.TranslucencyLightingVolumeDim=16 ;
-r.RefractionQuality=0 ;
-r.SSR.Quality=0 ;
-r.SceneColorFormat=3 ;
-r.DetailMode=0 ;
-r.TranslucencyVolumeBlur=0 ;
-r.MaterialQualityLevel=1 ;
-r.EmitterSpawnRateScale=0.5 ;
-r.ParticleLightQuality=1 ;
-foliage.DensityScale=0.6 ;
-grass.DensityScale=0.6 ;
-grass.MaxUpdateFrequency=10 ;
-bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
-t.MaxFPS=400 ;
-r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=1 ;
-r.FullScreenMode=0 ;
-r.VSync=0 ;
-r.HZBOcclusion=0 ;
-r.GBufferFormat=0 ;
-r.OneFrameThreadLag=0 ;
-r.FinishCurrentFrame=0 ;
-r.CompileShadersForDevelopment=0 ;
-r.RHICmdBypass=0 ;
-r.EarlyZPass=2 ;
-r.EarlyZPassMovable=1 ;
-r.EarlyZPassOnlyMaterialMasking=1 ;
-Compat.UseDXT5NormalMaps=0 ;
 r.AllowStaticLighting=0 ;
 r.HighQualityLightMaps=0 ;
 r.AllowLandscapeShadows=0 ;
-r.CustomDepth=1 ;
-r.CustomDepth.Order=1 ;
 r.TranslucentLightingVolume=1 ;
-r.ParticleMinTimeBetweenTicks=16 ;
-r.MinTimeBetweenTicks=16 ;
-r.SubsurfaceScattering=0 ;
-r.SeparateTranslucency=0 ;
-r.TiledDeferredShading=1 ;
-r.DoTiledReflections=1 ;
-r.ReflectionEnvironment=1 ;
-r.AmbientOcclusionStaticFraction=0 ;
-r.TonemapperFilm=1 ;
-r.Streaming.Boost=1 ;
+r.TranslucencyVolumeBlur=0 ;
+r.TranslucencyLightingVolumeDim=16 ;
+r.TranslucencyLightingVolumeInnerDistance=1500 ;
+r.TranslucencyLightingVolumeOuterDistance=5000 ;
+r.LightShaftQuality=0 ;
+r.LightShaftDownSampleFactor=1 ;
 r.Fog=0 ;
-r.CreateShadersOnLoad=1 ;
-r.OcclusionQueryLocation=0 ;
-r.DownsampledOcclusionQueries=1 ;
-r.FoliageInteractionQuality=0 ;
-r.HLOD.DistanceScale=1.0 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.VolumetricFog=0 ;
+r.VolumetricFog.GridPixelSize=16 ;
+r.VolumetricFog.GridSizeZ=64 ;
+r.VolumetricFog.HistoryMissSupersampleCount=4 ;
+r.AmbientOcclusionStaticFraction=0 ;
+r.AmbientOcclusionMipLevelFactor=0.5 ;
+r.AmbientOcclusionMaxQuality=0 ;
+r.AmbientOcclusionLevels=0 ;
+r.AmbientOcclusionRadiusScale=1.0 ;
+r.AmbientOcclusion.Compute=0 ;
+r.LightMaxDrawDistanceScale=1.0 ;
+r.TonemapperFilm=1 ;
+r.Tonemapper.Quality=5 ;
+r.Tonemapper.GrainQuantization=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
+r.BlurGBuffer=0 ;
+r.MotionBlurQuality=0 ;
+r.FastBlurThreshold=7 ;
+r.DepthOfFieldQuality=0 ;
+r.LensFlareQuality=2 ;
+r.EyeAdaptationQuality=2 ;
+r.BloomQuality=0 ;
+r.Filter.SizeScale=1 ;
+r.Upscale.Quality=3 ;
+r.RefractionQuality=2 ;
+r.SSR.Quality=1 ;
+r.SSR.MaxRoughness=-1 ;
+r.GBufferFormat=1 ;
+r.SceneColorFormat=4 ;
+r.SceneColorFringeQuality=0 ;
+r.SceneColorFringe.Max=0.5 ;
+r.DetailMode=2 ;
+r.MaterialQualityLevel=1 ;
+r.SubsurfaceScattering=1 ;
+r.SSS.Scale=1 ;
+r.SSS.SampleSet=2 ;
+r.SSS.Quality=0 ;
+r.SSS.HalfRes=1 ;
+r.ParticleLightQuality=2 ;
+r.ParticleMinTimeBetweenTicks=16 ;
+r.MinTimeBetweenTicks=16 ;
+r.EmitterSpawnRateScale=1.0 ;
+foliage.DensityScale=0.6 ;
+grass.DensityScale=0.6 ;
+grass.MaxUpdateFrequency=10 ;
+r.FoliageInteractionQuality=0 ;
+r.RenderTargetViewportSize=1.0 ;
+r.CustomDepth=1 ;
+r.CustomDepth.Order=1 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.ForwardShading=0 ;
+r.SupportSimpleForwardShading=0 ;
+r.SimpleForwardShading=0 ;
+r.TiledDeferredShading=1 ;
+r.TiledDeferredShading.MinimumCount=80 ;
+r.DoTiledReflections=1 ;
+r.ReflectionEnvironment=1 ;
+r.ReflectionCaptureResolution=128 ;
+r.ReflectionEnvironmentBeginMixingRoughness=0.1 ;
+r.ReflectionEnvironmentEndMixingRoughness=0.3 ;
+r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
+r.ReflectionEnvironmentLightmapMixing=1 ;
+r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
+r.NoTiledReflections=0 ;
+r.TiledReflectionEnvironmentMinimumCount=10 ;
+r.HalfResReflections=1 ;
+r.ClearCoatNormal=0 ;
+r.SeparateTranslucency=0 ;
+r.ClearSceneMethod=1 ;
+r.HZBOcclusion=1 ; 
+r.OneFrameThreadLag=1 ; 
+r.AllowOcclusionQueries=1 ;
+r.AllowSubPrimitiveQueries=0 ; 
+r.NumBufferedOcclusionQueries=2 
+r.DownsampledOcclusionQueries=0 ;
+r.FinishCurrentFrame=0 ;
+r.CompileShadersForDevelopment=0 ;
+r.RHICmdBypass=0 ;
+r.CreateShadersOnLoad=1 ;
+r.EarlyZPass=2 ;
+r.EarlyZPassMovable=1 ;
+r.EarlyZPassOnlyMaterialMasking=1 ;
+r.MultithreadedLightmapEncode=1 ;
+r.Cache.LimitQuerySize=1 ;
+r.BasePassOutputsVelocity=1 ;
+r.SkinCaching=1 ;
+r.IndirectLightingCache=1 ;
+r.VirtualTexture=0 ;
+r.StaticMeshLODDistanceScale=1 ;
+r.AlsoUseSphereForFrustumCull=-1 ;
+r.Atmosphere=0 ;
+r.SkeletalMeshLODRadiusScale=1.0 ;
+r.DistanceFieldGI=1 ;
+r.GenerateMeshDistanceFields=0 ;
+a.ParallelBlendPhysics=0 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
