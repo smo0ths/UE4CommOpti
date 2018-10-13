@@ -1,4 +1,4 @@
-*Updated 10/9/2018
+*Updated 10/13/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -210,7 +210,7 @@ r.HLOD.DistanceScale=1.0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=2 ;
+r.Streaming.MipBias=0 ;
 r.Streaming.Boost=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=2000 ;
@@ -223,12 +223,12 @@ r.ShadowQuality=0 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.RadiusThreshold=0.04 ;
-r.Shadow.DistanceScale=0.8 ;
+r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1.0 ;
 r.Shadow.PreShadowResolutionFactor=1.0 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
-r.Shadow.CSMDepthBias=10 ;
+r.Shadow.CSMDepthBias=30 ;
 r.Shadow.CachePreshadow=1 ;
 r.Shadow.CacheWholeSceneShadows=1 ;
 r.AllowLandscapeShadows=1 ;
@@ -247,7 +247,7 @@ r.TranslucencyLightingVolumeInnerDistance=1500 ;
 r.TranslucencyLightingVolumeOuterDistance=5000 ;
 r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=4 ;
-r.SupportAtmosphericFog=0 ; test
+r.SupportAtmosphericFog=0 ;
 r.Atmosphere=1 ;
 r.Fog=0 ;
 r.VolumetricFog=0 ;
@@ -263,7 +263,7 @@ r.AmbientOcclusion.Compute=0 ;
 r.GenerateMeshDistanceFields=0 ;
 r.DistanceFieldAO=0 ;
 r.LightMaxDrawDistanceScale=1.0 ;
-r.ToneMapperFilm=1 ;
+r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.GrainQuantization=1 ;
 ShowFlag.Vignette=0 ;
@@ -280,9 +280,9 @@ r.Filter.SizeScale=1 ;
 r.Upscale.Quality=3 ;
 r.RefractionQuality=2 ;
 r.SSR.Quality=3 ;
-r.SSR.MaxRoughness=0.8 ;
-r.SSR.Temporal=0 ;
-r.GBufferFormat=1 ;
+r.SSR.MaxRoughness=1 ; 
+r.SSR.Temporal=1 ; 
+r.GBufferFormat=3 ; 
 r.SceneColorFormat=4 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0.5 ;
@@ -338,7 +338,7 @@ r.BasePassOutputsVelocity=1 ;
 r.VirtualTexture=0 ;
 r.AlsoUseSphereForFrustumCull=-1 ;
 a.ParallelBlendPhysics=0 ;
-r.Gamma=1.1 ;
+r.PostProcessAAQuality=1 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -559,12 +559,12 @@ r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.RadiusThreshold=0.04 ;
-r.Shadow.DistanceScale=0.8 ;
+r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1.0 ;
 r.Shadow.PreShadowResolutionFactor=1.0 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
-r.Shadow.CSMDepthBias=10 ;
+r.Shadow.CSMDepthBias=30 ;
 r.Shadow.CachePreshadow=1 ;
 r.Shadow.CacheWholeSceneShadows=1 ;
 r.AllowLandscapeShadows=1 ;
@@ -583,7 +583,7 @@ r.TranslucencyLightingVolumeInnerDistance=1500 ;
 r.TranslucencyLightingVolumeOuterDistance=5000 ;
 r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=4 ;
-r.SupportAtmosphericFog=0 ; test
+r.SupportAtmosphericFog=0 ;
 r.Atmosphere=1 ;
 r.Fog=1 ;
 r.VolumetricFog=0 ;
@@ -616,16 +616,16 @@ r.Filter.SizeScale=1 ;
 r.Upscale.Quality=3 ;
 r.RefractionQuality=2 ;
 r.SSR.Quality=3 ;
-r.SSR.MaxRoughness=0.8 ;
-r.SSR.Temporal=0 ;
-r.GBufferFormat=1 ;
+r.SSR.MaxRoughness=1 ; 
+r.SSR.Temporal=1 ; 
+r.GBufferFormat=3 ; 
 r.SceneColorFormat=4 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0.5 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
 r.ClearCoatNormal=1 ;
-r.SubsurfaceScattering=1 ;
+r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
@@ -674,6 +674,7 @@ r.BasePassOutputsVelocity=1 ;
 r.VirtualTexture=0 ;
 r.AlsoUseSphereForFrustumCull=-1 ;
 a.ParallelBlendPhysics=0 ;
+r.PostProcessAAQuality=1 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -705,5 +706,5 @@ Vertical sync: Off
 
 Disable Insurgency Sandstorm intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
-Press:    Windows key + R    
+Press:         Windows key + R    
 Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
