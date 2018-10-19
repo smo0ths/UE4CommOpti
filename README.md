@@ -1,4 +1,4 @@
-*Updated 10/13/2018
+*Updated 10/18/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -513,6 +513,30 @@ a.ParallelBlendPhysics=0 ;
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
+
+
+Open GameUserSettings.ini set correctly what a mess:
+
+AmbientOcclusionLevels=2
+GraphicsQuality=4
+LensFlare=1
+Bloom=1
+AmbientOcclusionRadiusScale=0.100000
+LensFlareQuality=2
+
+[ScalabilityGroups]
+sg.ResolutionQuality=100.000000
+sg.ViewDistanceQuality=4
+sg.AntiAliasingQuality=0
+sg.ShadowQuality=4
+sg.PostProcessQuality=4
+sg.TextureQuality=4
+sg.EffectsQuality=4
+sg.FoliageQuality=4
+
+
+
+
 My config for Squad* and Post Scriptum* paste this:
 
 [Core.Log]
@@ -534,6 +558,8 @@ r.FullScreenMode=0 ;
 r.VSync=0 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=1 ;
+r.DefaultFeature.AntiAliasing=1 ;
+r.PostProcessAAQuality=1 ;
 r.RenderTargetPoolMin=400 ;
 r.SkeletalMeshLODBias=0 ;
 r.SkeletalMeshLODRadiusScale=1.0 ;
@@ -590,11 +616,15 @@ r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=16 ;
 r.VolumetricFog.GridSizeZ=64 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
+r.DefaultFeature.AmbientOcclusion=1 ;
+r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusionMipLevelFactor=0.5 ;
-r.AmbientOcclusionMaxQuality=0 ;
-r.AmbientOcclusionLevels=0 ;
-r.AmbientOcclusionRadiusScale=1.0 ;
+r.AmbientOcclusionMipLevelFactor=0 ;
+r.AmbientOcclusionMaxQuality=-100 ;
+r.AmbientOcclusionLevels=3 ;
+r.AmbientOcclusionRadiusScale=1.0 ; test 0.1 
+r.AmbientOcclusion.FadeRadiusScale=1.0 ;
+r.AmbientOcclusion.AsyncComputeBudget=1 ; test
 r.AmbientOcclusion.Compute=0 ;
 r.GenerateMeshDistanceFields=0 ;
 r.DistanceFieldAO=0 ;
@@ -605,26 +635,31 @@ r.Tonemapper.GrainQuantization=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
 r.BlurGBuffer=0 ;
+r.DefaultFeature.MotionBlur=0 ;
 r.MotionBlurQuality=0 ;
 r.FastBlurThreshold=7 ;
 r.SeparateTranslucency=1 ;
 r.DepthOfFieldQuality=0 ;
+r.DefaultFeature.LensFlare=1 ;
 r.LensFlareQuality=2 ;
+r.DefaultFeature.AutoExposure=1 ;
+r.DefaultFeature.AutoExposure.Method=0 ; test
 r.EyeAdaptationQuality=2 ;
+r.DefaultFeature.Bloom=0 ;
 r.BloomQuality=0 ;
 r.Filter.SizeScale=1 ;
 r.Upscale.Quality=3 ;
 r.RefractionQuality=2 ;
 r.SSR.Quality=3 ;
-r.SSR.MaxRoughness=1 ; 
-r.SSR.Temporal=1 ; 
-r.GBufferFormat=3 ; 
+r.SSR.MaxRoughness=1 ;
+r.SSR.Temporal=0 ;
+r.GBufferFormat=3 ;
 r.SceneColorFormat=4 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0.5 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
-r.ClearCoatNormal=1 ;
+r.ClearCoatNormal=0 ; test
 r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
@@ -674,7 +709,8 @@ r.BasePassOutputsVelocity=1 ;
 r.VirtualTexture=0 ;
 r.AlsoUseSphereForFrustumCull=-1 ;
 a.ParallelBlendPhysics=0 ;
-r.PostProcessAAQuality=1 ;
+r.DefaultFeature.PointLightUnits=1 ; test
+r.DefaultFeature.SpotLightUnits=1 ; test
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
