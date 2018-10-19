@@ -1,4 +1,4 @@
-*Updated 10/19/2018 x2
+*Updated 10/19/2018 ~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -294,7 +294,7 @@ r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0 ;
 r.AmbientOcclusionMaxQuality=-100 ;
-r.AmbientOcclusionLevels=3 ;
+r.AmbientOcclusionLevels=2 ;
 r.AmbientOcclusionRadiusScale=0.1 ; 
 r.AmbientOcclusion.FadeRadiusScale=1.0 ;
 r.AmbientOcclusion.Compute=0 ;
@@ -660,7 +660,7 @@ r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0 ;
 r.AmbientOcclusionMaxQuality=-100 ;
-r.AmbientOcclusionLevels=3 ;
+r.AmbientOcclusionLevels=2 ;
 r.AmbientOcclusionRadiusScale=0.1 ; 
 r.AmbientOcclusion.FadeRadiusScale=1.0 ;
 r.AmbientOcclusion.Compute=0 ;
