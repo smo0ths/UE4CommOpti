@@ -1,4 +1,4 @@
-*Updated 10/19/2018
+*Updated 10/19/2018 x2
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -333,7 +333,7 @@ r.SceneColorFringe.Max=0.5 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
 r.ClearCoatNormal=0 ;~
-r.SubsurfaceScattering=0 ;
+r.SubsurfaceScattering=1 ;~
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
@@ -530,7 +530,7 @@ grass.DensityScale=0.6 ;~
 grass.MaxUpdateFrequency=10 ;
 r.FoliageInteractionQuality=0 ;
 r.RenderTargetViewportSize=1.0 ;
-r.CustomDepth=0 ;~
+r.CustomDepth=3 ;~
 r.CustomDepth.Order=1 ;
 r.DisableDistortion=1 ;
 r.ForwardShading=0 ;
