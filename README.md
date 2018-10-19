@@ -1,4 +1,4 @@
-*Updated 10/19/2018 ~~
+*Updated 10/19/2018 ~~~
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -64,7 +64,7 @@ r.ViewDistanceScale=0.4 ;~
 r.ForceLOD=-1 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
-r.HLOD.DistanceScale=1.0 ;~
+r.HLOD.DistanceScale=0.6 ;~
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
