@@ -1,4 +1,4 @@
-*Updated 10/19/2018 ~~~
+*Updated 10/20/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -568,7 +568,7 @@ Global=all off
 LogEasyAntiCheatServer=all off
 
 [Audio]
-MaxChannels=96
+MaxChannels=96 ;
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -610,10 +610,10 @@ r.ForceLOD=-1 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1.0 ;
-r.TessellationAdaptivePixelsPerTriangle=48 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=0 ;
+r.Streaming.MipBias=2 ;~
 r.Streaming.Boost=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=2000 ;
@@ -645,7 +645,7 @@ r.MultithreadedShadowmapEncode=1 ;
 r.DistanceFieldGI=1 ;~
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyVolumeBlur=0 ;
-r.TranslucencyLightingVolumeDim=128 ;
+r.TranslucencyLightingVolumeDim=32 ;~
 r.TranslucencyLightingVolumeInnerDistance=1500 ;
 r.TranslucencyLightingVolumeOuterDistance=5000 ;
 r.LightShaftQuality=1 ;
@@ -689,8 +689,8 @@ r.BloomQuality=0 ;
 r.Filter.SizeScale=1 ;
 r.Upscale.Quality=3 ;
 r.RefractionQuality=2 ;
-r.SSR.Quality=3 ;
-r.SSR.MaxRoughness=1 ;
+r.SSR.Quality=0 ;~
+r.SSR.MaxRoughness=0.9 ;~
 r.SSR.Temporal=0 ;
 r.GBufferFormat=3 ;
 r.SceneColorFormat=4 ;
@@ -706,11 +706,11 @@ r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.ParticleLightQuality=2 ;
 r.ParticleMinTimeBetweenTicks=8 ;
-r.MinTimeBetweenTicks=8 ;
+r.MinTimeBetweenTicks=16 ;~
 r.EmitterSpawnRateScale=1.0 ;
 foliage.DensityScale=0.6 ;~
 grass.DensityScale=0.6 ;~
-grass.MaxUpdateFrequency=30 ;
+grass.MaxUpdateFrequency=10 ;~
 r.FoliageInteractionQuality=1 ;
 r.RenderTargetViewportSize=1.0 ;
 r.CustomDepth=3 ;~
