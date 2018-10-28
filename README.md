@@ -1,4 +1,4 @@
-*Updated 10/27/2018
+*Updated 10/28/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs
 *Customize your UE4 game settings with this if you want 
@@ -68,7 +68,7 @@ r.HLOD.DistanceScale=0.6 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=0 ;
+r.Streaming.MipBias=2 ;
 r.Streaming.Boost=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=-1 ;
@@ -430,7 +430,7 @@ r.HLOD.DistanceScale=1.0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=0 ;
+r.Streaming.MipBias=2 ;
 r.Streaming.Boost=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=-1 ;
@@ -591,6 +591,7 @@ r.CreateShadersOnLoad=1 ;
 r.CompileShadersForDevelopment=0 ;
 r.CustomDepth=3 ;
 r.SceneColorFormat=3 ;
+r.SubsurfaceScattering=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.AlsoUseSphereForFrustumCull=-1 ;
 r.GBufferFormat=1 ;
@@ -607,6 +608,7 @@ r.SSR.Quality=0 ;
 r.LightShaftQuality=0 ;
 r.DepthOfFieldQuality=0 ;
 r.MaxAnisotropy=16 ;
+r.Streaming.MipBias=2 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
