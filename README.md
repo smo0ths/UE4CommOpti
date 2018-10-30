@@ -1,4 +1,4 @@
-*Updated 10/28/2018
+*Updated 10/30/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs
 *Customize your UE4 game settings with this if you want 
@@ -578,7 +578,7 @@ bEnableMouseSmoothing=0 ;
 bDisablePhysXHardwareSupport=0 ;
 bPauseOnLossOfFocus=0 ;
 r.VSync=0 ;
-t.IdleWhenNotForeground=1 ; test
+t.IdleWhenNotForeground=0 ;
 t.OverrideFPS=0 ;
 t.MaxFPS=300 ;
 r.EarlyZPass=2 ;
@@ -590,11 +590,15 @@ r.OneFrameThreadLag=1 ;
 r.FinishCurrentFrame=0 ;
 r.CreateShadersOnLoad=1 ;
 r.CompileShadersForDevelopment=0 ;
+r.RenderTargetPoolMin=400 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.PoolSize=2000 ;
+r.MaxAnisotropy=16 ;
 r.CustomDepth=3 ;
 r.SceneColorFormat=3 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.AlsoUseSphereForFrustumCull=-1 ;
-r.GBufferFormat=1 ;
+r.GBufferFormat=0 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 r.ViewDistanceScale=0.8 ;
@@ -607,12 +611,12 @@ r.ReflectionEnvironment=0 ;
 r.SSR.Quality=0 ;
 r.LightShaftQuality=0 ;
 r.DepthOfFieldQuality=0 ;
-r.MaxAnisotropy=16 ;
 r.Streaming.MipBias=2 ;
 r.SceneColorFringe.Max=0.3 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.SubsurfaceScattering=0 ;
+r.AllowLandscapeShadows=0 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
