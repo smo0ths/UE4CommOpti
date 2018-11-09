@@ -1,4 +1,4 @@
-*Updated 10/8/2018
+*Updated 11/9/2018
 *Insurgency Sandstorm configs added
 *Post Scriptum and Squad configs
 *Customize your UE4 game settings with this if you want 
@@ -321,7 +321,6 @@ My config for Squad* and Post Scriptum* paste this:
 
 [Core.Log]
 Global=all off
-LogEasyAntiCheatServer=all off
 
 [Audio]
 MaxChannels=96 ;
@@ -346,8 +345,6 @@ r.FinishCurrentFrame=0 ;
 r.CreateShadersOnLoad=1 ;
 r.CompileShadersForDevelopment=0 ;
 r.RenderTargetPoolMin=400 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=2000 ;
 r.MaxAnisotropy=16 ;
 r.CustomDepth=3 ;
 r.SceneColorFormat=3 ;
@@ -367,11 +364,12 @@ r.SSR.Quality=0 ;
 r.LightShaftQuality=0 ;
 r.DepthOfFieldQuality=0 ;
 r.Streaming.MipBias=2 ;
-r.SceneColorFringe.Max=0.3 ;
+r.SceneColorFringeQuality=0 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.SubsurfaceScattering=0 ;
 r.AllowLandscapeShadows=0 ;
+r.TextureStreaming=1 ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
