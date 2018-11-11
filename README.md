@@ -6,15 +6,13 @@
 
 Open Engine.ini and Copy/Paste commands/configs:
 
-Press:         Windows key + R      
+     Press:    Windows key + R      
 Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
-; break 
+; end of code ;
 
-SQUAD*:
-
-Max FPS for paste this:
+SQUAD* Max FPS Copy/Paste this:
 
 [Core.Log]
 Global=all off
@@ -67,11 +65,9 @@ foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
 
-; break 
+; end of code ;
 
-SQUAD*:
-
-My config for paste this:
+SQUAD* My config Copy/Paste this:
 
 [Core.Log]
 Global=all off
@@ -136,13 +132,9 @@ r.Streaming.UsePerTextureBias=1 ; this
 [TextureStreaming]
 PoolSizeVRAMPercentage=60 ;
 
-; break 
+; end of code ;
 
-INSURGENCY SANDSTORM*:
-
-Max FPS for paste this:
-
-Copy/Paste:  
+INSURGENCY SANDSTORM* Max FPS Copy/Paste this:
 
 [Core.Log]
 Global=all off
@@ -313,11 +305,9 @@ r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DefaultFeature.PointLightUnits=0 ;
 r.DefaultFeature.SpotLightUnits=0 ;
 
-; break 
+; end of code ;
 
-INSURGENCY SANDSTORM*:
-
-My config for paste this: 
+INSURGENCY SANDSTORM* My config Copy/Paste this:
 
 [Core.Log]
 Global=all off
@@ -365,11 +355,9 @@ r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 
-; break 
+; end of code ;
 
-Extra:
-
-For NVIDIA users in control panel change:
+EXTRA* For NVIDIA users in control panel change:
 
 Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
 Multi/mixed gpu accel: Single display performance mode
@@ -379,11 +367,11 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-; break 
+; end of code ;
 
 Disable INSURGENCY SANDSTORM* intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
-Press:         Windows key + R    
+     Press:    Windows key + R    
 Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
