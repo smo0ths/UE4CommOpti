@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Updated 11/11/2018
-*For Squad/Insurgency Sandstorm or other UE4 games for reference costomization and optimization 
+*For Squad/Insurgency Sandstorm or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
 Open Engine.ini and Copy/Paste commands/configs:
