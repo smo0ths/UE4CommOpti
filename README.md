@@ -51,7 +51,6 @@ r.SkyLightingQuality=0 ;
 r.HighQualityLightMaps=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldGI=0 ;
-r.SeparateTranslucency=1 ;
 r.TranslucentLightingVolume=1 ;
 r.DefaultFeature.AutoExposure=0 ;
 r.SubsurfaceScattering=0 ;
