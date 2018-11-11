@@ -1,4 +1,4 @@
-~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Updated 11/11/2018
 *For Squad/Insurgency Sandstorm or other UE4 games for reference costomization and optimization 
@@ -386,4 +386,4 @@ Disable INSURGENCY SANDSTORM* intro vids add .bak after .mp4 e.g. (UE_Startup_St
 Press:         Windows key + R    
 Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
 
-~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
