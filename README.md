@@ -1,25 +1,144 @@
-*Updated 11/9/2018
-*Insurgency Sandstorm configs added
-*Post Scriptum and Squad configs
-*Customize your UE4 game settings with this if you want 
-*Always testing stuff contact me twitch.tv/smoothschannel or discord
+*Updated 11/11/2018
+*For Squad/Insurgency Sandstorm or other UE4 games for reference costomization and optimization 
+*Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
 Open Engine.ini and Copy/Paste commands/configs:
 
 Press:         Windows key + R      
 Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
-Copy/Paste:    %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-Max FPS for Insurgency Sandstorm* paste this:
+SQUAD*:
+
+Max FPS for paste this:
+
+[Core.Log]
+Global=all off
+LogEasyAntiCheatServer=all off
+
+[Audio]
+MaxChannels=64 ;
+
+[SystemSettings]
+bSmoothFrameRate=0 ;
+bUseFixedFrameRate=0 ;
+bEnableMouseSmoothing=0 ;
+bDisablePhysXHardwareSupport=0 ;
+bPauseOnLossOfFocus=0 ;
+t.MaxFPS=300 ;
+t.OverrideFPS=0 ;
+r.FullScreenMode=0 ;
+r.VSync=0 ;
+r.HZBOcclusion=1 ;
+r.OneFrameThreadLag=1 ;
+r.FinishCurrentFrame=0 ;
+r.RHICmdBypass=0 ;
+r.CompileShadersForDevelopment=0 ;
+r.CreateShadersOnLoad=1 ;
+r.EarlyZPass=2 ;
+r.EarlyZPassMovable=1 ;
+r.EarlyZPassOnlyMaterialMasking=1 ;
+r.AlsoUseSphereForFrustumCull=-1 ;
+r.GBufferFormat=0 ;
+r.SceneColorFormat=2 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.StaticMeshLODDistanceScale=0.25 ;
+r.ViewDistanceScale=0.8 ;
+r.Streaming.MipBias=2 ;
+r.SkyLightingQuality=0 ;
+r.HighQualityLightMaps=0 ;
+r.AllowLandscapeShadows=0 ;
+r.DistanceFieldGI=0 ;
+r.SeparateTranslucency=1 ;
+r.TranslucentLightingVolume=1 ;
+r.DefaultFeature.AutoExposure=0 ;
+r.SubsurfaceScattering=0 ;
+r.EmitterSpawnRateScale=0.1 ;
+r.CustomDepth=3 ;
+r.TiledDeferredShading=0 ;
+r.DoTiledReflections=0 ;
+r.NoTiledReflections=0 ;
+r.ReflectionEnvironment=0 ;
+foliage.DensityScale=0.6 ;
+grass.DensityScale=0.6 ;
+grass.MaxUpdateFrequency=10 ;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SQUAD*:
+
+My config for paste this:
+
+[Core.Log]
+Global=all off
+
+[Audio]
+MaxChannels=96 ;
+
+[SystemSettings]
+bSmoothFrameRate=0 ;
+bUseFixedFrameRate=0 ;
+bEnableMouseSmoothing=0 ;
+bDisablePhysXHardwareSupport=0 ;
+bPauseOnLossOfFocus=0 ;
+r.VSync=0 ;
+t.IdleWhenNotForeground=0 ;
+t.OverrideFPS=0 ;
+t.MaxFPS=300 ;
+r.EarlyZPass=3 ; this
+r.EarlyZPassMovable=1 ;
+r.EarlyZPassOnlyMaterialMasking=1 ;
+r.CompileShadersForDevelopment=0 ;
+r.RHICmdBypass=0 ;
+r.HZBOcclusion=1 ;
+r.OneFrameThreadLag=1 ;
+r.FinishCurrentFrame=0 ;
+r.CreateShadersOnLoad=1 ;
+r.GBufferFormat=1 ;
+r.CustomDepth=3 ;
+r.SceneColorFormat=3 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.AlsoUseSphereForFrustumCull=-1 ;
+foliage.DensityScale=0.6 ;
+grass.DensityScale=0.6 ;
+r.ViewDistanceScale=0.8 ;
+r.Shadow.CSM.MaxCascades=2 ;
+r.Shadow.MaxResolution=1024 ;
+r.Shadow.MaxCSMResolution=2048 ;
+r.Shadow.DistanceScale=0.6 ;
+r.Shadow.CSM.TransitionScale=1.0 ;
+r.AllowLandscapeShadows=0 ;
+r.ReflectionEnvironment=0 ;
+r.SceneColorFringeQuality=0 ;
+r.SubsurfaceScattering=0 ;
+r.DepthOfFieldQuality=0 ;
+r.LightShaftQuality=0 ;
+r.DistanceFieldAO=0 ;
+r.VolumetricFog=0 ;
+r.SSR.Quality=0 ;
+r.RenderTargetPoolMin=400 ;
+r.Streaming.Boost=1 ;
+r.Streaming.FullyLoadUsedTextures=0 ;
+r.Streaming.HLODStrategy=0 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ; this
+r.Streaming.MaxEffectiveScreenSize=0 ;
+r.Streaming.MipBias=2 ;
+r.Streaming.PoolSize=1000 ;
+r.Streaming.UseFixedPoolSize=0 ; this
+r.MaxAnisotropy=16 ;
+r.MipMapLODBias=0 ;
+r.Streaming.UsePerTextureBias=1 ; this
+
+[TextureStreaming]
+PoolSizeVRAMPercentage=60 ;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+INSURGENCY SANDSTORM*:
+
+Max FPS for paste this:
 
 Copy/Paste:  
 
@@ -192,15 +311,11 @@ r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DefaultFeature.PointLightUnits=0 ;
 r.DefaultFeature.SpotLightUnits=0 ;
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-My config for Insurgency Sandstorm* paste this:
+INSURGENCY SANDSTORM*:
+
+My config for paste this: 
 
 [Core.Log]
 Global=all off
@@ -248,136 +363,7 @@ r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-Max FPS for Squad* and Post Scriptum* paste this:
-
-[Core.Log]
-Global=all off
-LogEasyAntiCheatServer=all off
-
-[Audio]
-MaxChannels=64 ;
-
-[SystemSettings]
-bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
-bEnableMouseSmoothing=0 ;
-bDisablePhysXHardwareSupport=0 ;
-bPauseOnLossOfFocus=0 ;
-t.MaxFPS=300 ;
-t.OverrideFPS=0 ;
-r.FullScreenMode=0 ;
-r.VSync=0 ;
-r.HZBOcclusion=1 ;
-r.OneFrameThreadLag=1 ;
-r.FinishCurrentFrame=0 ;
-r.RHICmdBypass=0 ;
-r.CompileShadersForDevelopment=0 ;
-r.CreateShadersOnLoad=1 ;
-r.EarlyZPass=2 ;
-r.EarlyZPassMovable=1 ;
-r.EarlyZPassOnlyMaterialMasking=1 ;
-r.AlsoUseSphereForFrustumCull=-1 ;
-r.GBufferFormat=0 ;
-r.SceneColorFormat=2 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.StaticMeshLODDistanceScale=0.25 ;
-r.ViewDistanceScale=0.8 ;
-r.Streaming.MipBias=2 ;
-r.SkyLightingQuality=0 ;
-r.HighQualityLightMaps=0 ;
-r.AllowLandscapeShadows=0 ;
-r.DistanceFieldGI=0 ;
-r.SeparateTranslucency=1 ;
-r.TranslucentLightingVolume=1 ;
-r.DefaultFeature.AutoExposure=0 ;
-r.SubsurfaceScattering=0 ;
-r.EmitterSpawnRateScale=0.1 ;
-r.CustomDepth=3 ;
-r.TiledDeferredShading=0 ;
-r.DoTiledReflections=0 ;
-r.NoTiledReflections=0 ;
-r.ReflectionEnvironment=0 ;
-foliage.DensityScale=0.6 ;
-grass.DensityScale=0.6 ;
-grass.MaxUpdateFrequency=10 ;
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-My config for Squad* and Post Scriptum* paste this:
-
-[Core.Log]
-Global=all off
-
-[Audio]
-MaxChannels=96 ;
-
-[SystemSettings]
-bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
-bEnableMouseSmoothing=0 ;
-bDisablePhysXHardwareSupport=0 ;
-bPauseOnLossOfFocus=0 ;
-r.VSync=0 ;
-t.IdleWhenNotForeground=0 ;
-t.OverrideFPS=0 ;
-t.MaxFPS=300 ;
-r.EarlyZPass=2 ;
-r.EarlyZPassMovable=1 ;
-r.EarlyZPassOnlyMaterialMasking=1 ;
-r.RHICmdBypass=0 ;
-r.HZBOcclusion=1 ;
-r.OneFrameThreadLag=1 ;
-r.FinishCurrentFrame=0 ;
-r.CreateShadersOnLoad=1 ;
-r.CompileShadersForDevelopment=0 ;
-r.RenderTargetPoolMin=400 ;
-r.MaxAnisotropy=16 ;
-r.CustomDepth=3 ;
-r.SceneColorFormat=3 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.AlsoUseSphereForFrustumCull=-1 ;
-r.GBufferFormat=0 ;
-foliage.DensityScale=0.6 ;
-grass.DensityScale=0.6 ;
-r.ViewDistanceScale=0.8 ;
-r.Shadow.CSM.MaxCascades=2 ;
-r.Shadow.MaxResolution=1024 ;
-r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.DistanceScale=0.6 ;
-r.Shadow.CSM.TransitionScale=1.0 ;
-r.ReflectionEnvironment=0 ;
-r.SSR.Quality=0 ;
-r.LightShaftQuality=0 ;
-r.DepthOfFieldQuality=0 ;
-r.Streaming.MipBias=2 ;
-r.SceneColorFringeQuality=0 ;
-r.DistanceFieldAO=0 ;
-r.VolumetricFog=0 ;
-r.SubsurfaceScattering=0 ;
-r.AllowLandscapeShadows=0 ;
-r.TextureStreaming=1 ;
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Extra:
 
@@ -391,15 +377,9 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Disable Insurgency Sandstorm intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
+Disable INSURGENCY SANDSTORM* intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
 Press:         Windows key + R    
 Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
