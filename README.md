@@ -1,4 +1,4 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
 
 *Updated 11/11/2018
 *For Squad/Insurgency Sandstorm or other UE4 games for reference costomization and optimization 
@@ -10,7 +10,7 @@ Press:         Windows key + R
 Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
-;
+; break 
 
 SQUAD*:
 
@@ -67,7 +67,7 @@ foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
 
-;
+; break 
 
 SQUAD*:
 
@@ -136,7 +136,7 @@ r.Streaming.UsePerTextureBias=1 ; this
 [TextureStreaming]
 PoolSizeVRAMPercentage=60 ;
 
-;
+; break 
 
 INSURGENCY SANDSTORM*:
 
@@ -313,7 +313,7 @@ r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DefaultFeature.PointLightUnits=0 ;
 r.DefaultFeature.SpotLightUnits=0 ;
 
-;
+; break 
 
 INSURGENCY SANDSTORM*:
 
@@ -365,7 +365,7 @@ r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 
-;
+; break 
 
 Extra:
 
@@ -379,11 +379,11 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-;
+; break 
 
 Disable INSURGENCY SANDSTORM* intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
 Press:         Windows key + R    
 Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
