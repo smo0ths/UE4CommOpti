@@ -10,6 +10,8 @@ Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 SQUAD*:
 
 Max FPS for paste this:
@@ -64,6 +66,8 @@ r.ReflectionEnvironment=0 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -133,6 +137,8 @@ r.Streaming.UsePerTextureBias=1 ; this
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=60 ;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -313,6 +319,8 @@ r.DefaultFeature.SpotLightUnits=0 ;
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 INSURGENCY SANDSTORM*:
 
 My config for paste this: 
@@ -365,6 +373,8 @@ r.AOQuality=0 ;
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Extra:
 
 For NVIDIA users in control panel change:
@@ -376,6 +386,8 @@ Preferred refresh rate: Highest available
 Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
