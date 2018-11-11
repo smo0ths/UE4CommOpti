@@ -10,7 +10,7 @@ Press:         Windows key + R
 Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;
 
 SQUAD*:
 
@@ -67,7 +67,7 @@ foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;
 
 SQUAD*:
 
@@ -136,7 +136,7 @@ r.Streaming.UsePerTextureBias=1 ; this
 [TextureStreaming]
 PoolSizeVRAMPercentage=60 ;
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;
 
 INSURGENCY SANDSTORM*:
 
@@ -313,7 +313,7 @@ r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DefaultFeature.PointLightUnits=0 ;
 r.DefaultFeature.SpotLightUnits=0 ;
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;
 
 INSURGENCY SANDSTORM*:
 
@@ -365,7 +365,7 @@ r.DistanceFieldShadowing=0 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;
 
 Extra:
 
@@ -379,7 +379,7 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;
 
 Disable INSURGENCY SANDSTORM* intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
