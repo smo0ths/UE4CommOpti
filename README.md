@@ -1,6 +1,9 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 11/11/2018
+
+
+
+*Updated 11/13/2018
 *For Squad/Insurgency Sandstorm or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -10,13 +13,21 @@ Open Engine.ini and Copy/Paste commands/configs:
 Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
-; end of code ;
+
+
+
+; end ;
+
+
+
 
 SQUAD* Max FPS Copy/Paste this:
 
+
+
+
 [Core.Log]
 Global=all off
-LogEasyAntiCheatServer=all off
 
 [Audio]
 MaxChannels=64 ;
@@ -64,9 +75,18 @@ foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.MaxUpdateFrequency=10 ;
 
-; end of code ;
+
+
+
+; end ;
+
+
+
 
 SQUAD* My config Copy/Paste this:
+
+
+
 
 [Core.Log]
 Global=all off
@@ -109,6 +129,7 @@ r.Shadow.CSM.TransitionScale=1.0 ;
 r.AllowLandscapeShadows=0 ;
 r.ReflectionEnvironment=0 ;
 r.SceneColorFringeQuality=0 ;
+r.SceneColorFringe.Max=0 ;
 r.SubsurfaceScattering=0 ;
 r.DepthOfFieldQuality=0 ;
 r.LightShaftQuality=0 ;
@@ -116,22 +137,40 @@ r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.SSR.Quality=0 ;
 r.RenderTargetPoolMin=400 ;
+r.Streaming.UseFixedPoolSize=1 ; this test
+r.Streaming.FullyLoadUsedTextures=1 ; this
+r.Streaming.DefragDynamicBounds=1 ; this
 r.Streaming.Boost=1 ;
-r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ; this
+r.Streaming.LimitPoolSizeToVRAM=0 ; this test
 r.Streaming.MaxEffectiveScreenSize=0 ;
-r.Streaming.MipBias=2 ;
-r.Streaming.PoolSize=1000 ;
-r.Streaming.UseFixedPoolSize=0 ; this
-r.MaxAnisotropy=16 ;
+r.Streaming.MipBias=0 ;
+r.Streaming.PoolSize=2000 ; this test
+r.MaxAnisotropy=8 ;
 r.MipMapLODBias=0 ;
 r.Streaming.UsePerTextureBias=1 ; this
+r.ExposureOffset=-0.7 ;
+r.DefaultFeature.AmbientOcclusion=1 ;
+r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
+r.AmbientOcclusion.AsyncComputeBudget=1 ;
+r.AmbientOcclusion.Compute=0 ;
+r.AmbientOcclusion.FadeRadiusScale=1.0 ;
+r.AmbientOcclusionLevels=2 ;
+r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionMipLevelFactor=0 ;
+r.AmbientOcclusionRadiusScale=1.0 ;
+r.AmbientOcclusionStaticFraction=0 ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=60 ;
+PoolSizeVRAMPercentage=70 ;
 
-; end of code ;
+
+
+
+; end ;
+
+
+
 
 INSURGENCY SANDSTORM* Max FPS Copy/Paste this:
 
@@ -304,9 +343,18 @@ r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DefaultFeature.PointLightUnits=0 ;
 r.DefaultFeature.SpotLightUnits=0 ;
 
-; end of code ;
+
+
+
+; end ;
+
+
+
 
 INSURGENCY SANDSTORM* My config Copy/Paste this:
+
+
+
 
 [Core.Log]
 Global=all off
@@ -321,7 +369,7 @@ r.VSync=0 ;
 t.IdleWhenNotForeground=0 ;
 t.OverrideFPS=0 ;
 t.MaxFPS=300 ;
-r.EarlyZPass=2 ;
+r.EarlyZPass=3 ; this
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 r.RHICmdBypass=0 ;
@@ -330,8 +378,9 @@ r.OneFrameThreadLag=1 ;
 r.FinishCurrentFrame=0 ;
 r.CreateShadersOnLoad=1 ;
 r.CompileShadersForDevelopment=0 ;
-r.CustomDepth=0 ;
+r.CustomDepth=3 ; this
 r.SceneColorFormat=3 ;
+r.RenderTargetPoolMin=400 ;
 r.SubsurfaceScattering=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.SurfReac.Particles.PoolSize=40 ;
@@ -343,20 +392,30 @@ grass.DensityScale=0 ;
 r.ViewDistanceScale=0.4 ;
 r.ReflectionEnvironment=0 ;
 r.SSR.Quality=0 ;
-r.Streaming.MipBias=0 ;
-r.MaxAnisotropy=16 ;
+r.Streaming.MipBias=1 ;
+r.MaxAnisotropy=8 ;
+r.DistanceFieldAO=0 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.AllowLandscapeShadows=0 ;
 r.MotionBlurQuality=0 ;
 r.AmbientOcclusionLevels=0 ;
 r.DistanceFieldShadowing=0 ;
-r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
+r.CapsuleShadows=0 ;
 
-; end of code ;
+
+
+
+; end ;
+
+
+
 
 EXTRA* For NVIDIA users in control panel change:
+
+
+
 
 Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
 Multi/mixed gpu accel: Single display performance mode
@@ -366,11 +425,23 @@ Texture filtering anisotropic sample optimization: On
 Texture filtering quality: High performance
 Vertical sync: Off
 
-; end of code ;
+
+
+
+; end ;
+
+
+
 
 Disable INSURGENCY SANDSTORM* intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
 
+
+
+
      Press:    Windows key + R    
 Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
+
+
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
