@@ -3,7 +3,7 @@
 
 
 
-*Updated 11/29/2018
+*Updated 11/30/2018
 *For Squad/Insurgency Sandstorm or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -94,6 +94,7 @@ Global=all off
 [Audio]
 MaxChannels=96 ;
 UseAudioThread=true ;
+UnfocusedVolumeMultiplier=1.000000
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -106,7 +107,7 @@ r.VSync=0 ;
 t.IdleWhenNotForeground=0 ;
 t.OverrideFPS=0 ;
 t.MaxFPS=300 ;
-r.EarlyZPass=3 ;
+r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 r.OneFrameThreadLag=1 ;
@@ -370,7 +371,7 @@ r.VSync=0 ;
 t.IdleWhenNotForeground=0 ;
 t.OverrideFPS=0 ;
 t.MaxFPS=300 ;
-r.EarlyZPass=3 ;
+r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 r.OneFrameThreadLag=1 ;
@@ -390,6 +391,7 @@ r.VolumetricFog=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=0 ;
 r.CapsuleShadows=0 ;
+r.RenderTargetPoolMin=1000 ;
 
 
 
