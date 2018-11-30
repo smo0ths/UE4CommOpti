@@ -3,7 +3,7 @@
 
 
 
-*Updated 11/22/2018
+*Updated 11/29/2018
 *For Squad/Insurgency Sandstorm or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -93,6 +93,7 @@ Global=all off
 
 [Audio]
 MaxChannels=96 ;
+UseAudioThread=true ;
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -116,16 +117,24 @@ r.FinishCurrentFrame=0 ;
 r.CreateShadersOnLoad=1 ;
 r.GBufferFormat=1 ;
 r.CustomDepth=3 ;
-r.SceneColorFormat=4 ;
+r.SceneColorFormat=3 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 r.ViewDistanceScale=0.8 ;
+r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
+r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1.0 ;
+r.Shadow.PreShadowResolutionFactor=0.5 ;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
+r.Shadow.CSMDepthBias=30 ;
+r.Shadow.CachePreshadow=1 ;
+r.Shadow.CacheWholeSceneShadows=1 ;
+r.Shadow.WholeSceneShadowCacheMb=64 ;
 r.AllowLandscapeShadows=0 ;
 r.ReflectionEnvironment=1 ;
 r.SceneColorFringeQuality=0 ;
@@ -136,7 +145,7 @@ r.LightShaftQuality=0 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.SSR.Quality=0 ;
-r.RenderTargetPoolMin=400 ;
+r.RenderTargetPoolMin=1000 ;
 r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.FullyLoadUsedTextures=1 ;
 r.Streaming.DefragDynamicBounds=1 ;
@@ -149,20 +158,8 @@ r.Streaming.PoolSize=2000 ;
 r.MaxAnisotropy=8 ;
 r.MipMapLODBias=0 ;
 r.Streaming.UsePerTextureBias=1 ;
-r.ExposureOffset=-0.7 ;
-r.DefaultFeature.AmbientOcclusion=1 ;
-r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusion.AsyncComputeBudget=1 ;
-r.AmbientOcclusion.Compute=0 ;
-r.AmbientOcclusion.FadeRadiusScale=1.0 ;
-r.AmbientOcclusionLevels=2 ;
-r.AmbientOcclusionMaxQuality=100 ;
-r.AmbientOcclusionMipLevelFactor=0 ;
-r.AmbientOcclusionRadiusScale=1.0 ;
-r.AmbientOcclusionStaticFraction=0 ;
-
-[TextureStreaming]
-PoolSizeVRAMPercentage=70 ;
+r.PostProcessAAQuality=1 ;
+r.DefaultFeature.AutoExposure.Method=0 ;
 
 
 
@@ -356,7 +353,7 @@ r.DefaultFeature.SpotLightUnits=0 ;
 
 INSURGENCY SANDSTORM* My config Copy/Paste this: 
 
-(currently using just in-game settings these devs are good)
+
 
 
 [Core.Log]
@@ -376,37 +373,23 @@ t.MaxFPS=300 ;
 r.EarlyZPass=3 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
+r.OneFrameThreadLag=1 ;
+r.GTSyncType=0 ;
 r.RHICmdBypass=0 ;
 r.HZBOcclusion=1 ;
-r.OneFrameThreadLag=1 ;
 r.FinishCurrentFrame=0 ;
 r.CreateShadersOnLoad=1 ;
-r.CompileShadersForDevelopment=0 ;
-r.SceneColorFormat=3 ;
+r.GBufferFormat=1 ;
+r.CustomDepth=3 ;
+r.SceneColorFormat=4 ;
 r.SubsurfaceScattering=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.SurfReac.Particles.PoolSize=40 ;
-r.GBufferFormat=0 ;
-r.FoliageInteractionQuality=0 ;
-foliage.DensityScale=0 ;
-grass.DensityScale=0 ;
-r.ViewDistanceScale=0.4 ;
-r.ReflectionEnvironment=1 ;
-r.SSR.Quality=0 ;
-r.Streaming.MipBias=1 ;
-r.MaxAnisotropy=8 ;
-r.DistanceFieldAO=0 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.AllowLandscapeShadows=0 ;
-r.MotionBlurQuality=0 ;
-r.AmbientOcclusionLevels=0 ;
 r.DistanceFieldShadowing=0 ;
-r.AOQuality=0 ;
 r.CapsuleShadows=0 ;
-r.Streaming.MipBias=1 ;
-r.MaxAnisotropy=8 ;
-r.Streaming.PoolSize=1000 ;
 
 
 
