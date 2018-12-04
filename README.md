@@ -3,7 +3,7 @@
 
 
 
-*Updated 11/30/2018
+*Updated 12/4/2018
 *For Squad/Insurgency Sandstorm or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -93,7 +93,7 @@ Global=all off
 
 [Audio]
 MaxChannels=96 ;
-UseAudioThread=true ;
+UseAudioThread=false ;
 UnfocusedVolumeMultiplier=1.000000
 
 [SystemSettings]
@@ -107,7 +107,7 @@ r.VSync=0 ;
 t.IdleWhenNotForeground=0 ;
 t.OverrideFPS=0 ;
 t.MaxFPS=300 ;
-r.EarlyZPass=2 ;
+r.EarlyZPass=3 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 r.OneFrameThreadLag=1 ;
@@ -135,7 +135,7 @@ r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.CSMDepthBias=30 ;
 r.Shadow.CachePreshadow=1 ;
 r.Shadow.CacheWholeSceneShadows=1 ;
-r.Shadow.WholeSceneShadowCacheMb=64 ;
+r.Shadow.WholeSceneShadowCacheMb=32 ;
 r.AllowLandscapeShadows=0 ;
 r.ReflectionEnvironment=1 ;
 r.SceneColorFringeQuality=0 ;
@@ -146,7 +146,7 @@ r.LightShaftQuality=0 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.SSR.Quality=0 ;
-r.RenderTargetPoolMin=1000 ;
+r.RenderTargetPoolMin=500 ;
 r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.FullyLoadUsedTextures=1 ;
 r.Streaming.DefragDynamicBounds=1 ;
@@ -161,6 +161,10 @@ r.MipMapLODBias=0 ;
 r.Streaming.UsePerTextureBias=1 ;
 r.PostProcessAAQuality=1 ;
 r.DefaultFeature.AutoExposure.Method=0 ;
+r.ForwardLighting=0 ;
+r.SeparateTranslucency=0 ;
+r.DefaultFeature.PointLightUnits=0 ;
+r.DefaultFeature.SpotLightUnits=0 ;
 
 
 
@@ -365,13 +369,13 @@ bSmoothFrameRate=0 ;
 bUseFixedFrameRate=0 ;
 bEnableMouseSmoothing=0 ;
 bDisablePhysXHardwareSupport=0 ;
-bPauseOnLossOfFocus=0 ;
+bPauseOnLossOfFocus=1 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
 t.IdleWhenNotForeground=0 ;
 t.OverrideFPS=0 ;
 t.MaxFPS=300 ;
-r.EarlyZPass=2 ;
+r.EarlyZPass=3 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 r.OneFrameThreadLag=1 ;
@@ -382,17 +386,17 @@ r.FinishCurrentFrame=0 ;
 r.CreateShadersOnLoad=1 ;
 r.GBufferFormat=1 ;
 r.CustomDepth=3 ;
-r.SceneColorFormat=4 ;
+r.SceneColorFormat=3 ;
 r.SubsurfaceScattering=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.SurfReac.Particles.PoolSize=40 ;
 r.DistanceFieldAO=0 ;
 r.VolumetricFog=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=0 ;
 r.CapsuleShadows=0 ;
-r.RenderTargetPoolMin=1000 ;
-
+r.RenderTargetPoolMin=500 ;
+r.LightShaftQuality=0 ;
+r.Streaming.PoolSize=1000 ;
 
 
 
