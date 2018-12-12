@@ -3,7 +3,7 @@
 
 
 
-*Updated 12/4/2018
+*Updated 12/11/2018
 *For Squad/Insurgency Sandstorm or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -27,7 +27,7 @@ SQUAD* Max FPS Copy/Paste this:
 
 
 [Core.Log]
-Global=all off
+Global=all off ;
 
 [Audio]
 MaxChannels=64 ;
@@ -89,12 +89,11 @@ SQUAD* My config Copy/Paste this:
 
 
 [Core.Log]
-Global=all off
+Global=all off ; 
 
 [Audio]
 MaxChannels=96 ;
 UseAudioThread=false ;
-UnfocusedVolumeMultiplier=1.000000
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -122,6 +121,7 @@ r.SceneColorFormat=3 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
+grass.MaxUpdateFrequency=20 ;
 r.ViewDistanceScale=0.8 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
@@ -136,6 +136,7 @@ r.Shadow.CSMDepthBias=30 ;
 r.Shadow.CachePreshadow=1 ;
 r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.WholeSceneShadowCacheMb=32 ;
+r.ContactShadows=0 ;
 r.AllowLandscapeShadows=0 ;
 r.ReflectionEnvironment=1 ;
 r.SceneColorFringeQuality=0 ;
@@ -180,7 +181,7 @@ INSURGENCY SANDSTORM* Max FPS Copy/Paste this:
 
 
 [Core.Log]
-Global=all off
+Global=all off ;
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -214,7 +215,7 @@ r.DefaultFeature.AntiAliasing=0 ;
 r.PostProcessAAQuality=0 ;
 r.RenderTargetPoolMin=200 ;
 r.SkeletalMeshLODBias=2 ;
-r.SkeletalMeshLODRadiusScale=1.0 ;
+r.SkeletalMeshLODRadiusScale=0.5 ;
 r.StaticMeshLODDistanceScale=0.25 ;
 r.ViewDistanceScale=0.4 ;
 r.ForceLOD=-1 ;
@@ -222,14 +223,21 @@ r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=0.6 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.SurfReac.Particles.PoolSize=40 ;
+r.RagdollMaximum=4 ;
+r.Dismemberment=0 ;
+r.ScopeRenderMode=0 ;
+r.SeparateTranslucencyScreenPercentage=75 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=2 ;
-r.Streaming.Boost=1 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=-1 ;
-r.Streaming.MaxEffectiveScreenSize=0 ;
+r.Streaming.MipBias=16 ;
+r.Streaming.AmortizeCPUToGPUCopy=1 ;
+r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
+r.Streaming.Boost=0.3 ;
 r.MaxAnisotropy=0 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.PoolSize=400 ;
+r.Streaming.MaxEffectiveScreenSize=0 ;
 r.SkyLightingQuality=0 ;
 r.IndirectLightingCache=1 ;
 r.LightFunctionQuality=0 ;
@@ -248,6 +256,8 @@ r.Shadow.CacheWholeSceneShadows=1 ;
 r.AllowLandscapeShadows=0 ;
 r.CapsuleShadows=0 ;
 r.CapsuleShadowsFullResolution=0 ;
+r.CapsuleShadowsCharacter=0 ;
+r.ContactShadows=0 ;
 r.DistanceFieldShadowing=0 ;
 r.AllowStaticLighting=1 ;
 r.HighQualityLightMaps=0 ;
@@ -362,41 +372,13 @@ INSURGENCY SANDSTORM* My config Copy/Paste this:
 
 
 [Core.Log]
-Global=all off
+Global=all off ;
 
 [SystemSettings]
-bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
-bEnableMouseSmoothing=0 ;
-bDisablePhysXHardwareSupport=0 ;
-bPauseOnLossOfFocus=0 ;
-r.FullScreenMode=0 ;
-r.VSync=0 ;
-t.IdleWhenNotForeground=0 ;
-t.OverrideFPS=0 ;
-t.MaxFPS=300 ;
-r.EarlyZPass=3 ;
-r.EarlyZPassMovable=1 ;
-r.EarlyZPassOnlyMaterialMasking=1 ;
-r.OneFrameThreadLag=1 ;
-r.GTSyncType=0 ;
-r.RHICmdBypass=0 ;
-r.HZBOcclusion=1 ;
-r.FinishCurrentFrame=0 ;
-r.CreateShadersOnLoad=1 ;
 r.GBufferFormat=1 ;
-r.CustomDepth=3 ;
 r.SceneColorFormat=3 ;
+r.ContactShadows=0 ;
 r.SubsurfaceScattering=0 ;
-r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.DistanceFieldAO=0 ;
-r.VolumetricFog=0 ;
-r.AllowLandscapeShadows=0 ;
-r.DistanceFieldShadowing=0 ;
-r.CapsuleShadows=0 ;
-r.RenderTargetPoolMin=500 ;
-r.LightShaftQuality=0 ;
-r.Streaming.PoolSize=1000 ;
 
 
 
