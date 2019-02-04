@@ -3,7 +3,7 @@
 
 
 
-*Updated 12/11/2018
+*Updated 2/4/2019
 *For Squad/Insurgency Sandstorm or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -60,6 +60,7 @@ r.ViewDistanceScale=0.8 ;
 r.Streaming.MipBias=2 ;
 r.SkyLightingQuality=0 ;
 r.HighQualityLightMaps=0 ;
+r.DistanceFieldShadowing=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldGI=0 ;
 r.TranslucentLightingVolume=1 ;
@@ -89,7 +90,7 @@ SQUAD* My config Copy/Paste this:
 
 
 [Core.Log]
-Global=all off ; 
+Global=all off ;
 
 [Audio]
 MaxChannels=96 ;
@@ -115,9 +116,9 @@ r.RHICmdBypass=0 ;
 r.HZBOcclusion=1 ;
 r.FinishCurrentFrame=0 ;
 r.CreateShadersOnLoad=1 ;
-r.GBufferFormat=1 ;
+r.GBufferFormat=0 ;
 r.CustomDepth=3 ;
-r.SceneColorFormat=3 ;
+r.SceneColorFormat=4 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
@@ -156,7 +157,7 @@ r.Streaming.HLODStrategy=0 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.MipBias=0 ;
-r.Streaming.PoolSize=2000 ;
+r.Streaming.PoolSize=3000 ;
 r.MaxAnisotropy=8 ;
 r.MipMapLODBias=0 ;
 r.Streaming.UsePerTextureBias=1 ;
@@ -166,6 +167,9 @@ r.ForwardLighting=0 ;
 r.SeparateTranslucency=0 ;
 r.DefaultFeature.PointLightUnits=0 ;
 r.DefaultFeature.SpotLightUnits=0 ;
+r.RefractionQuality=0 ;
+r.DisableDistortion=1 ;
+r.EmitterSpawnRateScale=0.5 ;
 
 
 
@@ -375,10 +379,14 @@ INSURGENCY SANDSTORM* My config Copy/Paste this:
 Global=all off ;
 
 [SystemSettings]
-r.GBufferFormat=1 ;
-r.SceneColorFormat=3 ;
-r.ContactShadows=0 ;
+r.GBufferFormat=0 ;
 r.SubsurfaceScattering=0 ;
+r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.ShadowQuality=0 ;
+r.VolumetricFog=0 ;
+r.DistanceFieldShadowing=0 ;
+r.AllowLandscapeShadows=0 ;
+r.EmitterSpawnRateScale=0.5 ;
 
 
 
