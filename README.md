@@ -3,14 +3,14 @@
 
 
 
-*Updated 4/30/2019
+*Updated 5/4/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
 Open Engine.ini and Copy/Paste commands/configs:
 
      Press:    Windows key + R      
-Copy/Paste:    %localappdata%/Squad/Saved/Config/WindowsNoEditor/Engine.ini 
+Copy/Paste:    %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 Copy/Paste:    %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
 
@@ -80,18 +80,25 @@ r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
 r.MipMapLODBias=-1 ;
 r.LandscapeLODBias=0 ;
+r.CustomDepthTemporalAAJitter=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.3 ;
-r.EyeAdaptation.PreExposureOverride=1 ;
-r.UsePreExposure=1 ;
+r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=1 ;
+r.EyeAdaptation.PreExposureOverride=0 ;
+r.UsePreExposure=0 ;
 r.DefaultFeature.AutoExposure.Method=0 ;
-r.SceneColorFringe.Max=-0.5 ;
+r.SceneColorFringe.Max=-0.25 ;
+r.AmbientOcclusionMaxQuality=-100 ;
+r.AmbientOcclusionMipLevelFactor=0.3 ;
+r.AmbientOcclusionMipLevelFactor=0 ;
+r.AmbientOcclusionRadiusScale=0.3 ;
+r.AmbientOcclusionRadiusScale=0 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=1024 ;
-r.Shadow.MaxCSMResolution=1024 ;
+r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.01 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=1.0 ;
@@ -110,16 +117,13 @@ r.CapsuleShadows=0 ;
 r.CapsuleShadowsCharacter=0 ;
 r.ContactShadows=0 ;
 r.MotionBlurQuality=0 ;
-r.AmbientOcclusionMipLevelFactor=0 ;
-r.AmbientOcclusionMaxQuality=0 ;
 r.AmbientOcclusionLevels=0 ;
-r.AmbientOcclusionRadiusScale=0 ;
 r.DepthOfFieldQuality=1 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=1 ;
 r.EyeAdaptationQuality=2 ;
 r.BloomQuality=3 ;
-r.FastBlurThreshold=100 ;
+r.FastBlurThreshold=7 ;
 r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.LightShaftQuality=1 ;
@@ -146,7 +150,7 @@ r.SSS.SampleSet=2 ;
 r.SSS.Quality=1 ;
 r.SSS.HalfRes=0 ;
 r.EmitterSpawnRateScale=1.0 ;
-r.ParticleLightQuality=0 ;
+r.ParticleLightQuality=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 foliage.DensityScale=0.6 ;
@@ -246,7 +250,7 @@ r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=1 ;
 r.EyeAdaptationQuality=2 ;
 r.BloomQuality=3 ;
-r.FastBlurThreshold=100 ;
+r.FastBlurThreshold=7 ;
 r.Upscale.Quality=0 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.LightShaftQuality=1 ;
