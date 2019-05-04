@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/4/2019
+*Updated 5/4/2019 x1
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -83,16 +83,14 @@ r.LandscapeLODBias=0 ;
 r.CustomDepthTemporalAAJitter=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.3 ;
-r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=1 ;
+r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 r.EyeAdaptation.PreExposureOverride=0 ;
 r.UsePreExposure=0 ;
 r.DefaultFeature.AutoExposure.Method=0 ;
 r.SceneColorFringe.Max=-0.25 ;
 r.AmbientOcclusionMaxQuality=-100 ;
 r.AmbientOcclusionMipLevelFactor=0.3 ;
-r.AmbientOcclusionMipLevelFactor=0 ;
 r.AmbientOcclusionRadiusScale=0.3 ;
-r.AmbientOcclusionRadiusScale=0 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
