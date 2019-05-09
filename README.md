@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/7/2019
+*Updated 5/8/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -73,7 +73,7 @@ r.GBufferFormat=1 ;
 r.EarlyZPass=3 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
-r.RenderTargetPoolMin=450 ;
+r.RenderTargetPoolMin=400 ;
 r.SkeletalMeshLODRadiusScale=1 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
@@ -82,21 +82,28 @@ r.LandscapeLODBias=0 ;
 r.CustomDepthTemporalAAJitter=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.3 ;
+r.TemporalAAFilterSize=0.1 ;
 r.DefaultFeature.AutoExposure.Method=0 ;
 r.AmbientOcclusionMaxQuality=-100 ;
 r.AmbientOcclusionMipLevelFactor=0.1 ;
+r.AmbientOcclusion.FadeRadiusScale=0.5 ;
+r.AmbientOcclusionLevels=1 ;
+r.AmbientOcclusionStaticFraction=0 ;
 r.SceneRenderTargetResizeMethod=0 ;
-r.Shadow.FilterMethod=1 ;
+r.Shadow.FilterMethod=0 ;
+r.SkyLightingQuality=1 ;
+r.LightShaftDownSampleFactor=0 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=1024 ;
-r.Shadow.MaxCSMResolution=2048 ;
+r.Shadow.MaxCSMResolution=3072 ;
 r.Shadow.RadiusThreshold=0.01 ;
 r.Shadow.DistanceScale=0.5 ;
-r.Shadow.CSM.TransitionScale=1.0 ;
-r.Shadow.PreShadowResolutionFactor=0.5 ;
+r.Shadow.CSM.TransitionScale=2.0 ;
+r.Shadow.PreShadowResolutionFactor=0 ;
+r.Shadow.CSMDepthBias=25 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=0 ;
@@ -114,7 +121,6 @@ r.CapsuleShadows=0 ;
 r.CapsuleShadowsCharacter=0 ;
 r.ContactShadows=0 ;
 r.MotionBlurQuality=0 ;
-r.AmbientOcclusionLevels=0 ;
 r.DepthOfFieldQuality=1 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=1 ;
@@ -133,7 +139,7 @@ r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1.0 ;
 r.MaxAnisotropy=8 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
-r.Streaming.PoolSize=1000 ;
+r.Streaming.PoolSize=800 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.TranslucencyLightingVolumeDim=24 ;
 r.RefractionQuality=0 ;
@@ -153,6 +159,7 @@ r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
+grass.DisableDynamicShadows=1 ;
 
 
 
