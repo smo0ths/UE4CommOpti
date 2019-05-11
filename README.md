@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/10/2019
+*Updated 5/11/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -114,8 +114,8 @@ r.DFFullResolution=0 ;
 r.DFShadowQuality=1 ;
 r.DistanceFieldGI=0 ;
 r.AllowStaticLighting=0 ;
-r.NormalMapsForStaticLighting=1 ;
-r.ClearCoatNormal=1 ;
+r.NormalMapsForStaticLighting=0 ;
+r.ClearCoatNormal=0 ; 
 r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=8 ;
 r.VolumetricFog.GridSizeZ=128 ;
@@ -230,11 +230,6 @@ r.TemporalAA.Upsampling=1 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=1 ;
 r.DefaultFeature.AutoExposure.Method=0 ;
-r.AmbientOcclusionMaxQuality=-100 ;
-r.AmbientOcclusionMipLevelFactor=0.1 ;
-r.AmbientOcclusion.FadeRadiusScale=0.5 ;
-r.AmbientOcclusionLevels=1 ;
-r.AmbientOcclusionStaticFraction=0 ;
 r.AOQuality=0 ;
 r.DistanceFieldAO=0 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
@@ -262,8 +257,8 @@ r.DFFullResolution=0 ;
 r.DFShadowQuality=1 ;
 r.DistanceFieldGI=0 ;
 r.AllowStaticLighting=1 ;
-r.NormalMapsForStaticLighting=1 ;
-r.ClearCoatNormal=1 ;
+r.NormalMapsForStaticLighting=0 ; 
+r.ClearCoatNormal=0 ; 
 r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=8 ;
 r.VolumetricFog.GridSizeZ=128 ;
