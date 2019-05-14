@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/11/2019
+*Updated 5/13/2019 
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -102,7 +102,7 @@ r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=512 ;
-r.Shadow.MaxCSMResolution=3072 ;
+r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.01 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=1 ;
@@ -115,7 +115,7 @@ r.DFShadowQuality=1 ;
 r.DistanceFieldGI=0 ;
 r.AllowStaticLighting=0 ;
 r.NormalMapsForStaticLighting=0 ;
-r.ClearCoatNormal=0 ; 
+r.ClearCoatNormal=0 ;
 r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=8 ;
 r.VolumetricFog.GridSizeZ=128 ;
