@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/13/2019 
+*Updated 5/15/2019 
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -50,6 +50,9 @@ MaxChannels=96 ;
 
 [Core.Log]
 Global=all off ;
+
+[TextureStreaming]
+PoolSizeVRAMPercentage=50 ;
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -144,7 +147,7 @@ r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1.0 ;
 r.Streaming.UsePerTextureBias=1 ;
-r.Streaming.FullyLoadUsedTextures=0 ;
+r.Streaming.FullyLoadUsedTextures=1 ; test
 r.MaxAnisotropy=8 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.PoolSize=800 ;
