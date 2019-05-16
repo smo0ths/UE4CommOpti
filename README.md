@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/15/2019 
+*Updated 5/16/2019 
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -142,14 +142,15 @@ r.LightShaftDownSampleFactor=1 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
 r.TextureStreaming=1 ;
+r.MaxAnisotropy=8 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1.0 ;
 r.Streaming.UsePerTextureBias=1 ;
-r.Streaming.FullyLoadUsedTextures=1 ; test
-r.MaxAnisotropy=8 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.FullyLoadUsedTextures=0 ; test
+r.Streaming.LimitPoolSizeToVRAM=0 ; test
+r.Streaming.UseFixedPoolSize=0 ; test
 r.Streaming.PoolSize=800 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.TranslucencyLightingVolumeDim=24 ;
@@ -260,9 +261,9 @@ r.DFFullResolution=0 ;
 r.DFShadowQuality=1 ;
 r.DistanceFieldGI=0 ;
 r.AllowStaticLighting=1 ;
-r.NormalMapsForStaticLighting=0 ; 
-r.ClearCoatNormal=0 ; 
-r.VolumetricFog=0 ;
+r.NormalMapsForStaticLighting=0 ;
+r.ClearCoatNormal=0 ;
+r.VolumetricFog=1 ; test
 r.VolumetricFog.GridPixelSize=8 ;
 r.VolumetricFog.GridSizeZ=128 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
@@ -285,14 +286,15 @@ r.LightShaftDownSampleFactor=1 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
 r.TextureStreaming=1 ;
+r.MaxAnisotropy=8 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1.0 ;
 r.Streaming.UsePerTextureBias=1 ;
-r.Streaming.FullyLoadUsedTextures=0 ;
-r.MaxAnisotropy=8 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.FullyLoadUsedTextures=0 ; test
+r.Streaming.LimitPoolSizeToVRAM=0 ; test
+r.Streaming.UseFixedPoolSize=0 ; test
 r.Streaming.PoolSize=800 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.TranslucencyLightingVolumeDim=24 ;
