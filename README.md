@@ -3,9 +3,13 @@
 
 
 
-*Updated 5/16/2019 
+*Updated 5/17/2019 
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
+*PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
+
+
+
 
 Open Engine.ini and Copy/Paste commands/configs:
 
@@ -52,7 +56,7 @@ MaxChannels=96 ;
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50 ;
+PoolSizeVRAMPercentage=50 ; 
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -141,25 +145,27 @@ r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=1 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
-r.TextureStreaming=1 ;
 r.MaxAnisotropy=8 ;
+r.TextureStreaming=1 ;
+r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1.0 ;
 r.Streaming.UsePerTextureBias=1 ;
-r.Streaming.FullyLoadUsedTextures=0 ; test
-r.Streaming.LimitPoolSizeToVRAM=0 ; test
-r.Streaming.UseFixedPoolSize=0 ; test
+r.Streaming.FullyLoadUsedTextures=0 ;
+r.Streaming.UseFixedPoolSize=1 ;
+r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.PoolSize=800 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
+r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
+r.TranslucencyVolumeBlur=1 ;
 r.RefractionQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
 r.SceneColorFormat=4 ;
 r.DetailMode=0 ;
-r.TranslucencyVolumeBlur=1 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
@@ -204,6 +210,9 @@ INSURGENCY SANDSTORM* My config Copy/Paste this:
 
 [Core.Log]
 Global=all off ;
+
+[TextureStreaming]
+PoolSizeVRAMPercentage=50 ;
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -263,7 +272,7 @@ r.DistanceFieldGI=0 ;
 r.AllowStaticLighting=1 ;
 r.NormalMapsForStaticLighting=0 ;
 r.ClearCoatNormal=0 ;
-r.VolumetricFog=1 ; test
+r.VolumetricFog=1 ;
 r.VolumetricFog.GridPixelSize=8 ;
 r.VolumetricFog.GridSizeZ=128 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
@@ -285,25 +294,27 @@ r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=1 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
-r.TextureStreaming=1 ;
 r.MaxAnisotropy=8 ;
+r.TextureStreaming=1 ;
+r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1.0 ;
 r.Streaming.UsePerTextureBias=1 ;
-r.Streaming.FullyLoadUsedTextures=0 ; test
-r.Streaming.LimitPoolSizeToVRAM=0 ; test
-r.Streaming.UseFixedPoolSize=0 ; test
+r.Streaming.FullyLoadUsedTextures=0 ;
+r.Streaming.UseFixedPoolSize=1 ;
+r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.PoolSize=800 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
+r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
+r.TranslucencyVolumeBlur=1 ;
 r.RefractionQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
 r.SceneColorFormat=4 ;
 r.DetailMode=0 ;
-r.TranslucencyVolumeBlur=1 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
