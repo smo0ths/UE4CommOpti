@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/17/2019 
+*Updated 5/18/2019 
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
@@ -86,10 +86,9 @@ r.TemporalAACurrentFrameWeight=0.3 ;
 r.TemporalAA.Upsampling=1 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=1 ;
-r.DefaultFeature.AutoExposure.Method=0 ;
-r.AmbientOcclusionMaxQuality=-100 ;
-r.AmbientOcclusionMipLevelFactor=0.1 ;
-r.AmbientOcclusion.FadeRadiusScale=0.5 ;
+r.DefaultFeature.AutoExposure.Method=1 ;
+r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionMipLevelFactor=0.5 ;
 r.AmbientOcclusionLevels=1 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.AOQuality=0 ;
@@ -107,6 +106,8 @@ r.HighQualityLightMaps=1 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
+r.Shadow.CachePreshadow=1 ;
+r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=512 ;
 r.Shadow.MaxCSMResolution=2048 ;
