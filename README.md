@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/22/2019 
+*Updated 5/22/2019  
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
@@ -94,6 +94,7 @@ r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=0 ;
 r.NormalMapsForStaticLighting=0 ;
 r.ClearCoatNormal=0 ;
+r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
@@ -115,7 +116,6 @@ r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=16 ;
 r.VolumetricFog.GridSizeZ=64 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
-r.LightMaxDrawDistanceScale=0.8 ;
 r.CapsuleShadows=0 ;
 r.CapsuleShadowsCharacter=0 ;
 r.ContactShadows=0 ;
@@ -244,6 +244,7 @@ r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=1 ;
 r.NormalMapsForStaticLighting=0 ;
 r.ClearCoatNormal=0 ;
+r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
@@ -265,7 +266,6 @@ r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=16 ;
 r.VolumetricFog.GridSizeZ=64 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
-r.LightMaxDrawDistanceScale=0.8 ;
 r.CapsuleShadows=0 ;
 r.CapsuleShadowsCharacter=0 ;
 r.ContactShadows=0 ;
@@ -274,7 +274,8 @@ r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
 r.DepthOfFieldQuality=1 ;
 r.LensFlareQuality=2 ;
-r.SceneColorFringeQuality=1 ;
+r.DisableDistortion=1 ;
+r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
 r.BloomQuality=3 ;
