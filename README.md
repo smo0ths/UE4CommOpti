@@ -3,11 +3,11 @@
 
 
 
-*Updated 5/22/2019  
+*Updated 5/31/2019  
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
-
+*Post scriptum needs r.Streaming.PoolSize=2000 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
 
 Open Engine.ini and Copy/Paste commands/configs:
 
@@ -34,7 +34,7 @@ when i get around to it
 ; end ;
 
 
-SQUAD/PS* My config Copy/Paste this:
+SQUAD* My config Copy/Paste this:
 
 
 [Audio]
@@ -103,7 +103,7 @@ r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=512 ;
 r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.RadiusThreshold=0.01 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
@@ -149,13 +149,14 @@ r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=25 ;
+r.Streaming.MinMipForSplitRequest=1 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
 r.TranslucencyVolumeBlur=1 ;
 r.RefractionQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
-r.SceneColorFormat=4 ;
+r.SceneColorFormat=3 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=0 ;
@@ -172,6 +173,7 @@ grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
+ShowFlag.Tessellation=0 ;
 
 
 ; end ;
@@ -246,14 +248,14 @@ r.NormalMapsForStaticLighting=0 ;
 r.ClearCoatNormal=0 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
-r.ShadowQuality=3 ;
+r.ShadowQuality=0 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.CachePreshadow=1 ;
 r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=512 ;
 r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.RadiusThreshold=0.01 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
@@ -299,13 +301,14 @@ r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=25 ;
+r.Streaming.MinMipForSplitRequest=1 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
 r.TranslucencyVolumeBlur=1 ;
 r.RefractionQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
-r.SceneColorFormat=4 ;
+r.SceneColorFormat=3 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=1 ;
@@ -322,6 +325,7 @@ grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
 ShowFlag.Vignette=0 ;
 ShowFlag.Grain=0 ;
+ShowFlag.Tessellation=0 ;
 
 
 ; end ;
