@@ -3,11 +3,11 @@
 
 
 
-*Updated 6/2/2019  
+**Updated 6/2/2019  
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
-*Post scriptum needs r.Streaming.PoolSize=2000 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
+*Post scriptum needs r.Streaming.PoolSize=1000 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
 
 Open Engine.ini and Copy/Paste commands/configs:
 
