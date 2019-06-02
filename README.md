@@ -3,11 +3,11 @@
 
 
 
-**Updated 6/2/2019  
+***Updated 6/2/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
-*Post scriptum needs r.Streaming.PoolSize=1000 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
+*Post scriptum needs r.Streaming.PoolSize=2000 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
 
 Open Engine.ini and Copy/Paste commands/configs:
 
@@ -88,7 +88,7 @@ r.StaticMeshLODDistanceScale=0.8 ;
 r.SkeletalMeshLODRadiusScale=0.8 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
-r.MipMapLODBias=0 ;
+r.MipMapLODBias=-1 ;
 r.LandscapeLODBias=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.SkyLightingQuality=1 ;
@@ -126,8 +126,9 @@ r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
 r.DepthOfFieldQuality=1 ;
 r.LensFlareQuality=2 ;
-r.SceneColorFringeQuality=1 ;
-r.SceneColorFringe.Max=0.25 ;
+r.DisableDistortion=1 ;
+r.SceneColorFringeQuality=0 ;
+r.SceneColorFringe.Max=0.3 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
 r.BloomQuality=3 ;
@@ -141,8 +142,8 @@ r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.Streaming.AmortizeCPUToGPUCopy=0 ;
-r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
+r.Streaming.AmortizeCPUToGPUCopy=1 ;
+r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
 r.Streaming.Boost=1 ;
 r.Streaming.UsePerTextureBias=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
@@ -243,13 +244,13 @@ r.StaticMeshLODDistanceScale=0.8 ;
 r.SkeletalMeshLODRadiusScale=0.8 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
-r.MipMapLODBias=0 ;
+r.MipMapLODBias=-1 ;
 r.LandscapeLODBias=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.SkyLightingQuality=1 ;
 r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=1 ;
-r.NormalMapsForStaticLighting=1 ;
+r.NormalMapsForStaticLighting=0 ;
 r.ClearCoatNormal=0 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
@@ -296,8 +297,8 @@ r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.Streaming.AmortizeCPUToGPUCopy=0 ;
-r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
+r.Streaming.AmortizeCPUToGPUCopy=1 ;
+r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
 r.Streaming.Boost=1 ;
 r.Streaming.UsePerTextureBias=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
