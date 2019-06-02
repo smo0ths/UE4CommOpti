@@ -3,7 +3,7 @@
 
 
 
-*Updated 5/31/2019  
+*Updated 6/2/2019  
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
@@ -44,7 +44,7 @@ MaxChannels=96 ;
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50 ; 
+PoolSizeVRAMPercentage=50 ;
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
@@ -53,7 +53,7 @@ bEnableMouseSmoothing=0 ;
 bDisablePhysXHardwareSupport=0 ;
 bPauseOnLossOfFocus=0 ;
 t.OverrideFPS=0 ;
-t.MaxFPS=250 ;
+t.MaxFPS=200 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
 r.OneFrameThreadLag=1 ;
@@ -83,6 +83,8 @@ r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 r.RenderTargetPoolMin=400 ;
+r.HLOD.DistanceScale=0.8 ;
+r.StaticMeshLODDistanceScale=0.8 ;
 r.SkeletalMeshLODRadiusScale=0.8 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
@@ -102,7 +104,7 @@ r.Shadow.CachePreshadow=1 ;
 r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=512 ;
-r.Shadow.MaxCSMResolution=2048 ;
+r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.01 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=1 ;
@@ -156,6 +158,7 @@ r.TranslucencyVolumeBlur=1 ;
 r.RefractionQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
+r.SSR.MaxRoughness=0.8 ;
 r.SceneColorFormat=3 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
@@ -167,7 +170,7 @@ r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
-r.DefaultFeature.LightUnits=0 ;
+r.DefaultFeature.LightUnits=1 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
@@ -205,7 +208,7 @@ bEnableMouseSmoothing=0 ;
 bDisablePhysXHardwareSupport=0 ;
 bPauseOnLossOfFocus=0 ;
 t.OverrideFPS=0 ;
-t.MaxFPS=250 ;
+t.MaxFPS=200 ;
 r.FullScreenMode=0 ;
 r.VSync=0 ;
 r.OneFrameThreadLag=1 ;
@@ -235,6 +238,8 @@ r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 r.RenderTargetPoolMin=400 ;
+r.HLOD.DistanceScale=0.8 ;
+r.StaticMeshLODDistanceScale=0.8 ;
 r.SkeletalMeshLODRadiusScale=0.8 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
@@ -244,7 +249,7 @@ r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.SkyLightingQuality=1 ;
 r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=1 ;
-r.NormalMapsForStaticLighting=0 ;
+r.NormalMapsForStaticLighting=1 ;
 r.ClearCoatNormal=0 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
@@ -254,7 +259,7 @@ r.Shadow.CachePreshadow=1 ;
 r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=512 ;
-r.Shadow.MaxCSMResolution=2048 ;
+r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.01 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=1 ;
@@ -282,7 +287,7 @@ r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
 r.BloomQuality=3 ;
 r.Upscale.Quality=0 ;
-r.LightShaftQuality=1 ;
+r.LightShaftQuality=0 ;
 r.LightShaftDownSampleFactor=1 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.GrainQuantization=1 ;
@@ -308,6 +313,7 @@ r.TranslucencyVolumeBlur=1 ;
 r.RefractionQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
+r.SSR.MaxRoughness=0.8 ;
 r.SceneColorFormat=3 ;
 r.DetailMode=2 ;
 r.MaterialQualityLevel=1 ;
@@ -319,7 +325,7 @@ r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
-r.DefaultFeature.LightUnits=0 ;
+r.DefaultFeature.LightUnits=1 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
