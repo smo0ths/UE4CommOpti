@@ -1,32 +1,21 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-*Updated 6/3/2019
+**Updated 6/3/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
-*Post scriptum needs r.Streaming.PoolSize=1500 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
 
 Open Engine.ini and Copy/Paste commands/configs:
 
-     Press:    Windows key + R      
-Copy/Paste:    %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
-Copy/Paste:    %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
-Copy/Paste:    %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
+Press:       Windows key + R      
+Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
+Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
 
 ; end ;
 
 
 SQUAD* Max FPS Copy/Paste this:
-
-[Core.Log]
-Global=all off ;
-
-[Audio]
-MaxChannels=64 ;
 
 when i get around to it
 
@@ -76,16 +65,17 @@ r.TemporalAACurrentFrameWeight=0.3 ;
 r.TemporalAA.Upsampling=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
-r.AmbientOcclusionLevels=3 ;
-r.AmbientOcclusionRadiusScale=1 ;
+r.AmbientOcclusionLevels=2 ;
+r.AmbientOcclusionRadiusScale=0.5 ;
+r.AmbientOcclusion.FadeRadiusScale=0.5 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 r.RenderTargetPoolMin=400 ;
-r.HLOD.DistanceScale=0.8 ;
-r.StaticMeshLODDistanceScale=0.8 ;
-r.SkeletalMeshLODRadiusScale=0.8 ;
+r.HLOD.DistanceScale=0.6 ;
+r.StaticMeshLODDistanceScale=0.6 ;
+r.SkeletalMeshLODRadiusScale=0.6 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
 r.MipMapLODBias=-1 ;
@@ -100,13 +90,11 @@ r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
-r.Shadow.CachePreshadow=1 ;
-r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
-r.Shadow.MaxResolution=512 ;
+r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=1024 ;
-r.Shadow.RadiusThreshold=0.01 ;
-r.Shadow.DistanceScale=0.5 ;
+r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
 r.AllowLandscapeShadows=1 ;
@@ -124,7 +112,7 @@ r.ContactShadows=0 ;
 r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
-r.DepthOfFieldQuality=1 ;
+r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=2 ;
 r.DisableDistortion=1 ;
 r.SceneColorFringeQuality=0 ;
@@ -168,7 +156,7 @@ r.SSS.Scale=1 ;
 r.SSS.SampleSet=0 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
-r.EmitterSpawnRateScale=0.5 ;
+r.EmitterSpawnRateScale=0.25 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
 r.DefaultFeature.LightUnits=1 ;
@@ -184,9 +172,6 @@ ShowFlag.Tessellation=0 ;
 
 
 INSURGENCY SANDSTORM* Max FPS Copy/Paste this:
-
-[Core.Log]
-Global=all off ;
 
 when i get around to it
 
@@ -232,16 +217,17 @@ r.TemporalAACurrentFrameWeight=0.3 ;
 r.TemporalAA.Upsampling=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
-r.AmbientOcclusionLevels=3 ;
-r.AmbientOcclusionRadiusScale=1 ;
+r.AmbientOcclusionLevels=2 ;
+r.AmbientOcclusionRadiusScale=0.5 ;
+r.AmbientOcclusion.FadeRadiusScale=0.5 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 r.RenderTargetPoolMin=400 ;
-r.HLOD.DistanceScale=0.8 ;
-r.StaticMeshLODDistanceScale=0.8 ;
-r.SkeletalMeshLODRadiusScale=0.8 ;
+r.HLOD.DistanceScale=0.6 ;
+r.StaticMeshLODDistanceScale=0.6 ;
+r.SkeletalMeshLODRadiusScale=0.6 ;
 r.SkeletalMeshLODBias=0 ;
 r.ViewDistanceScale=0.8 ;
 r.MipMapLODBias=-1 ;
@@ -256,13 +242,11 @@ r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=0 ;
 r.Shadow.CSM.MaxCascades=2 ;
-r.Shadow.CachePreshadow=1 ;
-r.Shadow.CacheWholeSceneShadows=1 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
-r.Shadow.MaxResolution=512 ;
+r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=1024 ;
-r.Shadow.RadiusThreshold=0.01 ;
-r.Shadow.DistanceScale=0.5 ;
+r.Shadow.RadiusThreshold=0.03 ;
+r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
 r.AllowLandscapeShadows=1 ;
@@ -323,7 +307,7 @@ r.SSS.Scale=1 ;
 r.SSS.SampleSet=0 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
-r.EmitterSpawnRateScale=0.5 ;
+r.EmitterSpawnRateScale=0.25 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
 r.DefaultFeature.LightUnits=1 ;
@@ -350,12 +334,5 @@ Vertical sync: Off
 
 
 ; end ;
-
-
-Disable INSURGENCY SANDSTORM* intro vids add .bak after .mp4 e.g. (UE_Startup_Still_1080_30.mp4.bak)
-
-     Press:    Windows key + R    
-Copy/Paste:    %SystemDrive%/Program Files (x86)/Steam/steamapps/common/sandstorm/Insurgency/Content/Movies
-
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
