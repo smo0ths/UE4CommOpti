@@ -3,11 +3,11 @@
 
 
 
-***Updated 6/2/2019
+*Updated 6/3/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
-*Post scriptum needs r.Streaming.PoolSize=2000 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
+*Post scriptum needs r.Streaming.PoolSize=1500 to fix blurry textures with my config and remove PoolSizeVRAMPercentage bc it doesn't work with that engine build i believe
 
 Open Engine.ini and Copy/Paste commands/configs:
 
@@ -151,7 +151,7 @@ r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
-r.Streaming.NumStaticComponentsProcessedPerFrame=25 ;
+r.Streaming.NumStaticComponentsProcessedPerFrame=1 ;
 r.Streaming.MinMipForSplitRequest=1 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
@@ -161,7 +161,7 @@ r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
 r.SSR.MaxRoughness=0.8 ;
 r.SceneColorFormat=3 ;
-r.DetailMode=2 ;
+r.DetailMode=0 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
@@ -306,7 +306,7 @@ r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
-r.Streaming.NumStaticComponentsProcessedPerFrame=25 ;
+r.Streaming.NumStaticComponentsProcessedPerFrame=1 ;
 r.Streaming.MinMipForSplitRequest=1 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
@@ -316,9 +316,9 @@ r.ReflectionEnvironment=1 ;
 r.SSR.Quality=0 ;
 r.SSR.MaxRoughness=0.8 ;
 r.SceneColorFormat=3 ;
-r.DetailMode=2 ;
+r.DetailMode=0 ;
 r.MaterialQualityLevel=1 ;
-r.SubsurfaceScattering=1 ;
+r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=0 ;
 r.SSS.Quality=0 ;
