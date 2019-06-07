@@ -1,9 +1,9 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 6/6/2019
+*Updated 6/7/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
-*PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems
+*PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
 
 Open Engine.ini and Copy/Paste commands/configs:
 
@@ -322,15 +322,35 @@ ShowFlag.Tessellation=0 ;
 ; end ;
 
 
+Open: %localappdata%/SquadGame/Saved/Config/WindowsClient/GameUserSettings.ini
+
+Make sure these are set to 0
+
+[ScalabilityGroups]
+sg.ViewDistanceQuality=0
+sg.ShadowQuality=0
+sg.PostProcessQuality=0
+sg.TextureQuality=0
+sg.EffectsQuality=0
+sg.FoliageQuality=0
+
+Also this command is in GameUserSettings.ini set to 0.5 for little bit better SSAO, if you change settings in game it resets.
+
+AmbientOcclusionRadiusScale=0.500000 
+
+
+; end ;
+
+
 EXTRA* For NVIDIA users in control panel change:
 
-Maximum pre-rendered frames: 1  (test 2 3 4 yourself, lowest is said to have less input lag)
-Multi/mixed gpu accel: Single display performance mode
-Power management mode: Prefer max performance
-Preferred refresh rate: Highest available
-Texture filtering anisotropic sample optimization: On
-Texture filtering quality: High performance
-Vertical sync: Off
+Maximum pre-rendered frames:  1 (test 2 3 4 yourself, lowest is said to have less input lag)
+Multi/mixed gpu accel:  Single display performance mode
+Power management mode:  Prefer max performance
+Preferred refresh rate:  Highest available
+Texture filtering anisotropic sample optimization:  On
+Texture filtering quality:  High performance
+Vertical sync:  Off
 
 
 ; end ;
