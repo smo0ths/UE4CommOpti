@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 6/7/2019
+*Updated 6/8/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
@@ -157,6 +157,7 @@ r.SSS.SampleSet=0 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.25 ;
+r.GPUParticle.Simulate=0 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
 r.DefaultFeature.LightUnits=0 ;
@@ -217,7 +218,7 @@ r.TemporalAACurrentFrameWeight=0.3 ;
 r.TemporalAA.Upsampling=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
-r.AmbientOcclusionLevels=2 ;
+r.AmbientOcclusionLevels=0 ;
 r.AmbientOcclusionRadiusScale=0.5 ;
 r.AmbientOcclusion.FadeRadiusScale=0.5 ;
 r.AmbientOcclusionStaticFraction=0 ;
@@ -308,9 +309,10 @@ r.SSS.SampleSet=0 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.25 ;
+r.GPUParticle.Simulate=0 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
-r.DefaultFeature.LightUnits=0 ;
+r.DefaultFeature.LightUnits=1 ;
 foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
