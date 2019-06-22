@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 6/20/2019
+*Updated 6/21/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
@@ -118,7 +118,7 @@ r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
-r.DefaultFeature.AutoExposure.Method=0 ;
+r.DefaultFeature.AutoExposure.Method=1 ;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
@@ -252,7 +252,7 @@ r.NormalMapsForStaticLighting=0 ;
 r.ClearCoatNormal=0 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
-r.ShadowQuality=3 ;
+r.ShadowQuality=0 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=1024 ;
@@ -261,14 +261,14 @@ r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.3 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
-r.AllowLandscapeShadows=1 ;
+r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=1 ;
 r.DFShadowQuality=1 ;
 r.DFFullResolution=0 ;
 r.DistanceFieldGI=1 ;
-r.CapsuleShadows=1 ;
+r.CapsuleShadows=0 ;
 r.CapsuleShadowsFullResolution=0 ;
-r.ContactShadows=1 ;
+r.ContactShadows=0 ;
 r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=16 ;
 r.VolumetricFog.GridSizeZ=64 ;
@@ -277,11 +277,11 @@ r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
 r.DepthOfFieldQuality=0 ;
-r.LensFlareQuality=2 ;
+r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
-r.DefaultFeature.AutoExposure.Method=0 ;
-r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=1 ;
+r.DefaultFeature.AutoExposure.Method=1 ;
+r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
 r.LightShaftQuality=0 ;
@@ -326,7 +326,7 @@ r.SSS.SampleSet=0 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.25 ;
-r.GPUParticle.Simulate=1 ;
+r.GPUParticle.Simulate=0 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
 r.DefaultFeature.LightUnits=0 ;
