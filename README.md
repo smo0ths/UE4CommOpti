@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 6/26/2019
+*Updated 6/26/2019 x1
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
@@ -115,7 +115,7 @@ r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
 r.DepthOfFieldQuality=0 ;
-r.LensFlareQuality=2 ;
+r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
@@ -144,7 +144,7 @@ r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=1 ;
 r.Streaming.MinMipForSplitRequest=1 ;
-r.Streaming.MaxTempMemoryAllowed=128 ;
+r.Streaming.MaxTempMemoryAllowed=32 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
 r.TranslucencyVolumeBlur=1 ;
@@ -280,7 +280,7 @@ r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
 r.DepthOfFieldQuality=0 ;
-r.LensFlareQuality=2 ;
+r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
@@ -309,7 +309,7 @@ r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=1 ;
 r.Streaming.MinMipForSplitRequest=1 ;
-r.Streaming.MaxTempMemoryAllowed=128 ;
+r.Streaming.MaxTempMemoryAllowed=32 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
 r.TranslucencyVolumeBlur=1 ;
