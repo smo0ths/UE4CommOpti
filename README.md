@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 6/25/2019
+*Updated 6/26/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
@@ -64,7 +64,7 @@ r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
 r.CustomDepthTemporalAAJitter=0 ;
 r.TemporalAASamples=4 ;
-r.TemporalAACurrentFrameWeight=0.3 ;
+r.TemporalAACurrentFrameWeight=0.35 ;
 r.TemporalAA.Upsampling=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
@@ -115,7 +115,7 @@ r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
 r.DepthOfFieldQuality=0 ;
-r.LensFlareQuality=0 ;
+r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
@@ -144,6 +144,7 @@ r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=1 ;
 r.Streaming.MinMipForSplitRequest=1 ;
+r.Streaming.MaxTempMemoryAllowed=128 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
 r.TranslucencyVolumeBlur=1 ;
@@ -155,7 +156,7 @@ r.SSR.Quality=0 ;
 r.SSR.MaxRoughness=0.8 ;
 r.SSR.Temporal=1 ;
 r.SSR.Stencil=0 ;
-r.SceneColorFormat=3 ;
+r.SceneColorFormat=4 ;
 r.DetailMode=0 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=0 ;
@@ -279,7 +280,7 @@ r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
 r.DepthOfFieldQuality=0 ;
-r.LensFlareQuality=0 ;
+r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
@@ -308,6 +309,7 @@ r.Streaming.PoolSize=700 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=1 ;
 r.Streaming.MinMipForSplitRequest=1 ;
+r.Streaming.MaxTempMemoryAllowed=128 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=24 ;
 r.TranslucencyVolumeBlur=1 ;
@@ -319,7 +321,7 @@ r.SSR.Quality=0 ;
 r.SSR.MaxRoughness=0.8 ;
 r.SSR.Temporal=1 ;
 r.SSR.Stencil=0 ;
-r.SceneColorFormat=3 ;
+r.SceneColorFormat=4 ;
 r.DetailMode=0 ;
 r.MaterialQualityLevel=1 ;
 r.SubsurfaceScattering=0 ;
@@ -329,6 +331,7 @@ r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.EmitterSpawnRateScale=0.25 ;
 r.GPUParticle.Simulate=1 ;
+FX.MaxGPUParticlesSpawnedPerFrame=1 ;
 fx.GPUSimulationTextureSizeX=128 ;
 fx.GPUSimulationTextureSizeY=128 ;
 r.ParticleLODBias=0 ;
