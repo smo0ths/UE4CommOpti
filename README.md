@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 7/9/2019
+*Updated 7/12/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
@@ -96,7 +96,7 @@ r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
-r.Shadow.ForceSingleSampleShadowingFromStationary=0 ;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=256 ;
 r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
@@ -127,7 +127,7 @@ r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
-r.DefaultFeature.AutoExposure.Method=0 ;
+r.DefaultFeature.AutoExposure.Method=1 ;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
@@ -269,7 +269,7 @@ r.LightMaxDrawDistanceScale=0.8 ;
 r.LightFunctionQuality=1 ;
 r.ShadowQuality=0 ;
 r.Shadow.CSM.MaxCascades=2 ;
-r.Shadow.ForceSingleSampleShadowingFromStationary=0 ;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=256 ;
 r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
@@ -300,7 +300,7 @@ r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
-r.DefaultFeature.AutoExposure.Method=0 ;
+r.DefaultFeature.AutoExposure.Method=1 ;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
