@@ -55,7 +55,6 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=0 ;
 r.GPUCrashDebugging=0 ;
-r.bForceCPUAccessToGPUSkinVerts=0 ;
 r.GBufferFormat=1 ;
 r.SceneColorFormat=4 ;
 r.EarlyZPass=2 ;
@@ -78,7 +77,6 @@ r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
-r.DistanceFieldBuild.Compress=1 ;
 r.ViewDistanceScale=0.8 ;
 r.StaticMeshLODDistanceScale=0.6 ;
 r.SkeletalMeshLODRadiusScale=0.6 ;
@@ -226,7 +224,6 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=0 ;
 r.GPUCrashDebugging=0 ;
-r.bForceCPUAccessToGPUSkinVerts=0 ;
 r.GBufferFormat=1 ;
 r.SceneColorFormat=4 ;
 r.EarlyZPass=2 ;
@@ -249,7 +246,6 @@ r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
-r.DistanceFieldBuild.Compress=0 ;
 r.ViewDistanceScale=0.8 ;
 r.StaticMeshLODDistanceScale=0.6 ;
 r.SkeletalMeshLODRadiusScale=0.6 ;
@@ -362,7 +358,7 @@ r.Dismemberment=1 ;
 ; end ;
 
 
-Open: %localappdata%/SquadGame/Saved/Config/WindowsClient/GameUserSettings.ini
+Open: %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 Make sure these are set to 0
 
