@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 7/17/2019
+***Updated 7/17/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
@@ -55,7 +55,7 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=0 ;
 r.GPUCrashDebugging=0 ;
-r.GBufferFormat=1 ;
+r.GBufferFormat=0 ;
 r.SceneColorFormat=4 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
@@ -78,10 +78,10 @@ r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
 r.ViewDistanceScale=0.8 ;
-r.StaticMeshLODDistanceScale=0.6 ;
-r.SkeletalMeshLODRadiusScale=0.6 ;
+r.StaticMeshLODDistanceScale=0.8 ;
+r.SkeletalMeshLODRadiusScale=0.8 ;
 r.SkeletalMeshLODBias=0 ;
-r.MipMapLODBias=0 ;
+r.MipMapLODBias=-1 ;
 r.LandscapeLODBias=0 ;
 r.AllowStaticLighting=0 ;
 r.SkyLightingQuality=1 ;
@@ -220,7 +220,7 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=0 ;
 r.GPUCrashDebugging=0 ;
-r.GBufferFormat=1 ;
+r.GBufferFormat=0 ;
 r.SceneColorFormat=4 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
@@ -243,10 +243,10 @@ r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.DistanceFieldAO=0 ;
 r.ViewDistanceScale=0.8 ;
-r.StaticMeshLODDistanceScale=0.6 ;
-r.SkeletalMeshLODRadiusScale=0.6 ;
+r.StaticMeshLODDistanceScale=0.8 ;
+r.SkeletalMeshLODRadiusScale=0.8 ;
 r.SkeletalMeshLODBias=0 ;
-r.MipMapLODBias=0 ;
+r.MipMapLODBias=-1 ;
 r.LandscapeLODBias=0 ;
 r.AllowStaticLighting=1 ;
 r.SkyLightingQuality=1 ;
