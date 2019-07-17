@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 7/15/2019
+*Updated 7/17/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 *PoolSizeVRAMPercentage=50 is how i can lower vram usage for streaming/recording default is 70 i believe, remove or modify if you have low texture problems. 50% uses around 7gb of vram out of my 8gbs in full server combat in squad.
@@ -103,9 +103,7 @@ r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
-r.DefaultFeature.LightUnits=0 ;
-r.SupportPointLightWholeSceneShadows=0 ;
-r.AllowPointLightCubemapShadows=0 ;
+r.DefaultFeature.LightUnits=1 ;
 r.AllowLandscapeShadows=0 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
@@ -134,8 +132,8 @@ r.Upscale.Quality=0 ;
 r.LightShaftQuality=0 ;
 r.LightShaftDownSampleFactor=1 ;
 r.Filter.SizeScale=1 ;
-r.DefaultBackBufferPixelFormat=4 ;
-r.Tonemapper.GrainQuantization=0 ;
+r.DefaultBackBufferPixelFormat=0 ;
+r.Tonemapper.GrainQuantization=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.Sharpen=0.25 ;
@@ -276,9 +274,7 @@ r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.Shadow.PreShadowResolutionFactor=0.5 ;
-r.DefaultFeature.LightUnits=0 ;
-r.SupportPointLightWholeSceneShadows=0 ;
-r.AllowPointLightCubemapShadows=0 ;
+r.DefaultFeature.LightUnits=1 ;
 r.AllowLandscapeShadows=0 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
@@ -300,15 +296,15 @@ r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=0 ;
 r.SceneColorFringeQuality=0 ;
 r.EyeAdaptationQuality=2 ;
-r.DefaultFeature.AutoExposure.Method=1 ;
+r.DefaultFeature.AutoExposure.Method=0 ;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
 r.LightShaftQuality=0 ;
 r.LightShaftDownSampleFactor=1 ;
 r.Filter.SizeScale=1 ;
-r.DefaultBackBufferPixelFormat=4 ;
-r.Tonemapper.GrainQuantization=0 ;
+r.DefaultBackBufferPixelFormat=0 ;
+r.Tonemapper.GrainQuantization=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.Sharpen=0.25 ;
@@ -356,10 +352,11 @@ r.EmitterSpawnRateScale=0.25 ;
 r.ParticleLODBias=0 ;
 r.ParticleLightQuality=1 ;
 r.AllowSimpleLights=1 ;
-foliage.DensityScale=0 ;
-grass.DensityScale=0 ;
+foliage.DensityScale=0.4 ;
+grass.DensityScale=0.4 ;
 grass.DisableDynamicShadows=1 ;
 ShowFlag.Vignette=0 ;
+r.Dismemberment=1 ;
 
 
 ; end ;
