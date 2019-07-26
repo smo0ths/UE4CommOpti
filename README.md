@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 7/26/2019
+**Updated 7/26/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -65,6 +65,7 @@ r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.Upsampling=0 ;
+r.TemporalAASharpness=0 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
 r.AmbientOcclusionLevels=2 ;
@@ -88,7 +89,7 @@ r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=0 ;
 r.Shadow.MaxResolution=1024 ;
-r.Shadow.MaxCSMResolution=1024 ;
+r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
@@ -119,7 +120,7 @@ r.DefaultBackBufferPixelFormat=4 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
-r.Tonemapper.Sharpen=0.2 ;
+r.Tonemapper.Sharpen=0.5 ;
 r.RenderTargetPoolMin=400 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=8 ;
@@ -219,6 +220,7 @@ r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.Upsampling=0 ;
+r.TemporalAASharpness=0 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
 r.AmbientOcclusionLevels=2 ;
@@ -242,7 +244,7 @@ r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=2 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=0 ;
 r.Shadow.MaxResolution=1024 ;
-r.Shadow.MaxCSMResolution=1024 ;
+r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
@@ -273,7 +275,7 @@ r.DefaultBackBufferPixelFormat=4 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
-r.Tonemapper.Sharpen=0.2 ;
+r.Tonemapper.Sharpen=0.5 ;
 r.RenderTargetPoolMin=400 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=8 ;
