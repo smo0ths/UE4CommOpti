@@ -349,9 +349,11 @@ r.Dismemberment=1 ;
 ; end ;
 
 
-Open: %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+Open GameUserSettings.ini and Make sure these are set to 0
 
-Make sure these are set to 0
+Press:       Windows key + R      
+Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
 [ScalabilityGroups]
 sg.ViewDistanceQuality=0
@@ -360,10 +362,6 @@ sg.PostProcessQuality=0
 sg.TextureQuality=0
 sg.EffectsQuality=0
 sg.FoliageQuality=0
-
-Also this command is in GameUserSettings.ini set to 0.5 for little bit better SSAO, if you change settings in game it resets.
-
-AmbientOcclusionRadiusScale=0.500000 
 
 
 ; end ;
