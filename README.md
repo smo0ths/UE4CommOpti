@@ -1,8 +1,14 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 7/26/2019
+*Updated 7/27/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
+
+
+; end ;
+; end ;
+; end ;
+
 
 Open Engine.ini and Copy/Paste commands/configs:
 
@@ -12,18 +18,21 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 
 
 ; end ;
+; end ;
+; end ;
 
 
-SQUAD* Max FPS Copy/Paste this:
+***************************
+************WIP************ 
+***************************
 
-when i get around to it
 
-
+; end ;
+; end ;
 ; end ;
 
 
 SQUAD* My config Copy/Paste this:
-
 
 [Audio]
 MaxChannels=96 ;
@@ -53,7 +62,7 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=0 ;
 r.GPUCrashDebugging=0 ;
-r.GBufferFormat=3 ;
+r.GBufferFormat=1 ;
 r.SceneColorFormat=3 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
@@ -120,7 +129,7 @@ r.DefaultBackBufferPixelFormat=4 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
-r.Tonemapper.Sharpen=0.5 ;
+r.Tonemapper.Sharpen=0.2 ;
 r.RenderTargetPoolMin=400 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=8 ;
@@ -171,13 +180,14 @@ ShowFlag.Vignette=0 ;
 
 
 ; end ;
+; end ;
+; end ;
 
 
-INSURGENCY SANDSTORM* Max FPS Copy/Paste this:
-
-when i get around to it
 
 
+; end ;
+; end ;
 ; end ;
 
 
@@ -208,7 +218,7 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=0 ;
 r.GPUCrashDebugging=0 ;
-r.GBufferFormat=3 ;
+r.GBufferFormat=1 ;
 r.SceneColorFormat=3 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
@@ -275,7 +285,7 @@ r.DefaultBackBufferPixelFormat=4 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
-r.Tonemapper.Sharpen=0.5 ;
+r.Tonemapper.Sharpen=0.2 ;
 r.RenderTargetPoolMin=400 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=8 ;
@@ -327,6 +337,8 @@ r.Dismemberment=1 ;
 
 
 ; end ;
+; end ;
+; end ;
 
 
 Open: %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
@@ -347,6 +359,8 @@ AmbientOcclusionRadiusScale=0.500000
 
 
 ; end ;
+; end ;
+; end ;
 
 
 EXTRA* For NVIDIA users in control panel change:
@@ -360,6 +374,8 @@ Texture filtering quality:  High performance
 Vertical sync:  Off
 
 
+; end ;
+; end ;
 ; end ;
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
