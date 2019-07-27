@@ -26,6 +26,7 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 ************WIP************ 
 ***************************
 
+SQUAD* Max FPS Copy/Paste this: 
 
 ; end ;
 ; end ;
@@ -182,6 +183,13 @@ ShowFlag.Vignette=0 ;
 ; end ;
 ; end ;
 ; end ;
+
+
+***************************
+************WIP************
+***************************
+
+INSURGENCY SANDSTORM* Max FPS Copy/Paste this:
 
 
 
