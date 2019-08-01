@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 7/31/2019
+*Updated 8/1/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -45,7 +45,7 @@ MaxChannels=96 ;
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=0 ;
+PoolSizeVRAMPercentage=50 ;
 
 [/Script/Engine.RendererSettings]
 bSmoothFrameRate=0 ;
@@ -66,6 +66,7 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=0 ;
 r.GPUCrashDebugging=0 ;
+r.bForceCPUAccessToGPUSkinVerts=1 ;
 r.GpuSkin.Pool=1 ;
 r.GBufferFormat=1 ;
 r.SceneColorFormat=3 ;
@@ -133,7 +134,7 @@ r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=1 ;
 r.Filter.NewMethod=1 ;
 r.Filter.SizeScale=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
+r.DefaultBackBufferPixelFormat=1 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.Quality=5 ;
@@ -145,16 +146,18 @@ r.TextureStreaming=1 ;
 r.Streaming.DefragDynamicBounds=1 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.Streaming.AmortizeCPUToGPUCopy=0 ;
-r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
+r.Streaming.AmortizeCPUToGPUCopy=1 ;
+r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
 r.Streaming.Boost=1 ;
-r.Streaming.UsePerTextureBias=0 ;
+r.Streaming.UsePerTextureBias=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
-r.Streaming.UseFixedPoolSize=0 ;
+r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
-r.Streaming.PoolSize=4000 ;
+r.Streaming.PoolSize=400 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50 ;
+r.Streaming.FramesForFullUpdate=30 ;
+r.Streaming.HiddenPrimitiveScale=1 ;
 r.HLOD=1 ;
 r.HLOD.DistanceScale=1 ;
 r.TranslucentLightingVolume=1 ;
@@ -186,6 +189,7 @@ foliage.DensityScale=0.6 ;
 grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
 ShowFlag.Vignette=0 ;
+r.DistanceFieldBuild.Compress=0 ;
 
 
 ; end ;
