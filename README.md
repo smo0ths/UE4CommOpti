@@ -19,8 +19,6 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 
 
 ************WIP************ 
-
-
 SQUAD* Max FPS Copy/Paste this: 
 
 
