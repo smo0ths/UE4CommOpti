@@ -197,7 +197,7 @@ INSURGENCY SANDSTORM* My config Copy/Paste this:
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=0 ;
+PoolSizeVRAMPercentage=20 ;
 
 [/Script/Engine.RendererSettings]
 ShowFlag.Vignette=0 ;
