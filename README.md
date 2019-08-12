@@ -384,9 +384,9 @@ sg.TextureQuality=0
 sg.EffectsQuality=0
 sg.FoliageQuality=0
 
-In sandstorms GameUserSettings.ini set value to 200 or what you want
+In sandstorms GameUserSettings.ini set value to 400 or what you want
 
-("r.Streaming.PoolSize", (Value=200,bModified=True)
+("r.Streaming.PoolSize", (Value=400,bModified=True)
 
 ; end ;
 
