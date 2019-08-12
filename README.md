@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/7/2019
+*Updated 8/12/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -65,7 +65,7 @@ r.EarlyZPassOnlyMaterialMasking=1 ;
 r.GBufferFormat=3 ;
 r.SceneColorFormat=4 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
+r.SceneRenderTargetResizeMethod=2 ;
 r.DefaultBackBufferPixelFormat=0 ;
 r.RenderTargetPoolMin=400 ;
 r.GpuSkin.Pool=1 ;
@@ -97,11 +97,12 @@ r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1 ;
-r.TemporalAASamples=3 ;
-r.TemporalAACurrentFrameWeight=0.2 ;
-r.TemporalAA.Upsampling=0 ;
+r.TemporalAASamples=4 ;
+r.TemporalAACurrentFrameWeight=0.1 ;
+r.TemporalAA.Upsampling=1 ;
 r.TemporalAAUpsampleFiltered=1 ;
-r.TemporalAAFilterSize=1 ;
+r.TemporalAACatmullRom=1 ;
+r.TemporalAAPauseCorrect=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=-100 ;
 r.AmbientOcclusionLevels=0 ;
@@ -162,8 +163,12 @@ grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=0.6 ;
 r.StaticMeshLODDistanceScale=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.GenerateMeshDistanceFields=0 ;
+r.GenerateLandscapeGIData=0 ;
+r.AOQuality=0 ;
 r.DistanceFieldAO=0 ;
-r.MipMapLODBias=-1 ;
+r.DistanceFieldBuild.Compress=1 ;
+r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
@@ -177,14 +182,13 @@ r.MaterialQualityLevel=1 ;
 r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
-r.DepthOfFieldQuality=1 ;
+r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
-r.BloomQuality=3 ;
+r.BloomQuality=0 ;
 r.Upscale.Quality=3 ;
 fx.GPUSimulationTextureSizeX=512 ;
 fx.GPUSimulationTextureSizeY=512 ;
-r.DistanceFieldBuild.Compress=0 ;
 
 
 ; end ;
@@ -234,7 +238,7 @@ r.EarlyZPassOnlyMaterialMasking=1 ;
 r.GBufferFormat=3 ;
 r.SceneColorFormat=4 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
+r.SceneRenderTargetResizeMethod=2 ;
 r.DefaultBackBufferPixelFormat=0 ;
 r.RenderTargetPoolMin=400 ;
 r.GpuSkin.Pool=1 ;
@@ -266,11 +270,12 @@ r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1 ;
-r.TemporalAASamples=3 ;
-r.TemporalAACurrentFrameWeight=0.2 ;
-r.TemporalAA.Upsampling=0 ;
+r.TemporalAASamples=4 ;
+r.TemporalAACurrentFrameWeight=0.1 ;
+r.TemporalAA.Upsampling=1 ;
 r.TemporalAAUpsampleFiltered=1 ;
-r.TemporalAAFilterSize=1 ;
+r.TemporalAACatmullRom=1 ;
+r.TemporalAAPauseCorrect=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=-100 ;
 r.AmbientOcclusionLevels=0 ;
@@ -331,8 +336,12 @@ grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=1 ;
 r.StaticMeshLODDistanceScale=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
+r.GenerateMeshDistanceFields=0 ;
+r.GenerateLandscapeGIData=0 ;
+r.AOQuality=0 ;
 r.DistanceFieldAO=0 ;
-r.MipMapLODBias=-1 ;
+r.DistanceFieldBuild.Compress=1 ;
+r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
@@ -346,14 +355,13 @@ r.MaterialQualityLevel=1 ;
 r.MotionBlurQuality=0 ;
 r.BlurGBuffer=0 ;
 r.FastBlurThreshold=7 ;
-r.DepthOfFieldQuality=1 ;
+r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
-r.BloomQuality=3 ;
+r.BloomQuality=0 ;
 r.Upscale.Quality=3 ;
 fx.GPUSimulationTextureSizeX=512 ;
 fx.GPUSimulationTextureSizeY=512 ;
-r.DistanceFieldBuild.Compress=0 ;
 r.Dismemberment=1 ;
 
 
