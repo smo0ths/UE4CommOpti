@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/12/2019
+*Updated 8/13/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -97,7 +97,7 @@ r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1 ;
-r.TemporalAASamples=4 ;
+r.TemporalAASamples=3 ;
 r.TemporalAACurrentFrameWeight=0.1 ;
 r.TemporalAA.Upsampling=1 ;
 r.TemporalAAUpsampleFiltered=1 ;
@@ -139,10 +139,10 @@ r.SSR.MaxRoughness=0.8 ;
 r.SSR.Temporal=1 ;
 r.SSR.Stencil=0 ;
 r.SubsurfaceScattering=1 ;
-r.SSS.Checkerboard=0 ;
+r.SSS.Checkerboard=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
-r.SSS.Quality=1 ;
+r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.Emitter.FastPoolEnable=1 ;
 r.EmitterSpawnRateScale=0.5 ;
@@ -270,7 +270,7 @@ r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1 ;
-r.TemporalAASamples=4 ;
+r.TemporalAASamples=3 ;
 r.TemporalAACurrentFrameWeight=0.1 ;
 r.TemporalAA.Upsampling=1 ;
 r.TemporalAAUpsampleFiltered=1 ;
@@ -312,10 +312,10 @@ r.SSR.MaxRoughness=0.8 ;
 r.SSR.Temporal=1 ;
 r.SSR.Stencil=0 ;
 r.SubsurfaceScattering=1 ;
-r.SSS.Checkerboard=0 ;
+r.SSS.Checkerboard=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
-r.SSS.Quality=1 ;
+r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.Emitter.FastPoolEnable=1 ;
 r.EmitterSpawnRateScale=0.5 ;
