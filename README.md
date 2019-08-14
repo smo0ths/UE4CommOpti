@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/13/2019
+**Updated 8/13/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -57,7 +57,7 @@ r.CompileShadersForDevelopment=0 ;
 r.CreateShadersOnLoad=1 ;
 r.VirtualTexture=1 ;
 r.VirtualTextureReducedMemory=0 ;
-r.VirtualTexturedLightmaps=1 ;
+r.VirtualTexturedLightmaps=0 ;
 r.GPUCrashDebugging=0 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
