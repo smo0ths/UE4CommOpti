@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 8/13/2019
+*Updated 8/14/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -98,8 +98,8 @@ r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.TemporalAASamples=3 ;
-r.TemporalAACurrentFrameWeight=0.1 ;
-r.TemporalAA.Upsampling=1 ;
+r.TemporalAACurrentFrameWeight=0.2 ;
+r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAACatmullRom=1 ;
 r.TemporalAAPauseCorrect=1 ;
@@ -186,7 +186,7 @@ r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
 r.BloomQuality=0 ;
-r.Upscale.Quality=3 ;
+r.Upscale.Quality=0 ;
 fx.GPUSimulationTextureSizeX=512 ;
 fx.GPUSimulationTextureSizeY=512 ;
 
@@ -271,8 +271,8 @@ r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.TemporalAASamples=3 ;
-r.TemporalAACurrentFrameWeight=0.1 ;
-r.TemporalAA.Upsampling=1 ;
+r.TemporalAACurrentFrameWeight=0.2 ;
+r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAACatmullRom=1 ;
 r.TemporalAAPauseCorrect=1 ;
@@ -359,7 +359,7 @@ r.DepthOfFieldQuality=0 ;
 r.LensFlareQuality=2 ;
 r.SceneColorFringeQuality=0 ;
 r.BloomQuality=0 ;
-r.Upscale.Quality=3 ;
+r.Upscale.Quality=0 ;
 fx.GPUSimulationTextureSizeX=512 ;
 fx.GPUSimulationTextureSizeY=512 ;
 r.Dismemberment=1 ;
