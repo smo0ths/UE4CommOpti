@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/16/2019
+*Updated 8/19/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -69,9 +69,9 @@ r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
 r.GpuSkin.Pool=1 ;
 r.RenderTargetPoolMin=400 ;
-r.GBufferFormat=0 ;
+r.GBufferFormat=1 ;
 r.DefaultBackBufferPixelFormat=0 ;
-r.MaxAnisotropy=16 ;
+r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
@@ -110,14 +110,14 @@ r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAACatmullRom=1 ;
 r.TemporalAAPauseCorrect=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
-r.AmbientOcclusionMaxQuality=-100 ;
-r.AmbientOcclusionLevels=-1 ;
-r.AmbientOcclusionRadiusScale=0.5 ;
+r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionLevels=2 ;
+r.AmbientOcclusionRadiusScale=1 ;
 r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AllowStaticLighting=0 ;
-r.AllowLandscapeShadows=1 ;
+r.AllowLandscapeShadows=0 ;
 r.LightMaxDrawDistanceScale=1 ;
 r.LightFunctionQuality=1 ;
 r.LightShaftQuality=1 ;
@@ -193,7 +193,6 @@ r.SceneColorFringeQuality=0 ;
 r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
 r.IndirectLightingCache=1 ;
-FX.AllowGPUSorting=0 ;
 r.PostProcessing.PropagateAlpha=0 ;
 
 
@@ -248,9 +247,9 @@ r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
 r.GpuSkin.Pool=1 ;
 r.RenderTargetPoolMin=400 ;
-r.GBufferFormat=0 ;
+r.GBufferFormat=1 ;
 r.DefaultBackBufferPixelFormat=0 ;
-r.MaxAnisotropy=16 ;
+r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
@@ -289,14 +288,14 @@ r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAACatmullRom=1 ;
 r.TemporalAAPauseCorrect=1 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
-r.AmbientOcclusionMaxQuality=-100 ;
-r.AmbientOcclusionLevels=-1 ;
-r.AmbientOcclusionRadiusScale=0.5 ;
+r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionLevels=2 ;
+r.AmbientOcclusionRadiusScale=1 ;
 r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusionStaticFraction=1 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=1 ;
 r.AllowStaticLighting=1 ;
-r.AllowLandscapeShadows=1 ;
+r.AllowLandscapeShadows=0 ;
 r.LightMaxDrawDistanceScale=1 ;
 r.LightFunctionQuality=1 ;
 r.LightShaftQuality=0 ;
