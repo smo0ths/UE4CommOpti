@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 8/20/2019
+***Updated 8/20/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -166,7 +166,7 @@ grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=0.6 ;
 r.SkeletalMeshLODRadiusScale=1 ;
-r.StaticMeshLODDistanceScale=0.25 ;
+r.StaticMeshLODDistanceScale=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.GenerateMeshDistanceFields=0 ;
 r.GenerateLandscapeGIData=0 ;
@@ -348,7 +348,7 @@ grass.DensityScale=1 ;
 grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=1 ;
 r.SkeletalMeshLODRadiusScale=1 ;
-r.StaticMeshLODDistanceScale=0.25 ;
+r.StaticMeshLODDistanceScale=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.GenerateMeshDistanceFields=0 ;
 r.GenerateLandscapeGIData=0 ;
