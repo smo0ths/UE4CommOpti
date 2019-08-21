@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Updated 8/20/2019
+*Updated 8/21/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -157,10 +157,11 @@ r.Emitter.FastPoolEnable=1 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.ParticleLightQuality=1 ;
 r.EyeAdaptationQuality=2 ;
-r.EyeAdaptation.MethodOveride=2 ;
+r.EyeAdaptation.MethodOveride=1 ;
 r.EyeAdaptation.Focus=1 ;
+r.EyeAdaptation.PreExposureOverride=1 ;
 r.UsePreExposure=1 ;
-r.DefaultFeature.AutoExposure.Method=1 ;
+r.DefaultFeature.AutoExposure.Method=0 ;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
@@ -339,11 +340,12 @@ r.Emitter.FastPoolEnable=1 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.ParticleLightQuality=1 ;
 r.EyeAdaptationQuality=2 ;
-r.EyeAdaptation.MethodOveride=2 ;
+r.EyeAdaptation.MethodOveride=1 ;
 r.EyeAdaptation.Focus=1 ;
+r.EyeAdaptation.PreExposureOverride=1 ;
 r.UsePreExposure=1 ;
-r.DefaultFeature.AutoExposure.Method=1 ;
-r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
+r.DefaultFeature.AutoExposure.Method=0 ;
+r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=1 ;
 grass.DensityScale=1 ;
 grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=1 ;
