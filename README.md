@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/20/2019
+**Updated 8/20/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -135,7 +135,7 @@ r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
-r.HLOD.DistanceOverride=20000 ;
+r.HLOD.DistanceOverride=10000 ;
 r.Filter.NewMethod=1 ;
 r.Filter.SizeScale=1 ;
 r.TranslucentLightingVolume=1 ;
@@ -317,7 +317,7 @@ r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
-r.HLOD.DistanceOverride=20000 ;
+r.HLOD.DistanceOverride=10000 ;
 r.Filter.NewMethod=1 ;
 r.Filter.SizeScale=1 ;
 r.TranslucentLightingVolume=1 ;
