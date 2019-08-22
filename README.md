@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/22/2019
+**Updated 8/22/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -70,7 +70,7 @@ r.SceneRenderTargetResizeMethod=2 ;
 r.GpuSkin.Pool=1 ;
 r.RenderTargetPoolMin=400 ;
 r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
+r.DefaultBackBufferPixelFormat=4 ;
 r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -248,7 +248,7 @@ r.SceneRenderTargetResizeMethod=0 ;
 r.GpuSkin.Pool=1 ;
 r.RenderTargetPoolMin=400 ;
 r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
+r.DefaultBackBufferPixelFormat=4 ;
 r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -289,8 +289,8 @@ r.AmbientOcclusionMaxQuality=-100 ;
 r.AmbientOcclusionLevels=2 ;
 r.AmbientOcclusionRadiusScale=0.5 ;
 r.AmbientOcclusion.FadeRadiusScale=0.5 ;
-r.AmbientOcclusionStaticFraction=1 ;
-r.DefaultFeature.AmbientOcclusionStaticFraction=1 ;
+r.AmbientOcclusionStaticFraction=0 ;
+r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AllowStaticLighting=1 ;
 r.AllowLandscapeShadows=0 ;
 r.LightMaxDrawDistanceScale=1 ;
