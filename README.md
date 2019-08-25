@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-****Updated 8/23/2019
+*Updated 8/24/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -159,9 +159,6 @@ r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 grass.DensityScale=0.6 ;
 grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=0.6 ;
-r.GenerateMeshDistanceFields=1 ;
-r.GenerateLandscapeGIData=0 ;
-r.DistanceFieldGI=0 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=1 ;
 r.DFShadowQuality=1 ;
@@ -195,9 +192,6 @@ r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
 r.MinTimeBetweenTicks=8 ;
 r.ParticleMinTimeBetweenTicks=8 ;
-r.Decal.StencilSizeThreshold=0.1 ;
-r.Decal.FadeDurationScale=0.5 ;
-r.Decal.FadeScreenSizeMult=0.5 ;
 
 
 ; end ;
@@ -315,7 +309,7 @@ r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
-r.HLOD.DistanceOverride=5000 ;
+r.HLOD.DistanceOverride=10000 ;
 r.Filter.SizeScale=1 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
@@ -341,9 +335,6 @@ r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0 ;
 grass.DensityScale=1 ;
 grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=1 ;
-r.GenerateMeshDistanceFields=1 ;
-r.GenerateLandscapeGIData=0 ;
-r.DistanceFieldGI=0 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=1 ;
 r.DFShadowQuality=1 ;
@@ -377,9 +368,6 @@ r.BloomQuality=0 ;
 r.Upscale.Quality=0 ;
 r.MinTimeBetweenTicks=8 ;
 r.ParticleMinTimeBetweenTicks=8 ;
-r.Decal.StencilSizeThreshold=0.1 ;
-r.Decal.FadeDurationScale=0.5 ;
-r.Decal.FadeScreenSizeMult=0.5 ;
 r.SurfReac.Particles.PoolSize=5 ;
 r.FoliageInteractionQuality=0 ;
 r.CapsuleShadowsCharacter=0 ;
