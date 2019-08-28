@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/28/2019
+**Updated 8/28/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -68,7 +68,7 @@ r.SceneRenderTargetResizeMethod=2 ;
 r.GPUCrashDebugging=0 ;
 r.RenderTargetPoolMin=400 ;
 r.GBuffer=1 ;
-r.GBufferFormat=3 ;
+r.GBufferFormat=1 ;
 r.DefaultBackBufferPixelFormat=4 ;
 r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
@@ -95,7 +95,7 @@ r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=2048 ;
 r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
-r.Shadow.DistanceScale=0.85 ;
+r.Shadow.DistanceScale=0.8 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
@@ -162,9 +162,8 @@ r.DoPrepareDistanceFieldSceneAfterRHIFlush=1 ;
 r.SkeletalMeshLODRadiusScale=1 ;
 r.StaticMeshLODDistanceScale=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.AOQuality=0 ;
-r.DistanceFieldAO=0 ;
-r.AOApplyToStaticIndirect=0 ;
+r.AOQuality=2 ;
+r.DistanceFieldAO=1 ;
 r.ContactShadows=1 ;
 r.CapsuleShadows=0 ;
 r.DefaultFeature.LightUnits=1 ;
@@ -188,7 +187,7 @@ r.Upscale.Quality=3 ;
 r.MinTimeBetweenTicks=8 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.SupportAtmosphericFog=1 ;
-r.Shadow.CSMDepthBias=15 ;
+r.Shadow.CSMDepthBias=10 ;
 r.SupportStationarySkylight=1 ;
 r.SkyLightingQuality=1 ;
 r.GpuSkin.Pool=1 ;
@@ -244,7 +243,7 @@ r.SceneRenderTargetResizeMethod=2 ;
 r.GPUCrashDebugging=0 ;
 r.RenderTargetPoolMin=400 ;
 r.GBuffer=1 ;
-r.GBufferFormat=3 ;
+r.GBufferFormat=1 ;
 r.DefaultBackBufferPixelFormat=4 ;
 r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
@@ -271,7 +270,7 @@ r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
 r.Shadow.MaxResolution=2048 ;
 r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
-r.Shadow.DistanceScale=0.85 ;
+r.Shadow.DistanceScale=0.8 ;
 r.Shadow.CSM.TransitionScale=1 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
@@ -338,9 +337,8 @@ r.DoPrepareDistanceFieldSceneAfterRHIFlush=1 ;
 r.SkeletalMeshLODRadiusScale=1 ;
 r.StaticMeshLODDistanceScale=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
-r.AOQuality=0 ;
-r.DistanceFieldAO=0 ;
-r.AOApplyToStaticIndirect=0 ;
+r.AOQuality=2 ;
+r.DistanceFieldAO=1 ;
 r.ContactShadows=1 ;
 r.CapsuleShadows=0 ;
 r.DefaultFeature.LightUnits=1 ;
@@ -364,7 +362,7 @@ r.Upscale.Quality=3 ;
 r.MinTimeBetweenTicks=8 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.SupportAtmosphericFog=1 ;
-r.Shadow.CSMDepthBias=15 ;
+r.Shadow.CSMDepthBias=10 ;
 r.SupportStationarySkylight=1 ;
 r.SkyLightingQuality=1 ;
 r.GpuSkin.Pool=1 ;
