@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 8/29/2019
+*Updated 8/30/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -112,8 +112,8 @@ r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AllowStaticLighting=0 ;
 r.AllowLandscapeShadows=1 ;
-r.LightMaxDrawDistanceScale=1 ;
 r.LightFunctionQuality=1 ;
+r.LightMaxDrawDistanceScale=0.8 ;
 r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=1 ;
 r.TonemapperFilm=1 ;
@@ -292,8 +292,8 @@ r.AmbientOcclusionStaticFraction=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AllowStaticLighting=1 ;
 r.AllowLandscapeShadows=1 ;
-r.LightMaxDrawDistanceScale=1 ;
 r.LightFunctionQuality=1 ;
+r.LightMaxDrawDistanceScale=0.8 ;
 r.LightShaftQuality=0 ;
 r.LightShaftDownSampleFactor=1 ;
 r.TonemapperFilm=1 ;
