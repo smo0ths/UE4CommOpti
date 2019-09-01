@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 8/30/2019
+*Updated 9/1/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -77,11 +77,11 @@ r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.PoolSize=800 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=-1 ;
-r.MipMapLODBias=-1 ;
-r.LandscapeLODBias=-1 ;
-r.SkeletalMeshLODBias=-1 ;
-r.ParticleLODBias=-1 ;
+r.Streaming.MipBias=0 ;
+r.MipMapLODBias=0 ;
+r.LandscapeLODBias=0 ;
+r.SkeletalMeshLODBias=0 ;
+r.ParticleLODBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1 ;
@@ -89,6 +89,7 @@ r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.DefragDynamicBounds=1 ;
 r.Streaming.UseNewMetrics=1 ;
+r.Streaming.UsePerTextureBias=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=4 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
@@ -194,7 +195,7 @@ r.Shadow.CSMDepthBias=10 ;
 r.SupportStationarySkylight=1 ;
 r.SkyLightingQuality=1 ;
 r.GpuSkin.Pool=1 ;
-r.SupportPointLightWholeSceneShadows=1 ;
+r.SupportPointLightWholeSceneShadows=0 ;
 r.SupportLowQualityLightmaps=0 ;
 
 
@@ -257,11 +258,11 @@ r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.PoolSize=800 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=-1 ;
-r.MipMapLODBias=-1 ;
-r.LandscapeLODBias=-1 ;
-r.SkeletalMeshLODBias=-1 ;
-r.ParticleLODBias=-1 ;
+r.Streaming.MipBias=0 ;
+r.MipMapLODBias=0 ;
+r.LandscapeLODBias=0 ;
+r.SkeletalMeshLODBias=0 ;
+r.ParticleLODBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.Boost=1 ;
@@ -269,6 +270,7 @@ r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.DefragDynamicBounds=1 ;
 r.Streaming.UseNewMetrics=1 ;
+r.Streaming.UsePerTextureBias=1 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=4 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
@@ -374,7 +376,7 @@ r.Shadow.CSMDepthBias=10 ;
 r.SupportStationarySkylight=1 ;
 r.SkyLightingQuality=1 ;
 r.GpuSkin.Pool=1 ;
-r.SupportPointLightWholeSceneShadows=1 ;
+r.SupportPointLightWholeSceneShadows=0 ;
 r.SupportLowQualityLightmaps=0 ;
 
 
