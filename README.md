@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 9/10/2019
+*Updated 9/11/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -77,7 +77,7 @@ r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.PoolSize=800 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.MipMapLODBias=-1 ;
+r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
@@ -88,7 +88,7 @@ r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.DefragDynamicBounds=1 ;
 r.Streaming.UseNewMetrics=1 ;
-r.Streaming.UsePerTextureBias=1 ;
+r.Streaming.UsePerTextureBias=0 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=4 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
@@ -129,7 +129,7 @@ r.ViewDistanceScale=0.8 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
-r.HLOD.DistanceScale=0.8 ;
+r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=5000 ;
 r.Filter.SizeScale=1 ;
 r.TranslucentLightingVolume=1 ;
@@ -258,7 +258,7 @@ r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.PoolSize=800 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.MipMapLODBias=-1 ;
+r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
@@ -269,7 +269,7 @@ r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.DefragDynamicBounds=1 ;
 r.Streaming.UseNewMetrics=1 ;
-r.Streaming.UsePerTextureBias=1 ;
+r.Streaming.UsePerTextureBias=0 ;
 r.ShadowQuality=3 ;
 r.Shadow.CSM.MaxCascades=4 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
@@ -310,7 +310,7 @@ r.ViewDistanceScale=0.8 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
-r.HLOD.DistanceScale=0.8 ;
+r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=5000 ;
 r.Filter.SizeScale=1 ;
 r.TranslucentLightingVolume=1 ;
@@ -341,7 +341,7 @@ r.DFFullResolution=1 ;
 r.DFShadowQuality=2 ;
 r.DFTwoSidedMeshDistanceBias=1 ;
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1 ;
-r.SkeletalMeshLODRadiusScale=0.8 ;
+r.SkeletalMeshLODRadiusScale=1 ;
 r.StaticMeshLODDistanceScale=1 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.AOQuality=0 ;
