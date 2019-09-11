@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 9/11/2019
+**Updated 9/11/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -63,12 +63,12 @@ r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 r.SceneColorFormat=4 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
+r.SceneRenderTargetResizeMethod=2 ;
 r.GPUCrashDebugging=0 ;
-r.RenderTargetPoolMin=400 ;
+r.RenderTargetPoolMin=450 ;
 r.GBuffer=1 ;
 r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=4 ;
+r.DefaultBackBufferPixelFormat=0 ;
 r.MaxAnisotropy=16 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -125,12 +125,12 @@ r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=8 ;
 r.VolumetricFog.GridSizeZ=128 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
-r.ViewDistanceScale=0.8 ;
-r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
-r.HLOD.DistanceOverride=5000 ;
+r.HLOD.DistanceOverride=10000 ;
+r.ViewDistanceScale=0.8 ;
+r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
 r.Filter.SizeScale=1 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
@@ -169,6 +169,8 @@ r.ContactShadows=1 ;
 r.CapsuleShadows=0 ;
 r.DisableDistortion=0 ;
 r.RefractionQuality=2 ;
+r.TiledDeferredShading=1 ;
+r.TiledDeferredShading.MinimumCount=80 ;
 r.DoTiledReflections=1 ;
 r.ReflectionEnvironment=1 ;
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
@@ -195,7 +197,6 @@ r.SupportStationarySkylight=1 ;
 r.SkyLightingQuality=1 ;
 r.GpuSkin.Pool=1 ;
 r.SupportPointLightWholeSceneShadows=0 ;
-r.SupportLowQualityLightmaps=0 ;
 r.Atmosphere=1 ;
 
 
@@ -244,12 +245,12 @@ r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
 r.SceneColorFormat=4 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
+r.SceneRenderTargetResizeMethod=2 ;
 r.GPUCrashDebugging=0 ;
-r.RenderTargetPoolMin=400 ;
+r.RenderTargetPoolMin=450 ;
 r.GBuffer=1 ;
 r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=4 ;
+r.DefaultBackBufferPixelFormat=0 ;
 r.MaxAnisotropy=16 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -306,12 +307,12 @@ r.VolumetricFog=0 ;
 r.VolumetricFog.GridPixelSize=8 ;
 r.VolumetricFog.GridSizeZ=128 ;
 r.VolumetricFog.HistoryMissSupersampleCount=4 ;
-r.ViewDistanceScale=0.8 ;
-r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
-r.HLOD.DistanceOverride=5000 ;
+r.HLOD.DistanceOverride=10000 ;
+r.ViewDistanceScale=0.8 ;
+r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
 r.Filter.SizeScale=1 ;
 r.TranslucentLightingVolume=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
@@ -350,6 +351,8 @@ r.ContactShadows=1 ;
 r.CapsuleShadows=0 ;
 r.DisableDistortion=0 ;
 r.RefractionQuality=2 ;
+r.TiledDeferredShading=1 ;
+r.TiledDeferredShading.MinimumCount=80 ;
 r.DoTiledReflections=1 ;
 r.ReflectionEnvironment=1 ;
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
@@ -376,7 +379,6 @@ r.SupportStationarySkylight=1 ;
 r.SkyLightingQuality=1 ;
 r.GpuSkin.Pool=1 ;
 r.SupportPointLightWholeSceneShadows=0 ;
-r.SupportLowQualityLightmaps=0 ;
 r.Atmosphere=1 ;
 
 
@@ -389,7 +391,7 @@ Press:       Windows key + R
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
-Make sure these are set to 0
+Set these to what you want   
 
 [ScalabilityGroups]
 sg.ViewDistanceQuality=0
@@ -399,9 +401,12 @@ sg.TextureQuality=0
 sg.EffectsQuality=0
 sg.FoliageQuality=0
 
-In sandstorms GameUserSettings.ini set value to 800 or what you want
+In sandstorms GameUserSettings.ini set to what you want
 
 ("r.Streaming.PoolSize", (Value=800,bModified=True)
+
+Oh do i miss a console..
+
 
 ; end ;
 
@@ -412,7 +417,7 @@ Maximum pre-rendered frames:  1 (less input lag) (new drivers have ultra low lat
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
-Texture filtering anisotropic sample optimization:  i set off because i see shimmering around objects
+Texture filtering anisotropic sample optimization:  On
 Texture filtering quality:  High performance
 Vertical sync:  Off
 
