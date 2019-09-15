@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 9/15/2019
+**Updated 9/15/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -167,8 +167,6 @@ r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.DisableDistortion=0 ;
 r.RefractionQuality=2 ;
-r.TiledDeferredShading=1 ;
-r.DoTiledReflections=0 ;
 r.ReflectionEnvironment=1 ;
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
 r.ReflectionEnvironmentLightmapMixing=1 ;
@@ -348,8 +346,6 @@ r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.DisableDistortion=0 ;
 r.RefractionQuality=2 ;
-r.TiledDeferredShading=1 ;
-r.DoTiledReflections=0 ;
 r.ReflectionEnvironment=1 ;
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
 r.ReflectionEnvironmentLightmapMixing=1 ;
