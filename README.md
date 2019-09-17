@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 9/15/2019
+*Updated 9/17/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -34,7 +34,7 @@ MaxChannels=96 ;
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=30 ;
+PoolSizeVRAMPercentage=20 ; TexturePool cache
 
 [SystemSettings]
 ShowFlag.Vignette=0 ;
@@ -60,12 +60,9 @@ r.VirtualTextureReducedMemory=0 ;
 r.VirtualTexturedLightmaps=0 ;
 r.SceneColorFormat=4 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=2 ;
+r.SceneRenderTargetResizeMethod=1 ;
 r.GPUCrashDebugging=0 ;
 r.RenderTargetPoolMin=450 ;
-r.GBuffer=1 ;
-r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
 r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -76,7 +73,7 @@ r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
-r.SkeletalMeshLODBias=0 ;
+r.SkeletalMeshLODBias=-1 ;
 r.ParticleLODBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
@@ -93,11 +90,12 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.8 ;
 r.Shadow.CSM.TransitionScale=1 ;
+r.Shadow.PreShadowResolutionFactor=0.5 ;
 r.Shadow.CSMDepthBias=20 ;
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
-r.TemporalAA.Upsampling=1 ;
+r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAACatmullRom=1 ;
 r.TemporalAAPauseCorrect=1 ;
@@ -146,7 +144,7 @@ r.SSS.Quality=1 ;
 r.SSS.HalfRes=1 ;
 r.Emitter.FastPoolEnable=1 ;
 r.EmitterSpawnRateScale=0.5 ;
-r.ParticleLightQuality=2 ;
+r.ParticleLightQuality=1 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.DefaultFeature.LightUnits=1 ;
 r.EyeAdaptationQuality=2 ;
@@ -155,7 +153,7 @@ grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=0.6 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=1 ;
-r.DFShadowQuality=2 ;
+r.DFShadowQuality=1 ;
 r.DFTwoSidedMeshDistanceBias=1 ;
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1 ;
 r.SkeletalMeshLODRadiusScale=1 ;
@@ -214,13 +212,13 @@ INSURGENCY SANDSTORM* My config Copy/Paste this:
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=30 ;
+PoolSizeVRAMPercentage=20 ; TexturePool cache
 
 [SystemSettings]
 ShowFlag.Vignette=0 ;
 ShowFlag.Tessellation=0 ;
 bSmoothFrameRate=0 ;
-bUseFixedFrameRate=0 ;
+bUseFixedFrameRate=1 ;
 bEnableMouseSmoothing=0 ;
 bDisablePhysXHardwareSupport=0 ;
 bPauseOnLossOfFocus=0 ;
@@ -240,12 +238,9 @@ r.VirtualTextureReducedMemory=0 ;
 r.VirtualTexturedLightmaps=0 ;
 r.SceneColorFormat=4 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=2 ;
+r.SceneRenderTargetResizeMethod=1 ;
 r.GPUCrashDebugging=0 ;
 r.RenderTargetPoolMin=450 ;
-r.GBuffer=1 ;
-r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
 r.MaxAnisotropy=8 ;
 r.TextureStreaming=1 ;
 Compat.UseDXT5NormalMaps=0 ;
@@ -256,7 +251,7 @@ r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
-r.SkeletalMeshLODBias=0 ;
+r.SkeletalMeshLODBias=-1 ;
 r.ParticleLODBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
@@ -273,10 +268,11 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.8 ;
 r.Shadow.CSM.TransitionScale=1 ;
+r.Shadow.PreShadowResolutionFactor=0.5 ;
 r.Shadow.CSMDepthBias=20 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
-r.TemporalAA.Upsampling=1 ;
+r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAACatmullRom=1 ;
 r.TemporalAAPauseCorrect=1 ;
@@ -325,7 +321,7 @@ r.SSS.Quality=1 ;
 r.SSS.HalfRes=1 ;
 r.Emitter.FastPoolEnable=1 ;
 r.EmitterSpawnRateScale=0.5 ;
-r.ParticleLightQuality=2 ;
+r.ParticleLightQuality=1 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.DefaultFeature.LightUnits=1 ;
 r.EyeAdaptationQuality=2 ;
@@ -334,7 +330,7 @@ grass.DisableDynamicShadows=1 ;
 foliage.DensityScale=0.6 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=1 ;
-r.DFShadowQuality=2 ;
+r.DFShadowQuality=1 ;
 r.DFTwoSidedMeshDistanceBias=1 ;
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1 ;
 r.SkeletalMeshLODRadiusScale=1 ;
