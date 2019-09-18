@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 9/18/2019
+**Updated 9/18/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -68,10 +68,10 @@ r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.PoolSize=1000 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=-1 ;
+r.Streaming.MipBias=0 ;
 r.MipMapLODBias=0 ;
-r.LandscapeLODBias=-1 ;
-r.SkeletalMeshLODBias=-1 ;
+r.LandscapeLODBias=0 ;
+r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
@@ -233,10 +233,10 @@ r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
 r.Streaming.PoolSize=1000 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=-1 ;
+r.Streaming.MipBias=0 ;
 r.MipMapLODBias=0 ;
-r.LandscapeLODBias=-1 ;
-r.SkeletalMeshLODBias=-1 ;
+r.LandscapeLODBias=0 ;
+r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=0 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
