@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 9/18/2019
+*Updated 9/19/2019
 *For Squad/Insurgency Sandstorm/PS or other UE4 games for reference customization and optimization 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord for help or whatever
 
@@ -203,7 +203,7 @@ PoolSizeVRAMPercentage=20 ; TexturePool cache
 
 [SystemSettings]
 bSmoothFrameRate=0 ;
-bUseFixedFrameRate=1 ;
+bUseFixedFrameRate=0 ;
 bEnableMouseSmoothing=0 ;
 bDisablePhysXHardwareSupport=0 ;
 bPauseOnLossOfFocus=0 ;
