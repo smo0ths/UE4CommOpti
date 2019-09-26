@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 9/26/2019
+***Updated 9/26/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -96,14 +96,14 @@ r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
+r.SceneRenderTargetResizeMethod=2 ;
 r.Upscale.Quality=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
-r.Tonemapper.Quality=2 ;
+r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
@@ -233,14 +233,14 @@ r.AllowStaticLighting=1 ;
 r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
+r.SceneRenderTargetResizeMethod=2 ;
 r.Upscale.Quality=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
-r.Tonemapper.Quality=0 ;
+r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
@@ -362,18 +362,18 @@ r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
+r.SceneRenderTargetResizeMethod=2 ;
 r.Upscale.Quality=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
-r.Tonemapper.Quality=0 ;
+r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
-r.tonemapper.sharpen=0.8 ;
+r.Tonemapper.Sharpen=0.8 ;
 r.DefaultFeature.AmbientOcclusion=1 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.5 ;
@@ -452,8 +452,8 @@ bEnableMouseSmoothing=0
 bEnableFrameRateSmoothing=0
 bSmoothFrameRate=0
 bUseVSync=0 
-FrameRateLimit=160.000000
-FrameLimit=160
+FrameRateLimit=100.000000
+FrameLimit=100
 
 
 In sandstorm r.Streaming.PoolSize needs to be changed here:
@@ -466,7 +466,7 @@ In sandstorm r.Streaming.PoolSize needs to be changed here:
 
 EXTRA* For NVIDIA users in control panel change:
 
-Maximum pre-rendered frames:  Ultra low latency mode (less input lag, could cause unstable fps)
+Maximum pre-rendered frames:  Off* with lower gpu usage and stable/locked 100-150 fps actually has lower input lag.
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
