@@ -466,7 +466,7 @@ In sandstorm r.Streaming.PoolSize needs to be changed here:
 
 EXTRA* For NVIDIA users in control panel change:
 
-Maximum pre-rendered frames:  ultra low latency mode (less input lag, could cause unstable fps)
+Maximum pre-rendered frames:  Ultra low latency mode (less input lag, could cause unstable fps)
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
