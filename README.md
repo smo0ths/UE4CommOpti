@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 9/25/2019
+*Updated 9/26/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -44,15 +44,12 @@ r.GTSyncType=0 ;
 r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
-r.UseShaderCaching=1 ;
-r.UseShaderPredraw=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldBuild.Compress=0 ;
-r.DistanceFieldBuild.EightBit=1 ;
+r.DistanceFieldBuild.EightBit=0 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.NormalMapsForStaticLighting=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
 r.RenderTargetPoolMin=400 ;
@@ -86,7 +83,7 @@ r.Shadow.Preshadows=0 ;
 r.Shadow.PreShadowResolutionFactor=0 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
-r.ContactShadows=1 ;
+r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=1 ;
@@ -175,15 +172,12 @@ r.GTSyncType=0 ;
 r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
-r.UseShaderCaching=1 ;
-r.UseShaderPredraw=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldBuild.Compress=0 ;
 r.DistanceFieldBuild.EightBit=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.NormalMapsForStaticLighting=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
 r.RenderTargetPoolMin=400 ;
@@ -217,7 +211,7 @@ r.Shadow.Preshadows=0 ;
 r.Shadow.PreShadowResolutionFactor=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=0 ;
-r.ContactShadows=1 ;
+r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=1 ;
 r.IndirectLightingCache=1 ;
@@ -298,15 +292,12 @@ r.GTSyncType=0 ;
 r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
-r.UseShaderCaching=1 ;
-r.UseShaderPredraw=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldBuild.Compress=1 ;
 r.DistanceFieldBuild.EightBit=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.NormalMapsForStaticLighting=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
 r.RenderTargetPoolMin=400 ;
@@ -340,7 +331,7 @@ r.Shadow.Preshadows=0 ;
 r.Shadow.PreShadowResolutionFactor=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=0 ;
-r.ContactShadows=1 ;
+r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=1 ;
@@ -411,6 +402,7 @@ Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSetti
 Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettings.ini 
 Copy/Paste:  %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
+
 Set these to what you want:
 
 [ScalabilityGroups]
@@ -421,6 +413,7 @@ sg.TextureQuality=0
 sg.EffectsQuality=0
 sg.FoliageQuality=0
 
+
 Other options to add under the [~GameUserSettings] part:
 
 bAltEnterTogglesFullscreen=1
@@ -429,9 +422,12 @@ bUseDynamicResolution=0
 bPauseOnLossOfFocus=0
 bUseFixedFrameRate=0
 bEnableMouseSmoothing=0
+bEnableFrameRateSmoothing=0
 bSmoothFrameRate=0
 bUseVSync=0 
-FrameRateLimit=150.000000
+FrameRateLimit=160.000000
+FrameLimit=160
+
 
 In sandstorm r.Streaming.PoolSize needs to be changed here:
 
@@ -443,7 +439,7 @@ In sandstorm r.Streaming.PoolSize needs to be changed here:
 
 EXTRA* For NVIDIA users in control panel change:
 
-Maximum pre-rendered frames:  1 (less input lag) (new drivers have ultra low latency mode)
+Maximum pre-rendered frames:  ultra low latency mode (less input lag, could cause unstable fps)
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
