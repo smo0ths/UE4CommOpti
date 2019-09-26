@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 9/25/2019
+**Updated 9/25/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -32,8 +32,8 @@ Squad* My config Copy/Paste this:
 [Audio]
 MaxChannels=96 ;
 
-[Core.Log]
-Global=all off ;
+[TextureStreaming]
+PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
 r.VSync=0 ;
@@ -48,9 +48,11 @@ r.UseShaderCaching=1 ;
 r.UseShaderPredraw=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldBuild.Compress=0 ;
+r.DistanceFieldBuild.EightBit=1 ;
 r.GenerateLandscapeGIData=0 ;
+r.SceneColorFormat=3 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.NormalMapsForStaticLighting=1 ;
+r.NormalMapsForStaticLighting=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
 r.RenderTargetPoolMin=400 ;
@@ -60,12 +62,12 @@ r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=4000 ;
+r.Streaming.PoolSize=1000 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.Streaming.UsePerTextureBias=0 ;
+r.Streaming.UsePerTextureBias=1 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
 r.Streaming.Boost=1 ;
@@ -91,14 +93,14 @@ r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
-r.Upscale.Quality=3 ;
+r.Upscale.Quality=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
 r.Tonemapper.Quality=5 ;
-r.Tonemapper.MergeWithUpscale.Mode=1 ;
+r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.Tonemapper.Sharpen=0.8 ;
@@ -123,6 +125,7 @@ r.DepthOfField.FarBlur=0 ;
 r.DepthOfField.MaxSize=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
+r.ViewDistanceScale.SecondaryScale=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
@@ -137,13 +140,11 @@ r.SSR.Quality=0 ;
 r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
-r.SceneColorFormat=3 ;
 r.MaterialQualityLevel=1 ;
 r.SupportAtmosphericFog=1 ;
+r.DoLazyStaticMeshUpdate=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-r.ViewDistanceScale.SecondaryScale=1 ;
-r.DoLazyStaticMeshUpdate=1 ;
 
 
 ; end ;
@@ -162,6 +163,9 @@ Sandstorm* My config Copy/Paste this:
 [Core.Log]
 Global=all off ;
 
+[TextureStreaming]
+PoolSizeVRAMPercentage=30 ;
+
 [SystemSettings]
 r.VSync=0 ;
 r.AllowHDR=0 ;
@@ -175,9 +179,11 @@ r.UseShaderCaching=1 ;
 r.UseShaderPredraw=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldBuild.Compress=0 ;
+r.DistanceFieldBuild.EightBit=1 ;
 r.GenerateLandscapeGIData=0 ;
+r.SceneColorFormat=3 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.NormalMapsForStaticLighting=1 ;
+r.NormalMapsForStaticLighting=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
 r.RenderTargetPoolMin=400 ;
@@ -187,12 +193,12 @@ r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=4000 ;
+r.Streaming.PoolSize=1000 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.Streaming.UsePerTextureBias=0 ;
+r.Streaming.UsePerTextureBias=1 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
 r.Streaming.Boost=1 ;
@@ -218,14 +224,14 @@ r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
-r.Upscale.Quality=3 ;
+r.Upscale.Quality=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
 r.Tonemapper.Quality=5 ;
-r.Tonemapper.MergeWithUpscale.Mode=1 ;
+r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.Tonemapper.Sharpen=0.8 ;
@@ -250,6 +256,7 @@ r.DepthOfField.FarBlur=0 ;
 r.DepthOfField.MaxSize=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
+r.ViewDistanceScale.SecondaryScale=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
@@ -264,13 +271,11 @@ r.SSR.Quality=0 ;
 r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
-r.SceneColorFormat=3 ;
 r.MaterialQualityLevel=1 ;
 r.SupportAtmosphericFog=1 ;
+r.DoLazyStaticMeshUpdate=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-r.ViewDistanceScale.SecondaryScale=1 ;
-r.DoLazyStaticMeshUpdate=1 ;
 
 
 ; end ;
@@ -280,6 +285,9 @@ Session* My config Copy/Paste this:
 
 [Core.Log]
 Global=all off ;
+
+[TextureStreaming]
+PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
 r.VSync=0 ;
@@ -294,9 +302,11 @@ r.UseShaderCaching=1 ;
 r.UseShaderPredraw=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldBuild.Compress=1 ;
+r.DistanceFieldBuild.EightBit=1 ;
 r.GenerateLandscapeGIData=0 ;
+r.SceneColorFormat=3 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.NormalMapsForStaticLighting=1 ;
+r.NormalMapsForStaticLighting=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
 r.RenderTargetPoolMin=400 ;
@@ -306,12 +316,12 @@ r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
-r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=4000 ;
+r.Streaming.PoolSize=1000 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
-r.Streaming.UsePerTextureBias=0 ;
+r.Streaming.UsePerTextureBias=1 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
 r.Streaming.Boost=1 ;
@@ -337,14 +347,14 @@ r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
-r.Upscale.Quality=3 ;
+r.Upscale.Quality=0 ;
 r.TemporalAASamples=2 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
 r.Tonemapper.Quality=5 ;
-r.Tonemapper.MergeWithUpscale.Mode=1 ;
+r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.tonemapper.sharpen=0.8 ;
@@ -369,6 +379,7 @@ r.DepthOfField.FarBlur=0 ;
 r.DepthOfField.MaxSize=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
+r.ViewDistanceScale.SecondaryScale=0 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
@@ -383,14 +394,11 @@ r.SSR.Quality=0 ;
 r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
-r.SceneColorFormat=3 ;
 r.MaterialQualityLevel=1 ;
 r.SupportAtmosphericFog=1 ;
+r.DoLazyStaticMeshUpdate=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-r.ViewDistanceScale.SecondaryScale=1 ;
-r.DoLazyStaticMeshUpdate=1 ;
-r.DistanceFieldBuild.EightBit=1 ;
 
 
 ; end ;
