@@ -1,11 +1,11 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Updated 9/26/2019
+*Updated 9/27/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
 
-; end ;
+-----------end-----------
 
 
 Open Engine.ini and Copy/Paste commands/configs:
@@ -16,15 +16,15 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 Copy/Paste:  %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini 
 
 
-; end ;
+-----------end-----------
 
 
-************WIP************ 
 Squad* Max fps Copy/Paste this: 
-************WIP************
+
+WIP ;
 
 
-; end ;
+-----------end-----------
 
 
 Squad* My config Copy/Paste this:
@@ -37,11 +37,9 @@ PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
 r.HZBOcclusion=0 ;
-r.StencilForLODDither=1 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
-r.AllowOcclusionQueries=1 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
@@ -52,10 +50,9 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
-r.DistanceFieldBuild.Compress=0 ;
-r.DistanceFieldBuild.EightBit=0 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
+r.CompileShadersForDevelopment=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -78,6 +75,7 @@ r.Streaming.Boost=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.ShadowQuality=3 ;
+r.Shadow.PerObject=0 ;
 r.Shadow.FilterMethod=0 ;
 r.Shadow.CSM.MaxCascades=3 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
@@ -86,9 +84,7 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
-r.Shadow.Preshadows=0 ;
-r.Shadow.PreShadowResolutionFactor=0 ;
-r.AllowLandscapeShadows=1 ;
+r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
@@ -129,7 +125,6 @@ r.DepthOfField.FarBlur=0 ;
 r.DepthOfField.MaxSize=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
-r.ViewDistanceScale.SecondaryScale=1 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
@@ -149,19 +144,18 @@ r.MaterialQualityLevel=1 ;
 r.EyeAdaptation.MethodOveride=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-FX.BatchAsync=1 ;
-FX.BatchAsyncBatchSize=32 ;
+p.BatchPhysXTasksSize=1 ;
 
 
-; end ;
+-----------end-----------
 
 
-************WIP************
 Sandstorm* Max FPS Copy/Paste this:
-************WIP************
+
+WIP ;
 
 
-; end ;
+-----------end-----------
 
 
 Sandstorm* My config Copy/Paste this: 
@@ -174,11 +168,9 @@ PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
 r.HZBOcclusion=0 ;
-r.StencilForLODDither=1 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
-r.AllowOcclusionQueries=1 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
@@ -189,10 +181,9 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
-r.DistanceFieldBuild.Compress=0 ;
-r.DistanceFieldBuild.EightBit=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
+r.CompileShadersForDevelopment=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -215,6 +206,7 @@ r.Streaming.Boost=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.ShadowQuality=3 ;
+r.Shadow.PerObject=0 ;
 r.Shadow.FilterMethod=0 ;
 r.Shadow.CSM.MaxCascades=3 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
@@ -223,8 +215,6 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
-r.Shadow.Preshadows=0 ;
-r.Shadow.PreShadowResolutionFactor=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=0 ;
 r.ContactShadows=0 ;
@@ -266,7 +256,6 @@ r.DepthOfField.FarBlur=0 ;
 r.DepthOfField.MaxSize=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
-r.ViewDistanceScale.SecondaryScale=1 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
@@ -286,11 +275,10 @@ r.MaterialQualityLevel=1 ;
 r.EyeAdaptation.MethodOveride=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-FX.BatchAsync=1 ;
-FX.BatchAsyncBatchSize=32 ;
+p.BatchPhysXTasksSize=1 ;
 
 
-; end ;
+-----------end-----------
 
 
 Session* My config Copy/Paste this: 
@@ -303,11 +291,9 @@ PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
 r.HZBOcclusion=0 ;
-r.StencilForLODDither=1 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
-r.AllowOcclusionQueries=1 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
@@ -318,10 +304,9 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
-r.DistanceFieldBuild.Compress=1 ;
-r.DistanceFieldBuild.EightBit=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
+r.CompileShadersForDevelopment=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -344,6 +329,7 @@ r.Streaming.Boost=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.ShadowQuality=3 ;
+r.Shadow.PerObject=0 ;
 r.Shadow.FilterMethod=0 ;
 r.Shadow.CSM.MaxCascades=3 ;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1 ;
@@ -352,8 +338,6 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=1 ;
-r.Shadow.Preshadows=0 ;
-r.Shadow.PreShadowResolutionFactor=0 ;
 r.AllowLandscapeShadows=0 ;
 r.DistanceFieldShadowing=0 ;
 r.ContactShadows=0 ;
@@ -373,7 +357,7 @@ r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
-r.Tonemapper.Sharpen=0.8 ;
+r.tonemapper.sharpen=0.8 ;
 r.DefaultFeature.AmbientOcclusion=1 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.5 ;
@@ -395,7 +379,6 @@ r.DepthOfField.FarBlur=0 ;
 r.DepthOfField.MaxSize=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
-r.ViewDistanceScale.SecondaryScale=1 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
@@ -415,11 +398,10 @@ r.MaterialQualityLevel=1 ;
 r.EyeAdaptation.MethodOveride=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-FX.BatchAsync=1 ;
-FX.BatchAsyncBatchSize=32 ;
+p.BatchPhysXTasksSize=1 ;
 
 
-; end ;
+-----------end-----------
 
 
 Open GameUserSettings.ini:
@@ -452,8 +434,8 @@ bEnableMouseSmoothing=0
 bEnableFrameRateSmoothing=0
 bSmoothFrameRate=0
 bUseVSync=0 
-FrameRateLimit=100.000000
-FrameLimit=100
+FrameRateLimit=110.000000
+FrameLimit=110
 
 
 In sandstorm r.Streaming.PoolSize needs to be changed here:
@@ -461,7 +443,7 @@ In sandstorm r.Streaming.PoolSize needs to be changed here:
 ("r.Streaming.PoolSize", (Value=1000,bModified=True)
 
 
-; end ;
+-----------end-----------
 
 
 EXTRA* For NVIDIA users in control panel change:
@@ -475,6 +457,4 @@ Texture filtering quality:  High performance
 Vertical sync:  Off
 
 
-; end ;
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
