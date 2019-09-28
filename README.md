@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 9/28/2019
+**Updated 9/28/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -43,7 +43,7 @@ r.EarlyZPassOnlyMaterialMasking=1 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
-r.OneFrameThreadLag=0 ;
+r.OneFrameThreadLag=1 ;
 r.FullScreenMode=0 ;
 r.GTSyncType=0 ;
 r.RHICmdBypass=0 ;
@@ -94,7 +94,7 @@ r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
 r.Upscale.Quality=0 ;
-r.TemporalAASamples=2 ;
+r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
@@ -144,7 +144,6 @@ r.MaterialQualityLevel=1 ;
 r.EyeAdaptation.MethodOveride=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-p.BatchPhysXTasksSize=1 ;
 
 
 -----------end-----------
@@ -174,7 +173,7 @@ r.EarlyZPassOnlyMaterialMasking=1 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
-r.OneFrameThreadLag=0 ;
+r.OneFrameThreadLag=1 ;
 r.FullScreenMode=0 ;
 r.GTSyncType=0 ;
 r.RHICmdBypass=0 ;
@@ -225,7 +224,7 @@ r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
 r.Upscale.Quality=0 ;
-r.TemporalAASamples=2 ;
+r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
@@ -275,7 +274,6 @@ r.MaterialQualityLevel=1 ;
 r.EyeAdaptation.MethodOveride=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-p.BatchPhysXTasksSize=1 ;
 
 
 -----------end-----------
@@ -297,7 +295,7 @@ r.EarlyZPassOnlyMaterialMasking=1 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
-r.OneFrameThreadLag=0 ;
+r.OneFrameThreadLag=1 ;
 r.FullScreenMode=0 ;
 r.GTSyncType=0 ;
 r.RHICmdBypass=0 ;
@@ -348,7 +346,7 @@ r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=2 ;
 r.Upscale.Quality=0 ;
-r.TemporalAASamples=2 ;
+r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
@@ -398,7 +396,6 @@ r.MaterialQualityLevel=1 ;
 r.EyeAdaptation.MethodOveride=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
-p.BatchPhysXTasksSize=1 ;
 
 
 -----------end-----------
