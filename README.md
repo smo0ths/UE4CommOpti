@@ -431,8 +431,8 @@ bEnableMouseSmoothing=0
 bEnableFrameRateSmoothing=0
 bSmoothFrameRate=0
 bUseVSync=0 
-FrameRateLimit=110.000000
-FrameLimit=110
+FrameRateLimit=145.000000
+FrameLimit=145
 
 
 In sandstorm r.Streaming.PoolSize needs to be changed here:
