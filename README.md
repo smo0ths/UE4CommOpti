@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 9/28/2019
+**Updated 9/30/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -52,7 +52,8 @@ r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
-r.CompileShadersForDevelopment=0 ;
+r.GBufferFormat=1 ;
+r.DefaultBackBufferPixelFormat=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -182,7 +183,8 @@ r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
-r.CompileShadersForDevelopment=0 ;
+r.GBufferFormat=1 ;
+r.DefaultBackBufferPixelFormat=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -304,7 +306,8 @@ r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
-r.CompileShadersForDevelopment=0 ;
+r.GBufferFormat=1 ;
+r.DefaultBackBufferPixelFormat=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -445,7 +448,7 @@ In sandstorm r.Streaming.PoolSize needs to be changed here:
 
 EXTRA* For NVIDIA users in control panel change:
 
-Maximum pre-rendered frames:  Off* with lower gpu usage and stable/locked 100-150 fps actually has lower input lag.
+Maximum pre-rendered frames:  Use lowest unless higher frame times than >= 11ms at desired graphics setting. You need fast hardware to precive these things and prerequisite APIs. 
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
