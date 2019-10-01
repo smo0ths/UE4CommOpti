@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 10/1/2019
+**Updated 10/1/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -146,7 +146,7 @@ r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
-r.EyeAdaptation.MethodOveride=2 ;
+r.Bloom.Cross=-0.9999 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
 
@@ -281,7 +281,7 @@ r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
-r.EyeAdaptation.MethodOveride=2 ;
+r.Bloom.Cross=-0.9999 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
 
@@ -408,7 +408,7 @@ r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
-r.EyeAdaptation.MethodOveride=2 ;
+r.Bloom.Cross=-0.9999 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
 
