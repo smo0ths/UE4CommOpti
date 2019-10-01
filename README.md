@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 9/30/2019
+*Updated 10/1/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -130,11 +130,14 @@ r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=10000 ;
+r.SupportSimpleForwardShading=0 ;
+r.SimpleForwardShading=0 ;
+r.SupportLowQualityLightmaps=0 ;
 r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=1 ;
 r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=0 ;
-r.LightShaftRenderToSeparateTranslucency=1 ;
+r.LightShaftFirstPassDistance=0.1 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0 ;
 r.SSR.Quality=0 ;
@@ -142,7 +145,8 @@ r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
 r.MaterialQualityLevel=1 ;
-r.EyeAdaptation.MethodOveride=1 ;
+r.SupportMaterialLayers=0 ;
+r.EyeAdaptation.MethodOveride=2 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
 
@@ -261,11 +265,14 @@ r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=10000 ;
+r.SupportSimpleForwardShading=0 ;
+r.SimpleForwardShading=0 ;
+r.SupportLowQualityLightmaps=0 ;
 r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=1 ;
 r.LightShaftQuality=0 ;
 r.LightShaftDownSampleFactor=0 ;
-r.LightShaftRenderToSeparateTranslucency=1 ;
+r.LightShaftFirstPassDistance=0.1 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0 ;
 r.SSR.Quality=0 ;
@@ -273,7 +280,8 @@ r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
 r.MaterialQualityLevel=1 ;
-r.EyeAdaptation.MethodOveride=1 ;
+r.SupportMaterialLayers=0 ;
+r.EyeAdaptation.MethodOveride=2 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
 
@@ -384,11 +392,14 @@ r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=10000 ;
+r.SupportSimpleForwardShading=0 ;
+r.SimpleForwardShading=0 ;
+r.SupportLowQualityLightmaps=0 ;
 r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=1 ;
 r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=0 ;
-r.LightShaftRenderToSeparateTranslucency=1 ;
+r.LightShaftFirstPassDistance=0.1 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0 ;
 r.SSR.Quality=0 ;
@@ -396,7 +407,8 @@ r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
 r.MaterialQualityLevel=1 ;
-r.EyeAdaptation.MethodOveride=1 ;
+r.SupportMaterialLayers=0 ;
+r.EyeAdaptation.MethodOveride=2 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
 
