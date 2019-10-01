@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Updated 10/1/2019
+***Updated 10/1/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -53,7 +53,7 @@ r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
 r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
+r.DefaultBackBufferPixelFormat=4 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -188,7 +188,7 @@ r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
 r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
+r.DefaultBackBufferPixelFormat=4 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -315,7 +315,7 @@ r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
 r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=0 ;
+r.DefaultBackBufferPixelFormat=4 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
