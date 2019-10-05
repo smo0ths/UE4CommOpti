@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Updated 10/1/2019
+*Updated 10/5/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -36,7 +36,6 @@ MaxChannels=96 ;
 PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
-r.HZBOcclusion=0 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
@@ -52,8 +51,6 @@ r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
-r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=4 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -171,7 +168,6 @@ Global=all off ;
 PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
-r.HZBOcclusion=0 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
@@ -187,8 +183,6 @@ r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
-r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=4 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -298,7 +292,6 @@ Global=all off ;
 PoolSizeVRAMPercentage=30 ;
 
 [SystemSettings]
-r.HZBOcclusion=0 ;
 r.EarlyZPass=2 ;
 r.EarlyZPassMovable=1 ;
 r.EarlyZPassOnlyMaterialMasking=1 ;
@@ -314,8 +307,6 @@ r.CreateShadersOnLoad=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.GenerateLandscapeGIData=0 ;
 r.SceneColorFormat=3 ;
-r.GBufferFormat=1 ;
-r.DefaultBackBufferPixelFormat=4 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MaxAnisotropy=16 ;
 r.VirtualTexture=0 ;
@@ -408,7 +399,6 @@ r.MotionBlurQuality=0 ;
 r.SubsurfaceScattering=1 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
-r.Bloom.Cross=-0.9999 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
 
