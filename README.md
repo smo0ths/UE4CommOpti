@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 12/10/2019
+**Updated 12/10/2019
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -60,7 +60,7 @@ r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=1000 ;
+r.Streaming.PoolSize=1500 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=1 ;
@@ -184,7 +184,7 @@ r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=1000 ;
+r.Streaming.PoolSize=1500 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=1 ;
@@ -300,7 +300,7 @@ r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
 r.Streaming.LimitPoolSizeToVRAM=0 ;
 r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=1000 ;
+r.Streaming.PoolSize=1500 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=1 ;
