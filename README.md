@@ -313,10 +313,6 @@ Copy/Paste:  %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSet
 Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
 
-C:\Users\smo0ths\AppData\Local\PostScriptum\Saved\Config\WindowsNoEditor
-
-
-
 Set these to what you want:
 
 [ScalabilityGroups]
