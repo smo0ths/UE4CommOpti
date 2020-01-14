@@ -353,7 +353,9 @@ In sandstorm r.Streaming.PoolSize needs to be changed here:
 
 EXTRA* For NVIDIA users in control panel change:
 
-Maximum pre-rendered frames:  testing off and lower than ~85% gpu utilization 
+Image sharpening:  sharpen ~0.65 ignore film grain ~0.10
+Max frame rate:  nice new feature
+Low latency mode:  testing off and lower than ~85% gpu utilization 
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
