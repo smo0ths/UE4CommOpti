@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 1/31/2020
+*Updated 2/3/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -30,11 +30,16 @@ WIP ;
 
 Squad* PS* My config Copy/Paste this:
 
+[Audio]
+MaxChannels=128 ;
+CommonAudioPoolSize=0 ;
+UseAudioThread=True ;
+
 [Core.Log]
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=20 ;
+PoolSizeVRAMPercentage=50 ;
 
 [SystemSettings]
 r.setres=1920x1080 ;
@@ -48,7 +53,6 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.MSAA.CompositingSampleCount=1 ;
 r.SceneColorFormat=3 ;
 r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
@@ -65,11 +69,11 @@ r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
-r.Streaming.LimitPoolSizeToVRAM=0 ;
-r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=800 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.UseFixedPoolSize=0 ;
+r.Streaming.PoolSize=1000 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=1 ;
+r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
@@ -87,23 +91,28 @@ r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.5 ;
-r.Shadow.CSM.TransitionScale=1 ;
+r.Shadow.CSM.TransitionScale=0.8 ;
+r.Shadow.CSMDepthBias=15 ;
+r.Shadow.SpotLightDepthBias=15 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
+r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
-r.Upscale.Quality=0 ;
+r.Upscale.Quality=2 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
-r.Tonemapper.Quality=2 ;
+r.Filter.SizeScale=1 ;
+r.Tonemapper.Quality=5 ;
+r.Tonemapper.MergeWithUpscale.Mode=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=0 ;
 r.GenerateMeshDistanceFields=1 ;
@@ -124,10 +133,11 @@ r.AOQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
 r.ReflectionEnvironmentLightmapMixing=1 ;
+r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DepthOfFieldQuality=0 ;
 r.ViewDistanceScale=0.8 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
-r.HLOD=1 ;
+r.HLOD=0 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=5000 ;
@@ -169,11 +179,16 @@ WIP ;
 
 Sandstorm* My config Copy/Paste this: 
 
+[Audio]
+MaxChannels=128 ;
+CommonAudioPoolSize=0 ;
+UseAudioThread=True ;
+
 [Core.Log]
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=20 ;
+PoolSizeVRAMPercentage=50 ;
 
 [SystemSettings]
 r.setres=1920x1080 ;
@@ -187,7 +202,6 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.MSAA.CompositingSampleCount=1 ;
 r.SceneColorFormat=3 ;
 r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
@@ -204,11 +218,11 @@ r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
-r.Streaming.LimitPoolSizeToVRAM=0 ;
-r.Streaming.UseFixedPoolSize=1 ;
-r.Streaming.PoolSize=800 ;
+r.Streaming.LimitPoolSizeToVRAM=1 ;
+r.Streaming.UseFixedPoolSize=0 ;
+r.Streaming.PoolSize=1000 ;
 r.Streaming.HLODStrategy=0 ;
-r.Streaming.MipBias=1 ;
+r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
 r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
@@ -225,27 +239,32 @@ r.Shadow.ForceSingleSampleShadowingFromStationary=0 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
-r.Shadow.DistanceScale=0.5 ;
-r.Shadow.CSM.TransitionScale=1 ;
+r.Shadow.DistanceScale=0.7 ;
+r.Shadow.CSM.TransitionScale=0.8 ;
+r.Shadow.CSMDepthBias=15 ;
+r.Shadow.SpotLightDepthBias=15 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
+r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=1 ;
 r.IndirectLightingCache=1 ;
-r.PostProcessAAQuality=3 ;
+r.PostProcessAAQuality=4 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
-r.Upscale.Quality=0 ;
+r.Upscale.Quality=2 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=0 ;
-r.Tonemapper.Quality=2 ;
+r.Filter.SizeScale=1 ;
+r.Tonemapper.Quality=5 ;
+r.Tonemapper.MergeWithUpscale.Mode=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=0 ;
-r.GenerateMeshDistanceFields=1 ;
+r.GenerateMeshDistanceFields=0 ;
 r.DistanceFieldGI=0 ;
 r.GenerateLandscapeGIData=0 ;
 r.DefaultFeature.AmbientOcclusion=1 ;
@@ -256,13 +275,14 @@ r.AmbientOcclusionLevels=0 ;
 r.AmbientOcclusionRadiusScale=1 ;
 r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusion.Compute=0 ;
-r.AOSpecularOcclusionMode=0 ;
+r.AOSpecularOcclusionMode=1 ;
 r.AOApplyToStaticIndirect=0 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 r.ReflectionEnvironment=1 ;
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
 r.ReflectionEnvironmentLightmapMixing=1 ;
+r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DepthOfFieldQuality=0 ;
 r.ViewDistanceScale=0.8 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
@@ -291,8 +311,8 @@ r.RefractionQuality=0 ;
 r.DetailMode=2 ;
 r.ParticleLightQuality=1 ;
 r.Atmosphere=1 ;
-grass.DensityScale=0.6 ;
-foliage.DensityScale=0.6 ;
+grass.DensityScale=1 ;
+foliage.DensityScale=1 ;
 
 
 -----------end-----------
@@ -320,7 +340,7 @@ Set these to what you want:
 [ScalabilityGroups]
 sg.ViewDistanceQuality=0
 sg.ShadowQuality=0
-sg.PostProcessQuality=0
+sg.PostProcessQuality=3
 sg.TextureQuality=0
 sg.EffectsQuality=0
 sg.FoliageQuality=0
@@ -339,11 +359,12 @@ bSmoothFrameRate=0
 bUseVSync=0 
 FrameRateLimit=
 FrameLimit=
+AudioQualityLevel=3
 LastConfirmedAudioQualityLevel=3
 
 In sandstorm r.Streaming.PoolSize needs to be changed here:
 
-("r.Streaming.PoolSize", (Value=here,bModified=True)
+("r.Streaming.PoolSize", (Value=1000,bModified=True)
 
 
 -----------end-----------
