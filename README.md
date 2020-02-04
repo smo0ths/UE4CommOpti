@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 2/3/2020
+*Updated 2/4/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -34,12 +34,13 @@ Squad* PS* My config Copy/Paste this:
 MaxChannels=128 ;
 CommonAudioPoolSize=0 ;
 UseAudioThread=True ;
+UnfocusedVolumeMultiplier=1.000000
 
 [Core.Log]
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50 ;
+PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
 r.setres=1920x1080 ;
@@ -69,6 +70,7 @@ r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
+r.TextureStreaming=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.UseFixedPoolSize=0 ;
 r.Streaming.PoolSize=1000 ;
@@ -183,12 +185,13 @@ Sandstorm* My config Copy/Paste this:
 MaxChannels=128 ;
 CommonAudioPoolSize=0 ;
 UseAudioThread=True ;
+UnfocusedVolumeMultiplier=1.000000
 
 [Core.Log]
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50 ;
+PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
 r.setres=1920x1080 ;
@@ -218,6 +221,7 @@ r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
 r.SkeletalMeshLODBias=0 ;
 r.ParticleLODBias=0 ;
+r.TextureStreaming=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.UseFixedPoolSize=0 ;
 r.Streaming.PoolSize=1000 ;
@@ -338,9 +342,11 @@ Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSe
 Set these to what you want:
 
 [ScalabilityGroups]
+sg.ResolutionQuality=100.000000
 sg.ViewDistanceQuality=0
+sg.AntiAliasingQuality=3
 sg.ShadowQuality=0
-sg.PostProcessQuality=3
+sg.PostProcessQuality=0
 sg.TextureQuality=0
 sg.EffectsQuality=0
 sg.FoliageQuality=0
@@ -357,8 +363,8 @@ bEnableMouseSmoothing=0
 bEnableFrameRateSmoothing=0
 bSmoothFrameRate=0
 bUseVSync=0 
-FrameRateLimit=
-FrameLimit=
+FrameRateLimit=120
+FrameLimit=120
 AudioQualityLevel=3
 LastConfirmedAudioQualityLevel=3
 
