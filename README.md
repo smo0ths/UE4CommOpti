@@ -40,7 +40,7 @@ UnfocusedVolumeMultiplier=1.000000
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=40 ;
+PoolSizeVRAMPercentage=50 ; use 40 for PS
 
 [SystemSettings]
 r.setres=1920x1080 ;
