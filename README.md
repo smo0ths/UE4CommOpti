@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 2/4/2020
+*Updated 2/6/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -43,7 +43,6 @@ Global=all off ;
 PoolSizeVRAMPercentage=50 ; use 40 for PS
 
 [SystemSettings]
-r.setres=1920x1080 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
@@ -54,14 +53,14 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.SceneColorFormat=3 ;
-r.SubsurfaceScattering=0 ;
+r.SceneColorFormat=4 ;
+r.SubsurfaceScattering=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
-r.SSS.Checkerboard=1 ;
+r.SSS.Checkerboard=0 ;
 r.MaxAnisotropy=8 ;
 r.VirtualTexture=1 ;
 r.RenderTargetPoolMin=300 ;
@@ -94,13 +93,10 @@ r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
-r.Shadow.CSMDepthBias=15 ;
-r.Shadow.SpotLightDepthBias=15 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
-r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=3 ;
@@ -119,12 +115,12 @@ r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=0 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldGI=0 ;
-r.GenerateLandscapeGIData=0 ;
+r.GenerateLandscapeGIData=1 ;
 r.DefaultFeature.AmbientOcclusion=1 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
-r.AmbientOcclusionLevels=0 ;
+r.AmbientOcclusionLevels=-1 ;
 r.AmbientOcclusionRadiusScale=1 ;
 r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusion.Compute=0 ;
@@ -166,6 +162,19 @@ r.ParticleLightQuality=1 ;
 r.Atmosphere=1 ;
 grass.DensityScale=0.6 ;
 foliage.DensityScale=0.6 ;
+r.TranslucencyVolumeBlur=1 ;
+r.TranslucencyLightingVolumeDim=64 ;
+r.TranslucencyLightingVolumeInnerDistance=1500 ;
+r.TranslucencyLightingVolumeOuterDistance=5000 ;
+r.EmitterSpawnRateScale=0.5 ;
+r.MinTimeBetweenTicks=8 ;
+r.ParticleMinTimeBetweenTicks=8 ;
+r.SeparateTranslucency=0 ;
+r.MinScreenRadiusForLights=0.300000 ;
+r.MinScreenRadiusForDepthPrepass=0.300000 ;
+r.MinScreenRadiusForCSMDepth=0.300000 ;
+r.DefaultFeature.AutoExposure=1 ;
+r.EyeAdaptationQuality=2 ;
 
 
 -----------end-----------
@@ -194,7 +203,6 @@ Global=all off ;
 PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
-r.setres=1920x1080 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
@@ -205,14 +213,14 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.SceneColorFormat=3 ;
-r.SubsurfaceScattering=0 ;
+r.SceneColorFormat=4 ;
+r.SubsurfaceScattering=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
-r.SSS.Checkerboard=1 ;
+r.SSS.Checkerboard=0 ;
 r.MaxAnisotropy=8 ;
 r.VirtualTexture=1 ;
 r.RenderTargetPoolMin=300 ;
@@ -243,15 +251,12 @@ r.Shadow.ForceSingleSampleShadowingFromStationary=0 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
-r.Shadow.DistanceScale=0.7 ;
+r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
-r.Shadow.CSMDepthBias=15 ;
-r.Shadow.SpotLightDepthBias=15 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
-r.HighQualityLightMaps=1 ;
 r.AllowStaticLighting=1 ;
 r.IndirectLightingCache=1 ;
 r.PostProcessAAQuality=4 ;
@@ -268,14 +273,14 @@ r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=1 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=0 ;
-r.GenerateMeshDistanceFields=0 ;
+r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldGI=0 ;
-r.GenerateLandscapeGIData=0 ;
+r.GenerateLandscapeGIData=1 ;
 r.DefaultFeature.AmbientOcclusion=1 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ;
-r.AmbientOcclusionLevels=0 ;
+r.AmbientOcclusionLevels=-1 ;
 r.AmbientOcclusionRadiusScale=1 ;
 r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusion.Compute=0 ;
@@ -317,6 +322,19 @@ r.ParticleLightQuality=1 ;
 r.Atmosphere=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
+r.TranslucencyVolumeBlur=1 ;
+r.TranslucencyLightingVolumeDim=64 ;
+r.TranslucencyLightingVolumeInnerDistance=1500 ;
+r.TranslucencyLightingVolumeOuterDistance=5000 ;
+r.EmitterSpawnRateScale=0.5 ;
+r.MinTimeBetweenTicks=8 ;
+r.ParticleMinTimeBetweenTicks=8 ;
+r.SeparateTranslucency=0 ;
+r.MinScreenRadiusForLights=0.300000 ;
+r.MinScreenRadiusForDepthPrepass=0.300000 ;
+r.MinScreenRadiusForCSMDepth=0.300000 ;
+r.DefaultFeature.AutoExposure=1 ;
+r.EyeAdaptationQuality=2 ;
 
 
 -----------end-----------
