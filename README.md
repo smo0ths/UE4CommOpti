@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 2/6/2020
+*Updated 2/9/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -60,7 +60,7 @@ r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
-r.SSS.Checkerboard=0 ;
+r.SSS.Checkerboard=1 ;
 r.MaxAnisotropy=8 ;
 r.VirtualTexture=1 ;
 r.RenderTargetPoolMin=300 ;
@@ -175,6 +175,7 @@ r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.EyeAdaptationQuality=2 ;
+r.DefaultFeature.AutoExposure.Method=0 ;
 
 
 -----------end-----------
@@ -220,7 +221,7 @@ r.SSS.SampleSet=2 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
-r.SSS.Checkerboard=0 ;
+r.SSS.Checkerboard=1 ;
 r.MaxAnisotropy=8 ;
 r.VirtualTexture=1 ;
 r.RenderTargetPoolMin=300 ;
@@ -335,6 +336,7 @@ r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.EyeAdaptationQuality=2 ;
+r.DefaultFeature.AutoExposure.Method=0 ;
 
 
 -----------end-----------
