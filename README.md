@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 2/9/2020
+*Updated 2/22/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -12,17 +12,8 @@ Open Engine.ini and Copy/Paste commands/configs:
 
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
-Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
-Copy/Paste:  %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
-
-
------------end-----------
-
-
-Squad* Max fps Copy/Paste this: 
-
-WIP ;
+Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 
 
 -----------end-----------
@@ -31,7 +22,7 @@ WIP ;
 Squad* PS* My config Copy/Paste this:
 
 [Audio]
-MaxChannels=128 ;
+MaxChannels=128 ; eg 64/96/128
 CommonAudioPoolSize=0 ;
 UseAudioThread=True ;
 UnfocusedVolumeMultiplier=1.000000
@@ -72,7 +63,7 @@ r.ParticleLODBias=0 ;
 r.TextureStreaming=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.UseFixedPoolSize=0 ;
-r.Streaming.PoolSize=1000 ;
+r.Streaming.PoolSize=512 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=0 ;
@@ -175,15 +166,7 @@ r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.EyeAdaptationQuality=2 ;
-r.DefaultFeature.AutoExposure.Method=0 ;
-
-
------------end-----------
-
-
-Sandstorm* Max FPS Copy/Paste this:
-
-WIP ;
+r.DefaultFeature.AutoExposure.Method=1 ;
 
 
 -----------end-----------
@@ -192,7 +175,7 @@ WIP ;
 Sandstorm* My config Copy/Paste this: 
 
 [Audio]
-MaxChannels=128 ;
+MaxChannels=128 ; eg 64/96/128
 CommonAudioPoolSize=0 ;
 UseAudioThread=True ;
 UnfocusedVolumeMultiplier=1.000000
@@ -233,7 +216,7 @@ r.ParticleLODBias=0 ;
 r.TextureStreaming=1 ;
 r.Streaming.LimitPoolSizeToVRAM=1 ;
 r.Streaming.UseFixedPoolSize=0 ;
-r.Streaming.PoolSize=1000 ;
+r.Streaming.PoolSize=512 ;
 r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=0 ;
@@ -336,15 +319,7 @@ r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.EyeAdaptationQuality=2 ;
-r.DefaultFeature.AutoExposure.Method=0 ;
-
-
------------end-----------
-
-
-Session* My config Copy/Paste this: 
-
-WIP ;
+r.DefaultFeature.AutoExposure.Method=1 ;
 
 
 -----------end-----------
@@ -355,7 +330,6 @@ Open GameUserSettings.ini:
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettings.ini 
-Copy/Paste:  %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
 
@@ -385,12 +359,12 @@ bSmoothFrameRate=0
 bUseVSync=0 
 FrameRateLimit=120.000000
 FrameLimit=120
-AudioQualityLevel=3
-LastConfirmedAudioQualityLevel=3
+AudioQualityLevel=3 ; low 0 med 1 high 3
+LastConfirmedAudioQualityLevel=3 ; low 0 med 1 high 3
 
 In sandstorm r.Streaming.PoolSize needs to be changed here:
 
-("r.Streaming.PoolSize", (Value=1000,bModified=True)
+("r.Streaming.PoolSize", (Value=512,bModified=True)
 
 
 -----------end-----------
@@ -406,6 +380,6 @@ Preferred refresh rate:  Highest available
 Texture filtering anisotropic sample optimization:  On
 Texture filtering quality:  High performance
 Vertical sync:  Off
-Desktop tab: Enable developer settings: Click Allow access to the GPU performance counters to all users test this yourself 
+Desktop tab: Enable developer settings: Click Allow access to the GPU performance counters to all users
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
