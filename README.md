@@ -323,7 +323,6 @@ r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
-r.Shadow.CSMDepthBias=0.15 ;
 
 
 -----------end-----------
