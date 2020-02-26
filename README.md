@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 2/22/2020
+*Updated 2/25/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -22,10 +22,7 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 Squad* PS* My config Copy/Paste this:
 
 [Audio]
-MaxChannels=128 ; eg 64/96/128
-CommonAudioPoolSize=0 ;
-UseAudioThread=True ;
-UnfocusedVolumeMultiplier=1.000000
+MaxChannels=96 ; eg 64/96/128
 
 [Core.Log]
 Global=all off ;
@@ -44,17 +41,18 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.SceneColorFormat=4 ;
-r.SubsurfaceScattering=1 ;
+r.SceneColorFormat=3 ;
+r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
-r.SSS.SampleSet=2 ;
+r.SSS.SampleSet=1 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.MaxAnisotropy=8 ;
 r.VirtualTexture=1 ;
-r.RenderTargetPoolMin=300 ;
+r.RenderTargetPoolMin=400 ;
+ShowFlag.Tessellation=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
@@ -68,7 +66,7 @@ r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
-r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
+r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50 ;
 r.Streaming.Boost=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
@@ -84,6 +82,8 @@ r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
+r.Shadow.CSMDepthBias=15 ;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.ContactShadows=0 ;
@@ -110,7 +110,7 @@ r.GenerateLandscapeGIData=1 ;
 r.DefaultFeature.AmbientOcclusion=1 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
-r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionMaxQuality=50 ;
 r.AmbientOcclusionLevels=-1 ;
 r.AmbientOcclusionRadiusScale=1 ;
 r.AmbientOcclusion.FadeRadiusScale=1 ;
@@ -136,10 +136,10 @@ r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=0 ;
-r.LightShaftFirstPassDistance=0.06 ;
+r.LightShaftFirstPassDistance=0.1 ;
 r.BloomQuality=3 ;
 r.Bloom.HalfResoluionFFT=0 ;
-r.Bloom.Cross=-0.6666 ;
+r.Bloom.Cross=-0.7777 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0 ;
 r.SSR.Quality=0 ;
@@ -150,6 +150,7 @@ r.SupportMaterialLayers=0 ;
 r.RefractionQuality=0 ;
 r.DetailMode=2 ;
 r.ParticleLightQuality=1 ;
+r.LensFlareQuality=0 ;
 r.Atmosphere=1 ;
 grass.DensityScale=0.6 ;
 foliage.DensityScale=0.6 ;
@@ -175,9 +176,7 @@ r.DefaultFeature.AutoExposure.Method=1 ;
 Sandstorm* My config Copy/Paste this: 
 
 [Audio]
-MaxChannels=128 ; eg 64/96/128
-CommonAudioPoolSize=0 ;
-UseAudioThread=True ;
+MaxChannels=96 ; eg 64/96/128
 UnfocusedVolumeMultiplier=1.000000
 
 [Core.Log]
@@ -197,17 +196,18 @@ r.RHICmdBypass=0 ;
 r.GPUCrashDebugging=0 ;
 r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
-r.SceneColorFormat=4 ;
-r.SubsurfaceScattering=1 ;
+r.SceneColorFormat=3 ;
+r.SubsurfaceScattering=0 ;
 r.SSS.Scale=1 ;
-r.SSS.SampleSet=2 ;
+r.SSS.SampleSet=1 ;
 r.SSS.Quality=0 ;
 r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.MaxAnisotropy=8 ;
 r.VirtualTexture=1 ;
-r.RenderTargetPoolMin=300 ;
+r.RenderTargetPoolMin=400 ;
+ShowFlag.Tessellation=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ;
@@ -237,6 +237,8 @@ r.Shadow.MaxCSMResolution=1024 ;
 r.Shadow.RadiusThreshold=0.03 ;
 r.Shadow.DistanceScale=0.5 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
+r.Shadow.CSMDepthBias=15 ;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.ContactShadows=0 ;
@@ -263,7 +265,7 @@ r.GenerateLandscapeGIData=1 ;
 r.DefaultFeature.AmbientOcclusion=1 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.4 ;
-r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionMaxQuality=50 ;
 r.AmbientOcclusionLevels=-1 ;
 r.AmbientOcclusionRadiusScale=1 ;
 r.AmbientOcclusion.FadeRadiusScale=1 ;
@@ -289,10 +291,10 @@ r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightShaftQuality=1 ;
 r.LightShaftDownSampleFactor=0 ;
-r.LightShaftFirstPassDistance=0.06 ;
+r.LightShaftFirstPassDistance=0.1 ;
 r.BloomQuality=3 ;
 r.Bloom.HalfResoluionFFT=0 ;
-r.Bloom.Cross=-0.6666 ;
+r.Bloom.Cross=-0.7777 ;
 r.SceneColorFringeQuality=0 ;
 r.SceneColorFringe.Max=0 ;
 r.SSR.Quality=0 ;
@@ -303,6 +305,7 @@ r.SupportMaterialLayers=0 ;
 r.RefractionQuality=0 ;
 r.DetailMode=2 ;
 r.ParticleLightQuality=1 ;
+r.LensFlareQuality=0 ;
 r.Atmosphere=1 ;
 grass.DensityScale=1 ;
 foliage.DensityScale=1 ;
@@ -320,6 +323,7 @@ r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.DefaultFeature.AutoExposure=1 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
+r.Shadow.CSMDepthBias=0.15 ;
 
 
 -----------end-----------
