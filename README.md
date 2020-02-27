@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 2/25/2020
+*Updated 2/27/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -143,8 +143,8 @@ r.LightShaftFirstPassDistance=0.1 ;
 r.BloomQuality=3 ;
 r.Bloom.HalfResoluionFFT=0 ;
 r.Bloom.Cross=-0.7777 ;
-r.SceneColorFringeQuality=0 ;
-r.SceneColorFringe.Max=0 ;
+r.SceneColorFringeQuality=1 ;
+r.SceneColorFringe.Max=0.25 ;
 r.SSR.Quality=0 ;
 r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
@@ -301,8 +301,8 @@ r.LightShaftFirstPassDistance=0.1 ;
 r.BloomQuality=3 ;
 r.Bloom.HalfResoluionFFT=0 ;
 r.Bloom.Cross=-0.7777 ;
-r.SceneColorFringeQuality=0 ;
-r.SceneColorFringe.Max=0 ;
+r.SceneColorFringeQuality=1 ;
+r.SceneColorFringe.Max=0.25 ;
 r.SSR.Quality=0 ;
 r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
