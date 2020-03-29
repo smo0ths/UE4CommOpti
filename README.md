@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 2/27/2020
+*Updated 3/29/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -28,7 +28,7 @@ MaxChannels=96 ; eg 64/96/128
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50 ; use 40 for PS
+PoolSizeVRAMPercentage=50 ; use 40 for PostScriptum
 
 [SystemSettings]
 r.VSync=0 ;
@@ -43,7 +43,7 @@ r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MSAA.CompositingSampleCount=1 ;
 r.SceneColorFormat=3 ;
-r.SubsurfaceScattering=0 ;
+r.SubsurfaceScattering=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=1 ;
 r.SSS.Quality=0 ;
@@ -67,7 +67,7 @@ r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
-r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
+r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50 ;
 r.Streaming.Boost=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
@@ -93,7 +93,6 @@ r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=1 ;
-r.PostProcessAAQuality=3 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
 r.Upscale.Quality=2 ;
@@ -110,16 +109,9 @@ r.Tonemapper.GrainQuantization=0 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldGI=0 ;
 r.GenerateLandscapeGIData=1 ;
-r.DefaultFeature.AmbientOcclusion=1 ;
-r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusionMipLevelFactor=0.4 ;
-r.AmbientOcclusionMaxQuality=50 ;
-r.AmbientOcclusionLevels=-1 ;
-r.AmbientOcclusionRadiusScale=1 ;
-r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusion.Compute=0 ;
-r.AOSpecularOcclusionMode=0 ;
-r.AOApplyToStaticIndirect=0 ;
+r.AOSpecularOcclusionMode=1 ;
+r.AOApplyToStaticIndirect=1 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 r.ReflectionEnvironment=1 ;
@@ -127,7 +119,7 @@ r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
 r.ReflectionEnvironmentLightmapMixing=1 ;
 r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DepthOfFieldQuality=0 ;
-r.ViewDistanceScale=0.8 ;
+r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=0 ;
 r.HLOD.MaximumLevel=-1 ;
@@ -155,8 +147,8 @@ r.DetailMode=2 ;
 r.ParticleLightQuality=1 ;
 r.LensFlareQuality=0 ;
 r.Atmosphere=1 ;
-grass.DensityScale=0.6 ;
-foliage.DensityScale=0.6 ;
+grass.DensityScale=1 ;
+foliage.DensityScale=1 ;
 r.TranslucencyVolumeBlur=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
 r.TranslucencyLightingVolumeInnerDistance=1500 ;
@@ -180,7 +172,6 @@ Sandstorm* My config Copy/Paste this:
 
 [Audio]
 MaxChannels=96 ; eg 64/96/128
-UnfocusedVolumeMultiplier=1.000000
 
 [Core.Log]
 Global=all off ;
@@ -201,7 +192,7 @@ r.CreateShadersOnLoad=1 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.MSAA.CompositingSampleCount=1 ;
 r.SceneColorFormat=3 ;
-r.SubsurfaceScattering=0 ;
+r.SubsurfaceScattering=1 ;
 r.SSS.Scale=1 ;
 r.SSS.SampleSet=1 ;
 r.SSS.Quality=0 ;
@@ -225,7 +216,7 @@ r.Streaming.HLODStrategy=0 ;
 r.Streaming.MipBias=0 ;
 r.Streaming.UsePerTextureBias=0 ;
 r.Streaming.AmortizeCPUToGPUCopy=1 ;
-r.Streaming.MaxNumTexturesToStreamPerFrame=1 ;
+r.Streaming.MaxNumTexturesToStreamPerFrame=0 ;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50 ;
 r.Streaming.Boost=1 ;
 r.Streaming.FullyLoadUsedTextures=0 ;
@@ -251,7 +242,6 @@ r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=1 ;
 r.IndirectLightingCache=1 ;
-r.PostProcessAAQuality=4 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
 r.Upscale.Quality=2 ;
@@ -268,16 +258,9 @@ r.Tonemapper.GrainQuantization=0 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldGI=0 ;
 r.GenerateLandscapeGIData=1 ;
-r.DefaultFeature.AmbientOcclusion=1 ;
-r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusionMipLevelFactor=0.4 ;
-r.AmbientOcclusionMaxQuality=50 ;
-r.AmbientOcclusionLevels=-1 ;
-r.AmbientOcclusionRadiusScale=1 ;
-r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.AmbientOcclusion.Compute=0 ;
 r.AOSpecularOcclusionMode=1 ;
-r.AOApplyToStaticIndirect=0 ;
+r.AOApplyToStaticIndirect=1 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 r.ReflectionEnvironment=1 ;
@@ -285,7 +268,7 @@ r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
 r.ReflectionEnvironmentLightmapMixing=1 ;
 r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.DepthOfFieldQuality=0 ;
-r.ViewDistanceScale=0.8 ;
+r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
@@ -389,6 +372,5 @@ Preferred refresh rate:  Highest available
 Texture filtering anisotropic sample optimization:  On
 Texture filtering quality:  High performance
 Vertical sync:  Off
-Desktop tab: Enable developer settings: Click Allow access to the GPU performance counters to all users
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
