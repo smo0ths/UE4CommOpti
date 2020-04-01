@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 3/29/2020
+*Updated 3/31/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -92,7 +92,7 @@ r.DFShadowQuality=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=0 ;
-r.IndirectLightingCache=1 ;
+r.IndirectLightingCache=0 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
 r.Upscale.Quality=2 ;
@@ -241,7 +241,7 @@ r.DFShadowQuality=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=1 ;
-r.IndirectLightingCache=1 ;
+r.IndirectLightingCache=0 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
 r.Upscale.Quality=2 ;
