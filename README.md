@@ -1,5 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+*Testing this map use too much vram
 *Updated 5/10/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
