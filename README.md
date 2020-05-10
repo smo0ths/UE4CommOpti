@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Testing this map use too much vram
+
 *Updated 5/10/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
@@ -23,13 +23,13 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 Squad* PS* My config Copy/Paste this:
 
 [Audio]
-MaxChannels=96 ; eg 64/96/128
+MaxChannels=96 ;
 
 [Core.Log]
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50 ; use 40 for PostScriptum
+PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
 r.VSync=0 ;
@@ -173,7 +173,7 @@ r.DefaultFeature.AutoExposure.Method=1 ;
 Sandstorm* My config Copy/Paste this: 
 
 [Audio]
-MaxChannels=96 ; eg 64/96/128
+MaxChannels=96 ;
 
 [Core.Log]
 Global=all off ;
@@ -368,12 +368,13 @@ In sandstorm r.Streaming.PoolSize needs to be changed here:
 EXTRA* For NVIDIA users in control panel change:
 
 Image sharpening:  :)
-Low latency mode:  off and lower than ~85% gpu utilization 
+Low latency mode:  off and lower than ~85% gpu utilization for lowest input lag
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
 Texture filtering anisotropic sample optimization:  On
 Texture filtering quality:  High performance
 Vertical sync:  Off
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
