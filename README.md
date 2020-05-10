@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Updated 3/31/2020
+*Updated 5/10/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -94,18 +94,19 @@ r.CapsuleShadows=0 ;
 r.AllowStaticLighting=0 ;
 r.IndirectLightingCache=0 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
-r.Upscale.Quality=2 ;
+r.SceneRenderTargetResizeMethod=2 ;
+r.Upscale.Quality=3 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
-r.TemporalAAUpsampleFiltered=0 ;
+r.TemporalAAUpsampleFiltered=1 ;
+r.TemporalAASharpness=1 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=1 ;
 r.TonemapperFilm=1 ;
-r.Tonemapper.GrainQuantization=0 ;
+r.Tonemapper.GrainQuantization=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldGI=0 ;
 r.GenerateLandscapeGIData=1 ;
@@ -243,18 +244,19 @@ r.CapsuleShadows=0 ;
 r.AllowStaticLighting=1 ;
 r.IndirectLightingCache=0 ;
 r.ScreenPercentage=100 ;
-r.SceneRenderTargetResizeMethod=0 ;
-r.Upscale.Quality=2 ;
+r.SceneRenderTargetResizeMethod=2 ;
+r.Upscale.Quality=3 ;
 r.TemporalAASamples=4 ;
 r.TemporalAACurrentFrameWeight=0.2 ;
 r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
-r.TemporalAAUpsampleFiltered=0 ;
+r.TemporalAAUpsampleFiltered=1 ;
+r.TemporalAASharpness=1 ;
 r.Filter.SizeScale=1 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=1 ;
 r.TonemapperFilm=1 ;
-r.Tonemapper.GrainQuantization=0 ;
+r.Tonemapper.GrainQuantization=1 ;
 r.GenerateMeshDistanceFields=1 ;
 r.DistanceFieldGI=0 ;
 r.GenerateLandscapeGIData=1 ;
@@ -273,7 +275,7 @@ r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
 r.HLOD=1 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
-r.HLOD.DistanceOverride=10000 ;
+r.HLOD.DistanceOverride=5000 ;
 r.SupportSimpleForwardShading=0 ;
 r.SimpleForwardShading=0 ;
 r.LightFunctionQuality=1 ;
