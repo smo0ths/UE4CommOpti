@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 5/10/2020
+*Updated 5/14/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -21,9 +21,6 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini
 
 
 Squad* PS* My config Copy/Paste this:
-
-[Audio]
-MaxChannels=96 ;
 
 [Core.Log]
 Global=all off ;
@@ -171,9 +168,6 @@ r.DefaultFeature.AutoExposure.Method=1 ;
 
 
 Sandstorm* My config Copy/Paste this: 
-
-[Audio]
-MaxChannels=96 ;
 
 [Core.Log]
 Global=all off ;
