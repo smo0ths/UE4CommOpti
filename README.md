@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/1/2020
+*Updated 6/2/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -29,6 +29,7 @@ Global=all off ;
 PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
+r.MSAACount=0 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
@@ -99,7 +100,7 @@ r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAASharpness=1 ;
-r.Filter.SizeScale=1 ;
+r.Filter.SizeScale=0 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
@@ -110,9 +111,19 @@ r.GenerateLandscapeGIData=0 ;
 r.AmbientOcclusion.Compute=0 ;
 r.AOSpecularOcclusionMode=1 ;
 r.AOApplyToStaticIndirect=0 ;
-r.DistanceFieldAO=0 ;
-r.AOQuality=0 ;
+r.DistanceFieldAO=1 ;
+r.AOQuality=1 ;
+r.AmbientOcclusionMipLevelFactor=0.5 ;
+r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionLevels=1 ;
+r.AmbientOcclusionRadiusScale=0 ;
 r.ReflectionEnvironment=1 ;
+r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
+r.ReflectionEnvironmentBeginMixingRoughness=0.1 ;
+r.ReflectionEnvironmentEndMixingRoughness=0.3 ;
+r.ReflectionEnvironmentLightmapMixing=1 ;
+r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
+r.HighQualityLightMaps=1 ;
 r.DepthOfFieldQuality=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
@@ -131,9 +142,11 @@ r.TranslucencyVolumeBlur=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
 grass.DensityScale=0.6 ;
 foliage.DensityScale=0.6 ;
-r.SSR.Quality=0 ;
+r.SSR.Quality=3 ;
+r.SSR.MaxRoughness=0.8 ;
 r.VolumetricFog=0 ;
 r.BloomQuality=1 ;
+r.Bloom.HalfResoluionFFT=1 ;
 r.MotionBlurQuality=0 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
@@ -147,6 +160,7 @@ r.ParticleMinTimeBetweenTicks=8 ;
 r.SeparateTranslucency=1 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=0 ;
+r.LightCulling.Quality=1 ;
 
 
 -----------end-----------
@@ -161,6 +175,7 @@ Global=all off ;
 PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
+r.MSAACount=0 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
@@ -231,7 +246,7 @@ r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=1 ;
 r.TemporalAASharpness=1 ;
-r.Filter.SizeScale=1 ;
+r.Filter.SizeScale=0 ;
 r.Tonemapper.Quality=5 ;
 r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
@@ -242,9 +257,19 @@ r.GenerateLandscapeGIData=0 ;
 r.AmbientOcclusion.Compute=0 ;
 r.AOSpecularOcclusionMode=1 ;
 r.AOApplyToStaticIndirect=0 ;
-r.DistanceFieldAO=0 ;
-r.AOQuality=0 ;
+r.DistanceFieldAO=1 ;
+r.AOQuality=1 ;
+r.AmbientOcclusionMipLevelFactor=0.5 ;
+r.AmbientOcclusionMaxQuality=100 ;
+r.AmbientOcclusionLevels=1 ; 
+r.AmbientOcclusionRadiusScale=0 ;
 r.ReflectionEnvironment=1 ;
+r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
+r.ReflectionEnvironmentBeginMixingRoughness=0.1 ;
+r.ReflectionEnvironmentEndMixingRoughness=0.3 ;
+r.ReflectionEnvironmentLightmapMixing=1 ;
+r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
+r.HighQualityLightMaps=1 ;
 r.DepthOfFieldQuality=0 ;
 r.ViewDistanceScale=1 ;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=1 ;
@@ -254,19 +279,20 @@ r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=10000 ;
 r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=0.8 ;
-r.LightShaftQuality=1 ;
+r.LightShaftQuality=0 ;
 r.LightShaftDownSampleFactor=0 ;
 r.LightShaftFirstPassDistance=0.1 ;
 r.SceneColorFringeQuality=1 ;
-r.SceneColorFringe.Max=0.25 ;
 r.TranslucencyVolumeBlur=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
 grass.DensityScale=0.6 ;
 foliage.DensityScale=0.6 ;
-r.SSR.Quality=0 ;
+r.SSR.Quality=3 ;
+r.SSR.MaxRoughness=0.8 ;
 r.VolumetricFog=0 ;
 r.MotionBlurQuality=0 ;
 r.BloomQuality=1 ;
+r.Bloom.HalfResoluionFFT=1 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
 r.RefractionQuality=0 ;
@@ -279,6 +305,7 @@ r.ParticleMinTimeBetweenTicks=8 ;
 r.SeparateTranslucency=1 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=0 ;
+r.LightCulling.Quality=1 ;
 
 
 -----------end-----------
@@ -290,6 +317,18 @@ Press:       Windows key + R
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettings.ini 
 Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
+
+
+Resets when you change in game for squad/ps devs dont do this:
+
+MSAACompositingSampleCount=1
+TextureStreaming=0 ; this is backwards in ps just leave it out in squad and make sure its on in game 
+BloomQuality=1 
+LensFlareQuality=2 
+AmbientOcclusion=1 ;
+AmbientOcclusionLevels=1 
+AmbientOcclusionRadiusScale=0.000000 
+AutoExposure=0
 
 
 Set these to what you want:
