@@ -324,7 +324,7 @@ Resets when you change in game for squad/ps devs dont do this:
 MSAACompositingSampleCount=1
 BloomQuality=1 
 LensFlareQuality=2 
-AmbientOcclusion=1 ;
+AmbientOcclusion=1
 AmbientOcclusionLevels=1 
 AmbientOcclusionRadiusScale=0.000000 
 AutoExposure=0
