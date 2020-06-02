@@ -328,6 +328,8 @@ AmbientOcclusion=1
 AmbientOcclusionLevels=1 
 AmbientOcclusionRadiusScale=0.000000 
 AutoExposure=0
+EyeAdaptationQuality=2
+TextureStreaming= ; 0 is on in ps.... 
 
 
 Set these to what you want:
