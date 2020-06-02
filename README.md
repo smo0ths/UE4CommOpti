@@ -322,7 +322,6 @@ Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSe
 Resets when you change in game for squad/ps devs dont do this:
 
 MSAACompositingSampleCount=1
-TextureStreaming=0 ; this is backwards in ps just leave it out in squad and make sure its on in game 
 BloomQuality=1 
 LensFlareQuality=2 
 AmbientOcclusion=1 ;
