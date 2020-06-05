@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/2/2020 20:00 hours
+*Updated 6/5/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -137,7 +137,7 @@ r.TranslucencyLightingVolumeDim=64 ;
 r.VolumetricFog=0 ;
 grass.DensityScale=0.6 ;
 foliage.DensityScale=0.6 ;
-r.SSR.Quality=3 ;
+r.SSR.Quality=0 ;
 r.SSR.MaxRoughness=0.8 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
@@ -154,7 +154,7 @@ r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.MinTimeBetweenTicks=8 ;
-r.LensFlareQuality=2 ;
+r.LensFlareQuality=0 ;
 r.MotionBlurQuality=0 ;
 r.BloomQuality=1 ;
 r.Filter.SizeScale=1 ;
@@ -287,7 +287,7 @@ r.TranslucencyLightingVolumeDim=64 ;
 r.VolumetricFog=0 ;
 grass.DensityScale=0.6 ;
 foliage.DensityScale=0.6 ;
-r.SSR.Quality=3 ;
+r.SSR.Quality=0 ;
 r.SSR.MaxRoughness=0.8 ;
 r.MaterialQualityLevel=1 ;
 r.SupportMaterialLayers=0 ;
@@ -304,7 +304,7 @@ r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
 r.MinTimeBetweenTicks=8 ;
-r.LensFlareQuality=2 ;
+r.LensFlareQuality=0 ;
 r.MotionBlurQuality=0 ;
 r.BloomQuality=1 ;
 r.Filter.SizeScale=1 ;
