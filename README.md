@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/13/2020
+*Updated 6/13/2020~
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -66,7 +66,8 @@ r.Streaming.DefragDynamicBounds=1 ;
 r.MaxAnisotropy=8 ;
 r.MipMapLODBias=-1 ;
 r.LandscapeLODBias=-1 ;
-r.SkeletalMeshLODBias=-1 ;
+r.SkeletalMeshLODBias=-2 ;
+r.StaticMeshLODDistanceScale=0.25 ;
 r.ParticleLODBias=-1 ;
 r.ShadowQuality=3 ;
 r.Shadow.PerObject=1 ;
@@ -151,7 +152,7 @@ r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.DetailMode=2 ;
-r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit 
+r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit
 r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
@@ -161,7 +162,7 @@ r.MotionBlurQuality=0 ;
 r.BloomQuality=1 ;
 r.Filter.SizeScale=1 ;
 r.DepthOfFieldQuality=0 ;
-r.SeparateTranslucency=1 ;
+r.SeparateTranslucency=0 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 r.SceneColorFringeQuality=1 ;
 r.SceneColorFringe.Max=0.25 ;
@@ -218,7 +219,8 @@ r.Streaming.DefragDynamicBounds=1 ;
 r.MaxAnisotropy=8 ;
 r.MipMapLODBias=-1 ;
 r.LandscapeLODBias=-1 ;
-r.SkeletalMeshLODBias=-1 ;
+r.SkeletalMeshLODBias=-2 ;
+r.StaticMeshLODDistanceScale=0.25 ;
 r.ParticleLODBias=-1 ;
 r.ShadowQuality=3 ;
 r.Shadow.PerObject=1 ;
@@ -303,7 +305,7 @@ r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.DetailMode=2 ;
-r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit 
+r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit
 r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
@@ -313,7 +315,7 @@ r.MotionBlurQuality=0 ;
 r.BloomQuality=1 ;
 r.Filter.SizeScale=1 ;
 r.DepthOfFieldQuality=0 ;
-r.SeparateTranslucency=1 ;
+r.SeparateTranslucency=0 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 r.SceneColorFringeQuality=1 ;
 r.EyeAdaptationQuality=2 ;
