@@ -26,7 +26,7 @@ Squad* PS* My config Copy/Paste this:
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=40 ; for PS i use 25 lower this to free up vram 
+PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
 r.MSAACount=0 ;
@@ -155,7 +155,7 @@ r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.DetailMode=2 ;
-r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit 
+r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit
 r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
@@ -311,7 +311,7 @@ r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.DetailMode=2 ;
-r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit 
+r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit
 r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
