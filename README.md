@@ -44,6 +44,7 @@ r.MinScreenRadiusForLights=0.300000 ;
 r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.HZBOcclusion=0 ;
+r.DiscardUnusedQuality=1 ;
 r.SceneColorFormat=3 ;
 r.VirtualTexture=1 ;
 r.TextureStreaming=1 ;
@@ -194,7 +195,8 @@ r.AllowOcclusionQueries=1 ;
 r.MinScreenRadiusForLights=0.300000 ;
 r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
-r.HZBOcclusion=0 ;
+r.HZBOcclusion=0 ; 
+r.DiscardUnusedQuality=1 ;
 r.SceneColorFormat=3 ;
 r.VirtualTexture=1 ;
 r.TextureStreaming=1 ;
@@ -367,9 +369,8 @@ bEnableMouseSmoothing=0
 bEnableFrameRateSmoothing=0
 bSmoothFrameRate=0
 bUseVSync=0 
-FrameRateLimit=120.000000
+FrameRateLimit=145.000000
 AudioQualityLevel=3
-LastConfirmedAudioQualityLevel=3
 
 
 -----------end-----------
