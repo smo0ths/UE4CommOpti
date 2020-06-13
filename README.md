@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/13/2020~
+*Updated 6/13/2020~~
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -26,7 +26,7 @@ Squad* PS* My config Copy/Paste this:
 Global=all off ;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=40 ;
+PoolSizeVRAMPercentage=40 ; for PS i use 25 lower this to free up vram 
 
 [SystemSettings]
 r.MSAACount=0 ;
@@ -80,6 +80,8 @@ r.Shadow.RadiusThreshold=0.06 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
+r.Shadow.CSMDepthBias=10 ;
+r.Shadow.EnableModulatedSelfShadow=0 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=0 ;
@@ -87,7 +89,7 @@ r.DFShadowQuality=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=0 ;
-r.NormalMapsForStaticLighting=1 ;
+r.NormalMapsForStaticLighting=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
@@ -135,6 +137,7 @@ r.LightShaftFirstPassDistance=0.02 ;
 r.LightCulling.Quality=1 ;
 r.HighQualityLightMaps=1 ;
 r.IndirectLightingCache=1 ;
+r.TranslucencyLightingVolume=1 ;
 r.TranslucencyVolumeBlur=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
 r.VolumetricFog=0 ;
@@ -152,7 +155,7 @@ r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.DetailMode=2 ;
-r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit
+r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit 
 r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
@@ -233,6 +236,8 @@ r.Shadow.RadiusThreshold=0.06 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
+r.Shadow.CSMDepthBias=10 ;
+r.Shadow.EnableModulatedSelfShadow=0 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=0 ;
@@ -240,7 +245,7 @@ r.DFShadowQuality=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.AllowStaticLighting=1 ;
-r.NormalMapsForStaticLighting=1 ;
+r.NormalMapsForStaticLighting=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
@@ -288,6 +293,7 @@ r.LightShaftFirstPassDistance=0.02 ;
 r.LightCulling.Quality=1 ;
 r.HighQualityLightMaps=1 ;
 r.IndirectLightingCache=1 ;
+r.TranslucencyLightingVolume=1 ;
 r.TranslucencyVolumeBlur=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
 r.VolumetricFog=0 ;
@@ -305,7 +311,7 @@ r.SSS.HalfRes=1 ;
 r.SSS.Filter=1 ;
 r.SSS.Checkerboard=1 ;
 r.DetailMode=2 ;
-r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit
+r.RefractionQuality=0 ; set 1 for heat and water fx perf. hit 
 r.ParticleLightQuality=1 ;
 r.ParticleMinTimeBetweenTicks=8 ;
 r.EmitterSpawnRateScale=0.5 ;
