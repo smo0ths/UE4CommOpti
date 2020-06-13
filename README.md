@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/5/2020
+*Updated 6/13/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -43,6 +43,7 @@ r.AllowOcclusionQueries=1 ;
 r.MinScreenRadiusForLights=0.300000 ;
 r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
+r.HZBOcclusion=0 ;
 r.SceneColorFormat=3 ;
 r.VirtualTexture=1 ;
 r.TextureStreaming=1 ;
@@ -76,7 +77,7 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.06 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1 ;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=0 ;
@@ -123,12 +124,12 @@ r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ;
 r.HLOD=0 ;
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
-r.HLOD.DistanceOverride=5000 ;
+r.HLOD.DistanceOverride=10000 ;
 r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightShaftQuality=1 ;
-r.LightShaftDownSampleFactor=0 ;
-r.LightShaftFirstPassDistance=1 ;
+r.LightShaftDownSampleFactor=-1 ;
+r.LightShaftFirstPassDistance=0.02 ;
 r.LightCulling.Quality=1 ;
 r.HighQualityLightMaps=1 ;
 r.IndirectLightingCache=1 ;
@@ -193,6 +194,7 @@ r.AllowOcclusionQueries=1 ;
 r.MinScreenRadiusForLights=0.300000 ;
 r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
+r.HZBOcclusion=0 ;
 r.SceneColorFormat=3 ;
 r.VirtualTexture=1 ;
 r.TextureStreaming=1 ;
@@ -226,7 +228,7 @@ r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.06 ;
 r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CSM.TransitionScale=0.8 ;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1 ;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.AllowLandscapeShadows=1 ;
 r.DistanceFieldShadowing=1 ;
 r.DFFullResolution=0 ;
@@ -277,8 +279,8 @@ r.HLOD.DistanceOverride=10000 ;
 r.LightFunctionQuality=1 ;
 r.LightMaxDrawDistanceScale=0.8 ;
 r.LightShaftQuality=1 ;
-r.LightShaftDownSampleFactor=0 ;
-r.LightShaftFirstPassDistance=1 ;
+r.LightShaftDownSampleFactor=-1 ;
+r.LightShaftFirstPassDistance=0.02 ;
 r.LightCulling.Quality=1 ;
 r.HighQualityLightMaps=1 ;
 r.IndirectLightingCache=1 ;
@@ -312,7 +314,6 @@ r.DepthOfFieldQuality=0 ;
 r.SeparateTranslucency=1 ;
 r.SeparateTranslucencyScreenPercentage=100 ;
 r.SceneColorFringeQuality=1 ;
-r.SceneColorFringe.Max=0.25 ;
 r.EyeAdaptationQuality=2 ;
 r.DefaultFeature.AutoExposure.Method=1 ;
 
