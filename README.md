@@ -100,7 +100,6 @@ r.TemporalAA.AllowDownsampling=0 ;
 r.TemporalAA.Upsampling=0 ;
 r.TemporalAAUpsampleFiltered=1 ;
 r.Tonemapper.Quality=3 ;
-r.Tonemapper.MergeWithUpscale.Mode=0 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
 r.GenerateMeshDistanceFields=1 ; 0 for PERFORMANCE
@@ -210,6 +209,7 @@ sg.FoliageQuality=0
 
 Other commands to test some devs forget to turn off mouse smoothing in games:
 
+FullscreenMode=0
 bAltEnterTogglesFullscreen=1
 bF11TogglesFullscreen=0
 bUseDynamicResolution=0
