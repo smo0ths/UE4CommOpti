@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/14/2020
+*Updated 6/18/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -43,6 +43,7 @@ r.MinScreenRadiusForLights=0.300000 ;
 r.MinScreenRadiusForDepthPrepass=0.300000 ;
 r.MinScreenRadiusForCSMDepth=0.300000 ;
 r.HZBOcclusion=0 ;
+r.HighQualityLightMaps=1 ;
 r.DiscardUnusedQuality=1 ;
 r.SceneColorFormat=3 ;
 r.VirtualTexture=1 ; 0 for PERFORMANCE
@@ -88,7 +89,7 @@ r.DFFullResolution=0 ;
 r.DFShadowQuality=1 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
-r.AllowStaticLighting=0 ; 1 for SANDSTORM 0 for PERFORMANCE (some games need this)
+r.AllowStaticLighting=0 ; 0 for PERFORMANCE 1 for SANDSTORM
 r.NormalMapsForStaticLighting=0 ;
 Compat.UseDXT5NormalMaps=0 ;
 r.ScreenPercentage=100 ;
@@ -111,10 +112,9 @@ r.AOQuality=1 ; 0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionMipLevelFactor=0.5 ;
 r.AmbientOcclusionMaxQuality=100 ; 0 for PERFORMANCE
-r.AmbientOcclusionLevels=1 ; 0 for PERFORMANCE
+r.AmbientOcclusionLevels=2 ; 0 for PERFORMANCE
 r.AmbientOcclusion.Compute=0 ;
 r.AmbientOcclusionRadiusScale=0 ;
-r.AmbientOcclusionSampleSetQuality=0 ;
 r.ReflectionEnvironment=1 ; 0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1 ;
 r.ReflectionEnvironmentBeginMixingRoughness=0.1 ;
@@ -122,18 +122,17 @@ r.ReflectionEnvironmentEndMixingRoughness=0.3 ;
 r.ReflectionEnvironmentLightmapMixing=1 ;
 r.ReflectionEnvironmentLightmapMixLargestWeight=1000 ;
 r.ViewDistanceScale=1 ; 0.8 for PERFORMANCE
-r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ; 1 for SANDSTORM 0 for PERFORMANCE
-r.HLOD=0 ; 1 for SANDSTORM 0 for PERFORMANCE
+r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ; 0 for PERFORMANCE 1 for SANDSTORM
+r.HLOD=0 ; 0 for PERFORMANCE 1 for SANDSTORM
 r.HLOD.MaximumLevel=-1 ;
 r.HLOD.DistanceScale=1 ;
 r.HLOD.DistanceOverride=10000 ;
-r.LightFunctionQuality=1 ; 0 for PERFORMANCE (cloud shadows)
+r.LightFunctionQuality=1 ; 0 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1 ; 0.8 for PERFORMANCE
 r.LightShaftQuality=1 ; 0 for PERFORMANCE
 r.LightShaftDownSampleFactor=-1 ;
 r.LightShaftFirstPassDistance=0.02 ;
-r.HighQualityLightMaps=1 ; 0 for PERFORMANCE
-r.TranslucencyLightingVolume=1 ; 0 for PERFORMANCE (lit translucency)
+r.TranslucencyLightingVolume=1 ;
 r.TranslucencyVolumeBlur=1 ;
 r.TranslucencyLightingVolumeDim=64 ;
 r.VolumetricFog=0 ;
@@ -153,7 +152,7 @@ r.SSS.Checkerboard=2 ;
 r.DetailMode=2 ; 0 for PERFORMANCE
 r.RefractionQuality=1 ; 0 for PERFORMANCE
 r.ParticleLightQuality=1 ; 0 for PERFORMANCE
-r.ParticleMinTimeBetweenTicks=8 ; 16 for PERFORMANCE (ms between ticks)
+r.ParticleMinTimeBetweenTicks=8 ; 16 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5 ; 0.25 for PERFORMANCE
 r.LensFlareQuality=0 ;
 r.MotionBlurQuality=0 ;
@@ -228,12 +227,14 @@ AudioQualityLevel=3
 
 EXTRA* For NVIDIA users in control panel change:
 
-Image sharpening:  :)
-Low latency mode:  off and lower than ~85% gpu utilization for lowest input lag
+Image sharpening:  on 0.20  (0 film)
+Anisotropic filtering:  8x  (for QULAITY)
+Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
-Texture filtering anisotropic sample optimization:  On
+TF anisotropic sample optimization:  On (off for QULAITY)
+TF Negative LOD bias:  Allow  (Clamp for QUALITY)
 Texture filtering quality:  High performance
 Vertical sync:  Off
 
