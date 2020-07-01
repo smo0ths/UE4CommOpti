@@ -33,7 +33,6 @@ r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
 r.OneFrameThreadLag=1 ;
-r.FullScreenMode=0 ;
 r.GTSyncType=0 ;
 r.GPUCrashDebugging=0 ;
 r.HighQualityLightMaps=1 ;
