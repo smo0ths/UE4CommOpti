@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/30/2020
+*Updated 7/1/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -171,15 +171,14 @@ Resets when you change in game for squad/ps devs dont do this, also check this
 in your games because it will overwrite engine.ini changes:
 
 MSAACompositingSampleCount=1
-BloomQuality=1 
+BloomQuality=3 
 LensFlareQuality=2 
 AmbientOcclusion=1
 AmbientOcclusionStaticFraction=0
 AmbientOcclusionLevels=1 
-AmbientOcclusionRadiusScale=0.000000 
+AmbientOcclusionRadiusScale=0.010000 
 AutoExposure=1
 EyeAdaptationQuality=2
-TextureStreaming= ; 0 is on in ps.... 
 
 
 Set these to what you want:
@@ -207,7 +206,7 @@ bEnableMouseSmoothing=0
 bEnableFrameRateSmoothing=0
 bSmoothFrameRate=0
 bUseVSync=0 
-FrameRateLimit=145.000000
+FrameRateLimit=144.000000
 AudioQualityLevel=3
 
 
