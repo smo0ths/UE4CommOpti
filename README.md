@@ -29,7 +29,6 @@ Global=all off ;
 PoolSizeVRAMPercentage=40 ;
 
 [SystemSettings]
-r.MSAACount=0 ;
 r.VSync=0 ;
 r.AllowHDR=0 ;
 r.FinishCurrentFrame=0 ;
