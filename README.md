@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/20/2020
+*Updated 6/30/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -73,9 +73,10 @@ r.Shadow.FilterMethod=0 ;
 r.Shadow.CSM.MaxCascades=4 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
-r.Shadow.RadiusThreshold=0.03 ;
-r.Shadow.DistanceScale=0.75 ;
-r.Shadow.CSM.TransitionScale=0.7 ;
+r.Shadow.RadiusThreshold=0.04 ;
+r.Shadow.DistanceScale=0.85 ;
+r.Shadow.CSM.TransitionScale=0.8 ;
+r.Shadow.PreShadowResolutionFactor=0.5 ;
 r.Shadow.CSMDepthBias=10 ; 25 for PS
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.AllowLandscapeShadows=1 ; 0 for PERFORMANCE
@@ -105,11 +106,11 @@ r.AOApplyToStaticIndirect=0 ;
 r.DistanceFieldAO=0 ;
 r.AOQuality=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusionMipLevelFactor=0.5 ;
+r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ; 0 for PERFORMANCE
 r.AmbientOcclusionLevels=2 ; 0 for PERFORMANCE
 r.AmbientOcclusion.Compute=0 ;
-r.AmbientOcclusionRadiusScale=0 ;
+r.AmbientOcclusionRadiusScale=0.01 ;
 r.ReflectionEnvironment=1 ; 0 for PERFORMANCE
 r.ViewDistanceScale=1 ; 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ; 0 for PERFORMANCE 1 for SANDSTORM
@@ -215,15 +216,12 @@ AudioQualityLevel=3
 
 EXTRA* For NVIDIA users in control panel change:
 
-Image sharpening:  on 0.20  (0 film)
-Anisotropic filtering:  8x  (for QULAITY)
 Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
-Multi/mixed gpu accel:  Single display performance mode
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
-TF anisotropic sample optimization:  On (off for QULAITY)
-TF Negative LOD bias:  Allow  (Clamp for QUALITY)
-Texture filtering quality:  High performance
+TF anisotropic sample optimization:  off (on for PERFORMANCE) 
+TF Negative LOD bias:  Allow
+Texture filtering quality:  High performance (Quality for newer GPUs)
 Vertical sync:  Off
 
 
