@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 7/1/2020
+*Updated 7/1/2020~
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -40,7 +40,7 @@ r.GPUCrashDebugging=0 ;
 r.HighQualityLightMaps=1 ;
 r.DiscardUnusedQuality=1 ;
 r.SceneColorFormat=3 ;
-r.VirtualTexture=1 ; 0 for PERFORMANCE
+r.PostProcessAAQuality=1 ;
 ShowFlag.Tessellation=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TextureStreaming=1 ;
