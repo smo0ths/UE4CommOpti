@@ -216,9 +216,9 @@ EXTRA* For NVIDIA users in control panel change:
 Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
-TF anisotropic sample optimization:  off (on for PERFORMANCE) 
-TF Negative LOD bias:  Allow
-Texture filtering quality:  High performance (Quality for newer GPUs)
+TF anisotropic sample optimization:  On (Off for quality) 
+TF Negative LOD bias:  Allow (Clamp for quality)
+Texture filtering quality:  High performance (Quality for newer GPU)
 Vertical sync:  Off
 
 
