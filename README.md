@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 7/14/2020
+*Updated 8/14/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -74,7 +74,7 @@ r.Shadow.SpotLightTransitionScale=1024 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.04 ;
-r.Shadow.DistanceScale=0.7 ;
+r.Shadow.DistanceScale=0.6 ;
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
@@ -102,7 +102,7 @@ r.AOHeightfieldOcclusion=0 ;
 r.AOQuality=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusionMipLevelFactor=0.6 ;
+r.AmbientOcclusionMipLevelFactor=0.3 ;
 r.AmbientOcclusionMaxQuality=100 ; 0 for PERFORMANCE
 r.AmbientOcclusionLevels=2 ; 0 for PERFORMANCE
 r.AmbientOcclusion.Compute=0 ;
@@ -166,8 +166,7 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettin
 Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
 
-Resets when you change in game for squad/ps devs dont do this, also check this 
-in your games because it will overwrite engine.ini changes:
+Some of these change to default settings if you change in game settings:
 
 MSAACompositingSampleCount=1
 BloomQuality=3 
