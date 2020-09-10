@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/14/2020
+*Updated 9/10/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -38,7 +38,6 @@ r.GPUCrashDebugging=0 ;
 r.HighQualityLightMaps=1 ;
 r.DiscardUnusedQuality=1 ;
 r.SceneColorFormat=3 ;
-r.PostProcessAAQuality=1 ;
 ShowFlag.Tessellation=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
 r.TextureStreaming=1 ;
@@ -58,7 +57,7 @@ r.Streaming.FullyLoadUsedTextures=0 ;
 r.Streaming.MaxEffectiveScreenSize=0 ;
 r.Streaming.DefragDynamicBounds=1 ;
 r.Streaming.DropMips=2 ;
-r.MaxAnisotropy=8 ; 0 for PERFORMANCE
+r.MaxAnisotropy=16 ; 0 for PERFORMANCE
 r.MipMapLODBias=0 ;
 r.LandscapeLODBias=0 ; 1 for PERFORMANCE
 r.SkeletalMeshLODBias=0 ; 1 for PERFORMANCE
@@ -74,18 +73,13 @@ r.Shadow.SpotLightTransitionScale=1024 ;
 r.Shadow.MaxResolution=1024 ;
 r.Shadow.MaxCSMResolution=2048 ;
 r.Shadow.RadiusThreshold=0.04 ;
-r.Shadow.DistanceScale=0.6 ;
+r.Shadow.DistanceScale=0.7 ;
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0 ;
 r.ContactShadows=0 ;
 r.CapsuleShadows=0 ;
 r.ScreenPercentage=100 ;
 r.SceneRenderTargetResizeMethod=0 ;
 r.Upscale.Quality=3 ;
-r.TemporalAASamples=4 ;
-r.TemporalAACurrentFrameWeight=0.2 ;
-r.TemporalAA.AllowDownsampling=0 ;
-r.TemporalAA.Upsampling=0 ;
-r.TemporalAAUpsampleFiltered=1 ;
 r.Tonemapper.Quality=3 ;
 r.TonemapperFilm=1 ;
 r.Tonemapper.GrainQuantization=1 ;
@@ -95,18 +89,19 @@ r.DFFullResolution=0 ;
 r.DFShadowQuality=1 ; 0 for PERFORMANCE
 r.DistanceFieldGI=0 ;
 r.GenerateLandscapeGIData=0 ;
-r.AOSpecularOcclusionMode=1 ;
+r.AOSpecularOcclusionMode=0 ;
 r.AOApplyToStaticIndirect=0 ;
 r.DistanceFieldAO=0 ;
 r.AOHeightfieldOcclusion=0 ;
 r.AOQuality=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusionMipLevelFactor=0.3 ;
+r.AmbientOcclusionMipLevelFactor=0 ;
 r.AmbientOcclusionMaxQuality=100 ; 0 for PERFORMANCE
 r.AmbientOcclusionLevels=2 ; 0 for PERFORMANCE
 r.AmbientOcclusion.Compute=0 ;
 r.AmbientOcclusionRadiusScale=0 ;
+r.AmbientOcclusion.FadeRadiusScale=1 ;
 r.ReflectionEnvironment=1 ; 0 for PERFORMANCE
 r.ViewDistanceScale=0.8 ; 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0 ; 0 for PERFORMANCE 1 for SANDSTORM
@@ -166,7 +161,7 @@ Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettin
 Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
 
-Some of these change to default settings if you change in game settings:
+stuff like this needs to be set to what you want, this is where some devs complicate or break settings:
 
 MSAACompositingSampleCount=1
 BloomQuality=3 
@@ -184,7 +179,7 @@ Set these to what you want:
 [ScalabilityGroups]
 sg.ResolutionQuality=100.000000
 sg.ViewDistanceQuality=0
-sg.AntiAliasingQuality=3
+sg.AntiAliasingQuality=0
 sg.ShadowQuality=0
 sg.PostProcessQuality=0
 sg.TextureQuality=0
@@ -192,7 +187,7 @@ sg.EffectsQuality=0
 sg.FoliageQuality=0
 
 
-Other commands to test some devs forget to turn off mouse smoothing in games:
+Other commands to test some devs forget proper settings:
 
 FullscreenMode=0
 bAltEnterTogglesFullscreen=1
@@ -217,7 +212,7 @@ Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
 TF anisotropic sample optimization:  On (Off for quality) 
-TF Negative LOD bias:  Allow (Clamp for quality)
+TF Negative LOD bias:  Allow
 Texture filtering quality:  High performance (Quality for newer GPU)
 Vertical sync:  Off
 
