@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/10/2020
+*Updated 9/10/2020 X2
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -89,14 +89,14 @@ r.DFFullResolution=0 ;
 r.DFShadowQuality=1 ; 0 for PERFORMANCE
 r.DistanceFieldGI=0 ;
 r.GenerateLandscapeGIData=0 ;
-r.AOSpecularOcclusionMode=0 ;
+r.AOSpecularOcclusionMode=1 ;
 r.AOApplyToStaticIndirect=0 ;
 r.DistanceFieldAO=0 ;
 r.AOHeightfieldOcclusion=0 ;
 r.AOQuality=0 ;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0 ;
 r.AmbientOcclusionStaticFraction=0 ;
-r.AmbientOcclusionMipLevelFactor=0 ;
+r.AmbientOcclusionMipLevelFactor=0.4 ;
 r.AmbientOcclusionMaxQuality=100 ; 0 for PERFORMANCE
 r.AmbientOcclusionLevels=2 ; 0 for PERFORMANCE
 r.AmbientOcclusion.Compute=0 ;
