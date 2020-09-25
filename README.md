@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/10/2020 X2
+*Updated 9/25/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -37,6 +37,8 @@ r.GTSyncType=0 ;
 r.GPUCrashDebugging=0 ;
 r.HighQualityLightMaps=1 ;
 r.DiscardUnusedQuality=1 ;
+r.Shaders.FastMath=1 ;
+r.CompileShadersForDevelopment=0 ;
 r.SceneColorFormat=3 ;
 ShowFlag.Tessellation=0 ;
 r.TessellationAdaptivePixelsPerTriangle=9999999 ;
