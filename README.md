@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/25/2020
+*Updated 10/4/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -148,8 +148,7 @@ r.Filter.SizeScale=1 ; 0 for PERFORMANCE
 r.DepthOfFieldQuality=0 ;
 r.SceneColorFringeQuality=1 ; 0 for PERFORMANCE 0 for SANDSTORM
 r.SceneColorFringe.Max=0.25 ;
-r.EyeAdaptationQuality=2 ; 0 for PERFORMANCE
-r.DefaultFeature.AutoExposure.Method=1 ;
+r.DefaultFeature.AutoExposure.Method=0 ;
 
 
 -----------end-----------
