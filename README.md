@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/5/2020
+*Updated 10/8/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -37,11 +37,10 @@ r.FinishCurrentFrame=0;
 r.OneFrameThreadLag=1;
 r.GTSyncType=0;
 r.GPUCrashDebugging=0;
-r.Shaders.FastMath=1;
 r.CompileShadersForDevelopment=0;
 r.ScreenPercentage=100;
 r.SceneRenderTargetResizeMethod=0;
-r.Upscale.Quality=0;
+r.Upscale.Quality=1;
 r.DiscardUnusedQuality=1;
 r.SceneColorFormat=3;
 r.GenerateMeshDistanceFields=1;
@@ -78,8 +77,8 @@ r.Streaming.HiddenPrimitiveScale=0;
 r.Streaming.HLODStrategy=0;
 r.ViewDistanceScale=0.8;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0; 1 for SANDSTORM
-r.SkeletalMeshLODRadiusScale=1;
-r.StaticMeshLODDistanceScale=1;
+r.SkeletalMeshLODRadiusScale=0.8; 1 for PERFORMANCE
+r.StaticMeshLODDistanceScale=0.8; 1 for PERFORMANCE
 r.HLOD=1;
 r.HLOD.MaximumLevel=-1;
 r.HLOD.DistanceScale=1;
@@ -96,9 +95,13 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
 r.AllowLandscapeShadows=0;
 r.ContactShadows=0;
 r.CapsuleShadows=0;
-r.Tonemapper.Quality=3;
+ShowFlag.Vignette=0;
+r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;
+r.TemporalAASamples=2 ;
+r.TemporalAACurrentFrameWeight=0.15 ;
+r.TemporalAA.Upsampling=0 ;
 r.DistanceFieldShadowing=1; 0 for PERFORMANCE
 r.DFShadowQuality=1;
 r.DFFullResolution=0;
@@ -106,7 +109,7 @@ r.DistanceFieldAO=0;
 r.AOQuality=0;
 r.DefaultFeature.AmbientOcclusionStaticFraction=0;
 r.AmbientOcclusionStaticFraction=0;
-r.AmbientOcclusionMipLevelFactor=0.4;
+r.AmbientOcclusionMipLevelFactor=1;
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionLevels=2; 0 for PERFORMANCE
 r.AmbientOcclusion.Compute=0;
@@ -121,19 +124,21 @@ r.LightShaftBlurPasses=0;
 r.TranslucencyLightingVolume=1;
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=64; 32 for PERFORMANCE
-r.VolumetricFog=0;
+r.VolumetricFog=1; 0 for PERFORMANCE
+r.VolumetricFog.GridPixelSize=16;
+r.VolumetricFog.GridSizeZ=64;
 r.ReflectionEnvironment=1; 0 for PERFORMANCE
 r.SSR.Quality=0;
 r.SSR.MaxRoughness=0.8;
 r.MaterialQualityLevel=1; 0 for PERFORMANCE
 r.SupportMaterialLayers=0;
-r.SubsurfaceScattering=1; 0 for PERFORMANCE
-r.SSS.Scale=1;
-r.SSS.SampleSet=2;
-r.SSS.Quality=0;
+r.SubsurfaceScattering=0; 0 for PERFORMANCE
+r.SSS.Scale=0;
+r.SSS.SampleSet=0;
+r.SSS.Quality=-1;
 r.SSS.HalfRes=1;
-r.SSS.Filter=1;
-r.SSS.Checkerboard=1;
+r.SSS.Filter=0;
+r.SSS.Checkerboard=2;
 r.DetailMode=2; 0 for PERFORMANCE
 r.RefractionQuality=1; 0 for PERFORMANCE
 r.ParticleLightQuality=1; 0 for PERFORMANCE
