@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/8/2020 x1
+*Updated 10/8/2020 x2
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -45,9 +45,9 @@ r.DiscardUnusedQuality=1;
 r.SceneColorFormat=3;
 r.GenerateMeshDistanceFields=1;
 r.AllowStaticLighting=0; 1 for SANDSTORM
-r.NormalMapsForStaticLighting=1;
+r.NormalMapsForStaticLighting=0;
 r.HighQualityLightMaps=1;
-r.GenerateLandscapeGIData=0;
+r.GenerateLandscapeGIData=1;
 r.AOSpecularOcclusionMode=1;
 r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
@@ -155,6 +155,7 @@ r.EyeAdaptationQuality=0;
 r.DefaultFeature.AutoExposure.Method=0;
 grass.DensityScale=0.6;
 foliage.DensityScale=0.6;
+r.SeparateTranslucency=0;
 
 
 -----------end-----------
