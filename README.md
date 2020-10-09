@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/9/2020
+*Updated 10/9/2020~
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -38,9 +38,12 @@ r.OneFrameThreadLag=1;
 r.GTSyncType=0;
 r.GPUCrashDebugging=0;
 r.CompileShadersForDevelopment=0;
+r.CreateShadersOnLoad=1;
+r.EarlyZPass=2;
+r.EarlyZPassMovable=1;
 r.ScreenPercentage=100;
 r.SceneRenderTargetResizeMethod=0;
-r.Upscale.Quality=1;
+r.Upscale.Quality=0;
 r.DiscardUnusedQuality=1;
 r.SceneColorFormat=3;
 r.GenerateMeshDistanceFields=1;
@@ -77,7 +80,7 @@ r.Streaming.HiddenPrimitiveScale=0;
 r.Streaming.HLODStrategy=0;
 r.ViewDistanceScale=0.8;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0; 1 for SANDSTORM
-r.SkeletalMeshLODRadiusScale=0.8; 1 for PERFORMANCE
+r.SkeletalMeshLODRadiusScale=1; 1 for PERFORMANCE
 r.StaticMeshLODDistanceScale=0.8; 1 for PERFORMANCE
 r.HLOD=1;
 r.HLOD.MaximumLevel=-1;
@@ -124,9 +127,11 @@ r.LightShaftBlurPasses=0;
 r.TranslucencyLightingVolume=1;
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=64; 32 for PERFORMANCE
+r.SeparateTranslucency=0;
 r.VolumetricFog=1; 0 for PERFORMANCE
 r.VolumetricFog.GridPixelSize=16;
 r.VolumetricFog.GridSizeZ=64;
+r.VolumetricFog.InjectShadowedLightsSeparately=0; 0 for PERFORMANCE
 r.ReflectionEnvironment=1; 0 for PERFORMANCE
 r.SSR.Quality=0;
 r.SSR.MaxRoughness=0.8;
@@ -155,7 +160,6 @@ r.EyeAdaptationQuality=0;
 r.DefaultFeature.AutoExposure.Method=0;
 grass.DensityScale=0.6;
 foliage.DensityScale=0.6;
-r.SeparateTranslucency=0;
 
 
 -----------end-----------
