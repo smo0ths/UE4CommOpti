@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/8/2020 x2
+*Updated 10/9/2020
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
@@ -86,7 +86,7 @@ r.HLOD.DistanceOverride=10000;
 r.ShadowQuality=3; 0 for PERFORMANCE
 r.Shadow.CSM.MaxCascades=2; 1 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;
-r.Shadow.SpotLightTransitionScale=2048; 1024 for PERFORMANCE
+r.Shadow.SpotLightTransitionScale=1024;
 r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048; 1024 for PERFORMANCE
 r.Shadow.RadiusThreshold=0.04;
