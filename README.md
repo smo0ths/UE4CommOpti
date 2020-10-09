@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/9/2020 *added TextureLODGroups tweaks (updates will happen more because of little tweaks here and there so check)
+*Updated 10/9/2020~ *added TextureLODGroups tweaks (updates will happen more because of little tweaks here and there so check)
 *For UE4 games for reference/customization/optimization/learning
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
