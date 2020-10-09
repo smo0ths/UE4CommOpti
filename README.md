@@ -199,7 +199,7 @@ sg.EffectsQuality=0
 sg.FoliageQuality=0
 
 
-Other commands to test some devs forget proper settings:
+Other commands to test some devs forget proper settings: (some of these prob need to go into [/Script/Engine.InputSettings] somehow idk)
 
 FullscreenMode=0
 bAltEnterTogglesFullscreen=1
