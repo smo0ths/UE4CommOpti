@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/12/2020~         (added TextureLODGroups tweaks)
+*Updated 10/12/2020         (added TextureLODGroups tweaks)
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -55,11 +55,11 @@ r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
 r.TiledDeferredShading=1;
 r.TiledDeferredShading.MinimumCount=20;
-r.TessellationAdaptivePixelsPerTriangle=9999999;
+r.TessellationAdaptivePixelsPerTriangle=900;
 r.MipMapLODBias=0;
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
-r.ParticleLODBias=0;
+r.ParticleLODBias=-1;
 r.MaxAnisotropy=16;
 r.TextureStreaming=1;
 r.RenderTargetPoolMin=400;
