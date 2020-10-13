@@ -21,8 +21,7 @@ Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini
 My config for Squad/Sandstorm/other UE4 games Copy/Paste this:
 
 [Core.Log]
-LogAnalytics=all off;
-Global=all off;
+Global=off;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=40 ;
