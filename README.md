@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/14/2020       (added TextureLODGroups tweaks)
+*Updated 10/14/2020~       (added TextureLODGroups tweaks)
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -24,7 +24,7 @@ My config for Squad/Sandstorm/other UE4 games Copy/Paste this:
 Global=off;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=40 ;
+PoolSizeVRAMPercentage=40;
 
 [SystemSettings]
 ShowFlag.Tessellation=0;
@@ -123,7 +123,7 @@ r.AmbientOcclusionLevels=2; 0 for PERFORMANCE
 r.AmbientOcclusion.Compute=0;
 r.AmbientOcclusionRadiusScale=0;
 r.AmbientOcclusion.FadeRadiusScale=0.6;
-r.LightFunctionQuality=1; 0 for PERFORMANCE
+r.LightFunctionQuality=1;
 r.LightMaxDrawDistanceScale=0.5; 0 for PERFORMANCE
 r.LightShaftQuality=0;
 r.LightShaftDownSampleFactor=0;
@@ -200,19 +200,23 @@ sg.PostProcessQuality=0
 sg.TextureQuality=0
 sg.EffectsQuality=0
 sg.FoliageQuality=0
+sg.ShadingQuality=0
 
 FullscreenMode=0
-bAltEnterTogglesFullscreen=1; this needs to be in [/Script/Engine.InputSettings] i think but haven't looked into it 
-bF11TogglesFullscreen=0; this needs to be in [/Script/Engine.InputSettings] i think but haven't looked into it 
 bUseDynamicResolution=0
-bPauseOnLossOfFocus=0
-bUseFixedFrameRate=0
-bEnableMouseSmoothing=0; this needs to be in [/Script/Engine.InputSettings] i think but haven't looked into it 
-bEnableFrameRateSmoothing=0
-bSmoothFrameRate=0
 bUseVSync=0 
 FrameRateLimit=144.000000
 AudioQualityLevel=3
+
+these need to be into [/Script/Engine.InputSettings]? idk
+
+bPauseOnLossOfFocus=0
+bAltEnterTogglesFullscreen=1
+bF11TogglesFullscreen=0
+bUseFixedFrameRate=0
+bEnableMouseSmoothing=0
+bEnableFrameRateSmoothing=0
+bSmoothFrameRate=0
 
 
 -----------end-----------
