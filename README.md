@@ -227,7 +227,7 @@ Open DeviceProfiles.ini
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
-Test yourself, also if you lower res maybe test MipGenSettings=TMGS_Sharpen3 (0/5~ e.g. TMGS_Sharpen4)
+Test yourself, also if you lower MaxLODSize= maybe test MipGenSettings=TMGS_Sharpen3 (0/5~ e.g. TMGS_Sharpen4)
 
 
 My TextureLODGroups Copy/Paste this:
