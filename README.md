@@ -204,7 +204,7 @@ Open GameUserSettings.ini
 Some settings in here will overwrite Engine.ini so set them the way you want and search for more, edit:
 
 bUseVSync=0 
-FullscreenMode=0
+FullscreenMode=1
 bUseDynamicResolution=0
 FrameRateLimit=0
 AudioQualityLevel=3
