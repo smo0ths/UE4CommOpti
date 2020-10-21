@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/20/2020      (added engine/input/TextureLODGroups edits)
+*Updated 10/21/2020      (added engine/input/TextureLODGroups edits)
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -46,7 +46,7 @@ r.ShaderComplexity.CacheShaders=1;
 r.RHICmdBypass=0;
 r.EarlyZPass=3;
 r.EarlyZPassMovable=1;
-r.HZBOcclusion=0;
+r.HZBOcclusion=1;
 r.ScreenPercentage=100;
 r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
