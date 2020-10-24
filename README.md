@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/24/2020      
+*Updated 10/24/2020~      
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -55,6 +55,8 @@ r.SceneColorFormat=4;
 r.DefaultBackBufferPixelFormat=4;
 r.GBufferFormat=1;
 r.GenerateMeshDistanceFields=1; 0 for SANDSTORM
+r.DistanceFieldBuild.EightBit=0;
+r.DistanceFieldBuild.Compress=0;
 r.AllowStaticLighting=0; 1 for SANDSTORM
 r.NormalMapsForStaticLighting=0;
 r.HighQualityLightMaps=1;
@@ -99,7 +101,7 @@ r.HLOD.DistanceOverride=10000;
 r.ShadowQuality=3;
 r.Shadow.CSM.MaxCascades=2; 1 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;
-r.Shadow.CSMShadowDistanceFadeoutMultiplier=0;
+r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;
 r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048; 1024 for PERFORMANCE
 r.Shadow.RadiusThreshold=0.04;
@@ -107,7 +109,7 @@ r.Shadow.DistanceScale=0.6;
 r.Shadow.SpotLightTransitionScale=512;
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.WholeSceneShadowCacheMb=50;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
 r.SupportPointLightWholeSceneShadows=0;
 r.AllowLandscapeShadows=1; 0 for PERFORMANCE
 r.ContactShadows=0;
@@ -139,6 +141,7 @@ r.AmbientOcclusionRadiusScale=0;
 r.AmbientOcclusion.FadeRadiusScale=0.6;
 r.SupportStationarySkylight=1;
 r.SkyLightingQuality=1;
+r.LightPropagationVolume=0;
 r.LightFunctionQuality=1;
 r.LightMaxDrawDistanceScale=0.5; 0 for PERFORMANCE
 r.LightShaftQuality=1;
@@ -160,6 +163,8 @@ r.VolumetricFog.GridPixelSize=16;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.InjectShadowedLightsSeparately=0;
 r.ReflectionEnvironment=1; 0 for PERFORMANCE
+r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;
+r.ReflectionCaptureResolution=128;
 r.SSR.Quality=0;
 r.SSR.HalfResSceneColor=1;
 r.SSR.MaxRoughness=0.8;
@@ -176,17 +181,15 @@ r.SSS.Filter=0;
 r.SSS.Checkerboard=2;
 r.DetailMode=2; 0 for PERFORMANCE
 r.RefractionQuality=1; 0 for PERFORMANCE
-r.ReflectionCaptureResolution=128;
 r.ParticleLightQuality=1; 0 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=8;
 r.EmitterSpawnRateScale=1; 0.25 for PERFORMANCE
 r.Emitter.FastPoolEnable=1;
 r.GpuSkin.Pool=1;
-r.GPUSkin.Limit2BoneInfluences=1;
 FX.MaxCPUParticlesPerEmitter=50;
 FX.MaxGPUParticlesSpawnedPerFrame=512;
-FX.GPUSimulationTextureSizeX=512;
-FX.GPUSimulationTextureSizeY=512;
+FX.GPUSimulationTextureSizeX=1024;
+FX.GPUSimulationTextureSizeY=1024;
 r.DoTiledReflections=0;
 r.TiledDeferredShading=0;
 r.TiledDeferredShading.MinimumCount=0;
