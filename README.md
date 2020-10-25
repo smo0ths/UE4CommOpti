@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/25/2020~     
+*Updated 10/25/2020~~     
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -46,6 +46,7 @@ r.RHICmdBypass=0;
 r.EarlyZPass=3;
 r.EarlyZPassMovable=1;
 r.HZBOcclusion=0;
+r.DoInitViewsLightingAfterPrepass=1;
 r.ScreenPercentage=100;
 r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
@@ -63,6 +64,9 @@ r.GenerateLandscapeGIData=1;
 r.TessellationAdaptivePixelsPerTriangle=9999999;
 r.VirtualTexture=1;
 r.VirtualTexturedLightmaps=1;
+r.IncludeNonVirtualTexturedLightmaps=1;
+r.VT.EnableLossyCompressLightmaps=0;
+r.VirtualTextureReducedMemory=0;
 r.AllowOcclusionQueries=1;
 r.MinScreenRadiusForLights=0.03;
 r.MinScreenRadiusForDepthPrepass=0.03;
@@ -81,7 +85,7 @@ r.Streaming.PoolSize=1000;
 r.Streaming.UseAllMips=0;
 r.Streaming.MipBias=0;
 r.Streaming.UsePerTextureBias=1;
-r.Streaming.AmortizeCPUToGPUCopy=1;
+r.Streaming.AmortizeCPUToGPUCopy=0;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.Boost=1;
@@ -148,9 +152,9 @@ r.LightFunctionQuality=1;
 r.LightMaxDrawDistanceScale=0.5;      0 for PERFORMANCE
 r.LightShaftQuality=1;
 r.LightShaftDownSampleFactor=0;
-r.LightShaftFirstPassDistance=0.25;
-r.LightShaftBlurPasses=1;
-r.LightShaftNumSamples=8;
+r.LightShaftFirstPassDistance=0.1;
+r.LightShaftBlurPasses=2;
+r.LightShaftNumSamples=1;
 r.LightShaftRenderToSeparateTranslucency=0;
 r.TranslucencyLightingVolume=1;
 r.TranslucencyVolumeBlur=1;
