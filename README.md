@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/25/2020~~     
+*Updated 10/25/2020~~~     
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -43,6 +43,8 @@ r.GPUCrashDebugging=0;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
 r.RHICmdBypass=0;
+r.RHICmdUseParallelAlgorithms=1;
+r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;
 r.EarlyZPass=3;
 r.EarlyZPassMovable=1;
 r.HZBOcclusion=0;
@@ -97,6 +99,7 @@ r.Streaming.HiddenPrimitiveScale=0;
 r.Streaming.HLODStrategy=0;
 r.ViewDistanceScale=0.8;
 r.ViewDistanceScale.ApplySecondaryScale=0;
+r.ViewDistanceScale.SecondaryScale=1;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;
 r.StaticMeshLODDistanceScale=1;
@@ -114,8 +117,11 @@ r.Shadow.RadiusThreshold=0.04;
 r.Shadow.DistanceScale=0.6;
 r.Shadow.SpotLightTransitionScale=2048;
 r.Shadow.CacheWholeSceneShadows=1;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1;
+r.ParallelShadow=0;
 r.SupportPointLightWholeSceneShadows=0;
+r.ParallelShadowsNonWholeScene=0;
 r.AllowLandscapeShadows=1;      0 for PERFORMANCE
 r.ContactShadows=0;
 r.CapsuleShadows=0;
@@ -148,6 +154,7 @@ r.AmbientOcclusion.FadeRadiusScale=0.6;
 r.SupportStationarySkylight=1;
 r.SkyLightingQuality=1;
 r.LightPropagationVolume=0;
+r.LightCulling.Quality=1;
 r.LightFunctionQuality=1;
 r.LightMaxDrawDistanceScale=0.5;      0 for PERFORMANCE
 r.LightShaftQuality=1;
@@ -175,7 +182,6 @@ r.SSR.Quality=0;
 r.SSR.HalfResSceneColor=1;
 r.SSR.MaxRoughness=0.8;
 r.MaterialQualityLevel=1;      0 for PERFORMANCE
-r.PostProcessing.DisableMaterials=0;
 r.SupportMaterialLayers=0;
 r.IrisNormal=0;
 r.SubsurfaceScattering=0;
@@ -196,7 +202,7 @@ FX.MaxCPUParticlesPerEmitter=50;
 FX.MaxGPUParticlesSpawnedPerFrame=512;
 FX.GPUSimulationTextureSizeX=1024;
 FX.GPUSimulationTextureSizeY=1024;
-r.DoTiledReflections=0;
+r.DoTiledReflections=1;
 r.TiledDeferredShading=0;
 r.TiledDeferredShading.MinimumCount=0;
 r.LensFlareQuality=0;
