@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/25/2020     
+*Updated 10/25/2020~     
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -63,6 +63,10 @@ r.GenerateLandscapeGIData=1;
 r.TessellationAdaptivePixelsPerTriangle=9999999;
 r.VirtualTexture=1;
 r.VirtualTexturedLightmaps=1;
+r.AllowOcclusionQueries=1;
+r.MinScreenRadiusForLights=0.03;
+r.MinScreenRadiusForDepthPrepass=0.03;
+r.MinScreenRadiusForCSMDepth=0.01;
 r.MipMapLODBias=0;
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
