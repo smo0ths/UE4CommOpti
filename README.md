@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/30/2020  
+*Updated 10/30/2020~  
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -36,8 +36,9 @@ PoolSizeVRAMPercentage=40;
 r.GPUCrashDebugging=0;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
-r.EarlyZPass=3;
+r.EarlyZPass=2;
 r.EarlyZPassMovable=1;
+r.EarlyZPassOnlyMaterialMasking=1;
 r.FinishCurrentFrame=0;
 r.OneFrameThreadLag=1;
 r.GTSyncType=0;
@@ -49,7 +50,7 @@ r.GPUSkin.Limit2BoneInfluences=1;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.MinScreenRadiusForLights=0.04;
 r.MinScreenRadiusForDepthPrepass=0.04;
-r.MinScreenRadiusForCSMDepth=0.02;
+r.MinScreenRadiusForCSMDepth=0.01;
 r.MinScreenRadiusForSmallLights=0.02;
 r.SceneColorFormat=3;------------------format
 r.DefaultBackBufferPixelFormat=0;
@@ -184,10 +185,9 @@ FX.MaxCPUParticlesPerEmitter=32;
 FX.MaxGPUParticlesSpawnedPerFrame=32;
 r.TiledDeferredShading=0;--------------tiled deferred shading
 r.TiledDeferredShading.MinimumCount=0;
-r.DefaultFeature.AutoExposure=1;-------eye adaptation 0 for PERFORMANCE
-r.EyeAdaptationQuality=2;--------------0 for PERFORMANCE
+r.DefaultFeature.AutoExposure=1;-------eye adaptation
+r.EyeAdaptationQuality=0;
 r.DefaultFeature.AutoExposure.Method=0;
-r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
 r.VSync=0;-----------------------------misc
 r.AllowHDR=0;
 r.RenderTargetPoolMin=400;
