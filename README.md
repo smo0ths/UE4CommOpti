@@ -46,7 +46,6 @@ r.DefaultFeature.LightUnits=0;
 r.SkinCache.Mode=1;
 r.GpuSkin.Pool=1;
 r.GPUSkin.Limit2BoneInfluences=1;
-r.OptimizeForUAVPerformance=1;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.MinScreenRadiusForLights=0.04;
 r.MinScreenRadiusForDepthPrepass=0.04;
