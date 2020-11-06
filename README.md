@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/30/2020~  
+*Updated 11/6/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -46,7 +46,6 @@ r.HZBOcclusion=0;
 r.DefaultFeature.LightUnits=0;
 r.SkinCache.Mode=1;
 r.GpuSkin.Pool=1;
-r.GPUSkin.Limit2BoneInfluences=1;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.MinScreenRadiusForLights=0.04;
 r.MinScreenRadiusForDepthPrepass=0.04;
