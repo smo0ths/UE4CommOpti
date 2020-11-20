@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 11/20/2020
+*Updated 11/20/2020~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -47,10 +47,10 @@ r.GpuSkin.Pool=1;
 r.DrawRectangleOptimization=1;
 r.Downsample.Quality=0;
 r.AllowOcclusionQueries=1;-------------occlusion queries
-r.MinScreenRadiusForLights=0.04;
-r.MinScreenRadiusForDepthPrepass=0.04;
+r.MinScreenRadiusForLights=0.03;
+r.MinScreenRadiusForDepthPrepass=0.03;
 r.MinScreenRadiusForCSMDepth=0.01;
-r.MinScreenRadiusForSmallLights=0.02;
+r.MinScreenRadiusForSmallLights=0.01;
 r.SceneColorFormat=3;------------------format
 r.DefaultBackBufferPixelFormat=0;
 r.ScreenPercentage=100;----------------scaling stuff
@@ -62,7 +62,7 @@ r.GBufferFormat=1;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
-r.ClearCoatNormal=0;
+r.ClearCoatNormal=1;
 Compat.UseDXT5NormalMaps=0;
 r.HighQualityLightMaps=1;
 r.SupportLowQualityLightmaps=0;
@@ -79,7 +79,7 @@ r.ViewDistanceScale=0.8;---------------view distance
 r.ViewDistanceScale.ApplySecondaryScale=0;
 r.ViewDistanceScale.SecondaryScale=1;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.HLOD=1;
+r.HLOD=0;
 r.HLOD.MaximumLevel=-1;
 r.HLOD.DistanceScale=0.8;
 r.HLOD.DistanceOverride=10000;
@@ -113,7 +113,9 @@ r.Shadow.RadiusThreshold=0.04;
 r.Shadow.DistanceScale=0.6;
 r.Shadow.SpotLightTransitionScale=1024;
 r.Shadow.CacheWholeSceneShadows=1;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
+r.HFShadowQuality=1;
 r.ParallelShadow=0;
 r.SupportPointLightWholeSceneShadows=0;
 r.ParallelShadowsNonWholeScene=0;
@@ -124,7 +126,7 @@ r.DistanceFieldShadowing=1;------------0 for PERFORMANCE 0 for SANDSTORM
 r.DFShadowQuality=1;
 r.DFTwoSidedMeshDistanceBias=0;
 r.DFFullResolution=0;
-r.Tonemapper.Quality=2;
+r.Tonemapper.Quality=2;----------------0 for SANDSTORM
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;
 r.TemporalAASamples=2;-----------------taa
@@ -132,18 +134,18 @@ r.TemporalAACurrentFrameWeight=0.2;
 r.TemporalAA.Upsampling=0;
 r.TemporalAASharpness=0;
 r.DistanceFieldAO=1;-------------------dfao 0 for PERFORMANCE
+r.SkySpecularOcclusionStrength=0;
 r.AOSpecularOcclusionMode=1;
 r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
 r.AOQuality=1; 0 for PERFORMANCE
 r.AmbientOcclusionLevels=3;------------ssao 0 for no ssao
 r.AmbientOcclusionStaticFraction=0;
-r.AmbientOcclusionMipLevelFactor=0.5;
-r.AmbientOcclusionMaxQuality=-100;
+r.AmbientOcclusionMipLevelFactor=0.4;
+r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionSampleSetQuality=-1;
 r.AmbientOcclusion.Compute=0;
 r.AmbientOcclusionRadiusScale=0;
-r.AmbientOcclusion.FadeRadiusScale=1;
 r.LightShaftQuality=1;-----------------lightshafts
 r.LightShaftDownSampleFactor=0;
 r.LightShaftFirstPassDistance=0.1;
@@ -165,6 +167,7 @@ r.ReflectionEnvironment=1;-------------reflection environment 0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;
 r.DoTiledReflections=0;----------------tiled reflection
 r.NoTiledReflections=1;
+r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=64;
 r.SSR.Quality=0;-----------------------ssr
 r.SSR.HalfResSceneColor=1;
