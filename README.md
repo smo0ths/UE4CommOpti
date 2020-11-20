@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 11/6/2020~
+*Updated 11/20/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -16,8 +16,6 @@ Open Engine.ini and copy/paste commands/configs:
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
-Copy/Paste:  %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini 
-
 
 My config:
 
@@ -36,8 +34,9 @@ PoolSizeVRAMPercentage=40;
 r.GPUCrashDebugging=0;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
-r.EarlyZPass=2;
-r.EarlyZPassMovable=1;
+r.DBuffer=0;
+r.EarlyZPass=3;
+r.EarlyZPassMovable=0;
 r.EarlyZPassOnlyMaterialMasking=1;
 r.FinishCurrentFrame=0;
 r.OneFrameThreadLag=1;
@@ -45,6 +44,8 @@ r.GTSyncType=0;
 r.HZBOcclusion=0;
 r.SkinCache.Mode=1;
 r.GpuSkin.Pool=1;
+r.DrawRectangleOptimization=1;
+r.Downsample.Quality=0;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.MinScreenRadiusForLights=0.04;
 r.MinScreenRadiusForDepthPrepass=0.04;
@@ -61,6 +62,7 @@ r.GBufferFormat=1;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
+r.ClearCoatNormal=0;
 Compat.UseDXT5NormalMaps=0;
 r.HighQualityLightMaps=1;
 r.SupportLowQualityLightmaps=0;
@@ -105,14 +107,13 @@ r.ShadowQuality=3;---------------------shadows 0 for no shadows
 r.Shadow.CSM.MaxCascades=1;
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;
-r.Shadow.MaxResolution=4;
+r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.RadiusThreshold=0.04;
 r.Shadow.DistanceScale=0.6;
 r.Shadow.SpotLightTransitionScale=1024;
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
 r.ParallelShadow=0;
 r.SupportPointLightWholeSceneShadows=0;
 r.ParallelShadowsNonWholeScene=0;
@@ -130,19 +131,19 @@ r.TemporalAASamples=2;-----------------taa
 r.TemporalAACurrentFrameWeight=0.2;
 r.TemporalAA.Upsampling=0;
 r.TemporalAASharpness=0;
-r.DistanceFieldAO=0;-------------------dfao
+r.DistanceFieldAO=1;-------------------dfao 0 for PERFORMANCE
 r.AOSpecularOcclusionMode=1;
 r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
-r.AOQuality=0;
-r.AmbientOcclusionLevels=2;------------ssao 0 for no ssao
+r.AOQuality=1; 0 for PERFORMANCE
+r.AmbientOcclusionLevels=3;------------ssao 0 for no ssao
 r.AmbientOcclusionStaticFraction=0;
-r.AmbientOcclusionMipLevelFactor=1;
-r.AmbientOcclusionMaxQuality=100;
-r.AmbientOcclusionSampleSetQuality=0;
+r.AmbientOcclusionMipLevelFactor=0.5;
+r.AmbientOcclusionMaxQuality=-100;
+r.AmbientOcclusionSampleSetQuality=-1;
 r.AmbientOcclusion.Compute=0;
 r.AmbientOcclusionRadiusScale=0;
-r.AmbientOcclusion.FadeRadiusScale=0.6;
+r.AmbientOcclusion.FadeRadiusScale=1;
 r.LightShaftQuality=1;-----------------lightshafts
 r.LightShaftDownSampleFactor=0;
 r.LightShaftFirstPassDistance=0.1;
@@ -205,15 +206,6 @@ r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=0;
 grass.DensityScale=0.6;
 foliage.DensityScale=0.6;
-r.VirtualTexture=1;
-r.VirtualTexturedLightmaps=1;
-r.VirtualTextureReducedMemory=1;
-r.VT.MaxUploadsPerFrame=64;
-r.VT.RVT.TileCountBias=-1;
-r.IncludeNonVirtualTexturedLightmaps=0;
-r.VT.EnableLossyCompressLightmaps=0;
-r.Downsample.Quality=3;
-r.DrawRectangleOptimization=1;
 
 
 -----------end-----------
