@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 11/20/2020~
+*Updated 11/25/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -45,8 +45,9 @@ r.HZBOcclusion=0;
 r.SkinCache.Mode=1;
 r.GpuSkin.Pool=1;
 r.DrawRectangleOptimization=1;
-r.Downsample.Quality=0;
+r.so.SIMD=1;
 r.AllowOcclusionQueries=1;-------------occlusion queries
+r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.03;
 r.MinScreenRadiusForDepthPrepass=0.03;
 r.MinScreenRadiusForCSMDepth=0.01;
@@ -56,13 +57,13 @@ r.DefaultBackBufferPixelFormat=0;
 r.ScreenPercentage=100;----------------scaling stuff
 r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
-r.GenerateMeshDistanceFields=1;--------generate 0 for SANDSTORM
+r.GenerateMeshDistanceFields=1;--------0 for PERFORMANCE
 r.GenerateLandscapeGIData=1;
 r.GBufferFormat=1;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
-r.ClearCoatNormal=1;
+r.ClearCoatNormal=0;
 Compat.UseDXT5NormalMaps=0;
 r.HighQualityLightMaps=1;
 r.SupportLowQualityLightmaps=0;
@@ -107,26 +108,31 @@ r.ShadowQuality=3;---------------------shadows 0 for no shadows
 r.Shadow.CSM.MaxCascades=1;
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;
-r.Shadow.MaxResolution=1024;
+r.Shadow.MaxResolution=2048;
 r.Shadow.MaxCSMResolution=2048;
-r.Shadow.RadiusThreshold=0.04;
+r.Shadow.RadiusThreshold=0.03;
 r.Shadow.DistanceScale=0.6;
-r.Shadow.SpotLightTransitionScale=1024;
+r.Shadow.PreShadowResolutionFactor=0.5;
+r.Shadow.SpotLightTransitionScale=60;
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
-r.HFShadowQuality=1;
+r.Shadow.CachePreshadow=1;
+r.Shadow.FadeResolution=64;
+r.Shadow.MinResolution=32;
+r.Shadow.TexelsPerPixel=1.27324;
+r.AllowPointLightCubemapShadows=0;
 r.ParallelShadow=0;
 r.SupportPointLightWholeSceneShadows=0;
 r.ParallelShadowsNonWholeScene=0;
 r.AllowLandscapeShadows=1;-------------0 for PERFORMANCE
 r.ContactShadows=0;
 r.CapsuleShadows=0;
-r.DistanceFieldShadowing=1;------------0 for PERFORMANCE 0 for SANDSTORM
+r.DistanceFieldShadowing=1;------------0 for PERFORMANCE
 r.DFShadowQuality=1;
 r.DFTwoSidedMeshDistanceBias=0;
 r.DFFullResolution=0;
-r.Tonemapper.Quality=2;----------------0 for SANDSTORM
+r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;
 r.TemporalAASamples=2;-----------------taa
@@ -134,16 +140,17 @@ r.TemporalAACurrentFrameWeight=0.2;
 r.TemporalAA.Upsampling=0;
 r.TemporalAASharpness=0;
 r.DistanceFieldAO=1;-------------------dfao 0 for PERFORMANCE
-r.SkySpecularOcclusionStrength=0;
+r.AOComputeShaderNormalCalculation=1;
+r.SkySpecularOcclusionStrength=1;
 r.AOSpecularOcclusionMode=1;
 r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
 r.AOQuality=1; 0 for PERFORMANCE
-r.AmbientOcclusionLevels=3;------------ssao 0 for no ssao
+r.AmbientOcclusionLevels=2;------------ssao 0 for no ssao
 r.AmbientOcclusionStaticFraction=0;
 r.AmbientOcclusionMipLevelFactor=0.4;
 r.AmbientOcclusionMaxQuality=100;
-r.AmbientOcclusionSampleSetQuality=-1;
+r.AmbientOcclusionSampleSetQuality=2;
 r.AmbientOcclusion.Compute=0;
 r.AmbientOcclusionRadiusScale=0;
 r.LightShaftQuality=1;-----------------lightshafts
@@ -184,7 +191,7 @@ r.ParticleMinTimeBetweenTicks=8;-------16 for around 60 fps
 r.EmitterSpawnRateScale=1;-------------0.25 for PERFORMANCE
 r.Emitter.FastPoolEnable=1;
 r.TiledDeferredShading=1;--------------tiled deferred shading
-r.TiledDeferredShading.MinimumCount=80;
+r.TiledDeferredShading.MinimumCount=10;
 r.DefaultFeature.AutoExposure=1;-------eye adaptation
 r.EyeAdaptationQuality=0;
 r.DefaultFeature.AutoExposure.Method=0;
@@ -209,6 +216,14 @@ r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=0;
 grass.DensityScale=0.6;
 foliage.DensityScale=0.6;
+r.VirtualTexture=1;
+r.VirtualTexturedLightmaps=1;
+r.VirtualTextureReducedMemory=1;
+r.VT.MaxUploadsPerFrame=64;
+r.VT.RVT.TileCountBias=-1;
+r.IncludeNonVirtualTexturedLightmaps=0;
+r.VT.EnableLossyCompressLightmaps=0;
+r.VT.EnableCompressCrunch=1;
 
 
 -----------end-----------
