@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 11/25/2020
+*Updated 11/26/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -45,7 +45,9 @@ r.HZBOcclusion=0;
 r.SkinCache.Mode=1;
 r.GpuSkin.Pool=1;
 r.DrawRectangleOptimization=1;
-r.so.SIMD=1;
+r.D3D11.Depth24Bit=1;
+r.D3D11.AutoFlushUAV=1;
+r.D3D11.NVAutoFlushUAV=1;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.03;
@@ -107,27 +109,24 @@ r.Streaming.HLODStrategy=0;
 r.ShadowQuality=3;---------------------shadows 0 for no shadows
 r.Shadow.CSM.MaxCascades=1;
 r.Shadow.CSM.TransitionScale=1;
+r.Shadow.SpotLightTransitionScale=1;
+r.Shadow.PointLightTransitionScale=1;
+r.Shadow.TransitionScale=1;
 r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;
 r.Shadow.MaxResolution=2048;
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.RadiusThreshold=0.03;
 r.Shadow.DistanceScale=0.6;
-r.Shadow.PreShadowResolutionFactor=0.5;
-r.Shadow.SpotLightTransitionScale=60;
 r.Shadow.CacheWholeSceneShadows=1;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
-r.Shadow.CachePreshadow=1;
-r.Shadow.FadeResolution=64;
-r.Shadow.MinResolution=32;
-r.Shadow.TexelsPerPixel=1.27324;
 r.AllowPointLightCubemapShadows=0;
 r.ParallelShadow=0;
 r.SupportPointLightWholeSceneShadows=0;
 r.ParallelShadowsNonWholeScene=0;
-r.AllowLandscapeShadows=1;-------------0 for PERFORMANCE
 r.ContactShadows=0;
 r.CapsuleShadows=0;
+r.AllowLandscapeShadows=1;-------------0 for PERFORMANCE
 r.DistanceFieldShadowing=1;------------0 for PERFORMANCE
 r.DFShadowQuality=1;
 r.DFTwoSidedMeshDistanceBias=0;
@@ -170,16 +169,17 @@ r.VolumetricFog=0;
 r.VolumetricFog.GridPixelSize=16;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.InjectShadowedLightsSeparately=0;
-r.ReflectionEnvironment=1;-------------reflection environment 0 for PERFORMANCE
+r.ReflectionEnvironment=2;-------------reflection environment 0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;
+r.chaos.ReflectionCaptureStaticSceneOnly=1;
 r.DoTiledReflections=0;----------------tiled reflection
 r.NoTiledReflections=1;
 r.ReflectionCaptureGPUArrayCopy=1;
-r.ReflectionCaptureResolution=64;
+r.ReflectionCaptureResolution=128;
 r.SSR.Quality=0;-----------------------ssr
 r.SSR.HalfResSceneColor=1;
 r.SSR.MaxRoughness=0.8;
-r.SubsurfaceScattering=0;--------------sss
+r.SubsurfaceScattering=1;--------------sss 0 for PERFORMANCE
 r.SSS.Scale=1;
 r.SSS.SampleSet=0;
 r.SSS.Quality=-1;
