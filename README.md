@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 11/26/2020~
+*Updated 11/28/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -177,7 +177,7 @@ r.DoTiledReflections=1;----------------tiled reflection
 r.NoTiledReflections=0;
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128;
-r.SSR.Quality=3;-----------------------ssr
+r.SSR.Quality=3;-----------------------ssr 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;
 r.SSR.MaxRoughness=0.8;
 r.SubsurfaceScattering=0;--------------sss 0 for PERFORMANCE
