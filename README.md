@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 11/28/2020
+*Updated 11/30/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -137,13 +137,13 @@ r.TemporalAASamples=2;-----------------taa
 r.TemporalAACurrentFrameWeight=0.2;
 r.TemporalAA.Upsampling=0;
 r.TemporalAASharpness=0;
-r.DistanceFieldAO=1;-------------------dfao 0 for PERFORMANCE
+r.DistanceFieldAO=0;-------------------dfao 0 for PERFORMANCE
+r.AOQuality=0; 0 for PERFORMANCE
 r.AOComputeShaderNormalCalculation=0;
 r.SkySpecularOcclusionStrength=0;
 r.AOSpecularOcclusionMode=1;
 r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
-r.AOQuality=1; 0 for PERFORMANCE
 r.AmbientOcclusionLevels=2;------------ssao 0 for no ssao
 r.AmbientOcclusionStaticFraction=0;
 r.AmbientOcclusionMipLevelFactor=0.4;
