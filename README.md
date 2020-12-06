@@ -234,7 +234,6 @@ Open Input.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
 %localappdata%/Insurgency/Saved/Config/WindowsClient/Input.ini
-%localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Input.ini
 
 
 Edit input commands copy/paste: 
@@ -254,7 +253,6 @@ Open GameUserSettings.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettings.ini 
-%localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSettings.ini 
 
 
 settings in here are in game options, they will overwrite your engine.ini commands if they manipulate the same command, change them before starting game to get disired setting: 
@@ -293,7 +291,6 @@ Open DeviceProfiles.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 %localappdata%/Insurgency/Saved/Config/WindowsClient/DeviceProfiles.ini
-%localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
 Textures or you can just use in game settings (sg.TextureQuality=) copy/paste:
