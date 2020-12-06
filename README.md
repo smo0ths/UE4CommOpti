@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 11/30/2020
+*Updated 12/6/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -31,6 +31,7 @@ bUseFixedFrameRate=0;
 PoolSizeVRAMPercentage=40;
 
 [SystemSettings]
+r.setres=1920x1080wf;
 r.GPUCrashDebugging=0;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
@@ -41,26 +42,31 @@ r.EarlyZPassOnlyMaterialMasking=1;
 r.FinishCurrentFrame=0;
 r.OneFrameThreadLag=1;
 r.GTSyncType=0;
-r.HZBOcclusion=0;
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
 r.D3D11.Depth24Bit=0;
 r.D3D11.AutoFlushUAV=1;
 r.D3D11.NVAutoFlushUAV=1;
+r.MorphTarget.Mode=1;
+r.GenerateMeshDistanceFields=1;--------0 for PERFORMANCE
+r.GenerateLandscapeGIData=0;
+r.DistanceFieldBuild.Compress=0;
+r.DistanceFields.ParallelAtlasUpdate=1;
+r.DistanceFields.ThrottleCopyToAtlasInBytes=1;
+r.DFShadowScatterTileCulling=1;
+r.HZBOcclusion=0;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.AllowSubPrimitiveQueries=1;
-r.MinScreenRadiusForLights=0.03;
-r.MinScreenRadiusForDepthPrepass=0.03;
-r.MinScreenRadiusForCSMDepth=0.01;
-r.MinScreenRadiusForSmallLights=0.01;
+r.MinScreenRadiusForLights=0.2;
+r.MinScreenRadiusForDepthPrepass=0.2;
+r.MinScreenRadiusForCSMDepth=0.2;
+r.MinScreenRadiusForSmallLights=0.2;
 r.SceneColorFormat=4;------------------format
 r.DefaultBackBufferPixelFormat=4;
 r.ScreenPercentage=100;----------------scaling stuff
 r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
-r.GenerateMeshDistanceFields=1;--------0 for PERFORMANCE
-r.GenerateLandscapeGIData=1;
-r.GBufferFormat=1;---------------------lightstuff
+r.GBufferFormat=0;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
@@ -78,50 +84,47 @@ r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
 r.ViewDistanceScale=0.8;---------------view distance
-r.ViewDistanceScale.ApplySecondaryScale=0;
-r.ViewDistanceScale.SecondaryScale=1;
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.HLOD=0;
-r.HLOD.MaximumLevel=-1;
-r.HLOD.DistanceScale=0.8;
-r.HLOD.DistanceOverride=10000;
 r.SkeletalMeshLODRadiusScale=1;
 r.StaticMeshLODDistanceScale=1;
 r.TextureStreaming=1;------------------texture streaming
+r.Streaming.UseBackgroundThreadPool=1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
+r.Streaming.MaxTempMemoryAllowed=128;
 r.Streaming.LimitPoolSizeToVRAM=1;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.PoolSize=1000;
 r.Streaming.UseAllMips=0;
+r.Streaming.MaxEffectiveScreenSize=0;
+r.Streaming.Boost=1;
 r.Streaming.MipBias=0;
 r.Streaming.UsePerTextureBias=1;
 r.Streaming.AmortizeCPUToGPUCopy=0;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50;
-r.Streaming.Boost=1;
 r.Streaming.FullyLoadUsedTextures=0;
-r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
 r.Streaming.HiddenPrimitiveScale=0;
 r.Streaming.HLODStrategy=0;
+r.Streaming.UseNewMetrics=1;
+r.Streaming.MinMipForSplitRequest=1;
+r.Streaming.UseMaterialData=1;
 r.ShadowQuality=3;---------------------shadows 0 for no shadows
-r.Shadow.CSM.MaxCascades=1;
+r.Shadow.CSM.MaxCascades=2;
 r.Shadow.CSM.TransitionScale=1;
-r.Shadow.SpotLightTransitionScale=1;
-r.Shadow.PointLightTransitionScale=1;
-r.Shadow.TransitionScale=1;
-r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;
-r.Shadow.MaxResolution=2048;
+r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.RadiusThreshold=0.03;
 r.Shadow.DistanceScale=0.6;
-r.Shadow.CacheWholeSceneShadows=1;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
+r.Shadow.PreShadowResolutionFactor=0.5;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
+r.Shadow.CacheWholeSceneShadows=1;
+r.Shadow.WholeSceneShadowCacheMb=40;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
 r.AllowPointLightCubemapShadows=0;
-r.ParallelShadow=0;
 r.SupportPointLightWholeSceneShadows=0;
+r.ParallelShadow=0;
 r.ParallelShadowsNonWholeScene=0;
 r.ContactShadows=0;
 r.CapsuleShadows=0;
@@ -133,12 +136,14 @@ r.DFFullResolution=0;
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;
+r.Tonemapper.Sharpen=0.8;
 r.TemporalAASamples=2;-----------------taa
 r.TemporalAACurrentFrameWeight=0.2;
 r.TemporalAA.Upsampling=0;
 r.TemporalAASharpness=0;
+r.TemporalAAFilterSize=0.2;
 r.DistanceFieldAO=0;-------------------dfao 0 for PERFORMANCE
-r.AOQuality=0; 0 for PERFORMANCE
+r.AOQuality=0;
 r.AOComputeShaderNormalCalculation=0;
 r.SkySpecularOcclusionStrength=0;
 r.AOSpecularOcclusionMode=1;
@@ -162,7 +167,7 @@ r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
 r.TranslucentSortPolicy=0;
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
-r.SeparateTranslucency=1;
+r.SeparateTranslucency=0;
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.SupportAtmosphericFog=1;-------------fog
@@ -177,7 +182,7 @@ r.DoTiledReflections=1;----------------tiled reflection
 r.NoTiledReflections=0;
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128;
-r.SSR.Quality=3;-----------------------ssr 0 for PERFORMANCE
+r.SSR.Quality=0;-----------------------ssr 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;
 r.SSR.MaxRoughness=0.8;
 r.SubsurfaceScattering=0;--------------sss 0 for PERFORMANCE
@@ -215,16 +220,9 @@ r.MotionBlurQuality=0;
 r.DepthOfFieldQuality=0;
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=0;
+r.StencilForLODDither=0;
 grass.DensityScale=0.6;
 foliage.DensityScale=0.6;
-r.VirtualTexture=1;
-r.VirtualTexturedLightmaps=1;
-r.VirtualTextureReducedMemory=1;
-r.VT.MaxUploadsPerFrame=64;
-r.VT.RVT.TileCountBias=-1;
-r.IncludeNonVirtualTexturedLightmaps=0;
-r.VT.EnableLossyCompressLightmaps=0;
-r.VT.EnableCompressCrunch=1;
 
 
 -----------end-----------
@@ -243,6 +241,8 @@ Edit input commands copy/paste:
 bAltEnterTogglesFullscreen=1;
 bF11TogglesFullscreen=0; 
 bEnableMouseSmoothing=0;
+InitialButtonRepeatDelay=0.1;
+ButtonRepeatDelay=0.1;
 
 
 -----------end-----------
@@ -262,14 +262,14 @@ FullscreenMode=1
 bUseDynamicResolution=0
 FrameRateLimit=0
 AudioQualityLevel=3
-BloomQuality=3 
+BloomQuality=3
 LensFlareQuality=0
 AmbientOcclusion=1
 AmbientOcclusionStaticFraction=0
 AmbientOcclusionLevels=2
 AmbientOcclusionRadiusScale=0.000000
-AutoExposure=1
-EyeAdaptationQuality=2
+AutoExposure=
+EyeAdaptationQuality=
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=True)))
 
 [ScalabilityGroups]
