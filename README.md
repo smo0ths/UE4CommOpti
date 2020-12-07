@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/6/2020~
+*Updated 12/6/2020~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -35,7 +35,7 @@ r.setres=1920x1080wf;
 r.GPUCrashDebugging=0;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
-r.DBuffer=1;
+r.DBuffer=0;
 r.ClearSceneMethod=1;
 r.EarlyZPass=2;
 r.EarlyZPassMovable=1;
@@ -55,7 +55,7 @@ r.DistanceFieldBuild.Compress=0;
 r.DistanceFields.ParallelAtlasUpdate=1;
 r.DistanceFields.ThrottleCopyToAtlasInBytes=1;
 r.DFShadowScatterTileCulling=1;
-r.HZBOcclusion=0;
+r.HZBOcclusion=1;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.2;
