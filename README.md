@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/7/2020~
+*Updated 12/7/2020~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -28,7 +28,7 @@ bPauseOnLossOfFocus=0;
 bUseFixedFrameRate=0;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=40;
+PoolSizeVRAMPercentage=35;
 
 [SystemSettings]
 r.setres=1920x1080wf;
@@ -99,8 +99,8 @@ r.Streaming.UseBackgroundThreadPool=0;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.MaxTempMemoryAllowed=128;
 r.Streaming.UseFixedPoolSize=0;
-r.Streaming.LimitPoolSizeToVRAM=0;
-r.Streaming.PoolSize=3000;
+r.Streaming.LimitPoolSizeToVRAM=1;
+r.Streaming.PoolSize=666;
 r.Streaming.UseAllMips=0;
 r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.Boost=1;
