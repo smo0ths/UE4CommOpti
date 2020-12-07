@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/7/2020~~
+*Updated 12/7/2020~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -60,7 +60,7 @@ r.AOAsyncBuildQueue=1;
 r.DistanceFieldBuild.Compress=0;
 r.DistanceFields.ParallelAtlasUpdate=1;
 r.DistanceFields.ThrottleCopyToAtlasInBytes=1;
-r.DFShadowScatterTileCulling=0;
+r.DFShadowScatterTileCulling=1;
 r.HZBOcclusion=1;
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.AllowSubPrimitiveQueries=1;
@@ -176,7 +176,7 @@ r.LightShaftRenderToSeparateTranslucency=0;
 r.TranslucencyLightingVolume=1;--------translucency
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
-r.EnableAsyncComputeTranslucencyLightingVolumeClear=0;
+r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.SeparateTranslucency=1;
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
