@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/6/2020~~
+*Updated 12/7/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -45,9 +45,11 @@ r.OneFrameThreadLag=1;
 r.GTSyncType=0;
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
-r.D3D11.Depth24Bit=0;
-r.D3D11.AutoFlushUAV=1;
-r.D3D11.NVAutoFlushUAV=1;
+r.DoLazyStaticMeshUpdate=1;
+r.DiscardUnusedQuality=1;
+r.D3D11.Depth24Bit=1;
+r.SkinCache.CompileShaders=0;
+r.SkinCache.SceneMemoryLimitInMB=128;
 r.MorphTarget.Mode=1;
 r.GenerateMeshDistanceFields=1;--------0 for PERFORMANCE
 r.GenerateLandscapeGIData=0;
@@ -121,8 +123,7 @@ r.Shadow.DistanceScale=0.6;
 r.Shadow.PreShadowResolutionFactor=0.5;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
 r.Shadow.CacheWholeSceneShadows=1;
-r.Shadow.WholeSceneShadowCacheMb=40;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
 r.AllowPointLightCubemapShadows=0;
 r.SupportPointLightWholeSceneShadows=0;
 r.ParallelShadow=0;
@@ -166,11 +167,14 @@ r.LightShaftRenderToSeparateTranslucency=0;
 r.TranslucencyLightingVolume=1;--------translucency
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
-r.TranslucentSortPolicy=0;
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.SeparateTranslucency=1;
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
+r.TranslucentSortPolicy=0;
+TranslucentSortAxis=(X=0.000000,Y=-1.000000,Z=0.000000);
+r.CustomDepth=2;
+r.CustomDepth.Order=1;
 r.SupportAtmosphericFog=1;-------------fog
 r.VolumetricFog=0;
 r.VolumetricFog.GridPixelSize=16;
@@ -218,6 +222,7 @@ r.LensFlareQuality=0;
 r.Filter.SizeScale=1;
 r.Filter.NewMethod=1;
 r.MotionBlurQuality=0;
+r.DOF.Algorithm=1;
 r.DepthOfFieldQuality=0;
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=0;
