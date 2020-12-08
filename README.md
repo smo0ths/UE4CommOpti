@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/7/2020~~~~
+*Updated 12/7/2020~~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -145,7 +145,7 @@ r.ContactShadows=0;
 r.CapsuleShadows=0;
 r.AllowLandscapeShadows=1;-------------0 for PERFORMANCE
 r.DistanceFieldShadowing=1;------------0 for PERFORMANCE 0 for SANDSTORM
-r.DFShadowQuality=1;
+r.DFShadowQuality=1;-------------------0 for SANDSTORM
 r.DFTwoSidedMeshDistanceBias=0;
 r.DFFullResolution=0;
 r.Tonemapper.Quality=2;
@@ -193,7 +193,7 @@ r.VolumetricFog=0;
 r.VolumetricFog.GridPixelSize=16;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.InjectShadowedLightsSeparately=0;
-r.ReflectionEnvironment=2;-------------reflection environment 0 for PERFORMANCE
+r.ReflectionEnvironment=1;-------------reflection environment 0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;
 r.chaos.ReflectionCaptureStaticSceneOnly=1;
 r.DoTiledReflections=1;----------------tiled reflection
@@ -328,10 +328,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=4096
 TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
 
