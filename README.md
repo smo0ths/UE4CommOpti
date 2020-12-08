@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/7/2020~~~
+*Updated 12/7/2020~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -48,7 +48,10 @@ r.AlsoUseSphereForFrustumCull=1;
 r.DoLazyStaticMeshUpdate=1;
 r.DiscardUnusedQuality=1;
 r.VertexFoggingForOpaque=0;
+r.ForceAllCoresForShaderCompiling=1;
+r.AllowCachedUniformExpressions=1;
 r.D3D11.Depth24Bit=1;
+r.ShaderComplexity.CacheShaders=1;
 r.SkinCache.CompileShaders=0;
 r.SkinCache.SceneMemoryLimitInMB=128;
 r.ShaderPipelines=1;
@@ -61,7 +64,7 @@ r.DistanceFieldBuild.Compress=0;
 r.DistanceFields.ParallelAtlasUpdate=1;
 r.DistanceFields.ThrottleCopyToAtlasInBytes=1;
 r.DFShadowScatterTileCulling=1;
-r.HZBOcclusion=1;
+r.HZBOcclusion=1;----------------------0 could improve frames if GPU bound
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.2;
@@ -75,6 +78,7 @@ r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
 r.GBufferFormat=0;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
+r.IndirectLightingCache=0;-------------1 for SANDSTORM
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
 r.ClearCoatNormal=0;
@@ -87,7 +91,7 @@ r.LightPropagationVolume=0;
 r.LightCulling.Quality=1;
 r.LightMaxDrawDistanceScale=0.5;-------0 for PERFORMANCE
 r.MipMapLODBias=0;---------------------lods
-r.LandscapeLODBias=0;
+r.LandscapeLODBias=0;------------------1 for PERFORMANCE
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
 r.ViewDistanceScale=0.8;---------------view distance
