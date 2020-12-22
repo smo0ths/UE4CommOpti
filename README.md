@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/7/2020~~~~~
+*Updated 12/22/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -78,7 +78,7 @@ r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
 r.GBufferFormat=0;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
-r.IndirectLightingCache=0;-------------1 for SANDSTORM
+r.IndirectLightingCache=0;
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
 r.ClearCoatNormal=0;
@@ -338,6 +338,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=4096,LODB
 
 for NVIDIA users:
 
+Reset settings "apply let the 3D app decide" then set "use the advanced 3D image settings" then apply, click take me there
 Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
