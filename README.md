@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/24/2020~
+*Updated 12/24/2020~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -81,8 +81,8 @@ r.DefaultBackBufferPixelFormat=0;
 r.ScreenPercentage=100;----------------scaling stuff
 r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
-r.ClearSceneMethod=0;
-r.GBufferFormat=0;---------------------lightstuff
+r.ClearSceneMethod=1;
+r.GBufferFormat=1;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
 r.IndirectLightingCache=0;
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
