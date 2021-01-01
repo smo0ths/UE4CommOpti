@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/30/2020
+*Updated 12/31/2020
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -41,9 +41,11 @@ r.setres=1920x1080wf;
 r.GPUCrashDebugging=0;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
+r.SupportDepthOnlyIndexBuffers=1;
+r.SupportReversedIndexBuffers=1;
 r.DBuffer=0;
 r.SelectiveBasePassOutputs=0;
-r.EarlyZPass=3;
+r.EarlyZPass=2;
 r.EarlyZPassMovable=1;
 r.EarlyZPassOnlyMaterialMasking=1;
 r.FinishCurrentFrame=0;
@@ -80,13 +82,13 @@ r.MinScreenRadiusForLights=0.2;
 r.MinScreenRadiusForDepthPrepass=0.2;
 r.MinScreenRadiusForCSMDepth=0.2;
 r.MinScreenRadiusForSmallLights=0.2;
-r.SceneColorFormat=4;------------------format
+r.SceneColorFormat=3;------------------format
 r.DefaultBackBufferPixelFormat=0;
 r.ScreenPercentage=100;----------------scaling stuff
 r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=0;
 r.ClearSceneMethod=1;
-r.GBufferFormat=0;---------------------lightstuff
+r.GBufferFormat=1;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
 r.IndirectLightingCache=0;
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
@@ -191,11 +193,10 @@ r.TranslucencyLightingVolume=1;--------translucency
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
-r.SeparateTranslucency=1;
+r.SeparateTranslucency=0;
+r.SeparateTranslucencyAutoDownsample=0;
 r.SeparateTranslucencyScreenPercentage=100;
-r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
-TranslucentSortAxis=(X=0.000000,Y=-1.000000,Z=0.000000);
 r.CustomDepth=3;
 r.CustomDepth.Order=1;
 r.SupportAtmosphericFog=1;-------------fog
@@ -326,21 +327,21 @@ Open DeviceProfiles.ini
 Textures or you can just use in game settings (sg.TextureQuality=) copy/paste:
 
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
 
 
 -----------end-----------
