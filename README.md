@@ -368,7 +368,7 @@ Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
 TF anisotropic sample optimization:  On
-TF Negative LOD bias:  Clamp  (allow for performance as stated by nvida)
+TF Negative LOD bias:  Clamp  (allow for performance as stated by nvidia)
 Texture filtering quality:  High performance
 Vertical sync:  Off
 
