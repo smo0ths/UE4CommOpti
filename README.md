@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/31/2020
+*Updated 2/24/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -34,6 +34,7 @@ PoolSizeVRAMPercentage=35;
 FX.BatchAsyncBatchSize=9999999;
 FX.MaxCPUParticlesPerEmitter=50;
 FX.MaxGPUParticlesSpawnedPerFrame=2048;
+FX.QualityLevelSpawnRateScaleReferenceLevel=1;
 AudioThread.BatchAsyncBatchSize=9999999;
 AudioThread.UseBackgroundThreadPool=1;
 AudioThread.EnableBatchProcessing=1;
@@ -78,19 +79,20 @@ r.DFShadowScatterTileCulling=1;
 r.HZBOcclusion=0;----------------------0 could improve frames if GPU bound
 r.AllowOcclusionQueries=1;-------------occlusion queries
 r.AllowSubPrimitiveQueries=1;
-r.MinScreenRadiusForLights=0.2;
-r.MinScreenRadiusForDepthPrepass=0.2;
-r.MinScreenRadiusForCSMDepth=0.2;
-r.MinScreenRadiusForSmallLights=0.2;
+r.MinScreenRadiusForLights=0.04;
+r.MinScreenRadiusForDepthPrepass=0.04;
+r.MinScreenRadiusForCSMDepth=0.04;
+r.MinScreenRadiusForSmallLights=0.04;
 r.SceneColorFormat=3;------------------format
 r.DefaultBackBufferPixelFormat=0;
 r.ScreenPercentage=100;----------------scaling stuff
 r.SceneRenderTargetResizeMethod=0;
-r.Upscale.Quality=0;
+r.Upscale.Quality=1;
 r.ClearSceneMethod=1;
-r.GBufferFormat=1;---------------------lightstuff
+r.GBufferFormat=0;---------------------lightstuff
 r.AllowStaticLighting=0;---------------1 for SANDSTORM
-r.IndirectLightingCache=0;
+r.IndirectLightingCache=1;
+r.Cache.DrawLightingSamples=0;
 r.LightFunctionQuality=1;--------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
 r.ClearCoatNormal=0;
@@ -101,12 +103,12 @@ r.SupportStationarySkylight=1;
 r.SkyLightingQuality=1;
 r.LightPropagationVolume=0;
 r.LightCulling.Quality=1;
-r.LightMaxDrawDistanceScale=0.5;-------0 for PERFORMANCE
+r.LightMaxDrawDistanceScale=1;---------0 for PERFORMANCE
 r.MipMapLODBias=0;---------------------lods
 r.LandscapeLODBias=0;------------------1 for PERFORMANCE
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
-r.ViewDistanceScale=0.8;---------------view distance
+r.ViewDistanceScale=1;-----------------view distance 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;
 r.StaticMeshLODDistanceScale=1;
@@ -136,24 +138,24 @@ r.Streaming.UseMaterialData=1;
 r.ShadowQuality=3;---------------------shadows 0 for no shadows
 r.Shadow.CSM.MaxCascades=2;
 r.Shadow.CSM.TransitionScale=1;
-r.Shadow.MinPreShadowResolution=256;
-r.Shadow.MinResolution=256;
+r.Shadow.MinPreShadowResolution=1024;
+r.Shadow.MinResolution=32;
 r.Shadow.MaxResolution=1024;
-r.Shadow.MaxCSMResolution=2048;
+r.Shadow.MaxCSMResolution=4096;
 r.Shadow.RadiusThreshold=0.03;
 r.Shadow.RadiusThresholdRSM=0.03;
-r.Shadow.DistanceScale=0.6;
+r.Shadow.DistanceScale=1;--------------0.6 for PERFORMANCE
 r.Shadow.PreShadowResolutionFactor=0.5;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
 r.Shadow.CacheWholeSceneShadows=1;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0;
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
 r.Shadow.CachePreshadow=1;
 r.Shadow.UnbuiltPreviewInGame=0;
 r.AllowPointLightCubemapShadows=0;
 r.SupportPointLightWholeSceneShadows=0;
-r.ParallelShadow=0;
-r.ParallelShadowsNonWholeScene=0;
-r.ContactShadows=0;
+r.ParallelShadow=1;--------------------0 for PERFORMANCE
+r.ParallelShadowsNonWholeScene=1;
+r.ContactShadows=1;--------------------0 for PERFORMANCE
 r.CapsuleShadows=0;
 r.AllowLandscapeShadows=1;-------------0 for PERFORMANCE
 r.DistanceFieldShadowing=1;------------0 for PERFORMANCE 0 for SANDSTORM
@@ -169,21 +171,21 @@ r.TemporalAACurrentFrameWeight=0.2;
 r.TemporalAA.Upsampling=0;
 r.TemporalAASharpness=0;
 r.TemporalAAFilterSize=0.5;
-r.DistanceFieldAO=0;-------------------dfao 0 for PERFORMANCE
-r.AOQuality=0;
-r.AOComputeShaderNormalCalculation=0;
-r.SkySpecularOcclusionStrength=0;
+r.DistanceFieldAO=1;-------------------1 for DFAO
+r.AOQuality=1;-------------------------1 or 2 for DFAO
+r.AOComputeShaderNormalCalculation=1;
+r.SkySpecularOcclusionStrength=0.75;
 r.AOSpecularOcclusionMode=1;
 r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
 r.AmbientOcclusionLevels=2;------------ssao 0 for no ssao
 r.AmbientOcclusionStaticFraction=0;
 r.AmbientOcclusionMipLevelFactor=0.4;
-r.AmbientOcclusionMaxQuality=75;
+r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionSampleSetQuality=2;
 r.AmbientOcclusion.Compute=0;
 r.AmbientOcclusionRadiusScale=0;
-r.LightShaftQuality=0;-----------------lightshafts
+r.LightShaftQuality=1;-----------------lightshafts
 r.LightShaftDownSampleFactor=0;
 r.LightShaftFirstPassDistance=0.1;
 r.LightShaftBlurPasses=2;
@@ -200,7 +202,7 @@ r.TranslucentSortPolicy=0;
 r.CustomDepth=3;
 r.CustomDepth.Order=1;
 r.SupportAtmosphericFog=1;-------------fog
-r.VolumetricFog=0;
+r.VolumetricFog=1;
 r.VolumetricFog.GridPixelSize=16;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.InjectShadowedLightsSeparately=0;
@@ -214,34 +216,34 @@ r.ReflectionCaptureResolution=128;
 r.SSR.Quality=0;-----------------------ssr 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;
 r.SSR.MaxRoughness=0.8;
-r.SubsurfaceScattering=0;--------------sss 0 for PERFORMANCE
-r.SSS.Scale=1;
+r.SubsurfaceScattering=1;--------------sss 0 for PERFORMANCE
+r.SSS.Scale=3;
 r.SSS.SampleSet=0;
-r.SSS.Quality=-1;
+r.SSS.Quality=0;
 r.SSS.HalfRes=1;
-r.SSS.Filter=0;
-r.SSS.Checkerboard=2;
+r.SSS.Filter=1;
+r.SSS.Checkerboard=1;
 r.ParticleLightQuality=1;--------------particles 0 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=8;-------16 for around 60 fps
 r.EmitterSpawnRateScale=1;-------------0.25 for PERFORMANCE
 r.Emitter.FastPoolEnable=1;
 r.TiledDeferredShading=1;--------------tiled deferred shading
 r.TiledDeferredShading.MinimumCount=10;
-r.DefaultFeature.AutoExposure=1;-------eye adaptation
+r.DefaultFeature.AutoExposure=0;-------eye adaptation
 r.EyeAdaptationQuality=0;
 r.DefaultFeature.AutoExposure.Method=0;
 r.VSync=0;-----------------------------misc
 r.AllowHDR=0;
 r.RenderTargetPoolMin=400;
-r.TessellationAdaptivePixelsPerTriangle=9999999;
-r.MaxAnisotropy=16;
+r.TessellationAdaptivePixelsPerTriangle=96;
+r.MaxAnisotropy=8;
 r.SupportMaterialLayers=0;
 r.MaterialQualityLevel=1;--------------0 for PERFORMANCE
 r.DetailMode=2;------------------------0 for PERFORMANCE
 r.RefractionQuality=1;-----------------0 for PERFORMANCE
 r.IrisNormal=0;
 r.BloomQuality=3;
-r.Bloom.HalfResoluionFFT=1;
+r.Bloom.HalfResoluionFFT=0;
 r.LensFlareQuality=0;
 r.Filter.SizeScale=1;
 r.Filter.NewMethod=1;
@@ -249,12 +251,14 @@ r.MotionBlurQuality=0;
 r.DOF.Algorithm=1;
 r.DepthOfFieldQuality=0;
 r.SceneColorFringeQuality=0;
-r.SceneColorFringe.Max=0;
+r.SceneColorFringe.Max=-1;
 r.StencilForLODDither=0;
 grass.DensityScale=0.6;
-grass.DisableDynamicShadows=1;
+grass.DisableDynamicShadows=0;
 foliage.DensityScale=0.6;
 foliage.DitheredLOD=1;
+ShowFlag.Vignette=0;
+ShowFlag.SceneColorFringe=0;
 
 
 -----------end-----------
@@ -286,21 +290,27 @@ Open GameUserSettings.ini
 %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettings.ini 
 
 
-settings in here are in game options, they will overwrite your engine.ini commands if they manipulate the same command, change them before starting game to get disired setting: 
+settings in here are in game options, they will overwrite your engine.ini yay jk, change them before starting game to get disired setting, don't add unless you are using OverrideOptions:
 
 bUseVSync=0 
 FullscreenMode=1
 bUseDynamicResolution=0
-FrameRateLimit=0
 AudioQualityLevel=3
+LastConfirmedAudioQualityLevel=3
+FrameRateLimit=0
+MenuFrameRateLimit=0
+MaxCSMResolution=4096
+MaxAnisotropy=8
+ContactShadows=0
+PostFX_Saturation=1.200000
 BloomQuality=3
 LensFlareQuality=0
 AmbientOcclusion=1
 AmbientOcclusionStaticFraction=0
 AmbientOcclusionLevels=2
-AmbientOcclusionRadiusScale=0.000000;--------i set this to 0 it will reset to default when toggled in game
-AutoExposure=
-EyeAdaptationQuality=
+AmbientOcclusionRadiusScale=0.000000
+AutoExposure=0
+EyeAdaptationQuality=0
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False)))
 
 [ScalabilityGroups]
@@ -327,21 +337,21 @@ Open DeviceProfiles.ini
 Textures or you can just use in game settings (sg.TextureQuality=) copy/paste:
 
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=4096,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1024,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
 
 
 -----------end-----------
@@ -350,12 +360,13 @@ TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=4096,LO
 for NVIDIA users:
 
 Reset settings "apply let the 3D app decide" then set "use the advanced 3D image settings" then apply, click take me there
+Anisotropic filter: 8x  (to make sure its on)
 Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
-TF anisotropic sample optimization:  On (Off for quality) 
-TF Negative LOD bias:  Allow
-Texture filtering quality:  High performance (Quality for newer GPU)
+TF anisotropic sample optimization:  On
+TF Negative LOD bias:  Clamp  (allow for performance as stated by nvida)
+Texture filtering quality:  High performance
 Vertical sync:  Off
 
 
