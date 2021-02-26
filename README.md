@@ -7,6 +7,8 @@
 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
+*Dumbass people will call this exploiting, i call it fixing and customizing/optimizing UE4 engine games. 
+Use your anti-cheat to block exploitable commands on start up, but don't think all UE4 devs have a complete understanding of UE4 graphics or commands.
 
 -----------end-----------
 
