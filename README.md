@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 2/24/2021
+*Updated 3/3/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -9,6 +9,7 @@
 
 *Dumbass people will call this exploiting, i call it fixing and customizing/optimizing UE4 engine games. 
 Use your anti-cheat to block exploitable commands on start up, but don't think all UE4 devs have a complete understanding of UE4 graphics or commands.
+
 
 -----------end-----------
 
@@ -168,8 +169,8 @@ r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;
 r.Tonemapper.Sharpen=0.7;
-r.DefaultFeature.AntiAliasing=1;--------------2 for TAA
-r.PostProcessAAQuality=1;---------------------0-off 1-FXAA 2-FXAA 3-TAA 4-defaultTAA 5-TAA 6-TAA
+r.DefaultFeature.AntiAliasing=2;--------------2 for TAA 1 for FXAA
+r.PostProcessAAQuality=3;---------------------0-off 1-2-FXAA 3-4-5-6-TAA i use 3 for TAA 1 for FXAA
 r.MSAA.CompositingSampleCount=1;
 r.TemporalAASamples=2;------------------------taa
 r.TemporalAACurrentFrameWeight=0.2;
