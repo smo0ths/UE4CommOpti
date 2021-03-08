@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/7/2021~
+*Updated 3/7/2021~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -75,12 +75,12 @@ r.ShaderPipelines=1;
 r.Shaders.FastMath=1;
 r.MorphTarget.Mode=1;
 r.GenerateMeshDistanceFields=1;---------------0 for PERFORMANCE
-r.DistanceFieldBuild.Compress=0;--------------1 for GROUND BRANCH
+r.DistanceFieldBuild.Compress=0;--------------1 for GROUND BRANCH and other games if you crash
 r.GenerateLandscapeGIData=1;------------------0 for PERFORMANCE
 r.DistanceFieldGI=0;
 r.AOAsyncBuildQueue=1;
 r.DistanceFieldBuild.EightBit=0;
-r.AOGlobalDistanceField=1;
+r.AOGlobalDistanceField=0;
 r.AOObjectDistanceField=0;
 r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
 r.DistanceFields.ForceMaxAtlasSize=1;
@@ -179,8 +179,8 @@ r.ContactShadows=0;
 r.CapsuleShadows=0;
 r.AllowLandscapeShadows=1;--------------------0 for PERFORMANCE
 r.DistanceFieldShadowing=1;-------------------0 for PERFORMANCE 0 for SANDSTORM
-r.DFShadowQuality=1;
-r.DFFullResolution=0;
+r.DFShadowQuality=2;--------------------------1 for PERFORMANCE if using DF shadows
+r.DFFullResolution=1;-------------------------0 for PERFORMANCE if using DF shadows
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;
