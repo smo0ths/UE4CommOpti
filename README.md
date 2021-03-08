@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/7/2021
+*Updated 3/7/2021~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -76,11 +76,19 @@ r.Shaders.FastMath=1;
 r.MorphTarget.Mode=1;
 r.GenerateMeshDistanceFields=1;---------------0 for PERFORMANCE
 r.DistanceFieldBuild.Compress=0;--------------1 for GROUND BRANCH
-r.GenerateLandscapeGIData=0;
+r.GenerateLandscapeGIData=1;------------------0 for PERFORMANCE
+r.DistanceFieldGI=0;
 r.AOAsyncBuildQueue=1;
+r.DistanceFieldBuild.EightBit=0;
+r.AOGlobalDistanceField=1;
+r.AOObjectDistanceField=0;
+r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
+r.DistanceFields.ForceMaxAtlasSize=1;
+r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;
 r.DistanceFields.ParallelAtlasUpdate=1;
 r.DistanceFields.ThrottleCopyToAtlasInBytes=1;
 r.DFShadowScatterTileCulling=1;
+r.DFTwoSidedMeshDistanceBias=0;
 r.RenderTargetPoolMin=400;
 r.HZBOcclusion=0;-----------------------------0 could improve frames if GPU bound
 r.AllowOcclusionQueries=1;--------------------occlusion queries
@@ -141,13 +149,17 @@ r.Streaming.HLODStrategy=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
+r.HLOD=1;
+r.HLOD.MaximumLevel=-1;
+r.HLOD.DistanceScale=1;
+r.HLOD.DistanceOverride=10000;
 r.ShadowQuality=3;----------------------------shadows 0 for no shadows
 r.Shadow.CSM.MaxCascades=2;
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.MinPreShadowResolution=1024;
-r.Shadow.FadeResolution=1;
-r.Shadow.MinResolution=1;
-r.Shadow.TexelsPerPixel=8;
+r.Shadow.FadeResolution=64;
+r.Shadow.MinResolution=32;
+r.Shadow.TexelsPerPixel=2;
 r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=4096;
 r.Shadow.RadiusThreshold=0.01;
@@ -168,14 +180,13 @@ r.CapsuleShadows=0;
 r.AllowLandscapeShadows=1;--------------------0 for PERFORMANCE
 r.DistanceFieldShadowing=1;-------------------0 for PERFORMANCE 0 for SANDSTORM
 r.DFShadowQuality=1;
-r.DFTwoSidedMeshDistanceBias=0;
 r.DFFullResolution=0;
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;
 r.Tonemapper.Sharpen=0.7;
-r.DefaultFeature.AntiAliasing=2;--------------2 for TAA 1 for FXAA
-r.PostProcessAAQuality=3;---------------------0-off 1-2-FXAA 3-4-5-6-TAA i use 3 for TAA 1 for FXAA
+r.DefaultFeature.AntiAliasing=1;--------------2 for TAA 1 for FXAA
+r.PostProcessAAQuality=1;---------------------0-off 1-2-FXAA 3-4-5-6-TAA i use 3 for TAA 1 for FXAA
 r.MSAA.CompositingSampleCount=1;
 r.TemporalAASamples=2;------------------------taa
 r.TemporalAACurrentFrameWeight=0.2;
