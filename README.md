@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/4/2021
+*Updated 3/7/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -19,6 +19,8 @@ Open Engine.ini and copy/paste commands/configs:
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
+Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
+
 
 My config:
 
@@ -29,6 +31,7 @@ Global=off;
 bSmoothFrameRate=0;
 bPauseOnLossOfFocus=0;
 bUseFixedFrameRate=0;
+DisplayGamma=2.2;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=35;
@@ -43,11 +46,10 @@ AudioThread.UseBackgroundThreadPool=1;
 AudioThread.EnableBatchProcessing=1;
 r.setres=1920x1080wf;
 r.GPUCrashDebugging=0;
-r.CompileShadersForDevelopment=0;
+r.CompileShadersForDevelopment=1;
 r.CreateShadersOnLoad=1;
 r.SupportDepthOnlyIndexBuffers=1;
 r.SupportReversedIndexBuffers=1;
-r.DBuffer=0;
 r.SelectiveBasePassOutputs=0;
 r.EarlyZPass=2;
 r.EarlyZPassMovable=1;
@@ -73,12 +75,13 @@ r.ShaderPipelines=1;
 r.Shaders.FastMath=1;
 r.MorphTarget.Mode=1;
 r.GenerateMeshDistanceFields=1;---------------0 for PERFORMANCE
+r.DistanceFieldBuild.Compress=0;--------------1 for GROUND BRANCH
 r.GenerateLandscapeGIData=0;
 r.AOAsyncBuildQueue=1;
-r.DistanceFieldBuild.Compress=0;
 r.DistanceFields.ParallelAtlasUpdate=1;
 r.DistanceFields.ThrottleCopyToAtlasInBytes=1;
 r.DFShadowScatterTileCulling=1;
+r.RenderTargetPoolMin=400;
 r.HZBOcclusion=0;-----------------------------0 could improve frames if GPU bound
 r.AllowOcclusionQueries=1;--------------------occlusion queries
 r.AllowSubPrimitiveQueries=1;
@@ -92,7 +95,7 @@ r.ScreenPercentage=100;-----------------------scaling stuff
 r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=1;
 r.ClearSceneMethod=1;
-r.GBufferFormat=0;---------------------lightstuff
+r.GBufferFormat=1;----------------------------lightstuff
 r.AllowStaticLighting=0;----------------------1 for SANDSTORM
 r.IndirectLightingCache=1;
 r.Cache.DrawLightingSamples=0;
@@ -182,7 +185,7 @@ r.TemporalAAFilterSize=0.5;
 r.DistanceFieldAO=1;--------------------------1 for DFAO
 r.AOQuality=1;--------------------------------1 or 2 for DFAO
 r.AOComputeShaderNormalCalculation=1;
-r.SkySpecularOcclusionStrength=0.75;
+r.SkySpecularOcclusionStrength=1;
 r.AOSpecularOcclusionMode=1;
 r.AOApplyToStaticIndirect=0;
 r.AOHeightfieldOcclusion=0;
@@ -190,10 +193,10 @@ r.AmbientOcclusionLevels=2;-------------------ssao 0 for no ssao
 r.AmbientOcclusionStaticFraction=0;
 r.AmbientOcclusionMipLevelFactor=0.4;
 r.AmbientOcclusionMaxQuality=100;
-r.AmbientOcclusionSampleSetQuality=2;
+r.AmbientOcclusionSampleSetQuality=-1;
 r.AmbientOcclusion.Compute=0;
 r.AmbientOcclusionRadiusScale=0;
-r.LightShaftQuality=1;------------------------lightshafts
+r.LightShaftQuality=0;------------------------lightshafts 0 for GROUND BRANCH
 r.LightShaftDownSampleFactor=0;
 r.LightShaftFirstPassDistance=0.1;
 r.LightShaftBlurPasses=2;
@@ -236,19 +239,19 @@ r.ParticleMinTimeBetweenTicks=8;--------------16 for around 60 fps
 r.EmitterSpawnRateScale=1;--------------------0.25 for PERFORMANCE
 r.Emitter.FastPoolEnable=1;
 r.TiledDeferredShading=1;---------------------tiled deferred shading
-r.TiledDeferredShading.MinimumCount=10;
+r.TiledDeferredShading.MinimumCount=80;
 r.DefaultFeature.AutoExposure=0;--------------eye adaptation
 r.EyeAdaptationQuality=0;
 r.DefaultFeature.AutoExposure.Method=0;
 r.VSync=0;------------------------------------misc
 r.AllowHDR=0;
-r.RenderTargetPoolMin=400;
-r.TessellationAdaptivePixelsPerTriangle=96;---9999999 for PERFORMANCE
 r.MaxAnisotropy=8;
 r.SupportMaterialLayers=0;
+r.TessellationAdaptivePixelsPerTriangle=96;---9999999 for PERFORMANCE
 r.MaterialQualityLevel=1;---------------------0 for PERFORMANCE
 r.DetailMode=2;-------------------------------0 for PERFORMANCE
 r.RefractionQuality=1;------------------------0 for PERFORMANCE
+r.DBuffer=0;----------------------------------decals 0 for PERFORMANCE
 r.IrisNormal=0;
 r.BloomQuality=3;
 r.Bloom.HalfResoluionFFT=0;
@@ -257,12 +260,11 @@ r.Filter.SizeScale=1;
 r.Filter.NewMethod=1;
 r.MotionBlurQuality=0;
 r.DOF.Algorithm=1;
-r.DepthOfFieldQuality=0;
+r.DepthOfFieldQuality=1;----------------------dof
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
-r.StencilForLODDither=0;
 grass.DensityScale=0.6;
-grass.DisableDynamicShadows=0;
+grass.DisableDynamicShadows=0;----------------1 for PERFORMANCE
 foliage.DensityScale=0.6;
 foliage.DitheredLOD=1;
 ShowFlag.Vignette=0;
@@ -276,6 +278,7 @@ Open Input.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
 %localappdata%/Insurgency/Saved/Config/WindowsClient/Input.ini
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
 
 
 Edit input commands copy/paste: 
@@ -296,6 +299,7 @@ Open GameUserSettings.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 %localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettings.ini 
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
 settings in here are in game options, they will overwrite your engine.ini yay jk, change them before starting game to get disired setting, don't add unless you are using OverrideOptions:
@@ -340,6 +344,7 @@ Open DeviceProfiles.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 %localappdata%/Insurgency/Saved/Config/WindowsClient/DeviceProfiles.ini
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
 Textures or you can just use in game settings (sg.TextureQuality=) copy/paste:
