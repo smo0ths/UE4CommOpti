@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/7/2021~~
+*Updated 3/7/2021~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -251,8 +251,8 @@ r.EmitterSpawnRateScale=1;--------------------0.25 for PERFORMANCE
 r.Emitter.FastPoolEnable=1;
 r.TiledDeferredShading=1;---------------------tiled deferred shading
 r.TiledDeferredShading.MinimumCount=80;
-r.DefaultFeature.AutoExposure=0;--------------eye adaptation
-r.EyeAdaptationQuality=0;
+r.DefaultFeature.AutoExposure=1;--------------eye adaptation
+r.EyeAdaptationQuality=2;
 r.DefaultFeature.AutoExposure.Method=0;
 r.VSync=0;------------------------------------misc
 r.AllowHDR=0;
