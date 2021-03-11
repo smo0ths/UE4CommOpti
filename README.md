@@ -59,7 +59,6 @@ r.bForceCPUAccessToGPUSkinVerts=1;---------more cpu usage
 r.DeferSkeletalDynamicDataUpdateUntilGDME=1;---------1 is experimental option
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
-r.SupportAllShaderPermutations=1;
 r.SupportDepthOnlyIndexBuffers=1;
 r.SupportReversedIndexBuffers=1;
 r.SelectiveBasePassOutputs=0;
