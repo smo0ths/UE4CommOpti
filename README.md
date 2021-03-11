@@ -234,6 +234,7 @@ r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
 r.SeparateTranslucency=1;
 r.SeparateTranslucencyScreenPercentage=100;
+r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
 r.CustomDepth=3;
 r.CustomDepth.Order=0;---------more efficient with async 1 is default
