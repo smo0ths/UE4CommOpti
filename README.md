@@ -31,7 +31,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70;---------texturePool cache
+PoolSizeVRAMPercentage=70;---------texturePool cache lower if vram runs OOM
 
 [/Script/Engine.StreamingSettings]
 s.AsyncLoadingThreadEnabled=1;
