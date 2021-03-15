@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/14/2021~
+*Updated 3/15/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -56,8 +56,6 @@ r.VSync=0;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
 r.GPUCrashDebugging=0;
-r.bForceCPUAccessToGPUSkinVerts=1;---------more cpu usage
-r.DeferSkeletalDynamicDataUpdateUntilGDME=1;---------1 is experimental option
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
 r.EarlyZPass=3;
@@ -68,32 +66,36 @@ r.OneFrameThreadLag=1;----------default 1 game sync w render thread
 r.GTSyncType=0;
 rhi.SyncSlackMS=0;
 r.RHICmdBypass=0;
+r.VertexFoggingForOpaque=0;
+r.D3D11.Depth24Bit=1;
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
 r.DoLazyStaticMeshUpdate=1;
 r.DiscardUnusedQuality=1;
-r.VertexFoggingForOpaque=0;
 r.ForceAllCoresForShaderCompiling=0;---------1 could run faster but use a lot of mem
+r.bForceCPUAccessToGPUSkinVerts=1;---------more cpu usage
+r.DeferSkeletalDynamicDataUpdateUntilGDME=1;---------1 is experimental option
+r.OptimizeForUAVPerformance=0;---------1 can render targets faster but use more GPU vram
+r.DoInitViewsLightingAfterPrepass=1;---------1 is a experimental optimization
+r.MorphTarget.Mode=1;---------default 1 gpu method
+r.ShaderComplexity.CacheShaders=1;
 r.AllowCachedUniformExpressions=1;
 r.Cache.LimitQuerySize=1;
 r.Cache.LightingCacheMovableObjectAllocationSize=3;
-r.D3D11.Depth24Bit=1;
 r.VirtualTexture=1;
 r.VirtualTexturedLightmaps=1;
-r.VirtualTextureReducedMemory=1;---------
-r.VT.TileSize=64;---------
-r.VT.TileBorderSize=2;---------
-r.VT.FeedbackFactor=16;---------
-r.VT.EnableCompressZlib=1;---------
-r.VT.EnableCompressCrunch=1;---------
-r.IncludeNonVirtualTexturedLightmaps=0;---------
-r.VT.PoolSizeScale=0.5;---------
-r.VT.MaxUploadsPerFrame=1;---------
-r.VT.RVT.TileCountBias=0;---------
-r.VT.EnableLossyCompressLightmaps=0;---------
-r.VT.MaxAnisotropy=0;---------
-r.ShaderComplexity.CacheShaders=1;
-r.MorphTarget.Mode=1;---------default 1 gpu method
+r.VirtualTextureReducedMemory=1;
+r.VT.TileSize=64;
+r.VT.TileBorderSize=2;
+r.VT.FeedbackFactor=16;
+r.VT.EnableCompressZlib=1;
+r.VT.EnableCompressCrunch=1;
+r.IncludeNonVirtualTexturedLightmaps=0;
+r.VT.PoolSizeScale=0.5;
+r.VT.MaxUploadsPerFrame=1;
+r.VT.RVT.TileCountBias=0;
+r.VT.EnableLossyCompressLightmaps=0;
+r.VT.MaxAnisotropy=0;
 r.AllowStaticLighting=0;---------1 for SANDSTORM
 r.GenerateMeshDistanceFields=1;---------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
@@ -111,8 +113,6 @@ r.DBuffer=1;---------decals 0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
 r.RenderTargetPoolMin=256;
-r.OptimizeForUAVPerformance=0;---------1 can render targets faster but use more GPU vram
-r.DoInitViewsLightingAfterPrepass=1;---------1 is a experimental optimization
 r.HZBOcclusion=0;---------occlusion culling algorithm
 r.AllowOcclusionQueries=1;
 r.NumBufferedOcclusionQueries=0;
@@ -133,7 +133,7 @@ r.HighQualityLightMaps=1;
 r.SupportLowQualityLightmaps=0;---------0 for SANDSTORM
 r.SupportStationarySkylight=1;
 r.SkyLightingQuality=1;---------0 for PERFORMANCE
-r.LightMaxDrawDistanceScale=1;---------0 or 0.5 for PERFORMANCE
+r.LightMaxDrawDistanceScale=0.5;---------0 or 0.5 for PERFORMANCE
 r.MipMapLODBias=0;---------lods
 r.LandscapeLODBias=0;---------1 for PERFORMANCE
 r.SkeletalMeshLODBias=0;
