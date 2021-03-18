@@ -216,7 +216,6 @@ r.CapsuleShadows=0;
 r.AllowLandscapeShadows=1;---------0 for PERFORMANCE
 r.DistanceFieldShadowing=1;---------0 for PERFORMANCE
 r.DFShadowQuality=1;---------1 or 2 quality level 0 for PERFORMANCE
-r.DFDistanceScale=10000;
 r.DFFullResolution=0;---------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;----------1 is optimal
 r.DistanceFields.ForceMaxAtlasSize=1;
