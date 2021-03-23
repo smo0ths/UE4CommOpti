@@ -59,7 +59,7 @@ AudioThread.BatchAsyncBatchSize=32;
 AudioThread.UseBackgroundThreadPool=1;
 AudioThread.EnableBatchProcessing=1;
 r.Atmosphere=1;
-r.setres=2560x1440wf;
+r.setres=2560x1440wf;---------set your resolution
 r.VSync=0;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
@@ -408,31 +408,51 @@ Open GameUserSettings.ini
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
-settings in here are in game options, they will overwrite your engine.ini yay jk, change them before starting game to get disired setting, don't add unless you are using OverrideOptions:
+settings in here are in game options, they will overwrite your engine.ini (lame) search your games GameUserSettings.ini to make sure settings are what you want
 
 bUseVSync=0 
+
 FullscreenMode=1
+LastConfirmedFullscreenMode=1
+PreferredFullscreenMode=1
+
 bUseDynamicResolution=0
+
 AudioQualityLevel=3
 LastConfirmedAudioQualityLevel=3
+
 FrameRateLimit=0
 MenuFrameRateLimit=0
-MaxCSMResolution=4096
+
+MaxCSMResolution=2048
+
 MaxAnisotropy=8
+
 ContactShadows=0
+
 PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
+
 BloomQuality=3
+
 LensFlareQuality=0
+
 AmbientOcclusion=1
 AmbientOcclusionStaticFraction=0
 AmbientOcclusionLevels=2
 AmbientOcclusionRadiusScale=0.000000
+
 AutoExposure=0
 EyeAdaptationQuality=0
+
 DistanceFieldShadows=1
-TextureStreamPoolSizeStorage=3000
-OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False)))
+
+TextureStreamPoolSizeStorage=2000
+
+OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
+
+
+set your scalability groups
 
 [ScalabilityGroups]
 sg.ResolutionQuality=100.000000
