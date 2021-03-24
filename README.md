@@ -15,7 +15,6 @@ Open Engine.ini and copy/paste commands/configs:
 
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
-Copy/Paste:  %localappdata%/Insurgency/Saved/Config/WindowsClient/Engine.ini 
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
 
 
@@ -122,7 +121,7 @@ r.DistanceFieldBuild.EightBit=0;-----------------------------------
 r.GenerateLandscapeGIData=1;-----------------------------------0 for PERFORMANCE
 r.DistanceFieldGI=0;-----------------------------------
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;-----------------------------------
-r.DistanceFieldBuild.Compress=1;-----------------------------------1 for GROUND BRANCH and other games if you crash
+r.DistanceFieldBuild.Compress=0;-----------------------------------1 for GROUND BRANCH and other games if you crash
 r.SSGI.Enable=0;------------------------------------screen space global illumination
 r.SSGI.Quality=0;------------------------------------0 for PERFORMANCE 1-4 quality values 3 is best
 r.SSGI.HalfRes=0;------------------------------------1 for PERFORMANCE
@@ -396,7 +395,6 @@ r.DefaultFeature.LightUnits=1;-----------------------------------
 Open Input.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
-%localappdata%/Insurgency/Saved/Config/WindowsClient/Input.ini
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
 
 
@@ -417,7 +415,6 @@ ButtonRepeatDelay=0.1;
 Open GameUserSettings.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
-%localappdata%/Insurgency/Saved/Config/WindowsClient/GameUserSettings.ini 
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
@@ -485,7 +482,6 @@ sg.ShadingQuality=0
 Open DeviceProfiles.ini
 
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
-%localappdata%/Insurgency/Saved/Config/WindowsClient/DeviceProfiles.ini
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
