@@ -37,7 +37,7 @@ s.AsyncLoadingThreadEnabled=1;-----------------------------------
 
 [SystemSettings]
 AllowAsyncRenderThreadUpdates=1;-----------------------------------
-AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=0;-----------------------------------test
+AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1;-----------------------------------
 s.UseBackgroundLevelStreaming=1;-----------------------------------
 net.AllowAsyncLoading=1;-----------------------------------
 net.ProcessQueuedBunchesMillisecondLimit=8;-----------------------------------
