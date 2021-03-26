@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/24/2021+
+*Updated 3/26/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -23,6 +23,11 @@ My config:
 [Core.Log]
 Global=off;-----------------------------------
 
+[Audio]
+MaxChannels=128;-----------------------------------32-64-96 for PERFORMANCE
+CommonAudioPoolSize=32;-----------------------------------default 0
+UnfocusedVolumeMultiplier=1;-----------------------------------
+
 [/Script/Engine.Engine]
 bSmoothFrameRate=0;-----------------------------------
 bPauseOnLossOfFocus=0;-----------------------------------
@@ -36,10 +41,13 @@ PoolSizeVRAMPercentage=70;-----------------------------------texturePool cache l
 s.AsyncLoadingThreadEnabled=1;-----------------------------------
 
 [SystemSettings]
+tick.AllowAsyncTickDispatch=1;-----------------------------------
+tick.DoAsyncEndOfFrameTasks=1;-----------------------------------
+tick.DoAsyncEndOfFrameTasks.Randomize=1;-----------------------------------
 AllowAsyncRenderThreadUpdates=1;-----------------------------------
 AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1;-----------------------------------
-s.UseBackgroundLevelStreaming=1;-----------------------------------
 net.AllowAsyncLoading=1;-----------------------------------
+net.AllowEncryption=1;-----------------------------------
 net.ProcessQueuedBunchesMillisecondLimit=8;-----------------------------------
 p.DisableQueryOnlyActors=0;-----------------------------------
 p.AnimDynamicsLODThreshold=1;-----------------------------------
@@ -77,42 +85,42 @@ r.GTSyncType=0;-----------------------------------
 rhi.SyncSlackMS=0;-----------------------------------
 r.RHICmdBypass=0;-----------------------------------
 r.RHICmdBalanceParallelLists=0;-----------------------------------
-r.VertexFoggingForOpaque=0;-----------------------------------
-r.D3D11.Depth24Bit=1;-----------------------------------
+r.D3D11.Depth24Bit=0;-----------------------------------
 r.DrawRectangleOptimization=1;-----------------------------------
 r.AlsoUseSphereForFrustumCull=1;-----------------------------------
 r.MeshStreaming=1;-----------------------------------
 r.MeshDrawCommands.AllowOnDemandShaderCreation=1;-----------------------------------test
-r.AsyncCreateLightPrimitiveInteractions=0;-----------------------------------test
-r.ForceAllCoresForShaderCompiling=0;-----------------------------------1 is EXPERIMENTAL
-r.DeferSkeletalDynamicDataUpdateUntilGDME=0;-----------------------------------1 is EXPERIMENTAL
-r.DoInitViewsLightingAfterPrepass=0;-----------------------------------1 is EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=0;-----------------------------------1 is EXPERIMENTAL
+r.AsyncCreateLightPrimitiveInteractions=1;-----------------------------------test
+r.DeferSkeletalDynamicDataUpdateUntilGDME=1;-----------------------------------1 is EXPERIMENTAL
+r.DoInitViewsLightingAfterPrepass=1;-----------------------------------1 is EXPERIMENTAL
+r.DoLazyStaticMeshUpdate=1;-----------------------------------1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0;-----------------------------------default 0
 r.bForceCPUAccessToGPUSkinVerts=1;-----------------------------------
 r.RenderTargetPoolMin=400;-----------------------------------
 r.SelectiveBasePassOutputs=1;-----------------------------------
-r.OptimizeForUAVPerformance=0;-----------------------------------test faster but uses more gpu memory
-r.MorphTarget.Mode=1;-----------------------------------test 0 cpu method 1 gpu method default 1
+r.OptimizeForUAVPerformance=0;-----------------------------------faster but uses more gpu memory test
+r.MorphTarget.Mode=1;-----------------------------------0 cpu method 1 gpu method default 1
+r.ForwardShading=0;-----------------------------------
 r.SupportSimpleForwardShading=0;-----------------------------------
 r.SimpleForwardShading=0;-----------------------------------
+r.VertexFoggingForOpaque=1;-----------------------------------
+r.ForceAllCoresForShaderCompiling=0;-----------------------------------
 r.ShaderComplexity.CacheShaders=1;-----------------------------------
 r.IndirectLightingCache=1;-----------------------------------
 r.Cache.LightingCacheDimension=128;-----------------------------------
 r.Cache.LimitQuerySize=1;-----------------------------------
 r.Cache.LightingCacheMovableObjectAllocationSize=3;-----------------------------------
-r.SkinCache.Mode=0;-----------------------------------
-r.SkinCache.CompileShaders=0;-----------------------------------
 r.VirtualTexture=1;-----------------------------------
 r.VirtualTexturedLightmaps=1;-----------------------------------
 r.DistanceFields=1;-----------------------------------
-r.DistanceFields.ForceMaxAtlasSize=0;-----------------------------------
-r.DistanceFields.ParallelAtlasUpdate=0;-----------------------------------default 0
+r.DistanceFields.ForceMaxAtlasSize=1;-----------------------------------test
+r.DistanceFields.AtlasSizeZ=1024;-----------------------------------test
+r.DistanceFields.ParallelAtlasUpdate=1;-----------------------------------default 0 test
 r.AllowStaticLighting=0;-----------------------------------1 for SANDSTORM
 r.GenerateMeshDistanceFields=1;-----------------------------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;-----------------------------------
 r.DistanceFieldBuild.EightBit=0;-----------------------------------
-r.GenerateLandscapeGIData=1;-----------------------------------0 for PERFORMANCE
+r.GenerateLandscapeGIData=0;-----------------------------------
 r.DistanceFieldGI=0;-----------------------------------
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;-----------------------------------
 r.DistanceFieldBuild.Compress=0;-----------------------------------1 for GROUND BRANCH and other games if you crash
@@ -120,10 +128,10 @@ r.SSGI.Enable=0;------------------------------------screen space global illumina
 r.SSGI.Quality=0;------------------------------------0 for PERFORMANCE 1-4 quality values 3 is best
 r.SSGI.HalfRes=0;------------------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=1;------------------------------------1 for better quality results
-r.DBuffer=0;-----------------------------------decals 0 for PERFORMANCE
+r.DBuffer=1;-----------------------------------decals 0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;-----------------------------------
 r.LightPropagationVolume=0;-----------------------------------
-r.HZBOcclusion=1;-----------------------------------occlusion culling algorithm default 1
+r.HZBOcclusion=0;-----------------------------------occlusion culling algorithm default 1
 r.AllowOcclusionQueries=1;-----------------------------------
 r.NumBufferedOcclusionQueries=1;-----------------------------------
 r.AllowSubPrimitiveQueries=1;-----------------------------------
@@ -133,10 +141,10 @@ r.MinScreenRadiusForDepthPrepass=0.03;-----------------------------------0.2 for
 r.MinScreenRadiusForCSMDepth=0.01;-----------------------------------
 r.MinScreenRadiusForSmallLights=0.01;-----------------------------------
 r.SceneColorFormat=3;-----------------------------------3 for PERFORMANCE
-r.DefaultBackBufferPixelFormat=0;-----------------------------------0 for PERFORMANCE
+r.DefaultBackBufferPixelFormat=4;-----------------------------------0 for PERFORMANCE
 r.ClearSceneMethod=1;-----------------------------------
-r.GBufferFormat=1;-----------------------------------0 8bit per component default 1
-r.LightFunctionQuality=2;-----------------------------------0 for PERFORMANCE
+r.GBufferFormat=3;-----------------------------------1-3 quality values default 1 test
+r.LightFunctionQuality=1;-----------------------------------0 for PERFORMANCE default 2
 r.ClearCoatNormal=0;-----------------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;-----------------------------------
 r.HighQualityLightMaps=1;-----------------------------------0 for PERFORMANCE
@@ -192,15 +200,15 @@ r.AOQuality=0;-----------------------------------1-2 dfao quality values
 r.AOObjectDistanceField=0;-----------------------------------
 r.AOGlobalDistanceField=1;------------------------------------1 is OPTIMAL
 r.AOUseSurfaceCache=0;------------------------------------
-r.AOSpecularOcclusionMode=1;-----------------------------------
 r.AOApplyToStaticIndirect=0;-----------------------------------
 r.AOHeightfieldOcclusion=0;-----------------------------------
 r.AOGlobalDistanceFieldRepresentHeightfields=1;-----------------------------------
 r.AOGlobalDFStartDistance=100;-----------------------------------
 r.AOAsyncBuildQueue=1;-----------------------------------
-r.AOComputeShaderNormalCalculation=0;-----------------------------------test
+r.AOComputeShaderNormalCalculation=1;-----------------------------------test
 r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;-----------------------------------test
-r.SkySpecularOcclusionStrength=1;-----------------------------------
+r.AOSpecularOcclusionMode=0;-----------------------------------specular occlusion from skylight 0 is on
+r.SkySpecularOcclusionStrength=1;-----------------------------------test 0.33 default 1
 r.ShadowQuality=4;-----------------------------------shadows 0 off
 r.Shadow.FilterMethod=0;-----------------------------------
 r.Shadow.CSM.MaxCascades=2;-----------------------------------
@@ -244,19 +252,21 @@ r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;--------------------------------
 r.AllowPointLightCubemapShadows=1;-----------------------------------
 r.ParallelShadow=1;-----------------------------------0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;-----------------------------------
-r.ContactShadows=0;-----------------------------------
+r.ContactShadows=0;-----------------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;-----------------------------------
 r.CapsuleShadows=0;-----------------------------------
 r.AllowLandscapeShadows=1;-----------------------------------landscape shadows 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;-----------------------------------distance field shadowing 0 for PERFORMANCE
-r.DFShadowQuality=1;-----------------------------------1-2 quality level 0 for PERFORMANCE
+r.DFShadowQuality=1;-----------------------------------1-2 quality values 0 for PERFORMANCE
 r.DFFullResolution=0;-----------------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;------------------------------------1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;-----------------------------------
+r.DFDistanceScale=1;-----------------------------------test
+r.DFFarTransitionScale=1;-----------------------------------test
 r.Tonemapper.Quality=2;-----------------------------------
 r.TonemapperFilm=1;-----------------------------------
-r.Tonemapper.GrainQuantization=1;-----------------------------------0 if using HDR
-r.Tonemapper.Sharpen=0;-----------------------------------0.7 works well with TAA
+r.Tonemapper.GrainQuantization=0;-----------------------------------1 for 8bit 0 for 10bit
+r.tonemapper.sharpen=0;-----------------------------------0.7 works well with TAA
 r.Tonemapper.MergeWithUpscale.Mode=0;-----------------------------------
 r.MinRoughnessOverride=0.2;-----------------------------------0.2 with no AA 0 with
 r.DefaultFeature.AntiAliasing=0;-----------------------------------1 FXAA 2 TAA 3 MSAA
@@ -269,7 +279,7 @@ r.TemporalAA.R11G11B10History=0;-----------------------------------1 is EXPERIME
 r.TemporalAA.Algorithm=1;-----------------------------------Gen 5 TAA
 r.TemporalAA.Upsampling=1;-----------------------------------allow Gen 5 TAAU
 r.TemporalAAUpsampleFiltered=1;-----------------------------------0 for PERFORMANCE
-r.SceneRenderTargetResizeMethod=0;-----------------------------------
+r.SceneRenderTargetResizeMethod=2;-----------------------------------2 uses more memory and can prevent allocation stalls default 0
 r.ScreenPercentage=100;-----------------------------------lower input res for Gen 4 or 5 TAA use 86.66 or a simple percentage
 r.Upscale.Quality=3;-----------------------------------test
 r.Upscale.Softness=0;-----------------------------------
@@ -320,7 +330,7 @@ r.chaos.ReflectionCaptureStaticSceneOnly=1;-----------------------------------1 
 r.DoTiledReflections=1;-----------------------------------tiled reflection
 r.NoTiledReflections=0;-----------------------------------
 r.ReflectionCaptureGPUArrayCopy=1;-----------------------------------
-r.ReflectionCaptureResolution=128;-----------------------------------
+r.ReflectionCaptureResolution=512;-----------------------------------default 128
 r.TiledDeferredShading=1;-----------------------------------tiled deferred shading
 r.TiledDeferredShading.MinimumCount=10;-----------------------------------test
 r.SSR.Quality=0;-----------------------------------ssr 0 for PERFORMANCE
@@ -345,7 +355,7 @@ r.UsePreExposure=0;-----------------------------------
 r.EyeAdaptation.PreExposureOverride=0;-----------------------------------
 r.MaxAnisotropy=8;-----------------------------------
 r.SupportMaterialLayers=0;-----------------------------------
-r.TessellationAdaptivePixelsPerTriangle=96;-----------------------------------9999999 for PERFORMANCE 48-96 quality values
+r.TessellationAdaptivePixelsPerTriangle=48;-----------------------------------9999999 for PERFORMANCE 48 for quality
 r.MaterialQualityLevel=1;-----------------------------------0 for PERFORMANCE
 r.DetailMode=2;-----------------------------------0 for PERFORMANCE
 r.RefractionQuality=1;-----------------------------------0 for PERFORMANCE
@@ -368,7 +378,8 @@ r.DOF.Kernel.MaxBackgroundRadius=0.025;-----------------------------------
 r.Filter.NewMethod=1;-----------------------------------
 r.Filter.SizeScale=1;-----------------------------------
 r.BloomQuality=3;-----------------------------------bloom
-r.Bloom.HalfResoluionFFT=0;-----------------------------------test
+r.Bloom.HalfResoluionFFT=0;-----------------------------------
+r.Bloom.Cross=0;-----------------------------------
 r.BlurGBuffer=0;-----------------------------------
 r.MotionBlurQuality=0;-----------------------------------
 r.FastBlurThreshold=7;-----------------------------------
@@ -448,6 +459,8 @@ AmbientOcclusionStaticFraction=0
 AmbientOcclusionLevels=2
 AmbientOcclusionRadiusScale=0.000000
 
+HDRDisplayOutputNits=300
+
 AutoExposure=0
 EyeAdaptationQuality=0
 
@@ -484,24 +497,24 @@ Open DeviceProfiles.ini
 Textures or you can just use in game settings (sg.TextureQuality=) copy/paste:
 
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=64,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=64,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=64,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=64,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 
 
 -----------end-----------
