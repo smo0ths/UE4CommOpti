@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/26/2021
+*Updated 3/26/2021~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -50,9 +50,13 @@ net.AllowAsyncLoading=1;-----------------------------------
 net.AllowEncryption=1;-----------------------------------
 net.ProcessQueuedBunchesMillisecondLimit=8;-----------------------------------
 p.DisableQueryOnlyActors=0;-----------------------------------
-p.AnimDynamicsLODThreshold=1;-----------------------------------
-p.RigidBodyLODThreshold=1;-----------------------------------
-p.AnimDynamicsWind=1;-----------------------------------
+p.AnimDynamics=0;-----------------------------------0 for PERFORMANCE
+p.AnimDynamicsWind=0;-----------------------------------0 for PERFORMANCE
+p.AnimDynamicsLODThreshold=-1;-----------------------------------
+p.RagdollPhysics=1;-----------------------------------
+p.BatchPhysXTasksSize=8;-----------------------------------
+p.RigidBodyNode=0;-----------------------------------0 for PERFORMANCE
+p.RigidBodyLODThreshold=-1;-----------------------------------
 a.Budget.Enabled=1;-----------------------------------
 a.Budget.BudgetMs=1.5;-----------------------------------
 FX.BatchAsync=1;-----------------------------------
@@ -85,7 +89,7 @@ r.GTSyncType=0;-----------------------------------
 rhi.SyncSlackMS=0;-----------------------------------
 r.RHICmdBypass=0;-----------------------------------
 r.RHICmdBalanceParallelLists=0;-----------------------------------
-r.D3D11.Depth24Bit=0;-----------------------------------1 for PERFORMANCE
+r.D3D11.Depth24Bit=0;-----------------------------------
 r.DrawRectangleOptimization=1;-----------------------------------
 r.AlsoUseSphereForFrustumCull=1;-----------------------------------
 r.MeshStreaming=1;-----------------------------------
@@ -93,13 +97,15 @@ r.MeshDrawCommands.AllowOnDemandShaderCreation=1;-------------------------------
 r.AsyncCreateLightPrimitiveInteractions=1;-----------------------------------test
 r.DeferSkeletalDynamicDataUpdateUntilGDME=1;-----------------------------------1 is EXPERIMENTAL
 r.DoInitViewsLightingAfterPrepass=1;-----------------------------------1 is EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=1;-----------------------------------1 is EXPERIMENTAL
+r.DoLazyStaticMeshUpdate=0;-----------------------------------1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0;-----------------------------------default 0
 r.bForceCPUAccessToGPUSkinVerts=1;-----------------------------------
 r.RenderTargetPoolMin=400;-----------------------------------
 r.SelectiveBasePassOutputs=1;-----------------------------------
 r.OptimizeForUAVPerformance=0;-----------------------------------faster but uses more gpu memory test
 r.MorphTarget.Mode=1;-----------------------------------0 cpu method 1 gpu method default 1
+r.UseShaderCaching=1;-----------------------------------
+r.UseShaderPredraw=1;-----------------------------------
 r.ForwardShading=0;-----------------------------------
 r.SupportSimpleForwardShading=0;-----------------------------------
 r.SimpleForwardShading=0;-----------------------------------
@@ -135,7 +141,6 @@ r.HZBOcclusion=0;-----------------------------------occlusion culling algorithm 
 r.AllowOcclusionQueries=1;-----------------------------------
 r.NumBufferedOcclusionQueries=1;-----------------------------------
 r.AllowSubPrimitiveQueries=1;-----------------------------------
-r.NeverOcclusionTestDistance=1250;-----------------------------------test
 r.MinScreenRadiusForLights=0.03;-----------------------------------0.2 PERFORMANCE default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;-----------------------------------0.2 for PERFORMANCE default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;-----------------------------------
@@ -143,7 +148,7 @@ r.MinScreenRadiusForSmallLights=0.01;-----------------------------------
 r.SceneColorFormat=3;-----------------------------------3 for PERFORMANCE
 r.DefaultBackBufferPixelFormat=4;-----------------------------------0 for PERFORMANCE
 r.ClearSceneMethod=1;-----------------------------------
-r.GBufferFormat=3;-----------------------------------1-3 quality values default 1 test
+r.GBufferFormat=1;-----------------------------------1-3 quality values default 1
 r.LightFunctionQuality=1;-----------------------------------0 for PERFORMANCE default 2
 r.ClearCoatNormal=0;-----------------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;-----------------------------------
@@ -158,14 +163,17 @@ r.LandscapeLODBias=0;-----------------------------------1 for PERFORMANCE
 r.SkeletalMeshLODBias=0;-----------------------------------
 r.ParticleLODBias=-1;-----------------------------------
 r.ViewDistanceScale=1;-----------------------------------view distance 0.8 for PERFORMANCE
-r.ViewDistanceScale.SecondaryScale=0;-----------------------------------0 for PERFORMANCE default 1
+r.ViewDistanceScale.SecondaryScale=1;-----------------------------------0 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;-----------------------------------
 r.ViewDistanceScale.FieldOfViewMaxAngle=80;-----------------------------------
 r.ViewDistanceScale.FieldOfViewMaxAngleScale=1;-----------------------------------
 r.ViewDistanceScale.FieldOfViewMinAngle=15;-----------------------------------
 r.ViewDistanceScale.FieldOfViewMinAngleScale=2;-----------------------------------
+a.URO.Enable=1;-----------------------------------
+a.URO.ForceAnimRate=0;-----------------------------------
+a.URO.ForceInterpolation=1;-----------------------------------
 r.SkeletalMeshLODRadiusScale=1;-----------------------------------
-r.StaticMeshLODDistanceScale=0.25;-----------------------------------1 for PERFORMANCE 0.25 for quality
+r.StaticMeshLODDistanceScale=1;-----------------------------------1 for PERFORMANCE 0.25 for quality
 r.SplineMesh.NoRecreateProxy=1;-----------------------------------
 r.TextureStreaming=1;-----------------------------------texture streaming
 r.Streaming.UseBackgroundThreadPool=1;-----------------------------------
@@ -212,13 +220,13 @@ r.SkySpecularOcclusionStrength=1;-----------------------------------test 0.33 de
 r.ShadowQuality=4;-----------------------------------shadows 0 off
 r.Shadow.FilterMethod=0;-----------------------------------
 r.Shadow.CSM.MaxCascades=2;-----------------------------------
-r.Shadow.CSM.TransitionScale=1;-----------------------------------
+r.Shadow.CSM.TransitionScale=2;-----------------------------------test
 r.Shadow.PreShadowResolutionFactor=1;-----------------------------------0.5 for PERFORMANCE
 r.Shadow.MaxResolution=1024;-----------------------------------
 r.Shadow.MaxCSMResolution=2048;-----------------------------------
 r.Shadow.RadiusThreshold=0.01;-----------------------------------0.03 for PERFORMANCE
 r.Shadow.RadiusThresholdRSM=0.06;-----------------------------------
-r.Shadow.DistanceScale=0.6;-----------------------------------0.6 for PERFORMANCE
+r.Shadow.DistanceScale=1;-----------------------------------0.6 for PERFORMANCE
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;-----------------------------------test
 r.Shadow.CachePreshadow=1;-----------------------------------
 r.SupportPointLightWholeSceneShadows=1;-----------------------------------
@@ -229,27 +237,28 @@ r.Shadow.CacheWPOPrimitives=1;-----------------------------------
 r.Shadow.UnbuiltPreviewInGame=0;-----------------------------------
 r.Shadow.PerObject=1;-----------------------------------
 r.Shadow.PerObjectDirectionalDepthBias=10;-----------------------------------
-r.Shadow.PerObjectCastDistanceMin=4500;-----------------------------------test
 r.Shadow.PerObjectDirectionalSlopeDepthBias=8;-----------------------------------
 r.Shadow.CSMDepthBias=10;-----------------------------------
 r.Shadow.ConservativeBounds=1;-----------------------------------
-r.Shadow.PreShadowFadeResolution=32;-----------------------------------
-r.Shadow.MinPreShadowResolution=32;-----------------------------------
-r.Shadow.FadeResolution=32;-----------------------------------
-r.Shadow.MinResolution=32;-----------------------------------
-r.Shadow.TexelsPerPixel=2.54648;-----------------------------------
-r.Shadow.TexelsPerPixelPointlight=2.54648;-----------------------------------
-r.Shadow.TexelsPerPixelRectlight=2.54648;-----------------------------------
-r.Shadow.TexelsPerPixelSpotlight=2.54648;-----------------------------------
-r.Shadow.TransitionScale=1000;-----------------------------------
-r.Shadow.SpotLightDepthBias=1;-----------------------------------
-r.Shadow.SpotLightReceiverBias=1;-----------------------------------
-r.Shadow.SpotLightSlopeDepthBias=1;-----------------------------------
+r.Shadow.FadeExponent=0;-----------------------------------test
+r.Shadow.PreShadowFadeResolution=32;-----------------------------------test
+r.Shadow.MinPreShadowResolution=512;-----------------------------------test
+r.Shadow.FadeResolution=32;-----------------------------------test
+r.Shadow.MinResolution=512;-----------------------------------test
+r.Shadow.TexelsPerPixel=1.27324;-----------------------------------
+r.Shadow.TexelsPerPixelPointlight=1.27324;-----------------------------------
+r.Shadow.TexelsPerPixelRectlight=1.27324;-----------------------------------
+r.Shadow.TexelsPerPixelSpotlight=1.27324;-----------------------------------
+r.Shadow.TransitionScale=1;-----------------------------------test was 1
+r.Shadow.SpotLightDepthBias=0.15;-----------------------------------test
+r.Shadow.SpotLightReceiverBias=0.15;-----------------------------------test
+r.Shadow.SpotLightSlopeDepthBias=8;-----------------------------------test
 r.Shadow.SpotLightTransitionScale=60;-----------------------------------test
-r.Shadow.MaxNumFarShadowCascades=0;-----------------------------------
 r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=2;-----------------------------------
 r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;-----------------------------------
+r.Shadow.PointLightDepthBias=0.03;-----------------------------------
 r.AllowPointLightCubemapShadows=1;-----------------------------------
+r.Shadow.MaxNumFarShadowCascades=0;-----------------------------------test
 r.ParallelShadow=1;-----------------------------------0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;-----------------------------------
 r.ContactShadows=0;-----------------------------------0 for PERFORMANCE
@@ -258,7 +267,7 @@ r.CapsuleShadows=0;-----------------------------------
 r.AllowLandscapeShadows=1;-----------------------------------landscape shadows 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;-----------------------------------distance field shadowing 0 for PERFORMANCE
 r.DFShadowQuality=1;-----------------------------------1-2 quality values 0 for PERFORMANCE
-r.DFFullResolution=0;-----------------------------------0 for PERFORMANCE
+r.DFFullResolution=1;-----------------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;------------------------------------1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;-----------------------------------
 r.DFDistanceScale=1;-----------------------------------test
@@ -266,20 +275,20 @@ r.DFFarTransitionScale=1;-----------------------------------test
 r.Tonemapper.Quality=2;-----------------------------------
 r.TonemapperFilm=1;-----------------------------------
 r.Tonemapper.GrainQuantization=0;-----------------------------------1 for 8bit 0 for 10bit
-r.tonemapper.sharpen=0;-----------------------------------0.7 works well with TAA
+r.Tonemapper.Sharpen=0;-----------------------------------0.7 works well with TAA
 r.Tonemapper.MergeWithUpscale.Mode=0;-----------------------------------
-r.MinRoughnessOverride=0.2;-----------------------------------0.2 with no AA 0 with
-r.DefaultFeature.AntiAliasing=0;-----------------------------------1 FXAA 2 TAA 3 MSAA
-r.PostProcessAAQuality=0;-----------------------------------0 off 1-2 FXAA 3-4-5-6 TAA
+r.MinRoughnessOverride=0;-----------------------------------0.2 with no AA 0 with
+r.DefaultFeature.AntiAliasing=2;-----------------------------------1 FXAA 2 TAA 3 MSAA
+r.PostProcessAAQuality=3;-----------------------------------0 off 1-2 FXAA 3-4-5-6 TAA
 r.MSAA.CompositingSampleCount=1;-----------------------------------
-r.TemporalAASamples=6;-----------------------------------
+r.TemporalAASamples=4;-----------------------------------
 r.TemporalAAFilterSize=0.25;-----------------------------------only works with 6+ TAA samples
 r.TemporalAACurrentFrameWeight=0;-----------------------------------test
 r.TemporalAA.R11G11B10History=0;-----------------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=1;-----------------------------------Gen 5 TAA
-r.TemporalAA.Upsampling=1;-----------------------------------allow Gen 5 TAAU
-r.TemporalAAUpsampleFiltered=1;-----------------------------------0 for PERFORMANCE
-r.SceneRenderTargetResizeMethod=2;-----------------------------------2 uses more memory and can prevent allocation stalls default 0
+r.TemporalAA.Upsampling=0;-----------------------------------allow Gen 5 TAAU
+r.TemporalAAUpsampleFiltered=0;-----------------------------------0 for PERFORMANCE
+r.SceneRenderTargetResizeMethod=0;-----------------------------------2 uses more memory and can prevent allocation stalls default 0
 r.ScreenPercentage=100;-----------------------------------lower input res for Gen 4 or 5 TAA use 86.66 or a simple percentage
 r.Upscale.Quality=3;-----------------------------------test
 r.Upscale.Softness=0;-----------------------------------
@@ -344,7 +353,7 @@ r.SSS.HalfRes=1;-----------------------------------
 r.SSS.Filter=1;-----------------------------------
 r.SSS.Checkerboard=1;-----------------------------------
 r.ParticleLightQuality=1;-----------------------------------particles 0 for PERFORMANCE
-r.ParticleMinTimeBetweenTicks=8;-----------------------------------
+r.ParticleMinTimeBetweenTicks=10;-----------------------------------
 r.EmitterSpawnRateScale=0.5;-----------------------------------0.25 for PERFORMANCE
 r.Emitter.FastPoolEnable=1;-----------------------------------
 r.DefaultFeature.AutoExposure=0;-----------------------------------eye adaptation
@@ -388,9 +397,11 @@ r.SceneColorFringeQuality=0;-----------------------------------
 r.SceneColorFringe.Max=-1;-----------------------------------
 grass.DensityScale=0.6;-----------------------------------
 grass.DisableDynamicShadows=0;-----------------------------------1 for PERFORMANCE
-grass.TickInterval=8;-----------------------------------
+grass.TickInterval=10;-----------------------------------
 foliage.DensityScale=0.6;-----------------------------------0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;-----------------------------------
+foliage.LODDistanceScale=1;-----------------------------------test
+foliage.DitheredLOD=1;-----------------------------------test
 ShowFlag.Vignette=0;-----------------------------------
 ShowFlag.SceneColorFringe=0;-----------------------------------
 r.DefaultFeature.LightUnits=1;-----------------------------------
@@ -428,46 +439,30 @@ Open GameUserSettings.ini
 settings in here are in game options, they will overwrite your engine.ini (lame) search your games GameUserSettings.ini to make sure settings are what you want
 
 bUseVSync=0 
-
 FullscreenMode=1
 LastConfirmedFullscreenMode=1
 PreferredFullscreenMode=1
-
 bUseDynamicResolution=0
-
 AudioQualityLevel=3
 LastConfirmedAudioQualityLevel=3
-
 FrameRateLimit=0
 MenuFrameRateLimit=0
-
 MaxCSMResolution=2048
-
 MaxAnisotropy=8
-
 ContactShadows=0
-
 PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
-
 BloomQuality=3
-
 LensFlareQuality=0
-
 AmbientOcclusion=1
 AmbientOcclusionStaticFraction=0
 AmbientOcclusionLevels=2
 AmbientOcclusionRadiusScale=0.000000
-
 HDRDisplayOutputNits=300
-
 AutoExposure=0
 EyeAdaptationQuality=0
-
 DistanceFieldShadows=1
-
 TextureStreamPoolSizeStorage=2000
-
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
 
 
