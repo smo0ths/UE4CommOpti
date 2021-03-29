@@ -279,7 +279,6 @@ r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
 r.CustomDepth=3;
 r.CustomDepth.Order=1;
-r.CustomDepthTemporalAAJitter=0;
 r.SupportSkyAtmosphere=1;
 r.SupportSkyAtmosphereAffectsHeightFog=1;----------------------------test
 r.SupportAtmosphericFog=1;
