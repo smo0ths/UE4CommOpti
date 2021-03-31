@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/27/2021
+*Updated 3/31/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -38,29 +38,9 @@ DisplayGamma=2.2;
 PoolSizeVRAMPercentage=70; texturePool cache lower if vram runs too high
 
 [/Script/Engine.StreamingSettings]
-s.EventDrivenLoaderEnabled=1;
 s.AsyncLoadingThreadEnabled=1;
-s.UseBackgroundLevelStreaming=1;
 
 [SystemSettings]
-tick.AllowAsyncTickDispatch=1;
-tick.DoAsyncEndOfFrameTasks=1;
-tick.DoAsyncEndOfFrameTasks.Randomize=1;
-AllowAsyncRenderThreadUpdates=1;
-AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1;
-net.AllowAsyncLoading=1;
-net.AllowEncryption=1;
-net.ProcessQueuedBunchesMillisecondLimit=8;
-p.DisableQueryOnlyActors=0;
-p.AnimDynamics=0; 0 for PERFORMANCE
-p.AnimDynamicsWind=0; 0 for PERFORMANCE
-p.AnimDynamicsLODThreshold=0;
-p.RagdollPhysics=1;
-p.BatchPhysXTasksSize=2;
-p.RigidBodyNode=0; 0 for PERFORMANCE
-p.RigidBodyLODThreshold=0;
-a.Budget.Enabled=1;
-a.Budget.BudgetMs=1.5;
 FX.BatchAsync=1;
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=1;
@@ -68,8 +48,6 @@ FX.BatchAsyncBatchSize=32;
 FX.AllowCulling=1;
 FX.AllowGPUParticles=1;
 FX.AllowGPUSorting=1;
-FX.MaxCPUParticlesPerEmitter=50;
-FX.MaxGPUParticlesSpawnedPerFrame=512;
 AudioThread.BatchAsyncBatchSize=32;
 AudioThread.UseBackgroundThreadPool=1;
 AudioThread.EnableBatchProcessing=1;
@@ -91,7 +69,7 @@ r.GTSyncType=0;
 rhi.SyncSlackMS=0;
 r.RHICmdBypass=0;
 r.RHICmdBalanceParallelLists=0;
-r.D3D11.Depth24Bit=0;
+r.D3D11.Depth24Bit=1; 0 for 32 bit depth buffers
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
 r.MeshStreaming=1;----------------------------test
@@ -103,8 +81,6 @@ r.RenderTargetPoolMin=400;
 r.SelectiveBasePassOutputs=1;
 r.OptimizeForUAVPerformance=0; faster but uses more gpu memory----------------------------test
 r.MorphTarget.Mode=1; 0 cpu method 1 gpu method default 1
-r.UseShaderCaching=1;
-r.UseShaderPredraw=1;
 r.ForwardShading=0;
 r.SupportSimpleForwardShading=0;
 r.SimpleForwardShading=0;
@@ -143,6 +119,8 @@ r.GBufferFormat=1; 1-3 QUALITY VALUES default 1
 r.LightFunctionQuality=1; 0 for PERFORMANCE default 2
 r.ClearCoatNormal=0; 0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
+r.HighQualityLightMaps=1;----------------------------test
+r.SkyLightingQuality=1;----------------------------test
 r.SupportLowQualityLightmaps=0;
 r.SupportStationarySkylight=1;
 r.SkylightIntensityMultiplier=1; lower to darken skylight
@@ -193,35 +171,26 @@ r.HLOD.DistanceScale=1;
 r.HLOD.DistanceOverride=10000;
 r.HLOD.ForceDisableCastDynamicShadow=1;
 r.DistanceFieldAO=0; 1 for dfao
-r.ShadowQuality=4; shadows 0 off
+r.ShadowQuality=3; shadows
 r.Shadow.FilterMethod=0;
-r.Shadow.CSM.MaxCascades=2;
-r.Shadow.CSM.TransitionScale=1;----------------------------test
-r.Shadow.PreShadowResolutionFactor=1; 0.5 for PERFORMANCE
+r.Shadow.TransitionScale=1;
+r.Shadow.SpotLightTransitionScale=1;
 r.Shadow.MaxResolution=1024;
-r.Shadow.MaxCSMResolution=2048;
+r.Shadow.MaxCSMResolution=4096;
+r.Shadow.CSM.MaxCascades=2;
+r.Shadow.CSM.TransitionScale=1;
 r.Shadow.RadiusThreshold=0.01; 0.03 for PERFORMANCE
 r.Shadow.DistanceScale=1; 0.6 for PERFORMANCE
+r.Shadow.CSMDepthBias=10;
+r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=2;
+r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;
 r.Shadow.ForceSingleSampleShadowingFromStationary=0;
+r.Shadow.PreShadowResolutionFactor=1; 0.5 for PERFORMANCE
 r.Shadow.CachePreshadow=1;
 r.SupportPointLightWholeSceneShadows=1;
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1; 0 for PERFORMANCE
-r.Shadow.CacheWPOPrimitives=1;
-r.Shadow.CSMDepthBias=10;
-r.Shadow.FadeExponent=0;
-r.Shadow.PreShadowFadeResolution=32;
-r.Shadow.MinPreShadowResolution=64;
-r.Shadow.FadeResolution=32;
-r.Shadow.MinResolution=64;
-r.Shadow.TransitionScale=1;
-r.Shadow.SpotLightDepthBias=0.03;
-r.Shadow.SpotLightReceiverBias=0.03;
-r.Shadow.SpotLightSlopeDepthBias=8;
-r.Shadow.SpotLightTransitionScale=1;
-r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=2;
-r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;
-r.Shadow.PointLightDepthBias=0.03;
+r.Shadow.CacheWPOPrimitives=0;
 r.AllowPointLightCubemapShadows=1;
 r.ParallelShadow=1; 0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;
@@ -232,10 +201,10 @@ r.AllowLandscapeShadows=1; landscape shadows 0 for PERFORMANCE
 r.DistanceFields=1;
 r.DistanceFieldShadowing=1; distance field shadowing 0 for PERFORMANCE
 r.DFShadowQuality=1; 1-2 QUALITY VALUES 0 for PERFORMANCE
+r.Shadow.MaxNumFarShadowCascades=0;
 r.DFFullResolution=0; 0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1; 1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;
-r.Shadow.MaxNumFarShadowCascades=0;----------------------------test
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1; 1 for 8bit 0 for 10bit
@@ -244,14 +213,15 @@ r.Tonemapper.MergeWithUpscale.Mode=0;
 r.MinRoughnessOverride=0; 0.2 with no AA 0 with
 r.DefaultFeature.AntiAliasing=2; 1 FXAA 2 TAA 3 MSAA
 r.PostProcessAAQuality=3; 0 off 1-2 FXAA 3-4-5-6 TAA
+r.MSAACount=0;
 r.MSAA.CompositingSampleCount=1;
 r.TemporalAASamples=4;
-r.TemporalAAFilterSize=0.25; only works with 6+ TAA samples
-r.TemporalAACurrentFrameWeight=0;----------------------------test
+r.TemporalAAFilterSize=1;
+r.TemporalAACurrentFrameWeight=0.25;
 r.TemporalAA.R11G11B10History=0; 1 is EXPERIMENTAL
-r.TemporalAA.Algorithm=1; Gen 5 TAA
-r.TemporalAA.Upsampling=0; allow Gen 5 TAAU
-r.TemporalAAUpsampleFiltered=0; 0 for PERFORMANCE
+r.TemporalAA.Algorithm=1; 1 is EXPERIMENTAL
+r.TemporalAA.Upsampling=1; TAAU
+r.TemporalAAUpsampleFiltered=1;
 r.SceneRenderTargetResizeMethod=0; 2 uses more memory and can prevent allocation stalls default 0
 r.ScreenPercentage=100; lower input res for Gen 4 or 5 TAA use 86.66 or a simple percentage
 r.Upscale.Quality=1;
@@ -277,10 +247,6 @@ r.SeparateTranslucency=1;
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
-r.CustomDepth=3;
-r.CustomDepth.Order=1;
-r.SupportSkyAtmosphere=0;
-r.SupportSkyAtmosphereAffectsHeightFog=0;
 r.SupportAtmosphericFog=1;
 r.Fog=1;
 r.VolumetricFog=1; 0 for PERFORMANCE
@@ -303,7 +269,7 @@ r.NoTiledReflections=0;
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128; default 128
 r.TiledDeferredShading=1; tiled deferred shading
-r.TiledDeferredShading.MinimumCount=10;----------------------------test
+r.TiledDeferredShading.MinimumCount=80;----------------------------test
 r.SSR.Quality=0; ssr 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1; 1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
@@ -349,7 +315,6 @@ foliage.DensityScale=0.6; 0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;
 ShowFlag.Vignette=0;
 ShowFlag.SceneColorFringe=0;
-r.DefaultFeature.LightUnits=1;
 
 
 -----------end-----------
@@ -381,31 +346,26 @@ Open GameUserSettings.ini
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
-settings in here are in game options, they will overwrite your engine.ini (lame) search your games GameUserSettings.ini to make sure settings are what you want
+settings in here are in game options, they will overwrite your engine.ini... search your games GameUserSettings.ini to make sure settings are what you want
 
 bUseVSync=0 
 FullscreenMode=1
 LastConfirmedFullscreenMode=1
 PreferredFullscreenMode=1
+ResolutionSizeX=2560
+ResolutionSizeY=1440
+LastUserConfirmedResolutionSizeX=2560
+LastUserConfirmedResolutionSizeY=1440
+HDRDisplayOutputNits=300
 bUseDynamicResolution=0
 AudioQualityLevel=3
-LastConfirmedAudioQualityLevel=3
-FrameRateLimit=0
-MenuFrameRateLimit=0
-MaxCSMResolution=2048
+FrameRateLimit=163.000000
+MenuFrameRateLimit=163.000000
 MaxAnisotropy=8
 ContactShadows=0
 PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
 BloomQuality=3
-LensFlareQuality=0
-AmbientOcclusion=1
-AmbientOcclusionStaticFraction=0
-AmbientOcclusionLevels=2
-AmbientOcclusionRadiusScale=0.000000
-HDRDisplayOutputNits=300
-AutoExposure=0
-EyeAdaptationQuality=0
 DistanceFieldShadows=1
 TextureStreamPoolSizeStorage=2000
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
@@ -449,12 +409,6 @@ TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=4096
 TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
 TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
 TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=512,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=512,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
-TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
 
 
 -----------end-----------
@@ -468,7 +422,7 @@ Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
 TF anisotropic sample optimization:  On
-TF Negative LOD bias:  Clamp  (allow for performance as stated by nvidia)
+TF Negative LOD bias:  Clamp  (allow for performance clamp for better AF)
 Texture filtering quality:  High performance
 Vertical sync:  Off
 
