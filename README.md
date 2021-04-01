@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 3/31/2021
+*Updated 4/1/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -64,7 +64,6 @@ r.EarlyZPass=2;
 r.EarlyZPassMovable=1;
 r.EarlyZPassOnlyMaterialMasking=1;
 r.FinishCurrentFrame=0;
-r.OneFrameThreadLag=1; 1 game sync with render thread
 r.GTSyncType=0;
 rhi.SyncSlackMS=0;
 r.RHICmdBypass=0;
@@ -100,9 +99,10 @@ r.DistanceFieldBuild.Compress=0; 1 for GROUND BRANCH-----------some games will c
 r.DBuffer=1; decals 0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
-r.HZBOcclusion=1; occlusion culling algorithm default 1
+r.HZBOcclusion=0; occlusion culling algorithm default 1
 r.AllowOcclusionQueries=1;
-r.NumBufferedOcclusionQueries=0;
+r.OneFrameThreadLag=1; 1 game sync with render thread
+r.NumBufferedOcclusionQueries=1;
 r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.03; default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03; default 0.03
@@ -121,7 +121,6 @@ r.ClearCoatNormal=0; 0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
 r.HighQualityLightMaps=1;----------------------------test
 r.SkyLightingQuality=1;----------------------------test
-r.SupportLowQualityLightmaps=0;
 r.SupportStationarySkylight=1;
 r.SkylightIntensityMultiplier=1; lower to darken skylight
 r.LightMaxDrawDistanceScale=1; dynamic lights lod scale 0 for PERFORMANCE
@@ -296,7 +295,7 @@ r.TessellationAdaptivePixelsPerTriangle=9999999; 9999999 for PERFORMANCE 48 for 
 r.MaterialQualityLevel=1; 0 for PERFORMANCE
 r.DetailMode=2; 0 for PERFORMANCE
 r.RefractionQuality=1; 0 for PERFORMANCE
-r.IrisNormal=1; 0 for PERFORMANCE
+r.IrisNormal=0; 0 for PERFORMANCE
 r.DepthOfFieldQuality=1; dof 0 for PERFORMANCE
 r.Filter.SizeScale=1;
 r.BloomQuality=3; bloom
