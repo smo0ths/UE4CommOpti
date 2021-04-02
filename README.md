@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 4/1/2021
+*Updated 4/2/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -35,7 +35,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70; texturePool cache lower if vram runs too high
+PoolSizeVRAMPercentage=50; texturePool cache lower if vram runs too high
 
 [/Script/Engine.StreamingSettings]
 s.AsyncLoadingThreadEnabled=1;
@@ -131,23 +131,19 @@ r.ParticleLODBias=-1;
 r.ViewDistanceScale=1; view distance 0.8 for PERFORMANCE
 r.ViewDistanceScale.SecondaryScale=0; 0 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.ViewDistanceScale.FieldOfViewMaxAngle=80;
-r.ViewDistanceScale.FieldOfViewMaxAngleScale=1;
-r.ViewDistanceScale.FieldOfViewMinAngle=15;
-r.ViewDistanceScale.FieldOfViewMinAngleScale=2;
 a.URO.Enable=1;
-a.URO.ForceAnimRate=0;
 a.URO.ForceInterpolation=1;
+a.URO.ForceAnimRate=0;----------------------------test 2
 r.SkeletalMeshLODRadiusScale=1;
 r.StaticMeshLODDistanceScale=1; default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1; texture streaming
 r.Streaming.UseBackgroundThreadPool=1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
-r.Streaming.MaxTempMemoryAllowed=64; default 50
+r.Streaming.MaxTempMemoryAllowed=50;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
-r.Streaming.PoolSize=2000;
+r.Streaming.PoolSize=3000;
 r.Streaming.UseAllMips=0;
 r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.Boost=1;
@@ -253,7 +249,7 @@ r.VolumetricFog.GridPixelSize=16;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.HistoryWeight=0.9;
 r.VolumetricFog.InjectShadowedLightsSeparately=0;
-r.VolumetricFog.TemporalReprojection=0;
+r.VolumetricFog.TemporalReprojection=1;
 r.VolumetricFog.HistoryMissSupersampleCount=1;
 r.ReflectionEnvironment=1; reflection environment 0 for PERFORMANCE
 r.HalfResReflections=1;
