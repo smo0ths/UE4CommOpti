@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 4/2/2021
+*Updated 4/6/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -25,7 +25,7 @@ Global=off;
 
 [Audio]
 MaxChannels=128; 32-64-96 for PERFORMANCE
-CommonAudioPoolSize=32; default 0
+CommonAudioPoolSize=0; default 0
 UnfocusedVolumeMultiplier=1;
 
 [/Script/Engine.Engine]
@@ -71,14 +71,14 @@ r.RHICmdBalanceParallelLists=0;
 r.D3D11.Depth24Bit=1; 0 for 32 bit depth buffers
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
-r.MeshStreaming=1;----------------------------test
-r.DeferSkeletalDynamicDataUpdateUntilGDME=0; 1 is EXPERIMENTAL
-r.DoInitViewsLightingAfterPrepass=0; 1 is EXPERIMENTAL
+r.MeshStreaming=0;----------------------------test
+r.DeferSkeletalDynamicDataUpdateUntilGDME=1; 1 is EXPERIMENTAL
+r.DoInitViewsLightingAfterPrepass=1; 1 is EXPERIMENTAL
 r.DoLazyStaticMeshUpdate=0; 1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0; default 0
 r.RenderTargetPoolMin=400;
 r.SelectiveBasePassOutputs=1;
-r.OptimizeForUAVPerformance=0; faster but uses more gpu memory----------------------------test
+r.OptimizeForUAVPerformance=0; faster but uses more gpu memory default 0
 r.MorphTarget.Mode=1; 0 cpu method 1 gpu method default 1
 r.ForwardShading=0;
 r.SupportSimpleForwardShading=0;
@@ -102,7 +102,7 @@ r.LightPropagationVolume=0;
 r.HZBOcclusion=0; occlusion culling algorithm default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1; 1 game sync with render thread
-r.NumBufferedOcclusionQueries=1;
+r.NumBufferedOcclusionQueries=2;----------------------------test
 r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.03; default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03; default 0.03
@@ -133,14 +133,14 @@ r.ViewDistanceScale.SecondaryScale=0; 0 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 a.URO.Enable=1;
 a.URO.ForceInterpolation=1;
-a.URO.ForceAnimRate=0;----------------------------test 2
+a.URO.ForceAnimRate=0;
 r.SkeletalMeshLODRadiusScale=1;
 r.StaticMeshLODDistanceScale=1; default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1; texture streaming
 r.Streaming.UseBackgroundThreadPool=1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
-r.Streaming.MaxTempMemoryAllowed=50;
+r.Streaming.MaxTempMemoryAllowed=100;----------------------------test
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
 r.Streaming.PoolSize=3000;
