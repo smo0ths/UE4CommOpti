@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 4/6/2021
+*Updated 4/8/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -57,6 +57,7 @@ r.VSync=0;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
 r.GPUCrashDebugging=0;
+r.AsyncPipelineCompile=1;
 r.XGEShaderCompile=1;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
@@ -71,7 +72,6 @@ r.RHICmdBalanceParallelLists=0;
 r.D3D11.Depth24Bit=1; 0 for 32 bit depth buffers
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
-r.MeshStreaming=0;----------------------------test
 r.DeferSkeletalDynamicDataUpdateUntilGDME=1; 1 is EXPERIMENTAL
 r.DoInitViewsLightingAfterPrepass=1; 1 is EXPERIMENTAL
 r.DoLazyStaticMeshUpdate=0; 1 is EXPERIMENTAL
@@ -101,8 +101,8 @@ r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
 r.HZBOcclusion=0; occlusion culling algorithm default 1
 r.AllowOcclusionQueries=1;
+r.NeverOcclusionTestDistance=1;-----------------------------------test
 r.OneFrameThreadLag=1; 1 game sync with render thread
-r.NumBufferedOcclusionQueries=2;----------------------------test
 r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.03; default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03; default 0.03
@@ -112,15 +112,15 @@ r.SSGI.Enable=0; screen space global illumination
 r.SSGI.Quality=0; 0 for PERFORMANCE 1-4 QUALITY VALUES
 r.SSGI.HalfRes=0; 1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=1;
-r.SceneColorFormat=3; 3 for PERFORMANCE
-r.DefaultBackBufferPixelFormat=0; 0 for PERFORMANCE
+r.SceneColorFormat=4; 3 for PERFORMANCE default 4
+r.DefaultBackBufferPixelFormat=4; default 4
 r.ClearSceneMethod=1;
 r.GBufferFormat=1; 1-3 QUALITY VALUES default 1
 r.LightFunctionQuality=1; 0 for PERFORMANCE default 2
 r.ClearCoatNormal=0; 0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
-r.HighQualityLightMaps=1;----------------------------test
-r.SkyLightingQuality=1;----------------------------test
+r.HighQualityLightMaps=0;
+r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
 r.SkylightIntensityMultiplier=1; lower to darken skylight
 r.LightMaxDrawDistanceScale=1; dynamic lights lod scale 0 for PERFORMANCE
@@ -155,16 +155,12 @@ r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
-r.Streaming.HiddenPrimitiveScale=0.5; default 0.5----------------------------test
+r.Streaming.HiddenPrimitiveScale=0.5; default 0.5
 r.Streaming.HLODStrategy=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
-r.HLOD=1;
-r.HLOD.MaximumLevel=-1;
-r.HLOD.DistanceScale=1;
-r.HLOD.DistanceOverride=10000;
-r.HLOD.ForceDisableCastDynamicShadow=1;
+r.HLOD=0;
 r.DistanceFieldAO=0; 1 for dfao
 r.ShadowQuality=3; shadows
 r.Shadow.FilterMethod=0;
@@ -174,12 +170,11 @@ r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=4096;
 r.Shadow.CSM.MaxCascades=2; 1 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;
-r.Shadow.RadiusThreshold=0.01; 0.03 for PERFORMANCE
+r.Shadow.RadiusThreshold=0.02; 0.03 for PERFORMANCE
 r.Shadow.DistanceScale=1; 0.6 for PERFORMANCE
-r.Shadow.CSMDepthBias=10;
 r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=2;
 r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;
-r.Shadow.ForceSingleSampleShadowingFromStationary=0;
+r.Shadow.ForceSingleSampleShadowingFromStationary=1;
 r.Shadow.PreShadowResolutionFactor=1; 0.5 for PERFORMANCE
 r.Shadow.CachePreshadow=1;
 r.SupportPointLightWholeSceneShadows=1;
@@ -210,17 +205,25 @@ r.DefaultFeature.AntiAliasing=2; 1 FXAA 2 TAA 3 MSAA
 r.PostProcessAAQuality=3; 0 off 1-2 FXAA 3-4-5-6 TAA
 r.MSAACount=0;
 r.MSAA.CompositingSampleCount=1;
-r.TemporalAASamples=4;
-r.TemporalAAFilterSize=1;
-r.TemporalAACurrentFrameWeight=0.25;
+r.TemporalAASamples=6;
+r.TemporalAAFilterSize=0.5;
+r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0; 1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=1; 1 is EXPERIMENTAL
-r.TemporalAA.Upsampling=1; TAAU
-r.TemporalAAUpsampleFiltered=1;
-r.SceneRenderTargetResizeMethod=0; 2 uses more memory and can prevent allocation stalls default 0
-r.ScreenPercentage=100; lower input res for Gen 4 or 5 TAA use 86.66 or a simple percentage
+r.TemporalAA.Upsampling=0; TAAU
+r.TemporalAAUpsampleFiltered=0;
+r.ScreenPercentage=100; input resolution percentage for TAAU
+r.SceneRenderTargetResizeMethod=0;
 r.Upscale.Quality=1;
-r.Upscale.Softness=0;
+r.Upscale.Softness=1;
+r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
+r.TranslucencyLightingVolume=1; translucency
+r.TranslucencyVolumeBlur=1;
+r.TranslucencyLightingVolumeDim=32;
+r.SeparateTranslucency=1;
+r.SeparateTranslucencyScreenPercentage=100;
+r.SeparateTranslucencyAutoDownsample=1;
+r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=2; ssao 0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=0; 0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=0; 0 for PERFORMANCE
@@ -235,13 +238,6 @@ r.LightShaftFirstPassDistance=0.1;
 r.LightShaftBlurPasses=2;
 r.LightShaftNumSamples=1;
 r.LightShaftRenderToSeparateTranslucency=1;
-r.TranslucencyLightingVolume=1; translucency
-r.TranslucencyVolumeBlur=1;
-r.TranslucencyLightingVolumeDim=32;
-r.SeparateTranslucency=1;
-r.SeparateTranslucencyScreenPercentage=100;
-r.SeparateTranslucencyAutoDownsample=1;
-r.TranslucentSortPolicy=0;
 r.SupportAtmosphericFog=1;
 r.Fog=1;
 r.VolumetricFog=1; 0 for PERFORMANCE
@@ -290,7 +286,7 @@ r.SupportMaterialLayers=0;
 r.TessellationAdaptivePixelsPerTriangle=9999999; 9999999 for PERFORMANCE 48 for QUALITY
 r.MaterialQualityLevel=1; 0 for PERFORMANCE
 r.DetailMode=2; 0 for PERFORMANCE
-r.RefractionQuality=1; 0 for PERFORMANCE
+r.RefractionQuality=1; 0 for PERFORMANCE default 2
 r.IrisNormal=0; 0 for PERFORMANCE
 r.DepthOfFieldQuality=1; dof 0 for PERFORMANCE
 r.Filter.SizeScale=1;
@@ -310,6 +306,9 @@ foliage.DensityScale=0.6; 0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;
 ShowFlag.Vignette=0;
 ShowFlag.SceneColorFringe=0;
+r.Decal.FadeDurationScale=1; default 1
+r.Decal.FadeScreenSizeMult=1;-----------------------------------test
+r.Decal.StencilSizeThreshold=0.1; default 0.1
 
 
 -----------end-----------
@@ -370,14 +369,14 @@ set your scalability groups
 
 [ScalabilityGroups]
 sg.ResolutionQuality=100.000000
-sg.ViewDistanceQuality=0
-sg.AntiAliasingQuality=0
-sg.ShadowQuality=0
-sg.PostProcessQuality=0
-sg.TextureQuality=0
-sg.EffectsQuality=0
-sg.FoliageQuality=0
-sg.ShadingQuality=0
+sg.ViewDistanceQuality=2
+sg.AntiAliasingQuality=2
+sg.ShadowQuality=2
+sg.PostProcessQuality=2
+sg.TextureQuality=2
+sg.EffectsQuality=2
+sg.FoliageQuality=2
+sg.ShadingQuality=2
 
 
 -----------end-----------
