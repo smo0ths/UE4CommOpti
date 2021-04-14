@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 4/14/2021
+*Updated 4/14/2021~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -24,7 +24,7 @@ My config:
 Global=off;
 
 [Audio]
-MaxChannels=128; 32-64-96 for PERFORMANCE
+MaxChannels=96; 32-64-96 for PERFORMANCE
 CommonAudioPoolSize=0; default 0
 UnfocusedVolumeMultiplier=1;
 
@@ -90,14 +90,11 @@ r.VirtualTexture=1;
 r.VirtualTextureReducedMemory=1;
 r.VT.MaxAnisotropy=8;
 r.VirtualTexturedLightmaps=0; 1 is EXPERIMENTAL
-r.AllowStaticLighting=0;---------------------------------------some games use this if lighting is incorrect turn this on
 r.GenerateMeshDistanceFields=1; 0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
-r.DistanceFieldBuild.EightBit=0;
 r.GenerateLandscapeGIData=0;
 r.DistanceFieldGI=0;
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;
-r.DistanceFieldBuild.Compress=0; 1 for GROUND BRANCH-----------some games will crash without this
 r.DBuffer=0; decal material blend modes 0 for PERFORMANCE default 1
 r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
@@ -121,7 +118,7 @@ r.GBufferFormat=1; 1-3 QUALITY VALUES default 1
 r.LightFunctionQuality=1; 0 for PERFORMANCE default 2
 r.ClearCoatNormal=0; 0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
-r.HighQualityLightMaps=0;-----------------------------------test
+r.HighQualityLightMaps=1;-----------------------------------test
 r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
 r.SkylightIntensityMultiplier=1; lower to darken skylight
@@ -142,7 +139,6 @@ r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1; texture streaming
 r.Streaming.UseBackgroundThreadPool=1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
-r.Streaming.MaxTempMemoryAllowed=100;----------------------------test
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
 r.Streaming.PoolSize=3000;
@@ -181,11 +177,12 @@ r.Shadow.PreShadowResolutionFactor=0.5; 0.5 for PERFORMANCE
 r.Shadow.CachePreshadow=1;
 r.SupportPointLightWholeSceneShadows=1;
 r.Shadow.CacheWholeSceneShadows=1;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1; 0 for PERFORMANCE
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1;
 r.Shadow.CacheWPOPrimitives=0;
 r.AllowPointLightCubemapShadows=1;
 r.ParallelShadow=1; 0 for PERFORMANCE
-r.ParallelShadowsNonWholeScene=0;
+r.ParallelShadowsNonWholeScene=1;----------------------------test
+r.ParallelTranslucency=0;
 r.ContactShadows=0; 0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;
@@ -226,7 +223,7 @@ r.SeparateTranslucency=1;
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
-r.AmbientOcclusionLevels=-1; ssao 0 for PERFORMANCE
+r.AmbientOcclusionLevels=1; ssao 0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=0; 0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=0; 0 for PERFORMANCE
 r.AmbientOcclusionMipLevelFactor=0.6;
