@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 4/11/2021
+*Updated 4/14/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -87,6 +87,7 @@ r.VertexFoggingForOpaque=1;
 r.ForceAllCoresForShaderCompiling=0;
 r.ShaderComplexity.CacheShaders=1;
 r.VirtualTexture=1;
+r.VirtualTextureReducedMemory=1;
 r.VT.MaxAnisotropy=8;
 r.VirtualTexturedLightmaps=0; 1 is EXPERIMENTAL
 r.AllowStaticLighting=0;---------------------------------------some games use this if lighting is incorrect turn this on
@@ -221,7 +222,7 @@ r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1; translucency
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
-r.SeparateTranslucency=1;
+r.SeparateTranslucency=0;-----------------------------------test
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
