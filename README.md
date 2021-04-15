@@ -118,7 +118,6 @@ r.GBufferFormat=1; 1-3 QUALITY VALUES default 1
 r.LightFunctionQuality=1; 0 for PERFORMANCE default 2
 r.ClearCoatNormal=0; 0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
-r.HighQualityLightMaps=1;-----------------------------------test
 r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
 r.SkylightIntensityMultiplier=1; lower to darken skylight
