@@ -352,7 +352,7 @@ ResolutionSizeX=2560
 ResolutionSizeY=1440
 LastUserConfirmedResolutionSizeX=2560
 LastUserConfirmedResolutionSizeY=1440
-HDRDisplayOutputNits=300
+HDRDisplayOutputNits=
 bUseDynamicResolution=0
 AudioQualityLevel=3
 FrameRateLimit=163.000000
@@ -363,7 +363,7 @@ PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
 BloomQuality=3
 DistanceFieldShadows=1
-TextureStreamPoolSizeStorage=2000
+TextureStreamPoolSizeStorage=3000
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
 
 
