@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 4/14/2021~
+*Updated 4/22/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -52,7 +52,7 @@ AudioThread.BatchAsyncBatchSize=32;
 AudioThread.UseBackgroundThreadPool=1;
 AudioThread.EnableBatchProcessing=1;
 r.Atmosphere=1;
-r.setres=2560x1440wf; SET YOUR RESOLUTION
+r.setres=2560x1440f; SET YOUR RESOLUTION
 r.VSync=0;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
