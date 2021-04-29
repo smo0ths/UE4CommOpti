@@ -100,7 +100,6 @@ r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
 r.HZBOcclusion=0; occlusion culling algorithm default 1
 r.AllowOcclusionQueries=1;
-r.NeverOcclusionTestDistance=1;-----------------------------------test
 r.OneFrameThreadLag=1; 1 game sync with render thread
 r.AllowSubPrimitiveQueries=1;
 r.MinScreenRadiusForLights=0.03; default 0.03
