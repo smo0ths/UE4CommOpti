@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 5/9/2021
+*Updated 5/11/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -41,6 +41,7 @@ PoolSizeVRAMPercentage=50; texturePool cache lower if vram runs too high
 s.AsyncLoadingThreadEnabled=1;
 
 [SystemSettings]
+r.setres=2560x1440f; SET YOUR RESOLUTION
 FX.BatchAsync=1;
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=1;
@@ -50,7 +51,6 @@ FX.AllowGPUParticles=1;
 FX.AllowGPUSorting=1;
 AudioThread.UseBackgroundThreadPool=1;
 r.Atmosphere=1;
-r.setres=2560x1440f; SET YOUR RESOLUTION
 r.VSync=0;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
@@ -66,8 +66,7 @@ r.FinishCurrentFrame=0;
 r.GTSyncType=0;
 rhi.SyncSlackMS=0;
 r.RHICmdBypass=0;
-r.RHICmdBalanceParallelLists=0;
-r.D3D11.Depth24Bit=1; 0 for 32 bit depth buffers
+r.D3D11.Depth24Bit=1;
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0; 1 is EXPERIMENTAL
@@ -162,25 +161,24 @@ r.CapsuleShadows=0;
 r.AllowLandscapeShadows=1; landscape shadows 0 for PERFORMANCE
 r.DistanceFieldShadowing=1; distance field shadowing 0 for PERFORMANCE
 r.DFShadowQuality=1; 1-2 QUALITY VALUES 0 for PERFORMANCE
-r.Shadow.MaxNumFarShadowCascades=1;-----------------------------------test
+r.Shadow.MaxNumFarShadowCascades=0; 0 for PERFORMANCE
 r.DFFullResolution=0; 0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1; 1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
-r.Tonemapper.GrainQuantization=1; 1 for 8bit 0 for 10bit
+r.Tonemapper.GrainQuantization=0; fights 8 bit color banding default 1
 r.Tonemapper.Sharpen=0;
-r.Tonemapper.MergeWithUpscale.Mode=1;-----------------------------------test
-r.MinRoughnessOverride=0.2; 0.2 with no AA 0 with
-r.DefaultFeature.AntiAliasing=0; 0 off 1 FXAA 2 TAA 3 MSAA
-r.PostProcessAAQuality=0; 0 off 1-2 FXAA 3-4-5-6 TAA
+r.Tonemapper.MergeWithUpscale.Mode=0;
+r.MinRoughnessOverride=0; 0.2 with no AA 0 with
+r.DefaultFeature.AntiAliasing=2; 0 off 1 FXAA 2 TAA 3 MSAA
+r.PostProcessAAQuality=3; 0 off 1-2 FXAA 3-4-5-6 TAA
 r.MSAACount=0;
-r.MSAA.CompositingSampleCount=1;
 r.TemporalAASamples=4;
-r.TemporalAAFilterSize=0.15;
-r.TemporalAACurrentFrameWeight=0.15;
+r.TemporalAAFilterSize=1;
+r.TemporalAACurrentFrameWeight=0;
 r.TemporalAA.R11G11B10History=0; 1 is EXPERIMENTAL
-r.TemporalAA.Algorithm=0; 1 is EXPERIMENTAL
+r.TemporalAA.Algorithm=1; 1 is EXPERIMENTAL
 r.TemporalAA.Upsampling=0; TAAU
 r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100; input resolution percentage for TAAU
@@ -273,7 +271,6 @@ grass.TickInterval=10;
 foliage.DensityScale=0.6; 0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;
 ShowFlag.Vignette=0;
-ShowFlag.SceneColorFringe=0;
 r.Decal.FadeDurationScale=1; default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1; default 0.1
@@ -308,7 +305,7 @@ Open GameUserSettings.ini
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
-settings in here are in game options, they will overwrite your engine.ini... search your games GameUserSettings.ini to make sure settings are what you want
+these are in game graphic settings that overwrite your engine.ini, so check these before starting up game to make sure they are at your desired value
 
 bUseVSync=0 
 FullscreenMode=1
@@ -321,13 +318,12 @@ LastUserConfirmedResolutionSizeY=1440
 HDRDisplayOutputNits=
 bUseDynamicResolution=0
 AudioQualityLevel=3
-FrameRateLimit=163.000000
-MenuFrameRateLimit=163.000000
+FrameRateLimit=            
+MenuFrameRateLimit=
 MaxAnisotropy=8
 ContactShadows=0
 PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
-BloomQuality=3
 DistanceFieldShadows=1
 TextureStreamPoolSizeStorage=2000
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
@@ -359,18 +355,18 @@ Open DeviceProfiles.ini
 Textures or you can just use in game settings (sg.TextureQuality=) copy/paste:
 
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=2048,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=3)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
 
 
 -----------end-----------
