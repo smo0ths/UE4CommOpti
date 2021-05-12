@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 5/11/2021
+*Updated 5/12/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -35,7 +35,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50; texturePool cache lower if vram runs too high
+PoolSizeVRAMPercentage=38; texturePool cache lower if vram runs too high
 
 [/Script/Engine.StreamingSettings]
 s.AsyncLoadingThreadEnabled=1;
@@ -59,7 +59,7 @@ r.AsyncPipelineCompile=1;
 r.XGEShaderCompile=1;
 r.CompileShadersForDevelopment=0;
 r.CreateShadersOnLoad=1;
-r.EarlyZPass=3;
+r.EarlyZPass=2; default 3
 r.EarlyZPassMovable=1;
 r.EarlyZPassOnlyMaterialMasking=1;
 r.FinishCurrentFrame=0;
@@ -91,7 +91,7 @@ r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;
 r.DBuffer=0; decal material blend modes 0 for PERFORMANCE default 1
 r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
-r.HZBOcclusion=1; occlusion culling algorithm default 1
+r.HZBOcclusion=0; occlusion culling algorithm default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1; 1 game sync with render thread
 r.AllowSubPrimitiveQueries=1;
@@ -99,7 +99,7 @@ r.MinScreenRadiusForLights=0.03; default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03; default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;
 r.MinScreenRadiusForSmallLights=0.01;
-r.SceneColorFormat=4; 3 for PERFORMANCE default 4
+r.SceneColorFormat=3; 3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4; default 4
 r.ClearSceneMethod=1;
 r.GBufferFormat=1; 1-3 QUALITY VALUES default 1
@@ -125,7 +125,7 @@ r.Streaming.UseBackgroundThreadPool=1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
-r.Streaming.PoolSize=2000;
+r.Streaming.PoolSize=3000;
 r.Streaming.UseAllMips=0;
 r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.Boost=1;
@@ -325,7 +325,7 @@ ContactShadows=0
 PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
 DistanceFieldShadows=1
-TextureStreamPoolSizeStorage=2000
+TextureStreamPoolSizeStorage=3000
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
 
 
@@ -375,12 +375,11 @@ TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=4
 for NVIDIA users:
 
 Reset settings "apply let the 3D app decide" then set "use the advanced 3D image settings" then apply, click take me there
-Anisotropic filter: 8x  (to make sure its on)
 Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
 Power management mode:  Prefer max performance
 Preferred refresh rate:  Highest available
 TF anisotropic sample optimization:  On
-TF Negative LOD bias:  Clamp  (allow for performance clamp for better AF)
+TF Negative LOD bias:  Allow
 Texture filtering quality:  High performance
 Vertical sync:  Off
 
