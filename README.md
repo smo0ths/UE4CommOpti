@@ -35,7 +35,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=38; texturePool cache lower if vram runs too high
+PoolSizeVRAMPercentage=38; texturePool cache percentage
 
 [/Script/Engine.StreamingSettings]
 s.AsyncLoadingThreadEnabled=1;
