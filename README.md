@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 5/12/2021
+*Updated 5/13/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -69,11 +69,12 @@ r.RHICmdBypass=0;
 r.D3D11.Depth24Bit=1;
 r.DrawRectangleOptimization=1;
 r.AlsoUseSphereForFrustumCull=1;
-r.DeferSkeletalDynamicDataUpdateUntilGDME=0; 1 is EXPERIMENTAL
-r.DoInitViewsLightingAfterPrepass=0; 1 is EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=0; 1 is EXPERIMENTAL
+r.bForceCPUAccessToGPUSkinVerts=1;----------------------------test
+r.DeferSkeletalDynamicDataUpdateUntilGDME=1; 1 is EXPERIMENTAL
+r.DoInitViewsLightingAfterPrepass=1; 1 is EXPERIMENTAL
+r.DoLazyStaticMeshUpdate=1; 1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0; default 0
-r.RenderTargetPoolMin=400;
+r.RenderTargetPoolMin=800;----------------------------test
 r.SelectiveBasePassOutputs=1;
 r.OptimizeForUAVPerformance=0; faster but uses more gpu memory default 0
 r.MorphTarget.Mode=1; 0 cpu method 1 gpu method default 1
@@ -81,7 +82,6 @@ r.ForwardShading=0;
 r.SupportSimpleForwardShading=0;
 r.SimpleForwardShading=0;
 r.VertexFoggingForOpaque=1;
-r.ForceAllCoresForShaderCompiling=1;----------------------------test
 r.ShaderComplexity.CacheShaders=1;
 r.GenerateMeshDistanceFields=1; 0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
@@ -115,10 +115,9 @@ r.LandscapeLODBias=0; 1 for PERFORMANCE
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
 r.ViewDistanceScale=1; view distance 0.8 for PERFORMANCE
-r.ViewDistanceScale.SecondaryScale=0; 0 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.SkeletalMeshLODRadiusScale=1;
-r.StaticMeshLODDistanceScale=1; default 1
+r.SkeletalMeshLODRadiusScale=1; highest 0.25 low 1 default 1
+r.StaticMeshLODDistanceScale=0.75; highest 0.25 low 1 default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1; texture streaming
 r.Streaming.UseBackgroundThreadPool=1;
@@ -142,7 +141,6 @@ r.Streaming.HLODStrategy=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
-r.HLOD=1;-----------------------------------test
 r.DistanceFieldAO=0; 1 for dfao
 r.ShadowQuality=3; shadows
 r.Shadow.FilterMethod=0;
@@ -177,14 +175,15 @@ r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAAFilterSize=1;
 r.TemporalAACurrentFrameWeight=0;
-r.TemporalAA.R11G11B10History=0; 1 is EXPERIMENTAL
+r.TemporalAA.R11G11B10History=1; 1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=1; 1 is EXPERIMENTAL
 r.TemporalAA.Upsampling=0; TAAU
 r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100; input resolution percentage for TAAU
-r.SceneRenderTargetResizeMethod=0;
+r.SceneRenderTargetResizeMethod=0; default 0
+r.SceneCaptureResizeMethod=0; default 0
 r.Upscale.Quality=1;
-r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;----------------------------test
+r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1; translucency
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
@@ -212,7 +211,7 @@ r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=1;
 r.SupportAtmosphericFog=1;
 r.Fog=1;
 r.VolumetricFog=1; 0 for PERFORMANCE
-r.VolumetricFog.GridPixelSize=32;-----------------------------------test
+r.VolumetricFog.GridPixelSize=32;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.HistoryWeight=0.9;
 r.VolumetricFog.InjectShadowedLightsSeparately=0;
@@ -367,6 +366,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=256,MaxLODSize=40
 TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
 TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
 TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=4)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=4096,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 
 
 -----------end-----------
