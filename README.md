@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 5/21/2021
+*Updated 5/27/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -90,14 +90,15 @@ r.GenerateLandscapeGIData=0;
 r.DistanceFieldGI=0;
 r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
-r.HZBOcclusion=0; occlusion culling algorithm default 1
+r.AOGlobalDFStartDistance=100; test
+r.HZBOcclusion=1; occlusion culling algorithm default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1; 1 game sync with render thread
 r.AllowSubPrimitiveQueries=1;
 r.SceneColorFormat=3; 3 for PERFORMANCE default 4
-r.DefaultBackBufferPixelFormat=4; default 4
+r.DefaultBackBufferPixelFormat=0; default 4
 r.ClearSceneMethod=1;
-r.GBufferFormat=1; 1 to 3 QUALITY VALUES default 1
+r.GBufferFormat=0; default 1
 r.LightFunctionQuality=1; 0 for PERFORMANCE default 2
 r.ClearCoatNormal=0; 0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
@@ -217,7 +218,7 @@ r.chaos.ReflectionCaptureStaticSceneOnly=1; 1 for PERFORMANCE
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128; default 128
 r.TiledDeferredShading=1; tiled deferred shading 0 for PERFORMANCE
-r.TiledDeferredShading.MinimumCount=80; default 80
+r.TiledDeferredShading.MinimumCount=40; default 80
 r.DoTiledReflections=0; tiled reflection 0 for PERFORMANCE
 r.NoTiledReflections=0;
 r.SSR.Quality=0; ssr 0 for PERFORMANCE
@@ -249,28 +250,24 @@ r.SupportMaterialLayers=0;
 ShowFlag.Tessellation=0; 0 for PERFORMANCE
 r.TessellationAdaptivePixelsPerTriangle=9999999; 9999999 for PERFORMANCE 48 for QUALITY
 r.MaterialQualityLevel=1; 0 for PERFORMANCE
-r.DetailMode=2; 0 for PERFORMANCE
+r.DetailMode=1; 0 for PERFORMANCE default 2
 r.RefractionQuality=1; 0 for PERFORMANCE default 2
 r.IrisNormal=0; 0 for PERFORMANCE
 r.DepthOfFieldQuality=1; dof 0 for PERFORMANCE
-r.Filter.SizeScale=1;
+r.Filter.SizeScale=0.8;
 r.BloomQuality=3; bloom
 r.Bloom.HalfResoluionFFT=0;
 r.Bloom.Cross=0;
 r.BlurGBuffer=0;
 r.MotionBlurQuality=0;
-r.FastBlurThreshold=7;
+r.FastBlurThreshold=0; default 7
 r.LensFlareQuality=0; lens flares
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
 grass.DensityScale=0.6;
 grass.DisableDynamicShadows=0; 1 for PERFORMANCE
-grass.TickInterval=10;
 foliage.DensityScale=0.6; 0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;
-foliage.ForceLOD=0;
-foliage.LODDistanceScale=1;
-foliage.DitheredLOD=5;
 ShowFlag.Vignette=0;
 r.Decal.FadeDurationScale=1; default 1
 r.Decal.FadeScreenSizeMult=1;
