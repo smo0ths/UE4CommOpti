@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/5/2021
+*Updated 6/5/2021 x2
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -79,11 +79,12 @@ r.VertexFoggingForOpaque=1;
 r.ShaderComplexity.CacheShaders=1;
 r.GenerateMeshDistanceFields=1;--------------------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
-r.GenerateLandscapeGIData=0;
-r.DistanceFieldGI=0;
+r.GenerateLandscapeGIData=0;--------------------------0 for PERFORMANCE TEST
 r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
 r.AOGlobalDFStartDistance=100;--------------------------TEST
+r.AOMaxViewDistance=1000;--------------------------default 10000
+r.AOViewFadeDistanceScale=0.7;
 r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
@@ -152,7 +153,7 @@ r.DFShadowQuality=1;-------------------------- 1 to 2 QUALITY VALUES 0 OFF
 r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
-r.DFTwoSidedMeshDistanceBias=1;--------------------------TEST
+r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE TEST
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
@@ -178,7 +179,7 @@ r.TranslucencyLightingVolume=1; TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
 r.SeparateTranslucency=1;
-r.SeparateTranslucencyScreenPercentage=100;
+r.SeparateTranslucencyScreenPercentage=75;--------------------------TEST
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE
@@ -210,6 +211,7 @@ r.HalfResReflections=1;
 r.chaos.ReflectionCaptureStaticSceneOnly=1;--------------------------1 for PERFORMANCE
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128;--------------------------default 128
+r.ReflectionEnvironmentLightmapMixing=1;
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=80;--------------------------default 80
 r.DoTiledReflections=0;--------------------------TILED REFLECTION 0 for PERFORMANCE
@@ -238,7 +240,7 @@ r.UsePreExposure=0;
 r.EyeAdaptation.PreExposureOverride=0;
 r.MaxAnisotropy=8;
 r.SupportMaterialLayers=0;
-r.TessellationAdaptivePixelsPerTriangle=9999999;--------------------------9999999 for PERFORMANCE 48 for QUALITY
+r.TessellationAdaptivePixelsPerTriangle=9999999;--------------------------9999999 for PERFORMANCE default 48
 ShowFlag.Tessellation=0;--------------------------0 for PERFORMANCE
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
 r.DetailMode=1;--------------------------0 for PERFORMANCE default 2
@@ -251,7 +253,7 @@ r.Bloom.HalfResoluionFFT=0;
 r.Bloom.Cross=0;
 r.BlurGBuffer=0;
 r.MotionBlurQuality=0;
-r.FastBlurThreshold=0;--------------------------default 7
+r.FastBlurThreshold=0;
 r.LensFlareQuality=0;--------------------------LENS FLARES
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
