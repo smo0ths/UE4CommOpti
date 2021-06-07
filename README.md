@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/5/2021 x2
+*Updated 6/6/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -179,7 +179,7 @@ r.TranslucencyLightingVolume=1; TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=32;
 r.SeparateTranslucency=1;
-r.SeparateTranslucencyScreenPercentage=75;--------------------------TEST
+r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE
@@ -340,7 +340,7 @@ Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfile
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
-textures or you can just use in game settings (sg.TextureQuality=) copy and paste
+textures or you can just use in game settings (sg.TextureQuality=) copy and paste (i don't use this atm)
 
 [/Script/Engine.TextureLODSettings]
 TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
