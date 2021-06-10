@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/6/2021
+*Updated 6/10/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -35,7 +35,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=38;--------------------------texturePool cache percentage not enough will cause low quality textures
+PoolSizeVRAMPercentage=50;--------------------------TEXTUREPOOL CACHE PERCENTAGE LOW VALUES WILL MUDDY TEXTURES
 
 [/Script/Engine.StreamingSettings]
 s.AsyncLoadingThreadEnabled=1;
@@ -94,7 +94,7 @@ r.DefaultBackBufferPixelFormat=0;--------------------------default 4
 r.ClearSceneMethod=1;
 r.GBufferFormat=0;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 for PERFORMANCE default 2
-r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
+r.ClearCoatNormal=1;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
 r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
@@ -104,12 +104,11 @@ r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
-r.ViewDistanceScale=0.8;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
+r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------HIGH 0.25 LOW 1 default 1
 r.StaticMeshLODDistanceScale=1;--------------------------HIGH 0.25 LOW 1 default 1
 r.SplineMesh.NoRecreateProxy=1;
-r.VirtualTexture=0;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.UseBackgroundThreadPool=1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
@@ -154,20 +153,22 @@ r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE TEST
-r.Tonemapper.Quality=2;
+r.Tonemapper.Quality=5;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
 r.Tonemapper.Sharpen=0;
 r.Tonemapper.MergeWithUpscale.Mode=0;
-r.MinRoughnessOverride=0;--------------------------0.2 without TAA 0 with TAA
-r.DefaultFeature.AntiAliasing=2;--------------------------0 OFF 1 FXAA 2 TAA 3 MSAA
-r.PostProcessAAQuality=3;--------------------------0 OFF 1 to 2 FXAA 3 to 6 TAA
+ShowFlag.Vignette=0;
+ShowFlag.Grain=0;
+r.MinRoughnessOverride=0.2;--------------------------0.2 without TAA 0 with TAA
+r.DefaultFeature.AntiAliasing=1;--------------------------0 OFF 1 FXAA 2 TAA 3 MSAA
+r.PostProcessAAQuality=1;--------------------------0 OFF 1 to 2 FXAA 3 to 6 TAA
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAAFilterSize=1;
 r.TemporalAACurrentFrameWeight=0;
-r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
-r.TemporalAA.Algorithm=1;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.Algorithm=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -177,17 +178,17 @@ r.Upscale.Quality=1;--------------------------default 3
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1; TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
-r.TranslucencyLightingVolumeDim=32;
-r.SeparateTranslucency=1;
+r.TranslucencyLightingVolumeDim=48;
+r.SeparateTranslucency=0;--------------------------0 for PERFORMANCE TEST
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
-r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE
+r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
-r.AmbientOcclusionMipLevelFactor=0.5;
-r.AmbientOcclusionMaxQuality=75;
-r.AmbientOcclusionSampleSetQuality=-1;
+r.AmbientOcclusionMipLevelFactor=0.4;
+r.AmbientOcclusionMaxQuality=100;
+r.AmbientOcclusionSampleSetQuality=0;
 r.AmbientOcclusion.Compute=0;
 r.AmbientOcclusionRadiusScale=0;
 r.LightShaftQuality=0;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
@@ -216,7 +217,7 @@ r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for 
 r.TiledDeferredShading.MinimumCount=80;--------------------------default 80
 r.DoTiledReflections=0;--------------------------TILED REFLECTION 0 for PERFORMANCE
 r.NoTiledReflections=0;
-r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
+r.SSR.Quality=2;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 OFF
@@ -224,14 +225,14 @@ r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
 r.SSS.Scale=1;
-r.SSS.SampleSet=0;
-r.SSS.Quality=0;
+r.SSS.SampleSet=1;
+r.SSS.Quality=-1;
 r.SSS.HalfRes=1;
 r.SSS.Filter=1;
 r.SSS.Checkerboard=1;--------------------------default 2
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
-r.EmitterSpawnRateScale=0.5;--------------------------0.25 for PERFORMANCE
+r.EmitterSpawnRateScale=1;--------------------------0.25 for PERFORMANCE
 r.DefaultFeature.AutoExposure=0;--------------------------EYE ADAPTATION
 r.DefaultFeature.AutoExposure.Method=0;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
@@ -240,13 +241,13 @@ r.UsePreExposure=0;
 r.EyeAdaptation.PreExposureOverride=0;
 r.MaxAnisotropy=8;
 r.SupportMaterialLayers=0;
-r.TessellationAdaptivePixelsPerTriangle=9999999;--------------------------9999999 for PERFORMANCE default 48
-ShowFlag.Tessellation=0;--------------------------0 for PERFORMANCE
+r.TessellationAdaptivePixelsPerTriangle=96;--------------------------9999999 for PERFORMANCE default 48
+ShowFlag.Tessellation=1;--------------------------0 for PERFORMANCE
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
 r.DetailMode=1;--------------------------0 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 for PERFORMANCE default 2
-r.IrisNormal=0;--------------------------0 for PERFORMANCE
-r.DepthOfFieldQuality=1;--------------------------dof 0 for PERFORMANCE
+r.IrisNormal=1;--------------------------0 for PERFORMANCE
+r.DepthOfFieldQuality=0;--------------------------dof 0 for PERFORMANCE
 r.Filter.SizeScale=0.8;
 r.BloomQuality=3;--------------------------BLOOM
 r.Bloom.HalfResoluionFFT=0;
@@ -257,15 +258,13 @@ r.FastBlurThreshold=0;
 r.LensFlareQuality=0;--------------------------LENS FLARES
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
-grass.DensityScale=0.6;
+grass.DensityScale=1;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
-foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
+foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;
 r.Decal.FadeDurationScale=1;--------------------------default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
-ShowFlag.Vignette=0;
-ShowFlag.Grain=0;
 
 
 -----------end-----------
