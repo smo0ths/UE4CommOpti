@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/10/2021
+*Updated 6/12/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -76,13 +76,12 @@ r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
 r.RenderTargetPoolMin=400;
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
 r.VertexFoggingForOpaque=1;
-r.ShaderComplexity.CacheShaders=1;
 r.GenerateMeshDistanceFields=1;--------------------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
-r.GenerateLandscapeGIData=0;--------------------------0 for PERFORMANCE TEST
+r.GenerateLandscapeGIData=0;--------------------------0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;
 r.LightPropagationVolume=0;
-r.AOGlobalDFStartDistance=100;--------------------------TEST
+r.AOGlobalDFStartDistance=100;
 r.AOMaxViewDistance=1000;--------------------------default 10000
 r.AOViewFadeDistanceScale=0.7;
 r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
@@ -131,7 +130,8 @@ r.Streaming.HLODStrategy=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
-r.DistanceFieldAO=0;--------------------------DFAO
+r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
+r.AOQuality=0;--------------------------0 for PERFORMANCE
 r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.TransitionScale=1;
@@ -152,7 +152,7 @@ r.DFShadowQuality=1;-------------------------- 1 to 2 QUALITY VALUES 0 OFF
 r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
-r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE TEST
+r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE
 r.Tonemapper.Quality=5;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
@@ -179,7 +179,10 @@ r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1; TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;
-r.SeparateTranslucency=0;--------------------------0 for PERFORMANCE TEST
+p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
+p.AnimDynamicsLODThreshold=0;
+p.RigidBodyLODThreshold=0;
+r.SeparateTranslucency=1;--------------------------0 for PERFORMANCE
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
@@ -232,7 +235,7 @@ r.SSS.Filter=1;
 r.SSS.Checkerboard=1;--------------------------default 2
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
-r.EmitterSpawnRateScale=1;--------------------------0.25 for PERFORMANCE
+r.EmitterSpawnRateScale=0.5;--------------------------0.25 for PERFORMANCE
 r.DefaultFeature.AutoExposure=0;--------------------------EYE ADAPTATION
 r.DefaultFeature.AutoExposure.Method=0;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
@@ -248,7 +251,7 @@ r.DetailMode=1;--------------------------0 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
 r.DepthOfFieldQuality=0;--------------------------dof 0 for PERFORMANCE
-r.Filter.SizeScale=0.8;
+r.Filter.SizeScale=1;--------------------------default 1
 r.BloomQuality=3;--------------------------BLOOM
 r.Bloom.HalfResoluionFFT=0;
 r.Bloom.Cross=0;
