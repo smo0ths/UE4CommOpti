@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 6/18/2021
+*Updated 6/23/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -175,7 +175,7 @@ r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
 r.SceneCaptureResizeMethod=0;--------------------------default 0
-r.Upscale.Quality=1;--------------------------default 3
+r.Upscale.Quality=3;--------------------------default 3
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1; TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
