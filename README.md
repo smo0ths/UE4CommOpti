@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 7/15/2021
+*Updated 7/29/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -16,6 +16,7 @@ Open Engine.ini
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
+Copy/Paste:  %localappdata%/BendGame/Saved/Config/WindowsNoEditor/Engine.ini
 
 
 my config is more of a quality balance you may need to tweak some commands, copy and paste under code
@@ -24,7 +25,7 @@ my config is more of a quality balance you may need to tweak some commands, copy
 Global=off;
 
 [Audio]
-MaxChannels=96;--------------------------32 48 64 96 128 lower values for PERFORMANCE
+MaxChannels=64;--------------------------32 48 64 96 128 lower values for PERFORMANCE
 CommonAudioPoolSize=0;--------------------------default 0
 UnfocusedVolumeMultiplier=1;
 
@@ -57,10 +58,10 @@ r.AsyncPipelineCompile=1;
 r.XGEShaderCompile=1;
 r.CompileShadersForDevelopment=0;--------------------------default 1
 r.CreateShadersOnLoad=1;
-r.EarlyZPass=2;--------------------------default 3
+r.EarlyZPass=3;--------------------------default 3
 r.EarlyZPassMovable=1;
 r.EarlyZPassOnlyMaterialMasking=1;
-r.DBuffer=1;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
+r.DBuffer=0;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
 r.FinishCurrentFrame=0;
 r.GTSyncType=0;
 rhi.SyncSlackMS=0;
@@ -87,15 +88,16 @@ r.AllowSubPrimitiveQueries=1;
 r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------TEST
 r.ClearSceneMethod=1;
-r.GBufferFormat=1;--------------------------default 1
+r.GBuffer=0;--------------------------default 1
+r.GBufferFormat=0;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 for PERFORMANCE default 2
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
 r.MinScreenRadiusForLights=0.03;--------------------------default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;
-r.VirtualTextures=1;--------------------------TEST
-r.VT.MaxAnisotropy=8;--------------------------TEST
+r.VirtualTextures=0;
+r.VirtualTexturedLightmaps=0;
 r.MeshStreaming=0;--------------------------1 IS EXPERIMENTAL
 r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
@@ -179,9 +181,13 @@ r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1;--------------------------TRANSLUCENCY LIGHT VOLUME
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;
+p.BatchPhysXTasksSize=4;--------------------------TEST
+p.ClothPhysics=1;--------------------------default 1
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsLODThreshold=0;
 p.RigidBodyLODThreshold=0;
+p.AnimDynamicsAdaptiveSubstep=1;--------------------------TEST
+p.AnimDynamicsRestrictLOD=-1;--------------------------TEST
 r.SeparateTranslucency=1;--------------------------0 for PERFORMANCE
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
@@ -225,7 +231,7 @@ r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 OFF
 r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
-r.SSS.Scale=2;--------------------------default 1
+r.SSS.Scale=1;--------------------------default 1
 r.SSS.SampleSet=1;--------------------------default 2
 r.SSS.Quality=0;--------------------------default 0
 r.SSS.HalfRes=1;
@@ -234,10 +240,10 @@ r.SSS.Checkerboard=1;--------------------------default 2
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=0.5;--------------------------0.25 for PERFORMANCE
-r.DefaultFeature.AutoExposure=0;--------------------------EYE ADAPTATION
+r.DefaultFeature.AutoExposure=1;--------------------------EYE ADAPTATION default 1
 r.DefaultFeature.AutoExposure.Method=0;
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
-r.EyeAdaptationQuality=0;
+r.EyeAdaptationQuality=2;--------------------------default 2
 r.UsePreExposure=0;
 r.EyeAdaptation.PreExposureOverride=0;
 r.MaxAnisotropy=8;
@@ -255,7 +261,7 @@ r.Bloom.Cross=0;
 r.BlurGBuffer=0;
 r.MotionBlurQuality=0;
 r.FastBlurThreshold=0;
-r.LensFlareQuality=0;--------------------------LENS FLARES
+r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE default 2
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
 grass.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
