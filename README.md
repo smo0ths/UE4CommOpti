@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 7/29/2021
+*Updated 7/29/2021~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -58,7 +58,7 @@ r.AsyncPipelineCompile=1;
 r.XGEShaderCompile=1;
 r.CompileShadersForDevelopment=0;--------------------------default 1
 r.CreateShadersOnLoad=1;
-r.EarlyZPass=3;--------------------------default 3
+r.EarlyZPass=2;--------------------------default 3
 r.EarlyZPassMovable=1;
 r.EarlyZPassOnlyMaterialMasking=1;
 r.DBuffer=0;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
@@ -73,7 +73,7 @@ r.AlsoUseSphereForFrustumCull=1;--------------------------TEST
 r.DoInitViewsLightingAfterPrepass=0;--------------------------1 IS EXPERIMENTAL
 r.DoLazyStaticMeshUpdate=0;--------------------------1 IS EXPERIMENTAL
 r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
-r.RenderTargetPoolMin=1000;
+r.RenderTargetPoolMin=500;--------------------------TEST
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
 r.VertexFoggingForOpaque=1;
 r.GenerateMeshDistanceFields=1;--------------------------0 for PERFORMANCE
@@ -86,9 +86,8 @@ r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
 r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
-r.DefaultBackBufferPixelFormat=4;--------------------------TEST
+r.DefaultBackBufferPixelFormat=0;--------------------------TEST
 r.ClearSceneMethod=1;
-r.GBuffer=0;--------------------------default 1
 r.GBufferFormat=0;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 for PERFORMANCE default 2
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
@@ -107,6 +106,8 @@ r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
+r.LandscapeLODDistributionScale=1;--------------------------TEST
+r.LandscapeLOD0DistributionScale=1;--------------------------TEST
 r.ViewDistanceScale=0.8;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------HIGH 0.25 LOW 1 default 1
@@ -143,8 +144,9 @@ r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=2;--------------------------1 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;
-r.Shadow.RadiusThreshold=0.03;
+r.Shadow.RadiusThreshold=0.02;--------------------------default 0.03
 r.Shadow.DistanceScale=0.75;
+r.HFShadowQuality=2;--------------------------default 2
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;
@@ -176,7 +178,7 @@ r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
 r.SceneCaptureResizeMethod=0;--------------------------default 0
-r.Upscale.Quality=1;--------------------------default 3
+r.Upscale.Quality=3;--------------------------default 3
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1;--------------------------TRANSLUCENCY LIGHT VOLUME
 r.TranslucencyVolumeBlur=1;
@@ -267,7 +269,7 @@ r.SceneColorFringe.Max=-1;
 grass.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
-foliage.MinVertsToSplitNode=0;--------------------------TEST default 8192
+foliage.MinVertsToSplitNode=8192;--------------------------TEST default 8192
 r.Decal.FadeDurationScale=1;--------------------------default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
