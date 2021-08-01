@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/1/2021~
+*Updated 8/1/2021~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -171,7 +171,7 @@ ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
 r.MinRoughnessOverride=0.2;--------------------------0.2 without TAA 0 with TAA
 r.DefaultFeature.AntiAliasing=1;--------------------------0 OFF 1 FXAA 2 TAA 3 MSAA
-r.PostProcessAAQuality=1;--------------------------0 OFF 1 to 2 FXAA 3 to 6 TAA
+r.PostProcessAAQuality=2;--------------------------0 OFF 1 to 2 FXAA 3 to 6 TAA
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAAFilterSize=1;
@@ -232,7 +232,7 @@ r.ReflectionEnvironmentLightmapMixing=1;
 r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=40;--------------------------default 80
-r.SSR.Quality=1;--------------------------SSR 0 for PERFORMANCE
+r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 OFF
