@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/1/2021
+*Updated 8/1/2021~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -36,7 +36,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=38;--------------------------TEXTUREPOOL CACHE PERCENTAGE LOW VALUES WILL MUDDY TEXTURES
+PoolSizeVRAMPercentage=35;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
 
 [/Script/Engine.StreamingSettings]
 s.AsyncLoadingThreadEnabled=1;
@@ -70,8 +70,11 @@ r.RHICmdBalanceParallelLists=0;
 r.D3D11.Depth24Bit=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
 r.AlsoUseSphereForFrustumCull=1;
-r.DoInitViewsLightingAfterPrepass=0;--------------------------1 IS EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=0;--------------------------1 IS EXPERIMENTAL
+r.DoInitViewsLightingAfterPrepass=1;--------------------------TEST 1 IS EXPERIMENTAL
+r.DoLazyStaticMeshUpdate=1;--------------------------TEST 1 IS EXPERIMENTAL
+r.DeferUniformBufferUpdatesUntilVisible=1;--------------------------TEST
+r.DeferSkeletalDynamicDataUpdateUntilGDME=1;--------------------------TEST 1 IS EXPERIMENTAL
+r.bForceCPUAccessToGPUSkinVerts=1;--------------------------TEST
 r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
 r.RenderTargetPoolMin=400;
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
@@ -88,6 +91,7 @@ r.AllowSubPrimitiveQueries=1;
 r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=0;--------------------------default 4
 r.ClearSceneMethod=1;
+r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=0;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 for PERFORMANCE default 2
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
@@ -118,6 +122,8 @@ r.Streaming.MipBias=0;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
 r.Streaming.PoolSize=3000;
+r.Streaming.MaxTempMemoryAllowed=128;
+r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.UseAllMips=0;
 r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.Boost=1;
@@ -130,11 +136,9 @@ r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
 r.Streaming.HiddenPrimitiveScale=0.5;--------------------------default 0.5
-r.Streaming.HLODStrategy=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
-r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
 r.AOQuality=0;--------------------------0 for PERFORMANCE
 r.ShadowQuality=3;--------------------------SHADOWS
@@ -228,7 +232,7 @@ r.ReflectionEnvironmentLightmapMixing=1;
 r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=40;--------------------------default 80
-r.SSR.Quality=3;--------------------------SSR 0 for PERFORMANCE
+r.SSR.Quality=1;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 OFF
