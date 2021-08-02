@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/1/2021~~~
+*Updated 8/2/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -105,7 +105,7 @@ r.MeshStreaming=0;--------------------------1 IS EXPERIMENTAL
 r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
 r.SkylightIntensityMultiplier=1;
-r.LightMaxDrawDistanceScale=0.5;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.5 for PERFORMANCE
+r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.5 for PERFORMANCE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
