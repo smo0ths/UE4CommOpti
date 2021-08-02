@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/1/2021~~
+*Updated 8/1/2021~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -88,11 +88,11 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
-r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
-r.DefaultBackBufferPixelFormat=0;--------------------------default 4
+r.SceneColorFormat=4;--------------------------3 for PERFORMANCE default 4
+r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
-r.GBufferFormat=0;--------------------------default 1
+r.GBufferFormat=1;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 for PERFORMANCE default 2
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
@@ -110,8 +110,8 @@ r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
-r.LandscapeLODDistributionScale=1;--------------------------TEST
-r.LandscapeLOD0DistributionScale=1;--------------------------TEST
+r.LandscapeLODDistributionScale=2;--------------------------TEST
+r.LandscapeLOD0DistributionScale=2;--------------------------TEST
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------HIGH 0.25 LOW 1 default 1
