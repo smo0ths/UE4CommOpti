@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/3/2021~
+*Updated 8/3/2021~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -67,7 +67,6 @@ r.GTSyncType=0;
 rhi.SyncSlackMS=0;
 r.RHICmdBypass=0;
 r.RHICmdBalanceParallelLists=0;
-r.D3D11.Depth24Bit=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
 r.AlsoUseSphereForFrustumCull=1;
 r.DoInitViewsLightingAfterPrepass=1;--------------------------TEST 1 IS EXPERIMENTAL
@@ -88,8 +87,11 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
+r.D3D.ForceDXC=1;--------------------------TEST default 0
+r.D3D12.Depth24Bit=0;--------------------------TEST default 1
+r.D3D11.Depth24Bit=0;--------------------------TEST default 1
 r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
-r.DefaultBackBufferPixelFormat=0;--------------------------default 4
+r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=1;--------------------------default 1
@@ -250,7 +252,7 @@ r.ParticleLightQuality=1;--------------------------PARTICLES 0 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=0.5;--------------------------0.25 for PERFORMANCE
 r.DefaultFeature.AutoExposure=1;--------------------------EYE ADAPTATION default 1
-r.DefaultFeature.AutoExposure.Method=1;--------------------------1 for PERFORMANCE default 0
+r.DefaultFeature.AutoExposure.Method=0;--------------------------1 for PERFORMANCE default 0
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
 r.EyeAdaptationQuality=2;--------------------------default 2
 r.UsePreExposure=0;
