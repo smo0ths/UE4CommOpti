@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/2/2021
+*Updated 8/3/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -61,7 +61,7 @@ r.CreateShadersOnLoad=1;
 r.EarlyZPass=2;--------------------------default 3
 r.EarlyZPassMovable=1;
 r.EarlyZPassOnlyMaterialMasking=1;
-r.DBuffer=1;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
+r.DBuffer=0;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
 r.FinishCurrentFrame=0;
 r.GTSyncType=0;
 rhi.SyncSlackMS=0;
@@ -71,7 +71,7 @@ r.D3D11.Depth24Bit=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
 r.AlsoUseSphereForFrustumCull=1;
 r.DoInitViewsLightingAfterPrepass=1;--------------------------TEST 1 IS EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=1;--------------------------TEST 1 IS EXPERIMENTAL
+r.DoLazyStaticMeshUpdate=0;--------------------------1 IS EXPERIMENTAL
 r.DeferUniformBufferUpdatesUntilVisible=1;--------------------------TEST
 r.DeferSkeletalDynamicDataUpdateUntilGDME=1;--------------------------TEST 1 IS EXPERIMENTAL
 r.bForceCPUAccessToGPUSkinVerts=1;--------------------------TEST
@@ -88,8 +88,8 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
-r.SceneColorFormat=4;--------------------------3 for PERFORMANCE default 4
-r.DefaultBackBufferPixelFormat=4;--------------------------default 4
+r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
+r.DefaultBackBufferPixelFormat=0;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=1;--------------------------default 1
@@ -110,12 +110,12 @@ r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
-r.LandscapeLODDistributionScale=2;--------------------------TEST
-r.LandscapeLOD0DistributionScale=2;--------------------------TEST
+r.LandscapeLODDistributionScale=1;
+r.LandscapeLOD0DistributionScale=1;
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------HIGH 0.25 LOW 1 default 1
-r.StaticMeshLODDistanceScale=1;--------------------------HIGH 0.25 LOW 1 default 1
+r.StaticMeshLODDistanceScale=1.45;--------------------------TEST HIGH 0.25 LOW 1 default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;
@@ -135,7 +135,7 @@ r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
-r.Streaming.HiddenPrimitiveScale=0.5;--------------------------default 0.5
+r.Streaming.HiddenPrimitiveScale=0;--------------------------TEST default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
@@ -203,7 +203,7 @@ r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
-r.AmbientOcclusionMipLevelFactor=0.5;
+r.AmbientOcclusionMipLevelFactor=0.4;
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionSampleSetQuality=-1;
 r.AmbientOcclusion.Compute=0;
@@ -231,10 +231,11 @@ r.ReflectionCaptureResolution=128;--------------------------default 128
 r.ReflectionEnvironmentLightmapMixing=1;
 r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
-r.TiledDeferredShading.MinimumCount=40;--------------------------default 80
+r.TiledDeferredShading.MinimumCount=10;--------------------------default 80
 r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
+r.SSGI.Enable=0;
 r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 OFF
 r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
@@ -249,7 +250,7 @@ r.ParticleLightQuality=1;--------------------------PARTICLES 0 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=0.5;--------------------------0.25 for PERFORMANCE
 r.DefaultFeature.AutoExposure=1;--------------------------EYE ADAPTATION default 1
-r.DefaultFeature.AutoExposure.Method=0;
+r.DefaultFeature.AutoExposure.Method=1;--------------------------1 for PERFORMANCE default 0
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
 r.EyeAdaptationQuality=2;--------------------------default 2
 r.UsePreExposure=0;
