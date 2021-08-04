@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/3/2021~~
+*Updated 8/4/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -87,9 +87,9 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
-r.D3D.ForceDXC=1;--------------------------TEST default 0
-r.D3D12.Depth24Bit=0;--------------------------TEST default 1
-r.D3D11.Depth24Bit=0;--------------------------TEST default 1
+r.D3D.ForceDXC=0;--------------------------TEST default 0
+r.D3D12.Depth24Bit=1;--------------------------TEST default 1
+r.D3D11.Depth24Bit=1;--------------------------TEST default 1
 r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
