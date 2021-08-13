@@ -1,5 +1,5 @@
 # ue4-config-tweaks
-Aims to cover most if not every config variable recognised by Unreal Engine \4.
+Aims to cover most if not every config variable recognised by Unreal Engine 4.
 
 ## About
 This is a fork of smo0ths' [UE4CommOpti](https://github.com/smo0ths/UE4CommOpti).
