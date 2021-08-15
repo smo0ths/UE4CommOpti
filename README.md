@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/12/2021
+*Updated 8/15/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -25,7 +25,7 @@ my config is more of a quality balance you may need to tweak some commands, copy
 Global=off;
 
 [Audio]
-MaxChannels=64;--------------------------32 48 64 96 128 lower values for PERFORMANCE
+MaxChannels=64;--------------------------32 48 64 96 128 LOWER VALUES for PERFORMANCE
 CommonAudioPoolSize=0;--------------------------default 0
 UnfocusedVolumeMultiplier=1;
 
@@ -82,7 +82,7 @@ r.GenerateMeshDistanceFields=1;--------------------------0 for PERFORMANCE
 r.NormalMapsForStaticLighting=0;
 r.GenerateLandscapeGIData=0;--------------------------0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;
-r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
+r.LightingDetailMode=100;--------------------------50 OR 100 for PERFORMANCE default 150
 r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
@@ -106,8 +106,8 @@ r.VirtualTexturedLightmaps=0;
 r.MeshStreaming=0;--------------------------1 IS EXPERIMENTAL
 r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
-r.SkylightIntensityMultiplier=1;
-r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.5 for PERFORMANCE
+r.SkylightIntensityMultiplier=0.8;--------------------------SKYLIGHT INTENSITY LOWER WHEN NOT USING A LOT OF AO
+r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 OR 0.5 for PERFORMANCE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
@@ -171,9 +171,9 @@ r.Tonemapper.Sharpen=0;
 r.Tonemapper.MergeWithUpscale.Mode=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
-r.MinRoughnessOverride=0.2;--------------------------0.2 without TAA 0 with TAA
+r.MinRoughnessOverride=0.2;--------------------------0.2 WITHOUT TAA 0 WITH TAA
 r.DefaultFeature.AntiAliasing=1;--------------------------0 OFF 1 FXAA 2 TAA 3 MSAA
-r.PostProcessAAQuality=2;--------------------------0 OFF 1 to 2 FXAA 3 to 6 TAA
+r.PostProcessAAQuality=2;--------------------------0 OFF 1 TO 2 FXAA 3 TO 6 TAA
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAAFilterSize=1;
@@ -264,7 +264,7 @@ r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
 r.DetailMode=1;--------------------------0 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
-r.DepthOfFieldQuality=0;--------------------------dof 0 for PERFORMANCE
+r.DepthOfFieldQuality=0;--------------------------DOF 0 for PERFORMANCE
 r.Filter.SizeScale=1;--------------------------default 1
 r.BloomQuality=3;--------------------------BLOOM
 r.Bloom.HalfResolutionFFT=0;
@@ -279,7 +279,7 @@ grass.DensityScale=1;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;--------------------------default 8192
-foliage.DitheredLOD=1;--------------------------1 dithered 0 popping LOD
+foliage.DitheredLOD=1;--------------------------1 DITHERED 0 POPPING LOD
 r.Decal.FadeDurationScale=1;--------------------------default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
@@ -377,7 +377,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=1024,LODBia
 TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 
