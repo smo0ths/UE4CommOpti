@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/15/2021
+*Updated 8/21/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -37,9 +37,6 @@ DisplayGamma=2.2;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=35;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
-
-[/Script/Engine.StreamingSettings]
-s.AsyncLoadingThreadEnabled=1;
 
 [ConsoleVariables]
 FX.BatchAsync=1;
@@ -141,6 +138,8 @@ r.Streaming.HiddenPrimitiveScale=0;--------------------------TEST default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
+r.Streaming.MaxTextureUVDensity=1;--------------------------TEST
+r.Streaming.AllowFastForceResident=1;--------------------------TEST
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
 r.AOQuality=0;--------------------------0 for PERFORMANCE
 r.ShadowQuality=3;--------------------------SHADOWS
@@ -162,8 +161,9 @@ r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 
 r.DFShadowQuality=1;-------------------------- 1 to 2 QUALITY VALUES 0 OFF
 r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
-r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
+r.DFShadowScatterTileCulling=1;--------------------------1 IS OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE
+r.DFDistanceScale=0.5;--------------------------TEST 0.5 FOR PERFORMANCE
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
@@ -178,8 +178,8 @@ r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAAFilterSize=1;
 r.TemporalAACurrentFrameWeight=0;
-r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
-r.TemporalAA.Algorithm=0;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.R11G11B10History=0;--------------------------1 IS EXPERIMENTAL
+r.TemporalAA.Algorithm=0;--------------------------1 IS EXPERIMENTAL
 r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -191,8 +191,8 @@ r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;
 r.TranslucencyLightingVolume=1;--------------------------TRANSLUCENCY LIGHT VOLUME
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;
-p.BatchPhysXTasksSize=6;--------------------------TEST
-p.ClothPhysics=1;--------------------------default 1
+p.BatchPhysXTasksSize=2;--------------------------TEST
+p.ClothPhysics=0;--------------------------default 1
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsLODThreshold=0;
 p.RigidBodyLODThreshold=0;
@@ -238,7 +238,7 @@ r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Enable=0;
-r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 OFF
+r.SSGI.Quality=0;--------------------------SSGI 1 TO 4 QUALITY VALUES 0 OFF
 r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
