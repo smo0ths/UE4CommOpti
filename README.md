@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 8/24/2021
+*Updated 8/24/2021~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -138,8 +138,6 @@ r.Streaming.HiddenPrimitiveScale=0.5;--------------------------TEST default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
-r.Streaming.MaxTextureUVDensity=1;--------------------------TEST
-r.Streaming.AllowFastForceResident=1;--------------------------TEST
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
 r.AOQuality=0;--------------------------0 for PERFORMANCE
 r.ShadowQuality=3;--------------------------SHADOWS
