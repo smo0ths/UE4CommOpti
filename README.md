@@ -5,7 +5,7 @@
 
 *For UE4 games for reference/customization/optimization/learning
 
-*Discord link https://discord.gg/vB8f4fZ7EH
+*Discord link discord.gg/vB8f4fZ7EH
 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
