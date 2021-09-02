@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/2/2021~
+*Updated 9/2/2021~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -129,8 +129,8 @@ r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.Boost=1;
 r.Streaming.UsePerTextureBias=1;
 r.Streaming.AmortizeCPUToGPUCopy=1;
+r.Streaming.MaxNumTexturesToStreamPerFrame=5;
 r.Streaming.FramesForFullUpdate=10;
-r.Streaming.MaxNumTexturesToStreamPerFrame=1;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
@@ -267,8 +267,7 @@ r.DepthOfFieldQuality=0;--------------------------DOF 0 for PERFORMANCE
 r.Filter.SizeScale=1;--------------------------default 1
 r.BloomQuality=3;--------------------------BLOOM
 r.Bloom.HalfResolutionFFT=0;
-r.Bloom.Cross=-0.7777;--------------------------use -0.7777 for ANAMORPHIC BLOOM default 0r.Streaming.MaxNumTexturesToStreamPerFrame=5;
-r.Streaming.FramesForFullUpdate=5;
+r.Bloom.Cross=-0.7777;--------------------------use -0.7777 for ANAMORPHIC BLOOM default 0
 r.BlurGBuffer=0;
 r.MotionBlurQuality=0;
 r.FastBlurThreshold=0;
