@@ -1,3 +1,46 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+*Updated 9/2/2021~
+
+*For UE4 games for reference/customization/optimization/learning
+
+*Discord link discord.gg/vB8f4fZ7EH
+
+*Always testing stuff contact me twitch.tv/smoothschannel or discord
+
+
+-----------end-----------
+
+
+Open Engine.ini
+
+Press:       Windows key + R      
+Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
+Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
+Copy/Paste:  %localappdata%/BendGame/Saved/Config/WindowsNoEditor/Engine.ini
+
+
+my config is more of a quality balance you may need to tweak some commands, copy and paste under code
+
+[Core.Log]
+Global=off;
+
+[Audio]
+MaxChannels=64;--------------------------32 48 64 96 128 LOWER VALUES for PERFORMANCE
+CommonAudioPoolSize=0;--------------------------default 0
+UnfocusedVolumeMultiplier=1;
+
+[/Script/Engine.Engine]
+bSmoothFrameRate=0;
+bPauseOnLossOfFocus=0;
+bUseFixedFrameRate=0;
+DisplayGamma=2.2;
+
+[TextureStreaming]
+PoolSizeVRAMPercentage=35;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
+
+[ConsoleVariables]
 FX.BatchAsync=1;
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=1;
@@ -240,3 +283,119 @@ foliage.DitheredLOD=1;--------------------------1 DITHERED 0 POPPING LOD
 r.Decal.FadeDurationScale=0.8;--------------------------default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
+
+
+-----------end-----------
+
+Open Input.ini
+
+Press:       Windows key + R      
+Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
+Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
+
+
+edit input commands or add them
+
+[/Script/Engine.InputSettings] 
+bAltEnterTogglesFullscreen=1;
+bF11TogglesFullscreen=0; 
+bEnableMouseSmoothing=0;
+bViewAccelerationEnabled=0;
+InitialButtonRepeatDelay=0.1;
+ButtonRepeatDelay=0.1;
+
+
+-----------end-----------
+
+
+Open GameUserSettings.ini
+
+Press:       Windows key + R      
+Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+
+
+here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
+
+bTelemetryEnabled=0
+bUseVSync=0 
+FullscreenMode=1
+HDRDisplayOutputNits=
+bUseDynamicResolution=0
+AudioQualityLevel=3
+FrameRateLimit=            
+MenuFrameRateLimit=
+MaxAnisotropy=
+ContactShadows=0
+PostFX_Saturation=1.200000
+PostFX_Sharpness=0.000000
+DistanceFieldShadows=1
+TextureStreamPoolSizeStorage=3000
+OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
+
+
+set your scalability groups
+
+[ScalabilityGroups]
+sg.ResolutionQuality=100.000000
+sg.ViewDistanceQuality=0
+sg.AntiAliasingQuality=0
+sg.ShadowQuality=0
+sg.PostProcessQuality=0
+sg.TextureQuality=0
+sg.EffectsQuality=0
+sg.FoliageQuality=0
+sg.ShadingQuality=0
+
+
+-----------end-----------
+
+
+Open DeviceProfiles.ini
+
+Press:       Windows key + R      
+Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+
+
+textures or you can just use in game settings (sg.TextureQuality=) copy and paste
+
+[/Script/Engine.TextureLODSettings]
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+
+
+-----------end-----------
+
+
+for NVIDIA users
+
+Reset settings "apply let the 3D app decide" then set "use the advanced 3D image settings" then apply, click take me there
+Anisotropic filtering:  8x  (forced on)
+Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
+Power management mode:  Prefer max performance
+Preferred refresh rate:  Highest available
+TF anisotropic sample optimization:  On
+TF Negative LOD bias:  Clamp
+Texture filtering quality:  High performance
+Vertical sync:  Off
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
