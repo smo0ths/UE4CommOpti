@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/2/2021~~~
+*Updated 9/2/2021~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~srym8
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -38,7 +38,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=35;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
+PoolSizeVRAMPercentage=40;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
 
 [ConsoleVariables]
 FX.BatchAsync=1;
@@ -130,12 +130,12 @@ r.Streaming.Boost=1;
 r.Streaming.UsePerTextureBias=1;
 r.Streaming.AmortizeCPUToGPUCopy=1;
 r.Streaming.MaxNumTexturesToStreamPerFrame=5;
-r.Streaming.FramesForFullUpdate=10;
+r.Streaming.FramesForFullUpdate=60;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
-r.Streaming.HiddenPrimitiveScale=0;--------------------------TEST default 0.5
+r.Streaming.HiddenPrimitiveScale=0.5;--------------------------TEST default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
@@ -228,7 +228,7 @@ r.VolumetricFog.HistoryMissSupersampleCount=1;
 r.ReflectionEnvironment=1;--------------------------REFLECTION ENVIRONMENT 0 for PERFORMANCE
 r.chaos.ReflectionCaptureStaticSceneOnly=1;--------------------------1 for PERFORMANCE default 1
 r.ReflectionCaptureGPUArrayCopy=1;
-r.ReflectionCaptureResolution=512;--------------------------default 128
+r.ReflectionCaptureResolution=128;--------------------------default 128
 r.ReflectionEnvironmentLightmapMixing=1;
 r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
