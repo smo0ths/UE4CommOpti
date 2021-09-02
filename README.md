@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/2/2021~~
+*Updated 9/2/2021~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -135,7 +135,7 @@ r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
-r.Streaming.HiddenPrimitiveScale=0.5;--------------------------TEST default 0.5
+r.Streaming.HiddenPrimitiveScale=0;--------------------------TEST default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
