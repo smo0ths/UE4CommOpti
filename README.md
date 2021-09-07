@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/2/2021~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~srym8
+*Updated 9/7/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -29,7 +29,7 @@ Global=off;
 [Audio]
 MaxChannels=64;--------------------------32 48 64 96 128 LOWER VALUES for PERFORMANCE
 CommonAudioPoolSize=0;--------------------------default 0
-UnfocusedVolumeMultiplier=1;
+UnfocusedVolumeMultiplier=1.000000
 
 [/Script/Engine.Engine]
 bSmoothFrameRate=0;
@@ -38,7 +38,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=40;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
+PoolSizeVRAMPercentage=38;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
 
 [ConsoleVariables]
 FX.BatchAsync=1;
