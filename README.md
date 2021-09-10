@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/7/2021
+*Updated 9/10/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -88,7 +88,7 @@ r.AllowSubPrimitiveQueries=1;
 r.D3D.ForceDXC=0;--------------------------TEST default 0
 r.D3D12.Depth24Bit=0;--------------------------TEST default 1
 r.D3D11.Depth24Bit=0;--------------------------TEST default 1
-r.SceneColorFormat=4;--------------------------3 for PERFORMANCE default 4
+r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
@@ -99,12 +99,12 @@ Compat.UseDXT5NormalMaps=0;
 r.MinScreenRadiusForLights=0.03;--------------------------default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;
-r.VirtualTextures=0;
+r.VirtualTextures=1;
 r.VirtualTexturedLightmaps=0;
-r.MeshStreaming=0;--------------------------1 IS EXPERIMENTAL
+r.MeshStreaming=1;--------------------------1 IS EXPERIMENTAL
 r.SkyLightingQuality=1;
 r.SupportStationarySkylight=1;
-r.SkylightIntensityMultiplier=0.75;--------------------------SKYLIGHT INTENSITY LOWER WHEN NOT USING A LOT OF AO
+r.SkylightIntensityMultiplier=0.8;--------------------------SKYLIGHT INTENSITY
 r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 OR 0.5 for PERFORMANCE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
@@ -115,7 +115,7 @@ r.LandscapeLOD0DistributionScale=1;
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------HIGH 0.25 LOW 1 default 1
-r.StaticMeshLODDistanceScale=1.25;--------------------------TEST HIGH 0.25 LOW 1 default 1
+r.StaticMeshLODDistanceScale=1.2;--------------------------TEST HIGH 0.25 LOW 1 default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;
@@ -162,7 +162,7 @@ r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 IS OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE
-r.DFDistanceScale=0.1;--------------------------TEST
+r.DFDistanceScale=1;--------------------------TEST
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
@@ -194,10 +194,10 @@ p.BatchPhysXTasksSize=2;--------------------------TEST
 p.ClothPhysics=0;--------------------------default 1
 p.AnimDynamicsWind=0;--------------------------0 for PERFORMANCE
 p.AnimDynamicsLODThreshold=0;
-p.RigidBodyLODThreshold=1;--------------------------TEST
+p.RigidBodyLODThreshold=0;
 p.AnimDynamicsAdaptiveSubstep=1;--------------------------TEST
 p.AnimDynamicsRestrictLOD=-1;--------------------------TEST
-r.SeparateTranslucency=1;--------------------------0 for PERFORMANCE
+r.SeparateTranslucency=0;--------------------------0 for PERFORMANCE
 r.SeparateTranslucencyScreenPercentage=100;
 r.SeparateTranslucencyAutoDownsample=1;
 r.TranslucentSortPolicy=0;
