@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 9/10/2021
+*Updated 9/23/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -122,20 +122,20 @@ r.Streaming.MipBias=0;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
 r.Streaming.PoolSize=3000;
-r.Streaming.MaxTempMemoryAllowed=128;
+r.Streaming.MaxTempMemoryAllowed=20;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.UseAllMips=0;
 r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.Boost=1;
 r.Streaming.UsePerTextureBias=1;
 r.Streaming.AmortizeCPUToGPUCopy=1;
-r.Streaming.MaxNumTexturesToStreamPerFrame=5;
-r.Streaming.FramesForFullUpdate=60;
+r.Streaming.MaxNumTexturesToStreamPerFrame=1;
+r.Streaming.FramesForFullUpdate=10;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
-r.Streaming.HiddenPrimitiveScale=0.5;--------------------------TEST default 0.5
+r.Streaming.HiddenPrimitiveScale=0.5;--------------------------default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
