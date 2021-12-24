@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 10/17/2021
+*Updated 12/24/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -382,17 +382,50 @@ TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,L
 -----------end-----------
 
 
-for NVIDIA users
+for NVIDIA users:
 
-Reset settings "apply let the 3D app decide" then set "use the advanced 3D image settings" then apply, click take me there
-Anisotropic filtering:  8x  (forced on)
-Low latency mode:  off  (lower than ~85% gpu for lowest input lag)
-Power management mode:  Prefer max performance
+Turn on Message-signaled interrupts (MSIs)
+
+Adjust image settings set to Performance and apply then Select Use the advanced 3D image settings and apply
+
+In manage 3D settings:
+
+Anisotropic filtering:  Off for perf. App-controlled or force your own setting for quality
+
+Low latency mode:  
+1. Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
+2. On feels consistent (i use this and reflex in games that support it)
+3. Ultra and relfex (in-game) feels good when gpu usage is ~97%
+
+Power management mode:  Prefer max performance  (this is the "+ boost" in reflex + boost)
+
 Preferred refresh rate:  Highest available
-TF anisotropic sample optimization:  On
-TF Negative LOD bias:  Clamp
+
+Texture filtering - anisotropic sample optimization:  on
+
+Texture filtering - Negative LOD bias:  Allow
+
 Texture filtering quality:  High performance
+
 Vertical sync:  Off
+
+
+-----------end-----------
+
+
+How to enable Message-signaled interrupts (MSIs):
+
+use Wtools v1.0.2.0.exe (Wagnardsoft Tools) enable it and restart
+
+or 
+
+find ID: open divice manager right click your GPU properties and click on events tab
+
+looks like this:
+
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
+
+find in regedit and set MSISupported to 1 then restart
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
