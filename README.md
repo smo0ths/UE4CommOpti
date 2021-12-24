@@ -419,7 +419,7 @@ use Wtools v1.0.2.0.exe (Wagnardsoft Tools) enable it and restart
 
 or 
 
-find ID: open divice manager right click your GPU properties and click on events tab
+find ID: open device manager right click your GPU properties and click on events tab
 
 looks like this:
 
