@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/27/2021~~~~
+*Updated 12/28/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -149,9 +149,9 @@ r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.Shadow.MaxCSMStaticCachedShadowResolution=1024;--------------------------TEST
 r.HFShadowQuality=2;--------------------------default 2
-r.ContactShadows=1;--------------------------0 for PERFORMANCE
+r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
-r.CapsuleShadows=1;
+r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=1;-------------------------- 1 to 3 QUALITY VALUES 0 OFF default 3
@@ -271,7 +271,7 @@ foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;--------------------------default 8192
 foliage.DitheredLOD=1;--------------------------1 DITHERED 0 POPPING LOD
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
-r.Decal.FadeScreenSizeMult=1;--------------------------TEST
+r.Decal.FadeScreenSizeMult=2;--------------------------TEST
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
 r.Decal.GenerateRTWriteMaskTexture=1;
 
