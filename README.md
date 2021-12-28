@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/27/2021~
+*Updated 12/27/2021~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -110,7 +110,7 @@ r.LandscapeLOD0DistributionScale=1;
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------LOWER IS HIGHER QUALITY 0.25-1 default 1
-r.StaticMeshLODDistanceScale=0.75;--------------------------LOWER IS HIGHER QUALITY 0.25-1 default 1
+r.StaticMeshLODDistanceScale=1;--------------------------LOWER IS HIGHER QUALITY 0.25-1 default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.VirtualTextures=0;
 r.VirtualTexturedLightmaps=0;
@@ -132,7 +132,7 @@ r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
-r.Streaming.HiddenPrimitiveScale=0.5;--------------------------default 0.5
+r.Streaming.HiddenPrimitiveScale=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
