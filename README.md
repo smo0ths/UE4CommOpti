@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/27/2021~~~
+*Updated 12/27/2021~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -132,7 +132,7 @@ r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
 r.Streaming.ScaleTexturesByGlobalMyBias=1;
-r.Streaming.HiddenPrimitiveScale=0;
+r.Streaming.HiddenPrimitiveScale=0.5;--------------------------default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
@@ -271,8 +271,9 @@ foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;--------------------------default 8192
 foliage.DitheredLOD=1;--------------------------1 DITHERED 0 POPPING LOD
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
-r.Decal.FadeScreenSizeMult=0.1;--------------------------default 0.1
+r.Decal.FadeScreenSizeMult=1;--------------------------TEST
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
+r.Decal.GenerateRTWriteMaskTexture=1;
 
 
 
