@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/28/2021~
+*Updated 12/28/2021~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -64,7 +64,7 @@ r.GTSyncType=0;
 rhi.SyncSlackMS=0;
 r.UniformBufferPooling=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
-r.AlsoUseSphereForFrustumCull=1;
+r.AlsoUseSphereForFrustumCull=0;--------------------------TEST 0 for PERFORMANCE
 r.DoInitViewsLightingAfterPrepass=0;--------------------------TEST 1 IS EXPERIMENTAL
 r.DoLazyStaticMeshUpdate=0;--------------------------1 IS EXPERIMENTAL MESHES FLICKER ON 1
 r.DeferUniformBufferUpdatesUntilVisible=1;--------------------------TEST
@@ -84,8 +84,6 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
-r.D3D12.Depth24Bit=1;--------------------------default 1
-r.D3D11.Depth24Bit=1;--------------------------default 1
 r.SceneColorFormat=4;--------------------------3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
@@ -233,7 +231,7 @@ r.ReflectionEnvironmentCubemapPoolFixedNum=256;--------------------------TEST
 r.ReflectionEnvironmentLightmapMixing=1;
 r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
-r.TiledDeferredShading.MinimumCount=80;--------------------------default 80 LOWER for PERFORMANCE
+r.TiledDeferredShading.MinimumCount=80;--------------------------LOWER for PERFORMANCE default 80
 r.SSR.Quality=3;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=0;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
@@ -243,11 +241,11 @@ r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
 r.SSS.Scale=1;--------------------------default 1
-r.SSS.SampleSet=2;--------------------------default 2 0 for PERFORMANCE
+r.SSS.SampleSet=2;--------------------------0 for PERFORMANCE default 2
 r.SSS.Quality=-1;--------------------------default 0
 r.SSS.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSS.Filter=1;
-r.SSS.Checkerboard=2;--------------------------default 2
+r.SSS.Checkerboard=1;
 r.ParticleLightQuality=2;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=1;--------------------------0.25 or 0.5 for PERFORMANCE
