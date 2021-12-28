@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/28/2021~~
+*Updated 12/28/2021~~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -89,7 +89,7 @@ r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=1;--------------------------default 1
-r.LightFunctionQuality=2;--------------------------0 for PERFORMANCE default 2
+r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
 r.MinScreenRadiusForLights=0.015;--------------------------TEST default 0.03
@@ -107,8 +107,8 @@ r.LandscapeLODDistributionScale=1;
 r.LandscapeLOD0DistributionScale=1;
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.SkeletalMeshLODRadiusScale=1;--------------------------LOWER IS HIGHER QUALITY 0.25-1 default 1
-r.StaticMeshLODDistanceScale=1;--------------------------LOWER IS HIGHER QUALITY 0.25-1 default 1
+r.SkeletalMeshLODRadiusScale=1;--------------------------LOWER for QUALITY 0.25-1 default 1
+r.StaticMeshLODDistanceScale=1;--------------------------LOWER for QUALITY 0.25-1 default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;
@@ -138,6 +138,7 @@ r.Streaming.MinLevelTextureScreenSize=100;
 r.Streaming.MipCalculationEnablePerLevelList=1;
 r.Streaming.OverlapAssetAndLevelTicks=0;
 r.Streaming.UseBackgroundThreadPool=1;
+r.DistanceFieldGI=0;
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
 r.AOQuality=2;--------------------------0 for PERFORMANCE default 2
 r.ShadowQuality=3;--------------------------SHADOWS
@@ -155,7 +156,7 @@ r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
-r.DFShadowQuality=1;-------------------------- 1 to 3 QUALITY VALUES 0 OFF default 3
+r.DFShadowQuality=3;--------------------------1 to 3 QUALITY VALUES 0 OFF default 3
 r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 IS OPTIMAL
@@ -192,8 +193,8 @@ p.BatchPhysXTasksSize=3;--------------------------TEST
 p.ClothPhysics=1;--------------------------default 1
 p.AnimDynamics=1;
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
-p.AnimDynamicsLODThreshold=1;--------------------------0 for PERFORMANCE
-p.RigidBodyLODThreshold=1;--------------------------0 for PERFORMANCE
+p.AnimDynamicsLODThreshold=0;--------------------------0 for PERFORMANCE
+p.RigidBodyLODThreshold=0;--------------------------0 for PERFORMANCE
 p.AnimDynamicsAdaptiveSubstep=1;--------------------------TEST
 p.AnimDynamicsRestrictLOD=-1;--------------------------TEST
 r.SeparateTranslucency=0;--------------------------TEST
@@ -226,13 +227,13 @@ r.VolumetricFog.HistoryMissSupersampleCount=1;
 r.ReflectionEnvironment=1;--------------------------REFLECTION ENVIRONMENT 0 for PERFORMANCE
 r.chaos.ReflectionCaptureStaticSceneOnly=1;--------------------------1 for PERFORMANCE default 1
 r.ReflectionCaptureGPUArrayCopy=1;
-r.ReflectionCaptureResolution=256;--------------------------default 128
-r.ReflectionEnvironmentCubemapPoolFixedNum=256;--------------------------TEST
+r.ReflectionCaptureResolution=128;--------------------------default 128
+r.ReflectionEnvironmentCubemapPoolFixedNum=128;--------------------------TEST
 r.ReflectionEnvironmentLightmapMixing=1;
 r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=80;--------------------------LOWER for PERFORMANCE default 80
-r.SSR.Quality=3;--------------------------SSR 0 for PERFORMANCE
+r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=0;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Enable=0;
@@ -254,10 +255,12 @@ r.SupportMaterialLayers=1;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
 r.DetailMode=1;--------------------------0 for PERFORMANCE
-r.RefractionQuality=1;--------------------------0 for PERFORMANCE default 2
+r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
 r.DepthOfFieldQuality=0;--------------------------DOF 0 for PERFORMANCE
 r.Filter.SizeScale=1;--------------------------default 1
+r.Filter.NewMethod=1;
+r.Filter.LoopMode=0;
 r.BloomQuality=3;--------------------------BLOOM
 r.Bloom.HalfResolutionFFT=0;
 r.Bloom.Cross=0;--------------------------use -0.7777 for ANAMORPHIC BLOOM default 0
@@ -294,7 +297,7 @@ bAltEnterTogglesFullscreen=1;
 bF11TogglesFullscreen=0; 
 bEnableMouseSmoothing=0;
 bViewAccelerationEnabled=0;
-InitialButtonRepeatDelay=0.1;
+InitialButtonRepeatDelay=0.1;--------------------------TEST default 0.2
 ButtonRepeatDelay=0.1;
 
 
@@ -317,10 +320,13 @@ bRTXAmbientOcclusionEnabled=False
 DlssQualitySetting=1
 bTelemetryEnabled=0
 bUseVSync=0 
-FullscreenMode=1
+FullscreenMode=0
+LastConfirmedFullscreenMode=0
+PreferredFullscreenMode=0
 HDRDisplayOutputNits=
 bUseDynamicResolution=0
 AudioQualityLevel=3
+LastConfirmedAudioQualityLevel=3
 FrameRateLimit=            
 MenuFrameRateLimit=
 MaxAnisotropy=
