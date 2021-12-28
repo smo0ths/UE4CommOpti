@@ -228,7 +228,6 @@ r.ReflectionEnvironment=1;--------------------------REFLECTION ENVIRONMENT 0 for
 r.chaos.ReflectionCaptureStaticSceneOnly=1;--------------------------1 for PERFORMANCE default 1
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128;--------------------------default 128
-r.ReflectionEnvironmentCubemapPoolFixedNum=128;--------------------------TEST
 r.ReflectionEnvironmentLightmapMixing=1;
 r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
