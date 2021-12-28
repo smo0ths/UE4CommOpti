@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/27/2021
+*Updated 12/27/2021~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -119,7 +119,7 @@ r.Streaming.MipBias=0;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
 r.Streaming.PoolSize=3000;
-r.Streaming.MaxTempMemoryAllowed=200;
+r.Streaming.MaxTempMemoryAllowed=200;--------------------------TEST
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.UseAllMips=0;
 r.Streaming.MaxEffectiveScreenSize=0;
@@ -142,10 +142,10 @@ r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048;
-r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 for PERFORMANCE
+r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.RadiusThreshold=0.01;--------------------------default 0.03
-r.Shadow.DistanceScale=1;
+r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.Shadow.MaxCSMStaticCachedShadowResolution=1024;--------------------------TEST
 r.HFShadowQuality=2;--------------------------default 2
@@ -239,14 +239,14 @@ r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
 r.SSS.Scale=1;--------------------------default 1
-r.SSS.SampleSet=2;--------------------------default 2
-r.SSS.Quality=0;--------------------------default 0
+r.SSS.SampleSet=2;--------------------------default 2 0 for PERFORMANCE
+r.SSS.Quality=-1;--------------------------default 0
 r.SSS.HalfRes=0;
 r.SSS.Filter=1;
 r.SSS.Checkerboard=2;--------------------------default 2
 r.ParticleLightQuality=2;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
-r.EmitterSpawnRateScale=1;--------------------------0.25 for PERFORMANCE
+r.EmitterSpawnRateScale=1;--------------------------0.25 or 0.5 for PERFORMANCE
 r.MaxAnisotropy=8;
 r.SupportMaterialLayers=1;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
