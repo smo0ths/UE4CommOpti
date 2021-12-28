@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/28/2021~~~~~
+*Updated 12/28/2021~~~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -140,7 +140,7 @@ r.Streaming.OverlapAssetAndLevelTicks=0;
 r.Streaming.UseBackgroundThreadPool=1;
 r.DistanceFieldGI=0;
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
-r.AOQuality=2;--------------------------0 for PERFORMANCE default 2
+r.AOQuality=0;--------------------------0 for PERFORMANCE 0 OFF default 2
 r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=1024;
@@ -156,7 +156,7 @@ r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
-r.DFShadowQuality=3;--------------------------1 to 3 QUALITY VALUES 0 OFF default 3
+r.DFShadowQuality=1;--------------------------1 to 3 QUALITY VALUES 0 OFF default 3
 r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 IS OPTIMAL
@@ -170,8 +170,8 @@ r.Tonemapper.MergeWithUpscale.Mode=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
 r.MinRoughnessOverride=0.2;--------------------------0.2 WITHOUT TAA 0 WITH TAA
-r.DefaultFeature.AntiAliasing=0;--------------------------0 OFF 1 FXAA 2 TAA 3 MSAA
-r.PostProcessAAQuality=0;--------------------------0 OFF 1 TO 2 FXAA 3 TO 6 TAA
+r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=0;--------------------------1 TO 2 FXAA 3 TO 6 TAA 0 OFF
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAAFilterSize=1;
