@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/28/2021~~~~~~
+*Updated 12/29/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -19,6 +19,7 @@ Press:       Windows key + R
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/BendGame/Saved/Config/WindowsNoEditor/Engine.ini
+Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
 
 
 my config is more of a quality balance you may need to tweak some commands, copy and paste under code
@@ -65,12 +66,12 @@ rhi.SyncSlackMS=0;
 r.UniformBufferPooling=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
 r.AlsoUseSphereForFrustumCull=0;--------------------------TEST 0 for PERFORMANCE
-r.DoInitViewsLightingAfterPrepass=0;--------------------------TEST 1 IS EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=0;--------------------------1 IS EXPERIMENTAL MESHES FLICKER ON 1
+r.DoInitViewsLightingAfterPrepass=0;--------------------------TEST 1 is EXPERIMENTAL
+r.DoLazyStaticMeshUpdate=0;--------------------------1 is EXPERIMENTAL MESHES FLICKER ON 1
 r.DeferUniformBufferUpdatesUntilVisible=1;--------------------------TEST
 r.DeferUniformExpressionCaching=1;--------------------------TEST
-r.DeferSkeletalDynamicDataUpdateUntilGDME=0;--------------------------TEST 1 IS EXPERIMENTAL
-r.MeshStreaming=0;--------------------------1 IS EXPERIMENTAL
+r.DeferSkeletalDynamicDataUpdateUntilGDME=0;--------------------------TEST 1 is EXPERIMENTAL
+r.MeshStreaming=0;--------------------------1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
 r.RenderTargetPoolMin=400;
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
@@ -140,7 +141,7 @@ r.Streaming.OverlapAssetAndLevelTicks=0;
 r.Streaming.UseBackgroundThreadPool=1;
 r.DistanceFieldGI=0;
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
-r.AOQuality=0;--------------------------0 for PERFORMANCE 0 OFF default 2
+r.AOQuality=0;--------------------------0 for PERFORMANCE 0 off default 2
 r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=1024;
@@ -156,10 +157,10 @@ r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
-r.DFShadowQuality=1;--------------------------1 to 3 QUALITY VALUES 0 OFF default 3
+r.DFShadowQuality=1;--------------------------1 to 3 QUALITY VALUES 0 off default 3
 r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
-r.DFShadowScatterTileCulling=1;--------------------------1 IS OPTIMAL
+r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE
 r.DFDistanceScale=1;--------------------------default 1
 r.Tonemapper.Quality=2;
@@ -167,17 +168,18 @@ r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
 r.Tonemapper.Sharpen=0;
 r.Tonemapper.MergeWithUpscale.Mode=0;
+r.Tonemapper.EmulateHDR=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
 r.MinRoughnessOverride=0.2;--------------------------0.2 WITHOUT TAA 0 WITH TAA
-r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=0;--------------------------1 TO 2 FXAA 3 TO 6 TAA 0 OFF
+r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 4 DEFAULT TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAAFilterSize=1;
 r.TemporalAACurrentFrameWeight=0;
-r.TemporalAA.R11G11B10History=0;--------------------------1 IS EXPERIMENTAL
-r.TemporalAA.Algorithm=0;--------------------------1 IS EXPERIMENTAL
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA
 r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -191,12 +193,13 @@ r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;
 p.BatchPhysXTasksSize=3;--------------------------TEST
 p.ClothPhysics=1;--------------------------default 1
-p.AnimDynamics=1;
+p.AllowCachedOverlaps=1;
+p.AnimDynamics=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
-p.AnimDynamicsLODThreshold=0;--------------------------0 for PERFORMANCE
-p.RigidBodyLODThreshold=0;--------------------------0 for PERFORMANCE
-p.AnimDynamicsAdaptiveSubstep=1;--------------------------TEST
+p.AnimDynamicsAdaptiveSubstep=0;--------------------------TEST
 p.AnimDynamicsRestrictLOD=-1;--------------------------TEST
+p.AnimDynamicsLODThreshold=1;--------------------------0 for PERFORMANCE
+p.RigidBodyLODThreshold=1;--------------------------0 for PERFORMANCE
 r.SeparateTranslucency=0;--------------------------TEST
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE
@@ -236,7 +239,7 @@ r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=0;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Enable=0;
-r.SSGI.Quality=0;--------------------------SSGI 1 TO 4 QUALITY VALUES 0 OFF
+r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 off
 r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
@@ -279,14 +282,34 @@ r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
 r.Decal.GenerateRTWriteMaskTexture=0;
 
 
+-----------end-----------
+
+
+The TAA settings i use Copy/Paste over or experiment
+
+r.MinRoughnessOverride=0;--------------------------0.2 WITHOUT TAA 0 WITH TAA
+r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=4;--------------------------1 to 2 FXAA 4 DEFAULT TAA 0 off
+r.MSAACount=0;
+r.TemporalAASamples=4;
+r.TemporalAAFilterSize=1;
+r.TemporalAACurrentFrameWeight=0;
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.Algorithm=1;--------------------------GEN 5 TAA
+r.TemporalAA.Upsampling=0;--------------------------TAAU
+r.TemporalAAUpsampleFiltered=1;
+r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+
 
 -----------end-----------
+
 
 Open Input.ini
 
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
+Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
 
 
 edit input commands or add them
@@ -308,6 +331,7 @@ Open GameUserSettings.ini
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
 here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
@@ -333,22 +357,25 @@ ContactShadows=0
 PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
 DistanceFieldShadows=1
-TextureStreamPoolSizeStorage=1024
-OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ; if you want to override from GameUserSettings.ini
+TextureStreamPoolSizeStorage=1024 ;--------------------------important for squad
+OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ;--------------------------if you want to override from GameUserSettings.ini
 
 
 set your scalability groups
 
+
+0=low/1=medium/2=high/3=epic/4=cinematic (4 gets clamped)
+
 [ScalabilityGroups]
 sg.ResolutionQuality=100.000000
-sg.ViewDistanceQuality=0
-sg.AntiAliasingQuality=0
-sg.ShadowQuality=0
-sg.PostProcessQuality=0
-sg.TextureQuality=0
-sg.EffectsQuality=0
-sg.FoliageQuality=0
-sg.ShadingQuality=0
+sg.ViewDistanceQuality=3
+sg.AntiAliasingQuality=3
+sg.PostProcessQuality=3
+sg.ShadowQuality=3
+sg.TextureQuality=3
+sg.EffectsQuality=3
+sg.FoliageQuality=3
+sg.ShadingQuality=3
 
 
 -----------end-----------
@@ -359,6 +386,7 @@ Open DeviceProfiles.ini
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
 textures or you can just use in game settings (sg.TextureQuality=) copy and paste
