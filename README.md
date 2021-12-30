@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/29/2021
+*Updated 12/30/2021
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -161,7 +161,8 @@ r.DFShadowQuality=1;--------------------------1 to 3 QUALITY VALUES 0 off defaul
 r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
-r.DFTwoSidedMeshDistanceBias=0;--------------------------0 for PERFORMANCE
+r.DFShadowWorldTileSize=200;--------------------------TEST
+r.DFTwoSidedMeshDistanceBias=1;--------------------------TEST 0 for PERFORMANCE
 r.DFDistanceScale=1;--------------------------default 1
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
