@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/4/2022~~~
+*Updated 1/4/2022~~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -155,7 +155,7 @@ r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=2;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.RadiusThreshold=0.01;--------------------------default 0.03
-r.Shadow.DistanceScale=2;--------------------------0.6 for PERFORMANCE
+r.Shadow.DistanceScale=1.5;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
@@ -343,6 +343,11 @@ Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSett
 
 here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
 
+TextureStreamPoolSizeStorage=1024;--------------------------important for squad
+ResolutionScaleModifier=1
+DFAO=
+DistanceFieldShadows=1
+Gamma=2.2
 bRTXEnabled=True
 bRTXReflectionsEnabled=False
 bRTXShadowsEnabled=False
@@ -353,6 +358,10 @@ bUseVSync=0
 FullscreenMode=0
 LastConfirmedFullscreenMode=0
 PreferredFullscreenMode=0
+DesiredScreenWidth=2560
+DesiredScreenHeight=1440
+LastUserConfirmedDesiredScreenWidth=2560
+LastUserConfirmedDesiredScreenHeight=1440
 HDRDisplayOutputNits=
 bUseDynamicResolution=0
 AudioQualityLevel=3
@@ -363,9 +372,7 @@ MaxAnisotropy=
 ContactShadows=0
 PostFX_Saturation=1.200000
 PostFX_Sharpness=0.000000
-DistanceFieldShadows=1
-TextureStreamPoolSizeStorage=1024 ;--------------------------important for squad
-OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False))) ;--------------------------if you want to override from GameUserSettings.ini
+OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False)));--------------------------if you want to override from GameUserSettings.ini
 
 
 set your scalability groups
