@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/4/2022~
+*Updated 1/4/2022~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -92,6 +92,9 @@ r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=1;--------------------------default 1
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
+Compat.MAX_GPUSKIN_BONES=256;--------------------------TEST
+r.FreeSkeletalMeshBuffers=0;--------------------------TEST default 0
+r.GPUSkin.Limit2BoneInfluences=0;--------------------------TEST default 0
 r.MinScreenRadiusForLights=0.015;--------------------------TEST default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;
@@ -152,19 +155,18 @@ r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=2;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.RadiusThreshold=0.01;--------------------------default 0.03
-r.Shadow.DistanceScale=0.6;--------------------------0.6 for PERFORMANCE
+r.Shadow.DistanceScale=2;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
-r.DFShadowQuality=3;--------------------------1 to 3 QUALITY VALUES 0 off default 3
+r.DFShadowQuality=3;--------------------------0 or 1 for PERFORMANCE 0 default 3
 r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
-r.DFShadowWorldTileSize=200;--------------------------TEST
-r.DFTwoSidedMeshDistanceBias=1;--------------------------TEST 0 for PERFORMANCE
+r.DFTwoSidedMeshDistanceBias=3;
 r.DFDistanceScale=1.1;--------------------------default 1
 r.Tonemapper.Quality=2;
 r.TonemapperFilm=1;
@@ -210,7 +212,7 @@ r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionSampleSetQuality=-1;
 r.AmbientOcclusion.Compute=0;
-r.AmbientOcclusionRadiusScale=0.3;
+r.AmbientOcclusionRadiusScale=0;
 r.LightShaftQuality=1;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
 r.LightShaftDownSampleFactor=2;
 r.LightShaftFirstPassDistance=0.1;
@@ -256,6 +258,8 @@ FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=0;--------------------------TEST
 FX.BatchAsyncBatchSize=32;
 FX.AllowCulling=1;
+FX.MaxCPUParticlesPerEmitter=500;--------------------------TEST default 1000
+FX.MaxGPUParticlesSpawnedPerFrame=524288;--------------------------TEST default 1048576
 r.MaxAnisotropy=8;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
@@ -294,11 +298,11 @@ r.MinRoughnessOverride=0;--------------------------0.2 WITHOUT TAA 0 WITH TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
-r.TemporalAASamples=4;
+r.TemporalAASamples=2;
 r.TemporalAAFilterSize=0.9;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
-r.TemporalAA.Algorithm=1;--------------------------GEN 5 TAA
+r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
 r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=0;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
