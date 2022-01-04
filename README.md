@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/4/2022
+*Updated 1/4/2022~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -97,7 +97,6 @@ r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;
 r.SupportAllShaderPermutations=0;--------------------------TEST
 r.SupportStationarySkylight=1;--------------------------default 1
-r.SupportLowQualityLightmaps=1;--------------------------TEST default 1
 r.SupportPointLightWholeSceneShadows=1;--------------------------TEST default 1
 r.SupportAtmosphericFog=1;--------------------------default 1
 r.SupportSkyAtmosphere=1;--------------------------default 1
