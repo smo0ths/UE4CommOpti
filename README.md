@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 12/31/2021
+*Updated 1/4/2022
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -42,11 +42,6 @@ DisplayGamma=2.2;
 PoolSizeVRAMPercentage=70;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
 
 [ConsoleVariables]
-FX.BatchAsync=1;
-FX.AllowAsyncTick=1;
-FX.EarlyScheduleAsync=0;--------------------------TEST
-FX.BatchAsyncBatchSize=32;
-FX.AllowCulling=1;
 r.ShaderDevelopmentMode=0;
 r.Shaders.Optimize=1;
 r.Shaders.FastMath=1;
@@ -64,7 +59,8 @@ r.EarlyZPassOnlyMaterialMasking=1;
 r.DBuffer=1;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
 r.FinishCurrentFrame=0;
 r.GTSyncType=0;
-rhi.SyncSlackMS=0;
+RHI.SyncInterval=0;
+RHI.SyncSlackMS=0;
 r.UniformBufferPooling=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
 r.AlsoUseSphereForFrustumCull=0;--------------------------TEST 0 for PERFORMANCE
@@ -76,13 +72,15 @@ r.DeferSkeletalDynamicDataUpdateUntilGDME=0;--------------------------TEST 1 is 
 r.MeshStreaming=0;--------------------------1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
 r.RenderTargetPoolMin=400;
+r.RenderTargetPool.TransientAliasingMode=0;--------------------------TEST
+r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;--------------------------TEST
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
 r.VertexFoggingForOpaque=1;
 r.GenerateMeshDistanceFields=1;--------------------------0 for PERFORMANCE
+r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;--------------------------TEST
 r.NormalMapsForStaticLighting=0;
 r.GenerateLandscapeGIData=0;--------------------------0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;
-r.LightingDetailMode=150;--------------------------50 OR 100 for PERFORMANCE default 150
 r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
@@ -92,16 +90,26 @@ r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=1;--------------------------default 1
-r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
 r.MinScreenRadiusForLights=0.015;--------------------------TEST default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;
+r.SupportAllShaderPermutations=0;--------------------------TEST
+r.SupportStationarySkylight=1;--------------------------default 1
+r.SupportLowQualityLightmaps=1;--------------------------TEST default 1
+r.SupportPointLightWholeSceneShadows=1;--------------------------TEST default 1
+r.SupportAtmosphericFog=1;--------------------------default 1
+r.SupportSkyAtmosphere=1;--------------------------default 1
+r.SupportSkyAtmosphereAffectsHeightFog=0;--------------------------TEST default 0
+r.SupportSimpleForwardShading=0;
+r.SupportMaterialLayers=1;
+r.SupportReversedIndexBuffers=1;--------------------------TEST
 r.SkyLightingQuality=1;--------------------------TEST 0 for PERFORMANCE
-r.SupportStationarySkylight=1;
 r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY Lower when not using AO to darken evironment
-r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 OR 0.5 for PERFORMANCE
+r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
+r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
+r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.5 for PERFORMANCE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
@@ -210,9 +218,6 @@ r.LightShaftFirstPassDistance=0.1;
 r.LightShaftBlurPasses=3;
 r.LightShaftNumSamples=12;
 r.LightShaftRenderToSeparateTranslucency=0;
-r.SupportSkyAtmosphere=1;
-r.SupportSkyAtmosphereAffectsHeightFog=1;
-r.SupportAtmosphericFog=1;
 r.Fog=1;
 r.VolumetricFog=1;--------------------------0 for PERFORMANCE
 r.VolumetricFog.GridPixelSize=32;
@@ -239,15 +244,20 @@ r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
 r.SSS.Scale=1;--------------------------default 1
 r.SSS.SampleSet=2;--------------------------0 for PERFORMANCE default 2
-r.SSS.Quality=-1;--------------------------default 0
+r.SSS.Quality=0;--------------------------default 0
 r.SSS.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSS.Filter=1;
 r.SSS.Checkerboard=1;
 r.ParticleLightQuality=2;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=1;--------------------------0.25 or 0.5 for PERFORMANCE
+FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
+FX.BatchAsync=1;
+FX.AllowAsyncTick=1;
+FX.EarlyScheduleAsync=0;--------------------------TEST
+FX.BatchAsyncBatchSize=32;
+FX.AllowCulling=1;
 r.MaxAnisotropy=8;
-r.SupportMaterialLayers=1;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
 r.DetailMode=1;--------------------------0 for PERFORMANCE
@@ -274,8 +284,6 @@ foliage.DitheredLOD=1;--------------------------1 DITHERED 0 POPPING LOD
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
-r.Decal.GenerateRTWriteMaskTexture=0;
-r.SupportReversedIndexBuffers=1;
 
 
 -----------end-----------
@@ -288,8 +296,8 @@ r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=4;
-r.TemporalAAFilterSize=0.8;
-r.TemporalAACurrentFrameWeight=0.2;
+r.TemporalAAFilterSize=0.9;
+r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=1;--------------------------GEN 5 TAA
 r.TemporalAA.Upsampling=0;--------------------------TAAU
