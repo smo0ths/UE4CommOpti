@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/4/2022~~~~~
+*Updated 1/5/2022
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -152,8 +152,8 @@ r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048;
-r.Shadow.CSM.MaxCascades=2;--------------------------TEST 1 or 2 for PERFORMANCE
-r.Shadow.CSM.TransitionScale=1;
+r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 or 2 for PERFORMANCE
+r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
 r.Shadow.RadiusThreshold=0.01;--------------------------default 0.03
 r.Shadow.DistanceScale=1.5;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
@@ -180,8 +180,7 @@ r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 
 r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=4;
-r.TemporalAAFilterSize=1;
-r.TemporalAACurrentFrameWeight=0;
+r.TemporalAACurrentFrameWeight=1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA
 r.TemporalAA.Upsampling=0;--------------------------TAAU
@@ -299,8 +298,7 @@ r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=2;
-r.TemporalAAFilterSize=0.9;
-r.TemporalAACurrentFrameWeight=0.1;
+r.TemporalAACurrentFrameWeight=1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
 r.TemporalAA.Upsampling=0;--------------------------TAAU
