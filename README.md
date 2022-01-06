@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/6/2022
+*Updated 1/6/2022~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -72,7 +72,6 @@ r.DeferUniformExpressionCaching=1;--------------------------TEST
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0;--------------------------TEST 1 is EXPERIMENTAL
 r.MeshStreaming=0;--------------------------1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
-r.RenderTargetPoolMin=400;
 r.RenderTargetPool.TransientAliasingMode=0;--------------------------TEST
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;--------------------------TEST
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
@@ -110,6 +109,7 @@ r.SupportMaterialLayers=1;
 r.SupportReversedIndexBuffers=1;--------------------------TEST
 r.SkyLightingQuality=1;--------------------------TEST 0 for PERFORMANCE
 r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY Lower when not using AO to darken evironment
+r.SkyLight.RealTimeReflectionCapture=1;--------------------------TEST
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
 r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.6 for PERFORMANCE
@@ -128,7 +128,8 @@ r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
-r.Streaming.PoolSize=1024;
+r.Streaming.PoolSize=2048;
+r.RenderTargetPoolMin=512;--------------------------TEST
 r.Streaming.MaxTempMemoryAllowed=50;--------------------------TEST
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.UseAllMips=0;
@@ -203,7 +204,7 @@ p.AnimDynamicsAdaptiveSubstep=0;--------------------------TEST
 p.AnimDynamicsRestrictLOD=-1;--------------------------TEST
 p.AnimDynamicsLODThreshold=1;--------------------------0 for PERFORMANCE
 p.RigidBodyLODThreshold=1;--------------------------0 for PERFORMANCE
-r.SeparateTranslucency=0;--------------------------TEST
+r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
@@ -258,8 +259,6 @@ FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=0;--------------------------TEST
 FX.BatchAsyncBatchSize=32;
 FX.AllowCulling=1;
-FX.MaxCPUParticlesPerEmitter=500;--------------------------TEST default 1000
-FX.MaxGPUParticlesSpawnedPerFrame=524288;--------------------------TEST default 1048576
 r.MaxAnisotropy=8;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
@@ -327,6 +326,7 @@ bEnableMouseSmoothing=0;
 bViewAccelerationEnabled=0;
 InitialButtonRepeatDelay=0.2;--------------------------TEST default 0.2
 ButtonRepeatDelay=0.1;
+DoubleClickTime=0.25;
 
 
 -----------end-----------
@@ -344,7 +344,7 @@ here are a few things to look for or tweak these overwrite engine.ini commands u
 
 MaxFPS=163
 FrameRateLimit=163
-TextureStreamPoolSizeStorage=1024;--------------------------important for squad
+TextureStreamPoolSizeStorage=2048;--------------------------important for squad
 ResolutionScaleModifier=1
 DFAO=
 DistanceFieldShadows=1
@@ -356,17 +356,12 @@ bRTXAmbientOcclusionEnabled=False
 DlssQualitySetting=1
 bTelemetryEnabled=0
 bUseVSync=0 
+DesiredScreenWidth=
+DesiredScreenHeight=
 FullscreenMode=0
-LastConfirmedFullscreenMode=0
-PreferredFullscreenMode=0
-DesiredScreenWidth=2560
-DesiredScreenHeight=1440
-LastUserConfirmedDesiredScreenWidth=2560
-LastUserConfirmedDesiredScreenHeight=1440
 HDRDisplayOutputNits=
 bUseDynamicResolution=0
 AudioQualityLevel=3
-LastConfirmedAudioQualityLevel=3
 FrameRateLimit=            
 MenuFrameRateLimit=
 MaxAnisotropy=
@@ -377,7 +372,6 @@ OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someother
 
 
 set your scalability groups
-
 
 0=low/1=medium/2=high/3=epic/4=cinematic (4 gets clamped)
 
@@ -443,7 +437,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,L
 
 for NVIDIA users:
 
-Turn on Message-signaled interrupts (MSIs)
+Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method)
 
 Adjust image settings set to Performance and apply then Select Use the advanced 3D image settings and apply
 
