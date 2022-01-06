@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/5/2022
+*Updated 1/6/2022
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -45,6 +45,7 @@ PoolSizeVRAMPercentage=70;--------------------------TEXTUREPOOL CACHE LOWER IF Y
 r.ShaderDevelopmentMode=0;
 r.Shaders.Optimize=1;
 r.Shaders.FastMath=1;
+au.RenderThreadPriority=3;--------------------------TEST 0 for PERFORMANCE default 3
 r.Atmosphere=1;
 r.VSync=0;
 r.AllowHDR=0;
@@ -95,9 +96,9 @@ Compat.UseDXT5NormalMaps=0;
 Compat.MAX_GPUSKIN_BONES=256;--------------------------TEST
 r.FreeSkeletalMeshBuffers=0;--------------------------TEST default 0
 r.GPUSkin.Limit2BoneInfluences=0;--------------------------TEST default 0
-r.MinScreenRadiusForLights=0.015;--------------------------TEST default 0.03
+r.MinScreenRadiusForLights=0.03;--------------------------TEST 0.03 for PERFORMANCE default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
-r.MinScreenRadiusForCSMDepth=0.01;
+r.MinScreenRadiusForCSMDepth=0.03;
 r.SupportAllShaderPermutations=0;--------------------------TEST
 r.SupportStationarySkylight=1;--------------------------default 1
 r.SupportPointLightWholeSceneShadows=1;--------------------------TEST default 1
@@ -111,7 +112,7 @@ r.SkyLightingQuality=1;--------------------------TEST 0 for PERFORMANCE
 r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY Lower when not using AO to darken evironment
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
-r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.5 for PERFORMANCE
+r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.6 for PERFORMANCE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
@@ -324,7 +325,7 @@ bAltEnterTogglesFullscreen=1;
 bF11TogglesFullscreen=0; 
 bEnableMouseSmoothing=0;
 bViewAccelerationEnabled=0;
-InitialButtonRepeatDelay=0.1;--------------------------TEST default 0.2
+InitialButtonRepeatDelay=0.2;--------------------------TEST default 0.2
 ButtonRepeatDelay=0.1;
 
 
@@ -341,6 +342,8 @@ Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSett
 
 here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
 
+MaxFPS=163
+FrameRateLimit=163
 TextureStreamPoolSizeStorage=1024;--------------------------important for squad
 ResolutionScaleModifier=1
 DFAO=
