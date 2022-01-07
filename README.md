@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/6/2022~~
+*Updated 1/7/2022
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -39,13 +39,17 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70;--------------------------TEXTUREPOOL CACHE LOWER IF YOU RUN OUT OF VRAM
+PoolSizeVRAMPercentage=70;--------------------------TEXTUREPOOL CACHE
 
 [ConsoleVariables]
+AllowAsyncRenderThreadUpdates=1;
+AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1;
 r.ShaderDevelopmentMode=0;
 r.Shaders.Optimize=1;
 r.Shaders.FastMath=1;
 au.RenderThreadPriority=3;--------------------------TEST 0 for PERFORMANCE default 3
+AudioThread.EnableBatchProcessing=1;--------------------------TEST
+AudioThread.BatchAsyncBatchSize=128;--------------------------TEST
 r.Atmosphere=1;
 r.VSync=0;
 r.AllowHDR=0;
@@ -108,7 +112,7 @@ r.SupportSimpleForwardShading=0;
 r.SupportMaterialLayers=1;
 r.SupportReversedIndexBuffers=1;--------------------------TEST
 r.SkyLightingQuality=1;--------------------------TEST 0 for PERFORMANCE
-r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY Lower when not using AO to darken evironment
+r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY
 r.SkyLight.RealTimeReflectionCapture=1;--------------------------TEST
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
@@ -192,9 +196,10 @@ r.SceneRenderTargetResizeMethodForceOverride=1;
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
 r.SceneCaptureResizeMethod=0;--------------------------default 0
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;--------------------------TEST
-r.TranslucencyLightingVolume=1;--------------------------TRANSLUCENCY LIGHT VOLUME
+r.AllowDownsampledStandardTranslucency=0;--------------------------TEST default 0
+r.TranslucencyLightingVolume=1;--------------------------LIT TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
-r.TranslucencyLightingVolumeDim=48;
+r.TranslucencyLightingVolumeDim=48;--------------------------default 64
 p.BatchPhysXTasksSize=3;--------------------------TEST
 p.ClothPhysics=1;--------------------------default 1
 p.AllowCachedOverlaps=1;
@@ -254,10 +259,10 @@ r.ParticleLightQuality=2;--------------------------PARTICLES 0 or 1 for PERFORMA
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=1;--------------------------0.25 or 0.5 for PERFORMANCE
 FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
-FX.BatchAsync=1;
+FX.BatchAsync=0;--------------------------TEST
+FX.BatchAsyncBatchSize=32;--------------------------default 32
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=0;--------------------------TEST
-FX.BatchAsyncBatchSize=32;
 FX.AllowCulling=1;
 r.MaxAnisotropy=8;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
@@ -282,7 +287,7 @@ grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 foliage.DensityScale=1;
 foliage.LODDistanceScale=0.9;--------------------------0.9 for PERFORMANCE default 1
 foliage.MinVertsToSplitNode=8192;--------------------------default 8192
-foliage.DitheredLOD=1;--------------------------1 DITHERED 0 POPPING LOD
+foliage.DitheredLOD=1;
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
@@ -326,7 +331,7 @@ bEnableMouseSmoothing=0;
 bViewAccelerationEnabled=0;
 InitialButtonRepeatDelay=0.2;--------------------------TEST default 0.2
 ButtonRepeatDelay=0.1;
-DoubleClickTime=0.25;
+DoubleClickTime=0.25;--------------------------TEST
 
 
 -----------end-----------
@@ -366,8 +371,8 @@ FrameRateLimit=
 MenuFrameRateLimit=
 MaxAnisotropy=
 ContactShadows=0
-PostFX_Saturation=1.200000
-PostFX_Sharpness=0.000000
+PostFX_Saturation=1.2
+PostFX_Sharpness=0
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False)));--------------------------if you want to override from GameUserSettings.ini
 
 
