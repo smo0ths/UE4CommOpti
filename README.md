@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/7/2022
+*Updated 1/7/2022~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -28,7 +28,7 @@ my config is more of a quality balance you may need to tweak some commands, copy
 Global=off;
 
 [Audio]
-MaxChannels=64;--------------------------32 48 64 96 128 LOWER VALUES for PERFORMANCE
+MaxChannels=64;--------------------------32 48 64 96 128 lower for PERFORMANCE
 CommonAudioPoolSize=0;--------------------------default 0
 UnfocusedVolumeMultiplier=1;
 
@@ -68,13 +68,12 @@ RHI.SyncInterval=0;
 RHI.SyncSlackMS=0;
 r.UniformBufferPooling=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
-r.AlsoUseSphereForFrustumCull=0;--------------------------TEST 0 for PERFORMANCE
+r.AlsoUseSphereForFrustumCull=1;--------------------------TEST 1 for PERFORMANCE
 r.DoInitViewsLightingAfterPrepass=0;--------------------------TEST 1 is EXPERIMENTAL
 r.DoLazyStaticMeshUpdate=0;--------------------------1 is EXPERIMENTAL MESHES FLICKER ON 1
 r.DeferUniformBufferUpdatesUntilVisible=1;--------------------------TEST
 r.DeferUniformExpressionCaching=1;--------------------------TEST
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0;--------------------------TEST 1 is EXPERIMENTAL
-r.MeshStreaming=0;--------------------------1 is EXPERIMENTAL
 r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
 r.RenderTargetPool.TransientAliasingMode=0;--------------------------TEST
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;--------------------------TEST
@@ -125,7 +124,7 @@ r.LandscapeLODDistributionScale=1;
 r.LandscapeLOD0DistributionScale=1;
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.SkeletalMeshLODRadiusScale=1;--------------------------LOWER for QUALITY 0.25-1 default 1
+r.SkeletalMeshLODRadiusScale=1;--------------------------lower for QUALITY 0.25-1 default 1
 r.StaticMeshLODDistanceScale=0.5;--------------------------1.5 for PERFORMANCE default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
@@ -152,24 +151,29 @@ r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
 r.DistanceFieldGI=0;
-r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
-r.AOQuality=0;--------------------------0 for PERFORMANCE 0 off default 2
+r.DistanceFieldAO=1;--------------------------DFAO 0 for PERFORMANCE
+r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
+r.AOGlobalDistanceField=1;
+r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
+r.AOHeightfieldOcclusion=0;
 r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=1024;
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
-r.Shadow.RadiusThreshold=0.01;--------------------------default 0.03
+r.Shadow.SpotLightTransitionScale=128;--------------------------TEST default 60
+r.Shadow.RadiusThreshold=0.03;--------------------------0.03 for PERFORMANCE default 0.03
 r.Shadow.DistanceScale=1.5;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
+r.Shadow.CacheWholeSceneShadows=1;
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
-r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
+r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=3;
@@ -179,19 +183,22 @@ r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
 r.Tonemapper.Sharpen=0;
 r.Tonemapper.EmulateHDR=0;
+r.TonemapperGamma=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
-r.MinRoughnessOverride=0.2;--------------------------0.2 WITHOUT TAA 0 WITH TAA
+r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=4;
-r.TemporalAACurrentFrameWeight=1;
+r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
-r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA
-r.TemporalAA.Upsampling=0;--------------------------TAAU
-r.TemporalAAUpsampleFiltered=0;
+r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
+r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAAUpsampleFiltered=1;
+r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+r.SecondaryScreenPercentage.GameViewport=0;
 r.SceneRenderTargetResizeMethodForceOverride=1;
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
 r.SceneCaptureResizeMethod=0;--------------------------default 0
@@ -202,6 +209,7 @@ r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;--------------------------default 64
 p.BatchPhysXTasksSize=3;--------------------------TEST
 p.ClothPhysics=1;--------------------------0 for PERFORMANCE default 1
+p.ClothPhysics.UseTaskThread=1;
 p.AllowCachedOverlaps=1;
 p.AnimDynamics=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
@@ -211,13 +219,14 @@ p.AnimDynamicsLODThreshold=1;--------------------------0 for PERFORMANCE
 p.RigidBodyLODThreshold=1;--------------------------0 for PERFORMANCE
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
-r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE
+r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off 
 r.DefaultFeature.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionSampleSetQuality=-1;
-r.AmbientOcclusion.Compute=0;
+r.AmbientOcclusion.Compute=1;--------------------------TEST 1 for PERFORMANCE
+r.AmbientOcclusion.Compute.Smooth=0;
 r.AmbientOcclusionRadiusScale=0;
 r.LightShaftQuality=1;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
 r.LightShaftDownSampleFactor=2;
@@ -245,7 +254,7 @@ r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
 r.SSR.HalfResSceneColor=0;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Enable=0;
-r.SSGI.Quality=0;--------------------------SSGI 1 to 4 QUALITY VALUES 0 off
+r.SSGI.Quality=0;--------------------------SSGI
 r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
@@ -255,11 +264,11 @@ r.SSS.Quality=0;--------------------------default 0
 r.SSS.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSS.Filter=1;
 r.SSS.Checkerboard=1;
-r.ParticleLightQuality=2;--------------------------PARTICLES 0 or 1 for PERFORMANCE
+r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=1;--------------------------0.25 or 0.5 for PERFORMANCE
 FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
-FX.BatchAsync=0;--------------------------TEST
+FX.BatchAsync=1;--------------------------TEST
 FX.BatchAsyncBatchSize=32;--------------------------default 32
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=0;--------------------------TEST
@@ -298,16 +307,17 @@ r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
 
 The TAA settings i use Copy/Paste over or experiment
 
-r.MinRoughnessOverride=0;--------------------------0.2 WITHOUT TAA 0 WITH TAA
+r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
-r.TemporalAASamples=2;
-r.TemporalAACurrentFrameWeight=1;
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=0;--------------------------TAAU
-r.TemporalAAUpsampleFiltered=0;
+r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAAUpsampleFiltered=1;
+r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 
 
