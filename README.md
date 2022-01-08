@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/7/2022~~
+*Updated 1/8/2022
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -47,7 +47,7 @@ AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1;
 r.ShaderDevelopmentMode=0;
 r.Shaders.Optimize=1;
 r.Shaders.FastMath=1;
-au.RenderThreadPriority=3;--------------------------TEST 0 for PERFORMANCE default 3
+au.RenderThreadPriority=0;--------------------------TEST 0 for PERFORMANCE default 3
 AudioThread.EnableBatchProcessing=1;--------------------------TEST
 AudioThread.BatchAsyncBatchSize=128;--------------------------TEST
 r.Atmosphere=1;
@@ -156,6 +156,7 @@ r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
 r.AOGlobalDistanceField=1;
 r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
 r.AOHeightfieldOcclusion=0;
+r.AOSpecularOcclusionMode=1;--------------------------TEST default 0
 r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=1024;
@@ -179,7 +180,6 @@ r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=3;
 r.DFDistanceScale=1.1;--------------------------default 1
 r.Tonemapper.Quality=2;
-r.TonemapperFilm=1;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
 r.Tonemapper.Sharpen=0;
 r.Tonemapper.EmulateHDR=0;
@@ -219,7 +219,7 @@ p.AnimDynamicsLODThreshold=1;--------------------------0 for PERFORMANCE
 p.RigidBodyLODThreshold=1;--------------------------0 for PERFORMANCE
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
-r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off 
+r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
 r.DefaultFeature.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
