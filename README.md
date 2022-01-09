@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/9/2022
+*Updated 1/9/2022~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -274,7 +274,7 @@ r.SSS.Checkerboard=1;
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
 r.EmitterSpawnRateScale=1;--------------------------0.25 or 0.5 for PERFORMANCE
-FX.QualityLevelSpawnRateScaleReferenceLevel=1;--------------------------TEST 0 or 1 for PERFORMANCE default 2
+FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 FX.BatchAsync=1;--------------------------TEST
 FX.BatchAsyncBatchSize=32;--------------------------default 32
 FX.AllowAsyncTick=1;
@@ -283,7 +283,7 @@ FX.AllowCulling=1;
 r.MaxAnisotropy=8;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
-r.DetailMode=0;--------------------------TEST 0 or 1 for PERFORMANCE default 2
+r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
 r.DepthOfFieldQuality=0;--------------------------DOF 0 for PERFORMANCE
