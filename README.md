@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/9/2022~~~~
+*Updated 1/9/2022~~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -278,6 +278,7 @@ FX.BatchAsyncBatchSize=32;--------------------------default 32
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=0;--------------------------TEST
 FX.AllowCulling=1;
+FX.FXAllowParticleMeshLODs=1;--------------------------TEST default 0
 r.MaxAnisotropy=8;
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
