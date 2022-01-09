@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/9/2022~~~
+*Updated 1/9/2022~~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -126,7 +126,7 @@ r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
 r.LandscapeLODDistributionScale=1;--------------------------default 1
 r.LandscapeLOD0DistributionScale=1;--------------------------default 1
-r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE
+r.ViewDistanceScale=2;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------lower for QUALITY 0.25-1 default 1
 r.StaticMeshLODDistanceScale=0.5;--------------------------1.5 for PERFORMANCE default 1
@@ -303,11 +303,8 @@ grass.DensityScale=1;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=1;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
 foliage.DensityScale=1;
-foliage.LODDistanceScale=1;
-foliage.ForceLOD=-1;
-foliage.MinLOD=-1;
-foliage.OnlyLOD=-1;
-foliage.OverestimateLOD=0;
+foliage.LODDistanceScale=2;--------------------------1 for PERFORMANCE default 1
+foliage.OverestimateLOD=1;--------------------------1 for PERFORMANCE default 0
 foliage.RandomLODRange=0;
 foliage.ASyncInstaneBufferConversion=1;
 foliage.CullAll=0;
@@ -315,7 +312,6 @@ foliage.CullAllInVertexShader=0;
 foliage.DisableCull=0;
 foliage.DisableCullShadows=0;
 foliage.DiscardDataOnLoad=0;
-foliage.MaxTrianglesToRender=100000000;
 foliage.MinimumScreenSize=0.000005;
 foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
