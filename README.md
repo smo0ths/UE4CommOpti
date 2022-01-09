@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/9/2022~~
+*Updated 1/9/2022~~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -115,7 +115,7 @@ r.DefaultFeature.AutoExposure=1;--------------------------TEST
 r.DefaultFeature.AutoExposure.Method=1;--------------------------TEST
 r.DefaultFeature.AUtoExposure.Bias=0;--------------------------TEST default 1
 r.SkyLightingQuality=1;
-r.SkylightIntensityMultiplier=1.5;--------------------------TEST SKYLIGHT INTENSITY
+r.SkylightIntensityMultiplier=0.5;--------------------------TEST SKYLIGHT INTENSITY
 r.SkyLight.RealTimeReflectionCapture=0;--------------------------TEST
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
@@ -154,8 +154,7 @@ r.Streaming.HiddenPrimitiveScale=0.5;--------------------------default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
-r.DistanceFieldGI=0;
-r.DistanceFieldAO=1;--------------------------DFAO 0 for PERFORMANCE
+r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
 r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
 r.AOGlobalDistanceField=1;
 r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
