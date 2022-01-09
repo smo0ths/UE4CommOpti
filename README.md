@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/9/2022~
+*Updated 1/9/2022~~
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -41,7 +41,7 @@ DisplayGamma=2.2;
 [TextureStreaming]
 PoolSizeVRAMPercentage=70;--------------------------TEXTUREPOOL CACHE
 
-[ConsoleVariables]
+[SystemSettings]
 AllowAsyncRenderThreadUpdates=1;
 AllowAsyncRenderThreadUpdatesDuringGamethreadUpdates=1;
 r.ShaderDevelopmentMode=0;
@@ -97,7 +97,6 @@ r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=1;--------------------------default 1
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
-Compat.MAX_GPUSKIN_BONES=75;--------------------------TEST
 r.FreeSkeletalMeshBuffers=0;--------------------------TEST default 0
 r.GPUSkin.Limit2BoneInfluences=0;--------------------------TEST default 0
 r.MinScreenRadiusForLights=0.03;--------------------------TEST 0.03 for PERFORMANCE default 0.03
