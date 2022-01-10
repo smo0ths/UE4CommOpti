@@ -1,15 +1,15 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Updated 1/10/2022
+*updated 1/10/2022
 
-*For UE4 games for reference/customization/optimization/learning
+*for UE4 games for reference/customization/optimization/learning
 
-*Discord link discord.gg/vB8f4fZ7EH
+*ciscord link discord.gg/vB8f4fZ7EH
 
-*Always testing stuff contact me twitch.tv/smoothschannel or discord
+*always testing stuff contact me twitch.tv/smoothschannel or discord
 
-*My config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
+*my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
 
 -----------------------------------------------------------------
@@ -17,8 +17,8 @@
 -----------------------------------------------------------------
 
 
-Press:       Windows key + R      
-Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
+Press:       Windows key + R 
+Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/BendGame/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
@@ -345,10 +345,9 @@ r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for
 ----------------------------------------------------------------
 
 
-Press:       Windows key + R      
-Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
-Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
-Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
 
 
 *edit input commands or add them
@@ -368,11 +367,10 @@ DoubleClickTime=0.25;--------------------------TEST
 -------------------------Open GameUserSettings.ini-------------------------
 ---------------------------------------------------------------------------
 
-
-Press:       Windows key + R      
-Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
-Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
-Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+ 
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
 *here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
@@ -436,14 +434,13 @@ sg.AnimationQuality.NumLevels=3
 -------------------------Open DeviceProfiles.ini-------------------------
 -------------------------------------------------------------------------
 
+   
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
-Press:       Windows key + R      
-Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
-Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
-Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
-
-*textures or you can just use in game settings (sg.TextureQuality=) copy and paste
+*textures lods experiment for performance or just use the games defaults texture settings
 
 
 [/Script/Engine.TextureLODSettings]
