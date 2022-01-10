@@ -512,3 +512,6 @@ looks like this:
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
 
 find in regedit and set MSISupported to 1 then restart
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
