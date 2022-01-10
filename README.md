@@ -1,7 +1,4 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-*Updated 1/9/2022~~~~~
+*Updated 1/10/2022
 
 *For UE4 games for reference/customization/optimization/learning
 
@@ -9,11 +6,13 @@
 
 *Always testing stuff contact me twitch.tv/smoothschannel or discord
 
+*My config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
------------end-----------
 
+-----------------------------------------------------------------
+-------------------------Open Engine.ini-------------------------
+-----------------------------------------------------------------
 
-Open Engine.ini
 
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini 
@@ -22,7 +21,8 @@ Copy/Paste:  %localappdata%/BendGame/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
 
 
-my config is more of a quality balance you may need to tweak some commands, copy and paste under code
+*copy and paste this in engine.ini under lines in the file
+
 
 [Core.Log]
 Global=off;
@@ -318,10 +318,10 @@ foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
 
 
------------end-----------
+------------------------------------------------------------------------------------------------------
+-------------------------The TAA settings i use Copy/Paste over or experiment-------------------------
+------------------------------------------------------------------------------------------------------
 
-
-The TAA settings i use Copy/Paste over or experiment
 
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
@@ -337,10 +337,10 @@ r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 
 
------------end-----------
+----------------------------------------------------------------
+-------------------------Open Input.ini-------------------------
+----------------------------------------------------------------
 
-
-Open Input.ini
 
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
@@ -348,7 +348,8 @@ Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
 Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
 
 
-edit input commands or add them
+*edit input commands or add them
+
 
 [/Script/Engine.InputSettings] 
 bAltEnterTogglesFullscreen=1;
@@ -360,10 +361,10 @@ ButtonRepeatDelay=0.1;
 DoubleClickTime=0.25;--------------------------TEST
 
 
------------end-----------
+---------------------------------------------------------------------------
+-------------------------Open GameUserSettings.ini-------------------------
+---------------------------------------------------------------------------
 
-
-Open GameUserSettings.ini
 
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
@@ -371,11 +372,12 @@ Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSe
 Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
-here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
+*here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
+
 
 MaxFPS=163
 FrameRateLimit=163
-TextureStreamPoolSizeStorage=2048;--------------------------important for squad
+TextureStreamPoolSizeStorage=1536;--------------------------important for squad
 ResolutionScaleModifier=1
 DFAO=
 DistanceFieldShadows=1
@@ -402,9 +404,8 @@ PostFX_Sharpness=0
 OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False)));--------------------------if you want to override from GameUserSettings.ini
 
 
-set your scalability groups
+*set your scalability groups, 0=low/1=medium/2=high/3=epic/4=cinematic (4 gets clamped)
 
-0=low/1=medium/2=high/3=epic/4=cinematic (4 gets clamped)
 
 [ScalabilityGroups]
 sg.ResolutionQuality=100.000000
@@ -428,10 +429,10 @@ sg.AnimationQuality=3
 sg.AnimationQuality.NumLevels=3
 
 
------------end-----------
+-------------------------------------------------------------------------
+-------------------------Open DeviceProfiles.ini-------------------------
+-------------------------------------------------------------------------
 
-
-Open DeviceProfiles.ini
 
 Press:       Windows key + R      
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
@@ -439,7 +440,8 @@ Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProf
 Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
-textures or you can just use in game settings (sg.TextureQuality=) copy and paste
+*textures or you can just use in game settings (sg.TextureQuality=) copy and paste
+
 
 [/Script/Engine.TextureLODSettings]
 TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
@@ -463,10 +465,10 @@ TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=256,MaxLODSize=4096,LO
 TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 
 
------------end-----------
+-------------------------------------------------------------------
+-------------------------for NVIDIA users--------------------------
+-------------------------------------------------------------------
 
-
-for NVIDIA users:
 
 Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method)
 
@@ -494,10 +496,10 @@ Texture filtering quality:  High performance
 Vertical sync:  Off
 
 
------------end-----------
+---------------------------------------------------------------------------------------------------
+-------------------------How to enable Message-signaled interrupts (MSIs)--------------------------
+---------------------------------------------------------------------------------------------------
 
-
-How to enable Message-signaled interrupts (MSIs):
 
 use Wtools v1.0.2.0.exe (Wagnardsoft Tools) enable it and restart
 
@@ -510,6 +512,3 @@ looks like this:
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
 
 find in regedit and set MSISupported to 1 then restart
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~
