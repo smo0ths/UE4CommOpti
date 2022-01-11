@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/10/2022~
+*updated 1/10/2022~~~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -193,8 +193,8 @@ r.TonemapperGamma=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
 r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
-r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
-r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.5;
@@ -213,7 +213,7 @@ r.AllowDownsampledStandardTranslucency=0;--------------------------TEST default 
 r.TranslucencyLightingVolume=1;--------------------------LIT TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;--------------------------default 64
-p.BatchPhysXTasksSize=4;--------------------------TEST default 3
+p.BatchPhysXTasksSize=2;--------------------------TEST default 3
 p.ClothPhysics=1;--------------------------0 for PERFORMANCE default 1
 p.ClothPhysics.UseTaskThread=1;--------------------------default 1
 p.AllowCachedOverlaps=1;--------------------------default 1
@@ -316,7 +316,7 @@ foliage.CullAllInVertexShader=0;
 foliage.DisableCull=0;
 foliage.DisableCullShadows=0;
 foliage.DiscardDataOnLoad=0;
-foliage.MinimumScreenSize=0.0001;
+foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
 
