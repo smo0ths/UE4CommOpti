@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/10/2022
+*updated 1/10/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -129,10 +129,10 @@ r.SkeletalMeshLODBias=0;
 r.ParticleLODBias=-1;
 r.LandscapeLODDistributionScale=1;--------------------------default 1
 r.LandscapeLOD0DistributionScale=1;--------------------------default 1
-r.ViewDistanceScale=2;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE default 1
+r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
 r.SkeletalMeshLODRadiusScale=1;--------------------------lower for QUALITY 0.25-1 default 1
-r.StaticMeshLODDistanceScale=0.5;--------------------------1.5 for PERFORMANCE default 1
+r.StaticMeshLODDistanceScale=1;--------------------------1.5 for PERFORMANCE default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;
@@ -171,7 +171,7 @@ r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
 r.Shadow.SpotLightTransitionScale=128;--------------------------TEST default 60
 r.Shadow.RadiusThreshold=0.03;--------------------------0.03 for PERFORMANCE default 0.03
-r.Shadow.DistanceScale=1.5;--------------------------0.6 for PERFORMANCE
+r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.Shadow.CacheWholeSceneShadows=1;
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
@@ -184,7 +184,7 @@ r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
 r.DFTwoSidedMeshDistanceBias=3;
-r.DFDistanceScale=1.1;--------------------------default 1
+r.DFDistanceScale=1;--------------------------default 1
 r.Tonemapper.Quality=2;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
 r.Tonemapper.Sharpen=0;
@@ -241,7 +241,7 @@ r.LightShaftBlurPasses=3;
 r.LightShaftNumSamples=12;
 r.LightShaftRenderToSeparateTranslucency=0;
 r.Fog=1;
-r.VolumetricFog=1;--------------------------0 for PERFORMANCE
+r.VolumetricFog=0;--------------------------0 for PERFORMANCE
 r.VolumetricFog.GridPixelSize=32;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.HistoryWeight=0.9;
@@ -274,7 +274,7 @@ r.SSS.Filter=1;
 r.SSS.Checkerboard=1;
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=10;
-r.EmitterSpawnRateScale=1;--------------------------0.25 or 0.5 for PERFORMANCE
+r.EmitterSpawnRateScale=0.5;--------------------------0.25 or 0.5 for PERFORMANCE
 FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 FX.BatchAsync=1;--------------------------TEST
 FX.BatchAsyncBatchSize=32;--------------------------default 32
@@ -283,7 +283,7 @@ FX.EarlyScheduleAsync=0;--------------------------TEST
 FX.AllowCulling=1;
 FX.FXAllowParticleMeshLODs=1;--------------------------TEST default 0
 r.MaxAnisotropy=8;
-r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
+r.TessellationAdaptivePixelsPerTriangle=9999999;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
 r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
@@ -300,14 +300,14 @@ r.FastBlurThreshold=0;
 r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE default 2
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
-r.Decal.FadeDurationScale=0.6;--------------------------0.6 for PERFORMANCE default 1
+r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
-grass.DensityScale=1;--------------------------0.6 for PERFORMANCE
+grass.DensityScale=0.8;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=1;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
-foliage.DensityScale=1;
-foliage.LODDistanceScale=2;--------------------------1 for PERFORMANCE default 1
+foliage.DensityScale=0.8;--------------------------0.6 for PERFORMANCE
+foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
 foliage.OverestimateLOD=1;--------------------------1 for PERFORMANCE default 0
 foliage.RandomLODRange=0;
 foliage.ASyncInstaneBufferConversion=1;
@@ -316,7 +316,7 @@ foliage.CullAllInVertexShader=0;
 foliage.DisableCull=0;
 foliage.DisableCullShadows=0;
 foliage.DiscardDataOnLoad=0;
-foliage.MinimumScreenSize=0.000005;
+foliage.MinimumScreenSize=0.0001;
 foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
 
@@ -376,8 +376,6 @@ DoubleClickTime=0.25;--------------------------TEST
 *here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
 
 
-MaxFPS=163
-FrameRateLimit=163
 TextureStreamPoolSizeStorage=1536;--------------------------important for squad
 ResolutionScaleModifier=1
 DFAO=
@@ -396,8 +394,10 @@ FullscreenMode=0
 HDRDisplayOutputNits=
 bUseDynamicResolution=0
 AudioQualityLevel=3
-FrameRateLimit=            
-MenuFrameRateLimit=
+MaxFPS=163
+FrameRateLimit=163
+LastUserConfirmedFrameRateLimit=163     
+MenuFrameRateLimit=100
 MaxAnisotropy=
 ContactShadows=0
 PostFX_Saturation=1.2
