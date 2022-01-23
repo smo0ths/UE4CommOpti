@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/10/2022~~~
+*updated 1/22/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -58,7 +58,8 @@ r.VSync=0;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
 r.GPUCrashDebugging=0;
-r.gpucrash.collectionenable=0;
+r.GPUCrash.CollectionEnable=0;
+r.DX11NVAfterMathEnabled=0;
 r.AsyncPipelineCompile=1;
 r.CompileShadersForDevelopment=0;--------------------------default 1
 r.CreateShadersOnLoad=0;--------------------------TEST
@@ -93,7 +94,7 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
-r.SceneColorFormat=4;--------------------------3 for PERFORMANCE default 4
+r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
@@ -180,9 +181,9 @@ r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
-r.Shadow.MaxNumFarShadowCascades=0;--------------------------0 for PERFORMANCE
+r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
 r.DFFullResolution=0;--------------------------0 for PERFORMANCE
-r.DFShadowScatterTileCulling=1;--------------------------1 is OPTIMAL
+r.DFShadowScatterTileCulling=1;--------------------------1 for PERFORMANCE
 r.DFTwoSidedMeshDistanceBias=3;
 r.DFDistanceScale=1;--------------------------default 1
 r.Tonemapper.Quality=2;
@@ -207,13 +208,12 @@ r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for
 r.SecondaryScreenPercentage.GameViewport=0;
 r.SceneRenderTargetResizeMethodForceOverride=1;
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
-r.SceneCaptureResizeMethod=0;--------------------------default 0
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;--------------------------TEST
 r.AllowDownsampledStandardTranslucency=0;--------------------------TEST default 0
 r.TranslucencyLightingVolume=1;--------------------------LIT TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;--------------------------default 64
-p.BatchPhysXTasksSize=2;--------------------------TEST default 3
+p.BatchPhysXTasksSize=3;--------------------------TEST default 3
 p.ClothPhysics=1;--------------------------0 for PERFORMANCE default 1
 p.ClothPhysics.UseTaskThread=1;--------------------------default 1
 p.AllowCachedOverlaps=1;--------------------------default 1
@@ -221,8 +221,8 @@ p.AnimDynamics=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsAdaptiveSubstep=0;--------------------------TEST
 p.AnimDynamicsRestrictLOD=-1;--------------------------TEST default -1
-p.AnimDynamicsLODThreshold=0;--------------------------TEST 0 for PERORMANCE default -1
-p.RigidBodyLODThreshold=0;--------------------------TEST 0 for PERORMANCE default -1
+p.AnimDynamicsLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
+p.RigidBodyLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
@@ -231,10 +231,10 @@ r.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionSampleSetQuality=-1;
-r.AmbientOcclusion.Compute=1;--------------------------TEST 1 for PERFORMANCE
+r.AmbientOcclusion.Compute=0;--------------------------TEST 1 for PERFORMANCE
 r.AmbientOcclusion.Compute.Smooth=0;
 r.AmbientOcclusionRadiusScale=0;
-r.LightShaftQuality=1;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
+r.LightShaftQuality=0;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
 r.LightShaftDownSampleFactor=2;
 r.LightShaftFirstPassDistance=0.1;
 r.LightShaftBlurPasses=3;
@@ -255,7 +255,7 @@ r.chaos.ReflectionCaptureStaticSceneOnly=1;--------------------------1 for PERFO
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128;--------------------------default 128
 r.ReflectionEnvironmentLightmapMixing=1;
-r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
+r.DoTiledReflections=0;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=80;--------------------------default 80
 r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
@@ -263,7 +263,7 @@ r.SSR.HalfResSceneColor=0;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=0.8;
 r.SSGI.Enable=0;
 r.SSGI.Quality=0;--------------------------SSGI
-r.SSGI.HalfRes=0;--------------------------1 for PERFORMANCE
+r.SSGI.HalfRes=1;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
 r.SSS.Scale=1;--------------------------default 1
@@ -273,7 +273,7 @@ r.SSS.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSS.Filter=1;
 r.SSS.Checkerboard=1;
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
-r.ParticleMinTimeBetweenTicks=10;
+r.ParticleMinTimeBetweenTicks=16;
 r.EmitterSpawnRateScale=0.5;--------------------------0.25 or 0.5 for PERFORMANCE
 FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 FX.BatchAsync=1;--------------------------TEST
@@ -300,7 +300,7 @@ r.FastBlurThreshold=0;
 r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE default 2
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
-r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
+r.Decal.FadeDurationScale=0.8;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
 grass.DensityScale=0.8;--------------------------0.6 for PERFORMANCE
@@ -319,6 +319,8 @@ foliage.DiscardDataOnLoad=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
+r.Upscale.Quality=0;--------------------------TEST default 3
+r.Downsample.Quality=0;--------------------------TEST default 3
 
 
 ------------------------------------------------------------------------------------------------------
