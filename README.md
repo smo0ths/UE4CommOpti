@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/22/2022
+*updated 1/24/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -193,9 +193,9 @@ r.Tonemapper.EmulateHDR=0;
 r.TonemapperGamma=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
-r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
-r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
-r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
+r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.5;
@@ -231,7 +231,7 @@ r.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionSampleSetQuality=-1;
-r.AmbientOcclusion.Compute=0;--------------------------TEST 1 for PERFORMANCE
+r.AmbientOcclusion.Compute=1;--------------------------TEST 1 for PERFORMANCE 1 looks bad without TAA
 r.AmbientOcclusion.Compute.Smooth=0;
 r.AmbientOcclusionRadiusScale=0;
 r.LightShaftQuality=0;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
@@ -250,12 +250,13 @@ r.VolumetricFog.TemporalReprojection=1;
 r.VolumetricFog.HistoryMissSupersampleCount=1;
 r.VolumetricCloud.SkyAO=0;--------------------------TEST
 r.VolumetricCloud.ShadowMap=0;--------------------------TEST
+r.DoTiledReflections=1;--------------------------TILED REFLECTION default 1
 r.ReflectionEnvironment=1;--------------------------REFLECTION ENVIRONMENT 0 for PERFORMANCE
 r.chaos.ReflectionCaptureStaticSceneOnly=1;--------------------------1 for PERFORMANCE default 1
+r.ReflectionCaptureSupersampleFactor=1;--------------------------TEST
 r.ReflectionCaptureGPUArrayCopy=1;
 r.ReflectionCaptureResolution=128;--------------------------default 128
 r.ReflectionEnvironmentLightmapMixing=1;
-r.DoTiledReflections=0;--------------------------TILED REFLECTION default 1
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=80;--------------------------default 80
 r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
@@ -324,13 +325,42 @@ r.Downsample.Quality=0;--------------------------TEST default 3
 
 
 ------------------------------------------------------------------------------------------------------
--------------------------The TAA settings i use Copy/Paste over or experiment-------------------------
+-------------------------AA settings i use Copy/Paste over or experiment-------------------------
 ------------------------------------------------------------------------------------------------------
 
 
+TAA
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.MSAACount=0;
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.5;
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
+r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAAUpsampleFiltered=1;
+r.TemporalAAFilterSize=0.5;
+r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+
+FXAA
+r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
+r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.MSAACount=0;
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.5;
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
+r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAAUpsampleFiltered=1;
+r.TemporalAAFilterSize=0.5;
+r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+
+NONE
+r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
+r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.5;
