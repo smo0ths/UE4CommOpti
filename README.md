@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/24/2022
+*updated 1/25/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -84,7 +84,6 @@ r.RenderTargetPool.TransientAliasingMode=0;--------------------------TEST
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;--------------------------TEST
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
 r.VertexFoggingForOpaque=1;
-r.GenerateMeshDistanceFields=1;--------------------------0 for PERFORMANCE
 r.DistanceFields.ForceMaxAtlasSize=1;
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;--------------------------TEST
 r.NormalMapsForStaticLighting=0;
@@ -94,7 +93,7 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
-r.SceneColorFormat=3;--------------------------3 for PERFORMANCE default 4
+r.SceneColorFormat=4;--------------------------3 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.ClearWithExcludeRects=2;--------------------------default 2
@@ -115,12 +114,9 @@ r.SupportSkyAtmosphereAffectsHeightFog=0;--------------------------TEST default 
 r.SupportSimpleForwardShading=0;
 r.SupportMaterialLayers=1;
 r.SupportReversedIndexBuffers=1;--------------------------TEST
-r.DefaultFeature.AutoExposure=1;--------------------------TEST
-r.DefaultFeature.AutoExposure.Method=1;--------------------------TEST
-r.DefaultFeature.AUtoExposure.Bias=0;--------------------------TEST default 1
 r.SkyLightingQuality=1;
-r.SkylightIntensityMultiplier=0.5;--------------------------TEST SKYLIGHT INTENSITY
-r.SkyLight.RealTimeReflectionCapture=0;--------------------------TEST
+r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY
+r.SkyLight.RealTimeReflectionCapture=1;--------------------------TEST
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
 r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.6 for PERFORMANCE
@@ -132,8 +128,8 @@ r.LandscapeLODDistributionScale=1;--------------------------default 1
 r.LandscapeLOD0DistributionScale=1;--------------------------default 1
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.SkeletalMeshLODRadiusScale=1;--------------------------lower for QUALITY 0.25-1 default 1
-r.StaticMeshLODDistanceScale=1;--------------------------1.5 for PERFORMANCE default 1
+r.SkeletalMeshLODRadiusScale=0.4;--------------------------1 for PERFORMANCE default 1
+r.StaticMeshLODDistanceScale=0.2;--------------------------1 for PERFORMANCE default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;
@@ -163,10 +159,9 @@ r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
 r.AOGlobalDistanceField=1;
 r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
 r.AOHeightfieldOcclusion=0;
-r.AOSpecularOcclusionMode=1;--------------------------TEST default 0
 r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
-r.Shadow.MaxResolution=1024;
+r.Shadow.MaxResolution=2048;
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
@@ -196,7 +191,6 @@ ShowFlag.Grain=0;
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
@@ -260,8 +254,10 @@ r.ReflectionEnvironmentLightmapMixing=1;
 r.TiledDeferredShading=1;--------------------------TILED DEFERRED SHADING 0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=80;--------------------------default 80
 r.SSR.Quality=0;--------------------------SSR 0 for PERFORMANCE
-r.SSR.HalfResSceneColor=0;--------------------------1 for PERFORMANCE
-r.SSR.MaxRoughness=0.8;
+r.SSR.HalfResSceneColor=1;--------------------------1 for PERFORMANCE
+r.SSR.MaxRoughness=-1;
+r.SSR.Temporal=1;--------------------------default 1
+r.SSR.ExperimentalDenoiser=0;
 r.SSGI.Enable=0;
 r.SSGI.Quality=0;--------------------------SSGI
 r.SSGI.HalfRes=1;--------------------------1 for PERFORMANCE
@@ -284,7 +280,7 @@ FX.EarlyScheduleAsync=0;--------------------------TEST
 FX.AllowCulling=1;
 FX.FXAllowParticleMeshLODs=1;--------------------------TEST default 0
 r.MaxAnisotropy=8;
-r.TessellationAdaptivePixelsPerTriangle=9999999;--------------------------9999999 for PERFORMANCE default 48
+r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
 r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
@@ -301,13 +297,13 @@ r.FastBlurThreshold=0;
 r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE default 2
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
-r.Decal.FadeDurationScale=0.8;--------------------------0.6 for PERFORMANCE default 1
+r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
-grass.DensityScale=0.8;--------------------------0.6 for PERFORMANCE
-grass.DisableDynamicShadows=1;--------------------------1 for PERFORMANCE
+grass.DensityScale=1;--------------------------0.6 for PERFORMANCE
+grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
-foliage.DensityScale=0.8;--------------------------0.6 for PERFORMANCE
+foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
 foliage.OverestimateLOD=1;--------------------------1 for PERFORMANCE default 0
 foliage.RandomLODRange=0;
@@ -320,8 +316,6 @@ foliage.DiscardDataOnLoad=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
-r.Upscale.Quality=0;--------------------------TEST default 3
-r.Downsample.Quality=0;--------------------------TEST default 3
 
 
 ------------------------------------------------------------------------------------------------------
@@ -333,7 +327,6 @@ TAA
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
@@ -347,7 +340,6 @@ FXAA
 r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
@@ -361,7 +353,6 @@ NONE
 r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.MSAACount=0;
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
@@ -393,6 +384,7 @@ bViewAccelerationEnabled=0;
 InitialButtonRepeatDelay=0.2;--------------------------TEST default 0.2
 ButtonRepeatDelay=0.1;
 DoubleClickTime=0.25;--------------------------TEST
+ConsoleKeys=Tilde;
 
 
 ---------------------------------------------------------------------------
@@ -409,8 +401,6 @@ DoubleClickTime=0.25;--------------------------TEST
 
 
 TextureStreamPoolSizeStorage=1536;--------------------------important for squad
-ResolutionScaleModifier=1
-DFAO=
 DistanceFieldShadows=1
 Gamma=2.2
 bRTXEnabled=True
@@ -418,13 +408,16 @@ bRTXReflectionsEnabled=False
 bRTXShadowsEnabled=False
 bRTXAmbientOcclusionEnabled=False
 DlssQualitySetting=1
+ResolutionScaleModifier=1
+DFAO=
 bTelemetryEnabled=0
 bUseVSync=0 
-DesiredScreenWidth=
-DesiredScreenHeight=
-FullscreenMode=0
-HDRDisplayOutputNits=
 bUseDynamicResolution=0
+ResolutionSizeX=2560
+ResolutionSizeY=1440
+FullscreenMode=0
+PreferredFullscreenMode=0
+HDRDisplayOutputNits=
 AudioQualityLevel=3
 MaxFPS=163
 FrameRateLimit=163
