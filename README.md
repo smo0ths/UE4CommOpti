@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/25/2022~
+*updated 1/26/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -215,8 +215,8 @@ p.AnimDynamics=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsAdaptiveSubstep=0;--------------------------TEST
 p.AnimDynamicsRestrictLOD=-1;--------------------------TEST default -1
-p.AnimDynamicsLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
-p.RigidBodyLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
+p.AnimDynamicsLODThreshold=-1;--------------------------TEST 0 for PERORMANCE default -1
+p.RigidBodyLODThreshold=-1;--------------------------TEST 0 for PERORMANCE default -1
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
