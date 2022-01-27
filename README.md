@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/26/2022
+*updated 1/27/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -87,7 +87,6 @@ r.VertexFoggingForOpaque=1;
 r.DistanceFields.ForceMaxAtlasSize=1;
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;--------------------------TEST
 r.NormalMapsForStaticLighting=0;
-r.GenerateLandscapeGIData=0;--------------------------0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;
 r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
@@ -155,10 +154,10 @@ r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=1;
 r.Streaming.UseMaterialData=1;
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
+r.AOHeightfieldOcclusion=0;--------------------------LANDSCAPE DFAO 0 for PERFORMANCE
 r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
-r.AOGlobalDistanceField=1;
-r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
-r.AOHeightfieldOcclusion=0;
+r.HeightFieldShadowing=1;--------------------------HEIGHT FIELD SHADOWING 0 off
+r.HFShadowQuality=2;--------------------------default 2
 r.ShadowQuality=3;--------------------------SHADOWS
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=2048;
@@ -219,15 +218,13 @@ p.AnimDynamicsLODThreshold=-1;--------------------------TEST 0 for PERORMANCE de
 p.RigidBodyLODThreshold=-1;--------------------------TEST 0 for PERORMANCE default -1
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
-r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
-r.DefaultFeature.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
-r.AmbientOcclusionStaticFraction=0;--------------------------0 for PERFORMANCE
+r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
+r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
-r.AmbientOcclusionMaxQuality=100;
-r.AmbientOcclusionSampleSetQuality=-1;
-r.AmbientOcclusion.Compute=1;--------------------------TEST 1 for PERFORMANCE 1 looks bad without TAA
+r.AmbientOcclusionMaxQuality=25;
+r.AmbientOcclusionRadiusScale=1.5;
+r.AmbientOcclusion.Compute=0;--------------------------1 for PERFORMANCE
 r.AmbientOcclusion.Compute.Smooth=0;
-r.AmbientOcclusionRadiusScale=0;
 r.LightShaftQuality=0;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
 r.LightShaftDownSampleFactor=2;
 r.LightShaftFirstPassDistance=0.1;
@@ -273,19 +270,11 @@ r.SSS.Quality=0;--------------------------default 0
 r.SSS.HalfRes=0;--------------------------1 for PERFORMANCE
 r.SSS.Filter=1;
 r.SSS.Checkerboard=1;
-r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
-r.ParticleMinTimeBetweenTicks=16;
-r.EmitterSpawnRateScale=0.5;--------------------------0.25 or 0.5 for PERFORMANCE
-FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
-FX.BatchAsync=1;--------------------------TEST
-FX.BatchAsyncBatchSize=32;--------------------------default 32
-FX.AllowAsyncTick=1;
-FX.EarlyScheduleAsync=0;--------------------------TEST
-FX.AllowCulling=1;
-FX.FXAllowParticleMeshLODs=1;--------------------------TEST default 0
+r.EyeAdaptationQuality=2;--------------------------0 off 1 for PERFORMANCE default 2
 r.MaxAnisotropy=8;
+ShowFlag.Tessellation=1;--------------------------0 for PERFORMANCE
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
-r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE
+r.MaterialQualityLevel=3;--------------------------0 for PERFORMANCE 0 low 1 high 2 medium 3 epic
 r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
@@ -301,6 +290,16 @@ r.FastBlurThreshold=0;
 r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE default 2
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
+r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
+r.ParticleMinTimeBetweenTicks=16;
+r.EmitterSpawnRateScale=0.5;--------------------------0.25 or 0.5 for PERFORMANCE
+FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
+FX.BatchAsync=1;--------------------------TEST
+FX.BatchAsyncBatchSize=32;--------------------------default 32
+FX.AllowAsyncTick=1;
+FX.EarlyScheduleAsync=0;--------------------------TEST
+FX.AllowCulling=1;
+FX.FXAllowParticleMeshLODs=1;--------------------------TEST default 0
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
@@ -323,7 +322,7 @@ foliage.DitheredLOD=1;
 
 
 ------------------------------------------------------------------------------------------------------
--------------------------AA settings i use Copy/Paste over or experiment-------------------------
+-------------------------AA settings i use Copy/Paste over or experiment------------------------------
 ------------------------------------------------------------------------------------------------------
 
 
@@ -365,6 +364,30 @@ r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+
+
+------------------------------------------------------------------------------------------------------
+-------------------------SSAO settings i use Copy/Paste over or experiment----------------------------
+------------------------------------------------------------------------------------------------------
+
+
+SSAO quality/performance
+r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
+r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
+r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
+r.AmbientOcclusionMaxQuality=25;
+r.AmbientOcclusionRadiusScale=1.5;
+r.AmbientOcclusion.Compute=0;--------------------------1 for PERFORMANCE
+r.AmbientOcclusion.Compute.Smooth=0;
+
+SSAO performance/quality
+r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
+r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
+r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
+r.AmbientOcclusionMaxQuality=25;
+r.AmbientOcclusionRadiusScale=0;
+r.AmbientOcclusion.Compute=1;--------------------------1 for PERFORMANCE
+r.AmbientOcclusion.Compute.Smooth=0;
 
 
 ----------------------------------------------------------------
@@ -532,7 +555,11 @@ Vertical sync:  Off
 
 use Wtools v1.0.2.0.exe (Wagnardsoft Tools) enable it and restart
 
-or 
+or
+
+when you make your driver setup.exe using NVCleanstall enabling it in advanced settings
+
+or
 
 find ID: open device manager right click your GPU properties and click on events tab
 
