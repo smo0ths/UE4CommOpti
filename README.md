@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/27/2022
+*updated 1/27/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -95,7 +95,6 @@ r.AllowSubPrimitiveQueries=1;
 r.SceneColorFormat=2;--------------------------2 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
-r.ClearWithExcludeRects=2;--------------------------default 2
 r.GBufferFormat=1;--------------------------default 1
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
@@ -104,7 +103,7 @@ r.GPUSkin.Limit2BoneInfluences=0;--------------------------TEST default 0
 r.MinScreenRadiusForLights=0.03;--------------------------TEST 0.03 for PERFORMANCE default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
 r.MinScreenRadiusForCSMDepth=0.03;
-r.SupportAllShaderPermutations=0;--------------------------TEST
+r.SupportAllShaderPermutations=0;
 r.SupportStationarySkylight=1;--------------------------default 1
 r.SupportPointLightWholeSceneShadows=1;--------------------------TEST default 1
 r.SupportAtmosphericFog=1;--------------------------default 1
@@ -232,7 +231,7 @@ r.LightShaftBlurPasses=3;
 r.LightShaftNumSamples=12;
 r.LightShaftRenderToSeparateTranslucency=0;
 r.Fog=1;
-r.VolumetricFog=0;--------------------------0 for PERFORMANCE
+r.VolumetricFog=1;--------------------------0 for PERFORMANCE
 r.VolumetricFog.GridPixelSize=32;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.HistoryWeight=0.9;
@@ -278,7 +277,7 @@ r.MaterialQualityLevel=3;--------------------------0 for PERFORMANCE 0 low 1 hig
 r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
-r.DepthOfFieldQuality=0;--------------------------DOF 0 for PERFORMANCE
+r.DepthOfFieldQuality=2;--------------------------DOF 0 or 1 for PERFORMANCE default 2
 r.Filter.SizeScale=1;--------------------------default 1
 r.Filter.NewMethod=1;
 r.Filter.LoopMode=0;
