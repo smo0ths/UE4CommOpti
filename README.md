@@ -527,7 +527,7 @@ Adjust image settings set to Performance and apply then Select Use the advanced 
 
 In manage 3D settings:
 
-Anisotropic filtering:  Off for perf. App-controlled or force your own setting for quality
+Anisotropic filtering:  Off for perf. App-controlled or force your own setting for quality (8x is nice)
 
 Low latency mode:  
 1. Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
