@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/31/2022
+*updated 1/31/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -54,6 +54,7 @@ au.RenderThreadPriority=0;--------------------------TEST 0 for PERFORMANCE defau
 AudioThread.EnableBatchProcessing=1;--------------------------TEST
 AudioThread.BatchAsyncBatchSize=128;--------------------------TEST
 r.Atmosphere=1;
+r.FullScreenMode=0;
 r.VSync=0;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
@@ -402,14 +403,14 @@ r.AmbientOcclusion.Compute.Smooth=0;
 *edit input commands or add them
 
 
-[/Script/Engine.InputSettings] 
+[/Script/Engine.InputSettings]
 bAltEnterTogglesFullscreen=1;
 bF11TogglesFullscreen=0; 
 bEnableMouseSmoothing=0;
 bViewAccelerationEnabled=0;
-InitialButtonRepeatDelay=0.2;--------------------------TEST default 0.2
-ButtonRepeatDelay=0.1;
-DoubleClickTime=0.25;--------------------------TEST
+InitialButtonRepeatDelay=0.1;--------------------------TEST default 0.2
+ButtonRepeatDelay=0.1;--------------------------default 0.1
+DoubleClickTime=0.1;--------------------------TEST default 0.25
 ConsoleKeys=Tilde;
 
 
@@ -426,30 +427,29 @@ ConsoleKeys=Tilde;
 *here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
 
 
+AudioQualityLevel=3
+MaxAnisotropy=8
+MaxFPS=163
+FrameRateLimit=163
+MenuFrameRateLimit=163
+DoubleKeyPressTime=0.1
 TextureStreamPoolSizeStorage=1536;--------------------------important for squad
-DistanceFieldShadows=1
+DistanceFieldShadows=1;--------------------------important for my config in squad
 Gamma=2.2
-bRTXEnabled=True
-bRTXReflectionsEnabled=False
-bRTXShadowsEnabled=False
-bRTXAmbientOcclusionEnabled=False
+TAASampleStorage=
+bRTXEnabled=1
+bRTXReflectionsEnabled=0
+bRTXShadowsEnabled=0
+bRTXAmbientOcclusionEnabled=0
 DlssQualitySetting=1
 ResolutionScaleModifier=1
-DFAO=
+DFAO=0
 bTelemetryEnabled=0
 bUseVSync=0 
 bUseDynamicResolution=0
-ResolutionSizeX=2560
-ResolutionSizeY=1440
 FullscreenMode=0
 PreferredFullscreenMode=0
 HDRDisplayOutputNits=
-AudioQualityLevel=3
-MaxFPS=163
-FrameRateLimit=163
-LastUserConfirmedFrameRateLimit=163     
-MenuFrameRateLimit=100
-MaxAnisotropy=
 ContactShadows=0
 PostFX_Saturation=1.2
 PostFX_Sharpness=0
@@ -461,24 +461,24 @@ OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someother
 
 [ScalabilityGroups]
 sg.ResolutionQuality=100.000000
-sg.ViewDistanceQuality=3
-sg.ViewDistanceQuality.NumLevels=3
-sg.AntiAliasingQuality=3
-sg.AntiAliasingQuality.NumLevels=3
-sg.PostProcessQuality=3
-sg.PostProcessQuality.NumLevels=3
-sg.ShadowQuality=3
-sg.ShadowQuality.NumLevels=3
-sg.TextureQuality=3
-sg.TextureQuality.NumLevels=3
-sg.EffectsQuality=3
-sg.EffectsQuality.NumLevels=3
-sg.FoliageQuality=3
-sg.FoliageQuality.NumLevels=3
-sg.ShadingQuality=3
-sg.ShadingQuality.NumLevels=3
-sg.AnimationQuality=3
-sg.AnimationQuality.NumLevels=3
+sg.ViewDistanceQuality=2
+sg.ViewDistanceQuality.NumLevels=2
+sg.AntiAliasingQuality=2
+sg.AntiAliasingQuality.NumLevels=2
+sg.PostProcessQuality=2
+sg.PostProcessQuality.NumLevels=2
+sg.ShadowQuality=2
+sg.ShadowQuality.NumLevels=2
+sg.TextureQuality=2
+sg.TextureQuality.NumLevels=2
+sg.EffectsQuality=2
+sg.EffectsQuality.NumLevels=2
+sg.FoliageQuality=2
+sg.FoliageQuality.NumLevels=2
+sg.ShadingQuality=2
+sg.ShadingQuality.NumLevels=2
+sg.AnimationQuality=2
+sg.AnimationQuality.NumLevels=2
 
 
 -------------------------------------------------------------------------
@@ -495,24 +495,24 @@ sg.AnimationQuality.NumLevels=3
 
 
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverag,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=256,MaxLODSize=4096,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 
 
