@@ -1,11 +1,11 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/27/2022~
+*updated 1/31/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
-*ciscord link discord.gg/vB8f4fZ7EH
+*discord link discord.gg/vB8f4fZ7EH
 
 *always testing stuff contact me twitch.tv/smoothschannel or discord
 
