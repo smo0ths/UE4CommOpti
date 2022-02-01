@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 1/31/2022~
+*updated 2/1/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -308,14 +308,8 @@ grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
 foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
-foliage.OverestimateLOD=1;--------------------------1 for PERFORMANCE default 0
+foliage.OverestimateLOD=0;--------------------------TEST default 0
 foliage.RandomLODRange=0;
-foliage.ASyncInstaneBufferConversion=1;
-foliage.CullAll=0;
-foliage.CullAllInVertexShader=0;
-foliage.DisableCull=0;
-foliage.DisableCullShadows=0;
-foliage.DiscardDataOnLoad=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
