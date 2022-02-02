@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/1/2022~~
+*updated 2/2/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -93,7 +93,7 @@ r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
 r.OneFrameThreadLag=1;--------------------------1 GAME SYNC WITH RENDER THREAD
 r.AllowSubPrimitiveQueries=1;
-r.SceneColorFormat=2;--------------------------2 for PERFORMANCE default 4
+r.SceneColorFormat=3;--------------------------2 for PERFORMANCE default 4
 r.DefaultBackBufferPixelFormat=4;--------------------------default 4
 r.ClearSceneMethod=1;
 r.GBufferFormat=1;--------------------------default 1
@@ -108,16 +108,19 @@ r.SupportAllShaderPermutations=0;
 r.SupportStationarySkylight=1;--------------------------default 1
 r.SupportPointLightWholeSceneShadows=1;--------------------------TEST default 1
 r.SupportAtmosphericFog=1;--------------------------default 1
-r.SupportSkyAtmosphere=1;--------------------------default 1
-r.SupportSkyAtmosphereAffectsHeightFog=0;--------------------------TEST default 0
 r.SupportSimpleForwardShading=0;
 r.SupportMaterialLayers=1;
 r.SupportReversedIndexBuffers=1;--------------------------TEST
+r.SupportSkyAtmosphere=1;--------------------------default 1
+r.SupportSkyAtmosphereAffectsHeightFog=0;--------------------------TEST default 0
+r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;--------------------------TEST 0 for PERFORMANCE default 0
+r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;--------------------------1 for PERFORMANCE
 r.SkyLightingQuality=1;
 r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY
 r.SkyLight.RealTimeReflectionCapture=1;--------------------------TEST
+r.LightCulling.Quality=1;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
-r.LightingDetailMode=100;--------------------------50 or 100 for PERFORMANCE default 150
+r.LightingDetailMode=50;--------------------------TEST 50 or 100 for PERFORMANCE default 150
 r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.6 for PERFORMANCE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
@@ -158,7 +161,7 @@ r.AOHeightfieldOcclusion=0;--------------------------LANDSCAPE DFAO 0 for PERFOR
 r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
 r.HeightFieldShadowing=1;--------------------------HEIGHT FIELD SHADOWING 0 off
 r.HFShadowQuality=2;--------------------------default 2
-r.ShadowQuality=3;--------------------------SHADOWS
+r.ShadowQuality=4;--------------------------SHADOWS 3 for PERFORMANCE 0 off
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=2048;
 r.Shadow.MaxCSMResolution=2048;
@@ -169,6 +172,7 @@ r.Shadow.RadiusThreshold=0.03;--------------------------0.03 for PERFORMANCE def
 r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.Shadow.CacheWholeSceneShadows=1;
+r.Shadow.CacheWPOPrimitives=1;--------------------------TEST 1 for PERFORMANCE default 0
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
@@ -176,7 +180,7 @@ r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERF
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
 r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
-r.DFFullResolution=0;--------------------------0 for PERFORMANCE
+r.DFFullResolution=1;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 for PERFORMANCE
 r.DFTwoSidedMeshDistanceBias=3;
 r.DFDistanceScale=1;--------------------------default 1
@@ -190,9 +194,9 @@ ShowFlag.Grain=0;
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=4;
+r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
-r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
 r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
@@ -219,13 +223,14 @@ p.RigidBodyLODThreshold=-1;--------------------------TEST 0 for PERORMANCE defau
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
-r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
+r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
-r.AmbientOcclusionMaxQuality=25;
-r.AmbientOcclusionRadiusScale=1.5;
-r.AmbientOcclusion.Compute=0;--------------------------1 for PERFORMANCE
+r.AmbientOcclusionMaxQuality=100;
+r.AmbientOcclusionRadiusScale=0;
+r.AmbientOcclusion.Compute=1;--------------------------1 for PERFORMANCE
 r.AmbientOcclusion.Compute.Smooth=0;
 r.LightShaftQuality=0;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
+r.LightShaftAllowTAA=1;--------------------------TEST default 1
 r.LightShaftDownSampleFactor=2;
 r.LightShaftFirstPassDistance=0.1;
 r.LightShaftBlurPasses=3;
@@ -324,7 +329,7 @@ TAA
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=4;
+r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
@@ -337,7 +342,7 @@ FXAA
 r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=4;
+r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
@@ -350,7 +355,7 @@ NONE
 r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=4;
+r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
@@ -358,30 +363,6 @@ r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
-
-
-------------------------------------------------------------------------------------------------------
--------------------------SSAO settings i use Copy/Paste over or experiment----------------------------
-------------------------------------------------------------------------------------------------------
-
-
-SSAO quality/performance
-r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
-r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
-r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
-r.AmbientOcclusionMaxQuality=25;
-r.AmbientOcclusionRadiusScale=1.5;
-r.AmbientOcclusion.Compute=0;--------------------------1 for PERFORMANCE
-r.AmbientOcclusion.Compute.Smooth=0;
-
-SSAO performance/quality
-r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
-r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
-r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
-r.AmbientOcclusionMaxQuality=25;
-r.AmbientOcclusionRadiusScale=0;
-r.AmbientOcclusion.Compute=1;--------------------------1 for PERFORMANCE
-r.AmbientOcclusion.Compute.Smooth=0;
 
 
 ----------------------------------------------------------------
