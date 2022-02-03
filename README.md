@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/2/2022~
+*updated 2/3/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -101,9 +101,9 @@ r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
 r.FreeSkeletalMeshBuffers=0;--------------------------TEST default 0
 r.GPUSkin.Limit2BoneInfluences=0;--------------------------TEST default 0
-r.MinScreenRadiusForLights=0.03;--------------------------TEST 0.03 for PERFORMANCE default 0.03
+r.MinScreenRadiusForLights=0.04;--------------------------0.2 for PERFORMANCE default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
-r.MinScreenRadiusForCSMDepth=0.03;
+r.MinScreenRadiusForCSMDepth=0.01;--------------------------default 0.01
 r.SupportAllShaderPermutations=0;
 r.SupportStationarySkylight=1;--------------------------default 1
 r.SupportPointLightWholeSceneShadows=1;--------------------------TEST default 1
@@ -130,8 +130,8 @@ r.LandscapeLODDistributionScale=1;--------------------------default 1
 r.LandscapeLOD0DistributionScale=1;--------------------------default 1
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE default 1
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;
-r.SkeletalMeshLODRadiusScale=0.7;--------------------------1 for PERFORMANCE default 1
-r.StaticMeshLODDistanceScale=0.4;--------------------------1 for PERFORMANCE default 1
+r.SkeletalMeshLODRadiusScale=1;--------------------------1 for PERFORMANCE default 1
+r.StaticMeshLODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
 r.SplineMesh.NoRecreateProxy=1;
 r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;--------------------------1 for PERFORMANCE default 0
@@ -163,7 +163,7 @@ r.HeightFieldShadowing=1;--------------------------HEIGHT FIELD SHADOWING 0 off
 r.HFShadowQuality=2;--------------------------default 2
 r.ShadowQuality=4;--------------------------SHADOWS 3 for PERFORMANCE 0 off
 r.Shadow.FilterMethod=0;
-r.Shadow.MaxResolution=2048;
+r.Shadow.MaxResolution=2048;--------------------------1024 for PERFORMANCE
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
@@ -179,7 +179,7 @@ r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
-r.Shadow.MaxNumFarShadowCascades=1;--------------------------0 for PERFORMANCE
+r.Shadow.MaxNumFarShadowCascades=5;--------------------------TEST 0 for PERFORMANCE default 10
 r.DFFullResolution=1;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 for PERFORMANCE
 r.DFTwoSidedMeshDistanceBias=3;
@@ -198,7 +198,7 @@ r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -333,7 +333,7 @@ r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -346,7 +346,7 @@ r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -359,7 +359,7 @@ r.TemporalAASamples=2;
 r.TemporalAACurrentFrameWeight=0.5;
 r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
