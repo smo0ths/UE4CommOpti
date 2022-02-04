@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/3/2022
+*updated 2/4/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -179,7 +179,7 @@ r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
-r.Shadow.MaxNumFarShadowCascades=5;--------------------------TEST 0 for PERFORMANCE default 10
+r.Shadow.MaxNumFarShadowCascades=3;--------------------------TEST 0 for PERFORMANCE default 10
 r.DFFullResolution=1;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 for PERFORMANCE
 r.DFTwoSidedMeshDistanceBias=3;
@@ -315,7 +315,7 @@ foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
 foliage.OverestimateLOD=0;--------------------------TEST default 0
 foliage.RandomLODRange=0;
-foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
+foliage.MinimumScreenSize=0.000005;--------------------------default 0.000005
 foliage.MinVertsToSplitNode=8192;
 foliage.DitheredLOD=1;
 
