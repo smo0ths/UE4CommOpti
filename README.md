@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/4/2022
+*updated 2/4/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -184,7 +184,7 @@ r.DFFullResolution=1;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 for PERFORMANCE
 r.DFTwoSidedMeshDistanceBias=3;
 r.DFDistanceScale=1;--------------------------default 1
-r.Tonemapper.Quality=2;
+r.Tonemapper.Quality=0;
 r.Tonemapper.GrainQuantization=1;--------------------------FIGHTS 8 BIT COLOR BANDING default 1
 r.Tonemapper.Sharpen=0;
 r.Tonemapper.EmulateHDR=0;
@@ -194,14 +194,14 @@ ShowFlag.Grain=0;
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=2;
-r.TemporalAACurrentFrameWeight=0.5;
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=0;--------------------------TAAU
+r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
-r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+r.ScreenPercentage=86.66;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 r.SecondaryScreenPercentage.GameViewport=0;
 r.SceneRenderTargetResizeMethodForceOverride=1;
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
@@ -329,22 +329,35 @@ TAA
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=2;
-r.TemporalAACurrentFrameWeight=0.5;
-r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.1;
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
 r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 
+TAAU +15fps in scene
+r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
+r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.1;
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
+r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
+r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAAUpsampleFiltered=1;
+r.TemporalAAFilterSize=0.5;
+r.ScreenPercentage=86.66;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+
 FXAA
 r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=2;
-r.TemporalAACurrentFrameWeight=0.5;
-r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.1;
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
 r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
@@ -355,9 +368,9 @@ NONE
 r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
-r.TemporalAASamples=2;
-r.TemporalAACurrentFrameWeight=0.5;
-r.TemporalAA.R11G11B10History=1;--------------------------1 is EXPERIMENTAL
+r.TemporalAASamples=4;
+r.TemporalAACurrentFrameWeight=0.1;
+r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
 r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
