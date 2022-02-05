@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/4/2022~~~
+*updated 2/5/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -68,6 +68,9 @@ r.EarlyZPass=2;--------------------------default 3
 r.EarlyZPassMovable=1;
 r.EarlyZPassOnlyMaterialMasking=1;
 r.DBuffer=1;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
+r.D3D11.Depth24Bit=0;--------------------------default 1
+r.D3D12.Depth24Bit=0;--------------------------default 1
+r.Vulkan.Depth24Bit=0;--------------------------default 0
 r.FinishCurrentFrame=0;
 r.GTSyncType=0;
 RHI.SyncInterval=0;
@@ -137,8 +140,8 @@ r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;--------------------------1 for PERFORMANCE default 0
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
-r.Streaming.PoolSize=1536;
-r.RenderTargetPoolMin=512;--------------------------TEST
+r.Streaming.PoolSize=1500;
+r.RenderTargetPoolMin=400;
 r.Streaming.MaxTempMemoryAllowed=50;--------------------------TEST
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.UseAllMips=0;
@@ -217,9 +220,9 @@ p.AllowCachedOverlaps=1;--------------------------default 1
 p.AnimDynamics=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsAdaptiveSubstep=0;--------------------------TEST
-p.AnimDynamicsRestrictLOD=-1;--------------------------TEST default -1
-p.AnimDynamicsLODThreshold=-1;--------------------------TEST 0 for PERORMANCE default -1
-p.RigidBodyLODThreshold=-1;--------------------------TEST 0 for PERORMANCE default -1
+p.AnimDynamicsRestrictLOD=1;--------------------------TEST 0 for PERORMANCE default -1
+p.AnimDynamicsLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
+p.RigidBodyLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
@@ -417,12 +420,13 @@ ConsoleKeys=Tilde;
 
 AudioQualityLevel=3
 MaxAnisotropy=8
+bUseVSync=0
 MaxFPS=163
 FrameRateLimit=163
 MenuFrameRateLimit=163
 HDRDisplayOutputNits=300;--------------------------set your monitors nits if using hdr
 DoubleKeyPressTime=0.1
-TextureStreamPoolSizeStorage=1536;--------------------------for squad
+TextureStreamPoolSizeStorage=1500;--------------------------for squad
 DistanceFieldShadows=1;--------------------------for squad
 Gamma=2.2
 TAASampleStorage=4
@@ -434,7 +438,6 @@ DlssQualitySetting=1
 ResolutionScaleModifier=1
 DFAO=0
 bTelemetryEnabled=0
-bUseVSync=0 
 bUseDynamicResolution=0
 FullscreenMode=0
 PreferredFullscreenMode=0
@@ -450,23 +453,23 @@ OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someother
 [ScalabilityGroups]
 sg.ResolutionQuality=100.000000
 sg.ViewDistanceQuality=2
-sg.ViewDistanceQuality.NumLevels=2
+sg.ViewDistanceQuality.NumLevels=5
 sg.AntiAliasingQuality=2
-sg.AntiAliasingQuality.NumLevels=2
+sg.AntiAliasingQuality.NumLevels=5
 sg.PostProcessQuality=2
-sg.PostProcessQuality.NumLevels=2
+sg.PostProcessQuality.NumLevels=5
 sg.ShadowQuality=2
-sg.ShadowQuality.NumLevels=2
-sg.TextureQuality=0;--------------------------for squad to use proper pool setting
-sg.TextureQuality.NumLevels=2
+sg.ShadowQuality.NumLevels=5
+sg.TextureQuality=2;
+sg.TextureQuality.NumLevels=5
 sg.EffectsQuality=2
-sg.EffectsQuality.NumLevels=2
+sg.EffectsQuality.NumLevels=5
 sg.FoliageQuality=2
-sg.FoliageQuality.NumLevels=2
+sg.FoliageQuality.NumLevels=5
 sg.ShadingQuality=2
-sg.ShadingQuality.NumLevels=2
+sg.ShadingQuality.NumLevels=5
 sg.AnimationQuality=2
-sg.AnimationQuality.NumLevels=2
+sg.AnimationQuality.NumLevels=5
 
 
 -------------------------------------------------------------------------
