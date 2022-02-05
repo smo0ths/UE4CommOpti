@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/4/2022~~
+*updated 2/4/2022~~~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -161,7 +161,7 @@ r.AOHeightfieldOcclusion=0;--------------------------LANDSCAPE DFAO 0 for PERFOR
 r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
 r.HeightFieldShadowing=1;--------------------------HEIGHT FIELD SHADOWING 0 off
 r.HFShadowQuality=2;--------------------------default 2
-r.ShadowQuality=4;--------------------------SHADOWS 3 for PERFORMANCE 0 off
+r.ShadowQuality=3;--------------------------SHADOWS 3 for PERFORMANCE 0 off
 r.Shadow.FilterMethod=0;
 r.Shadow.MaxResolution=2048;--------------------------1024 for PERFORMANCE
 r.Shadow.MaxCSMResolution=2048;
@@ -420,11 +420,12 @@ MaxAnisotropy=8
 MaxFPS=163
 FrameRateLimit=163
 MenuFrameRateLimit=163
+HDRDisplayOutputNits=300;--------------------------set your monitors nits if using hdr
 DoubleKeyPressTime=0.1
-TextureStreamPoolSizeStorage=1536;--------------------------important for squad
-DistanceFieldShadows=1;--------------------------important for my config in squad
+TextureStreamPoolSizeStorage=1536;--------------------------for squad
+DistanceFieldShadows=1;--------------------------for squad
 Gamma=2.2
-TAASampleStorage=
+TAASampleStorage=4
 bRTXEnabled=1
 bRTXReflectionsEnabled=0
 bRTXShadowsEnabled=0
@@ -437,7 +438,6 @@ bUseVSync=0
 bUseDynamicResolution=0
 FullscreenMode=0
 PreferredFullscreenMode=0
-HDRDisplayOutputNits=
 ContactShadows=0
 PostFX_Saturation=1.2
 PostFX_Sharpness=0
@@ -457,7 +457,7 @@ sg.PostProcessQuality=2
 sg.PostProcessQuality.NumLevels=2
 sg.ShadowQuality=2
 sg.ShadowQuality.NumLevels=2
-sg.TextureQuality=2
+sg.TextureQuality=0;--------------------------for squad to use proper pool setting
 sg.TextureQuality.NumLevels=2
 sg.EffectsQuality=2
 sg.EffectsQuality.NumLevels=2
