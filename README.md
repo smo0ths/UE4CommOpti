@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/5/2022
+*updated 2/5/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -128,7 +128,7 @@ r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;--------------------------1 for PERFORMANCE default 0
-r.ParticleLODBias=-1;
+r.ParticleLODBias=0;--------------------------default 0
 r.LandscapeLODDistributionScale=1;--------------------------default 1
 r.LandscapeLOD0DistributionScale=1;--------------------------default 1
 r.ViewDistanceScale=1;--------------------------VIEW DISTANCE 0.8 for PERFORMANCE default 1
@@ -209,7 +209,7 @@ r.SecondaryScreenPercentage.GameViewport=0;
 r.SceneRenderTargetResizeMethodForceOverride=1;
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;--------------------------TEST
-r.AllowDownsampledStandardTranslucency=0;--------------------------TEST default 0
+r.AllowDownsampledStandardTranslucency=0;--------------------------default 0
 r.TranslucencyLightingVolume=1;--------------------------LIT TRANSLUCENCY
 r.TranslucencyVolumeBlur=1;
 r.TranslucencyLightingVolumeDim=48;--------------------------default 64
@@ -240,6 +240,7 @@ r.LightShaftBlurPasses=3;
 r.LightShaftNumSamples=12;
 r.LightShaftRenderToSeparateTranslucency=0;
 r.Fog=1;
+r.EnableAsyncComputeVolumetricFog=1;--------------------------TEST
 r.VolumetricFog=1;--------------------------0 for PERFORMANCE
 r.VolumetricFog.GridPixelSize=32;
 r.VolumetricFog.GridSizeZ=64;
@@ -300,6 +301,7 @@ r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=16;
+r.Emitter.FastPoolEnable=1;--------------------------default 1
 r.EmitterSpawnRateScale=0.5;--------------------------0.25 or 0.5 for PERFORMANCE
 FX.QualityLevelSpawnRateScaleReferenceLevel=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 FX.BatchAsync=1;--------------------------TEST
@@ -307,7 +309,9 @@ FX.BatchAsyncBatchSize=32;--------------------------default 32
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=0;--------------------------TEST
 FX.AllowCulling=1;
-FX.FXAllowParticleMeshLODs=1;--------------------------TEST default 0
+FX.FXAllowParticleMeshLODs=0;--------------------------default 0
+FX.MaxCPUParticlesPerEmitter=500;--------------------------TEST default 1000
+FX.MaxGPUParticlesSpawnedPerFrame=25000;--------------------------TEST default 1048576
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
