@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/5/2022~~
+*updated 2/7/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -91,6 +91,7 @@ r.VertexFoggingForOpaque=1;
 r.DistanceFields.ForceMaxAtlasSize=1;
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;--------------------------TEST
 r.NormalMapsForStaticLighting=0;
+r.HighQualityLightMaps=1;--------------------------TEST
 r.AllowGlobalClipPlane=0;
 r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
@@ -140,7 +141,7 @@ r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;--------------------------1 for PERFORMANCE default 0
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
-r.Streaming.PoolSize=1500;
+r.Streaming.PoolSize=2000;
 r.RenderTargetPoolMin=400;
 r.Streaming.MaxTempMemoryAllowed=50;--------------------------TEST
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
@@ -176,6 +177,7 @@ r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CacheWPOPrimitives=1;--------------------------TEST 1 for PERFORMANCE default 0
+r.Shadow.OcclusionCullCascadedShadowMaps=1;--------------------------TEST default 0
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
@@ -194,17 +196,17 @@ r.Tonemapper.EmulateHDR=0;
 r.TonemapperGamma=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
-r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
-r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
-r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
+r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=1;--------------------------TAAU
+r.TemporalAA.Upsampling=0;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
-r.ScreenPercentage=86.66;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
+r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 r.SecondaryScreenPercentage.GameViewport=0;
 r.SceneRenderTargetResizeMethodForceOverride=1;
 r.SceneRenderTargetResizeMethod=0;--------------------------default 0
@@ -226,11 +228,11 @@ p.RigidBodyLODThreshold=1;--------------------------TEST 0 for PERORMANCE defaul
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
 r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
-r.AmbientOcclusionLevels=1;--------------------------SSAO 0 for PERFORMANCE 0 off
+r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionRadiusScale=0;
-r.AmbientOcclusion.Compute=1;--------------------------1 for PERFORMANCE
+r.AmbientOcclusion.Compute=0;--------------------------1 for PERFORMANCE
 r.AmbientOcclusion.Compute.Smooth=0;
 r.LightShaftQuality=0;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
 r.LightShaftAllowTAA=1;--------------------------TEST default 1
@@ -309,16 +311,16 @@ FX.BatchAsyncBatchSize=32;--------------------------default 32
 FX.AllowAsyncTick=1;
 FX.EarlyScheduleAsync=0;--------------------------TEST
 FX.AllowCulling=1;
-FX.FXAllowParticleMeshLODs=0;--------------------------default 0
+FX.FXAllowParticleMeshLODs=1;--------------------------TEST
 FX.MaxCPUParticlesPerEmitter=500;--------------------------TEST default 1000
 FX.MaxGPUParticlesSpawnedPerFrame=25000;--------------------------TEST default 1048576
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
-grass.DensityScale=1;--------------------------0.6 for PERFORMANCE
+grass.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
-foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
+foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
 foliage.OverestimateLOD=0;--------------------------TEST default 0
 foliage.RandomLODRange=0;
