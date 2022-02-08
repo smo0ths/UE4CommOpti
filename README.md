@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/7/2022~~
+*updated 2/8/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -88,9 +88,13 @@ r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;---------------------
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
 r.VertexFoggingForOpaque=1;
 r.DistanceFields.ForceMaxAtlasSize=0;--------------------------TEST
+r.DistanceFields.MaxPerMeshResolution=128;--------------------------default 128
+r.AOGlobalDFResolution=128;--------------------------default 128
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;--------------------------TEST
 r.NormalMapsForStaticLighting=0;
 r.HighQualityLightMaps=1;--------------------------TEST
+r.Cache.LimitQuerySize=1;--------------------------default 1
+r.Cache.LightingCacheMovableObjectAllocationSize=5;--------------------------TEST
 r.AllowGlobalClipPlane=0;
 r.HZBOcclusion=0;--------------------------OCCLUSION CULLING ALGORITHM default 1
 r.AllowOcclusionQueries=1;
@@ -121,6 +125,7 @@ r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;--------------------------1 fo
 r.SkyLightingQuality=1;
 r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY
 r.SkyLight.RealTimeReflectionCapture=1;--------------------------TEST
+r.SkyLight.RealTimeReflectionCapture.ShadowFromOpaque=0;--------------------------default 0
 r.LightCulling.Quality=1;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.LightingDetailMode=50;--------------------------TEST 50 or 100 for PERFORMANCE default 150
@@ -165,13 +170,21 @@ r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
 r.HeightFieldShadowing=1;--------------------------HEIGHT FIELD SHADOWING 0 off
 r.HFShadowQuality=2;--------------------------default 2
 r.ShadowQuality=3;--------------------------SHADOWS 3 for PERFORMANCE 0 off
-r.Shadow.FilterMethod=0;
+r.Shadow.FilterMethod=0;--------------------------1 for PCSS
+r.Shadow.FadeResolution=64;--------------------------default 64
 r.Shadow.MaxResolution=2048;--------------------------1024 for PERFORMANCE
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=3;--------------------------TEST 1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
+r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;--------------------------default 1
+r.Shadow.TransitionScale=60;--------------------------default 60
+r.Shadow.MinPreShadowResolution=8;--------------------------default 8
+r.Shadow.PreShadowFadeResolution=16;--------------------------default 16
 r.Shadow.PreShadowResolutionFactor=1;--------------------------0.5 for PERFORMANCE
-r.Shadow.SpotLightTransitionScale=128;--------------------------TEST default 60
+r.Shadow.SpotLightTransitionScale=256;--------------------------TEST default 60
+r.Shadow.SpotLightSlopeDepthBias=3;--------------------------default 3
+r.Shadow.SpotLightReceiverBias=0.5;--------------------------default 0.5
+r.Shadow.SpotLightDepthBias=3;--------------------------default 3
 r.Shadow.RadiusThreshold=0.03;--------------------------0.03 for PERFORMANCE default 0.03
 r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
 r.AllowPointLightCubemapShadows=1;--------------------------0 for PERFORMANCE
@@ -179,9 +192,17 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 fo
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CacheWPOPrimitives=0;--------------------------TEST default 0
 r.Shadow.OcclusionCullCascadedShadowMaps=1;--------------------------TEST default 0
+r.Shadow.WholeSceneShadowCacheMb=150;--------------------------default 150
+r.Shadow.UnbuiltPreviewInGame=1;
+r.Shadow.ForceSingleSampleShadowingFromStationary=0;--------------------------TEST default 0
+r.Shadow.TexelsPerPixel=1.27324;--------------------------default 1.27324
+r.Shadow.TexelsPerPixelPointlight=1.27324;--------------------------default 1.27324
+r.Shadow.TexelsPerPixelRectlight=1.27324;--------------------------default 1.27324
+r.Shadow.TexelsPerPixelSpotlight=2.54648;--------------------------default 2.54648
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
+r.CapsuleShadowsFullResolution=0;--------------------------0 for PERFORMANCE
 r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
