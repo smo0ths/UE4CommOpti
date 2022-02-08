@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/7/2022~
+*updated 2/7/2022~~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -87,7 +87,7 @@ r.RenderTargetPool.TransientAliasingMode=0;--------------------------TEST
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;--------------------------TEST
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
 r.VertexFoggingForOpaque=1;
-r.DistanceFields.ForceMaxAtlasSize=1;
+r.DistanceFields.ForceMaxAtlasSize=0;--------------------------TEST
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;--------------------------TEST
 r.NormalMapsForStaticLighting=0;
 r.HighQualityLightMaps=1;--------------------------TEST
@@ -174,9 +174,10 @@ r.Shadow.PreShadowResolutionFactor=1;--------------------------0.5 for PERFORMAN
 r.Shadow.SpotLightTransitionScale=128;--------------------------TEST default 60
 r.Shadow.RadiusThreshold=0.03;--------------------------0.03 for PERFORMANCE default 0.03
 r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
+r.AllowPointLightCubemapShadows=1;--------------------------0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;--------------------------0 for PERFORMANCE
 r.Shadow.CacheWholeSceneShadows=1;
-r.Shadow.CacheWPOPrimitives=1;--------------------------TEST 1 for PERFORMANCE default 0
+r.Shadow.CacheWPOPrimitives=0;--------------------------TEST default 0
 r.Shadow.OcclusionCullCascadedShadowMaps=1;--------------------------TEST default 0
 r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
@@ -187,7 +188,7 @@ r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
 r.Shadow.MaxNumFarShadowCascades=3;--------------------------TEST 0 for PERFORMANCE default 10
 r.DFFullResolution=1;--------------------------0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;--------------------------1 for PERFORMANCE
-r.DFTwoSidedMeshDistanceBias=3;
+r.DFTwoSidedMeshDistanceBias=5;
 r.DFDistanceScale=1;--------------------------default 1
 r.Upscale.Quality=2;
 r.Downsample.Quality=1;--------------------------default 1
@@ -273,8 +274,8 @@ r.SSR.HalfResSceneColor=1;--------------------------1 for PERFORMANCE
 r.SSR.MaxRoughness=-1;
 r.SSR.Temporal=1;--------------------------default 1
 r.SSR.ExperimentalDenoiser=0;
-r.SSGI.Enable=0;
-r.SSGI.Quality=0;--------------------------SSGI
+r.SSGI.Enable=0;--------------------------SSGI 0 for PERFORMANCE 0 off
+r.SSGI.Quality=0;--------------------------0 for PERFORMANCE 0 off
 r.SSGI.HalfRes=1;--------------------------1 for PERFORMANCE
 r.SSGI.LeakFreeReprojection=0;--------------------------default 0
 r.SubsurfaceScattering=1;--------------------------SSS 0 for PERFORMANCE
@@ -293,18 +294,19 @@ r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE 0 low 1 hig
 r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
-r.DepthOfFieldQuality=2;--------------------------DOF 0 or 1 for PERFORMANCE default 2
+r.DepthOfFieldQuality=2;--------------------------DOF 0 or 1 for PERFORMANCE 0 off default 2
 r.Filter.SizeScale=1;--------------------------default 1
 r.Filter.NewMethod=1;
 r.Filter.LoopMode=0;
-r.BloomQuality=3;--------------------------BLOOM
+r.BloomQuality=3;--------------------------BLOOM 0 off
 r.Bloom.HalfResolutionFFT=0;
 r.Bloom.Cross=0;--------------------------use -0.7777 for ANAMORPHIC BLOOM default 0
 r.MotionBlurQuality=0;
 r.FastBlurThreshold=0;
-r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE default 2
+r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE 0 off default 2
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
+r.AllowSimpleLights=1;--------------------------0 for PERFORMANCE
 r.ParticleLightQuality=1;--------------------------PARTICLES 0 or 1 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=16;
 r.Emitter.FastPoolEnable=1;--------------------------default 1
@@ -463,25 +465,25 @@ OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someother
 
 
 [ScalabilityGroups]
-sg.ResolutionQuality=100.000000
-sg.ViewDistanceQuality=2
-sg.ViewDistanceQuality.NumLevels=5
-sg.AntiAliasingQuality=2
-sg.AntiAliasingQuality.NumLevels=5
-sg.PostProcessQuality=2
-sg.PostProcessQuality.NumLevels=5
-sg.ShadowQuality=2
-sg.ShadowQuality.NumLevels=5
+sg.ResolutionQuality=100;
+sg.ViewDistanceQuality=2;
+sg.ViewDistanceQuality.NumLevels=5;
+sg.AntiAliasingQuality=2;
+sg.AntiAliasingQuality.NumLevels=5;
+sg.PostProcessQuality=2;
+sg.PostProcessQuality.NumLevels=5;
+sg.ShadowQuality=2;
+sg.ShadowQuality.NumLevels=5;
 sg.TextureQuality=2;
-sg.TextureQuality.NumLevels=5
-sg.EffectsQuality=2
-sg.EffectsQuality.NumLevels=5
-sg.FoliageQuality=2
-sg.FoliageQuality.NumLevels=5
-sg.ShadingQuality=2
-sg.ShadingQuality.NumLevels=5
-sg.AnimationQuality=2
-sg.AnimationQuality.NumLevels=5
+sg.TextureQuality.NumLevels=5;
+sg.EffectsQuality=2;
+sg.EffectsQuality.NumLevels=5;
+sg.FoliageQuality=2;
+sg.FoliageQuality.NumLevels=5;
+sg.ShadingQuality=2;
+sg.ShadingQuality.NumLevels=5;
+sg.AnimationQuality=2;
+sg.AnimationQuality.NumLevels=5;
 
 
 -------------------------------------------------------------------------
