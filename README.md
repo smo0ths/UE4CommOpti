@@ -1,13 +1,11 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/8/2022~
+*updated 2/9/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
-*discord link discord.gg/vB8f4fZ7EH
-
-*always testing stuff contact me twitch.tv/smoothschannel or discord
+*always testing stuff contact me twitch.tv/smoothschannel or discord (discord.gg/vB8f4fZ7EH)
 
 *my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
@@ -17,10 +15,9 @@
 -----------------------------------------------------------------
 
 
-Press:       Windows key + R 
+Press:       Windows key + R
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
-Copy/Paste:  %localappdata%/BendGame/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
 
 
@@ -56,6 +53,8 @@ AudioThread.BatchAsyncBatchSize=128;--------------------------TEST
 r.Atmosphere=1;
 r.FullScreenMode=0;
 r.VSync=0;
+r.MSAA.CompositingSampleCount=1;
+r.MSAACount=1;
 r.AllowHDR=0;
 r.HDR.EnableHDROutput=0;
 r.GPUCrashDebugging=0;
@@ -107,6 +106,7 @@ r.ClearSceneMethod=1;
 r.GBufferFormat=1;--------------------------default 1
 r.ClearCoatNormal=0;--------------------------0 for PERFORMANCE
 Compat.UseDXT5NormalMaps=0;
+r.RayTracing=0;
 r.FreeSkeletalMeshBuffers=0;--------------------------TEST default 0
 r.GPUSkin.Limit2BoneInfluences=0;--------------------------TEST default 0
 r.MinScreenRadiusForLights=0.04;--------------------------0.2 for PERFORMANCE default 0.03
@@ -129,7 +129,7 @@ r.SkyLight.RealTimeReflectionCapture=1;--------------------------0 for PERFORMAN
 r.SkyLight.RealTimeReflectionCapture.ShadowFromOpaque=0;--------------------------default 0
 r.LightCulling.Quality=1;--------------------------default 1
 r.LightFunctionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
-r.LightingDetailMode=50;--------------------------TEST 50 or 100 for PERFORMANCE default 150
+r.LightingDetailMode=150;--------------------------TEST 50 or 100 for PERFORMANCE default 150
 r.LightMaxDrawDistanceScale=1;--------------------------DYNAMIC LIGHTS LOD SCALE 0 or 0.6 for PERFORMANCE
 r.MipMapLODBias=0;--------------------------LODS
 r.LandscapeLODBias=0;
@@ -257,7 +257,7 @@ r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE 
 r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
 r.AmbientOcclusionMaxQuality=100;
-r.AmbientOcclusionRadiusScale=0.2;
+r.AmbientOcclusionRadiusScale=0;
 r.AmbientOcclusion.Compute=1;--------------------------1 for PERFORMANCE
 r.AmbientOcclusion.Compute.Smooth=1;
 r.LightShaftQuality=0;--------------------------LIGHT SHAFTS 0 for PERFORMANCE
@@ -352,7 +352,8 @@ grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
 foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
-foliage.OverestimateLOD=0;--------------------------TEST default 0
+foliage.OverestimateLOD=1;--------------------------TEST 1 for PERFORMANCE
+foliage.MaxTrianglesToRender=1000000;--------------------------default 100000000
 foliage.RandomLODRange=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
