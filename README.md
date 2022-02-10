@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/10/2022~
+*updated 2/10/2022~~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -311,7 +311,9 @@ r.SSS.HalfRes=1;
 r.SSS.Filter=1;--------------------------TEST
 r.SSS.Checkerboard=1;--------------------------1 for 32Bit SceneColorFormat
 r.DefaultFeature.AutoExposure=1;--------------------------default 1
+r.DefaultFeature.AutoExposure.Method=0--------------------------default 0
 r.EyeAdaptationQuality=2;--------------------------1 for PERFORMANCE 0 off default 2
+r.EyeAdaptation.Basic.Compute=1--------------------------default 1
 r.MaxAnisotropy=8;
 r.AnisotropicMaterials=1;--------------------------0 for PERFORMANCE
 ShowFlag.Tessellation=1;--------------------------0 for PERFORMANCE
