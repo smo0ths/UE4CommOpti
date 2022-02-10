@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/10/2022~~~
+*updated 2/10/2022~~~~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -195,7 +195,6 @@ r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CacheWPOPrimitives=0;--------------------------TEST default 0
 r.Shadow.OcclusionCullCascadedShadowMaps=1;--------------------------TEST default 0
 r.Shadow.WholeSceneShadowCacheMb=150;--------------------------default 150
-r.Shadow.UnbuiltPreviewInGame=1;
 r.Shadow.ForceSingleSampleShadowingFromStationary=0;--------------------------TEST default 0
 r.Shadow.TexelsPerPixel=1.27324;--------------------------default 1.27324
 r.Shadow.TexelsPerPixelPointlight=1.27324;--------------------------default 1.27324
@@ -205,7 +204,7 @@ r.ContactShadows=0;--------------------------0 for PERFORMANCE
 r.ContactShadows.NonShadowCastingIntensity=0.2;
 r.CapsuleShadows=0;--------------------------0 for PERFORMANCE
 r.CapsuleShadowsFullResolution=0;--------------------------0 for PERFORMANCE
-r.AllowLandscapeShadows=1;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
+r.AllowLandscapeShadows=0;--------------------------LANDSCAPE SHADOWS 0 for PERFORMANCE
 r.DistanceFieldShadowing=1;--------------------------DISTANCE FIELD SHADOWING 0 for PERFORMANCE
 r.DFShadowQuality=3;--------------------------1 for PERFORMANCE 0 off default 3
 r.Shadow.MaxNumFarShadowCascades=0;--------------------------TEST
@@ -362,7 +361,6 @@ grass.TickInterval=5;
 foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
 foliage.OverestimateLOD=1;--------------------------TEST 1 for PERFORMANCE
-foliage.MaxTrianglesToRender=1000000;--------------------------default 100000000
 foliage.RandomLODRange=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
