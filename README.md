@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/10/2022
+*updated 2/10/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -176,7 +176,7 @@ r.Shadow.FilterMethod=0;--------------------------1 for PCSS
 r.Shadow.FadeResolution=64;--------------------------default 64
 r.Shadow.MaxResolution=2048;--------------------------1024 for PERFORMANCE
 r.Shadow.MaxCSMResolution=2048;
-r.Shadow.CSM.MaxCascades=4;--------------------------TEST 1 or 2 for PERFORMANCE
+r.Shadow.CSM.MaxCascades=4;--------------------------lower for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
 r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;--------------------------default 1
 r.Shadow.TransitionScale=60;--------------------------default 60
@@ -255,7 +255,7 @@ p.RigidBodyLODThreshold=1;--------------------------TEST 0 for PERORMANCE defaul
 r.SeparateTranslucency=1;--------------------------default 1
 r.TranslucentSortPolicy=0;
 r.DefaultFeature.AmbientOcclusion=1;--------------------------default 1
-r.DefaultFeature.AmbientOcclusionStaticFraction=0;--------------------------default 1
+r.DefaultFeature.AmbientOcclusionStaticFraction=1;--------------------------default 1
 r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
 r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
@@ -470,7 +470,6 @@ FrameRateLimit=163
 MenuFrameRateLimit=163
 HDRDisplayOutputNits=300;--------------------------set your monitors nits if using hdr
 DoubleKeyPressTime=0.1
-AmbientOcclusionLevelsToggle=1
 TextureStreamPoolSizeStorage=800;--------------------------for squad
 DistanceFieldShadows=1;--------------------------for squad
 Gamma=2.2
