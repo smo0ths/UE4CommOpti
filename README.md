@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/10/2022~~~~
+*updated 2/11/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -39,7 +39,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70;--------------------------TEXTUREPOOL CACHE
+PoolSizeVRAMPercentage=60;--------------------------TEXTUREPOOL CACHE default 70
 
 [SystemSettings]
 AllowAsyncRenderThreadUpdates=1;
@@ -147,7 +147,7 @@ r.TextureStreaming=1;--------------------------TEXTURE STREAMING
 r.Streaming.MipBias=0;--------------------------1 for PERFORMANCE default 0
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.LimitPoolSizeToVRAM=1;
-r.Streaming.PoolSize=800;
+r.Streaming.PoolSize=1000;
 r.Streaming.PoolSizeForMeshes=-1;--------------------------default -1
 r.RenderTargetPoolMin=400;
 r.Streaming.MaxTempMemoryAllowed=50;
@@ -158,7 +158,7 @@ r.Streaming.Boost=1;
 r.Streaming.UsePerTextureBias=1;
 r.Streaming.AmortizeCPUToGPUCopy=0;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0;
-r.Streaming.FramesForFullUpdate=10;
+r.Streaming.FramesForFullUpdate=5;
 r.Streaming.NumStaticComponentsProcessedPerFrame=50;
 r.Streaming.FullyLoadUsedTextures=0;
 r.Streaming.DefragDynamicBounds=1;
@@ -166,6 +166,8 @@ r.Streaming.HiddenPrimitiveScale=0.5;--------------------------default 0.5
 r.Streaming.UseNewMetrics=1;
 r.Streaming.MinMipForSplitRequest=10;
 r.Streaming.UseMaterialData=1;
+r.GenerateMeshDistanceFields=1;--------------------------TEST required for DFSHADOWS and DFAO 0 for PERFORMANCE some games crash on 1
+r.GenerateLandscapeGIData=0;--------------------------TEST 0 for PERFORMANCE
 r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
 r.AOHeightfieldOcclusion=0;--------------------------LANDSCAPE DFAO 0 for PERFORMANCE
 r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
