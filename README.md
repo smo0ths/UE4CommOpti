@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/11/2022~
+*updated 2/11/2022~~~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -33,13 +33,23 @@ CommonAudioPoolSize=0;--------------------------default 0
 UnfocusedVolumeMultiplier=1;
 
 [/Script/Engine.Engine]
-bSmoothFrameRate=0;
-bPauseOnLossOfFocus=0;
-bUseFixedFrameRate=0;
+bUseVSync=0;
 DisplayGamma=2.2;
+bSmoothFrameRate=0;
+bUseFixedFrameRate=0;
+bEnableMouseSmoothing=0;
+bViewAccelerationEnabled=0;
+bPauseOnLossOfFocus=0;
+bAltEnterTogglesFullscreen=1;
+bF11TogglesFullscreen=0;
+InitialButtonRepeatDelay=0.2;--------------------------default 0.2
+ButtonRepeatDelay=0.1;--------------------------default 0.1
+DoubleClickTime=0.1;--------------------------default 0.25
+ConsoleKeys=Tilde;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=60;--------------------------TEXTUREPOOL CACHE default 70
+AllowStreamingLightmaps=1;
 
 [SystemSettings]
 AllowAsyncRenderThreadUpdates=1;
@@ -76,12 +86,12 @@ RHI.SyncSlackMS=0;
 r.UniformBufferPooling=1;
 r.DrawRectangleOptimization=1;--------------------------default 1
 r.AlsoUseSphereForFrustumCull=1;--------------------------TEST 1 for PERFORMANCE
-r.DoInitViewsLightingAfterPrepass=0;--------------------------TEST 1 is EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=0;--------------------------1 is EXPERIMENTAL MESHES FLICKER ON 1
 r.DeferUniformBufferUpdatesUntilVisible=1;--------------------------TEST
 r.DeferUniformExpressionCaching=1;--------------------------TEST
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0;--------------------------TEST 1 is EXPERIMENTAL
-r.DiscardUnusedQuality=0;--------------------------1 CRASHES GAMES default 0
+r.DoInitViewsLightingAfterPrepass=0;--------------------------TEST 1 is EXPERIMENTAL
+r.DoLazyStaticMeshUpdate=0;--------------------------1 is EXPERIMENTAL meshes flicker on 1
+r.DiscardUnusedQuality=0;--------------------------1 can crash games default 0
 r.RenderTargetPool.TransientAliasingMode=0;--------------------------TEST
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;--------------------------TEST
 r.MorphTarget.Mode=1;--------------------------0 CPU METHOD 1 GPU METHOD default 1
@@ -180,8 +190,9 @@ r.Shadow.MaxResolution=2048;--------------------------1024 for PERFORMANCE
 r.Shadow.MaxCSMResolution=2048;
 r.Shadow.CSM.MaxCascades=4;--------------------------lower for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;--------------------------default 1
+r.Shadow.CSMDepthBias=5;--------------------------default 10
 r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;--------------------------default 1
-r.Shadow.TransitionScale=60;--------------------------default 60
+r.Shadow.TransitionScale=120;--------------------------default 60
 r.Shadow.MinPreShadowResolution=8;--------------------------default 8
 r.Shadow.PreShadowFadeResolution=16;--------------------------default 16
 r.Shadow.PreShadowResolutionFactor=1;--------------------------0.5 for PERFORMANCE
@@ -189,6 +200,8 @@ r.Shadow.SpotLightTransitionScale=256;--------------------------TEST default 60
 r.Shadow.SpotLightSlopeDepthBias=3;--------------------------default 3
 r.Shadow.SpotLightReceiverBias=0.5;--------------------------default 0.5
 r.Shadow.SpotLightDepthBias=3;--------------------------default 3
+r.Shadow.PointLightDepthBias=0.007;
+r.Shadow.PointLightSlopeScaleDepthBias=5;
 r.Shadow.RadiusThreshold=0.03;--------------------------0.03 for PERFORMANCE default 0.03
 r.Shadow.DistanceScale=1;--------------------------0.6 for PERFORMANCE
 r.AllowPointLightCubemapShadows=1;--------------------------0 for PERFORMANCE
@@ -230,7 +243,7 @@ r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=0;--------------------------TAAU
+r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -352,7 +365,7 @@ FX.AllowCulling=1;
 FX.FXAllowParticleMeshLODs=1;--------------------------TEST
 FX.MaxCPUParticlesPerEmitter=500;--------------------------TEST default 1000
 FX.MaxGPUParticlesSpawnedPerFrame=25000;--------------------------TEST default 1048576
-r.DBuffer=0;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
+r.DBuffer=1;--------------------------DECAL METERIAL BLEND MODES 0 for PERFORMANCE default 1
 r.ForceSceneHasDecals=0;--------------------------TEST
 r.Decal.FadeDurationScale=1;--------------------------0.6 for PERFORMANCE default 1
 r.Decal.FadeScreenSizeMult=1;
@@ -382,7 +395,7 @@ r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=0;--------------------------TAAU
+r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -408,7 +421,7 @@ r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=0;--------------------------TAAU
+r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
@@ -421,7 +434,7 @@ r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
 r.TemporalAA.Algorithm=0;--------------------------GEN 5 TAA 0 for PERFORMANCE
-r.TemporalAA.Upsampling=0;--------------------------TAAU
+r.TemporalAA.Upsampling=1;--------------------------TAAU
 r.TemporalAAUpsampleFiltered=1;
 r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
