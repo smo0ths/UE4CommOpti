@@ -49,7 +49,7 @@ ConsoleKeys=Tilde;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=60;--------------------------TEXTUREPOOL CACHE default 70
-AllowStreamingLightmaps=1;
+AllowStreamingLightmaps=1;--------------------------TEST
 
 [SystemSettings]
 AllowAsyncRenderThreadUpdates=1;
@@ -375,7 +375,7 @@ grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
 foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
-foliage.OverestimateLOD=0;--------------------------TEST 1 for PERFORMANCE
+foliage.OverestimateLOD=0;--------------------------TEST
 foliage.RandomLODRange=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
