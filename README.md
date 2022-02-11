@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/11/2022~~~
+*updated 2/11/2022~~~~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -347,8 +347,8 @@ r.Bloom.Cross=0;--------------------------use -0.7777 for ANAMORPHIC BLOOM defau
 r.DefaultFeature.MotionBlur=0;--------------------------default 1
 r.MotionBlurQuality=0;
 r.FastBlurThreshold=0;
-r.DefaultFeature.LensFlare=1;--------------------------default 1
-r.LensFlareQuality=2;--------------------------LENS FLARES 0 for PERFORMANCE 0 off default 2
+r.DefaultFeature.LensFlare=0;--------------------------default 1
+r.LensFlareQuality=0;--------------------------LENS FLARES 0 for PERFORMANCE 0 off default 2
 r.SceneColorFringeQuality=0;
 r.SceneColorFringe.Max=-1;
 r.AllowSimpleLights=1;--------------------------0 for PERFORMANCE
@@ -373,9 +373,9 @@ r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
 grass.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
-foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
+foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
-foliage.OverestimateLOD=1;--------------------------TEST 1 for PERFORMANCE
+foliage.OverestimateLOD=0;--------------------------TEST 1 for PERFORMANCE
 foliage.RandomLODRange=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
