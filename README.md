@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/11/2022~~~~~~~
+*updated 2/17/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -33,19 +33,10 @@ CommonAudioPoolSize=0;--------------------------default 0
 UnfocusedVolumeMultiplier=1;
 
 [/Script/Engine.Engine]
-bUseVSync=0;
-DisplayGamma=2.2;
 bSmoothFrameRate=0;
-bUseFixedFrameRate=0;
-bEnableMouseSmoothing=0;
-bViewAccelerationEnabled=0;
 bPauseOnLossOfFocus=0;
-bAltEnterTogglesFullscreen=1;
-bF11TogglesFullscreen=0;
-InitialButtonRepeatDelay=0.2;--------------------------default 0.2
-ButtonRepeatDelay=0.1;--------------------------default 0.1
-DoubleClickTime=0.1;--------------------------default 0.25
-ConsoleKeys=Tilde;
+bUseFixedFrameRate=0;
+DisplayGamma=2.2;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=60;--------------------------TEXTUREPOOL CACHE default 70
@@ -121,19 +112,10 @@ r.GPUSkin.Limit2BoneInfluences=0;--------------------------TEST default 0
 r.MinScreenRadiusForLights=0.04;--------------------------0.2 for PERFORMANCE default 0.03
 r.MinScreenRadiusForDepthPrepass=0.03;--------------------------default 0.03
 r.MinScreenRadiusForCSMDepth=0.01;--------------------------default 0.01
-r.SupportAllShaderPermutations=0;
-r.SupportStationarySkylight=1;--------------------------default 1
-r.SupportPointLightWholeSceneShadows=1;--------------------------TEST default 1
-r.SupportAtmosphericFog=1;--------------------------default 1
-r.SupportSimpleForwardShading=0;
-r.SupportMaterialLayers=1;
-r.SupportReversedIndexBuffers=1;--------------------------TEST
-r.SupportSkyAtmosphere=1;--------------------------default 1
-r.SupportSkyAtmosphereAffectsHeightFog=0;--------------------------TEST default 0
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;--------------------------TEST 0 for PERFORMANCE default 0
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;--------------------------1 for PERFORMANCE
 r.SkyLightingQuality=1;
-r.SkylightIntensityMultiplier=1;--------------------------SKYLIGHT INTENSITY
+r.SkylightIntensityMultiplier=0.75;--------------------------SKYLIGHT INTENSITY
 r.SkyLight.RealTimeReflectionCapture=1;--------------------------0 for PERFORMANCE
 r.SkyLight.RealTimeReflectionCapture.ShadowFromOpaque=0;--------------------------default 0
 r.DefaultFeature.LightUnits=1;--------------------------default 1
@@ -571,7 +553,7 @@ Power management mode:  Prefer max performance  (this is the "+ boost" in reflex
 
 Preferred refresh rate:  Highest available
 
-Texture filtering - anisotropic sample optimization:  on
+Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works)
 
 Texture filtering - Negative LOD bias:  Allow
 
