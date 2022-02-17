@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/17/2022
+*updated 2/17/2022~
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -19,6 +19,8 @@ Press:       Windows key + R
 Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
 Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
+Copy/Paste:  %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini
+Copy/Paste:  %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Engine.ini
 
 
 *copy and paste this in engine.ini under lines in the file
@@ -429,6 +431,8 @@ r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
 %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
+%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Input.ini
+%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Input.ini
 
 
 *edit input commands or add them
@@ -453,6 +457,8 @@ ConsoleKeys=Tilde;
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
 *here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
