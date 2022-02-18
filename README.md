@@ -219,7 +219,7 @@ r.Tonemapper.EmulateHDR=0;
 r.TonemapperGamma=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
-r.MinRoughnessOverride=0.4;--------------------------0 with TAA 0.2 without TAA
+r.MinRoughnessOverride=0.4;--------------------------0 with TAA 0.4 without
 r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=2;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
@@ -371,9 +371,9 @@ foliage.DitheredLOD=1;
 
 
 TAA
-r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
+r.MinRoughnessOverride=0;--------------------------0 with TAA 0.4 without
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
-r.PostProcessAAQuality=4;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
@@ -384,7 +384,7 @@ r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 
 TAAU +15fps in scene
-r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
+r.MinRoughnessOverride=0;--------------------------0 with TAA 0.4 without
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
@@ -397,9 +397,9 @@ r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=86.66;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 
 FXAA
-r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
+r.MinRoughnessOverride=0.4;--------------------------0 with TAA 0.4 without
 r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
-r.PostProcessAAQuality=1;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.PostProcessAAQuality=2;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
@@ -410,7 +410,7 @@ r.TemporalAAFilterSize=0.5;
 r.ScreenPercentage=100;--------------------------INPUT RESOLUTION PERCENTAGE for TAAU
 
 NONE
-r.MinRoughnessOverride=0.2;--------------------------0 with TAA 0.2 without TAA
+r.MinRoughnessOverride=0.4;--------------------------0 with TAA 0.4 without
 r.DefaultFeature.AntiAliasing=0;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
 r.PostProcessAAQuality=0;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
