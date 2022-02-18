@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/17/2022~
+*updated 2/18/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -161,7 +161,7 @@ r.Streaming.MinMipForSplitRequest=10;
 r.Streaming.UseMaterialData=1;
 r.GenerateMeshDistanceFields=1;--------------------------TEST required for DFSHADOWS and DFAO 0 for PERFORMANCE some games crash on 1
 r.GenerateLandscapeGIData=0;--------------------------TEST 0 for PERFORMANCE
-r.DistanceFieldAO=0;--------------------------DFAO 0 for PERFORMANCE
+r.DistanceFieldAO=1;--------------------------DFAO 0 for PERFORMANCE
 r.AOHeightfieldOcclusion=0;--------------------------LANDSCAPE DFAO 0 for PERFORMANCE
 r.AOQuality=1;--------------------------1 for PERFORMANCE 0 off default 2
 r.HeightFieldShadowing=1;--------------------------HEIGHT FIELD SHADOWING 0 off
@@ -219,9 +219,9 @@ r.Tonemapper.EmulateHDR=0;
 r.TonemapperGamma=0;
 ShowFlag.Vignette=0;
 ShowFlag.Grain=0;
-r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
-r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
-r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.MinRoughnessOverride=0.4;--------------------------0 with TAA 0.2 without TAA
+r.DefaultFeature.AntiAliasing=1;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
+r.PostProcessAAQuality=2;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
@@ -245,8 +245,8 @@ p.AllowCachedOverlaps=1;--------------------------default 1
 p.AnimDynamics=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsWind=1;--------------------------0 for PERFORMANCE
 p.AnimDynamicsAdaptiveSubstep=0;--------------------------TEST
-p.AnimDynamicsRestrictLOD=1;--------------------------TEST 0 for PERORMANCE default -1
-p.AnimDynamicsLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
+p.AnimDynamicsRestrictLOD=0;--------------------------TEST 0 for PERORMANCE default -1
+p.AnimDynamicsLODThreshold=0;--------------------------TEST 0 for PERORMANCE default -1
 p.RigidBodyNode=1;--------------------------TEST
 p.RigidBodyLODThreshold=1;--------------------------TEST 0 for PERORMANCE default -1
 r.SeparateTranslucency=1;--------------------------default 1
@@ -254,7 +254,7 @@ r.TranslucentSortPolicy=0;
 r.DefaultFeature.AmbientOcclusion=1;--------------------------default 1
 r.DefaultFeature.AmbientOcclusionStaticFraction=1;--------------------------default 1
 r.AmbientOcclusionStaticFraction=-1;--------------------------0 for PERFORMANCE default -1
-r.AmbientOcclusionLevels=2;--------------------------SSAO 0 for PERFORMANCE 0 off
+r.AmbientOcclusionLevels=0;--------------------------SSAO 0 for PERFORMANCE 0 off
 r.AmbientOcclusionMipLevelFactor=0.5;--------------------------default 0.5
 r.AmbientOcclusionMaxQuality=100;
 r.AmbientOcclusionRadiusScale=0;
@@ -315,7 +315,7 @@ r.MaxAnisotropy=8;
 r.AnisotropicMaterials=1;--------------------------0 for PERFORMANCE
 ShowFlag.Tessellation=1;--------------------------0 for PERFORMANCE
 r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
-r.MaterialQualityLevel=1;--------------------------0 for PERFORMANCE 0 low 1 high 2 medium 3 epic
+r.MaterialQualityLevel=3;--------------------------0 for PERFORMANCE 0 low 1 high 2 medium 3 epic
 r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
@@ -373,7 +373,7 @@ foliage.DitheredLOD=1;
 TAA
 r.MinRoughnessOverride=0;--------------------------0 with TAA 0.2 without TAA
 r.DefaultFeature.AntiAliasing=2;--------------------------1 FXAA 2 TAA 3 MSAA 0 off
-r.PostProcessAAQuality=3;--------------------------1 to 2 FXAA 3-4 TAA 0 off
+r.PostProcessAAQuality=4;--------------------------1 to 2 FXAA 3-4 TAA 0 off
 r.TemporalAASamples=4;
 r.TemporalAACurrentFrameWeight=0.1;
 r.TemporalAA.R11G11B10History=0;--------------------------1 is EXPERIMENTAL
