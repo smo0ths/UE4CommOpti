@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/18/2022
+*updated 2/20/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -117,7 +117,7 @@ r.MinScreenRadiusForCSMDepth=0.01;--------------------------default 0.01
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;--------------------------TEST 0 for PERFORMANCE default 0
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;--------------------------1 for PERFORMANCE
 r.SkyLightingQuality=1;
-r.SkylightIntensityMultiplier=0.75;--------------------------SKYLIGHT INTENSITY
+r.SkylightIntensityMultiplier=0.8;--------------------------SKYLIGHT INTENSITY
 r.SkyLight.RealTimeReflectionCapture=1;--------------------------0 for PERFORMANCE
 r.SkyLight.RealTimeReflectionCapture.ShadowFromOpaque=0;--------------------------default 0
 r.DefaultFeature.LightUnits=1;--------------------------default 1
@@ -313,13 +313,13 @@ r.EyeAdaptationQuality=2;--------------------------1 for PERFORMANCE 0 off defau
 r.EyeAdaptation.Basic.Compute=1--------------------------default 1
 r.MaxAnisotropy=8;
 r.AnisotropicMaterials=1;--------------------------0 for PERFORMANCE
-ShowFlag.Tessellation=1;--------------------------0 for PERFORMANCE
-r.TessellationAdaptivePixelsPerTriangle=48;--------------------------9999999 for PERFORMANCE default 48
+ShowFlag.Tessellation=0;--------------------------0 for PERFORMANCE
+r.TessellationAdaptivePixelsPerTriangle=9999999;--------------------------9999999 for PERFORMANCE default 48
 r.MaterialQualityLevel=3;--------------------------0 for PERFORMANCE 0 low 1 high 2 medium 3 epic
 r.DetailMode=2;--------------------------TEST 0 or 1 for PERFORMANCE default 2
 r.RefractionQuality=1;--------------------------0 or 1 for PERFORMANCE default 2
 r.IrisNormal=1;--------------------------0 for PERFORMANCE
-r.DepthOfFieldQuality=2;--------------------------DOF 0 or 1 for PERFORMANCE 0 off default 2
+r.DepthOfFieldQuality=1;--------------------------DOF 0 or 1 for PERFORMANCE 0 off default 2
 r.Filter.SizeScale=1;--------------------------default 1
 r.Filter.NewMethod=1;
 r.Filter.LoopMode=0;
@@ -356,9 +356,9 @@ r.Decal.StencilSizeThreshold=0.1;--------------------------default 0.1
 grass.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;--------------------------1 for PERFORMANCE
 grass.TickInterval=5;
-foliage.DensityScale=1;--------------------------0.6 for PERFORMANCE
+foliage.DensityScale=0.6;--------------------------0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;--------------------------1 for PERFORMANCE default 1
-foliage.OverestimateLOD=0;--------------------------TEST
+foliage.OverestimateLOD=1;--------------------------TEST
 foliage.RandomLODRange=0;
 foliage.MinimumScreenSize=0.0001;--------------------------default 0.0001
 foliage.MinVertsToSplitNode=8192;
