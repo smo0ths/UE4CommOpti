@@ -1,31 +1,31 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~
 
+## updated 2/22/2022 :ramen:
 
-*updated 2/22/2022
+###### for UE4 games for reference/customization/optimization/learning
 
-*for UE4 games for reference/customization/optimization/learning
+###### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/vB8f4fZ7EH)
 
-*always testing stuff contact me twitch.tv/smoothschannel or discord (discord.gg/vB8f4fZ7EH)
+###### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
-*my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
+---
 
+<details><summary>Open Engine.ini and copy paste under lines in the file</summary>
+<p>
+press windows key + r then copy paste
+<br>
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Engine.ini
+</p>
+</details>
 
------------------------------------------------------------------
--------------------------Open Engine.ini-------------------------
------------------------------------------------------------------
-
-
-Press:       Windows key + R
-Copy/Paste:  %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
-Copy/Paste:  %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
-Copy/Paste:  %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
-Copy/Paste:  %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini
-Copy/Paste:  %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Engine.ini
-
-
-*copy and paste this in engine.ini under lines in the file
-
-
+```python
 [Core.Log]
 Global=off;
 
@@ -264,13 +264,13 @@ r.VSync=0;
 r.Vulkan.Depth24Bit=0;------default 0
 RHI.SyncInterval=0;------default 1 changed to 0*
 RHI.SyncSlackMS=0;------default 10 changed to 0*
+```
 
+---
 
-------------------------------------------------------------------------------------------------------
--------------------------AA settings i use Copy/Paste over or experiment------------------------------
-------------------------------------------------------------------------------------------------------
+## AA settings i use Copy/Paste over or experiment
 
-
+```python
 TAA
 r.DefaultFeature.AntiAliasing=2;------default 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
 r.PostProcessAAQuality=3;------default 3 set to 1 or 2 FXAA 3 or 4 TAA
@@ -290,23 +290,27 @@ NONE
 r.DefaultFeature.AntiAliasing=0;------default 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
 r.PostProcessAAQuality=0;------default 3 set to 1 or 2 FXAA 3 or 4 TAA
 r.ScreenPercentage=100;------default 100 TAAU INPUT RESOLUTION
+```
 
+---
 
-----------------------------------------------------------------
--------------------------Open Input.ini-------------------------
-----------------------------------------------------------------
-
-
+<details><summary>Open Input.ini and edit input commands or add them</summary>
+<p>
+press windows key + r then copy paste
+<br>
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
+<br>
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
+<br>
 %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
+<br>
 %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Input.ini
+<br>
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Input.ini
+</p>
+</details>
 
-
-*edit input commands or add them
-
-
+```python
 [/Script/Engine.InputSettings]
 bAltEnterTogglesFullscreen=1;
 bF11TogglesFullscreen=0; 
@@ -315,24 +319,27 @@ bViewAccelerationEnabled=0;
 InitialButtonRepeatDelay=0.2;------default 0.2
 ButtonRepeatDelay=0.1;------default 0.1
 DoubleClickTime=0.1;------default 0.25
-ConsoleKeys=Tilde;
+```
 
+---
 
----------------------------------------------------------------------------
--------------------------Open GameUserSettings.ini-------------------------
----------------------------------------------------------------------------
-
- 
+<details><summary>Open GameUserSettings.ini and these will overwrite your config so make sure any setting in GameUserSettings.ini is set the way you want also set your scalability groups, 0=low/1=medium/2=high/3=epic/4=cinematic</summary>
+<p>
+press windows key + r then copy paste
+<br>
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
 %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
 %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+</p>
+</details>
 
-
-*these will overwrite your config so make sure any setting in GameUserSettings.ini is set the way you want
-
-
+```python
 AudioQualityLevel=3
 MaxAnisotropy=8
 bUseVSync=0
@@ -362,11 +369,9 @@ ContactShadows=0
 PostFX_Saturation=1.2
 PostFX_Sharpness=0
 OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2", (Value=1,bModified=False)));------works like engineini but in gameusersettingsini
+```
 
-
-*set your scalability groups, 0=low/1=medium/2=high/3=epic/4=cinematic (4 gets clamped)
-
-
+```python
 [ScalabilityGroups]
 sg.ResolutionQuality=100;
 sg.ViewDistanceQuality=2;
@@ -378,81 +383,70 @@ sg.EffectsQuality=2;
 sg.FoliageQuality=2;
 sg.ShadingQuality=2;
 sg.AnimationQuality=2;
-sg.ViewDistanceQuality.NumLevels=5;
-sg.AntiAliasingQuality.NumLevels=5;
-sg.PostProcessQuality.NumLevels=5;
-sg.ShadowQuality.NumLevels=5;
-sg.TextureQuality.NumLevels=5;
-sg.EffectsQuality.NumLevels=5;
-sg.FoliageQuality.NumLevels=5;
-sg.ShadingQuality.NumLevels=5;
-sg.AnimationQuality.NumLevels=5;
+```
 
+---
 
--------------------------------------------------------------------------
--------------------------Open DeviceProfiles.ini-------------------------
--------------------------------------------------------------------------
-
-   
+<details><summary>Open DeviceProfiles.ini and textures lods experiment for performance</summary>
+<p>
+press windows key + r then copy paste
+<br>
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+<br>
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+<br>
 %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+</p>
+</details>
 
+```python
+(wip)
+```
 
-*textures lods experiment for performance (wip)
+---
 
+## for NVIDIA users
 
--------------------------------------------------------------------
--------------------------for NVIDIA users--------------------------
--------------------------------------------------------------------
-
-
-Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method)
-
-Adjust image settings set to Performance and apply then Select Use the advanced 3D image settings and apply
-
-In manage 3D settings:
-
-Anisotropic filtering:  Off for perf. App-controlled or force your own setting for quality (8x is nice)
-
-Low latency mode:  
-1. Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
-2. On feels consistent (i use this and reflex in games that support it)
-3. Ultra and relfex (in-game) feels good when gpu usage is ~97%
-
-Power management mode:  Prefer max performance  (this is the "+ boost" in reflex + boost)
-
-Preferred refresh rate:  Highest available
-
-Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works)
-
-Texture filtering - Negative LOD bias:  Allow
-
-Texture filtering quality:  High performance
-
-Vertical sync:  Off
-
-
----------------------------------------------------------------------------------------------------
--------------------------How to enable Message-signaled interrupts (MSIs)--------------------------
----------------------------------------------------------------------------------------------------
-
-
-use Wtools v1.0.2.0.exe (Wagnardsoft Tools) enable it and restart
-
-or
-
-when you make your driver setup.exe using NVCleanstall enabling it in advanced settings
-
-or
-
-find ID: open device manager right click your GPU properties and click on events tab
-
+<details><summary>Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
+<p>
+1. NVCleanstall enabling it in advanced settings before installing or
+<br>
+2. use Wtools enable it and restart or
+<br>
+3. find ID: open device manager right click your GPU properties and click on events tab
+<br>
 looks like this:
-
+<br>
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
-
+<br>
 find in regedit and set MSISupported to 1 then restart
+</p>
+</details>
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~
+###### in nvidia control panel:
+<br>
+1. 3D settings/adjust image settings with preview/use my preference emphasizing performance apply
+<br>
+2. click on use the advanced 3D image settings and apply then click "take me there"
+<br>
+3. Anisotropic filtering:  Off for performance App-controlled or force your own setting for quality (8x is nice)
+<br>
+4. Low latency mode:
+<br>
+-Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
+<br>
+-On feels consistent (i use this and reflex in games that support it)
+<br>
+-Ultra and relfex (in-game) feels good when gpu usage is ~97%
+<br>
+5. Power management mode:  Prefer max performance  (this is the "+ boost" in reflex + boost)
+<br>
+6. Preferred refresh rate:  Highest available
+<br>
+7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works)
+<br>
+8. Texture filtering - Negative LOD bias:  Allow
+<br>
+9. Texture filtering quality:  High performance
+<br>
+10. Vertical sync:  Off
