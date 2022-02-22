@@ -330,7 +330,7 @@ ConsoleKeys=Tilde;
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
-*these will overwrite your config so make sure any setting GameUserSettings.ini is set the way you want
+*these will overwrite your config so make sure any setting in GameUserSettings.ini is set the way you want
 
 
 AudioQualityLevel=3
@@ -351,7 +351,7 @@ bRTXShadowsEnabled=0
 bRTXAmbientOcclusionEnabled=0
 DlssQualitySetting=1
 ResolutionScaleModifier=1
-DFAO=1
+DFAO=
 Tessellation=0
 TessellationMode=48
 bTelemetryEnabled=0
