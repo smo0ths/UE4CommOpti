@@ -1,5 +1,5 @@
 
-## updated 2/22/2022 :ramen:
+#### updated 2/22/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -11,7 +11,7 @@
 
 <details><summary>Open Engine.ini and copy paste under lines in the file</summary>
 <p>
-press windows key + r then copy paste
+press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
 <br>
@@ -268,7 +268,7 @@ RHI.SyncSlackMS=0;------default 10 changed to 0*
 
 ---
 
-## AA settings i use Copy/Paste over or experiment
+#### AA settings i use copy paste over or experiment
 
 ```python
 TAA
@@ -296,7 +296,7 @@ r.ScreenPercentage=100;------default 100 TAAU INPUT RESOLUTION
 
 <details><summary>Open Input.ini and edit input commands or add them</summary>
 <p>
-press windows key + r then copy paste
+press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
 <br>
@@ -323,9 +323,9 @@ DoubleClickTime=0.1;------default 0.25
 
 ---
 
-<details><summary>Open GameUserSettings.ini and these will overwrite your config so make sure any setting in GameUserSettings.ini is set the way you want also set your scalability groups, 0=low/1=medium/2=high/3=epic/4=cinematic</summary>
+<details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct also set your scalability groups 0 low 1 med  2 high 3 epic 4 cinematic</summary>
 <p>
-press windows key + r then copy paste
+press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 <br>
@@ -369,9 +369,7 @@ ContactShadows=0
 PostFX_Saturation=1.2
 PostFX_Sharpness=0
 OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2", (Value=1,bModified=False)));------works like engineini but in gameusersettingsini
-```
 
-```python
 [ScalabilityGroups]
 sg.ResolutionQuality=100;
 sg.ViewDistanceQuality=2;
@@ -389,7 +387,7 @@ sg.AnimationQuality=2;
 
 <details><summary>Open DeviceProfiles.ini and textures lods experiment for performance</summary>
 <p>
-press windows key + r then copy paste
+press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
 %localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 <br>
@@ -405,9 +403,35 @@ press windows key + r then copy paste
 
 ---
 
-## for NVIDIA users
+#### in nvidia control panel
 
-<details><summary>Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
+##### 1. 3D settings -> adjust image settings with preview -> use my preference emphasizing performance apply.
+
+##### 2. click on use the advanced 3D image settings and apply then click "take me there"
+
+##### 3. Anisotropic filtering:  Off for performance App-controlled or force your own setting for quality (8x is nice)
+
+##### 4. Low latency mode:
+
+###### Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
+
+###### On feels consistent (i use this and reflex in games that support it)
+
+###### Ultra and relfex (in-game) feels good when gpu usage is ~97%
+
+##### 5. Power management mode:  Prefer max performance  (this is the "+ boost" in reflex + boost)
+
+##### 6. Preferred refresh rate:  Highest available
+
+##### 7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works)
+
+##### 8. Texture filtering - Negative LOD bias:  Allow
+
+##### 9. Texture filtering quality:  High performance
+
+#####  10. Vertical sync:  Off
+
+<details><summary>11. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
 <p>
 1. NVCleanstall enabling it in advanced settings before installing or
 <br>
@@ -422,31 +446,3 @@ HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10
 find in regedit and set MSISupported to 1 then restart
 </p>
 </details>
-
-###### in nvidia control panel:
-<br>
-1. 3D settings/adjust image settings with preview/use my preference emphasizing performance apply
-<br>
-2. click on use the advanced 3D image settings and apply then click "take me there"
-<br>
-3. Anisotropic filtering:  Off for performance App-controlled or force your own setting for quality (8x is nice)
-<br>
-4. Low latency mode:
-<br>
--Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
-<br>
--On feels consistent (i use this and reflex in games that support it)
-<br>
--Ultra and relfex (in-game) feels good when gpu usage is ~97%
-<br>
-5. Power management mode:  Prefer max performance  (this is the "+ boost" in reflex + boost)
-<br>
-6. Preferred refresh rate:  Highest available
-<br>
-7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works)
-<br>
-8. Texture filtering - Negative LOD bias:  Allow
-<br>
-9. Texture filtering quality:  High performance
-<br>
-10. Vertical sync:  Off
