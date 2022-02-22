@@ -1,7 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*updated 2/21/2022
+*updated 2/22/2022
 
 *for UE4 games for reference/customization/optimization/learning
 
@@ -199,7 +199,7 @@ r.RayTracing=0;------default 0
 r.ReflectionCaptureResolution=128;------default 128 set to 64 for PERFORMANCE
 r.ReflectionCaptureSupersampleFactor=1;------default 1
 r.ReflectionEnvironment=1;------default 1 set to 0 for PERFORMANCE
-r.RefractionQuality=2;------default 2 set to 0 for PERFORMANCE
+r.RefractionQuality=1;------default 2 set to 0 for PERFORMANCE
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;------default 0
 r.RenderTargetPool.TransientAliasingMode=2;------default 2
 r.RenderTargetPoolMin=400;------default 400
@@ -244,7 +244,7 @@ r.Streaming.PoolSize.VRAMPercentageClamp=1024;------default 1024
 r.Streaming.PoolSize=1000;------default 800 changed to 1000*
 r.Streaming.PoolSizeForMeshes=-1;------default -1
 r.TessellationAdaptivePixelsPerTriangle=9999999;------default 48 set to 9999999 for PERFORMANCE
-r.TextureStreaming=1;
+r.TextureStreaming=1;------default 1
 r.TiledDeferredShading=1;------default 1 set to 0 for PERFORMANCE
 r.Tonemapper.EmulateHDR=0;
 r.Tonemapper.GrainQuantization=1;------default 1 0 for PERFORMANCE
@@ -252,6 +252,7 @@ r.Tonemapper.Quality=0;------default 5 changed to 0*
 r.Tonemapper.Sharpen=0;------default 1 changed to 0*
 r.TonemapperGamma=0;
 r.TranslucencyLightingVolume=1;------default 1 set to 0 for PERFORMANCE
+r.TranslucencyLightingVolumeDim=32;------default 48 set to 32 for PERFORMANCE
 r.ViewDistanceScale=1;------default 1 set to 0.8 for PERFORMANCE
 r.VolumetricCloud.ShadowMap=0;------default 1 changed to 0*
 r.VolumetricCloud.SkyAO=0;------default 1 changed to 0*
@@ -311,9 +312,9 @@ bAltEnterTogglesFullscreen=1;
 bF11TogglesFullscreen=0; 
 bEnableMouseSmoothing=0;
 bViewAccelerationEnabled=0;
-InitialButtonRepeatDelay=0.2;--------------------------default 0.2
-ButtonRepeatDelay=0.1;--------------------------default 0.1
-DoubleClickTime=0.1;--------------------------default 0.25
+InitialButtonRepeatDelay=0.2;------default 0.2
+ButtonRepeatDelay=0.1;------default 0.1
+DoubleClickTime=0.1;------default 0.25
 ConsoleKeys=Tilde;
 
 
@@ -329,7 +330,7 @@ ConsoleKeys=Tilde;
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 
 
-*here are a few things to look for or tweak these overwrite engine.ini commands unfortunately
+*these will overwrite your config so make sure any setting GameUserSettings.ini is set the way you want
 
 
 AudioQualityLevel=3
@@ -338,10 +339,10 @@ bUseVSync=0
 MaxFPS=163
 FrameRateLimit=163
 MenuFrameRateLimit=163
-HDRDisplayOutputNits=300;--------------------------set your monitors nits if using hdr
+HDRDisplayOutputNits=300;------set your monitors nits if using hdr
 DoubleKeyPressTime=0.1
-TextureStreamPoolSizeStorage=1000;--------------------------for squad
-DistanceFieldShadows=1;--------------------------for squad
+TextureStreamPoolSizeStorage=1000;------only way to change r.Streaming.PoolSize in squad
+DistanceFieldShadows=1;
 Gamma=2.2
 TAASampleStorage=4
 bRTXEnabled=1
@@ -350,9 +351,9 @@ bRTXShadowsEnabled=0
 bRTXAmbientOcclusionEnabled=0
 DlssQualitySetting=1
 ResolutionScaleModifier=1
-DFAO=
-Tessellation=
-TessellationMode=
+DFAO=1
+Tessellation=0
+TessellationMode=48
 bTelemetryEnabled=0
 bUseDynamicResolution=0
 FullscreenMode=0
@@ -360,7 +361,7 @@ PreferredFullscreenMode=0
 ContactShadows=0
 PostFX_Saturation=1.2
 PostFX_Sharpness=0
-OverrideOptions=(("r.somerandomcommand", (Value=0,bModified=True)),("r.someotherrandomcommand", (Value=0,bModified=False)));--------------------------if you want to override from GameUserSettings.ini
+OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2", (Value=1,bModified=False)));------works like engineini but in gameusersettingsini
 
 
 *set your scalability groups, 0=low/1=medium/2=high/3=epic/4=cinematic (4 gets clamped)
@@ -398,11 +399,7 @@ sg.AnimationQuality.NumLevels=5;
 %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 
 
-*textures lods experiment for performance or just use the games default texture settings
-
-
-[/Script/Engine.TextureLODSettings]
-wip
+*textures lods experiment for performance (wip)
 
 
 -------------------------------------------------------------------
