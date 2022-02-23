@@ -1,5 +1,5 @@
 
-#### updated 2/22/2022 :ramen:
+#### updated 2/23/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -62,7 +62,7 @@ foliage.DitheredLOD=1;------default 1
 foliage.LODDistanceScale=1;------default 1
 foliage.MinimumScreenSize=0.0001;------default 0.0001
 foliage.MinVertsToSplitNode=8192;------default 8192
-foliage.OverestimateLOD=1;------default 0 set to 1 for PERFORMANCE
+foliage.OverestimateLOD=0;------default 0
 FX.AllowAsyncTick=1;------default 1
 FX.BatchAsync=0;------default 0
 FX.FXAllowParticleMeshLODs=0;------default 0
@@ -94,7 +94,7 @@ r.AmbientOcclusionMaxQuality=100;------default 100
 r.AmbientOcclusionMipLevelFactor=0.6;------default 0.6
 r.AmbientOcclusionRadiusScale=0;------default 1 set to 0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=-1;------default -1
-r.AnisotropicMaterials=1;------default 1
+r.AnisotropicMaterials=0;------default 1
 r.AOGlobalDFResolution=128;------default 128
 r.AOHeightfieldOcclusion=0;------default 0
 r.AOQuality=1;------default 1
@@ -237,6 +237,7 @@ r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;------default 0 changed to 1*
 r.SkylightIntensityMultiplier=0.8;------default 1 changed to 0.8
 r.SSGI.Enable=0;------default 0
 r.SSR.Quality=0;------default 2 set to 0 for PERFORMANCE
+r.SSR.HalfResSceneColor=0;------default 1
 r.SSS.Checkerboard=1;------default 2 changed to 1
 r.StaticMeshLODDistanceScale=1;------default 1
 r.Streaming.MipBias=0;------default 0 set to 1 for PERFORMANCE
