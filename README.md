@@ -1,5 +1,5 @@
 
-#### updated 2/23/2022 :ramen:
+#### updated 2/25/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -55,7 +55,7 @@ r.TemporalAACurrentFrameWeight=0.1;------default 0.2 changed to 0.1*
 r.TemporalAA.Algorithm=0;------default 0
 r.TemporalAA.R11G11B10History=0;------default 0 EXPERIMENTAL
 au.RenderThreadPriority=0;------default 0
-AudioThread.EnableBatchProcessing=1;------TEST
+AudioThread.EnableBatchProcessing=1;------default 1
 Compat.UseDXT5NormalMaps=0;------default 0
 foliage.DensityScale=0.6;------default 0.8 set to 0.6 for PERFORMANCE
 foliage.DitheredLOD=1;------default 1
@@ -131,7 +131,7 @@ r.DepthOfFieldQuality=1;------default 2 set to 1 or 0 for PERFORMANCE
 r.DetailMode=1;------default 1 set to 0 for PERFORMANCE
 r.DFDistanceScale=1;------default 1
 r.DFFullResolution=0;------default 0
-r.DFShadowQuality=3;------default 3 set to 1 for PERFORMANCE
+r.DFShadowQuality=2;------default 3 set to 1 or 2 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;------default 1
 r.DFTwoSidedMeshDistanceBias=5;------default 4 changed to 5*
 r.DiscardUnusedQuality=0;------default 0
@@ -215,14 +215,13 @@ r.Shaders.Optimize=1;------default 1
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;------default 1 set to 0 for PERFORMANCE
 r.Shadow.CacheWholeSceneShadows=1;------default 1
 r.Shadow.CacheWPOPrimitives=0;------default 0
-r.Shadow.CSM.MaxCascades=3;------default 3
+r.Shadow.CSM.MaxCascades=2;------default 3 set to 0 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1.5;------default 0.8 changed to 1.5*
-r.Shadow.CSMDepthBias=5;------default 10 changed to 5*
-r.Shadow.DistanceScale=0.85;------default 0.85 set to 0.6 for PERFORMANCE
+r.Shadow.CSMDepthBias=13;------default 10 changed to 13*
+r.Shadow.DistanceScale=1.5;------default 0.85 set to 0.85 for PERFORMANCE
 r.Shadow.FilterMethod=0;------default 0
-r.Shadow.MaxCSMResolution=2048;------default 2048
-r.Shadow.MaxNumFarShadowCascades=0;------default 10 changed to 0*
-r.Shadow.MaxResolution=2048;------default 1024 set to 1024 for PERFORMANCE
+r.Shadow.MaxCSMResolution=1024;------default 2048 set to 512 or 1024 for PERFORMANCE
+r.Shadow.MaxNumFarShadowCascades=0;------default 10 set to 0 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------default 0
 r.Shadow.PointLightDepthBias=0.007;------default 0.02 changed to 0.007*
 r.Shadow.PointLightSlopeScaleDepthBias=5;------default 3 changed to 5*
