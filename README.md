@@ -1,448 +1,267 @@
 
-#### updated 2/25/2022 :ramen:
+#### updated 2/26/2022 :ramen:
 
-###### for UE4 games for reference/customization/optimization/learning
+###### my config and stuff for kcd hf
 
-###### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/vB8f4fZ7EH)
-
-###### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
+#### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
 
 ---
 
-<details><summary>Open Engine.ini and copy paste under lines in the file</summary>
-<p>
-press <kbd>⊞ Win+R</kbd> then copy paste
-<br>
-%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
-<br>
-%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
-<br>
-%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
-<br>
-%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini
-<br>
-%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Engine.ini
-</p>
-</details>
-
 ```python
-[Core.Log]
-Global=off;
-
-[Audio]
-MaxChannels=0;------default 0
-CommonAudioPoolSize=0;------default 0
-UnfocusedVolumeMultiplier=1;
-
-[/Script/Engine.Engine]
-bSmoothFrameRate=0;
-bPauseOnLossOfFocus=0;
-bUseFixedFrameRate=0;
-DisplayGamma=2.2;
-
-[TextureStreaming]
-PoolSizeVRAMPercentage=70;------default 70 TEXTUREPOOL CACHE
-
-[SystemSettings]
-r.DefaultFeature.AntiAliasing=2;------default 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=3;------default 3 set to 1 or 2 FXAA 3 or 4 TAA
-r.ScreenPercentage=100;------default 100 TAAU INPUT RESOLUTION
-r.TemporalAA.Upsampling=1;------default 0 changed to 1*
-r.TemporalAAUpsampleFiltered=1;------default 1
-r.TemporalAAFilterSize=0.5;------default 1 changed to 0.5*
-r.TemporalAASamples=4;------default 16 changed to 4*
-r.TemporalAACurrentFrameWeight=0.1;------default 0.2 changed to 0.1*
-r.TemporalAA.Algorithm=0;------default 0
-r.TemporalAA.R11G11B10History=0;------default 0 EXPERIMENTAL
-au.RenderThreadPriority=0;------default 0
-AudioThread.EnableBatchProcessing=1;------default 1
-Compat.UseDXT5NormalMaps=0;------default 0
-foliage.DensityScale=0.6;------default 0.8 set to 0.6 for PERFORMANCE
-foliage.DitheredLOD=1;------default 1
-foliage.LODDistanceScale=1;------default 1
-foliage.MinimumScreenSize=0.0001;------default 0.0001
-foliage.MinVertsToSplitNode=8192;------default 8192
-foliage.OverestimateLOD=0;------default 0
-FX.AllowAsyncTick=1;------default 1
-FX.BatchAsync=0;------default 0
-FX.FXAllowParticleMeshLODs=0;------default 0
-FX.MaxCPUParticlesPerEmitter=500;------default 1000 changed to 500*
-FX.MaxGPUParticlesSpawnedPerFrame=25000;------default 1048576 changed to 25000*
-FX.QualityLevelSpawnRateScaleReferenceLevel=2;------default 2 set to 0 for PERFORMANCE
-grass.DensityScale=0.6;------default 1 set to 0.6 for PERFORMANCE
-grass.DisableDynamicShadows=0;------default 0 set to 1 for PERFORMANCE
-grass.TickInterval=1;------default 1
-p.AnimDynamics=1;------default 1 set to 0 for PERFORMANCE
-p.AnimDynamicsLODThreshold=-1;------default -1
-p.AnimDynamicsRestrictLOD=-1;------default -1
-p.AnimDynamicsWind=1;------default 1
-p.BatchPhysXTasksSize=3;------default 3
-p.ClothPhysics.UseTaskThread=1;------default 1
-p.ClothPhysics=1;------default 1 set to 0 for PERFORMANCE
-p.RigidBodyLODThreshold=-1;------default -1
-p.RigidBodyNode=1;------default 1
-r.AllowDownsampledStandardTranslucency=0;------default 0
-r.AllowHDR=0;------default 0
-r.AllowLandscapeShadows=1;------default 1 set to 0 for PERFORMANCE
-r.AllowPointLightCubemapShadows=1;------default 1 set to 0 for PERFORMANCE
-r.AllowSimpleLights=1;------default 1 set to 0 for PERFORMANCE
-r.AlsoUseSphereForFrustumCull=0;------default 0
-r.AmbientOcclusion.Compute.Smooth=1;------default 1
-r.AmbientOcclusion.Compute=1;------default 0 set to 1 for PERFORMANCE
-r.AmbientOcclusionLevels=0;------default 3 set to 0 for PERFORMANCE
-r.AmbientOcclusionMaxQuality=100;------default 100
-r.AmbientOcclusionMipLevelFactor=0.6;------default 0.6
-r.AmbientOcclusionRadiusScale=0;------default 1 set to 0 for PERFORMANCE
-r.AmbientOcclusionStaticFraction=-1;------default -1
-r.AnisotropicMaterials=0;------default 1
-r.AOGlobalDFResolution=128;------default 128
-r.AOHeightfieldOcclusion=0;------default 0
-r.AOQuality=1;------default 1
-r.Atmosphere=1;------default 1
-r.Bloom.Cross=0;------default 0 set to -0.7777 for ANAMORPHIC BLOOM
-r.Bloom.HalfResolutionFFT=0;------default 0 EXPERIMENTAL
-r.BloomQuality=3;------default 4 changed to 3*
-r.CapsuleShadows=0;------default 1 set to 0 for PERFORMANCE
-r.CapsuleShadowsFullResolution=0;------default 0
-r.chaos.ReflectionCaptureStaticSceneOnly=1;------default 1
-r.ClearCoatNormal=0;------default 0
-r.CompileShadersForDevelopment=0;------default 1 set to 0 for PERFORMANCE
-r.ContactShadows=0;------default 1 set to 0 for PERFORMANCE
-r.CreateShadersOnLoad=0;------default 0
-r.D3D11.Depth24Bit=0;------default 0
-r.D3D12.Depth24Bit=0;------default 0
-r.DBuffer=1;------default 1 set to 0 for PERFORMANCE
-r.Decal.FadeDurationScale=1;------default 1 set to 0.6 for PERFORMANCE
-r.Decal.FadeScreenSizeMult=1;
-r.Decal.StencilSizeThreshold=0.1;------default 0.1
-r.DefaultBackBufferPixelFormat=4;------default 4
-r.DefaultFeature.AmbientOcclusion=1;------default 1
-r.DefaultFeature.AmbientOcclusionStaticFraction=0;------default 0
-r.DefaultFeature.AutoExposure.Method=0------default 0
-r.DefaultFeature.AutoExposure=0;------default 0
-r.DefaultFeature.Bloom=1;------default 1
-r.DefaultFeature.LensFlare=1;------default 1
-r.DefaultFeature.LightUnits=1;------default 1
-r.DefaultFeature.MotionBlur=0;------default 0
-r.DeferSkeletalDynamicDataUpdateUntilGDME=0;------default 0 EXPERIMENTAL
-r.DeferUniformBufferUpdatesUntilVisible=1;
-r.DeferUniformExpressionCaching=1;------default 1
-r.DepthOfFieldQuality=1;------default 2 set to 1 or 0 for PERFORMANCE
-r.DetailMode=1;------default 1 set to 0 for PERFORMANCE
-r.DFDistanceScale=1;------default 1
-r.DFFullResolution=0;------default 0
-r.DFShadowQuality=2;------default 3 set to 1 or 2 for PERFORMANCE
-r.DFShadowScatterTileCulling=1;------default 1
-r.DFTwoSidedMeshDistanceBias=5;------default 4 changed to 5*
-r.DiscardUnusedQuality=0;------default 0
-r.DistanceFieldAO=1;------default 0 set to 0 for PERFORMANCE
-r.DistanceFieldShadowing=1;------default 1 set to 0 for PERFORMANCE
-r.DoInitViewsLightingAfterPrepass=0;------default 0 EXPERIMENTAL
-r.DoLazyStaticMeshUpdate=0;------default 0 EXPERIMENTAL
-r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;------default 1
-r.DoTiledReflections=1;------default 1
-r.DrawRectangleOptimization=1;------default 1
-r.DX11NVAfterMathEnabled=0;
-r.EarlyZPass=2;------default 2
-r.EarlyZPassMovable=1;------default 1
-r.EarlyZPassOnlyMaterialMasking=1;------default 1
-r.Emitter.FastPoolEnable=1;------default 0 changed to 1*
-r.EmitterSpawnRateScale=0.5;------default 1 set to 0.5 for PERFORMANCE
-r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;------default 1
-r.EnableAsyncComputeVolumetricFog=1;
-r.EyeAdaptationQuality=2;------default 2
-r.FastBlurThreshold=3;------default 3
-r.Filter.SizeScale=0.8;------default 0.8
-r.FinishCurrentFrame=0;------default 0
-r.Fog=1;------default 1
-r.ForceSceneHasDecals=0;------default 0
-r.FreeSkeletalMeshBuffers=0;------default 0
-r.FullScreenMode=0;
-r.GBufferFormat=1;------default 1
-r.GenerateLandscapeGIData=1;------default 1 set to 0 for PERFORMANCE
-r.GenerateMeshDistanceFields=1;------default 1 required for DFSHADOWS and DFAO set to 0 for PERFORMANCE
-r.GPUCrash.CollectionEnable=0;------default 1 changed to 0*
-r.GPUCrashDebugging=0;------default 0
-r.GPUSkin.Limit2BoneInfluences=0;------default 0
-r.GTSyncType=0;------default 0
-r.HDR.EnableHDROutput=0;------default 0
-r.HeightFieldShadowing=0;------default 0
-r.HFShadowQuality=2;------default 2
-r.HighQualityLightMaps=1;------default 1
-r.HZBOcclusion=0;------default 0
-r.IrisNormal=0;------default 0
-r.LandscapeLOD0DistributionScale=1;------default 1
-r.LandscapeLODBias=0;------default 0
-r.LandscapeLODDistributionScale=1;------default 1
-r.LensFlareQuality=0;------default 2 set to 0 for PERFORMANCE
-r.LightFunctionQuality=1;------default 1
-r.LightMaxDrawDistanceScale=1;------default 1 set to 0.6 for PERFORMANCE
-r.LightShaftQuality=0;------default 1 set to 0 for PERFORMANCE
-r.MaterialQualityLevel=1;------default 1 set to 0 for PERFORMANCE
-r.MaxAnisotropy=8;------default 4 changed to 8*
-r.MinRoughnessOverride=0;------default 0
-r.MinScreenRadiusForCSMDepth=0.01;------default 0.01
-r.MinScreenRadiusForDepthPrepass=0.03;------default 0.03
-r.MinScreenRadiusForLights=0.04;------default 0.03 set to 0.2 for PERFORMANCE
-r.MipMapLODBias=0;------default 0
-r.MorphTarget.Mode=1;------default 1
-r.MotionBlurQuality=0;
-r.MSAA.CompositingSampleCount=1;------default 3 changed to 1*
-r.MSAACount=1;------default 4 changed to 1*
-r.NormalMapsForStaticLighting=1;------default 1 set to 0 for PERFORMANCE
-r.NumBufferedOcclusionQueries=1;------default 1
-r.OneFrameThreadLag=1;------default 1
-r.ParticleLightQuality=1;------default 1 set to 0 for PERFORMANCE
-r.ParticleLODBias=0;------default 0
-r.ParticleMinTimeBetweenTicks=10;------changed to 10*
-r.RayTracing=0;------default 0
-r.ReflectionCaptureResolution=128;------default 128 set to 64 for PERFORMANCE
-r.ReflectionCaptureSupersampleFactor=1;------default 1
-r.ReflectionEnvironment=1;------default 1 set to 0 for PERFORMANCE
-r.RefractionQuality=1;------default 2 set to 0 for PERFORMANCE
-r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;------default 0
-r.RenderTargetPool.TransientAliasingMode=2;------default 2
-r.RenderTargetPoolMin=400;------default 400
-r.SceneColorFormat=3;------default 3
-r.SceneColorFringe.Max=-1;------default -1
-r.SceneColorFringeQuality=0;------default 1 changed to 0*
-r.SceneRenderTargetResizeMethod=0;------default 0
-r.SceneRenderTargetResizeMethodForceOverride=0;------default 0
-r.SecondaryScreenPercentage.GameViewport=0;------default 0
-r.ShaderDevelopmentMode=0;------default 0
-r.Shaders.FastMath=1;------default 1
-r.Shaders.Optimize=1;------default 1
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1;------default 1 set to 0 for PERFORMANCE
-r.Shadow.CacheWholeSceneShadows=1;------default 1
-r.Shadow.CacheWPOPrimitives=0;------default 0
-r.Shadow.CSM.MaxCascades=4;------default 3 set to 0 or 2 for PERFORMANCE
-r.Shadow.CSM.TransitionScale=1.5;------default 0.8 changed to 1.5*
-r.Shadow.CSMDepthBias=13;------default 10 changed to 13*
-r.Shadow.DistanceScale=1.5;------default 0.85 set to 0.85 for PERFORMANCE
-r.Shadow.FilterMethod=0;------default 0
-r.Shadow.MaxCSMResolution=2048;------default 2048 set to 512 or 1024 for PERFORMANCE
-r.Shadow.MaxNumFarShadowCascades=0;------default 10 set to 0 for PERFORMANCE
-r.Shadow.OcclusionCullCascadedShadowMaps=0;------default 0
-r.Shadow.PointLightDepthBias=0.007;------default 0.02 changed to 0.007*
-r.Shadow.PointLightSlopeScaleDepthBias=5;------default 3 changed to 5*
-r.Shadow.RadiusThreshold=0.03;------default 0.04 set to 0.03 for PERFORMANCE
-r.Shadow.SpotLightTransitionScale=256;------default 60 changed to 256*
-r.Shadow.TransitionScale=120;------default 60 changed to 120*
-r.ShadowQuality=3;------default 4 set to 3 for PERFORMANCE
-r.SkeletalMeshLODBias=0;------default 0
-r.SkeletalMeshLODRadiusScale=1;------default 1
-r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;------default 0 changed to 1*
-r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;------default 0 changed to 1*
-r.SkylightIntensityMultiplier=0.8;------default 1 changed to 0.8
-r.SSGI.Enable=0;------default 0
-r.SSR.Quality=0;------default 2 set to 0 for PERFORMANCE
-r.SSR.HalfResSceneColor=1;------default 1
-r.SSS.Checkerboard=1;------default 2 changed to 1
-r.StaticMeshLODDistanceScale=1;------default 1
-r.Streaming.MipBias=0;------default 0 set to 1 for PERFORMANCE
-r.Streaming.PoolSize.VRAMPercentageClamp=1024;------default 1024
-r.Streaming.PoolSize=1000;------default 800 changed to 1000*
-r.Streaming.PoolSizeForMeshes=-1;------default -1
-r.TessellationAdaptivePixelsPerTriangle=9999999;------default 48 set to 9999999 for PERFORMANCE
-r.TextureStreaming=1;------default 1
-r.TiledDeferredShading=1;------default 1 set to 0 for PERFORMANCE
-r.Tonemapper.EmulateHDR=0;
-r.Tonemapper.GrainQuantization=1;------default 1 0 for PERFORMANCE
-r.Tonemapper.Quality=0;------default 5 changed to 0*
-r.Tonemapper.Sharpen=0;------default 1 changed to 0*
-r.TonemapperGamma=0;
-r.TranslucencyLightingVolume=1;------default 1 set to 0 for PERFORMANCE
-r.TranslucencyLightingVolumeDim=32;------default 48 set to 32 for PERFORMANCE
-r.ViewDistanceScale=1;------default 1 set to 0.8 for PERFORMANCE
-r.VolumetricCloud.ShadowMap=0;------default 1 changed to 0*
-r.VolumetricCloud.SkyAO=0;------default 1 changed to 0*
-r.VolumetricFog.GridPixelSize=32;------default 16 changed to 32*
-r.VolumetricFog.HistoryMissSupersampleCount=1;------default 4 set to 0 for PERFORMANCE
-r.VolumetricFog.InjectShadowedLightsSeparately=0;------default 1 set to 0 for PERFORMANCE
-r.VolumetricFog=1;------default 1 set to 0 for PERFORMANCE
-r.VSync=0;
-r.Vulkan.Depth24Bit=0;------default 0
-RHI.SyncInterval=0;------default 1 changed to 0*
-RHI.SyncSlackMS=0;------default 10 changed to 0*
+;Add launch commands: +exec user.cfg -devmode
+con_restricted=0;
+sys_MaxFPS=90;------default 0 changed to 90*
+sys_spec=0;------sets custom spec
+sys_spec_GameEffects=3;
+sys_spec_Light=3;
+sys_spec_ObjectDetail=3;
+sys_spec_Particles=3;
+sys_spec_Physics=3;
+sys_spec_PostProcessing=3;
+sys_spec_Shading=3;
+sys_spec_Shadows=3;
+sys_spec_Sound=3;
+sys_spec_Texture=3;
+sys_spec_TextureResolution=7;------HD textures on
+sys_spec_Vegetation=3;
+sys_spec_VolumetricEffects=3;
+sys_spec_Water=3;
+q_Renderer=3;
+q_ShaderFX=3;
+q_ShaderGeneral=3;
+q_ShaderGlass=3;
+q_ShaderHDR=3;
+q_ShaderIce=3;
+q_ShaderMetal=3;
+q_ShaderPostProcess=3;
+q_ShaderShadow=3;
+q_ShaderSky=3;
+q_ShaderTerrain=3;
+q_ShaderVegetation=3;
+q_ShaderWater=3;
+Bind 0 "exec user.cfg";
+Bind 8 "g_showHUD 0";
+Bind 9 "g_showHUD 1";
+Bind f1 "sys_MaxFPS 90";
+Bind f2 "sys_MaxFPS 163";
+Bind f3 "exec TEST1.cfg";
+Bind f4 "exec TEST2.cfg";
+cl_fov=59;------default 60 changed to 59*
+pl_movement.power_sprint_targetFOV=59;------default 55 changed to 59*
+r_DrawNearFOV=59;------default 60 changed to 59*
+cl_sensitivity=10;
+i_mouse_accel=0;
+i_mouse_smooth=0;
+g_skipIntro=1;------default 0 changed to 1*
+r_Vsync=0;
+wh_cs_PlayerLockDisabled=0;------default 0
+wh_horse_CameraCentering=0;------default 0.2 changed to 0*
+wh_pl_showfirecursor=1;------default 0 changed to 1*
+ca_AttachmentCullingRation=300;------default 360 changed to 300*
+e_CoverageBufferTerrainLodShift=0;------default 2 changed to 0*
+e_CullVegActivation=30;------default 50 changed to 30*
+e_DecalsLifeTimeScale=1;------default 2 changed to 1*
+e_DecalsRange=10;------default 20 changed to 10*
+e_GsmRangeStep=2.5;------default 3 changed to 2.5*
+e_LodFaceAreaTargetSize=0.0006;------default 0.001 changed to 0.0006*
+e_LodRatio=25;------default 25
+e_MergedMeshesInstanceDist=5;------default 8 changed to 5*
+e_MergedMeshesLodRatio=1;------default 5 changed to 1*
+e_MergedMeshesPool=16384;------default 8192 change to 16384
+e_MergedMeshesViewDistRatio=85;------default 70 changed to 85*
+e_ObjShadowCastSpec=2;------default 3 changed to 2*
+e_PhysProxyTriLimit=5000;------default 10000 changed to 5000*
+e_ShadowsBlendCascades=0;------default 2 changed to 0*
+e_ShadowsCacheUpdate=1;------default 2 changed to 1*
+e_ShadowsCastViewDistRatio=0.8;------default 1 changed to 0.8*
+e_ShadowsCastViewDistRatioMulInvis=0.1;------default 0.4 changed to 0.1*
+e_ShadowsMaxTexRes=1024;------default 1024
+e_ShadowsUpdateViewDistRatio=80;------default 100 changed to 80*
+e_SkyQuality=1;------default 2 changed to 1*
+e_StreamCgfPoolSize=1024;------default 512 changed to 1024*
+e_svoTI_SSAOAmount=1.5;------default 1 changed to 1.5*
+e_TerrainDetailMaterialsViewDistZ=100;------default 80 changed to 100*
+e_TerrainLodRatio=0.5;------default 0.3 changed to 0.5*
+e_TerrainOcclusionCullingMaxDist=150;------default 200 changed to 150*
+e_UberlodDistanceRatio=1.9;------default 1.8 changed to 1.9*
+e_ViewDistRatioVegetation=65;------default 50 default 55 changed to 65*
+e_VolumetricFog=1;------default 0 changed to 1*
+es_DebrisLifetimeScale=0.6;------default 1 changed to 0.6*
+es_maxphysdistcloth=100;------default 300 changed to 100*
+g_breakage_particles_limit=80;------default 160 changed to 80*
+gpu_Particle_Physics=0;------default 0
+p_max_MC_iters=4000;------default 6000 changed to 4000*
+r_AntialiasingMode=3;------default 1 changed to 3*
+r_AntialiasingTAAPattern=3;------default 1 changed to 3*
+r_AntialiasingTAASharpening=0;------default 0.2 changed to 0*
+r_BatchType=1;------default 1
+r_DeferredShadingAreaLights=1;------default 1
+r_DepthBits=32;------default 24 changed to 32*
+r_FogShadowsWater=1;------default 0 changed to 1*
+r_HDRBloom=0;------default 1 changed to 0*
+r_HDRVignetting=0;------default 1 changed to 0*
+r_MotionBlur=0;
+r_RainMaxViewDist_Deferred=170;------default 150 changed to 170*
+r_ShadowCastingLightsMaxCount=12;------default 16 changed to 12*
+r_ShadowsBias=0.00001;------default 0.00008 changed to 0.00001*
+r_ShadowsCacheResolutions=4214;------default 6324,4214,2810,1872,624 changed to 4214*
+r_ShadowsScreenSpace=1;------default 2 changed to 1*
+r_ssdoAmountAmbient=2;------default 1 changed to 2*
+r_ssdoAmountDirect=4;------default 1.5 changed to 4*
+r_ssdoAmountReflection=5;------default 4 changed to 5*
+r_ssdoRadius=1;------default 0.3 changed to 1*
+r_ssdoRadiusMin=0.02;------default 0.1 changed to 0.02*
+r_SSReflections=0;------default 1 changed to 0*
+r_SuperSampling=0;------default 1 changed to 0*
+r_TexMaxAnisotropy=8;------default 4 changed to 8*
+r_TexMinAnisotropy=8;------default 4 changed to 8*
+r_TexNoAnisoAlphaTest=1;------default 0 changed to 1*
+r_VolumetricFogSunLightCorrection=0;------default 1 changed to 0*
+r_VolumetricFogTexDepth=8;------default 32 changed to 8*
+r_VolumetricFogTexScale=25;------default 10 changed to 25*
+r_WaterCaustics=0;------default 1 changed to 0
+r_WaterGodRays=0;------default 1 changed to 0
+r_WaterReflectionsQuality=3;------default 4 changed to 3*
+r_WaterTessellationHW=0;------default 1 changed to 0*
 ```
 
 ---
 
-#### AA settings i use copy paste over or experiment
+#### Create a mod folder in KingdomComeDeliverance/Mods
+
+[Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
+
+[Arrows go fast](https://www.nexusmods.com/kingdomcomedeliverance/mods/1240)
+
+[Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
+
+[Instant Herb Picking with hand movement](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
+
+[Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
+
+[Inventoried](https://www.nexusmods.com/kingdomcomedeliverance/mods/797)
+
+[Bushes- Collision Remover](https://www.nexusmods.com/kingdomcomedeliverance/mods/591)
+
+[NoTimedDecisions](https://www.nexusmods.com/kingdomcomedeliverance/mods/1343)
+
+[MuttBeQuiet](https://www.nexusmods.com/kingdomcomedeliverance/mods/1322)
+
+[HelmetVision](https://www.nexusmods.com/kingdomcomedeliverance/mods/1337)
+
+[No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
+
+[No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
+
+[No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
+
+[No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
+
+UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds (make mod folder)
+
+<details><summary>Quicksave (click for edits and link)</summary>
+<p>
+
+[Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
+
+#### replace defaultprofile.xml and edit lines in Quicksave\Data\Data.pak\Libs\Config\defaultprofile.xml
 
 ```python
-TAA
-r.DefaultFeature.AntiAliasing=2;------default 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=3;------default 3 set to 1 or 2 FXAA 3 or 4 TAA
-r.ScreenPercentage=100;------default 100 TAAU INPUT RESOLUTION
+updated to latest KingdomComeDeliverance\Data\patch\ipl_patch_010800.pak\libs\config\defaultprofile.xml
+then added:
+<action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+under <actionmap name="default" version="22">
 
-TAAU for PERFORMANCE
-r.DefaultFeature.AntiAliasing=2;------default 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=3;------default 3 set to 1 or 2 FXAA 3 or 4 TAA
-r.ScreenPercentage=86.66;------default 100 TAAU INPUT RESOLUTION
-
-FXAA
-r.DefaultFeature.AntiAliasing=1;------default 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=2;------default 3 set to 1 or 2 FXAA 3 or 4 TAA
-r.ScreenPercentage=100;------default 100 TAAU INPUT RESOLUTION
-
-NONE
-r.DefaultFeature.AntiAliasing=0;------default 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=0;------default 3 set to 1 or 2 FXAA 3 or 4 TAA
-r.ScreenPercentage=100;------default 100 TAAU INPUT RESOLUTION
+also had to add:
+<action name="call_horse" onPress="1" onRelease="1"
+<action name="horse_dismount" onPress="1" onRelease="1"
+the onRelease="1" part after those to fix getting off a horse...
 ```
-
----
-
-<details><summary>Open Input.ini and edit input commands or add them</summary>
-<p>
-press <kbd>⊞ Win+R</kbd> then copy paste
-<br>
-%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
-<br>
-%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
-<br>
-%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
-<br>
-%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Input.ini
-<br>
-%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Input.ini
 </p>
 </details>
 
-```python
-[/Script/Engine.InputSettings]
-bAltEnterTogglesFullscreen=1;
-bF11TogglesFullscreen=0; 
-bEnableMouseSmoothing=0;
-bViewAccelerationEnabled=0;
-InitialButtonRepeatDelay=0.2;------default 0.2
-ButtonRepeatDelay=0.1;------default 0.1
-DoubleClickTime=0.1;------default 0.25
-```
-
 ---
 
-<details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct also set your scalability groups 0 low 1 med  2 high 3 epic 4 cinematic</summary>
-<p>
-press <kbd>⊞ Win+R</kbd> then copy paste
+#### Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
+
+No fall damage with HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
 <br>
-%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+[More Faster XP](https://www.nexusmods.com/kingdomcomedeliverance/mods/1129)
 <br>
-%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+[Easy Sharpening](https://www.nexusmods.com/kingdomcomedeliverance/mods/336)
 <br>
-%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+[Ultimate Repair Kit 2.0 Plus](https://www.nexusmods.com/kingdomcomedeliverance/mods/1292)
 <br>
-%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
-<br>
-%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/GameUserSettings.ini
-</p>
-</details>
+[Unlimited Weight](https://www.nexusmods.com/kingdomcomedeliverance/mods/12)
 
 ```python
-AudioQualityLevel=3
-MaxAnisotropy=8
-bUseVSync=0
-MaxFPS=163
-FrameRateLimit=163
-MenuFrameRateLimit=163
-HDRDisplayOutputNits=300;------set your monitors nits if using hdr
-DoubleKeyPressTime=0.1
-TextureStreamPoolSizeStorage=1000;------only way to change r.Streaming.PoolSize in squad
-DistanceFieldShadows=1;
-Gamma=2.2
-TAASampleStorage=4
-bRTXEnabled=1
-bRTXReflectionsEnabled=0
-bRTXShadowsEnabled=0
-bRTXAmbientOcclusionEnabled=0
-DlssQualitySetting=1
-ResolutionScaleModifier=1
-DFAO=
-Tessellation=0
-TessellationMode=48
-bTelemetryEnabled=0
-bUseDynamicResolution=0
-FullscreenMode=0
-PreferredFullscreenMode=0
-ContactShadows=0
-PostFX_Saturation=1.2
-PostFX_Sharpness=0
-OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2", (Value=1,bModified=False)));------works like engineini but in gameusersettingsini
-
-[ScalabilityGroups]
-sg.ResolutionQuality=100;
-sg.ViewDistanceQuality=2;
-sg.AntiAliasingQuality=2;
-sg.PostProcessQuality=2;
-sg.ShadowQuality=2;
-sg.TextureQuality=2;
-sg.EffectsQuality=2;
-sg.FoliageQuality=2;
-sg.ShadingQuality=2;
-sg.AnimationQuality=2;
+<?xml version="1.0" encoding="us-ascii"?>
+<database name="hammerheart">
+  <table name="rpg_param" version="1">
+    <header>
+      <column name="item_category" type="character varying" />
+      <column name="skill_id" type="integer" />
+      <column name="perk_id" type="uuid" />
+      <column name="rpg_param_key" type="character varying" />
+      <column name="rpg_param_value" type="real" />
+    </header>
+    <rows>
+      <row rpg_param_key="BaseInventoryCapacity" rpg_param_value="999999999" />
+      <row item_category="armor.horse_bridle.*" skill_id="8" />
+      <row item_category="armor.horse_saddle.*" skill_id="8" />
+      <row rpg_param_key="RepairKitCapacity" rpg_param_value="999999999" />
+      <row rpg_param_key="RepairKitItemHealthBestLimit" rpg_param_value="0" />
+      <row perk_id="01c3b32a-5751-4c98-b6ab-258d02370382" rpg_param_key="RepairKitCapacity" rpg_param_value="999999999" />
+      <row perk_id="01c3b32a-5751-4c98-b6ab-258d02370382" rpg_param_key="RepairKitItemHealthBestLimit" rpg_param_value="0" />
+      <row rpg_param_key="AlchemyXPPerSuccessfullBrewing" rpg_param_value="60" />
+      <row rpg_param_key="AlchemyXPPerAutocookBrewingRelative" rpg_param_value="0.2" />
+      <row rpg_param_key="FactionAngrinessDecayExp" rpg_param_value="3" />
+      <row rpg_param_key="HerbGatherXP" rpg_param_value="15" />
+      <row rpg_param_key="HorseRidingXPPerDistance" rpg_param_value="18.8" />
+      <row rpg_param_key="HoundmasterXPContextCommand" rpg_param_value="3" />
+      <row rpg_param_key="HoundmasterXPFeed" rpg_param_value="38" />
+      <row rpg_param_key="HoundmasterXPFetch" rpg_param_value="7.5" />
+      <row rpg_param_key="HoundmasterXPHit" rpg_param_value="3" />
+      <row rpg_param_key="HoundmasterXPKill" rpg_param_value="30" />
+      <row rpg_param_key="HoundmasterXPPlay" rpg_param_value="22.5" />
+      <row rpg_param_key="HoundmasterXPPOIDiscovery" rpg_param_value="30" />
+      <row rpg_param_key="HoundmasterXPPraise" rpg_param_value="22.5" />
+      <row rpg_param_key="HunterXPKill" rpg_param_value="22.5" />
+      <row rpg_param_key="LockPickingStealthXP" rpg_param_value="12" />
+      <row rpg_param_key="LockPickingSuccessXPMulCoef" rpg_param_value="27" />
+      <row rpg_param_key="NonSkillBookXP" rpg_param_value="45" />
+      <row rpg_param_key="PickpocketingFailXPMod" rpg_param_value="0.5" />
+      <row rpg_param_key="PickpocketingStealthXP" rpg_param_value="18" />
+      <row rpg_param_key="PickpocketingXP" rpg_param_value="22.5" />
+      <row rpg_param_key="ReadingXpPerHour" rpg_param_value="30" />
+      <row rpg_param_key="SecondaryStatXPRatio" rpg_param_value="0.8" />
+      <row rpg_param_key="SkillXPBlock" rpg_param_value="3" />
+      <row rpg_param_key="SkillXPComboHit" rpg_param_value="6" />
+      <row rpg_param_key="SkillXPHit" rpg_param_value="3" />
+      <row rpg_param_key="SkillXPKill" rpg_param_value="18" />
+      <row rpg_param_key="SkillXPPerfectBlock" rpg_param_value="12" />
+      <row rpg_param_key="SkillXPRiposte" rpg_param_value="12" />
+      <row rpg_param_key="SkillXPUseRepairKit" rpg_param_value="7.5" />
+      <row rpg_param_key="StatXPComboHit" rpg_param_value="6" />
+      <row rpg_param_key="StatXPHit" rpg_param_value="3" />
+      <row rpg_param_key="StatXPKill" rpg_param_value="12" />
+      <row rpg_param_key="StatXPSpeechPerSequence" rpg_param_value="2" />
+      <row rpg_param_key="StatXPVitalityPerDistance" rpg_param_value="12" />
+      <row rpg_param_key="StatXPVitalityPerJump" rpg_param_value="0.8" />
+      <row rpg_param_key="StatXPVitalityPerKill" rpg_param_value="22.5" />
+      <row rpg_param_key="StatXPVitalityPerVault" rpg_param_value="1.1" />
+      <row rpg_param_key="StealthAttackFailXp" rpg_param_value="15" />
+      <row rpg_param_key="StealthAttackMaxXp" rpg_param_value="75" />
+      <row rpg_param_key="StealthAttackMinXp" rpg_param_value="37.5" />
+      <row rpg_param_key="SharpeningMinIdealAngle" rpg_param_value="0" />
+      <row rpg_param_key="SharpeningMaxIdealAngle" rpg_param_value="0.98" />
+      <row rpg_param_key="SharpeningMinDestructionAngle" rpg_param_value="0.99" />
+      <row rpg_param_key="SharpeningMaxDestructionAngle" rpg_param_value="1" />
+      <row rpg_param_key="HarmlessFallHeight" rpg_param_value="9000" />
+      <row rpg_param_key="InjuringFallHeight" rpg_param_value="9000" />
+      <row rpg_param_key="FatalFallHeight" rpg_param_value="9000" />
+      <row rpg_param_key="FullClothDirtyingOnFullSpeed" rpg_param_value="5000" />
+    </rows>
+  </table>
+</database>
 ```
-
----
-
-<details><summary>Open DeviceProfiles.ini and textures lods experiment for performance</summary>
-<p>
-press <kbd>⊞ Win+R</kbd> then copy paste
-<br>
-%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
-<br>
-%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
-<br>
-%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
-</p>
-</details>
-
-```python
-(wip)
-```
-
----
-
-#### in nvidia control panel
-
-##### 1. 3D settings -> adjust image settings with preview -> use my preference emphasizing performance apply.
-
-##### 2. click on use the advanced 3D image settings and apply then click "take me there"
-
-##### 3. Anisotropic filtering:  Off for performance App-controlled or force your own setting for quality (8x is nice)
-
-##### 4. Low latency mode:
-
-###### Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
-
-###### On feels consistent (i use this and reflex in games that support it)
-
-###### Ultra and relfex (in-game) feels good when gpu usage is ~97%
-
-##### 5. Power management mode:  Prefer max performance  (this is the "+ boost" in reflex + boost)
-
-##### 6. Preferred refresh rate:  Highest available
-
-##### 7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works)
-
-##### 8. Texture filtering - Negative LOD bias:  Allow
-
-##### 9. Texture filtering quality:  High performance
-
-#####  10. Vertical sync:  Off
-
-<details><summary>11. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
-<p>
-1. NVCleanstall enabling it in advanced settings before installing or
-<br>
-2. use Wtools enable it and restart or
-<br>
-3. find ID: open device manager right click your GPU properties and click on events tab
-<br>
-looks like this:
-<br>
-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
-<br>
-find in regedit and set MSISupported to 1 then restart
-</p>
-</details>
