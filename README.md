@@ -1,5 +1,5 @@
 
-#### updated 2/26/2022 :ramen:
+#### updated 2/26/2022~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -30,7 +30,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 Global=off;
 
 [Audio]
-MaxChannels=0;------def 0
+MaxChannels=64;------def 0------64 for PERFORMANCE
 CommonAudioPoolSize=0;------def 0
 UnfocusedVolumeMultiplier=1;
 
@@ -44,16 +44,21 @@ DisplayGamma=2.2;
 PoolSizeVRAMPercentage=70;------def 70 TEXTUREPOOL CACHE
 
 [SystemSettings]
-r.DefaultFeature.AntiAliasing=2;------def 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=3;------def 3 set 1 or 2 FXAA 3 or 4 TAA
+r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
-r.TemporalAA.Upsampling=1;------def 0------changed to 1*
-r.TemporalAAUpsampleFiltered=1;------def 1
-r.TemporalAAFilterSize=0.5;------def 1------changed to 0.5*
-r.TemporalAASamples=4;------def 16------changed to 4*
-r.TemporalAACurrentFrameWeight=0.1;------def 0.2------changed to 0.1*
 r.TemporalAA.Algorithm=0;------def 0
+r.TemporalAA.AllowDownsampling=0;------def 1------changed to 0*------1 for PERFORMANCE
+r.TemporalAA.HistoryScreenPercentage=100;------def 100
 r.TemporalAA.R11G11B10History=0;------def 0------EXPERIMENTAL
+r.TemporalAA.Upsampling=1;------def 0------changed to 1*
+r.TemporalAA.Upscaler=1;------def 1
+r.TemporalAACatmullRom=0;------def 0
+r.TemporalAACurrentFrameWeight=0;------def 0.2------changed to 0*
+r.TemporalAAFilterSize=1;------def 1
+r.TemporalAAPauseCorrect=1;------def 1
+r.TemporalAASamples=4;------def 16------changed to 4*
+r.TemporalAAUpsampleFiltered=1;------def 1
 au.RenderThreadPriority=0;------def 0
 AudioThread.EnableBatchProcessing=1;------def 1
 Compat.UseDXT5NormalMaps=0;------def 0
@@ -196,8 +201,9 @@ r.OneFrameThreadLag=1;------def 1
 r.ParticleLightQuality=1;------def 1------0 for PERFORMANCE
 r.ParticleLODBias=0;------def 0
 r.ParticleMinTimeBetweenTicks=10;-----------changed to 10*
+r.PostProcessAllowBlendModes=1;------def 1
 r.RayTracing=0;------def 0
-r.ReflectionCaptureResolution=128;------def 128------64 for PERFORMANCE
+r.ReflectionCaptureResolution=128;------def 128
 r.ReflectionCaptureSupersampleFactor=1;------def 1
 r.ReflectionEnvironment=1;------def 1------0 for PERFORMANCE
 r.RefractionQuality=1;------def 2------0 for PERFORMANCE
@@ -217,7 +223,7 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=1;------def 1------0 for PERFORM
 r.Shadow.CacheWholeSceneShadows=1;------def 1
 r.Shadow.CacheWPOPrimitives=0;------def 0
 r.Shadow.CSM.MaxCascades=4;------def 3------0 or 2 for PERFORMANCE
-r.Shadow.CSM.TransitionScale=0.6;------def 0.8------changed to 0.6*
+r.Shadow.CSM.TransitionScale=1;------def 0.8------changed to 1*
 r.Shadow.CSMDepthBias=10;------def 10
 r.Shadow.DistanceScale=0.6;------def 0.85------changed to 0.6*
 r.Shadow.FilterMethod=0;------def 0
@@ -226,7 +232,7 @@ r.Shadow.MaxNumFarShadowCascades=0;------def 10------0 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
 r.Shadow.PointLightDepthBias=0.009;------def 0.02 changed to 0.009*
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
-r.Shadow.RadiusThreshold=0.03;------def 0.04------0.03 for PERFORMANCE
+r.Shadow.RadiusThreshold=0.01;------def 0.04------changed to 0.01*------0.1 or 0.04 for PERFORMANCE
 r.Shadow.SpotLightTransitionScale=120;------def 60 changed to 120*
 r.Shadow.TransitionScale=120;------def 60 changed to 120*
 r.ShadowQuality=3;------def 4------3 for PERFORMANCE
@@ -234,10 +240,11 @@ r.SkeletalMeshLODBias=0;------def 0
 r.SkeletalMeshLODRadiusScale=1;------def 1
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;------def 0------changed to 1*
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;------def 0------changed to 1*
-r.SkylightIntensityMultiplier=0.8;------def 1------changed to 0.8
+r.SkylightIntensityMultiplier=1;------def 1
 r.SSGI.Enable=0;------def 0
 r.SSR.HalfResSceneColor=1;------def 1
-r.SSR.Quality=0;------def 2------0 for PERFORMANCE
+r.SSR.Quality=2;------def 2------0 for PERFORMANCE
+r.SSR.Temporal=0;------def 0
 r.SSS.Checkerboard=1;------def 2------changed to 1
 r.StaticMeshLODDistanceScale=1;------def 1
 r.Streaming.MipBias=0;------def 0------1 for PERFORMANCE
@@ -249,7 +256,7 @@ r.TextureStreaming=1;------def 1
 r.TiledDeferredShading=1;------def 1------0 for PERFORMANCE
 r.Tonemapper.EmulateHDR=0;
 r.Tonemapper.GrainQuantization=1;------def 1 0 for PERFORMANCE
-r.Tonemapper.Quality=0;------def 5------changed to 0*
+r.Tonemapper.Quality=5;------def 5
 r.Tonemapper.Sharpen=0;------def 1------changed to 0*
 r.TonemapperGamma=0;
 r.TranslucencyLightingVolume=1;------def 1------0 for PERFORMANCE
@@ -263,6 +270,12 @@ r.VolumetricFog.InjectShadowedLightsSeparately=0;------def 1------0 for PERFORMA
 r.VolumetricFog=1;------def 1------0 for PERFORMANCE
 r.VSync=0;
 r.Vulkan.Depth24Bit=0;------def 0
+r.Water.EnableShallowWaterSimulation=1;------def 1
+r.Water.EnableUnderwaterPostProcess=1;------def 1
+r.Water.SingleLayer.Reflection=1;------def 1------0 for PERFORMANCE
+r.Water.SingleLayer.RefractionDownsampleFactor=4;------def 2------4 for PERFORMANCE
+r.Water.SingleLayer.SSR=1;------def 1------0 for PERFORMANCE
+r.Water.SingleLayer.SSRTAA=0;------def 1------changed to 0*
 RHI.SyncInterval=0;------def 1------changed to 0*
 RHI.SyncSlackMS=0;------def 10------changed to 0*
 ```
@@ -273,23 +286,23 @@ RHI.SyncSlackMS=0;------def 10------changed to 0*
 
 ```python
 TAA
-r.DefaultFeature.AntiAliasing=2;------def 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=3;------def 3 set 1 or 2 FXAA 3 or 4 TAA
+r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
 
 TAAU for PERFORMANCE
-r.DefaultFeature.AntiAliasing=2;------def 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=3;------def 3 set 1 or 2 FXAA 3 or 4 TAA
+r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=86.66;------def 100 TAAU INPUT RESOLUTION
 
 FXAA
-r.DefaultFeature.AntiAliasing=1;------def 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=2;------def 3 set 1 or 2 FXAA 3 or 4 TAA
+r.DefaultFeature.AntiAliasing=1;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=2;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
 
 NONE
-r.DefaultFeature.AntiAliasing=0;------def 2 set 1 for FXAA 2 for TAA 3 for MSAA 0 for none
-r.PostProcessAAQuality=0;------def 3 set 1 or 2 FXAA 3 or 4 TAA
+r.DefaultFeature.AntiAliasing=0;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=0;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
 ```
 
