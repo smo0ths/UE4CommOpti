@@ -267,7 +267,6 @@ r.Tonemapper.EmulateHDR=0;
 r.Tonemapper.GrainQuantization=1;------def 1 0 for PERFORMANCE
 r.Tonemapper.Quality=5;------def 5
 r.Tonemapper.Sharpen=0;------def 1------changed to 0*
-r.TonemapperFilm=0;------def 0
 r.TonemapperGamma=0;
 r.TranslucencyLightingVolume=1;------def 1------0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32;------def 48------32 for PERFORMANCE
