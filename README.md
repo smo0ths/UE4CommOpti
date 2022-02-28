@@ -1,5 +1,5 @@
 
-#### updated 2/26/2022~ :ramen:
+#### updated 2/28/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -60,6 +60,7 @@ r.TemporalAAPauseCorrect=1;------def 1
 r.TemporalAASamples=4;------def 16------changed to 4*
 r.TemporalAAUpsampleFiltered=1;------def 1
 au.RenderThreadPriority=0;------def 0
+AudioThread.BatchAsyncBatchSize=128;------def 128
 AudioThread.EnableBatchProcessing=1;------def 1
 Compat.UseDXT5NormalMaps=0;------def 0
 foliage.DensityScale=0.6;------def 0.8------0.6 for PERFORMANCE
@@ -69,11 +70,12 @@ foliage.MinimumScreenSize=0.0001;------def 0.0001
 foliage.MinVertsToSplitNode=8192;------def 8192
 foliage.OverestimateLOD=0;------def 0
 FX.AllowAsyncTick=1;------def 1
-FX.BatchAsync=0;------def 0
-FX.FXAllowParticleMeshLODs=0;------def 0
-FX.MaxCPUParticlesPerEmitter=500;------def 1000------changed to 500*
-FX.MaxGPUParticlesSpawnedPerFrame=25000;------def 1048576------changed to 25000*
-FX.QualityLevelSpawnRateScaleReferenceLevel=2;------def 2------0 for PERFORMANCE
+FX.BatchAsync=1;------def 0------changed to 1*
+FX.BatchAsyncBatchSize=32;------def 0------changed to 32*
+FX.FXAllowParticleMeshLODs=1;------def 0------changed to 1*
+FX.MaxCPUParticlesPerEmitter=100;------def 1000------changed to 100*
+FX.MaxGPUParticlesSpawnedPerFrame=104858;------def 1048576------changed to 104858*
+FX.QualityLevelSpawnRateScaleReferenceLevel=1;------def 2------changed to 1*------0 for PERFORMANCE
 grass.DensityScale=0.6;------def 1------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;------def 0------1 for PERFORMANCE
 grass.TickInterval=1;------def 1
@@ -276,6 +278,13 @@ r.Upscale.Quality=0;------def 2------changed to 0*
 r.UseClusteredDeferredShading=0;------def 0
 r.UseFastIntersect=1;------def 1
 r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
+r.ViewDistanceScale.ApplySecondaryScale=0;------def 0
+r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;------def 0
+r.ViewDistanceScale.FieldOfViewMaxAngle=90;------def 90
+r.ViewDistanceScale.FieldOfViewMaxAngleScale=1;------def 1
+r.ViewDistanceScale.FieldOfViewMinAngle=45;------def 45
+r.ViewDistanceScale.FieldOfViewMinAngleScale=1;------def 1
+r.ViewDistanceScale.SecondaryScale=1;------def 1
 r.ViewDistanceScale=1;------def 1------0.8 for PERFORMANCE
 r.VolumetricCloud.ShadowMap=0;------def 1------changed to 0*
 r.VolumetricCloud.SkyAO=0;------def 1------changed to 0*
