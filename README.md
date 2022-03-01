@@ -1,5 +1,5 @@
 
-#### updated 2/28/2022 :ramen:
+#### updated 3/1/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -70,6 +70,7 @@ foliage.MinimumScreenSize=0.0001;------def 0.0001
 foliage.MinVertsToSplitNode=8192;------def 8192
 foliage.OverestimateLOD=0;------def 0
 FX.AllowAsyncTick=1;------def 1
+FX.AllowGPUSorting=1;------def 1
 FX.BatchAsync=1;------def 0------changed to 1*
 FX.BatchAsyncBatchSize=32;------def 0------changed to 32*
 FX.FXAllowParticleMeshLODs=1;------def 0------changed to 1*
@@ -122,7 +123,7 @@ r.chaos.ReflectionCaptureStaticSceneOnly=1;------def 1
 r.ClearCoatNormal=0;------def 0
 r.CompileShadersForDevelopment=0;------def 1------0 for PERFORMANCE
 r.ContactShadows=0;------def 1------0 for PERFORMANCE
-r.CreateShadersOnLoad=0;------def 0
+r.CreateShadersOnLoad=1;------def 0------changed to 1*
 r.D3D11.Depth24Bit=0;------def 0
 r.D3D12.Depth24Bit=0;------def 0
 r.DBuffer=1;------def 1------0 for PERFORMANCE
@@ -196,7 +197,7 @@ r.LightShaftQuality=0;------def 1------0 for PERFORMANCE
 r.MaterialQualityLevel=1;------def 1------0 for PERFORMANCE
 r.MaxAnisotropy=8;------def 4------changed to 8*
 r.MaxCSMRadiusToAllowPerObjectShadows=300;------def 8000 changed to 300*
-r.MinRoughnessOverride=0;------def 0
+r.MinRoughnessOverride=0.1;------def 0------changed to 0.1*
 r.MinScreenRadiusForCSMDepth=0.01;------def 0.01
 r.MinScreenRadiusForDepthPrepass=0.03;------def 0.03
 r.MinScreenRadiusForLights=0.04;------def 0.03------changed to 0.04*------0.2 for PERFORMANCE
@@ -213,13 +214,12 @@ r.ParticleLODBias=0;------def 0
 r.ParticleMinTimeBetweenTicks=10;-----------changed to 10*
 r.PostProcessAllowBlendModes=1;------def 1
 r.RayTracing=0;------def 0
-r.ReflectionCaptureResolution=128;------def 128
 r.ReflectionCaptureSupersampleFactor=1;------def 1
 r.ReflectionEnvironment=1;------def 1------0 for PERFORMANCE
 r.RefractionQuality=1;------def 2------0 for PERFORMANCE
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;------def 0
 r.RenderTargetPool.TransientAliasingMode=2;------def 2
-r.RenderTargetPoolMin=400;------def 400
+r.RenderTargetPoolMin=1000;------def 400------changed to 1000*
 r.SceneColorFormat=3;------def 3
 r.SceneColorFringe.Max=-1;------def -1
 r.SceneColorFringeQuality=0;------def 1------changed to 0*
@@ -252,12 +252,13 @@ r.SkeletalMeshLODRadiusScale=1;------def 1
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;------def 0------changed to 1*
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;------def 0------changed to 1*
 r.SkylightIntensityMultiplier=1;------def 1
-r.SSGI.Enable=0;------def 0
+r.SSGI.Quality=0;------def 2------changed to 0*------0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;------def 1
-r.SSR.Quality=2;------def 2------0 for PERFORMANCE
+r.SSR.MaxRoughness=0.1;------def -1------changed to 0.1*
+r.SSR.Quality=1;------def 2------changed to 1*------0 for PERFORMANCE
 r.SSR.Temporal=0;------def 0
 r.SSS.Checkerboard=1;------def 2------changed to 1
-r.StaticMeshLODDistanceScale=1;------def 1
+r.StaticMeshLODDistanceScale=0.75;------def 1------changed to 0.75*
 r.Streaming.MipBias=0;------def 0------1 for PERFORMANCE
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;------def 1024
 r.Streaming.PoolSize=1000;------def 800------changed to 1000*
@@ -294,13 +295,14 @@ r.VolumetricFog.InjectShadowedLightsSeparately=0;------def 1------0 for PERFORMA
 r.VolumetricFog=1;------def 1------0 for PERFORMANCE
 r.VSync=0;
 r.Vulkan.Depth24Bit=0;------def 0
-r.Water.EnableShallowWaterSimulation=1;------def 1------0 for PERFORMANCE
-r.Water.EnableUnderwaterPostProcess=1;------def 1
+r.Water.EnableShallowWaterSimulation=0;------def 1------changed to 0*------0 for PERFORMANCE
+r.Water.EnableUnderwaterPostProcess=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.Water.ShallowWaterRenderTargetSize=512;------def 1024------changed to 512*
 r.Water.SingleLayer.Reflection=1;------def 1------0 for PERFORMANCE
 r.Water.SingleLayer.RefractionDownsampleFactor=4;------def 2------4 for PERFORMANCE
 r.Water.SingleLayer.SSR=1;------def 1------0 for PERFORMANCE
 r.Water.SingleLayer.SSRTAA=0;------def 1------changed to 0*
+r.Water.SingleLayer.TiledComposite=1;------def 1
 RHI.SyncInterval=0;------def 1------changed to 0*
 RHI.SyncSlackMS=0;------def 10------changed to 0*
 ```
