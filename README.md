@@ -1,5 +1,5 @@
 
-#### updated 3/1/2022 :ramen:
+#### updated 3/11/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -71,7 +71,7 @@ foliage.MinVertsToSplitNode=8192;------def 8192
 foliage.OverestimateLOD=0;------def 0
 FX.AllowAsyncTick=1;------def 1
 FX.AllowGPUSorting=1;------def 1
-FX.BatchAsync=1;------def 0------changed to 1*
+FX.BatchAsync=0;------def 0
 FX.BatchAsyncBatchSize=32;------def 0------changed to 32*
 FX.FXAllowParticleMeshLODs=1;------def 0------changed to 1*
 FX.MaxCPUParticlesPerEmitter=100;------def 1000------changed to 100*
