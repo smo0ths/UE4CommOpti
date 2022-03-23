@@ -1,5 +1,5 @@
 
-#### updated 3/15/2022 :ramen:
+#### updated 3/23/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -264,7 +264,7 @@ r.SSR.MaxRoughness=0.1;------def -1------changed to 0.1*
 r.SSR.Quality=1;------def 2------changed to 1*------0 for PERFORMANCE
 r.SSR.Temporal=0;------def 0
 r.SSS.Checkerboard=1;------def 2------changed to 1
-r.StaticMeshLODDistanceScale=0.75;------def 1------changed to 0.75*
+r.StaticMeshLODDistanceScale=1;------def 1
 r.Streaming.MipBias=0;------def 0------1 for PERFORMANCE
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;------def 1024
 r.Streaming.PoolSize=1000;------def 800------changed to 1000*
