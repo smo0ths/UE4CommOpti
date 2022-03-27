@@ -1,5 +1,5 @@
 
-#### updated 3/26/2022 :ramen:
+#### updated 3/26/2022~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -237,7 +237,7 @@ r.Shaders.Optimize=1;------def 1
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;------def 1------0 for PERFORMANCE
 r.Shadow.CacheWholeSceneShadows=1;------def 1
 r.Shadow.CacheWPOPrimitives=0;------def 0
-r.Shadow.CSM.MaxCascades=4;------def 3------0 or 2 for PERFORMANCE
+r.Shadow.CSM.MaxCascades=3;------def 3------0 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;------def 0.8------changed to 1*
 r.Shadow.CSMDepthBias=10;------def 10
 r.Shadow.DistanceScale=0.6;------def 0.85------changed to 0.6*
