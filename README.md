@@ -1,5 +1,5 @@
 
-#### updated 3/23/2022 :ramen:
+#### updated 3/26/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -75,8 +75,6 @@ FX.AllowGPUSorting=1;------def 1
 FX.BatchAsync=0;------def 0
 FX.BatchAsyncBatchSize=32;------def 32
 FX.FXAllowParticleMeshLODs=0;------def 0
-FX.MaxCPUParticlesPerEmitter=100;------def 1000------changed to 100*
-FX.MaxGPUParticlesSpawnedPerFrame=104857;------def 1048576------changed to 104857*
 FX.QualityLevelSpawnRateScaleReferenceLevel=2;------def 2------0 for PERFORMANCE
 FX.ParticleSystemPool.Enable=1------def 1
 FX.ParticleSystemPool.CleanTime=30;------def 30
@@ -304,9 +302,11 @@ r.Vulkan.Depth24Bit=0;------def 0
 r.Water.EnableShallowWaterSimulation=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.Water.EnableUnderwaterPostProcess=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.Water.ShallowWaterRenderTargetSize=512;------def 1024------changed to 512*
-r.Water.SingleLayer.Reflection=1;------def 1------0 for PERFORMANCE
+r.Water.SingleLayer.Reflection=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.Water.SingleLayer.RefractionDownsampleFactor=4;------def 2------4 for PERFORMANCE
-r.Water.SingleLayer.SSR=1;------def 1------0 for PERFORMANCE
+r.Water.SingleLayer.RefractionFullPrecision=0;------def 0
+r.Water.SingleLayer.RTR=1;------def 1
+r.Water.SingleLayer.SSR=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.Water.SingleLayer.SSRTAA=0;------def 1------changed to 0*
 r.Water.SingleLayer.TiledComposite=1;------def 1
 RHI.SyncInterval=0;------def 1------changed to 0*
@@ -416,6 +416,7 @@ ContactShadows=0
 PostFX_Saturation=1.2
 PostFX_Sharpness=0
 OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2", (Value=1,bModified=False)));------works like engineini but in gameusersettingsini
+OverrideOptions=(("r.Streaming.PoolSize", (Value=1000,bModified=True)));------another example
 
 [ScalabilityGroups]
 sg.ResolutionQuality=100
