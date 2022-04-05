@@ -1,5 +1,5 @@
 
-#### updated 3/26/2022~ :ramen:
+#### updated 4/5/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -75,7 +75,7 @@ FX.AllowGPUSorting=1;------def 1
 FX.BatchAsync=0;------def 0
 FX.BatchAsyncBatchSize=32;------def 32
 FX.FXAllowParticleMeshLODs=0;------def 0
-FX.QualityLevelSpawnRateScaleReferenceLevel=2;------def 2------0 for PERFORMANCE
+FX.QualityLevelSpawnRateScaleReferenceLevel=1;------def 2------changed to 1*------0 for PERFORMANCE
 FX.ParticleSystemPool.Enable=1------def 1
 FX.ParticleSystemPool.CleanTime=30;------def 30
 FX.ParticleSystemPool.KillUnusedTime=180;------def 180
@@ -104,7 +104,7 @@ r.AmbientOcclusion.Compute.Smooth=1;------def 1
 r.AmbientOcclusion.Compute=0;------def 0------1 for PERFORMANCE
 r.AmbientOcclusionLevels=3;------def 3------0 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=100;------def 100
-r.AmbientOcclusionMipLevelFactor=0.6;------def 0.6
+r.AmbientOcclusionMipLevelFactor=0.5;------def 0.6------changed to 0.5*------0.6 for PERFORMANCE
 r.AmbientOcclusionRadiusScale=0;------def 1------0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=-1;------def -1
 r.AnisotropicMaterials=1;------def 1
@@ -210,7 +210,7 @@ r.MorphTarget.Mode=1;------def 1
 r.MotionBlurQuality=0;
 r.MSAA.CompositingSampleCount=1;------def 3------changed to 1*
 r.MSAACount=1;------def 4------changed to 1*
-r.NormalMapsForStaticLighting=1;------def 1------0 for PERFORMANCE
+r.NormalMapsForStaticLighting=0;------def 1
 r.NumBufferedOcclusionQueries=1;------def 1
 r.OneFrameThreadLag=1;------def 1
 r.ParticleLightQuality=1;------def 1------0 for PERFORMANCE
@@ -218,12 +218,12 @@ r.ParticleLODBias=0;------def 0
 r.ParticleMinTimeBetweenTicks=10;-----------changed to 10*
 r.PostProcessAllowBlendModes=1;------def 1
 r.RayTracing=0;------def 0
-r.ReflectionCaptureSupersampleFactor=1;------def 1
+r.ReflectionCaptureSupersampleFactor=0;------def 1------changed to 0*
 r.ReflectionEnvironment=1;------def 1------0 for PERFORMANCE
 r.RefractionQuality=1;------def 2------0 for PERFORMANCE
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;------def 0
 r.RenderTargetPool.TransientAliasingMode=2;------def 2
-r.RenderTargetPoolMin=1000;------def 400------changed to 1000*
+r.RenderTargetPoolMin=400;------def 400
 r.SceneColorFormat=3;------def 3
 r.SceneColorFringe.Max=-1;------def -1
 r.SceneColorFringeQuality=0;------def 1------changed to 0*
