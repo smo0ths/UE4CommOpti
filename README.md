@@ -1,5 +1,5 @@
 
-#### updated 4/5/2022 :ramen:
+#### updated 4/15/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -30,7 +30,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 Global=off;
 
 [Audio]
-MaxChannels=64;------def 0------64 for PERFORMANCE
+MaxChannels=96;------def 0------64 for PERFORMANCE
 CommonAudioPoolSize=0;------def 0
 UnfocusedVolumeMultiplier=1;
 
@@ -75,7 +75,7 @@ FX.AllowGPUSorting=1;------def 1
 FX.BatchAsync=0;------def 0
 FX.BatchAsyncBatchSize=32;------def 32
 FX.FXAllowParticleMeshLODs=0;------def 0
-FX.QualityLevelSpawnRateScaleReferenceLevel=1;------def 2------changed to 1*------0 for PERFORMANCE
+FX.QualityLevelSpawnRateScaleReferenceLevel=2;------def 2------changed to 1*------0 for PERFORMANCE
 FX.ParticleSystemPool.Enable=1------def 1
 FX.ParticleSystemPool.CleanTime=30;------def 30
 FX.ParticleSystemPool.KillUnusedTime=180;------def 180
@@ -245,7 +245,7 @@ r.Shadow.FilterMethod=0;------def 0
 r.Shadow.MaxCSMResolution=2048;------def 2048------512 or 1024 for PERFORMANCE
 r.Shadow.MaxNumFarShadowCascades=0;------def 10------0 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
-r.Shadow.PointLightDepthBias=0.009;------def 0.02 changed to 0.009*
+r.Shadow.PointLightDepthBias=0.009;------def 0.02------changed to 0.009*
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
 r.Shadow.RadiusThreshold=0.01;------def 0.04------changed to 0.01*------0.1 or 0.04 for PERFORMANCE
 r.Shadow.SpotLightTransitionScale=120;------def 60 changed to 120*
@@ -272,7 +272,7 @@ r.TextureStreaming=1;------def 1
 r.TiledDeferredShading=1;------def 1------0 for PERFORMANCE
 r.Tonemapper.EmulateHDR=0;
 r.Tonemapper.GrainQuantization=1;------def 1 0 for PERFORMANCE
-r.Tonemapper.Quality=5;------def 5
+r.Tonemapper.Quality=0;------def 5------changed to 0*
 r.Tonemapper.Sharpen=0;------def 1------changed to 0*
 r.TonemapperGamma=0;
 r.TranslucencyLightingVolume=1;------def 1------0 for PERFORMANCE
@@ -296,7 +296,7 @@ r.VolumetricCloud.SkyAO=0;------def 1------changed to 0*
 r.VolumetricFog.GridPixelSize=32;------def 16------changed to 32*
 r.VolumetricFog.HistoryMissSupersampleCount=1;------def 4------changed to 1*------0 for PERFORMANCE
 r.VolumetricFog.InjectShadowedLightsSeparately=0;------def 1------0 for PERFORMANCE
-r.VolumetricFog=1;------def 1------0 for PERFORMANCE
+r.VolumetricFog=0;------def 1------0 for PERFORMANCE
 r.VSync=0;
 r.Vulkan.Depth24Bit=0;------def 0
 r.Water.EnableShallowWaterSimulation=0;------def 1------changed to 0*------0 for PERFORMANCE
