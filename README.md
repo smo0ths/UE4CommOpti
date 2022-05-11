@@ -1,5 +1,5 @@
 
-#### updated 5/11/2022 :ramen:
+#### updated 5/11/2022~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -167,7 +167,7 @@ r.EarlyZPass=2;------def 2
 r.EarlyZPassMovable=1;------def 1
 r.EarlyZPassOnlyMaterialMasking=1;------def 1
 r.Emitter.FastPoolEnable=1;------def 0------changed to 1*
-r.EmitterSpawnRateScale=1;------def 1
+r.EmitterSpawnRateScale=1;------def 1------0.125 for PERFORMANCE
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;------def 1
 r.EnableAsyncComputeVolumetricFog=1;
 r.EyeAdaptationQuality=2;------def 2
@@ -472,9 +472,9 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 ##### 6. Preferred refresh rate:  Highest available
 
-##### 7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works)
+##### 7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game)
 
-##### 8. Texture filtering - Negative LOD bias:  Allow
+##### 8. Texture filtering - Negative LOD bias:  Clamp  (this should be the default i.e. 0 bias but maybe a negative bias could help upscaling TAA and DLSS techniques of AA for textures but i doubt it)
 
 ##### 9. Texture filtering quality:  High performance
 
