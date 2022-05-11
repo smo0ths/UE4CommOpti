@@ -1,5 +1,5 @@
 
-#### updated 5/11/2022~ :ramen:
+#### updated 5/11/2022~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -46,7 +46,7 @@ PoolSizeVRAMPercentage=70;------def 70 TEXTUREPOOL CACHE
 [SystemSettings]
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=75;------def 100 TAAU INPUT RESOLUTION
 r.TemporalAA.Algorithm=0;------def 0
 r.TemporalAA.AllowDownsampling=1;------def 1
 r.TemporalAA.HistoryScreenPercentage=100;------def 100
@@ -255,7 +255,7 @@ r.SkeletalMeshLODBias=0;------def 0
 r.SkeletalMeshLODRadiusScale=1;------def 1
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;------def 0------changed to 1*
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;------def 0------changed to 1*
-r.SkylightIntensityMultiplier=1;------def 1
+r.SkylightIntensityMultiplier=0.85;------def 1------changed to 0.85*
 r.SSGI.Quality=0;------def 2------changed to 0*------0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;------def 1
 r.SSR.MaxRoughness=0.1;------def -1------changed to 0.1*
@@ -273,6 +273,8 @@ r.TiledDeferredShading=1;------def 1------0 for PERFORMANCE
 r.TiledDeferredShading.MinimumCount=40;--------------------------default 80------changed to 40*
 r.Tonemapper.EmulateHDR=0;
 r.Tonemapper.GrainQuantization=1;------def 1------0 for PERFORMANCE
+r.Tonemapper.MergeWithUpscale.Mode=1;------def 0------changed to 1*
+r.Tonemapper.MergeWithUpscale.Threshold=0.49;------def 0.49
 r.Tonemapper.Quality=5;------def 5------0 for PERFORMANCE
 r.Tonemapper.Sharpen=0;------def 1------changed to 0*
 r.TonemapperGamma=0;
@@ -328,6 +330,10 @@ TAAU for PERFORMANCE
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=86.66;------def 100 TAAU INPUT RESOLUTION
+or
+r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
+r.ScreenPercentage=75;------def 100 TAAU INPUT RESOLUTION
 
 FXAA
 r.DefaultFeature.AntiAliasing=1;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
@@ -338,6 +344,12 @@ NONE
 r.DefaultFeature.AntiAliasing=0;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=0;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
+
+NONE for PERFORMANCE
+r.DefaultFeature.AntiAliasing=0;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
+r.PostProcessAAQuality=0;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
+r.ScreenPercentage=75;------def 100 TAAU INPUT RESOLUTION
+
 ```
 
 ---
