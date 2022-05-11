@@ -1,5 +1,5 @@
 
-#### updated 4/15/2022 :ramen:
+#### updated 5/11/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -75,7 +75,7 @@ FX.AllowGPUSorting=1;------def 1
 FX.BatchAsync=0;------def 0
 FX.BatchAsyncBatchSize=32;------def 32
 FX.FXAllowParticleMeshLODs=0;------def 0
-FX.QualityLevelSpawnRateScaleReferenceLevel=2;------def 2------changed to 1*------0 for PERFORMANCE
+FX.QualityLevelSpawnRateScaleReferenceLevel=2;------def 2------0 for PERFORMANCE
 FX.ParticleSystemPool.Enable=1------def 1
 FX.ParticleSystemPool.CleanTime=30;------def 30
 FX.ParticleSystemPool.KillUnusedTime=180;------def 180
@@ -167,7 +167,7 @@ r.EarlyZPass=2;------def 2
 r.EarlyZPassMovable=1;------def 1
 r.EarlyZPassOnlyMaterialMasking=1;------def 1
 r.Emitter.FastPoolEnable=1;------def 0------changed to 1*
-r.EmitterSpawnRateScale=0.5;------def 1------0.5 for PERFORMANCE
+r.EmitterSpawnRateScale=1;------def 1
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;------def 1
 r.EnableAsyncComputeVolumetricFog=1;
 r.EyeAdaptationQuality=2;------def 2
@@ -270,16 +270,17 @@ r.Streaming.PoolSizeForMeshes=-1;------def -1
 r.TessellationAdaptivePixelsPerTriangle=9999999;------def 48------9999999 for PERFORMANCE
 r.TextureStreaming=1;------def 1
 r.TiledDeferredShading=1;------def 1------0 for PERFORMANCE
+r.TiledDeferredShading.MinimumCount=40;--------------------------default 80------changed to 40*
 r.Tonemapper.EmulateHDR=0;
 r.Tonemapper.GrainQuantization=1;------def 1 0 for PERFORMANCE
-r.Tonemapper.Quality=3;------def 5------changed to 3*------0 for PERFORMANCE
+r.Tonemapper.Quality=5;------def 5------0 for PERFORMANCE
 r.Tonemapper.Sharpen=0;------def 1------changed to 0*
 r.TonemapperGamma=0;
 r.TranslucencyLightingVolume=1;------def 1------0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32;------def 48------32 for PERFORMANCE
 r.UITextureLODBias=0;------def 0
 r.UniformBufferPooling=1;------def 1
-r.Upscale.Quality=0;------def 2------changed to 0*
+r.Upscale.Quality=2;------def 2
 r.UseClusteredDeferredShading=0;------def 0
 r.UseFastIntersect=1;------def 1
 r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
