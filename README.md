@@ -1,5 +1,5 @@
 
-#### updated 5/11/2022~~ :ramen:
+#### updated 5/17/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -244,6 +244,7 @@ r.Shadow.DistanceScale=0.6;------def 0.85------changed to 0.6*
 r.Shadow.FilterMethod=0;------def 0
 r.Shadow.MaxCSMResolution=2048;------def 2048------512 or 1024 for PERFORMANCE
 r.Shadow.MaxNumFarShadowCascades=0;------def 10------0 for PERFORMANCE
+r.Shadow.MaxResolution=1024;------def 2048------changed to 1024*------------512 or 1024 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
 r.Shadow.PointLightDepthBias=0.009;------def 0.02------changed to 0.009*
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
