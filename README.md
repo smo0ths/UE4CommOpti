@@ -1,5 +1,5 @@
 
-#### updated 5/17/2022 :ramen:
+#### updated 5/19/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -46,7 +46,7 @@ PoolSizeVRAMPercentage=70;------def 70 TEXTUREPOOL CACHE
 [SystemSettings]
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=75;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
 r.TemporalAA.Algorithm=0;------def 0
 r.TemporalAA.AllowDownsampling=1;------def 1
 r.TemporalAA.HistoryScreenPercentage=100;------def 100
@@ -102,9 +102,9 @@ r.AllowSimpleLights=1;------def 1------0 for PERFORMANCE
 r.AlsoUseSphereForFrustumCull=0;------def 0
 r.AmbientOcclusion.Compute.Smooth=1;------def 1
 r.AmbientOcclusion.Compute=0;------def 0------1 for PERFORMANCE
-r.AmbientOcclusionLevels=3;------def 3------0 for PERFORMANCE
+r.AmbientOcclusionLevels=2;------def 3------changed to 2*------0 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=100;------def 100
-r.AmbientOcclusionMipLevelFactor=0.5;------def 0.6------changed to 0.5*------0.6 for PERFORMANCE
+r.AmbientOcclusionMipLevelFactor=0.6;------def 0.6------0.6 for PERFORMANCE
 r.AmbientOcclusionRadiusScale=0;------def 1------0 for PERFORMANCE
 r.AmbientOcclusionStaticFraction=-1;------def -1
 r.AnisotropicMaterials=1;------def 1
@@ -223,7 +223,7 @@ r.ReflectionEnvironment=1;------def 1------0 for PERFORMANCE
 r.RefractionQuality=1;------def 2------0 for PERFORMANCE
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;------def 0
 r.RenderTargetPool.TransientAliasingMode=2;------def 2
-r.RenderTargetPoolMin=400;------def 400
+r.RenderTargetPoolMin=500;------def 400------changed to 500*
 r.SceneColorFormat=3;------def 3
 r.SceneColorFringe.Max=-1;------def -1
 r.SceneColorFringeQuality=0;------def 1------changed to 0*
@@ -244,7 +244,7 @@ r.Shadow.DistanceScale=0.6;------def 0.85------changed to 0.6*
 r.Shadow.FilterMethod=0;------def 0
 r.Shadow.MaxCSMResolution=2048;------def 2048------512 or 1024 for PERFORMANCE
 r.Shadow.MaxNumFarShadowCascades=0;------def 10------0 for PERFORMANCE
-r.Shadow.MaxResolution=1024;------def 2048------changed to 1024*------------512 or 1024 for PERFORMANCE
+r.Shadow.MaxResolution=1024;------def 2048------changed to 1024*------512 or 1024 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
 r.Shadow.PointLightDepthBias=0.009;------def 0.02------changed to 0.009*
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
@@ -256,7 +256,7 @@ r.SkeletalMeshLODBias=0;------def 0
 r.SkeletalMeshLODRadiusScale=1;------def 1
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=1;------def 0------changed to 1*
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;------def 0------changed to 1*
-r.SkylightIntensityMultiplier=0.85;------def 1------changed to 0.85*
+r.SkylightIntensityMultiplier=0.8;------def 1------changed to 0.8*
 r.SSGI.Quality=0;------def 2------changed to 0*------0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;------def 1
 r.SSR.MaxRoughness=0.1;------def -1------changed to 0.1*
@@ -284,6 +284,7 @@ r.TranslucencyLightingVolumeDim=32;------def 48------32 for PERFORMANCE
 r.UITextureLODBias=0;------def 0
 r.UniformBufferPooling=1;------def 1
 r.Upscale.Quality=2;------def 2
+r.Upscale.Softness=1;------def 1
 r.UseClusteredDeferredShading=0;------def 0
 r.UseFastIntersect=1;------def 1
 r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
@@ -325,31 +326,31 @@ RHI.SyncSlackMS=0;------def 10------changed to 0*
 TAA
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
 
 TAAU for PERFORMANCE
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=86.66;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=86.66;------def 100------TAAU INPUT RESOLUTION
 or
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=75;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=75;------def 100------TAAU INPUT RESOLUTION
 
 FXAA
 r.DefaultFeature.AntiAliasing=1;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=2;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
 
 NONE
 r.DefaultFeature.AntiAliasing=0;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=0;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=100;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
 
 NONE for PERFORMANCE
 r.DefaultFeature.AntiAliasing=0;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
 r.PostProcessAAQuality=0;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=75;------def 100 TAAU INPUT RESOLUTION
+r.ScreenPercentage=75;------def 100------TAAU INPUT RESOLUTION
 
 ```
 
