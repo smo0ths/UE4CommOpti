@@ -1,5 +1,5 @@
 
-#### updated 5/22/2022 :ramen:
+#### updated 5/23/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -45,7 +45,7 @@ PoolSizeVRAMPercentage=70;------def 70 TEXTUREPOOL CACHE
 
 [ConsoleVariables]
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=4;------def 3------changed to 4*------1/2 FXAA 3/4/5/6 TAA 0 OFF
+r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
 r.TemporalAA.Algorithm=0;------def 0
 r.TemporalAA.AllowDownsampling=1;------def 1
@@ -205,7 +205,7 @@ r.MinRoughnessOverride=0.1;------def 0------changed to 0.1*
 r.MinScreenRadiusForCSMDepth=0.01;------def 0.01
 r.MinScreenRadiusForDepthPrepass=0.03;------def 0.03
 r.MinScreenRadiusForLights=0.04;------def 0.03------changed to 0.04*------0.2 for PERFORMANCE
-r.MipMapLODBias=0;------def 0
+r.MipMapLODBias=-1;------def 0------changed to -1*------0 for PERFORMANCE
 r.MorphTarget.Mode=1;------def 1
 r.MotionBlurQuality=0;
 r.MSAA.CompositingSampleCount=1;------def 3------changed to 1*
@@ -218,7 +218,7 @@ r.ParticleLODBias=0;------def 0
 r.ParticleMinTimeBetweenTicks=10;-----------changed to 10*
 r.PostProcessAllowBlendModes=1;------def 1
 r.RayTracing=0;------def 0
-r.ReflectionCaptureResolution=256;------def 128
+r.ReflectionCaptureResolution=256;------def 128------changed to 256*------128 for PERFORMANCE
 r.ReflectionCaptureSupersampleFactor=0;------def 1------changed to 0*
 r.ReflectionEnvironment=1;------def 1------0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixLargestWeight=1;------def 10000------changed to 1*
@@ -424,7 +424,7 @@ DlssQualitySetting=1
 ResolutionScaleModifier=1
 DFAO=
 Tessellation=0
-TessellationMode=48
+TessellationMode=9999999
 bTelemetryEnabled=0
 bUseDynamicResolution=0
 FullscreenMode=0
@@ -450,7 +450,7 @@ sg.AnimationQuality=2
 
 ---
 
-<details><summary>Open DeviceProfiles.ini and textures lods experiment for performance</summary>
+<details><summary>Open DeviceProfiles.ini and textures lods, experiment or just skip</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
@@ -464,24 +464,24 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 ```python
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=1024,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=4096,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 ```
 
 ---
@@ -514,7 +514,9 @@ TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=4
 
 #####  10. Vertical sync:  Off
 
-<details><summary>11. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
+#####  11. Display -> Adjust desktop size and position -> set no scaling and Perform scaling on: Display
+
+<details><summary>12. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
 <p>
 1. NVCleanstall enabling it in advanced settings before installing or
 <br>
