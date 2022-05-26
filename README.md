@@ -1,5 +1,5 @@
 
-#### updated 5/23/2022 :ramen:
+#### updated 5/26/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -83,7 +83,7 @@ FX.ParticleCollisionIgnoreInvisibleTime=0.1;------def 0.1
 FX.ParticleManagerAsyncBatchSize=8;------def 8
 grass.DensityScale=0.6;------def 1------0.6 for PERFORMANCE
 grass.DisableDynamicShadows=0;------def 0------1 for PERFORMANCE
-grass.TickInterval=1;------def 1
+grass.TickInterval=10;------def 1------changed to 10*------10 for PERFORMANCE
 p.AllowCachedOverlaps=1;------def 1
 p.AnimDynamics=1;------def 1------0 for PERFORMANCE
 p.AnimDynamicsLODThreshold=-1;------def -1
@@ -128,8 +128,8 @@ r.ClearCoatNormal=0;------def 0
 r.CompileShadersForDevelopment=0;------def 1------0 for PERFORMANCE
 r.ContactShadows=0;------def 1------0 for PERFORMANCE
 r.CreateShadersOnLoad=1;------def 0------changed to 1*
-r.D3D11.Depth24Bit=0;------def 0
-r.D3D12.Depth24Bit=0;------def 0
+r.D3D11.Depth24Bit=0;------def 0------1 for PERFORMANCE
+r.D3D12.Depth24Bit=0;------def 0------1 for PERFORMANCE
 r.DBuffer=1;------def 1------0 for PERFORMANCE
 r.Decal.FadeDurationScale=1;------def 1------0.6 for PERFORMANCE
 r.Decal.FadeScreenSizeMult=1;
@@ -218,7 +218,6 @@ r.ParticleLODBias=0;------def 0
 r.ParticleMinTimeBetweenTicks=10;-----------changed to 10*
 r.PostProcessAllowBlendModes=1;------def 1
 r.RayTracing=0;------def 0
-r.ReflectionCaptureResolution=256;------def 128------changed to 256*------128 for PERFORMANCE
 r.ReflectionCaptureSupersampleFactor=0;------def 1------changed to 0*
 r.ReflectionEnvironment=1;------def 1------0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixLargestWeight=1;------def 10000------changed to 1*
@@ -242,7 +241,7 @@ r.Shadow.CacheWPOPrimitives=0;------def 0
 r.Shadow.CSM.MaxCascades=3;------def 3------0 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1;------def 0.8------changed to 1*
 r.Shadow.CSMDepthBias=10;------def 10
-r.Shadow.DistanceScale=0.3;------def 0.85------changed to 0.3*
+r.Shadow.DistanceScale=0.8;------def 0.85------changed to 0.8*
 r.Shadow.FilterMethod=0;------def 0
 r.Shadow.MaxCSMResolution=2048;------def 2048------512 or 1024 for PERFORMANCE
 r.Shadow.MaxNumFarShadowCascades=0;------def 10------0 for PERFORMANCE
@@ -262,7 +261,7 @@ r.SkylightIntensityMultiplier=0.8;------def 1------changed to 0.8*
 r.SSGI.Quality=0;------def 2------changed to 0*------0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;------def 1
 r.SSR.MaxRoughness=-1;------def -1
-r.SSR.Quality=1;------def 2------changed to 1*------0 for PERFORMANCE
+r.SSR.Quality=2;------def 2------0 for PERFORMANCE
 r.SSR.Temporal=0;------def 0
 r.SSS.Checkerboard=1;------def 2------changed to 1
 r.StaticMeshLODDistanceScale=1;------def 1
@@ -292,10 +291,10 @@ r.UseFastIntersect=1;------def 1
 r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
 r.ViewDistanceScale.ApplySecondaryScale=0;------def 0
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;------def 0
-r.ViewDistanceScale.FieldOfViewMaxAngle=90;------def 90
+r.ViewDistanceScale.FieldOfViewMaxAngle=65;------def 90------changed to 65*
 r.ViewDistanceScale.FieldOfViewMaxAngleScale=1;------def 1
-r.ViewDistanceScale.FieldOfViewMinAngle=45;------def 45
-r.ViewDistanceScale.FieldOfViewMinAngleScale=1;------def 1
+r.ViewDistanceScale.FieldOfViewMinAngle=15;------def 45------changed to 15*
+r.ViewDistanceScale.FieldOfViewMinAngleScale=5;------def 1------changed to 5*
 r.ViewDistanceScale.SecondaryScale=1;------def 1
 r.ViewDistanceScale=1;------def 1------0.8 for PERFORMANCE
 r.VolumetricCloud.ShadowMap=0;------def 1------changed to 0*
@@ -305,7 +304,7 @@ r.VolumetricFog.HistoryMissSupersampleCount=1;------def 4------changed to 1*----
 r.VolumetricFog.InjectShadowedLightsSeparately=0;------def 1------0 for PERFORMANCE
 r.VolumetricFog=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.VSync=0;
-r.Vulkan.Depth24Bit=0;------def 0
+r.Vulkan.Depth24Bit=0;------def 0------1 for PERFORMANCE
 r.Water.EnableShallowWaterSimulation=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.Water.EnableUnderwaterPostProcess=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.Water.ShallowWaterRenderTargetSize=512;------def 1024------changed to 512*
