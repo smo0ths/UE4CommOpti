@@ -1,5 +1,5 @@
 
-#### updated 5/26/2022 :ramen:
+#### updated 5/26/2022~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -45,8 +45,9 @@ PoolSizeVRAMPercentage=70;------def 70 TEXTUREPOOL CACHE
 
 [ConsoleVariables]
 r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
+r.PostProcessAAQuality=5;------def 3------changed to 5*------1/2 FXAA 3/4/5/6 TAA 0 OFF
 r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
+r.SecondaryScreenPercentage.GameViewport=0;------def 0------83.33 for PERFORMANCE
 r.TemporalAA.Algorithm=0;------def 0
 r.TemporalAA.AllowDownsampling=1;------def 1
 r.TemporalAA.HistoryScreenPercentage=100;------def 100
@@ -54,7 +55,7 @@ r.TemporalAA.R11G11B10History=0;------def 0------EXPERIMENTAL
 r.TemporalAA.Upsampling=0;------def 0
 r.TemporalAA.Upscaler=1;------def 1
 r.TemporalAACatmullRom=0;------def 0
-r.TemporalAACurrentFrameWeight=0.1;------def 0.2------changed to 0.1*
+r.TemporalAACurrentFrameWeight=0.04;
 r.TemporalAAFilterSize=1;------def 1
 r.TemporalAAPauseCorrect=1;------def 1
 r.TemporalAASamples=4;------def 8------changed to 4*
@@ -205,7 +206,7 @@ r.MinRoughnessOverride=0.1;------def 0------changed to 0.1*
 r.MinScreenRadiusForCSMDepth=0.01;------def 0.01
 r.MinScreenRadiusForDepthPrepass=0.03;------def 0.03
 r.MinScreenRadiusForLights=0.04;------def 0.03------changed to 0.04*------0.2 for PERFORMANCE
-r.MipMapLODBias=-1;------def 0------changed to -1*------0 for PERFORMANCE
+r.MipMapLODBias=0;------def 0
 r.MorphTarget.Mode=1;------def 1
 r.MotionBlurQuality=0;
 r.MSAA.CompositingSampleCount=1;------def 3------changed to 1*
@@ -230,7 +231,6 @@ r.SceneColorFringe.Max=-1;------def -1
 r.SceneColorFringeQuality=0;------def 1------changed to 0*
 r.SceneRenderTargetResizeMethod=0;------def 0
 r.SceneRenderTargetResizeMethodForceOverride=0;------def 0
-r.SecondaryScreenPercentage.GameViewport=0;------def 0
 r.SeparateTranslucency=0;------def 1------changed to 0*
 r.ShaderDevelopmentMode=0;------def 0
 r.Shaders.FastMath=1;------def 1
@@ -265,7 +265,9 @@ r.SSR.Quality=2;------def 2------0 for PERFORMANCE
 r.SSR.Temporal=0;------def 0
 r.SSS.Checkerboard=1;------def 2------changed to 1
 r.StaticMeshLODDistanceScale=1;------def 1
+r.Streaming.MinLevelRenderAssetScreenSize=100;------def 100
 r.Streaming.MipBias=0;------def 0------1 for PERFORMANCE
+r.Streaming.MipCalculationEnablePerLevelList=1;------def 1
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;------def 1024
 r.Streaming.PoolSize=1000;------def 800------changed to 1000*
 r.Streaming.PoolSizeForMeshes=-1;------def -1
@@ -284,7 +286,7 @@ r.TranslucencyLightingVolume=1;------def 1------0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32;------def 48------32 for PERFORMANCE
 r.UITextureLODBias=0;------def 0
 r.UniformBufferPooling=1;------def 1
-r.Upscale.Quality=2;------def 2
+r.Upscale.Quality=1;------def 2------changed to 1*
 r.Upscale.Softness=1;------def 1
 r.UseClusteredDeferredShading=0;------def 0
 r.UseFastIntersect=1;------def 1
@@ -317,42 +319,6 @@ r.Water.SingleLayer.SSRTAA=0;------def 1------changed to 0*
 r.Water.SingleLayer.TiledComposite=1;------def 1
 RHI.SyncInterval=0;------def 1------changed to 0*
 RHI.SyncSlackMS=0;------def 10------changed to 0*
-```
-
----
-
-#### AA settings i use copy paste over or experiment
-
-```python
-TAA
-r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
-
-TAAU for PERFORMANCE
-r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=86.66;------def 100------TAAU INPUT RESOLUTION
-or
-r.DefaultFeature.AntiAliasing=2;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=3;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=75;------def 100------TAAU INPUT RESOLUTION
-
-FXAA
-r.DefaultFeature.AntiAliasing=1;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=2;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
-
-NONE
-r.DefaultFeature.AntiAliasing=0;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=0;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=100;------def 100------TAAU INPUT RESOLUTION
-
-NONE for PERFORMANCE
-r.DefaultFeature.AntiAliasing=0;------def 2------1 FXAA 2 TAA 3 MSAA 0 OFF
-r.PostProcessAAQuality=0;------def 3------1/2 FXAA 3/4/5/6 TAA 0 OFF
-r.ScreenPercentage=75;------def 100------TAAU INPUT RESOLUTION
-
 ```
 
 ---
