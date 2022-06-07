@@ -1,5 +1,5 @@
 
-#### updated 6/7/2022 :ramen:
+#### updated 6/7/2022~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -137,7 +137,7 @@ r.DefaultBackBufferPixelFormat=4;------def 4
 r.DefaultFeature.AmbientOcclusion=1;------def 1
 r.DefaultFeature.AmbientOcclusionStaticFraction=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;------def 0
-r.DefaultFeature.AutoExposure.Method=0;------def 0------1 for PERFORMANCE
+r.DefaultFeature.AutoExposure.Method=1;------def 0------changed to 1*------1 for PERFORMANCE
 r.DefaultFeature.AutoExposure=1;------def 1------0 for PERFORMANCE
 r.DefaultFeature.Bloom=1;------def 1
 r.DefaultFeature.LensFlare=1;------def 1
@@ -164,19 +164,19 @@ r.DrawRectangleOptimization=1;------def 1
 r.EarlyZPass=2;------def 2
 r.EarlyZPassMovable=1;------def 1
 r.EarlyZPassOnlyMaterialMasking=1;------def 1
-r.Emitter.FastPoolEnable=0;------def 0
-r.Emitter.FastPoolMaxFreeSize=2097152;------def 2097152
+r.Emitter.FastPoolEnable=1;------def 0------changed to 1*
+r.Emitter.FastPoolMaxFreeSize=3072000;------def 2097152------changed to 3072000*
 r.EmitterSpawnRateScale=0.8;------def 1------changed to 0.8*------0.125 for PERFORMANCE
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;------def 1
-r.EyeAdaptation.Basic.Compute=1;------def 1------0 for PERFORMANCE
+r.EyeAdaptation.Basic.Compute=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.EyeAdaptation.BlackHistogramBucketInfluence=1;------def 1
-r.EyeAdaptation.MethodOverride=1;------def -1------changed to 1*------2 or -1 for PERFORMANCE
+r.EyeAdaptation.MethodOverride=2;------def -1------changed to 2*------2 or -1 for PERFORMANCE
 r.EyeAdaptation.PreExposureOverride=0;------def 0
-r.EyeAdaptationQuality=2;------def 2
+r.EyeAdaptationQuality=1;------def 2------changed to 1*------1 or 0 for PERFORMANCE
 r.FastBlurThreshold=3;------def 3
 r.Filter.SizeScale=1;------def 0.8------changed to 1*------0.8 for PERFORMANCE
 r.FinishCurrentFrame=0;------def 0
-r.ForceSceneHasDecals=1;------def 0------changed to 1*------TESTING
+r.ForceSceneHasDecals=0;------def 0
 r.FreeSkeletalMeshBuffers=0;------def 0
 r.FullScreenMode=0;
 r.GBufferFormat=1;------def 1
@@ -248,7 +248,7 @@ r.Shadow.MaxCSMResolution=2048;------def 2048------512 or 1024 for PERFORMANCE
 r.Shadow.MaxNumFarShadowCascades=0;------def 10------0 for PERFORMANCE
 r.Shadow.MaxResolution=1024;------def 2048------changed to 1024*------512 or 1024 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
-r.Shadow.PointLightDepthBias=0.009;------def 0.02------changed to 0.009*
+r.Shadow.PointLightDepthBias=0.02;------def 0.02
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
 r.Shadow.RadiusThreshold=0.01;------def 0.04------changed to 0.01*------0.1 or 0.04 for PERFORMANCE
 r.Shadow.SpotLightTransitionScale=60;------def 60
