@@ -1,5 +1,5 @@
 
-#### updated 6/7/2022~ :ramen:
+#### updated 6/7/2022~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -100,8 +100,9 @@ r.AllowLandscapeShadows=1;------def 1------0 for PERFORMANCE
 r.AllowPointLightCubemapShadows=1;------def 1------0 for PERFORMANCE
 r.AllowSimpleLights=1;------def 1------0 for PERFORMANCE
 r.AlsoUseSphereForFrustumCull=0;------def 0------1 for PERFORMANCE
+r.AmbientOcclusion.AsyncComputeBudget=1;------def 1
 r.AmbientOcclusion.Compute.Smooth=1;------def 1
-r.AmbientOcclusion.Compute=1;------def 0------1 for PERFORMANCE
+r.AmbientOcclusion.Compute=0;------def 0
 r.AmbientOcclusionLevels=1;------def 3------changed to 1*------0 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=100;------def 100
 r.AmbientOcclusionMipLevelFactor=0.6;------def 0.6
@@ -135,7 +136,7 @@ r.Decal.FadeScreenSizeMult=1;
 r.Decal.StencilSizeThreshold=0.1;------def 0.1
 r.DefaultBackBufferPixelFormat=4;------def 4
 r.DefaultFeature.AmbientOcclusion=1;------def 1
-r.DefaultFeature.AmbientOcclusionStaticFraction=0;------def 1------changed to 0*------0 for PERFORMANCE
+r.DefaultFeature.AmbientOcclusionStaticFraction=1;------def 1------0 for PERFORMANCE
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;------def 0
 r.DefaultFeature.AutoExposure.Method=1;------def 0------changed to 1*------1 for PERFORMANCE
 r.DefaultFeature.AutoExposure=1;------def 1------0 for PERFORMANCE
