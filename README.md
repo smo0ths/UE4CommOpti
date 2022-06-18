@@ -1,5 +1,5 @@
 
-#### updated 6/7/2022~~ :ramen:
+#### updated 6/17/2022~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -171,7 +171,7 @@ r.EmitterSpawnRateScale=0.8;------def 1------changed to 0.8*------0.125 for PERF
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;------def 1
 r.EyeAdaptation.Basic.Compute=0;------def 1------changed to 0*------0 for PERFORMANCE
 r.EyeAdaptation.BlackHistogramBucketInfluence=1;------def 1
-r.EyeAdaptation.MethodOverride=2;------def -1------changed to 2*------2 or -1 for PERFORMANCE
+r.EyeAdaptation.MethodOverride=-1;------def -1------1 for auto histogram 2 for auto basic
 r.EyeAdaptation.PreExposureOverride=0;------def 0
 r.EyeAdaptationQuality=1;------def 2------changed to 1*------1 or 0 for PERFORMANCE
 r.FastBlurThreshold=3;------def 3
