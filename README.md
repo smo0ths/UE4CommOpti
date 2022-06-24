@@ -1,5 +1,5 @@
 
-#### updated 6/17/2022~ :ramen:
+#### updated 6/23/2022~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -265,7 +265,9 @@ r.SSR.HalfResSceneColor=1;------def 1
 r.SSR.MaxRoughness=-1;------def -1
 r.SSR.Quality=2;------def 2------0 for PERFORMANCE
 r.SSR.Temporal=0;------def 0
-r.SSS.Checkerboard=2;------def 2
+r.SSS.Checkerboard=1;------def 2------changed to 1*
+r.SSS.HalfRes=1;------def 1
+r.SSS.Quality=-1;------def -1
 r.StaticMeshLODDistanceScale=1;------def 1
 r.Streaming.MinLevelRenderAssetScreenSize=100;------def 100
 r.Streaming.MipBias=0;------def 0------1 for PERFORMANCE
