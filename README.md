@@ -1,5 +1,5 @@
 
-#### updated 7/26/2022 :ramen:
+#### updated 8/11/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -30,7 +30,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 Global=off;
 
 [Audio]
-MaxChannels=128;------def 0------changed to 128*------64 for PERFORMANCE
+MaxChannels=64;------def 0------changed to 64*------64 for PERFORMANCE
 CommonAudioPoolSize=0;------def 0
 UnfocusedVolumeMultiplier=1;
 
@@ -452,29 +452,33 @@ TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,MinMagF
 
 ##### 2. click on use the advanced 3D image settings and apply then click "take me there"
 
-##### 3. Anisotropic filtering:  Off for performance App-controlled or force your own setting for quality (8x is nice)
+##### 3. Anisotropic filtering:  set Application-controlled (you can force the setting in here if you can't notice it working in certain games)
 
-##### 4. Low latency mode:
+##### 4. Antialiasing - mode: set Application-controlled 
 
-###### Off and ~85% gpu usage for most med-lower end systems (assuming you cap fps correctly)
+##### 5. Low latency mode:
 
-###### On feels consistent (i use this and reflex in games that support it)
+###### Off and ~85% gpu usage for most med-lower end systems (cap fps til gpu usage is ~85%)
+
+###### On feels consistent (this and reflex give lower latency)
 
 ###### Ultra and relfex (in-game) feels good when gpu usage is ~97%
 
-##### 5. Power management mode:  Prefer max performance  (this is the "+ boost" in reflex + boost)
+##### 6. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
 
-##### 6. Preferred refresh rate:  Highest available
+##### 7. Preferred refresh rate:  Highest available
 
-##### 7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game)
+##### 8. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game) (you may need to reapply because NVCP will reset when you change other settings)
 
-##### 8. Texture filtering - Negative LOD bias:  Clamp  (this should be the default i.e. 0 bias but maybe a negative bias could help upscaling TAA and DLSS techniques of AA for textures but i doubt it)
+##### 9. Texture filtering - negative LOD bias:  clamp  (this should be the default i.e. 0 mipmap bias) (you may need to reapply because NVCP will reset when you change other settings)
 
-##### 9. Texture filtering quality:  High performance
+##### 10. Texture filtering quality:  high performance
 
-#####  10. Vertical sync:  Off
+##### 11. Texture filtering - trilinear optimization:  on
 
-#####  11. Display -> Adjust desktop size and position -> set no scaling and Perform scaling on: Display
+#####  12. Vertical sync:  Off
+
+#####  13. Display -> Adjust desktop size and position -> set no scaling and Perform scaling on: Display
 
 <details><summary>12. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
 <p>
