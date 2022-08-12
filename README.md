@@ -480,7 +480,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,MinMagF
 
 #####  13. Display -> Adjust desktop size and position -> set no scaling and Perform scaling on: Display
 
-<details><summary>12. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
+<details><summary>14. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
 <p>
 1. NVCleanstall enabling it in advanced settings before installing or
 <br>
