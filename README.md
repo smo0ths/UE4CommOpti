@@ -458,11 +458,11 @@ TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,MinMagF
 
 ##### 5. Low latency mode:
 
-###### Off and ~85% gpu usage for most med-lower end systems (cap fps til gpu usage is ~85%)
+###### Off and ~85% gpu usage for mutliple frame buffers sacrificing latency (cap fps til gpu usage is ~85%)
 
-###### On feels consistent (this and reflex give lower latency)
+###### On forces 1 frame buffer (for lower latency)
 
-###### Ultra and relfex (in-game) feels good when gpu usage is ~97%
+###### Ultra and relfex (in-game) and ~97% gpu usage for lowest lantency
 
 ##### 6. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
 
