@@ -43,7 +43,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=32;------def 70------changed to 32*------TEXTUREPOOL CACHE
+PoolSizeVRAMPercentage=64;------def 70------changed to 64*------TEXTUREPOOL CACHE
 
 [ConsoleVariables]
 r.DefaultFeature.AntiAliasing=2;------changed to 2*------1 FXAA 2 TAA 3 MSAA 0 OFF
