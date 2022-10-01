@@ -1,5 +1,5 @@
 
-#### updated 9/23/2022 :ramen:
+#### updated 10/1/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -7,7 +7,7 @@
 
 ###### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
-###### def is more or less reference to high graphics
+###### def is pretty much reference to high scalablity group
 
 ---
 
@@ -43,7 +43,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70;------def 70------TEXTUREPOOL CACHE
+PoolSizeVRAMPercentage=32;------def 70------changed to 32*------TEXTUREPOOL CACHE
 
 [ConsoleVariables]
 r.DefaultFeature.AntiAliasing=2;------changed to 2*------1 FXAA 2 TAA 3 MSAA 0 OFF
@@ -70,6 +70,7 @@ foliage.DensityScale=0.6;------def 0.8------0.6 for PERFORMANCE
 foliage.DitheredLOD=1;------def 1
 foliage.LODDistanceScale=1;------def 1
 foliage.MinimumScreenSize=0.0001;------def 0.0001
+foliage.MinLOD=0;------def 0------1 for PERFORMANCE
 foliage.MinVertsToSplitNode=8192;------def 8192
 foliage.OverestimateLOD=0;------def 0
 FX.AllowAsyncTick=1;------def 1
@@ -106,7 +107,7 @@ r.AlsoUseSphereForFrustumCull=0;------def 0------1 for PERFORMANCE
 r.AmbientOcclusion.AsyncComputeBudget=1;------def 1
 r.AmbientOcclusion.Compute.Smooth=1;------def 1
 r.AmbientOcclusion.Compute=0;------def 0
-r.AmbientOcclusionLevels=1;------def 3------changed to 1*------0 for PERFORMANCE
+r.AmbientOcclusionLevels=2;------def 3------changed to 2*------0 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=100;------def 100
 r.AmbientOcclusionMipLevelFactor=0.6;------def 0.6
 r.AmbientOcclusionRadiusScale=0.2;------def 1------changed to 0.2*------0 for PERFORMANCE
@@ -129,7 +130,8 @@ r.CapsuleShadowsFullResolution=0;------def 0
 r.chaos.ReflectionCaptureStaticSceneOnly=1;------def 1
 r.ClearCoatNormal=0;------def 0
 r.CompileShadersForDevelopment=0;------def 1------0 for PERFORMANCE
-r.ContactShadows=0;------def 1------0 for PERFORMANCE
+r.ContactShadows.NonShadowCastingIntensity=0;------def 0
+r.ContactShadows=1;------def 1------0 for PERFORMANCE
 r.CreateShadersOnLoad=1;------def 0------changed to 1*
 r.D3D11.Depth24Bit=0;------def 0------1 for PERFORMANCE
 r.D3D12.Depth24Bit=0;------def 0------1 for PERFORMANCE
@@ -147,7 +149,7 @@ r.DefaultFeature.MotionBlur=0;------def 0
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0;------def 0------EXPERIMENTAL
 r.DeferUniformExpressionCaching=1;------def 1
 r.DepthOfFieldQuality=2;------def 2------0 for PERFORMANCE
-r.DetailMode=5;------def 1------changed to 5*------0 for PERFORMANCE
+r.DetailMode=1;------def 1------0 for PERFORMANCE
 r.DFDistanceScale=1;------def 1
 r.DFFullResolution=0;------def 0
 r.DFShadowQuality=2;------def 3------1 or 2 for PERFORMANCE
@@ -182,6 +184,7 @@ r.GPUCrash.CollectionEnable=0;------def 1------changed to 0*
 r.GPUCrashDebugging=0;------def 0
 r.GPUSkin.Limit2BoneInfluences=0;------def 0
 r.GTSyncType=0;------def 0
+r.HairStrands.SkyLighting=0;------def 1------changed to 0*
 r.HDR.EnableHDROutput=0;------def 0
 r.HeightFieldShadowing=0;------def 0
 r.HFShadowQuality=2;------def 2
@@ -252,6 +255,7 @@ r.SkeletalMeshLODRadiusScale=0.75;------def 1------changed to 0.75*------1 for P
 r.SkinCache.SceneMemoryLimitInMB=128;------def 128
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0;------def 0
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0;------def 0------1 for PERFORMANCE
+r.SkyLightingQuality=1;------def 1
 r.SkylightIntensityMultiplier=1;------def 1
 r.SSGI.Quality=0;------def 2------changed to 0*------0 for PERFORMANCE
 r.SSR.HalfResSceneColor=1;------def 1
@@ -262,13 +266,16 @@ r.SSS.Checkerboard=1;------def 2------changed to 1*
 r.SSS.HalfRes=1;------def 1
 r.SSS.Quality=-1;------def -1
 r.StaticMeshLODDistanceScale=1;------def 1
+r.Streaming.FullyLoadUsedTextures=0;------def 0
+r.Streaming.LimitPoolSizeToVRAM=1;------def 1
 r.Streaming.MaxTempMemoryAllowed=50;------def 50
-r.Streaming.MinLevelRenderAssetScreenSize=100;------def 100
+r.Streaming.MinLevelRenderAssetScreenSize=50;------def 100------changed to 50*
 r.Streaming.MipBias=0;------def 0------1 for PERFORMANCE
 r.Streaming.MipCalculationEnablePerLevelList=1;------def 1
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;------def 1024
 r.Streaming.PoolSize=800;------def 800
 r.Streaming.PoolSizeForMeshes=-1;------def -1
+r.Streaming.UseFixedPoolSize=0;------def 0
 r.TessellationAdaptivePixelsPerTriangle=9999999;------def 48------9999999 for PERFORMANCE
 r.TextureStreaming=1;------def 1
 r.TiledDeferredShading.MinimumCount=80;------default 80
@@ -350,7 +357,7 @@ DoubleClickTime=0.1;------def 0.25
 
 ---
 
-<details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct also set your scalability groups 0 low 1 med  2 high 3 epic 4 cinematic</summary>
+<details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct also set your scalability groups 0 low 1 med  2 high 3 epic 4 cinematic, check for new stuff after updates</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
@@ -367,15 +374,21 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
+TextureStreamPoolSizeStorage=(Value=DERP)
+MaxAnisotropy=(Value=)
+FoliageMinLOD=(Value=)
+HZBOcclusion=(Value=)
+ContactShadows=(Value=)
+DetailMode=(Value=);------check random shit like this
 AudioQualityLevel=3
 MaxAnisotropy=8
 bUseVSync=0
-MaxFPS=0
-FrameRateLimit=0
-MenuFrameRateLimit=0
+GlobalSensitivity=0.183
+MaxFPS=0.000000
+FrameRateLimit=0.000000;------i do this in NVCP for all games but in game limiters have less latency
+MenuFrameRateLimit=0.000000
 HDRDisplayOutputNits=300;------set your monitors nits if using hdr
 DoubleKeyPressTime=0.1
-TextureStreamPoolSizeStorage=800;------only way to change r.Streaming.PoolSize in squad
 DistanceFieldShadows=1;
 Gamma=2.2
 TAASampleStorage=4
@@ -388,6 +401,8 @@ ResolutionScaleModifier=1
 DFAO=
 Tessellation=0
 TessellationMode=9999999
+Tessellation=(Value=0)
+TessellationMode=(Value=9999999)
 bTelemetryEnabled=0
 bUseDynamicResolution=0
 FullscreenMode=0
@@ -427,24 +442,24 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 ```python
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=1024,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=1024,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=512,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=512,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=512,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 ```
 
 ---
