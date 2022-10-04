@@ -1,5 +1,5 @@
 
-#### updated 10/3/2022~~ :ramen:
+#### updated 10/4/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -57,7 +57,7 @@ r.TemporalAA.R11G11B10History=0;------def 0------EXPERIMENTAL
 r.TemporalAA.Upsampling=0;------def 0
 r.TemporalAA.Upscaler=1;------def 1
 r.TemporalAACatmullRom=0;------def 0
-r.TemporalAACurrentFrameWeight=0.04;------def 0.1
+r.TemporalAACurrentFrameWeight=0.1;------def 0.1
 r.TemporalAAFilterSize=1;------def 1
 r.TemporalAAPauseCorrect=1;------def 1
 r.TemporalAASamples=2;------def 8------changed
@@ -106,7 +106,7 @@ r.AllowSimpleLights=1;------def 1------0 for PERFORMANCE
 r.AlsoUseSphereForFrustumCull=0;------def 0------1 for PERFORMANCE
 r.AmbientOcclusion.AsyncComputeBudget=1;------def 1
 r.AmbientOcclusion.Compute.Smooth=1;------def 1
-r.AmbientOcclusion.Compute=0;------def 0
+r.AmbientOcclusion.Compute=0;------def 0------1 for PERFORMANCE
 r.AmbientOcclusionLevels=1;------def 3------0 for PERFORMANCE------changed
 r.AmbientOcclusionMaxQuality=100;------def 100
 r.AmbientOcclusionMipLevelFactor=1;------def 0.6------changed
@@ -178,13 +178,13 @@ r.ForceSceneHasDecals=0;------def 0
 r.FreeSkeletalMeshBuffers=0;------def 0
 r.FullScreenMode=0;------def 0------0 for PERFORMANCE
 r.GBufferFormat=1;------def 1
-r.GenerateLandscapeGIData=0;------def 1------0 for PERFORMANCE------changed
+r.GenerateLandscapeGIData=1;------def 1
 r.GenerateMeshDistanceFields=1;------1 for DFSHADOWS and or DFAO------0 for PERFORMANCE
 r.GPUCrash.CollectionEnable=0;------def 1------changed
 r.GPUCrashDebugging=0;------def 0
 r.GPUSkin.Limit2BoneInfluences=0;------def 0
 r.GTSyncType=0;------def 0
-r.HairStrands.SkyLighting=0;------def 1------changed
+r.HairStrands.SkyLighting=1;------def 1
 r.HDR.EnableHDROutput=0;------def 0
 r.HeightFieldShadowing=0;------def 0
 r.HFShadowQuality=2;------def 2
@@ -259,7 +259,8 @@ r.SkeletalMeshLODBias=0;------def 0------2 or 1 for PERFORMANCE
 r.SkeletalMeshLODRadiusScale=1;------def 1
 r.SkinCache.SceneMemoryLimitInMB=128;------def 128
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0;------def 0
-r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0;------def 0------1 for PERFORMANCE
+r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0;------def 0
+r.SkyAtmosphere=1;------def 1
 r.SkyLightingQuality=1;------def 1
 r.SkylightIntensityMultiplier=1;------def 1
 r.SSGI.Quality=0;------def 2------0 for PERFORMANCE------changed
@@ -283,6 +284,10 @@ r.Streaming.PoolSize.VRAMPercentageClamp=1024;------def 1024
 r.Streaming.PoolSize=800;------def 800
 r.Streaming.PoolSizeForMeshes=-1;------def -1
 r.Streaming.UseFixedPoolSize=0;------def 0
+r.SupportAnisotropicMaterials=1;------def 1------0 for PERFORMANCE
+r.SupportMaterialLayers=1;------def 1------0 for PERFORMANCE
+r.SupportSkyAtmosphere=1;------def 1
+r.SupportSkyAtmosphereAffectsHeightFog=1;------def 1
 r.TessellationAdaptivePixelsPerTriangle=9999999;------def 48------9999999 for PERFORMANCE------changed
 r.TextureStreaming=1;------def 1
 r.TiledDeferredShading.MinimumCount=80;------default 80
