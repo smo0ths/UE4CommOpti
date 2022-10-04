@@ -1,5 +1,5 @@
 
-#### updated 10/4/2022 :ramen:
+#### updated 10/4/2022~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -203,7 +203,7 @@ r.LightShaftRenderToSeparateTranslucency=0;------def 0
 r.MaterialQualityLevel=1;------def 1------0 for PERFORMANCE
 r.MaxAnisotropy=8;------def 4------changed
 r.MaxQualityMode=0;------def 0
-r.MinRoughnessOverride=0.1;------def 0------changed
+r.MinRoughnessOverride=0;------def 0
 r.MinScreenRadiusForCSMDepth=0.01;------def 0.01
 r.MinScreenRadiusForDepthPrepass=0.03;------def 0.03
 r.MinScreenRadiusForLights=0.03;------def 0.03------0.06 for PERFORMANCE
@@ -330,10 +330,10 @@ r.VolumetricFog=0;------def 1------0 for PERFORMANCE------changed
 r.VSync=0;------def 0
 r.VT.MaxAnisotropy=8;------def 8
 r.Vulkan.Depth24Bit=0;------def 0------1 for PERFORMANCE
-r.Water.EnableShallowWaterSimulation=0;------def 1------0 for PERFORMANCE------changed
-r.Water.EnableUnderwaterPostProcess=0;------def 1------0 for PERFORMANCE------changed
+r.Water.EnableShallowWaterSimulation=1;------def 1------0 for PERFORMANCE
+r.Water.EnableUnderwaterPostProcess=1;------def 1------0 for PERFORMANCE
 r.Water.ShallowWaterRenderTargetSize=512;------def 1024------changed
-r.Water.SingleLayer.Reflection=0;------def 1------0 for PERFORMANCE------changed
+r.Water.SingleLayer.Reflection=1;------def 1------0 for PERFORMANCE
 r.Water.SingleLayer.RefractionDownsampleFactor=4;------def 2------4 for PERFORMANCE------changed
 r.Water.SingleLayer.RefractionFullPrecision=0;------def 0
 r.Water.SingleLayer.RTR=1;------def 1
