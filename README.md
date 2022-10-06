@@ -1,5 +1,5 @@
 
-#### updated 10/4/2022~~ :ramen:
+#### updated 10/6/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -60,7 +60,7 @@ r.TemporalAACatmullRom=0;------def 0
 r.TemporalAACurrentFrameWeight=0.1;------def 0.1
 r.TemporalAAFilterSize=1;------def 1
 r.TemporalAAPauseCorrect=1;------def 1
-r.TemporalAASamples=2;------def 8------changed
+r.TemporalAASamples=4;------def 8------changed
 r.TemporalAAUpsampleFiltered=1;------def 1
 au.RenderThreadPriority=0;------def 0
 AudioThread.BatchAsyncBatchSize=128;------def 128
@@ -70,7 +70,7 @@ foliage.DensityScale=0.6;------def 0.8------0.6 for PERFORMANCE------changed
 foliage.DitheredLOD=1;------def 1
 foliage.LODDistanceScale=1;------def 1
 foliage.MinimumScreenSize=0.0001;------def 0.0001
-foliage.MinLOD=0;------def 0------1 for PERFORMANCE
+foliage.MinLOD=1;------def 0------1 for PERFORMANCE------changed
 foliage.MinVertsToSplitNode=8192;------def 8192
 foliage.OverestimateLOD=0;------def 0
 FX.AllowAsyncTick=1;------def 1
@@ -117,7 +117,6 @@ r.AOApplyToStaticIndirect=0;------def 0
 r.AOComputeShaderNormalCalculation=0;------def 0
 r.AOGlobalDFResolution=128;------def 128
 r.AOHeightfieldOcclusion=0;------def 0
-r.AOMaxViewDistance=1000;------def 20000------changed
 r.AOOverwriteSceneColor=0;------def 0
 r.AOQuality=1;------def 1
 r.AOSampleSet=1;------def 1
@@ -136,9 +135,9 @@ r.CreateShadersOnLoad=1;------def 0------changed
 r.D3D11.Depth24Bit=0;------def 0------1 for PERFORMANCE
 r.D3D12.Depth24Bit=0;------def 0------1 for PERFORMANCE
 r.DBuffer=1;------def 1------0 for PERFORMANCE
-r.Decal.FadeDurationScale=1;------def 1------0.6 for PERFORMANCE
+r.Decal.FadeDurationScale=0.5;------def 1------0.5 for PERFORMANCE------changed
 r.Decal.FadeScreenSizeMult=1;------def 1
-r.Decal.StencilSizeThreshold=0.1;------def 0.1
+r.Decal.StencilSizeThreshold=0;------def 0.1------changed
 r.DefaultBackBufferPixelFormat=4;------def 4
 r.DefaultFeature.AmbientOcclusion=1;------def 1
 r.DefaultFeature.AmbientOcclusionStaticFraction=1;------def 1------0 for PERFORMANCE
@@ -149,7 +148,7 @@ r.DefaultFeature.MotionBlur=0;------def 0
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0;------def 0------EXPERIMENTAL
 r.DeferUniformExpressionCaching=1;------def 1
 r.DepthOfFieldQuality=2;------def 2------0 for PERFORMANCE
-r.DetailMode=2;------def 1------0 for PERFORMANCE------changed
+r.DetailMode=1;------def 1------0 for PERFORMANCE
 r.DFDistanceScale=1;------def 1
 r.DFFullResolution=0;------def 0
 r.DFShadowQuality=2;------def 3------1 or 2 for PERFORMANCE------changed
@@ -172,7 +171,7 @@ r.Emitter.FastPoolMaxFreeSize=3072000;------def 2097152------changed
 r.EmitterSpawnRateScale=0.75;------def 1------0.125 for PERFORMANCE------changed
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;------def 1
 r.FastBlurThreshold=3;------def 3
-r.Filter.SizeScale=1;------def 0.8------changed
+r.Filter.SizeScale=0.8;------def 0.8
 r.FinishCurrentFrame=0;------def 0
 r.ForceSceneHasDecals=0;------def 0
 r.FreeSkeletalMeshBuffers=0;------def 0
@@ -187,7 +186,7 @@ r.GTSyncType=0;------def 0
 r.HairStrands.SkyLighting=1;------def 1
 r.HDR.EnableHDROutput=0;------def 0
 r.HeightFieldShadowing=0;------def 0
-r.HFShadowQuality=2;------def 2
+r.HFShadowQuality=2;------def 2------0 or 1 for PERFORMANCE
 r.HighQualityLightMaps=1;------def 1
 r.HZBOcclusion=0;------def 0
 r.IrisNormal=0;------def 0
@@ -245,13 +244,13 @@ r.Shadow.DistanceScale=0.85;------def 0.85
 r.Shadow.FilterMethod=0;------def 0
 r.Shadow.MaxCSMResolution=2048;------def 2048------512 or 1024 for PERFORMANCE
 r.Shadow.MaxNumFarShadowCascades=1;------def 10------0 for PERFORMANCE------changed
-r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=-1;------def -1------2 for PERFORMANCE
-r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=-1;------def -1------4 for PERFORMANCE
+r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=2;------def -1------2 for PERFORMANCE------changed
+r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;------def -1------4 for PERFORMANCE------changed
 r.Shadow.MaxResolution=2048;------def 2048------1024 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
 r.Shadow.PointLightDepthBias=0.02;------def 0.02
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
-r.Shadow.RadiusThreshold=0.04;------def 0.04------0.1 for PERFORMANCE
+r.Shadow.RadiusThreshold=0.02;------def 0.04------0.06 for PERFORMANCE------changed
 r.Shadow.SpotLightTransitionScale=60;------def 60
 r.Shadow.TransitionScale=60;------def 60
 r.ShadowQuality=3;------def 4------3 for PERFORMANCE------changed
@@ -284,6 +283,7 @@ r.Streaming.PoolSize.VRAMPercentageClamp=1024;------def 1024
 r.Streaming.PoolSize=800;------def 800
 r.Streaming.PoolSizeForMeshes=-1;------def -1
 r.Streaming.UseFixedPoolSize=0;------def 0
+r.Streaming.UsePerTextureBias=0;------def 1------changed
 r.SupportAnisotropicMaterials=1;------def 1------0 for PERFORMANCE
 r.SupportMaterialLayers=1;------def 1------0 for PERFORMANCE
 r.SupportSkyAtmosphere=1;------def 1
@@ -309,11 +309,6 @@ r.UseClusteredDeferredShading=0;------def 0
 r.UseFastIntersect=1;------def 1
 r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
 r.ViewDistanceScale.ApplySecondaryScale=0;------def 0
-r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;------def 0
-r.ViewDistanceScale.FieldOfViewMaxAngle=65;------def 90------changed
-r.ViewDistanceScale.FieldOfViewMaxAngleScale=1;------def 1
-r.ViewDistanceScale.FieldOfViewMinAngle=15;------def 45------changed
-r.ViewDistanceScale.FieldOfViewMinAngleScale=5;------def 1------changed
 r.ViewDistanceScale.SecondaryScale=1;------def 1
 r.ViewDistanceScale=1;------def 1------0.8 for PERFORMANCE
 r.VirtualTexture=1;------def 1
@@ -392,25 +387,25 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-TextureStreamPoolSizeStorage=(Value=DERP)
+TextureStreamPoolSizeStorage=(Value=)
 MaxAnisotropy=(Value=)
-FoliageMinLOD=(Value=)
+FoliageMinLOD=(Value=1)
 HZBOcclusion=(Value=)
 ContactShadows=(Value=)
-DetailMode=(Value=);------check random shit like this
+DetailMode=(Value=1)
 AudioQualityLevel=3
 MaxAnisotropy=8
 bUseVSync=0
 GlobalSensitivity=0.183
-MaxFPS=0.000000
-FrameRateLimit=0.000000;------i do this in NVCP for all games but in game limiters have less latency
-MenuFrameRateLimit=0.000000
-HDRDisplayOutputNits=300;------set your monitors nits if using hdr
+MaxFPS=
+FrameRateLimit=
+MenuFrameRateLimit=
+HDRDisplayOutputNits=300;
 DoubleKeyPressTime=0.1
 DistanceFieldShadows=1;
 Gamma=2.2
 TAASampleStorage=4
-bRTXEnabled=1
+bRTXEnabled=0
 bRTXReflectionsEnabled=0
 bRTXShadowsEnabled=0
 bRTXAmbientOcclusionEnabled=0
@@ -463,7 +458,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=1024,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=1024,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=2048,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
