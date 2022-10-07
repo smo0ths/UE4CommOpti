@@ -1,5 +1,5 @@
 
-#### updated 10/6/2022 :ramen:
+#### updated 10/7/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -191,7 +191,7 @@ r.HighQualityLightMaps=1;------def 1
 r.HZBOcclusion=0;------def 0
 r.IrisNormal=0;------def 0
 r.LandscapeLOD0DistributionScale=1;------def 1
-r.LandscapeLODBias=0;------def 0
+r.LandscapeLODBias=1;------def 0------1 for PERFORMANCE------changed
 r.LandscapeLODDistributionScale=1;------def 1
 r.LensFlareQuality=2;------def 2------0 for PERFORMANCE
 r.LightFunctionQuality=1;------def 1
