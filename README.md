@@ -1,5 +1,5 @@
 
-#### updated 10/7/2022 :ramen:
+#### updated 10/19/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -147,7 +147,7 @@ r.DefaultFeature.LightUnits=1;------def 1
 r.DefaultFeature.MotionBlur=0;------def 0
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0;------def 0------EXPERIMENTAL
 r.DeferUniformExpressionCaching=1;------def 1
-r.DepthOfFieldQuality=2;------def 2------0 for PERFORMANCE
+r.DepthOfFieldQuality=1;------def 2------0 for PERFORMANCE------changed
 r.DetailMode=1;------def 1------0 for PERFORMANCE
 r.DFDistanceScale=1;------def 1
 r.DFFullResolution=0;------def 0
@@ -207,7 +207,7 @@ r.MinScreenRadiusForCSMDepth=0.01;------def 0.01
 r.MinScreenRadiusForDepthPrepass=0.03;------def 0.03
 r.MinScreenRadiusForLights=0.03;------def 0.03------0.06 for PERFORMANCE
 r.MinTimeBetweenTicks=12;------def 8 or 16------changed
-r.MipMapLODBias=0;------def 0
+r.MipMapLODBias=1;------def 0------2 for PERFORMANCE------changed
 r.MorphTarget.Mode=1;------def 1
 r.MotionBlurQuality=0;------def 3------changed
 r.MSAACount=0;------def 4------changed
@@ -221,7 +221,7 @@ r.PostProcessAllowBlendModes=1;------def 1
 r.ReflectionCaptureSupersampleFactor=1;------def 1
 r.ReflectionEnvironment=1;------def 1------0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixLargestWeight=10000;------def 10000
-r.RefractionQuality=0;------def 2------0 for PERFORMANCE------changed
+r.RefractionQuality=1;------def 2------0 for PERFORMANCE------changed
 r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0;------def 0
 r.RenderTargetPool.TransientAliasingMode=2;------def 2
 r.RenderTargetPoolMin=400;------def 400
@@ -271,10 +271,10 @@ r.SSS.Checkerboard=1;------def 2------changed
 r.SSS.HalfRes=1;------def 1
 r.SSS.Quality=-1;------def -1
 r.StaticMeshLODDistanceScale=1;------def 1
-r.Streaming.AmortizeCPUToGPUCopy=0;------def 0------1 for PERFORMANCE
+r.Streaming.AmortizeCPUToGPUCopy=1;------def 0------1 for PERFORMANCE------changed
 r.Streaming.FullyLoadUsedTextures=0;------def 0
 r.Streaming.LimitPoolSizeToVRAM=1;------def 1
-r.Streaming.MaxNumTexturesToStreamPerFrame=0;------def 0------5 for PERFORMANCE
+r.Streaming.MaxNumTexturesToStreamPerFrame=5;------def 0------5 for PERFORMANCE------changed
 r.Streaming.MaxTempMemoryAllowed=50;------def 50
 r.Streaming.MinLevelRenderAssetScreenSize=100;------def 100
 r.Streaming.MipBias=0;------def 0------1 for PERFORMANCE
@@ -283,7 +283,7 @@ r.Streaming.PoolSize.VRAMPercentageClamp=1024;------def 1024
 r.Streaming.PoolSize=800;------def 800
 r.Streaming.PoolSizeForMeshes=-1;------def -1
 r.Streaming.UseFixedPoolSize=0;------def 0
-r.Streaming.UsePerTextureBias=0;------def 1------changed
+r.Streaming.UsePerTextureBias=1;------def 1
 r.SupportAnisotropicMaterials=1;------def 1------0 for PERFORMANCE
 r.SupportMaterialLayers=1;------def 1------0 for PERFORMANCE
 r.SupportSkyAtmosphere=1;------def 1
@@ -310,7 +310,7 @@ r.UseFastIntersect=1;------def 1
 r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
 r.ViewDistanceScale.ApplySecondaryScale=0;------def 0
 r.ViewDistanceScale.SecondaryScale=1;------def 1
-r.ViewDistanceScale=1;------def 1------0.8 for PERFORMANCE
+r.ViewDistanceScale=0.8;------def 1------0.8 for PERFORMANCE------changed
 r.VirtualTexture=1;------def 1
 r.VirtualTexturedLightmaps=0;------def 0
 r.VirtualTextureReducedMemory=0;------def 0
@@ -441,7 +441,7 @@ sg.AnimationQuality=2
 
 ---
 
-<details><summary>Open DeviceProfiles.ini and textures lods, experiment or just skip</summary>
+<details><summary>Open DeviceProfiles.ini and textures lods, WIP complicated to optimize</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
@@ -454,22 +454,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-[/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=1024,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=2048,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=1024,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=linear,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
-TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,OptionalMaxLODSize=1,OptionalLODBias=0,MaxLODSize_Smaller=1,MaxLODSize_Smallest=1,MaxLODSize_Tiniest=1,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=0,MipGenSettings=TMGS_NoMipmaps,NumStreamedMips=-1)
+WIP
 ```
 
 ---
@@ -486,11 +471,11 @@ TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,OptionalMax
 
 ##### 5. Low latency mode:
 
-###### Off and ~85% gpu usage for multiple frame buffers sacrificing latency (cap fps til gpu usage is ~85%)
+###### Off and ~85% gpu usage for multiple frame buffers sacrificing latency (cap fps til gpu usage is ~85%) (for visual fluidity of frames)
 
-###### On forces 1 frame buffer (for lower latency)
+###### On forces 1 frame buffer (for lower latency than off) (for visual fluidity of frames)
 
-###### Ultra and relfex (in-game) and ~97% gpu usage for lowest latency
+###### Ultra and/or relfex (in-game) and ~97% gpu usage for lowest latency (could be less fluid frames at low fps)
 
 ##### 6. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
 
