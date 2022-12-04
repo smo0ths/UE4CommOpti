@@ -1,5 +1,5 @@
 
-#### updated 12/4/2022 :ramen:
+#### updated 12/4/2022~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -261,7 +261,7 @@ r.SkeletalMeshLODRadiusScale=1;------def 1
 r.SkinCache.SceneMemoryLimitInMB=128;------def 128
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0;------def 0
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0;------def 0
-r.SkyAtmosphere=0;------def 1------changed
+r.SkyAtmosphere=1;------def 1
 r.SkyLightingQuality=1;------def 1
 r.SkylightIntensityMultiplier=1;------def 1
 r.SSGI.Quality=0;------def 2------0 for PERFORMANCE------changed
