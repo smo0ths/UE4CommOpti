@@ -1,5 +1,5 @@
 
-#### updated 10/19/2022 :ramen:
+#### updated 12/4/2022 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -8,6 +8,8 @@
 ###### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
 ###### def is pretty much reference to high scalablity group
+
+###### Use Nvidia Image Scaling and turn down in game res for more fps
 
 ---
 
@@ -43,7 +45,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=64;------def 70------changed to 64*------TEXTUREPOOL CACHE
+PoolSizeVRAMPercentage=64;------def 70------TEXTUREPOOL CACHE------changed
 
 [ConsoleVariables]
 r.DefaultFeature.AntiAliasing=2;------1 FXAA 2 TAA 3 MSAA 0 OFF------changed
@@ -57,7 +59,7 @@ r.TemporalAA.R11G11B10History=0;------def 0------EXPERIMENTAL
 r.TemporalAA.Upsampling=0;------def 0
 r.TemporalAA.Upscaler=1;------def 1
 r.TemporalAACatmullRom=0;------def 0
-r.TemporalAACurrentFrameWeight=0.1;------def 0.1
+r.TemporalAACurrentFrameWeight=0.2;------def 0.1------changed
 r.TemporalAAFilterSize=1;------def 1
 r.TemporalAAPauseCorrect=1;------def 1
 r.TemporalAASamples=4;------def 8------changed
@@ -112,7 +114,7 @@ r.AmbientOcclusionMaxQuality=100;------def 100
 r.AmbientOcclusionMipLevelFactor=1;------def 0.6------changed
 r.AmbientOcclusionRadiusScale=0.01;------def 1------changed
 r.AmbientOcclusionStaticFraction=-1;------def -1
-r.AnisotropicMaterials=1;------def 1------0 for PERFORMANCE
+r.AnisotropicMaterials=0;------def 1------0 for PERFORMANCE------changed
 r.AOApplyToStaticIndirect=0;------def 0
 r.AOComputeShaderNormalCalculation=0;------def 0
 r.AOGlobalDFResolution=128;------def 128
@@ -147,7 +149,7 @@ r.DefaultFeature.LightUnits=1;------def 1
 r.DefaultFeature.MotionBlur=0;------def 0
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0;------def 0------EXPERIMENTAL
 r.DeferUniformExpressionCaching=1;------def 1
-r.DepthOfFieldQuality=1;------def 2------0 for PERFORMANCE------changed
+r.DepthOfFieldQuality=0;------def 2------0 for PERFORMANCE------changed
 r.DetailMode=1;------def 1------0 for PERFORMANCE
 r.DFDistanceScale=1;------def 1
 r.DFFullResolution=0;------def 0
@@ -160,7 +162,7 @@ r.DistanceFieldShadowing=1;------def 1------0 for PERFORMANCE
 r.DoInitViewsLightingAfterPrepass=0;------def 0------EXPERIMENTAL
 r.DoLazyStaticMeshUpdate=0;------def 0------EXPERIMENTAL
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1;------def 1
-r.DoTiledReflections=1;------def 1
+r.DoTiledReflections=1;------def 1------0 for PERFORMANCE
 r.Downsample.Quality=1;------def 1
 r.DrawRectangleOptimization=1;------def 1
 r.EarlyZPass=2;------def 2
@@ -168,7 +170,7 @@ r.EarlyZPassMovable=1;------def 1
 r.EarlyZPassOnlyMaterialMasking=1;------def 1
 r.Emitter.FastPoolEnable=1;------def 0------changed
 r.Emitter.FastPoolMaxFreeSize=3072000;------def 2097152------changed
-r.EmitterSpawnRateScale=0.75;------def 1------0.125 for PERFORMANCE------changed
+r.EmitterSpawnRateScale=0.5;------def 1------0.125 for PERFORMANCE------changed
 r.EnableAsyncComputeTranslucencyLightingVolumeClear=1;------def 1
 r.FastBlurThreshold=3;------def 3
 r.Filter.SizeScale=0.8;------def 0.8
@@ -176,7 +178,7 @@ r.FinishCurrentFrame=0;------def 0
 r.ForceSceneHasDecals=0;------def 0
 r.FreeSkeletalMeshBuffers=0;------def 0
 r.FullScreenMode=0;------def 0------0 for PERFORMANCE
-r.GBufferFormat=1;------def 1
+r.GBufferFormat=0;------def 1------0 for PERFORMANCE------changed
 r.GenerateLandscapeGIData=1;------def 1
 r.GenerateMeshDistanceFields=1;------1 for DFSHADOWS and or DFAO------0 for PERFORMANCE
 r.GPUCrash.CollectionEnable=0;------def 1------changed
@@ -185,13 +187,13 @@ r.GPUSkin.Limit2BoneInfluences=0;------def 0
 r.GTSyncType=0;------def 0
 r.HairStrands.SkyLighting=1;------def 1
 r.HDR.EnableHDROutput=0;------def 0
-r.HeightFieldShadowing=0;------def 0
-r.HFShadowQuality=2;------def 2------0 or 1 for PERFORMANCE
+r.HeightFieldShadowing=1;------def 0------changed
+r.HFShadowQuality=1;------def 2------0 or 1 for PERFORMANCE------changed
 r.HighQualityLightMaps=1;------def 1
 r.HZBOcclusion=0;------def 0
 r.IrisNormal=0;------def 0
 r.LandscapeLOD0DistributionScale=1;------def 1
-r.LandscapeLODBias=1;------def 0------1 for PERFORMANCE------changed
+r.LandscapeLODBias=0;------def 0------1 for PERFORMANCE
 r.LandscapeLODDistributionScale=1;------def 1
 r.LensFlareQuality=2;------def 2------0 for PERFORMANCE
 r.LightFunctionQuality=1;------def 1
@@ -230,23 +232,23 @@ r.SceneColorFringe.Max=-1;------def -1
 r.SceneColorFringeQuality=0;------def 1------changed
 r.SceneRenderTargetResizeMethod=0;------def 0
 r.SceneRenderTargetResizeMethodForceOverride=0;------def 0
-r.SeparateTranslucency=1;------def 1------0 for PERFORMANCE
+r.SeparateTranslucency=0;------def 1------0 for PERFORMANCE------changed
 r.ShaderDevelopmentMode=0;------def 0
 r.Shaders.FastMath=1;------def 1
 r.Shaders.Optimize=1;------def 1
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;------def 1------0 for PERFORMANCE
 r.Shadow.CacheWholeSceneShadows=1;------def 1
 r.Shadow.CacheWPOPrimitives=0;------def 0
-r.Shadow.CSM.MaxCascades=3;------def 3------1 or 2 for PERFORMANCE
+r.Shadow.CSM.MaxCascades=4;------def 3------1 or 2 for PERFORMANCE------changed
 r.Shadow.CSM.TransitionScale=0.8;------def 0.8
 r.Shadow.CSMDepthBias=10;------def 10
-r.Shadow.DistanceScale=0.85;------def 0.85
+r.Shadow.DistanceScale=0.7;------def 0.85------changed
 r.Shadow.FilterMethod=0;------def 0
-r.Shadow.MaxCSMResolution=2048;------def 2048------512 or 1024 for PERFORMANCE
-r.Shadow.MaxNumFarShadowCascades=1;------def 10------0 for PERFORMANCE------changed
+r.Shadow.MaxCSMResolution=1024;------def 2048------512 or 1024 for PERFORMANCE------changed
+r.Shadow.MaxNumFarShadowCascades=4;------def 10------0 for PERFORMANCE------changed
 r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=2;------def -1------2 for PERFORMANCE------changed
 r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;------def -1------4 for PERFORMANCE------changed
-r.Shadow.MaxResolution=2048;------def 2048------1024 for PERFORMANCE
+r.Shadow.MaxResolution=1024;------def 2048------1024 for PERFORMANCE------changed
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
 r.Shadow.PointLightDepthBias=0.02;------def 0.02
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
@@ -259,7 +261,7 @@ r.SkeletalMeshLODRadiusScale=1;------def 1
 r.SkinCache.SceneMemoryLimitInMB=128;------def 128
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0;------def 0
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0;------def 0
-r.SkyAtmosphere=1;------def 1
+r.SkyAtmosphere=0;------def 1------changed
 r.SkyLightingQuality=1;------def 1
 r.SkylightIntensityMultiplier=1;------def 1
 r.SSGI.Quality=0;------def 2------0 for PERFORMANCE------changed
@@ -269,7 +271,7 @@ r.SSR.Quality=0;------def 2------0 for PERFORMANCE------changed
 r.SSR.Temporal=0;------def 0
 r.SSS.Checkerboard=1;------def 2------changed
 r.SSS.HalfRes=1;------def 1
-r.SSS.Quality=-1;------def -1
+r.SSS.Quality=0;------def -1------0 for PERFORMANCE------changed
 r.StaticMeshLODDistanceScale=1;------def 1
 r.Streaming.AmortizeCPUToGPUCopy=1;------def 0------1 for PERFORMANCE------changed
 r.Streaming.FullyLoadUsedTextures=0;------def 0
@@ -303,7 +305,7 @@ r.TranslucencyLightingVolume=1;------def 1------0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32;------def 48------32 for PERFORMANCE------changed
 r.UITextureLODBias=0;------def 0
 r.UniformBufferPooling=1;------def 1
-r.Upscale.Quality=1;------def 2------changed
+r.Upscale.Quality=2;------def 2
 r.Upscale.Softness=1;------def 1
 r.UseClusteredDeferredShading=0;------def 0
 r.UseFastIntersect=1;------def 1
@@ -311,13 +313,13 @@ r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
 r.ViewDistanceScale.ApplySecondaryScale=0;------def 0
 r.ViewDistanceScale.SecondaryScale=1;------def 1
 r.ViewDistanceScale=0.8;------def 1------0.8 for PERFORMANCE------changed
-r.VirtualTexture=1;------def 1
+r.VirtualTexture=0;------def 1------changed
 r.VirtualTexturedLightmaps=0;------def 0
 r.VirtualTextureReducedMemory=0;------def 0
-r.VirtualTextures=1;------def 1
-r.VolumetricCloud.ShadowMap=1;------def 1------0 for PERFORMANCE
-r.VolumetricCloud.SkyAO=1;------def 1------0 for PERFORMANCE
-r.VolumetricCloud=1;------def 1------0 for PERFORMANCE
+r.VirtualTextures=0;------def 1------changed
+r.VolumetricCloud.ShadowMap=0;------def 1------0 for PERFORMANCE------changed
+r.VolumetricCloud.SkyAO=0;------def 1------0 for PERFORMANCE------changed
+r.VolumetricCloud=0;------def 1------0 for PERFORMANCE------changed
 r.VolumetricFog.GridPixelSize=32;------def 16------changed
 r.VolumetricFog.HistoryMissSupersampleCount=1;------def 4------0 for PERFORMANCE------changed
 r.VolumetricFog.InjectShadowedLightsSeparately=0;------def 1------0 for PERFORMANCE------changed
@@ -387,7 +389,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-TextureStreamPoolSizeStorage=(Value=)
+TextureStreamPoolSizeStorage=(Value=800)
 MaxAnisotropy=(Value=)
 FoliageMinLOD=(Value=1)
 HZBOcclusion=(Value=)
