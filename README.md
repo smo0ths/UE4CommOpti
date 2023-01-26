@@ -1,5 +1,5 @@
 
-#### updated 12/4/2022~ :ramen:
+#### updated 1/26/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -9,7 +9,7 @@
 
 ###### def is pretty much reference to high scalablity group
 
-###### Use Nvidia Image Scaling and turn down in game res for more fps
+###### Use Nvidia Image Scaling and turn down in game res for more fps (Enabled dlss quality with this for even more fps)
 
 ---
 
@@ -34,7 +34,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 Global=off;
 
 [Audio]
-MaxChannels=64;------def 0------changed to 64*------64 for PERFORMANCE
+MaxChannels=64;------def 0------64 for PERFORMANCE------changed
 CommonAudioPoolSize=0;------def 0
 UnfocusedVolumeMultiplier=1;
 
@@ -84,7 +84,7 @@ FX.FXAllowParticleMeshLODs=0;------def 0
 FX.ParticleCollisionIgnoreInvisibleTime=0.1;------def 0.1
 FX.ParticleManagerAsyncBatchSize=8;------def 8
 FX.ParticleSystemPool.CleanTime=30;------def 30
-FX.ParticleSystemPool.Enable=1------def 1
+FX.ParticleSystemPool.Enable=1;------def 1
 FX.ParticleSystemPool.KillUnusedTime=180;------def 180
 FX.QualityLevelSpawnRateScaleReferenceLevel=2;------def 2------0 for PERFORMANCE
 grass.DensityScale=0.6;------def 1------0.6 for PERFORMANCE------changed
@@ -187,8 +187,8 @@ r.GPUSkin.Limit2BoneInfluences=0;------def 0
 r.GTSyncType=0;------def 0
 r.HairStrands.SkyLighting=1;------def 1
 r.HDR.EnableHDROutput=0;------def 0
-r.HeightFieldShadowing=1;------def 0------changed
-r.HFShadowQuality=1;------def 2------0 or 1 for PERFORMANCE------changed
+r.HeightFieldShadowing=0;------def 0
+r.HFShadowQuality=2;------def 2------0 or 1 for PERFORMANCE
 r.HighQualityLightMaps=1;------def 1
 r.HZBOcclusion=0;------def 0
 r.IrisNormal=0;------def 0
@@ -469,15 +469,15 @@ WIP
 
 ##### 3. Anisotropic filtering:  set Application-controlled (you can force the setting in here if you can't notice it working in certain games)
 
-##### 4. Antialiasing - mode: set Application-controlled 
+##### 4. Antialiasing - mode: set Application-controlled
 
-##### 5. Low latency mode:
+##### 5. Low latency mode (Only works with dx11 and lower api):
 
 ###### Off and ~85% gpu usage for multiple frame buffers sacrificing latency (cap fps til gpu usage is ~85%) (for visual fluidity of frames)
 
 ###### On forces 1 frame buffer (for lower latency than off) (for visual fluidity of frames)
 
-###### Ultra and/or relfex (in-game) and ~97% gpu usage for lowest latency (could be less fluid frames at low fps)
+###### Ultra and/or nvidia relfex (in-game dx12 only) and ~97% gpu usage for lowest latency (could be less fluid frames at low fps)
 
 ##### 6. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
 
@@ -485,7 +485,7 @@ WIP
 
 ##### 8. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game) (you may need to reapply because NVCP will reset when you change other settings)
 
-##### 9. Texture filtering - negative LOD bias:  clamp  (this should be the default i.e. 0 mipmap bias) (you may need to reapply because NVCP will reset when you change other settings)
+##### 9. Texture filtering - negative LOD bias:  clamp  (this should be the default i.e. 0 mipmap bias) (you may need to re-apply because NVCP will reset when you change other settings)
 
 ##### 10. Texture filtering quality:  high performance
 
