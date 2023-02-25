@@ -197,7 +197,7 @@ r.LensFlareQuality=2;------def 2------0 for PERFORMANCE
 r.LightFunctionQuality=1;------def 1
 r.LightMaxDrawDistanceScale=1;------def 1------0.6 for PERFORMANCE
 r.LightShaftAllowTAA=1;------def 1
-r.LightShaftDownSampleFactor=1;------def 2------changed
+r.LightShaftDownSampleFactor=1;------def 2------2 for PERFORMANCE------changed
 r.LightShaftQuality=1;------def 1------0 for PERFORMANCE
 r.LightShaftRenderToSeparateTranslucency=0;------def 0
 r.MaterialQualityLevel=1;------def 1------0 for PERFORMANCE
@@ -329,7 +329,7 @@ r.Water.SingleLayer.SSR=0;------def 1------0 for PERFORMANCE------changed
 r.Water.SingleLayer.SSRTAA=0;------def 1------changed
 r.Water.SingleLayer.TiledComposite=1;------def 1
 rhi.SyncInterval=0;------def 1------changed
-RHI.SyncSlackMS=0;------def 10------changed
+rhi.SyncSlackMS=0;------def 10------changed
 ```
 
 ---
