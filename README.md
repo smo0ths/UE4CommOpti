@@ -1,5 +1,5 @@
 
-#### updated 2/24/2023 :ramen:
+#### updated 3/2/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -109,11 +109,11 @@ r.AllowSimpleLights=1;------def 1------0 for PERFORMANCE
 r.AlsoUseSphereForFrustumCull=0;------def 0------1 for PERFORMANCE
 r.AmbientOcclusion.AsyncComputeBudget=1;------def 1
 r.AmbientOcclusion.Compute.Smooth=1;------def 1
-r.AmbientOcclusion.Compute=1;------def 0------1 for PERFORMANCE------changed
-r.AmbientOcclusionLevels=1;------def 3------0 for PERFORMANCE------changed
+r.AmbientOcclusion.Compute=0;------def 0------1 for PERFORMANCE
+r.AmbientOcclusionLevels=2;------def 3------0 for PERFORMANCE------changed
 r.AmbientOcclusionMaxQuality=100;------def 100
 r.AmbientOcclusionMipLevelFactor=1;------def 0.6------changed
-r.AmbientOcclusionRadiusScale=0.01;------def 1------changed
+r.AmbientOcclusionRadiusScale=0.1;------def 1------changed
 r.AmbientOcclusionStaticFraction=-1;------def -1
 r.AnisotropicMaterials=1;------def 1------0 for PERFORMANCE
 r.AOApplyToStaticIndirect=0;------def 0
@@ -239,19 +239,18 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=1;------def 1------0 for PERFORM
 r.Shadow.CacheWholeSceneShadows=1;------def 1
 r.Shadow.CacheWPOPrimitives=0;------def 0
 r.Shadow.CSM.MaxCascades=3;------def 3------1 or 2 for PERFORMANCE
-r.Shadow.CSM.TransitionScale=0.8;------def 0.8
+r.Shadow.CSM.TransitionScale=1;------def 0.8------changed
 r.Shadow.CSMDepthBias=10;------def 10
-r.Shadow.DistanceScale=0.85;------def 0.85
+r.Shadow.DistanceScale=1;------def 0.85------changed
 r.Shadow.FilterMethod=0;------def 0
 r.Shadow.MaxCSMResolution=3072;------def 2048------512 or 1024 for PERFORMANCE------changed
-r.Shadow.MaxNumFarShadowCascades=2;------def 10------0 for PERFORMANCE------changed
-r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=2;------def -1------2 for PERFORMANCE------changed
-r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=4;------def -1------4 for PERFORMANCE------changed
+r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=-1;------def -1
+r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=-1;------def -1
 r.Shadow.MaxResolution=2048;------def 2048------1024 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0;------def 0
 r.Shadow.PointLightDepthBias=0.02;------def 0.02
 r.Shadow.PointLightSlopeScaleDepthBias=3;------def 3
-r.Shadow.RadiusThreshold=0.03;------def 0.04------0.06 for PERFORMANCE------changed
+r.Shadow.RadiusThreshold=0.04;------def 0.04
 r.Shadow.SpotLightTransitionScale=240;------def 60------changed
 r.Shadow.TransitionScale=60;------def 60
 r.ShadowQuality=3;------def 4------3 for PERFORMANCE------changed
@@ -311,7 +310,7 @@ r.UseFastIntersect=1;------def 1
 r.UseParallelGetDynamicMeshElementsTasks=0;------def 0
 r.ViewDistanceScale.ApplySecondaryScale=0;------def 0
 r.ViewDistanceScale.SecondaryScale=1;------def 1
-r.ViewDistanceScale=0.8;------def 1------0.8 for PERFORMANCE------changed
+r.ViewDistanceScale=1;------def 1------0.8 for PERFORMANCE
 r.VolumetricCloud.ShadowMap=0;------def 1------0 for PERFORMANCE------changed
 r.VolumetricCloud.SkyAO=0;------def 1------0 for PERFORMANCE------changed
 r.VolumetricCloud=0;------def 1------0 for PERFORMANCE------changed
