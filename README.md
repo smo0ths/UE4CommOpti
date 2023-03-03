@@ -1,5 +1,5 @@
 
-#### updated 3/2/2023 :ramen:
+#### updated 3/3/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -50,19 +50,19 @@ PoolSizeVRAMPercentage=64;------def 70------TEXTUREPOOL CACHE------changed
 [ConsoleVariables]
 r.DefaultFeature.AntiAliasing=2;------1 FXAA 2 TAA 3 MSAA 0 OFF------changed
 r.PostProcessAAQuality=5;------1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF------changed
-r.ScreenPercentage=70;------def 100------TAAU INPUT RESOLUTION------changed
+r.ScreenPercentage=100;------def 100------70 for PERFORMANCE
 r.SecondaryScreenPercentage.GameViewport=0;------def 0------83.33 for PERFORMANCE
-r.TemporalAA.Algorithm=0;------def 0
+r.TemporalAA.Algorithm=1;------def 0------0 for PERFORMANCE------changed
 r.TemporalAA.AllowDownsampling=1;------def 1
 r.TemporalAA.HistoryScreenPercentage=100;------def 100
 r.TemporalAA.R11G11B10History=0;------def 0------EXPERIMENTAL
-r.TemporalAA.Upsampling=1;------def 0------changed
+r.TemporalAA.Upsampling=0;------def 0
 r.TemporalAA.Upscaler=1;------def 1
 r.TemporalAACatmullRom=0;------def 0
 r.TemporalAACurrentFrameWeight=0.1;------def 0.1
-r.TemporalAAFilterSize=1;------def 1
+r.TemporalAAFilterSize=0.1;------def 1------changed
 r.TemporalAAPauseCorrect=1;------def 1
-r.TemporalAASamples=4;------def 8------changed
+r.TemporalAASamples=8;------def 8
 r.TemporalAAUpsampleFiltered=1;------def 1
 au.RenderThreadPriority=0;------def 0
 AudioThread.BatchAsyncBatchSize=128;------def 128
