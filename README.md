@@ -1,5 +1,5 @@
 
-#### updated 4/12/2023 :ramen:
+#### updated 4/15/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -296,7 +296,7 @@ r.Streaming.PoolSize=800; ⚫️DEF 800
 r.Streaming.PoolSizeForMeshes=-1; ⚫️DEF -1
 r.Streaming.UseFixedPoolSize=0; ⚫️DEF 0
 r.Streaming.UsePerTextureBias=1; ⚫️DEF 1
-r.SubsurfaceScattering=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.SubsurfaceScattering=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SupportAnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SupportMaterialLayers=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SupportSkyAtmosphere=1; ⚫️DEF 1
