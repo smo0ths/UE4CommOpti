@@ -1,9 +1,9 @@
 
-#### updated 4/15/2023~ :ramen:
+#### updated 4/18/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
-###### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/vB8f4fZ7EH)
+###### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
 ###### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
