@@ -135,7 +135,6 @@ r.Bloom.HalfResolutionFFT=0; ⚫️DEF 0 🔴experimental
 r.BloomQuality=4; ⚫️DEF 4
 r.CapsuleShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.CapsuleShadowsFullResolution=0; ⚫️DEF 0
-r.chaos.ReflectionCaptureStaticSceneOnly=0; ⚫️DEF 1 ⚪️EDITED
 r.chaos.ReflectionCaptureStaticSceneOnly=1; ⚫️DEF 1
 r.ClearCoatNormal=0; ⚫️DEF 0
 r.CompileShadersForDevelopment=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
