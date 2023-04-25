@@ -1,5 +1,5 @@
 
-#### updated 4/25/2023 :ramen:
+#### updated 4/25/2023~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -111,7 +111,7 @@ r.AllowLandscapeShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.AllowOcclusionQueries=1; ⚫️DEF 1
 r.AllowPointLightCubemapShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.AllowSimpleLights=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.AlsoUseSphereForFrustumCull=0; ⚫️DEF 0 🟢1 for PERFORMANCE
+r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 r.AmbientOcclusion.AsyncComputeBudget=1; ⚫️DEF 1
 r.AmbientOcclusion.Compute.Smooth=1; ⚫️DEF 1
 r.AmbientOcclusion.Compute=0; ⚫️DEF 0 🟢1 for PERFORMANCE
@@ -160,7 +160,7 @@ r.DFShadowScatterTileCulling=1; ⚫️DEF 1
 r.DFTwoSidedMeshDistanceBias=5; ⚫️DEF 4 ⚪️EDITED
 r.DiscardUnusedQuality=0; ⚫️DEF 0
 r.DistanceFieldAO=0; ⚫️DEF 0
-r.DistanceFieldShadowing=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.DistanceFieldShadowing=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.DoInitViewsLightingAfterPrepass=0; ⚫️DEF 0 🔴experimental
 r.DoLazyStaticMeshUpdate=0; ⚫️DEF 0 🔴experimental
 r.DoPrepareDistanceFieldSceneAfterRHIFlush=1; ⚫️DEF 1
@@ -208,7 +208,7 @@ r.MinScreenRadiusForCSMDepth=0.01; ⚫️DEF 0.01
 r.MinScreenRadiusForDepthPrepass=0.03; ⚫️DEF 0.03
 r.MinScreenRadiusForLights=0.03; ⚫️DEF 0.03 🟢0.06 for PERFORMANCE
 r.MinTimeBetweenTicks=12; ⚫️DEF 8 or 16 ⚪️EDITED
-r.MipMapLODBias=-1; ⚫️DEF 0 🟢0 or 1 for PERFORMANCE ⚪️EDITED
+r.MipMapLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.MorphTarget.Mode=1; ⚫️DEF 1
 r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.MSAACount=0; ⚫️DEF 4 ⚪️EDITED
@@ -253,7 +253,7 @@ r.Shadow.OcclusionCullCascadedShadowMaps=0; ⚫️DEF 0
 r.Shadow.PointLightDepthBias=0.02; ⚫️DEF 0.02
 r.Shadow.PointLightSlopeScaleDepthBias=3; ⚫️DEF 3
 r.Shadow.RadiusThreshold=0.04; ⚫️DEF 0.04
-r.Shadow.SpotLightTransitionScale=240; ⚫️DEF 60 ⚪️EDITED
+r.Shadow.SpotLightTransitionScale=60; ⚫️DEF 60
 r.Shadow.TransitionScale=60; ⚫️DEF 60
 r.ShadowQuality=3; ⚫️DEF 4 🟢3 for PERFORMANCE ⚪️EDITED
 r.SkeletalMeshLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
