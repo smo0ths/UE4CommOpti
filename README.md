@@ -1,5 +1,5 @@
 
-#### updated 4/25/2023~ :ramen:
+#### updated 4/26/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -130,7 +130,7 @@ r.AOOverwriteSceneColor=0; ⚫️DEF 0
 r.AOQuality=1; ⚫️DEF 1
 r.AOSampleSet=1; ⚫️DEF 1
 r.AOViewFadeDistanceScale=0.7; ⚫️DEF 0.7
-r.Bloom.Cross=0; ⚫️DEF 0 🟢-Anamorphic 0.7777
+r.Bloom.Cross=0; ⚫️DEF 0 🟣 for anamorphic 0.7777
 r.Bloom.HalfResolutionFFT=0; ⚫️DEF 0 🔴experimental
 r.BloomQuality=4; ⚫️DEF 4
 r.CapsuleShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -178,7 +178,7 @@ r.FreeSkeletalMeshBuffers=0; ⚫️DEF 0
 r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.GenerateLandscapeGIData=0; ⚫️DEF 1 ⚪️EDITED
-r.GenerateMeshDistanceFields=0; 🟢1 for DFSHADOWS and or DFAO 🟢0 for PERFORMANCE
+r.GenerateMeshDistanceFields=0; 🟣1 for DFSHADOWS and or DFAO 🟢0 for PERFORMANCE
 r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
 r.GPUCrashDebugging=0; ⚫️DEF 0
 r.GPUSkin.Limit2BoneInfluences=0; ⚫️DEF 0
@@ -223,7 +223,7 @@ r.ReflectionCaptureSupersampleFactor=1; ⚫️DEF 1
 r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixLargestWeight=10000; ⚫️DEF 10000
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
-r.RenderTargetPool.AllowMultipleAliasingDiscardsPERFORMANCErame=0; ⚫️DEF 0
+r.RenderTargetPool.AllowMultipleAliasingDiscardsPerFrame=0; ⚫️DEF 0
 r.RenderTargetPool.TransientAliasingMode=2; ⚫️DEF 2
 r.RenderTargetPoolMin=400; ⚫️DEF 400
 r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF ❓ 🟣TEST 🔴experimental
@@ -246,8 +246,8 @@ r.Shadow.CSMDepthBias=10; ⚫️DEF 10
 r.Shadow.DistanceScale=1; ⚫️DEF 0.85 ⚪️EDITED
 r.Shadow.FilterMethod=0; ⚫️DEF 0
 r.Shadow.MaxCSMResolution=4096; ⚫️DEF 2048 🟢512 or 1024 for PERFORMANCE ⚪️EDITED
-r.Shadow.MaxNumPointShadowCacheUpdatesPERFORMANCErame=-1; ⚫️DEF -1
-r.Shadow.MaxNumSpotShadowCacheUpdatesPERFORMANCErame=-1; ⚫️DEF -1
+r.Shadow.MaxNumPointShadowCacheUpdatesPerFrame=-1; ⚫️DEF -1
+r.Shadow.MaxNumSpotShadowCacheUpdatesPerFrame=-1; ⚫️DEF -1
 r.Shadow.MaxResolution=2048; ⚫️DEF 2048 🟢1024 for PERFORMANCE
 r.Shadow.OcclusionCullCascadedShadowMaps=0; ⚫️DEF 0
 r.Shadow.PointLightDepthBias=0.02; ⚫️DEF 0.02
