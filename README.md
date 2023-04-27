@@ -306,7 +306,6 @@ r.UITextureLODBias=0; ⚫️DEF 0
 r.UniformBufferPooling=1; ⚫️DEF 1
 r.UseClusteredDeferredShading=0; ⚫️DEF 0
 r.UseFastIntersect=1; ⚫️DEF 1
-r.UseParallelGetDynamicMeshElementsTasks=1; ⚫️DEF 0 🟣TEST ⚪️EDITED
 r.ViewDistanceScale.ApplySecondaryScale=0; ⚫️DEF 0
 r.ViewDistanceScale.SecondaryScale=1; ⚫️DEF 1
 r.ViewDistanceScale=1; ⚫️DEF 1 🟢0.8 for PERFORMANCE
