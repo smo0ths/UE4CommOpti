@@ -1,5 +1,5 @@
 
-#### updated 4/27/2023 :ramen:
+#### updated 4/27/2023~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -264,7 +264,7 @@ r.SkyLightingQuality=1; ⚫️DEF 1
 r.SSGI.Quality=0; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSR.HalfResSceneColor=1; ⚫️DEF 1
 r.SSR.MaxRoughness=-1; ⚫️DEF -1
-r.SSR.Quality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.SSR.Quality=0; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSR.Temporal=0; ⚫️DEF 0
 r.SSS.Checkerboard=2; ⚫️DEF 2
 r.SSS.HalfRes=1; ⚫️DEF 1
@@ -306,7 +306,7 @@ r.UITextureLODBias=0; ⚫️DEF 0
 r.UniformBufferPooling=1; ⚫️DEF 1
 r.UseClusteredDeferredShading=0; ⚫️DEF 0
 r.UseFastIntersect=1; ⚫️DEF 1
-r.UseParallelGetDynamicMeshElementsTasks=0; ⚫️DEF 0
+r.UseParallelGetDynamicMeshElementsTasks=1; ⚫️DEF 0 🟣TEST ⚪️EDITED
 r.ViewDistanceScale.ApplySecondaryScale=0; ⚫️DEF 0
 r.ViewDistanceScale.SecondaryScale=1; ⚫️DEF 1
 r.ViewDistanceScale=1; ⚫️DEF 1 🟢0.8 for PERFORMANCE
@@ -322,9 +322,9 @@ r.Vulkan.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 r.Water.EnableShallowWaterSimulation=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.EnableUnderwaterPostProcess=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.Reflection=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.Water.SingleLayer.RefractionDownsampleFactor=2; ⚫️DEF 2 🟢2 for PERFORMANCE
+r.Water.SingleLayer.RefractionDownsampleFactor=2; ⚫️DEF 2
 r.Water.SingleLayer.SSR=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.Water.SingleLayer.SSRTAA=0; ⚫️DEF 1 ⚪️EDITED
+r.Water.SingleLayer.SSRTAA=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.TiledComposite=1; ⚫️DEF 1
 rhi.SyncInterval=0; ⚫️DEF 1 ⚪️EDITED
 rhi.SyncSlackMS=0; ⚫️DEF 10 ⚪️EDITED
