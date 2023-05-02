@@ -1,5 +1,5 @@
 
-#### updated 5/2/2023~~~ :ramen:
+#### updated 5/2/2023~~~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -121,7 +121,6 @@ r.ParticleLightQuality=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.ParticleLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.ReflectionEnvironmentLightmapMixLargestWeight=10000; ⚫️DEF 10000
 r.RefractionQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF 1 🟣TEST 🔴experimental
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
