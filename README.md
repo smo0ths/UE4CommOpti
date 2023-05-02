@@ -1,5 +1,5 @@
 
-#### updated 5/2/2023~~~~ :ramen:
+#### updated 5/2/2023~~~~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -73,8 +73,6 @@ r.CapsuleShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.CompileShadersForDevelopment=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.ContactShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.CookOutUnusedDetailModeComponents=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟣TEST
-r.D3D11.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
-r.D3D12.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DefaultBackBufferPixelFormat=0; ⚫️DEF 4 ⚪️EDITED 🟣TEST
 r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1 🟢0 for PERFORMANCE
