@@ -1,5 +1,5 @@
 
-#### updated 5/2/2023~ :ramen:
+#### updated 5/2/2023~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -139,12 +139,11 @@ r.SkeletalMeshLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.SSGI.Quality=0; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSR.HalfResSceneColor=1; ⚫️DEF 1 🟢1 for PERFORMANCE
 r.SSR.Quality=2; ⚫️DEF 2 🟢0 for PERFORMANCE
-r.SSS.Checkerboard=1; ⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
 r.SSS.Quality=0; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSS.SampleSet=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Streaming.AmortizeCPUToGPUCopy=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 r.Streaming.MaxNumTexturesToStreamPerFrame=5; ⚫️DEF 0 🟢5 for PERFORMANCE ⚪️EDITED
-r.SubsurfaceScattering=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.SubsurfaceScattering=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.SupportAnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SupportMaterialLayers=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.TemporalAA.Algorithm=1; ⚫️DEF 0 🟢0 for PERFORMANCE ⚪️EDITED
@@ -289,47 +288,47 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 ```python
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Cinematic,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Effects,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=linear,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_UI,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_NoMipmaps)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=3)
-TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_MobileFlattened,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MaxLODSize=4096,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MaxLODSize=4096,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Bokeh,MaxLODSize=256,OptionalMaxLODSize=128,OptionalLODBias=1,MaxLODSize_Smaller=128,MaxLODSize_Smallest=64,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=linear,MipFilter=linear)
-TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=point,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Impostor,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_ImpostorNormalDepth,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_HierarchicalLOD,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project01,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=true)
-TextureLODGroups=(Group=TEXTUREGROUP_Project02,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project03,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project04,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_NoMipmaps)
-TextureLODGroups=(Group=TEXTUREGROUP_Project05,MaxLODSize=512,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project06,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=1,LODBias_Smaller=1,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project07,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project08,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project09,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project10,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project11,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project12,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
-TextureLODGroups=(Group=TEXTUREGROUP_Project13,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Cinematic,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=linear,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_NoMipmaps)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=3)
+TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_MobileFlattened,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=4096,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=4096,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Bokeh,MinLODSize=1,MaxLODSize=256,OptionalMaxLODSize=128,OptionalLODBias=1,MaxLODSize_Smaller=128,MaxLODSize_Smallest=64,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=linear,MipFilter=linear)
+TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=point,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Impostor,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_ImpostorNormalDepth,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_HierarchicalLOD,MinLODSize=1,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project01,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=true)
+TextureLODGroups=(Group=TEXTUREGROUP_Project02,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project03,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project04,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_NoMipmaps)
+TextureLODGroups=(Group=TEXTUREGROUP_Project05,MinLODSize=1,MaxLODSize=512,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project06,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=1,LODBias_Smaller=1,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project07,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project08,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project09,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project10,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project11,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project12,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project13,MinLODSize=1,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=1,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
 ```
 
 ---
