@@ -1,5 +1,5 @@
 
-#### updated 5/2/2023 :ramen:
+#### updated 5/2/2023~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -76,7 +76,7 @@ r.CookOutUnusedDetailModeComponents=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟣TES
 r.D3D11.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 r.D3D12.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.DefaultBackBufferPixelFormat=4; ⚫️DEF 4 ⚪️EDITED 🟣TEST
+r.DefaultBackBufferPixelFormat=0; ⚫️DEF 4 ⚪️EDITED 🟣TEST
 r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
@@ -94,7 +94,7 @@ r.DoLazyStaticMeshUpdate=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5; ⚫️DEF 1 🟢0.125 for PERFORMANCE ⚪️EDITED
 r.EnableAsyncComputeVolumetricFog=1; ⚫️DEF ❓ 🟣TEST
-r.FreeSkeletalMeshBuffers=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟣TEST
+r.FreeSkeletalMeshBuffers=0; ⚫️DEF 0 🟣TEST
 r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
@@ -137,6 +137,8 @@ r.Shadow.MaxResolution=2048; ⚫️DEF 2048 🟢1024 for PERFORMANCE
 r.ShadowQuality=3; ⚫️DEF 4 🟢3 for PERFORMANCE ⚪️EDITED
 r.SkeletalMeshLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.SSGI.Quality=0; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.SSR.HalfResSceneColor=1; ⚫️DEF 1 🟢1 for PERFORMANCE
+r.SSR.Quality=2; ⚫️DEF 2 🟢0 for PERFORMANCE
 r.SSS.Checkerboard=1; ⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
 r.SSS.Quality=0; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSS.SampleSet=1; ⚫️DEF 1 🟢0 for PERFORMANCE
