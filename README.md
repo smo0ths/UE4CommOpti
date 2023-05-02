@@ -1,5 +1,5 @@
 
-#### updated 5/2/2023~~ :ramen:
+#### updated 5/2/2023~~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -81,7 +81,7 @@ r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0; ⚫️DEF 0 🟣TEST 🔴experimental
-r.DepthOfFieldQuality=0; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.DepthOfFieldQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DetailMode=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DFShadowQuality=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
 r.DFShadowScatterTileCulling=1; ⚫️DEF 1
@@ -103,7 +103,7 @@ r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
 r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
 r.LandscapeLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.LandscapeLODDistributionScale=1; ⚫️DEF 1
-r.LensFlareQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE
+r.LensFlareQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1; ⚫️DEF 1 🟢0.6 for PERFORMANCE
 r.LightShaftAllowTAA=0; ⚫️DEF 1 ⚪️EDITED
 r.LightShaftDownSampleFactor=1; ⚫️DEF 2 🟢2 for PERFORMANCE ⚪️EDITED
