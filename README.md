@@ -1,5 +1,5 @@
 
-#### updated 5/2/2023~~~~~ :ramen:
+#### updated 5/2/2023 x6 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -125,7 +125,7 @@ r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
 r.ScreenPercentage=100; ⚫️DEF 100 🟢70 for PERFORMANCE 🟣TEST
 r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=1; ⚫️DEF 0.85 ⚪️EDITED
@@ -161,7 +161,6 @@ r.VolumetricFog.GridPixelSize=32; ⚫️DEF 16 ⚪️EDITED
 r.VolumetricFog.HistoryMissSupersampleCount=1; ⚫️DEF 4 🟢0 for PERFORMANCE ⚪️EDITED
 r.VolumetricFog.InjectShadowedLightsSeparately=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.VolumetricFog=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.Vulkan.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 r.Water.EnableShallowWaterSimulation=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.EnableUnderwaterPostProcess=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.Reflection=1; ⚫️DEF 1 🟢0 for PERFORMANCE
