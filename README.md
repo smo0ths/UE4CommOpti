@@ -1,5 +1,5 @@
 
-#### updated 5/3/2023 x1 :ramen:
+#### updated 5/3/2023 x2 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -66,7 +66,7 @@ grass.TickInterval=10; ⚫️DEF 1 🟢10 for PERFORMANCE ⚪️EDITED
 p.AnimDynamics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 p.ClothPhysics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 p.RigidBodyNode=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
-r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.AllowDownsampledStandardTranslucency=0; ⚫️DEF 0 🟣TEST
 r.AllowLandscapeShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.AllowPointLightCubemapShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.AllowSimpleLights=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -95,7 +95,7 @@ r.DFShadowScatterTileCulling=1; ⚫️DEF 1
 r.DFTwoSidedMeshDistanceBias=5; ⚫️DEF 4 ⚪️EDITED
 r.DiscardUnusedQuality=0; ⚫️DEF 0 🟣TEST
 r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
-r.DistanceFieldShadowing=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
+r.DistanceFieldShadowing=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
 r.DoInitViewsLightingAfterPrepass=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.DoLazyStaticMeshUpdate=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -105,10 +105,11 @@ r.FreeSkeletalMeshBuffers=0; ⚫️DEF 0 🟣TEST
 r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
-r.GenerateMeshDistanceFields=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟢1 for DFSHADOWS DFAO 🟣TEST
+r.GenerateMeshDistanceFields=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟢1 for DFSHADOWS DFAO 🟣TEST
 r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
 r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
 r.IrisNormal=0; ⚫️DEF 0 🟣TEST
+r.LandscapeLOD0DistributionScale=1; ⚫️DEF 1
 r.LandscapeLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.LandscapeLODDistributionScale=1; ⚫️DEF 1
 r.LensFlareQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE
@@ -117,6 +118,7 @@ r.LightShaftAllowTAA=0; ⚫️DEF 1 ⚪️EDITED
 r.LightShaftDownSampleFactor=1; ⚫️DEF 2 🟢2 for PERFORMANCE ⚪️EDITED
 r.LightShaftQuality=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.LightShaftRenderToSeparateTranslucency=0; ⚫️DEF 0
+r.LUT.Size=31; ⚫️DEF 32 🟣TEST
 r.MaterialQualityLevel=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.MaxAnisotropy=8; ⚫️DEF 4 ⚪️EDITED
 r.MinScreenRadiusForLights=0.03; ⚫️DEF 0.03 🟢0.06 for PERFORMANCE
@@ -156,8 +158,9 @@ r.SupportMaterialLayers=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.TemporalAA.Algorithm=1; ⚫️DEF 0 🟢0 for PERFORMANCE ⚪️EDITED
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟣TEST
+r.TemporalAACurrentFrameWeight=0.03; ⚫️DEF 0.05 ⚪️EDITED 🟣TEST
 r.TemporalAAFilterSize=0.1; ⚫️DEF 1 ⚪️EDITED
-r.TemporalAASamples=4; ⚫️DEF 8 ⚪️EDITED
+r.TemporalAASamples=2; ⚫️DEF 8 ⚪️EDITED 🟣TEST
 r.TessellationAdaptivePixelsPerTriangle=9999999; ⚫️DEF 48 🟢9999999 for PERFORMANCE ⚪️EDITED
 r.TiledDeferredShading=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Tonemapper.GrainQuantization=1; ⚫️DEF 1 🟢0 for PERFORMANCE
