@@ -1,5 +1,5 @@
 
-#### updated 5/2/2023 x7 :ramen:
+#### updated 5/3/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -47,14 +47,23 @@ DisplayGamma=2.2;
 [TextureStreaming]
 PoolSizeVRAMPercentage=64; ⚫️DEF 70 🟢texturepool cache 🟣TEST ⚪️EDITED
 
-[ConsoleVariables]
+[/Script/Engine.RendererOverrideSettings]
+r.GTSyncType=1; ⚫️DEF 1 🟢1 for DX12 🟣TEST
+r.OneFrameThreadLag=1; ⚫️DEF 1 🟣TEST
+r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF 1 🟣TEST 🔴experimental
+r.RHICmdBypass=0; ⚫️DEF 0
+r.RHICmdUseDeferredContexts=1; ⚫️DEF 1
+r.RHICmdUseParallelAlgorithms=1; ⚫️DEF 1
+rhi.SyncInterval=0; ⚫️DEF 1 ⚪️EDITED
+rhi.SyncSlackMS=0; ⚫️DEF 10 ⚪️EDITED
+au.RenderThreadPriority=0; ⚫️DEF 0 🟣TEST
 D3D12.AdjustTexturePoolSizeBasedOnBudget=1; ⚫️DEF 0 🟣TEST ⚪️EDITED
 foliage.DensityScale=0.6; ⚫️DEF 0.8 🟢0.6 for PERFORMANCE ⚪️EDITED
 foliage.MinLOD=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 grass.DensityScale=0.6; ⚫️DEF 1 🟢0.6 for PERFORMANCE ⚪️EDITED
 grass.DisableDynamicShadows=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 grass.TickInterval=10; ⚫️DEF 1 🟢10 for PERFORMANCE ⚪️EDITED
-p.AnimDynamics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+p.AnimDynamics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 p.ClothPhysics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 p.RigidBodyNode=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
@@ -99,6 +108,7 @@ r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
 r.GenerateMeshDistanceFields=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟢1 for DFSHADOWS DFAO 🟣TEST
 r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
 r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.IrisNormal=0; ⚫️DEF 0 🟣TEST
 r.LandscapeLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.LandscapeLODDistributionScale=1; ⚫️DEF 1
 r.LensFlareQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE
@@ -118,18 +128,18 @@ r.NormalMapsForStaticLighting=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.ParticleLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
+r.RayTracing=0; ⚫️DEF 0
 r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.RefractionQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
-r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF 1 🟣TEST 🔴experimental
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ScreenPercentage=100; ⚫️DEF 100 🟢70 for PERFORMANCE 🟣TEST
+r.ScreenPercentage=83.33; ⚫️DEF 100 🟢70 or 83.33 PERFORMANCE ⚪️EDITED 🟣TEST
 r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.Shadow.CachedShadowsCastFromMovablePrimitives=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
-r.Shadow.DistanceScale=1; ⚫️DEF 0.85 ⚪️EDITED
-r.Shadow.MaxCSMResolution=2048; ⚫️DEF 2048 🟢1024 for PERFORMANCE
+r.Shadow.DistanceScale=1.1; ⚫️DEF 0.85 🟢0.85 for PERFORMANCE ⚪️EDITED
+r.Shadow.MaxCSMResolution=4096; ⚫️DEF 2048 🟢1024 for PERFORMANCE ⚪️EDITED
 r.Shadow.MaxResolution=2048; ⚫️DEF 2048 🟢1024 for PERFORMANCE
 r.ShadowQuality=3; ⚫️DEF 4 🟢3 for PERFORMANCE ⚪️EDITED
 r.SkeletalMeshLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
@@ -145,6 +155,7 @@ r.SupportAnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SupportMaterialLayers=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.TemporalAA.Algorithm=1; ⚫️DEF 0 🟢0 for PERFORMANCE ⚪️EDITED
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🟣TEST 🔴experimental
+r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟣TEST
 r.TemporalAAFilterSize=0.1; ⚫️DEF 1 ⚪️EDITED
 r.TemporalAASamples=4; ⚫️DEF 8 ⚪️EDITED
 r.TessellationAdaptivePixelsPerTriangle=9999999; ⚫️DEF 48 🟢9999999 for PERFORMANCE ⚪️EDITED
@@ -166,8 +177,6 @@ r.Water.EnableUnderwaterPostProcess=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.Reflection=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-rhi.SyncInterval=0; ⚫️DEF 1 ⚪️EDITED
-rhi.SyncSlackMS=0; ⚫️DEF 10 ⚪️EDITED
 ```
 
 ---
