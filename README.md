@@ -1,5 +1,5 @@
 
-#### updated 5/3/2023 :ramen:
+#### updated 5/3/2023 x1 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -132,7 +132,7 @@ r.RayTracing=0; ⚫️DEF 0
 r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.RefractionQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ScreenPercentage=83.33; ⚫️DEF 100 🟢70 or 83.33 PERFORMANCE ⚪️EDITED 🟣TEST
+r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
@@ -227,6 +227,7 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
+ScreenPercentage=(Value=69)
 TextureStreamPoolSizeStorage=(Value=)
 MaxAnisotropy=(Value=)
 FoliageMinLOD=(Value=)
@@ -262,7 +263,7 @@ ContactShadows=0
 PostFX_Saturation=1.2
 PostFX_Sharpness=0
 OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2", (Value=1,bModified=False)));------works like engineini but in gameusersettingsini
-OverrideOptions=(("r.Streaming.PoolSize", (Value=800,bModified=True)));------another example
+OverrideOptions=(("r.Streaming.PoolSize", (Value=69,bModified=True)));------another example
 
 [ScalabilityGroups]
 sg.ResolutionQuality=100
