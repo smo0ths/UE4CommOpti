@@ -1,5 +1,5 @@
 
-#### updated 5/4/2023 :ramen:
+#### updated 5/4/2023 x1 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -50,14 +50,8 @@ DisplayGamma=2.2;
 PoolSizeVRAMPercentage=64; ⚫️DEF 70 🟢texturepool cache 🟣TEST ⚪️EDITED
 
 [ConsoleVariables]
-r.GTSyncType=1; ⚫️DEF 1 🟢1 for DX12 🟣TEST
-r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF 1 🟣TEST 🔴experimental
-r.RHICmdBypass=0; ⚫️DEF 0
-r.RHICmdUseDeferredContexts=1; ⚫️DEF 1
-r.RHICmdUseParallelAlgorithms=1; ⚫️DEF 1
-rhi.SyncInterval=0; ⚫️DEF 1 ⚪️EDITED
-rhi.SyncSlackMS=0; ⚫️DEF 10 ⚪️EDITED
-au.RenderThreadPriority=0; ⚫️DEF 0 🟣TEST
+a.ParallelBlendPhysics=1; ⚫️DEF 1
+au.RenderThreadPriority=3; ⚫️DEF 0 or 3 who knows ⚪️EDITED 🟣TEST
 D3D12.AdjustTexturePoolSizeBasedOnBudget=1; ⚫️DEF 0 🟣TEST ⚪️EDITED
 foliage.DensityScale=0.6; ⚫️DEF 0.8 🟢0.6 for PERFORMANCE ⚪️EDITED
 foliage.DiscardDataOnLoad=1; ⚫️DEF 0 🟢1 for PERFORMANCE
@@ -66,7 +60,13 @@ grass.DensityScale=0.6; ⚫️DEF 1 🟢0.6 for PERFORMANCE ⚪️EDITED
 grass.DisableDynamicShadows=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 grass.DiscardDataOnLoad=1; ⚫️DEF 0 🟢1 for PERFORMANCE
 grass.TickInterval=10; ⚫️DEF 1 🟢10 for PERFORMANCE ⚪️EDITED
+p.AllowCachedOverlaps=1; ⚫️DEF 1
 p.AnimDynamics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=3; ⚫️DEF 3 🟣TEST
+p.Cloth.DefaultClothingSimulationFactoryClass=ClothingSimulationFactoryNv; 🟣TEST
+p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
+p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
+p.ClothPhysics.WaitForParallelClothTask=0; ⚫️DEF 0
 p.ClothPhysics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 p.RigidBodyNode=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.AllowDownsampledStandardTranslucency=0; ⚫️DEF 0 🟣TEST
@@ -85,6 +85,8 @@ r.CapsuleShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.CompileShadersForDevelopment=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.ContactShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.CookOutUnusedDetailModeComponents=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟣TEST
+r.D3D11.UseAllowTearing=0; ⚫️DEF 0
+r.D3D12.UseAllowTearing=0; ⚫️DEF 0
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DefaultBackBufferPixelFormat=0; ⚫️DEF 4 ⚪️EDITED 🟣TEST
 r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -93,11 +95,17 @@ r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.DepthOfFieldQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DetailMode=2; ⚫️DEF 2 🟢1 or 0 for PERFORMANCE
+r.DFDistanceScale=1; ⚫️DEF 1
+r.DFFullResolution=0; ⚫️DEF 0
+r.DFShadowQuality=2; ⚫️DEF 3
 r.DFShadowQuality=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
 r.DFShadowScatterTileCulling=1; ⚫️DEF 1
+r.DFShadowScatterTileCulling=1; ⚫️DEF 1
 r.DFTwoSidedMeshDistanceBias=5; ⚫️DEF 4 ⚪️EDITED
+r.DFTwoSidedMeshDistanceBias=5; ⚫️DEF 5
 r.DiscardUnusedQuality=0; ⚫️DEF 0 🟣TEST
 r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
+r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFieldShadowing=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
 r.DoInitViewsLightingAfterPrepass=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.DoLazyStaticMeshUpdate=0; ⚫️DEF 0 🟣TEST 🔴experimental
@@ -110,7 +118,10 @@ r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
 r.GenerateMeshDistanceFields=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟢1 for DFSHADOWS DFAO 🟣TEST
+r.GeometryCollectionTripleBufferUploads=1; ⚫️DEF 1
 r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
+r.GPUSkin.Limit2BoneInfluences=0; ⚫️DEF 0 🟣TEST
+r.GTSyncType=1; ⚫️DEF 1 🟢1 for DX12 🟣TEST
 r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.IrisNormal=0; ⚫️DEF 0 🟣TEST
 r.LandscapeLOD0DistributionScale=1; ⚫️DEF 1
@@ -137,6 +148,10 @@ r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RayTracing=0; ⚫️DEF 0
 r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.RefractionQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF 1 🟣TEST 🔴experimental
+r.RHICmdBypass=0; ⚫️DEF 0
+r.RHICmdUseDeferredContexts=1; ⚫️DEF 1
+r.RHICmdUseParallelAlgorithms=1; ⚫️DEF 1
 r.SceneColorFormat=3; ⚫️DEF 3 🟣TEST
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
 r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED 🟣TEST
@@ -190,6 +205,8 @@ r.Water.EnableUnderwaterPostProcess=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.Reflection=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+rhi.SyncInterval=0; ⚫️DEF 1 ⚪️EDITED
+rhi.SyncSlackMS=0; ⚫️DEF 10 ⚪️EDITED
 ```
 
 ---
