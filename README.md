@@ -138,7 +138,6 @@ r.MipMapLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.MSAACount=0; ⚫️DEF 4 ⚪️EDITED
 r.NormalMapsForStaticLighting=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.OcclusionCullParallelPrimFetch=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ParticleLightQuality=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.ParticleLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
