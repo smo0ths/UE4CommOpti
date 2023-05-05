@@ -1,5 +1,5 @@
 
-#### updated 5/3/2023 x2 :ramen:
+#### updated 5/4/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -34,9 +34,11 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 Global=off;
 
 [Audio]
-MaxChannels=96; ⚫️DEF 0 🟢64 for PERFORMANCE ⚪️EDITED
-CommonAudioPoolSize=0; ⚫️DEF 0
+MaxChannels=32;
+CommonAudioPoolSize=0;
 UnfocusedVolumeMultiplier=1;
+UseAudioThread=1;
+EnableAudioMixer=0;
 
 [/Script/Engine.Engine]
 bSmoothFrameRate=0;
@@ -47,9 +49,8 @@ DisplayGamma=2.2;
 [TextureStreaming]
 PoolSizeVRAMPercentage=64; ⚫️DEF 70 🟢texturepool cache 🟣TEST ⚪️EDITED
 
-[/Script/Engine.RendererOverrideSettings]
+[ConsoleVariables]
 r.GTSyncType=1; ⚫️DEF 1 🟢1 for DX12 🟣TEST
-r.OneFrameThreadLag=1; ⚫️DEF 1 🟣TEST
 r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF 1 🟣TEST 🔴experimental
 r.RHICmdBypass=0; ⚫️DEF 0
 r.RHICmdUseDeferredContexts=1; ⚫️DEF 1
@@ -59,9 +60,11 @@ rhi.SyncSlackMS=0; ⚫️DEF 10 ⚪️EDITED
 au.RenderThreadPriority=0; ⚫️DEF 0 🟣TEST
 D3D12.AdjustTexturePoolSizeBasedOnBudget=1; ⚫️DEF 0 🟣TEST ⚪️EDITED
 foliage.DensityScale=0.6; ⚫️DEF 0.8 🟢0.6 for PERFORMANCE ⚪️EDITED
+foliage.DiscardDataOnLoad=1; ⚫️DEF 0 🟢1 for PERFORMANCE
 foliage.MinLOD=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 grass.DensityScale=0.6; ⚫️DEF 1 🟢0.6 for PERFORMANCE ⚪️EDITED
 grass.DisableDynamicShadows=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+grass.DiscardDataOnLoad=1; ⚫️DEF 0 🟢1 for PERFORMANCE
 grass.TickInterval=10; ⚫️DEF 1 🟢10 for PERFORMANCE ⚪️EDITED
 p.AnimDynamics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 p.ClothPhysics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
@@ -89,7 +92,7 @@ r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1 🟢0 for PERFORM
 r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
 r.DeferSkeletalDynamicDataUpdateUntilGDME=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.DepthOfFieldQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
-r.DetailMode=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.DetailMode=2; ⚫️DEF 2 🟢1 or 0 for PERFORMANCE
 r.DFShadowQuality=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
 r.DFShadowScatterTileCulling=1; ⚫️DEF 1
 r.DFTwoSidedMeshDistanceBias=5; ⚫️DEF 4 ⚪️EDITED
@@ -101,13 +104,14 @@ r.DoLazyStaticMeshUpdate=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5; ⚫️DEF 1 🟢0.125 for PERFORMANCE ⚪️EDITED
 r.EnableAsyncComputeVolumetricFog=1; ⚫️DEF ❓ 🟣TEST
+r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE
 r.FreeSkeletalMeshBuffers=0; ⚫️DEF 0 🟣TEST
 r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
 r.GenerateMeshDistanceFields=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟢1 for DFSHADOWS DFAO 🟣TEST
 r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.IrisNormal=0; ⚫️DEF 0 🟣TEST
 r.LandscapeLOD0DistributionScale=1; ⚫️DEF 1
 r.LandscapeLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
@@ -133,12 +137,13 @@ r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RayTracing=0; ⚫️DEF 0
 r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.RefractionQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.SceneColorFormat=3; ⚫️DEF 3 🟣TEST
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
 r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
-r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
+r.Shadow.CSM.MaxCascades=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=1.1; ⚫️DEF 0.85 🟢0.85 for PERFORMANCE ⚪️EDITED
 r.Shadow.MaxCSMResolution=4096; ⚫️DEF 2048 🟢1024 for PERFORMANCE ⚪️EDITED
@@ -167,6 +172,11 @@ r.Tonemapper.GrainQuantization=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Tonemapper.Quality=3; ⚫️DEF 5 🟢0 for PERFORMANCE ⚪️EDITED
 r.TranslucencyLightingVolume=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32; ⚫️DEF 48 🟢32 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale.FieldOfViewAffectsHLOD=0; ⚫️DEF 0 🟢0 for PERFORMANCE
+r.ViewDistanceScale.FieldOfViewMaxAngle=90; ⚫️DEF 90 🟣TEST
+r.ViewDistanceScale.FieldOfViewMaxAngleScale=1; ⚫️DEF 1 🟣TEST
+r.ViewDistanceScale.FieldOfViewMinAngle=45; ⚫️DEF 45 🟣TEST
+r.ViewDistanceScale.FieldOfViewMinAngleScale=1; ⚫️DEF 1 🟣TEST
 r.ViewDistanceScale=0.8; ⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
 r.VolumetricCloud.ShadowMap=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.VolumetricCloud.SkyAO=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
