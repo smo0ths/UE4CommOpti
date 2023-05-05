@@ -1,5 +1,5 @@
 
-#### updated 5/4/2023 x2 :ramen:
+#### updated 5/4/2023 x3 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -118,7 +118,7 @@ r.GeometryCollectionTripleBufferUploads=1; ⚫️DEF 1
 r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
 r.GPUSkin.Limit2BoneInfluences=0; ⚫️DEF 0 🟣TEST
 r.GTSyncType=1; ⚫️DEF 1 🟢1 for DX12 🟣TEST
-r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
 r.IrisNormal=0; ⚫️DEF 0 🟣TEST
 r.LandscapeLOD0DistributionScale=1; ⚫️DEF 1
 r.LandscapeLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
@@ -138,6 +138,7 @@ r.MipMapLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.MSAACount=0; ⚫️DEF 4 ⚪️EDITED
 r.NormalMapsForStaticLighting=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.OcclusionCullParallelPrimFetch=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ParticleLightQuality=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.ParticleLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
