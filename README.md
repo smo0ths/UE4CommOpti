@@ -1,5 +1,5 @@
 
-#### updated 5/4/2023 x1 :ramen:
+#### updated 5/4/2023 x2 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -63,11 +63,10 @@ grass.TickInterval=10; ⚫️DEF 1 🟢10 for PERFORMANCE ⚪️EDITED
 p.AllowCachedOverlaps=1; ⚫️DEF 1
 p.AnimDynamics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 p.BatchPhysXTasksSize=3; ⚫️DEF 3 🟣TEST
-p.Cloth.DefaultClothingSimulationFactoryClass=ClothingSimulationFactoryNv; 🟣TEST
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
 p.ClothPhysics.WaitForParallelClothTask=0; ⚫️DEF 0
-p.ClothPhysics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
+p.ClothPhysics=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 p.RigidBodyNode=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.AllowDownsampledStandardTranslucency=0; ⚫️DEF 0 🟣TEST
 r.AllowLandscapeShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
