@@ -1,5 +1,5 @@
 
-#### updated 5/4/2023 x3 :ramen:
+#### updated 5/4/2023 x4 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -154,6 +154,8 @@ r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED �
 r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
+r.Shadow.CacheWholeSceneShadows=1; ⚫️DEF 1
+r.Shadow.CacheWPOPrimitives=1; ⚫️DEF 0 🟢0 for PERFORMANCE if not cache movable prim 🟣TEST
 r.Shadow.CSM.MaxCascades=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=1.1; ⚫️DEF 0.85 🟢0.85 for PERFORMANCE ⚪️EDITED
