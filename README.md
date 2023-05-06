@@ -1,5 +1,5 @@
 
-#### updated 5/5/2023 x1 :ramen:
+#### updated 5/5/2023 x2 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -99,8 +99,8 @@ r.EmitterSpawnRateScale=0.5; ⚫️DEF 1 🟢0.125 for PERFORMANCE ⚪️EDITED
 r.EyeAdaptation.MethodOverride=-1; ⚫️DEF -1
 r.EyeAdaptationQuality=1; ⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
 r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
-r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
-r.GenerateMeshDistanceFields=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟢1 for DFSHADOWS DFAO 🟣TEST
+r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req MeshDF for GI 🟣TEST
+r.GenerateMeshDistanceFields=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req for DFAO ect 🟣TEST
 r.HeightFieldShadowing=0; ⚫️DEF 0
 r.IrisNormal=0; ⚫️DEF 0 🟣TEST
 r.LandscapeLOD0DistributionScale=1; ⚫️DEF 1
