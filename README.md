@@ -1,5 +1,5 @@
 
-#### updated 5/5/2023 :ramen:
+#### updated 5/5/2023 x1 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -112,7 +112,6 @@ r.LightShaftAllowTAA=0; ⚫️DEF 1 ⚪️EDITED
 r.LightShaftDownSampleFactor=2; ⚫️DEF 2 🟢2 for PERFORMANCE
 r.LightShaftQuality=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.LightShaftRenderToSeparateTranslucency=0; ⚫️DEF 0
-r.LUT.Size=31; ⚫️DEF 32 🟣TEST
 r.MaterialQualityLevel=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.MaxAnisotropy=8; ⚫️DEF 4 ⚪️EDITED
 r.MinScreenRadiusForLights=0.03; ⚫️DEF 0.03 🟢0.06 for PERFORMANCE
@@ -158,8 +157,10 @@ r.TemporalAAFilterSize=0.1; ⚫️DEF 1 ⚪️EDITED
 r.TemporalAASamples=2; ⚫️DEF 8 ⚪️EDITED 🟣TEST
 r.TessellationAdaptivePixelsPerTriangle=9999999; ⚫️DEF 48 🟢9999999 for PERFORMANCE ⚪️EDITED
 r.TiledDeferredShading=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.Tonemapper.GrainQuantization=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.Tonemapper.Quality=3; ⚫️DEF 5 🟢0 for PERFORMANCE ⚪️EDITED
+r.Tonemapper.GrainQuantization=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Tonemapper.Quality=0; ⚫️DEF 5 🟢0 for PERFORMANCE ⚪️EDITED
+r.Tonemapper.Sharpen=0; ⚫️DEF 2 ⚪️EDITED
+r.TonemapperGamma=2.2; ⚫️DEF 0 ⚪️EDITED
 r.TranslucencyLightingVolume=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32; ⚫️DEF 48 🟢32 for PERFORMANCE ⚪️EDITED
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0; ⚫️DEF 0 🟢0 for PERFORMANCE
