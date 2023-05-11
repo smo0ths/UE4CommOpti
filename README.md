@@ -1,5 +1,5 @@
 
-#### updated 5/11/2023 ~ :ramen:
+#### updated 5/11/2023 ~~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -203,17 +203,13 @@ r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.NormalMapsForStaticLighting=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.Shadow.CachePreshadow=1; ⚫️DEF 1 🟣TEST
 r.Shadow.CacheWholeSceneShadows=1; ⚫️DEF 1 🟣TEST
-r.Shadow.CacheWPOPrimitives=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🟣TEST
+r.Shadow.CacheWPOPrimitives=0; ⚫️DEF 0
 r.StencilLODMode=2; ⚫️DEF 2
 r.SupportAllShaderPermutations=0; ⚫️DEF 0
 r.SupportAnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.SupportAtmosphericFog=1; ⚫️DEF 1
-r.SupportDepthOnlyIndexBuffers=1; ⚫️DEF 1
+r.SupportAtmosphericFog=0; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.SupportLowQualityLightmaps=0; ⚫️DEF 0
 r.SupportMaterialLayers=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.SupportPointLightWholeSceneShadows=1; ⚫️DEF ❓
-r.SupportReversedIndexBuffers=1; ⚫️DEF 1
-r.SupportSimpleForwardShading=0; ⚫️DEF 0
 r.SupportSkyAtmosphereAffectsHeightFog=1; ⚫️DEF ❓
 FX.BatchAsync=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 FX.BatchAsyncBatchSize=32; ⚫️DEF 32 🟣TEST
