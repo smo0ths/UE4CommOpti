@@ -1,5 +1,5 @@
 
-#### updated 5/21/2023 :ramen:
+#### updated 5/21/2023 ~ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -186,7 +186,8 @@ r.AllowDownsampledStandardTranslucency=0; ⚫️DEF 0 🟣TEST
 r.AllowPointLightCubemapShadows=1; ⚫️DEF 1 🟣TEST
 r.AllowSimpleLights=1; ⚫️DEF 1 🟣TEST
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED 🟣TEST
-r.CompileShadersForDevelopment=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
+r.CompileShadersForDevelopment=0; ⚫️DEF 1 ⚪️EDITED 🟣TEST
+r.CreateShadersOnLoad=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.CookOutUnusedDetailModeComponents=0; ⚫️DEF 0 🟣TEST
 r.DiscardUnusedQuality=1; ⚫️DEF 0  ⚪️EDITED 🟣TEST
 r.DoInitViewsLightingAfterPrepass=1; ⚫️DEF 0  ⚪️EDITED🟣TEST 🔴experimental
@@ -306,7 +307,7 @@ OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2",
 OverrideOptions=(("r.Streaming.PoolSize", (Value=69,bModified=True)));------another example
 
 [ScalabilityGroups]
-sg.ResolutionQuality=100
+sg.ResolutionQuality=70
 sg.ViewDistanceQuality=2
 sg.AntiAliasingQuality=2
 sg.PostProcessQuality=2
