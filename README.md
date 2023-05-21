@@ -1,5 +1,5 @@
 
-#### updated 5/11/2023 ~~ :ramen:
+#### updated 5/21/2023 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -159,7 +159,7 @@ r.TessellationAdaptivePixelsPerTriangle=9999999; ⚫️DEF 48 🟢9999999 for PE
 r.TiledDeferredShading=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Tonemapper.GrainQuantization=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Tonemapper.Quality=0; ⚫️DEF 5 🟢0 for PERFORMANCE ⚪️EDITED
-r.Tonemapper.Sharpen=0; ⚫️DEF 2 ⚪️EDITED
+r.Tonemapper.Sharpen=0.25; ⚫️DEF 2 ⚪️EDITED 🟣TEST
 r.TonemapperGamma=2.2; ⚫️DEF 0 ⚪️EDITED
 r.TranslucencyLightingVolume=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32; ⚫️DEF 48 🟢32 for PERFORMANCE ⚪️EDITED
@@ -194,13 +194,14 @@ r.DoLazyStaticMeshUpdate=1; ⚫️DEF 0  ⚪️EDITED 🟣TEST 🔴experimental
 r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.EnableAsyncComputeVolumetricFog=1; ⚫️DEF ❓ 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE
-r.GBufferFormat=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
 r.GPUSkin.Limit2BoneInfluences=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
-r.NormalMapsForStaticLighting=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
+r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
+r.NormalMapsForStaticLighting=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
+r.ClearCoatNormal=0; ⚫️DEF 0
 r.Shadow.CachePreshadow=1; ⚫️DEF 1 🟣TEST
 r.Shadow.CacheWholeSceneShadows=1; ⚫️DEF 1 🟣TEST
 r.Shadow.CacheWPOPrimitives=0; ⚫️DEF 0
