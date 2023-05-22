@@ -1,5 +1,5 @@
 
-#### updated 5/21/2023 x2 ☕ :ramen:
+#### updated 5/21/2023 x3 ☕ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -50,7 +50,6 @@ DisplayGamma=2.2;
 PoolSizeVRAMPercentage=70; ⚫️DEF 70 🟢texturepool cache 🟣TEST
 
 [ConsoleVariables]
-r.DefaultBackBufferPixelFormat=0; ⚫️DEF 4 ⚪️EDITED 🟣TEST
 r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1
 r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1
 r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
@@ -121,17 +120,14 @@ r.MinScreenRadiusForLights=0.03; ⚫️DEF 0.03 🟢0.06 for PERFORMANCE
 r.MinTimeBetweenTicks=12; ⚫️DEF 8 or 16 ⚪️EDITED
 r.MipMapLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
 r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
-r.MSAACount=0; ⚫️DEF 4 ⚪️EDITED
 r.ParticleLightQuality=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.ParticleLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
-r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RayTracing=0; ⚫️DEF 0
 r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
+r.DefaultBackBufferPixelFormat=0; ⚫️DEF 4 ⚪️EDITED 🟣TEST
 r.SceneColorFormat=3; ⚫️DEF 3 🟣TEST
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED 🟣TEST
-r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF 1 🟢0 for PERFORMANCE 🟡req some light shadows 🟣TEST
 r.Shadow.CachePreshadow=1; ⚫️DEF 1 🟣TEST
@@ -158,6 +154,10 @@ r.SSS.Quality=0; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSS.SampleSet=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.Streaming.AmortizeCPUToGPUCopy=0; ⚫️DEF 0 🟣TEST
 r.Streaming.MaxNumTexturesToStreamPerFrame=0; ⚫️DEF 0 🟣TEST
+r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
+r.MSAACount=0; ⚫️DEF 4 ⚪️EDITED
+r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED 🟣TEST
+r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.TemporalAA.Algorithm=1; ⚫️DEF 0 🟢0 for PERFORMANCE ⚪️EDITED
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🟣TEST 🔴experimental
 r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage 🟣TEST
