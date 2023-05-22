@@ -1,5 +1,5 @@
 
-#### updated 5/21/2023 x3 ☕ :ramen:
+#### updated 5/21/2023 ~ ☕ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -72,10 +72,10 @@ p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
 p.ClothPhysics.WaitForParallelClothTask=0; ⚫️DEF 0
 p.ClothPhysics=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 p.RigidBodyNode=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
-r.AmbientOcclusion.Compute=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels ⚪️EDITED 🟣TEST
-r.AmbientOcclusionLevels=0; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusion.Compute=0; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels 🟣TEST
+r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
 r.AmbientOcclusionMipLevelFactor=0.6; ⚫️DEF 0.6 🟣TEST
-r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED 🟣TEST
+r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED 🟣TEST
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Bloom.Cross=0; ⚫️DEF 0 🟢0.7777 for anamorphic
@@ -90,13 +90,13 @@ r.DFFullResolution=0; ⚫️DEF 0
 r.DFShadowQuality=2; ⚫️DEF 2
 r.DFShadowScatterTileCulling=1; ⚫️DEF 1
 r.DFTwoSidedMeshDistanceBias=1; ⚫️DEF 5 ⚪️EDITED 🟣TEST
-r.DistanceFieldAO=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOAsyncBuildQueue=1; ⚫️DEF 1
 r.AOComputeShaderNormalCalculation=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.AOHeightfieldOcclusion=0; ⚫️DEF ❓
-r.AOQuality=1; ⚫️DEF ❓ 🟢1 for PERFORMANCE 🟣TEST
+r.AOQuality=2; ⚫️DEF ❓ 🟢1 for PERFORMANCE 🟣TEST
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED 🟣TEST
-r.AOGlobalDFResolution=64; ⚫️DEF 128 ⚪️EDITED 🟣TEST
+r.AOGlobalDFResolution=128; ⚫️DEF 128 🟣TEST
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFieldShadowing=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
@@ -133,9 +133,9 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF 1 🟢0 for PERFORM
 r.Shadow.CachePreshadow=1; ⚫️DEF 1 🟣TEST
 r.Shadow.CacheWholeSceneShadows=1; ⚫️DEF 1 🟣TEST
 r.Shadow.CacheWPOPrimitives=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED 🟣TEST
-r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
+r.Shadow.CSM.MaxCascades=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
-r.Shadow.DistanceScale=1.5; ⚫️DEF 0.85 🟢0.85 for PERFORMANCE ⚪️EDITED 🟣TEST
+r.Shadow.DistanceScale=0.85; ⚫️DEF 0.85 🟣TEST
 r.Shadow.MaxCSMResolution=4096; ⚫️DEF 2048 🟢1024 for PERFORMANCE ⚪️EDITED
 r.Shadow.MaxResolution=2048; ⚫️DEF 2048 🟢1024 for PERFORMANCE
 r.ShadowQuality=3; ⚫️DEF 4 🟢3 for PERFORMANCE ⚪️EDITED
