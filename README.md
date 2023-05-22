@@ -1,5 +1,5 @@
 
-#### updated 5/21/2023 (ao stuffs) :ramen:
+#### updated 5/21/2023 ☕ :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -132,6 +132,9 @@ r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED �
 r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF 1 🟢0 for PERFORMANCE 🟡req some light shadows 🟣TEST
+r.Shadow.CachePreshadow=1; ⚫️DEF 1 🟣TEST
+r.Shadow.CacheWholeSceneShadows=1; ⚫️DEF 1 🟣TEST
+r.Shadow.CacheWPOPrimitives=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.Shadow.CSM.MaxCascades=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=1.5; ⚫️DEF 0.85 🟢0.85 for PERFORMANCE ⚪️EDITED 🟣TEST
@@ -205,9 +208,6 @@ r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.NormalMapsForStaticLighting=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.ClearCoatNormal=0; ⚫️DEF 0
-r.Shadow.CachePreshadow=1; ⚫️DEF 1 🟣TEST
-r.Shadow.CacheWholeSceneShadows=1; ⚫️DEF 1 🟣TEST
-r.Shadow.CacheWPOPrimitives=0; ⚫️DEF 0
 r.StencilLODMode=2; ⚫️DEF 2
 r.SupportAllShaderPermutations=0; ⚫️DEF 0
 r.SupportAnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
