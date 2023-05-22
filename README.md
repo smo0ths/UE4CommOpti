@@ -1,5 +1,5 @@
 
-#### updated 5/21/2023 ~ :ramen:
+#### updated 5/21/2023 (ao stuffs) :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -66,10 +66,11 @@ p.ClothPhysics.WaitForParallelClothTask=0; ⚫️DEF 0
 p.ClothPhysics=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 p.RigidBodyNode=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusion.Compute=0; ⚫️DEF 0 🟢1 for PERFORMANCE
-r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionMipLevelFactor=1; ⚫️DEF 0.6 ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusion.Compute=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels ⚪️EDITED 🟣TEST
+r.AmbientOcclusionLevels=0; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusionMipLevelFactor=0.6; ⚫️DEF 0.6 🟣TEST
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED 🟣TEST
+r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Bloom.Cross=0; ⚫️DEF 0 🟢0.7777 for anamorphic
 r.BloomQuality=5; ⚫️DEF 4 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
@@ -77,8 +78,8 @@ r.CapsuleShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.ContactShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.DefaultBackBufferPixelFormat=0; ⚫️DEF 4 ⚪️EDITED 🟣TEST
-r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1 🟢0 for PERFORMANCE
-r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1
+r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1
 r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=1; ⚫️DEF 1
 r.DefaultFeature.Bloom=1; ⚫️DEF 1
@@ -92,14 +93,14 @@ r.DFFullResolution=0; ⚫️DEF 0
 r.DFShadowQuality=2; ⚫️DEF 2
 r.DFShadowScatterTileCulling=1; ⚫️DEF 1
 r.DFTwoSidedMeshDistanceBias=1; ⚫️DEF 5 ⚪️EDITED 🟣TEST
-r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
+r.DistanceFieldAO=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-r.DistanceFieldShadowing=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
+r.DistanceFieldShadowing=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.EyeAdaptation.MethodOverride=-1; ⚫️DEF -1
 r.EyeAdaptationQuality=1; ⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
 r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
 r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req MeshDF for GI 🟣TEST
-r.GenerateMeshDistanceFields=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req for DF things 🟣TEST
+r.GenerateMeshDistanceFields=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req for DF things ⚪️EDITED 🟣TEST
 r.HeightFieldShadowing=0; ⚫️DEF 0
 r.IrisNormal=0; ⚫️DEF 0 🟣TEST
 r.LandscapeLOD0DistributionScale=1; ⚫️DEF 1
@@ -130,7 +131,7 @@ r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
 r.ScreenPercentage=70; ⚫️DEF 100 🟢60 70 80 for PERFORMANCE ⚪️EDITED 🟣TEST
 r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
 r.SeparateTranslucency=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF 1 🟢0 for PERFORMANCE 🟡req some light shadows 🟣TEST
 r.Shadow.CSM.MaxCascades=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=1.5; ⚫️DEF 0.85 🟢0.85 for PERFORMANCE ⚪️EDITED 🟣TEST
@@ -182,6 +183,7 @@ r.Water.SingleLayer.Reflection=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSR=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 D3D12.AdjustTexturePoolSizeBasedOnBudget=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.D3D12.AllowAsyncCompute=1; ⚫️DEF 1
 r.AllowDownsampledStandardTranslucency=0; ⚫️DEF 0 🟣TEST
 r.AllowPointLightCubemapShadows=1; ⚫️DEF 1 🟣TEST
 r.AllowSimpleLights=1; ⚫️DEF 1 🟣TEST
@@ -247,6 +249,30 @@ bViewAccelerationEnabled=0;
 InitialButtonRepeatDelay=0.2;------def 0.2
 ButtonRepeatDelay=0.1;------def 0.1
 DoubleClickTime=0.1;------def 0.25
+```
+
+---
+
+#### AO options with my config
+
+```python
+dfao:
+r.AmbientOcclusionLevels=0; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
+r.DistanceFieldAO=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+
+ssao med:
+r.AmbientOcclusion.Compute=0; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels 🟣TEST
+r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED 🟣TEST
+r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+
+ssao low:
+r.AmbientOcclusion.Compute=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels ⚪️EDITED 🟣TEST
+r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED 🟣TEST
+r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+
+or both
 ```
 
 ---
