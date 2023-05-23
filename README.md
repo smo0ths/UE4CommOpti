@@ -1922,7 +1922,7 @@ r.MorphTarget.Mode=1; ⚫️DEF 1
 
 ---
 
-<details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct also set your scalability groups 0 low 1 med  2 high 3 epic 4 cinematic, check for new stuff after updates, good luck</summary>
+<details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct check for new stuff after updates, good luck</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
@@ -1939,6 +1939,8 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
+bBounceLightEnabled=
+bFlashlightShadowsEnabled=
 AmbientOcclusion=(Value=1)
 AntiAliasingMode=(Value=2)
 AudioQualityLevel=3
@@ -1957,29 +1959,31 @@ DistanceFieldShadows=1
 DlssQualitySetting=
 DoubleKeyPressTime=0.1
 FoliageMinLOD=(Value=0)
-FrameRateLimit=
 FullscreenMode=0
 Gamma=2.2
 GlobalSensitivity=0.183
 GraphicsQuality=0
+GraphicsPresetIndex=0
 HDRDisplayOutputNits=
 HZBOcclusion=(Value=)
-LastSavedAASamples=2
 MaxAnisotropy=(Value=)
 MaxAnisotropy=8
+bFrameLimitEnabled=
+FrameRateLimit=
 MaxFPS=
 MenuFrameRateLimit=
 OceanQuality=(Value=0)
 OverrideOptions=(("r.9000FPS",(Value=1,bModified=True)),("r.OPTIMIZE",(Value=1,bModified=False)));
 PostFX_Saturation=1.2
-PostFX_Sharpness=0.25
+PostFX_Sharpness=0.25;      <- needed for squid to set tonemappersharp correctly
 ResolutionScaleModifier=
 ScreenPercentage=(Value=70)
 SkeletalMeshLODBias=(Value=0)
 TAASampleStorage=2
+LastSavedAASamples=2
 TemporalAASamples=(Value=2);   <- needed for squid to set to 2
 Tessellation=(Value=0)
-TessellationMode=(Value=48)
+TessellationMode=(Value=9999999)
 TextureStreamPoolSizeStorage=(Value=)
 WakeSim=(Value=0)
 ```
