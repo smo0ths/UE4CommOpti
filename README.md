@@ -1,4 +1,4 @@
-#### updated 5/26/2023 x3 🍝 :ramen:
+#### updated 5/26/2023 x4 🍝 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -2315,7 +2315,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=
 TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=11,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=11,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=11,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=11,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=3,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=11,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=11,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=11,MipGenSettings=TMGS_SimpleAverage)
