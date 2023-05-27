@@ -1,4 +1,4 @@
-#### updated 5/26/2023 seven 🍝 :ramen:
+#### updated 5/26/2023 seven~ 🍝 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -1828,6 +1828,10 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 %localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 <br>
 %localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+<br>
+%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+<br>
+%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 </p>
 </details>
 
