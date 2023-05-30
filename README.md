@@ -1,4 +1,4 @@
-#### updated 5/30/2023~ 🍝 :ramen:
+#### updated 5/30/2023~~ 🍝 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -56,7 +56,6 @@ sg.TextureQuality=2;
 sg.EffectsQuality=2;
 sg.FoliageQuality=2;
 sg.ShadingQuality=2;
-sg.AnimationQuality=0;
 r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1
 r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1
 r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
