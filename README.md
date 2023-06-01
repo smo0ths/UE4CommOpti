@@ -1,4 +1,4 @@
-#### updated 5/31/2023 keep up to date* a Physx command was breaking vehicles in games, its removed 🍝 :ramen:
+#### updated 6/1/2023 keep up to date* a Physx command was breaking vehicles in games, its removed 🍝 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -115,7 +115,9 @@ r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.StencilForLODDither=1; ⚫️DEF 1
 r.StencilLODMode=2; ⚫️DEF 2
+r.ShaderPipelines=1; ⚫️DEF 1 🟣TEST
 r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ShaderPipelineCache.BatchSize=50; ⚫️DEF 50
 r.ShaderPipelineCache.BackgroundBatchSize=1; ⚫️DEF 1
 r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
@@ -366,7 +368,9 @@ r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.StencilForLODDither=1; ⚫️DEF 1
 r.StencilLODMode=2; ⚫️DEF 2
+r.ShaderPipelines=1; ⚫️DEF 1 🟣TEST
 r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ShaderPipelineCache.BatchSize=50; ⚫️DEF 50
 r.ShaderPipelineCache.BackgroundBatchSize=1; ⚫️DEF 1
 r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
@@ -597,7 +601,9 @@ r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.StencilForLODDither=1; ⚫️DEF 1
 r.StencilLODMode=2; ⚫️DEF 2
+r.ShaderPipelines=1; ⚫️DEF 1 🟣TEST
 r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ShaderPipelineCache.BatchSize=50; ⚫️DEF 50
 r.ShaderPipelineCache.BackgroundBatchSize=1; ⚫️DEF 1
 r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
@@ -828,7 +834,9 @@ r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.StencilForLODDither=1; ⚫️DEF 1
 r.StencilLODMode=2; ⚫️DEF 2
+r.ShaderPipelines=1; ⚫️DEF 1 🟣TEST
 r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ShaderPipelineCache.BatchSize=50; ⚫️DEF 50
 r.ShaderPipelineCache.BackgroundBatchSize=1; ⚫️DEF 1
 r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
@@ -1059,7 +1067,9 @@ r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.StencilForLODDither=1; ⚫️DEF 1
 r.StencilLODMode=2; ⚫️DEF 2
+r.ShaderPipelines=1; ⚫️DEF 1 🟣TEST
 r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ShaderPipelineCache.BatchSize=50; ⚫️DEF 50
 r.ShaderPipelineCache.BackgroundBatchSize=1; ⚫️DEF 1
 r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
@@ -1290,7 +1300,9 @@ r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.StencilForLODDither=1; ⚫️DEF 1
 r.StencilLODMode=2; ⚫️DEF 2
+r.ShaderPipelines=1; ⚫️DEF 1 🟣TEST
 r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ShaderPipelineCache.BatchSize=50; ⚫️DEF 50
 r.ShaderPipelineCache.BackgroundBatchSize=1; ⚫️DEF 1
 r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
@@ -1521,7 +1533,9 @@ r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
 r.StencilForLODDither=1; ⚫️DEF 1
 r.StencilLODMode=2; ⚫️DEF 2
+r.ShaderPipelines=1; ⚫️DEF 1 🟣TEST
 r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
+r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.ShaderPipelineCache.BatchSize=50; ⚫️DEF 50
 r.ShaderPipelineCache.BackgroundBatchSize=1; ⚫️DEF 1
 r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
@@ -1837,17 +1851,17 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 ```python
 [/Script/Engine.TextureLODSettings]
 TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
@@ -1855,9 +1869,9 @@ TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,LODBias=0,M
 TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=point,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
 ```
 
 ---
