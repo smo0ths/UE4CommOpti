@@ -1,4 +1,4 @@
-#### updated 5/30/2023~~ 🍝 :ramen:
+#### updated 5/31/2023 keep up to date* 🍝 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -8,7 +8,7 @@
 
 ###### def is pretty much reference to high scalablity group
 
-###### Use NIS and DLSS at the same time to get the most fps but you will be GPU scaling wich is not a big deal
+###### Use NIS and DLSS at the same time to get the most fps but you will be GPU scaling which is not a big deal
 
 ---
 
@@ -90,8 +90,9 @@ r.DistanceFields.ForceMaxAtlasSize=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFields.AtlasSizeZ=1024; ⚫️DEF 1024
 r.DistanceFields.AtlasSizeXY=512; ⚫️DEF 512
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.SkipPhysicsReplication=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.BatchPhysXTasksSize=6; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=4; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.SkipSkeletalRepOptimization=1; ⚫️DEF 1
+p.SkipUpdateOverlapsOptimEnabled=1; ⚫️DEF 1
 p.AnimDynamicsWind=1; ⚫️DEF 1
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
@@ -340,8 +341,9 @@ r.DistanceFields.ForceMaxAtlasSize=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFields.AtlasSizeZ=1024; ⚫️DEF 1024
 r.DistanceFields.AtlasSizeXY=512; ⚫️DEF 512
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.SkipPhysicsReplication=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.BatchPhysXTasksSize=6; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=4; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.SkipSkeletalRepOptimization=1; ⚫️DEF 1
+p.SkipUpdateOverlapsOptimEnabled=1; ⚫️DEF 1
 p.AnimDynamicsWind=1; ⚫️DEF 1
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
@@ -570,8 +572,9 @@ r.DistanceFields.ForceMaxAtlasSize=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFields.AtlasSizeZ=1024; ⚫️DEF 1024
 r.DistanceFields.AtlasSizeXY=512; ⚫️DEF 512
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.SkipPhysicsReplication=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.BatchPhysXTasksSize=6; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=4; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.SkipSkeletalRepOptimization=1; ⚫️DEF 1
+p.SkipUpdateOverlapsOptimEnabled=1; ⚫️DEF 1
 p.AnimDynamicsWind=1; ⚫️DEF 1
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
@@ -800,8 +803,9 @@ r.DistanceFields.ForceMaxAtlasSize=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFields.AtlasSizeZ=1024; ⚫️DEF 1024
 r.DistanceFields.AtlasSizeXY=512; ⚫️DEF 512
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.SkipPhysicsReplication=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.BatchPhysXTasksSize=6; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=4; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.SkipSkeletalRepOptimization=1; ⚫️DEF 1
+p.SkipUpdateOverlapsOptimEnabled=1; ⚫️DEF 1
 p.AnimDynamicsWind=1; ⚫️DEF 1
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
@@ -1030,8 +1034,9 @@ r.DistanceFields.ForceMaxAtlasSize=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFields.AtlasSizeZ=1024; ⚫️DEF 1024
 r.DistanceFields.AtlasSizeXY=512; ⚫️DEF 512
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.SkipPhysicsReplication=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.BatchPhysXTasksSize=6; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=4; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.SkipSkeletalRepOptimization=1; ⚫️DEF 1
+p.SkipUpdateOverlapsOptimEnabled=1; ⚫️DEF 1
 p.AnimDynamicsWind=1; ⚫️DEF 1
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
@@ -1260,8 +1265,9 @@ r.DistanceFields.ForceMaxAtlasSize=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFields.AtlasSizeZ=1024; ⚫️DEF 1024
 r.DistanceFields.AtlasSizeXY=512; ⚫️DEF 512
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.SkipPhysicsReplication=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.BatchPhysXTasksSize=6; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=4; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.SkipSkeletalRepOptimization=1; ⚫️DEF 1
+p.SkipUpdateOverlapsOptimEnabled=1; ⚫️DEF 1
 p.AnimDynamicsWind=1; ⚫️DEF 1
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
@@ -1490,8 +1496,9 @@ r.DistanceFields.ForceMaxAtlasSize=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
 r.DistanceFields.AtlasSizeZ=1024; ⚫️DEF 1024
 r.DistanceFields.AtlasSizeXY=512; ⚫️DEF 512
 r.DistanceFields.RuntimeDownsamplingFactor=0.5; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.SkipPhysicsReplication=1; ⚫️DEF 0 ⚪️EDITED 🟣TEST
-p.BatchPhysXTasksSize=6; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.BatchPhysXTasksSize=4; ⚫️DEF 3 ⚪️EDITED 🟣TEST
+p.SkipSkeletalRepOptimization=1; ⚫️DEF 1
+p.SkipUpdateOverlapsOptimEnabled=1; ⚫️DEF 1
 p.AnimDynamicsWind=1; ⚫️DEF 1
 p.Cloth.MaxDeltaTimeTeleportMultiplier=1.5; ⚫️DEF 1.5
 p.ClothPhysics.UseTaskThread=1; ⚫️DEF 1
