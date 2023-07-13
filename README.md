@@ -1,4 +1,4 @@
-#### updated 6/1/2023~ 🍝 :ramen:
+#### updated 7/12/2023 🍝 :ramen:
 
 ###### for UE4 games for reference/customization/optimization/learning
 
@@ -109,7 +109,7 @@ r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
 r.gpucrash.collectionenable=0; ⚫️DEF 1 ⚪️EDITED
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -359,7 +359,7 @@ r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
 r.gpucrash.collectionenable=0; ⚫️DEF 1 ⚪️EDITED
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -589,7 +589,7 @@ r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
 r.gpucrash.collectionenable=0; ⚫️DEF 1 ⚪️EDITED
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -819,7 +819,7 @@ r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
 r.gpucrash.collectionenable=0; ⚫️DEF 1 ⚪️EDITED
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -1049,7 +1049,7 @@ r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
 r.gpucrash.collectionenable=0; ⚫️DEF 1 ⚪️EDITED
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -1279,7 +1279,7 @@ r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
 r.gpucrash.collectionenable=0; ⚫️DEF 1 ⚪️EDITED
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -1509,7 +1509,7 @@ r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.FinishCurrentFrame=0; ⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
 r.gpucrash.collectionenable=0; ⚫️DEF 1 ⚪️EDITED
 r.GTSyncType=1; ⚫️DEF 1 🟣TEST
-r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.HZBOcclusion=0; ⚫️DEF ❓ 🟣TEST
 r.HZB.BuildUseCompute=1; ⚫️DEF 1 🟣TEST
 r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
 r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
@@ -1855,7 +1855,7 @@ TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBi
 
 ---
 
-#### in nvidia control panel
+#### in nvidia control panel (make sure all the settings stuck cause the NVCP is old as shit)
 
 ##### 1. 3D settings -> adjust image settings with preview -> use my preference emphasizing performance apply.
 
@@ -1863,33 +1863,33 @@ TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBi
 
 ##### 3. Anisotropic filtering:  set Application-controlled (you can force the setting in here if you can't notice it working in certain games)
 
-##### 4. Antialiasing - mode: set Application-controlled
-
-##### 5. Low latency mode (Only works with dx11 and lower api):
+##### 4. Low latency mode (Only works with dx11 and lower api):
 
 ###### Off and ~85% gpu usage for multiple frame buffers sacrificing latency (cap fps til gpu usage is ~85%) (for visual fluidity of frames)
 
-###### On forces 1 frame buffer (for lower latency than off) (for visual fluidity of frames)
+###### On forces 1 frame buffer (for lower latency than off) (for visual fluidity of frames and less latency)
 
-###### Ultra and/or nvidia relfex (in-game dx12 only) and ~97% gpu usage for lowest latency (could be less fluid frames at low fps)
+###### Ultra and high gpu usage for lowest latency
 
-##### 6. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
+###### Nvidia relfex is in-game and dx12 only and you should use it just like Ultra low latency mode with high gpu usage
 
-##### 7. Preferred refresh rate:  Highest available
+##### 5. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
 
-##### 8. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game) (you may need to reapply because NVCP will reset when you change other settings)
+##### 6. Preferred refresh rate:  Highest available
 
-##### 9. Texture filtering - negative LOD bias:  allow (allows -1,-2 ect bias) clamp (0 mipmap bias) + integers give more performance at cost of bland textures, most game devs make their HQ textures with a -1 clamp so might want to just leave this on allow and change textures in game (you may need to re-apply because NVCP will reset when you change other settings)
+##### 7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game)
 
-##### 10. Texture filtering quality:  high performance
+##### 8. Texture filtering - negative LOD bias:  allow (allows a negative bias) clamp (0 mipmap bias) test yourself devs usually set slight negative clamps
 
-##### 11. Texture filtering - trilinear optimization:  on
+##### 9. Texture filtering quality:  high performance
 
-#####  12. Vertical sync:  Off
+##### 10. Texture filtering - trilinear optimization:  on
 
-#####  13. Display -> Adjust desktop size and position -> set no scaling and Perform scaling on: Display
+#####  11. Vertical sync:  Off
 
-<details><summary>14. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
+#####  12. Display -> Adjust desktop size and position -> set no scaling and Perform scaling on: Display
+
+<details><summary>13. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
 <p>
 1. NVCleanstall enabling it in advanced settings before installing or
 <br>
@@ -1904,3 +1904,5 @@ HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10
 find in regedit and set MSISupported to 1 then restart
 </p>
 </details>
+
+#### Disable HPET (High Precision event timer) in device manager/system devices and/or in your bios to get lower latency and more fps
