@@ -1,4 +1,4 @@
-#### updated 10/9/2023 🍝 :ramen:
+#### updated 10/11/2023 🍝 :ramen:
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -70,7 +70,7 @@ r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 ⚪️EDITED
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 ⚪️EDITED
 r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED
@@ -98,9 +98,6 @@ r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=0.75; ⚫️DEF 0.85 ⚪️EDITED
@@ -191,7 +188,7 @@ r.NormalMapsForStaticLighting=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req some light shadows
 r.SupportSkyAtmosphereAffectsHeightFog=0; ⚫️DEF ❓
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🔴experimental
-r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage
+r.TemporalAA.Upsampling=0; ⚫️DEF 0 🟡for ScreenPercentage
 r.VolumetricFog.LightFunctionSupersampleScale=1; ⚫️DEF ❓ ⚪️EDITED
 ```
 
@@ -233,7 +230,7 @@ r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 ⚪️EDITED
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 ⚪️EDITED
 r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED
@@ -261,9 +258,6 @@ r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=0.75; ⚫️DEF 0.85 ⚪️EDITED
@@ -354,7 +348,7 @@ r.NormalMapsForStaticLighting=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req some light shadows
 r.SupportSkyAtmosphereAffectsHeightFog=0; ⚫️DEF ❓
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🔴experimental
-r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage
+r.TemporalAA.Upsampling=0; ⚫️DEF 0 🟡for ScreenPercentage
 r.VolumetricFog.LightFunctionSupersampleScale=1; ⚫️DEF ❓ ⚪️EDITED
 
 [ViewDistanceQuality@2]
@@ -376,7 +370,7 @@ r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 ⚪️EDITED
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 ⚪️EDITED
 r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED
@@ -404,9 +398,6 @@ r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=0.75; ⚫️DEF 0.85 ⚪️EDITED
@@ -497,7 +488,7 @@ r.NormalMapsForStaticLighting=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req some light shadows
 r.SupportSkyAtmosphereAffectsHeightFog=0; ⚫️DEF ❓
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🔴experimental
-r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage
+r.TemporalAA.Upsampling=0; ⚫️DEF 0 🟡for ScreenPercentage
 r.VolumetricFog.LightFunctionSupersampleScale=1; ⚫️DEF ❓ ⚪️EDITED
 
 [PostProcessQuality@2]
@@ -519,7 +510,7 @@ r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 ⚪️EDITED
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 ⚪️EDITED
 r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED
@@ -547,9 +538,6 @@ r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=0.75; ⚫️DEF 0.85 ⚪️EDITED
@@ -640,7 +628,7 @@ r.NormalMapsForStaticLighting=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req some light shadows
 r.SupportSkyAtmosphereAffectsHeightFog=0; ⚫️DEF ❓
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🔴experimental
-r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage
+r.TemporalAA.Upsampling=0; ⚫️DEF 0 🟡for ScreenPercentage
 r.VolumetricFog.LightFunctionSupersampleScale=1; ⚫️DEF ❓ ⚪️EDITED
 
 [TextureQuality@2]
@@ -662,7 +650,7 @@ r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 ⚪️EDITED
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 ⚪️EDITED
 r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED
@@ -690,9 +678,6 @@ r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=0.75; ⚫️DEF 0.85 ⚪️EDITED
@@ -783,7 +768,7 @@ r.NormalMapsForStaticLighting=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req some light shadows
 r.SupportSkyAtmosphereAffectsHeightFog=0; ⚫️DEF ❓
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🔴experimental
-r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage
+r.TemporalAA.Upsampling=0; ⚫️DEF 0 🟡for ScreenPercentage
 r.VolumetricFog.LightFunctionSupersampleScale=1; ⚫️DEF ❓ ⚪️EDITED
 
 [EffectsQuality@2]
@@ -805,7 +790,7 @@ r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 ⚪️EDITED
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 ⚪️EDITED
 r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED
@@ -833,9 +818,6 @@ r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=0.75; ⚫️DEF 0.85 ⚪️EDITED
@@ -926,7 +908,7 @@ r.NormalMapsForStaticLighting=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req some light shadows
 r.SupportSkyAtmosphereAffectsHeightFog=0; ⚫️DEF ❓
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🔴experimental
-r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage
+r.TemporalAA.Upsampling=0; ⚫️DEF 0 🟡for ScreenPercentage
 r.VolumetricFog.LightFunctionSupersampleScale=1; ⚫️DEF ❓ ⚪️EDITED
 
 [FoliageQuality@2]
@@ -948,7 +930,7 @@ r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 ⚪️EDITED
 r.AllowLandscapeShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 ⚪️EDITED
 r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 r.AmbientOcclusionStaticFraction=1; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.AOViewFadeDistanceScale=0.1; ⚫️DEF 0.7 ⚪️EDITED
@@ -976,9 +958,6 @@ r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
 r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.RefractionQuality=1; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
-r.ShaderPipelineCache.Enabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.GameFileMaskEnabled=1; ⚫️DEF 0 ⚪️EDITED
-r.ShaderPipelineCache.PreOptimizeEnabled=1; ⚫️DEF 0 ⚪️EDITED
 r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
 r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
 r.Shadow.DistanceScale=0.75; ⚫️DEF 0.85 ⚪️EDITED
@@ -1069,7 +1048,7 @@ r.NormalMapsForStaticLighting=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟡req some light shadows
 r.SupportSkyAtmosphereAffectsHeightFog=0; ⚫️DEF ❓
 r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🔴experimental
-r.TemporalAA.Upsampling=1; ⚫️DEF 1 🟡for ScreenPercentage
+r.TemporalAA.Upsampling=0; ⚫️DEF 0 🟡for ScreenPercentage
 r.VolumetricFog.LightFunctionSupersampleScale=1; ⚫️DEF ❓ ⚪️EDITED
 ```
 
@@ -1174,7 +1153,7 @@ DoubleClickTime=0.1; ⚫️DEF 0.25
 
 ---
 
-#### AO options with my config
+#### AO options
 
 ```python
 dfao:
@@ -1182,16 +1161,12 @@ r.AmbientOcclusionLevels=0; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
 r.DistanceFieldAO=1; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
 
 ssao med:
-r.AmbientOcclusion.Compute=0; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels 🟣TEST
-r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED 🟣TEST
-r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusion.Compute=0; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels
+r.AmbientOcclusionRadiusScale=0.3; ⚫️DEF 1 ⚪️EDITED
 
 ssao low:
-r.AmbientOcclusion.Compute=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels ⚪️EDITED 🟣TEST
-r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED 🟣TEST
-r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusion.Compute=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟡req 0 for AO levels ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
 
 or both
 ```
@@ -1286,9 +1261,11 @@ TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBi
 <br>
 looks like this:
 <br>
-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
+HKLM\SYSTEM\ControlSet001\Enum\PCI\THESENUMBERSCHANGE\THESENUMBERSCHANGE\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
 <br>
 find in regedit and set MSISupported to 1 then restart
+<br>
+in device manager/view/resorces by connection/GPU name should have a negative number in parentheses if MSIs is enabled
 </p>
 </details>
 
