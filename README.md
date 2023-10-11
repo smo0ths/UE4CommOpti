@@ -1,4 +1,4 @@
-#### updated 10/11/2023 🍝 :ramen:
+#### updated 10/11/2023~ 🍝 :ramen:
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -1261,9 +1261,13 @@ TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBi
 <br>
 looks like this:
 <br>
-HKLM\SYSTEM\ControlSet001\Enum\PCI\THESENUMBERSCHANGE\THESENUMBERSCHANGE\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
+HKLM\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
 <br>
 find in regedit and set MSISupported to 1 then restart
+<br>
+4. win + r type cmd then press control+shift+enter (starts as admin) then add key. NVcleaninstall gives you more MSIs options. Newest drivers auto do this on 40 series cards, i wonder if its default or set to high.
+<br>
+reg add "HKLM\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v MSISupported /t REG_DWORD /d 1 /f
 <br>
 in device manager/view/resorces by connection/GPU name should have a negative number in parentheses if MSIs is enabled
 </p>
