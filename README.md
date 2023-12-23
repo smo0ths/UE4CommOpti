@@ -1,4 +1,4 @@
-#### updated 12/21/2023 :ramen:
+#### updated 12/23/2023 :ramen:
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -109,7 +109,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -131,7 +131,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -144,9 +144,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -318,7 +317,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -340,7 +339,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -353,9 +352,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -507,7 +505,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -529,7 +527,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -542,9 +540,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -696,7 +693,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -718,7 +715,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -731,9 +728,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -885,7 +881,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -907,7 +903,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -920,9 +916,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -1074,7 +1069,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -1096,7 +1091,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -1109,9 +1104,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -1263,7 +1257,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -1285,7 +1279,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -1298,9 +1292,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -1452,7 +1445,7 @@ r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
 r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
-r.Upscale.Quality=3;----------⚫️DEF ❓ 🟢0 for PERFORMANCE ⚪️EDITED
+r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -1474,7 +1467,7 @@ r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANC
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=0.8;----------⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.ParticleLightQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE ⚪️EDITED
@@ -1487,9 +1480,8 @@ r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢1 for PERFORMANCE
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.UsePreExposure=1;----------⚫️DEF 1
+r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ClearCoatNormal=1;----------⚫️DEF ❓ 🔵
 r.MaxAnisotropy=8;----------⚫️DEF ❓ ⚪️EDITED
@@ -1725,28 +1717,56 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 ```python
 [/Script/Engine.TextureLODSettings]
-TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
-TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=point,MipFilter=point,NumStreamedMips=-1,MipGenSettings=TMGS_SimpleAverage)
+TextureLODGroups=(Group=TEXTUREGROUP_World,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Cinematic,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Effects,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=linear,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MinLODSize=128,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MinLODSize=256,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_UI,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_NoMipmaps,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MinLODSize=512,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_MobileFlattened,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_ProcBuilding_Face,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_ProcBuilding_LightMap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MinLODSize=512,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_ColorLookupTable,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Bokeh,MinLODSize=1,MaxLODSize=1024,MaxLODSize=256,LODBias=0,MinMagFilter=linear,MipFilter=linear,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_IESLightProfile,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=point,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_HierarchicalLOD,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Impostor,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_ImpostorNormalDepth,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_8BitData,LODBias=0,MinMagFilter=point,MipFilter=linear,MipGenSettings=TMGS_NoMipmaps)
+TextureLODGroups=(Group=TEXTUREGROUP_16BitData,LODBias=0,MinMagFilter=point,MipFilter=linear,MipGenSettings=TMGS_NoMipmaps)
+TextureLODGroups=(Group=TEXTUREGROUP_Project01,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project02,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project03,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project04,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project05,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project06,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project07,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project08,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project09,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project10,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project11,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project12,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project13,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project14,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_Project15,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
+TextureLODGroups=(Group=TEXTUREGROUP_MAX,MinLODSize=1,MaxLODSize=1024,LODBias=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_SimpleAverage,NumStreamedMips=-1)
 ```
 
 ---
