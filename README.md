@@ -1,4 +1,4 @@
-#### updated 12/30/2023 ✂️ 📋 :ramen: v0.1 release
+#### updated 1/1/2023 ✂️ 📋 :ramen: v0.5 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -61,53 +61,48 @@ sg.TextureQuality=2;
 sg.EffectsQuality=2;
 sg.FoliageQuality=2;
 sg.ShadingQuality=2;
-sg.AnimationQuality=2;
-r.SupportAnisotropicMaterials=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
-r.SupportMaterialLayers=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
-r.SupportSkyAtmosphere=1;----------⚫️DEF ❓
-r.SupportSkyAtmosphereAffectsHeightFog=1;----------⚫️DEF 1
-r.SupportPointLightWholeSceneShadows=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
-p.AnimDynamics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
-p.RigidBodyNode=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
-p.ClothPhysics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.AlsoUseSphereForFrustumCull=1;----------⚫️DEF 0 🟢1 for PERFORMANCE 🔵
-r.IndirectLightingCache=0;----------⚫️DEF ❓
+r.D3D12.GPUCrashDebuggingMode=0;----------⚫️DEF ❓
+r.gpucrash.collectionenable=0;----------⚫️DEF 1 ⚪️EDITED
+r.GPUCrashDebugging=0;----------⚫️DEF ❓
+r.ShaderDevelopmentMode=0;----------⚫️DEF 0
+r.CompileShadersForDevelopment=0;----------⚫️DEF 1 ⚪️EDITED
+r.CreateShadersOnLoad=1;----------⚫️DEF ❓ 🔵
+r.ShaderPipelineCache.Enabled=1;----------⚫️DEF ❓ 🔵
+r.LightPropagationVolume=0;----------⚫️DEF ❓ 🔵
+r.IndirectLightingCache=0;----------⚫️DEF 1 ⚪️EDITED 🔵
+r.LightCulling.Quality=1;----------⚫️DEF 1 🔵
 r.DoInitViewsLightingAfterPrepass=0;----------⚫️DEF 0 🔵experimental
 r.DoLazyStaticMeshUpdate=0;----------⚫️DEF 0 🔵experimental
-r.CompileShadersForDevelopment=0;----------⚫️DEF 1 ⚪️EDITED
-r.D3D12.GPUCrashDebuggingMode=0;----------⚫️DEF ❓
+r.StencilForLODDither=0;----------⚫️DEF 1 ⚪️EDITED 🔵
+r.UseCachedLODSceneTreeVisibilityStates=1;----------⚫️DEF ❓ 🔵
+r.UseParallelLightVisibilityUpdates=1;----------⚫️DEF ❓ 🔵
+r.UniformBufferPooling=1;----------⚫️DEF ❓ 🔵
+r.AlsoUseSphereForFrustumCull=1;----------⚫️DEF 0 🟢1 for PERFORMANCE 🔵
 r.AllowOcclusionQueries=1;----------⚫️DEF ❓
 r.NumBufferedOcclusionQueries=2;----------⚫️DEF ❓ 🔵
-r.UseCachedLODSceneTreeVisibilityStates=1;----------⚫️DEF ❓
-r.UseParallelLightVisibilityUpdates=1;----------⚫️DEF ❓ 🔵
-r.UniformBufferPooling=0;----------⚫️DEF ❓
-r.StencilForLODDither=0;----------⚫️DEF 1 🔵
-r.ShaderPipelineCache.Enabled=1;----------⚫️DEF ❓
-r.FinishCurrentFrame=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵1 for best latency
-r.CreateShadersOnLoad=1;----------⚫️DEF ❓ 🔵
-r.GPUCrashDebugging=0;----------⚫️DEF ❓
-r.gpucrash.collectionenable=0;----------⚫️DEF 1 ⚪️EDITED
+r.HZBOcclusion=0;----------⚫️DEF ❓ 🔵
+r.HZB.BuildUseCompute=1;----------⚫️DEF ❓ 🔵
+r.OneFrameThreadLag=1;----------⚫️DEF 1 🔵
+r.FinishCurrentFrame=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵improve latency
 r.GBufferFormat=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
 r.ClearSceneMethod=1;----------⚫️DEF 1
-r.UseClusteredDeferredShading=0;----------⚫️DEF 0
+r.UseClusteredDeferredShading=0;----------⚫️DEF 0 🔵
 r.TiledDeferredShading=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
 r.TiledDeferredShading.MinimumCount=1;----------⚫️DEF 80 ⚪️EDITED 🔵
-r.HZBOcclusion=0;----------⚫️DEF ❓ 🔵
-r.DBuffer=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
-r.DefaultBackBufferPixelFormat=4;----------⚫️DEF 4 🟢0 for PERFORMANCE 🔵
-r.SceneColorFormat=4;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
-r.VSync=0;----------⚫️DEF 0
-rhi.SyncInterval=0;----------⚫️DEF 1 ⚪️EDITED
-r.GTSyncType=0;----------⚫️DEF 1 ⚪️EDITED
-r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
-r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.DynamicRes.OperationMode=0;----------⚫️DEF 0
 r.DynamicRes.MaxScreenPercentage=67;----------⚫️DEF ❓ 🔵req DynamicRes
 r.DynamicRes.FrameTimeBudget=10;----------⚫️DEF ❓ 🔵req DynamicRes
-r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
+r.RenderTargetPool.TransientAliasingMode=2;----------⚫️DEF ❓ 🔵
+r.RenderTargetPoolMin=400;----------⚫️DEF ❓ 🔵
+r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
+r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
-r.Upscale.Quality=1;----------⚫️DEF ❓ 🟢0 or 1 for PERFORMANCE 🔵
+r.SecondaryScreenPercentage.GameViewport=0;----------⚫️DEF 0
+r.Upscale.Quality=2;----------⚫️DEF 2 🔵
 r.Tonemapper.MergeWithUpscale.Mode=1;----------⚫️DEF 1 🔵
+r.GTSyncType=0;----------⚫️DEF 1 ⚪️EDITED
+r.VSync=0;----------⚫️DEF 0
+rhi.SyncInterval=0;----------⚫️DEF 1 ⚪️EDITED
 r.PostProcessAAQuality=5;----------🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
 r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TAA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
@@ -118,54 +113,92 @@ foliage.DensityScale=1;----------⚫️DEF ❓ 🟢0.6 for PERFORMANCE
 foliage.DitheredLOD=1;----------⚫️DEF 1
 foliage.LODDistanceScale=1;----------⚫️DEF ❓
 foliage.MinLOD=-1;----------⚫️DEF ❓ 🟢1 for PERFORMANCE
-foliage.MinimumScreenSize=0.00005f;----------⚫️DEF 0.00005f 🟢0.001f or 0.0005f for PERFORMANCE ⚪️EDITED
-foliage.DiscardDataOnLoad=0;----------⚫️DEF 0 🟢1 for PERFORMANCE
+foliage.MinInstancesPerOcclusionQuery=256;----------⚫️DEF ❓ 🔵
+foliage.MinimumScreenSize=0.0005f;----------⚫️DEF 0.00005f 🟢0.001f or 0.0005f for PERFORMANCE ⚪️EDITED
+foliage.DiscardDataOnLoad=0;----------⚫️DEF 0
 grass.DensityScale=0.6;----------⚫️DEF ❓ 🟢0.6 for PERFORMANCE
 grass.DisableDynamicShadows=1;----------⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
 grass.MaxUpdateFrequency=1;----------⚫️DEF 30 🟢1 for PERFORMANCE ⚪️EDITED
 grass.TickInterval=10;----------⚫️DEF 1 🟢10 for PERFORMANCE ⚪️EDITED
-grass.DiscardDataOnLoad=0;----------⚫️DEF 0 🟢1 for PERFORMANCE
-r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
-r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
-r.AllowSimpleLights=1;----------⚫️DEF 1
-r.ParticleLightQuality=2;----------⚫️DEF 1 🟢0 or 1 for PERFORMANCE ⚪️EDITED 🔵
-r.EmitterSpawnRateScale=1;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE
-fx.MaxCPUParticlesPerEmitter=25;----------⚫️DEF 1000 ⚪️EDITED 🔵
-fx.MaxGPUParticlesSpawnedPerFrame=1000;----------⚫️DEF 1048576 ⚪️EDITED 🔵
-r.ParticleMinTimeBetweenTicks=16;----------⚫️DEF ❓
-r.MinTimeBetweenTicks=16;----------⚫️DEF ❓
-r.AnisotropicMaterials=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
-r.Filter.SizeScale=0.7;----------⚫️DEF 0.8 ⚪️EDITED
-r.Bloom.Cross=0;----------⚫️DEF 0 🟢0.7777 for anamorphic
-r.BloomQuality=4;----------⚫️DEF 4 🟢0 for PERFORMANCE ⚪️EDITED
-r.MotionBlurQuality=0;----------⚫️DEF 3 ⚪️EDITED
-r.DetailMode=2;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE 🔵
-r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
-r.SceneColorFringeQuality=0;----------⚫️DEF 1 ⚪️EDITED
-r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
-r.MaxAnisotropy=16;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
-r.TessellationAdaptivePixelsPerTriangle=999999;----------⚫️DEF 48 🟢999999 for PERFORMANCE
-r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 or 2 for PERFORMANCE 🔵
-r.ClearCoatNormal=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
-r.NormalMapsForStaticLighting=0;----------⚫️DEF ❓ 🔵
-Compat.UseDXT5NormalMaps=0;----------⚫️DEF 0
+grass.DiscardDataOnLoad=0;----------⚫️DEF 0
+a.URO.Enable=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+a.URO.ForceAnimRate=0;----------⚫️DEF ❓ 🔵
+p.AnimDynamics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
+p.RigidBodyNode=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
+p.ClothPhysics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Tonemapper.Quality=1;----------⚫️DEF 5 ⚪️EDITED
 r.TonemapperFilm=0;----------⚫️DEF 0
 r.TonemapperGamma=2.2;----------⚫️DEF 0 ⚪️EDITED 🔵
 r.Tonemapper.Sharpen=0;----------⚫️DEF 2 ⚪️EDITED 🔵
 r.Tonemapper.GrainQuantization=1;----------⚫️DEF 1
+r.Filter.SizeScale=0.7;----------⚫️DEF 0.8 ⚪️EDITED
+r.Bloom.Cross=0;----------⚫️DEF 0 🟢0.7777 for anamorphic
+r.BloomQuality=4;----------⚫️DEF 4 🟢0 for PERFORMANCE ⚪️EDITED
+r.MotionBlurQuality=0;----------⚫️DEF 3 ⚪️EDITED
+r.SceneColorFringeQuality=0;----------⚫️DEF 1 ⚪️EDITED
+r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE ⚪️EDITED
+r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.DOF.Gather.RingCount=3;----------⚫️DEF 4 🟢3 for PERFORMANCE ⚪️EDITED
+r.DOF.Scatter.ForegroundCompositing=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.DOF.Scatter.BackgroundCompositing=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.DOF.Kernel.MaxForegroundRadius=0.006;----------⚫️DEF 0.012 🟢0.006 for PERFORMANCE ⚪️EDITED
+r.DOF.Kernel.MaxBackgroundRadius=0.006;----------⚫️DEF 0.012 🟢0.006 for PERFORMANCE ⚪️EDITED
+r.SeparateTranslucency=0;----------⚫️DEF 1 ⚪️EDITED 🔵
+r.SeparateTranslucencyScreenPercentage=100;----------⚫️DEF ❓
+r.SeparateTranslucencyAutoDownsample=1;----------⚫️DEF ❓
+r.AllowSimpleLights=1;----------⚫️DEF 1
+r.ParticleLightQuality=2;----------⚫️DEF 1 🟢0 or 1 for PERFORMANCE ⚪️EDITED 🔵
+r.EmitterSpawnRateScale=1;----------⚫️DEF 1 🟢0.125 or 0.5 for PERFORMANCE
+fx.Niagara.QualityLevel=2;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE
+fx.MaxCPUParticlesPerEmitter=25;----------⚫️DEF 1000 ⚪️EDITED 🔵
+fx.MaxGPUParticlesSpawnedPerFrame=1000;----------⚫️DEF 1048576 ⚪️EDITED 🔵
+r.ParticleMinTimeBetweenTicks=16;----------⚫️DEF ❓
+r.MinTimeBetweenTicks=16;----------⚫️DEF ❓
+r.ViewDistanceScale=1;----------⚫️DEF 1 🟢0.8 for PERFORMANCE
+r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
+r.DetailMode=2;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE 🔵
+r.RefractionQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.MaterialQualityLevel=1;----------⚫️DEF 1 🟢0 or 2 for PERFORMANCE 🔵
+r.SupportMaterialLayers=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
+r.DBuffer=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+r.AllowDownsampledStandardTranslucency=1;----------⚫️DEF 0 ⚪️EDITED 🔵
+r.DefaultBackBufferPixelFormat=4;----------⚫️DEF 4 🟢0 for PERFORMANCE 🔵
+r.SceneColorFormat=4;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+r.TessellationAdaptivePixelsPerTriangle=999999;----------⚫️DEF 48 🟢999999 for PERFORMANCE
+r.HighQualityLightMaps=1;----------⚫️DEF ❓
+Compat.UseDXT5NormalMaps=0;----------⚫️DEF 0 🔵
+r.ClearCoatNormal=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+r.IrisNormal=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+r.NormalMapsForStaticLighting=0;----------⚫️DEF ❓ 🔵
+r.SupportAnisotropicMaterials=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+r.AnisotropicMaterials=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+r.MaxAnisotropy=16;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.SubsurfaceScattering=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.SSS.Quality=0;----------⚫️DEF 0
 r.SSS.SampleSet=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSS.Checkerboard=1;----------⚫️DEF ❓
 r.SSS.HalfRes=1;----------⚫️DEF 1
 r.SSS.Scale=2;----------⚫️DEF ❓
+r.SupportSkyAtmosphere=1;----------⚫️DEF ❓
+r.SupportSkyAtmosphereAffectsHeightFog=1;----------⚫️DEF 1
+r.SkyAtmosphere.FastSkyLUT=1;----------⚫️DEF 1
+r.SkyAtmosphere.FastSkyLUT.SampleCountMax=32;----------⚫️DEF 64 ⚪️EDITED 🟢32 for PERFORMANCE
+r.SkyAtmosphere.SampleCountMax=32;----------⚫️DEF 64 ⚪️EDITED 🟢32 for PERFORMANCE
+r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=1;----------⚫️DEF ❓
+r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice=1;----------⚫️DEF 2 ⚪️EDITED
+r.AllowGlobalClipPlane=0;----------⚫️DEF ❓ 🔵
+r.SkyLight.RealTimeReflectionCapture=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.DoTiledReflections=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
+r.ReflectionEnvironment=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.ReflectionEnvironmentLightmapMixing=1;----------⚫️DEF ❓ 🔵
+r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;----------⚫️DEF 1
+r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.MinRoughnessOverride=0.04;----------⚫️DEF 0 ⚪️EDITED 🔵
-r.SSR.HalfResSceneColor=0;----------⚫️DEF 0
 r.SSR.MaxRoughness=0.4;----------⚫️DEF -1 ⚪️EDITED 🔵
+r.SSR.HalfResSceneColor=0;----------⚫️DEF 0
 r.SSR.Quality=2;----------⚫️DEF 2 🟢0 for PERFORMANCE
 r.SSR.Temporal=1;----------⚫️DEF 0 ⚪️EDITED
 r.HairStrands.Interpolation.UseSingleGuide=1;----------⚫️DEF 1
@@ -178,16 +211,17 @@ r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE ⚪️
 r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
 r.UsePreExposure=1;----------⚫️DEF 1
 r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.DefaultFeature.AutoExposure.Bias=0;----------⚫️DEF ❓
 r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=1;----------⚫️DEF ❓ 🔵
 r.DefaultFeature.AutoExposure.Method=1;----------⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED 🔵Basic AutoExposure
-r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE ⚪️EDITED
-r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.DOF.Gather.RingCount=3;----------⚫️DEF 4 🟢3 for PERFORMANCE ⚪️EDITED
-r.DOF.Scatter.ForegroundCompositing=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.DOF.Scatter.BackgroundCompositing=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
-r.DOF.Kernel.MaxForegroundRadius=0.006;----------⚫️DEF 0.012 🟢0.006 for PERFORMANCE ⚪️EDITED
-r.DOF.Kernel.MaxBackgroundRadius=0.006;----------⚫️DEF 0.012 🟢0.006 for PERFORMANCE ⚪️EDITED
+r.VolumetricFog=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.VolumetricFog.GridPixelSize=8;----------⚫️DEF 16 🟢16 for PERFORMANCE ⚪️EDITED
+r.VolumetricFog.GridSizeZ=64;----------⚫️DEF 64
+r.VolumetricFog.HistoryMissSupersampleCount=1;----------⚫️DEF 4 🟢1 for PERFORMANCE ⚪️EDITED
+r.VolumetricFog.InjectShadowedLightsSeparately=1;----------⚫️DEF ❓ 🔵
+r.VolumetricFog.TemporalReprojection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.TranslucentLightingVolume=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.TranslucencyLightingVolumeDim=32;----------⚫️DEF 48 🟢32 for PERFORMANCE ⚪️EDITED
+r.TranslucencyVolumeBlur=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.GenerateMeshDistanceFields=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵req for DF things
 r.DistanceFieldShadowing=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵req GenerateMeshDistanceFields
 r.DFShadowQuality=2;----------⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
@@ -201,8 +235,9 @@ r.CapsuleShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.CapsuleShadowsFullResolution=0;----------⚫️DEF ❓ 🔵
 r.ContactShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.ContactShadows.NonShadowCastingIntensity=0;----------⚫️DEF 0
-r.AllowLandscapeShadows=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.SupportPointLightWholeSceneShadows=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
 r.AllowPointLightCubemapShadows=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
+r.AllowLandscapeShadows=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ShadowQuality=4;----------⚫️DEF 5 🟢2 for PERFORMANCE ⚪️EDITED
 r.Shadow.FilterMethod=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵PCSS shadows
 r.Shadow.DistanceScale=0.8;----------⚫️DEF 0.85 ⚪️EDITED
@@ -218,33 +253,17 @@ r.Shadow.CacheWholeSceneShadows=1;----------⚫️DEF 1
 r.Shadow.WholeSceneShadowCacheMb=400;----------⚫️DEF ❓ 🔵
 r.Shadow.FadeExponent=1;----------⚫️DEF 0.25 ⚪️EDITED 🔵
 r.Shadow.UnbuiltPreviewInGame=0;----------⚫️DEF ❓
-r.VolumetricFog=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.VolumetricFog.GridPixelSize=8;----------⚫️DEF 16 🟢16 for PERFORMANCE ⚪️EDITED
-r.VolumetricFog.GridSizeZ=64;----------⚫️DEF 64
-r.VolumetricFog.HistoryMissSupersampleCount=1;----------⚫️DEF 4 🟢1 for PERFORMANCE ⚪️EDITED
-r.VolumetricFog.InjectShadowedLightsSeparately=1;----------⚫️DEF ❓ 🔵
-r.VolumetricFog.TemporalReprojection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.TranslucentLightingVolume=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.TranslucencyLightingVolumeDim=32;----------⚫️DEF 48 🟢32 for PERFORMANCE ⚪️EDITED
-r.TranslucencyVolumeBlur=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.AllowDownsampledStandardTranslucency=1;----------⚫️DEF 0 ⚪️EDITED 🔵
-r.SeparateTranslucency=1;----------⚫️DEF 1 🔵
-r.SeparateTranslucencyScreenPercentage=100;----------⚫️DEF ❓
 r.LightFunctionQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1;----------⚫️DEF 1 🟢0.6 for PERFORMANCE
-r.MinScreenRadiusForLights=0.02;----------⚫️DEF 0.03 🟢0.04 or 0.06 for PERFORMANCE ⚪️EDITED
+r.MinScreenRadiusForLights=0.02;----------⚫️DEF 0.03 🟢0.04 or 0.06 for PERFORMANCE ⚪️EDITED 🔵
+r.MinScreenRadiusForCSMDepth=0.01;----------⚫️DEF ❓ 🔵
+r.MinScreenRadiusForDepthPrepass=0.03;----------⚫️DEF ❓ 🔵
 r.LightShaftQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.LightShaftNumSamples=12;----------⚫️DEF ❓
 r.LightShaftFirstPassDistance=0.1;----------⚫️DEF 0.1
 r.LightShaftDownSampleFactor=2;----------⚫️DEF 2
 r.LightShaftBlurPasses=3;----------⚫️DEF ❓
 r.LightShaftAllowTAA=1;----------⚫️DEF 1
-r.HighQualityLightMaps=1;----------⚫️DEF ❓
-r.DoTiledReflections=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
-r.SkyLight.RealTimeReflectionCapture=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.ReflectionEnvironment=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.ReflectionEnvironmentLightmapMixing=1;----------⚫️DEF ❓ 🔵
-r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;----------⚫️DEF 1
 r.GenerateLandscapeGIData=1;----------⚫️DEF ❓ 🔵req GenerateMeshDistanceFields
 r.DistanceFieldGI=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.SSGI.Enable=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
@@ -267,25 +286,25 @@ r.MeshStreaming=1;----------⚫️DEF ❓ 🔵experimental
 r.TextureStreaming=1;----------⚫️DEF 1
 r.Streaming.Boost=1;----------⚫️DEF 1
 r.Streaming.LimitPoolSizeToVRAM=0;----------⚫️DEF 1 ⚪️EDITED 🔵
-r.Streaming.HiddenPrimitiveScale=1;----------⚫️DEF ❓
-r.Streaming.FramesForFullUpdate=4;----------⚫️DEF ❓
+r.Streaming.HiddenPrimitiveScale=0.5;----------⚫️DEF ❓ 🟢0.5 for PERFORMANCE
+r.Streaming.FramesForFullUpdate=60;----------⚫️DEF 5 ⚪️EDITED 🔵
 r.Streaming.PrioritizeMeshLODRetention=1;----------⚫️DEF ❓
 r.Streaming.MipBias=0;----------⚫️DEF 0
 r.Streaming.PoolSize=1600;----------⚫️DEF -1 ⚪️EDITED 🔵
 r.Streaming.PoolSizeForMeshes=-1;----------⚫️DEF -1 ⚪️EDITED 🔵
 r.Streaming.AmortizeCPUToGPUCopy=1;----------⚫️DEF 0 ⚪️EDITED 🔵
-r.Streaming.MaxNumTexturesToStreamPerFrame=4;----------⚫️DEF 0 ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
+r.Streaming.MaxNumTexturesToStreamPerFrame=5;----------⚫️DEF 0 ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
+r.Streaming.NumStaticComponentsProcessedPerFrame=1;----------⚫️DEF ❓
 r.Streaming.FullyLoadUsedTextures=0;----------⚫️DEF 0
 r.Streaming.DefragDynamicBounds=1;----------⚫️DEF ❓ 🔵
 r.Streaming.MaxEffectiveScreenSize=0;----------⚫️DEF 0 🔵
 r.Streaming.MinLevelRenderAssetScreenSize=100;----------⚫️DEF ❓ 🔵
 r.Streaming.MaxTempMemoryAllowed=800;----------⚫️DEF ❓ 🔵
-r.RenderTargetPoolMin=400;----------⚫️DEF ❓ 🔵
 ```
 
 ---
 
-<details><summary>in Scalability.ini put config under if settings dont load</summary>
+<details><summary>in Scalability.ini put config under if settings dont load, or change cutscene dynamic Cine values</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
@@ -302,6 +321,18 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
+[ScalabilitySettings]
+PerfIndexThresholds_ResolutionQuality="GPU 1 2 2"
+PerfIndexThresholds_ViewDistanceQuality="Min 1 2 2"
+PerfIndexThresholds_AntiAliasingQuality="GPU 1 2 2"
+PerfIndexThresholds_ShadowQuality="Min 1 2 2"
+PerfIndexThresholds_PostProcessQuality="GPU 1 2 2"
+PerfIndexThresholds_TextureQuality="GPU 1 2 2"
+PerfIndexThresholds_EffectsQuality="Min 1 2 2"
+PerfIndexThresholds_FoliageQuality="GPU 1 2 2"
+PerfIndexThresholds_ShadingQuality="GPU 1 2 2"
+PerfIndexValues_ResolutionQuality="33 50 67 70 100"
+
 [AntiAliasingQuality@2]
 
 [ViewDistanceQuality@2]
@@ -316,11 +347,23 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 [FoliageQuality@2]
 
-[FoliageQuality@2]
-
 [ShadingQuality@2]
 
-[AnimationQuality@2]
+[AntiAliasingQuality@Cine]
+
+[ViewDistanceQuality@Cine]
+
+[ShadowQuality@Cine]
+
+[PostProcessQuality@Cine]
+
+[TextureQuality@Cine]
+
+[EffectsQuality@Cine]
+
+[FoliageQuality@Cine]
+
+[ShadingQuality@Cine]
 ```
 
 ---
