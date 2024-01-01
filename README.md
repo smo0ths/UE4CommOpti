@@ -448,7 +448,6 @@ sg.TextureQuality=2;
 sg.EffectsQuality=2;
 sg.FoliageQuality=2;
 sg.ShadingQuality=2;
-sg.AnimationQuality=2;
 ```
 
 ---
