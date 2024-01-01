@@ -1,4 +1,4 @@
-#### updated 1/1/2024 ✂️ 📋 :ramen: v0.5 release
+#### updated 1/1/2023 ✂️ 📋 :ramen: v0.6 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -69,11 +69,11 @@ r.CompileShadersForDevelopment=0;----------⚫️DEF 1 ⚪️EDITED
 r.CreateShadersOnLoad=1;----------⚫️DEF ❓ 🔵
 r.ShaderPipelineCache.Enabled=1;----------⚫️DEF ❓ 🔵
 r.LightPropagationVolume=0;----------⚫️DEF ❓ 🔵
-r.IndirectLightingCache=0;----------⚫️DEF 1 ⚪️EDITED 🔵
+r.IndirectLightingCache=0;----------⚫️DEF 1 🔵
 r.LightCulling.Quality=1;----------⚫️DEF 1 🔵
 r.DoInitViewsLightingAfterPrepass=0;----------⚫️DEF 0 🔵experimental
 r.DoLazyStaticMeshUpdate=0;----------⚫️DEF 0 🔵experimental
-r.StencilForLODDither=0;----------⚫️DEF 1 ⚪️EDITED 🔵
+r.StencilForLODDither=0;----------⚫️DEF 1 🔵
 r.UseCachedLODSceneTreeVisibilityStates=1;----------⚫️DEF ❓ 🔵
 r.UseParallelLightVisibilityUpdates=1;----------⚫️DEF ❓ 🔵
 r.UniformBufferPooling=1;----------⚫️DEF ❓ 🔵
@@ -293,7 +293,7 @@ r.Streaming.MipBias=0;----------⚫️DEF 0
 r.Streaming.PoolSize=1600;----------⚫️DEF -1 ⚪️EDITED 🔵
 r.Streaming.PoolSizeForMeshes=-1;----------⚫️DEF -1 ⚪️EDITED 🔵
 r.Streaming.AmortizeCPUToGPUCopy=1;----------⚫️DEF 0 ⚪️EDITED 🔵
-r.Streaming.MaxNumTexturesToStreamPerFrame=5;----------⚫️DEF 0 ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
+r.Streaming.MaxNumTexturesToStreamPerFrame=20;----------⚫️DEF 0 ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
 r.Streaming.NumStaticComponentsProcessedPerFrame=1;----------⚫️DEF ❓
 r.Streaming.FullyLoadUsedTextures=0;----------⚫️DEF 0
 r.Streaming.DefragDynamicBounds=1;----------⚫️DEF ❓ 🔵
