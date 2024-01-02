@@ -274,8 +274,8 @@ r.SkeletalMeshLODBias=-2;----------⚫️DEF 0 🟢1 for PERFORMANCE
 r.ParticleLODBias=0;----------⚫️DEF 0
 r.Streaming.HiddenPrimitiveScale=0.5;----------⚫️DEF ❓ 🟢0.5 for PERFORMANCE
 r.Streaming.FramesForFullUpdate=5;----------⚫️DEF 5 🟢60 for PERFORMANCE
-r.Streaming.AmortizeCPUToGPUCopy=1;----------⚫️DEF 0 ⚪️EDITED
-r.Streaming.MaxNumTexturesToStreamPerFrame=1;----------⚫️DEF ❓ ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
+r.Streaming.AmortizeCPUToGPUCopy=1;----------⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.Streaming.MaxNumTexturesToStreamPerFrame=1;----------⚫️DEF ❓ 🟢1 for PERFORMANCE ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
 r.Streaming.NumStaticComponentsProcessedPerFrame=1;----------⚫️DEF ❓
 ```
 
