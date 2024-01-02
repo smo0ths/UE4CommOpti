@@ -1,4 +1,4 @@
-#### updated 1/2/2023 ✂️ 📋 :ramen: v0.7 release
+#### updated 1/2/2023 ✂️ 📋 :ramen: v0.8.1 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -72,6 +72,19 @@ r.DoInitViewsLightingAfterPrepass=0;----------⚫️DEF 0 🔵experimental
 r.DoLazyStaticMeshUpdate=0;----------⚫️DEF 0 🔵experimental
 r.AlsoUseSphereForFrustumCull=1;----------⚫️DEF 0 🟢1 for PERFORMANCE 🔵
 r.SplineMesh.NoRecreateProxy=1;----------⚫️DEF ❓ 🔵
+D3D12.AdjustTexturePoolSizeBasedOnBudget=1;----------⚫️DEF ❓ 🔵
+D3D12.DynamicTexturePoolSize=0;----------⚫️DEF ❓
+D3D12.ForceThirtyHz=0;----------⚫️DEF ❓
+D3D12.TexturePoolOnlyAccountStreamableTexture=1;----------⚫️DEF ❓
+D3D12.UseUpdateTexture3DComputeShader=0;----------⚫️DEF 0
+D3D12.ZeroBufferSizeInMB=8;----------⚫️DEF 4 ⚪️EDITED 🔵
+r.FrustumCullNumWordsPerTask=64;----------⚫️DEF ❓ 🔵
+r.IndirectLightingCache=1;----------⚫️DEF 1 🔵
+r.LightCulling.Quality=1;----------⚫️DEF 1 🔵
+r.LightPropagationVolume=0;----------⚫️DEF ❓ 🔵
+r.UniformBufferPooling=1;----------⚫️DEF ❓ 🔵
+r.UseCachedLODSceneTreeVisibilityStates=1;----------⚫️DEF ❓ 🔵
+r.UseParallelLightVisibilityUpdates=1;----------⚫️DEF ❓ 🔵
 r.AllowOcclusionQueries=1;----------⚫️DEF ❓
 r.NumBufferedOcclusionQueries=2;----------⚫️DEF ❓ 🔵
 r.HZBOcclusion=0;----------⚫️DEF ❓ 🔵
@@ -100,7 +113,7 @@ r.TemporalAA.Algorithm=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵gen5 TA
 r.TemporalAAFilterSize=0.1;----------⚫️DEF 1 ⚪️EDITED 🔵only works for gen5 TAA
 r.TemporalAA.Upsampling=1;----------⚫️DEF 0 🔵for ScreenPercentage ⚪️EDITED
 r.TemporalAACurrentFrameWeight=0.03;----------⚫️DEF 0.03 ⚪️EDITED 🔵
-r.TemporalAASamples=2;----------⚫️DEF 8 ⚪️EDITED 🔵
+r.TemporalAASamples=16;----------⚫️DEF ❓
 foliage.DensityScale=1;----------⚫️DEF ❓ 🟢0.6 for PERFORMANCE
 foliage.DitheredLOD=1;----------⚫️DEF 1
 foliage.LODDistanceScale=1;----------⚫️DEF ❓
@@ -119,9 +132,10 @@ p.AnimDynamics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
 p.RigidBodyNode=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
 p.ClothPhysics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Tonemapper.Quality=1;----------⚫️DEF 5 ⚪️EDITED
+r.Tonemapper.GrainQuantization=1;----------⚫️DEF 1
 r.TonemapperGamma=2.2;----------⚫️DEF 0 ⚪️EDITED 🔵
 r.Tonemapper.Sharpen=0;----------⚫️DEF 2 ⚪️EDITED 🔵
-r.Tonemapper.GrainQuantization=1;----------⚫️DEF 1
+r.NGX.DLSS.Sharpness=0.5;----------⚫️DEF 0.5
 r.Filter.SizeScale=0.7;----------⚫️DEF 0.8 ⚪️EDITED
 r.Bloom.Cross=0;----------⚫️DEF 0 🟢0.7777 for anamorphic
 r.BloomQuality=4;----------⚫️DEF 4 🟢0 for PERFORMANCE ⚪️EDITED
@@ -230,6 +244,8 @@ r.HeightFieldShadowing=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.HFShadowQuality=0;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
 r.CapsuleShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.CapsuleShadowsFullResolution=0;----------⚫️DEF ❓ 🔵
+r.CapsuleDirectShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.CapsuleIndirectShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.ContactShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.ContactShadows.NonShadowCastingIntensity=0;----------⚫️DEF 0
 r.AllowPointLightCubemapShadows=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
@@ -247,6 +263,7 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=1;----------⚫️DEF ❓ 🟢0 
 r.Shadow.CacheWholeSceneShadows=1;----------⚫️DEF 1
 r.Shadow.FadeExponent=1;----------⚫️DEF 0.25 ⚪️EDITED 🔵
 r.Shadow.UnbuiltPreviewInGame=0;----------⚫️DEF ❓
+r.Shadow.WholeSceneShadowCacheMb=400;----------⚫️DEF ❓ 🔵
 r.LightFunctionQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1;----------⚫️DEF 1 🟢0.6 for PERFORMANCE
 r.MinScreenRadiusForLights=0.03;----------⚫️DEF 0.03 🟢0.04 or 0.06 for PERFORMANCE ⚪️EDITED 🔵
@@ -268,15 +285,23 @@ r.AmbientOcclusion.Compute=0;----------⚫️DEF 0 🔵WIP
 r.DistanceFieldAO=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.AOQuality=0;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
 r.AOHeightfieldOcclusion=0;----------⚫️DEF ❓
-r.LandscapeLODBias=-2;----------⚫️DEF 0 🟢1 for PERFORMANCE
-r.MipMapLODBias=-2;----------⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
-r.SkeletalMeshLODBias=-2;----------⚫️DEF 0 🟢1 for PERFORMANCE
+r.MipMapLODBias=0;----------⚫️DEF 0 🟢1 for PERFORMANCE
+r.LandscapeLODBias=0;----------⚫️DEF 0 🟢1 for PERFORMANCE
+r.SkeletalMeshLODBias=0;----------⚫️DEF 0 🟢1 for PERFORMANCE
 r.ParticleLODBias=0;----------⚫️DEF 0
-r.Streaming.HiddenPrimitiveScale=0.5;----------⚫️DEF ❓ 🟢0.5 for PERFORMANCE
-r.Streaming.FramesForFullUpdate=5;----------⚫️DEF 5 🟢60 for PERFORMANCE
+r.Streaming.UseBackgroundThreadPool=1;----------⚫️DEF ❓
+r.Streaming.UseFixedPoolSize=0;----------⚫️DEF ❓
+r.Streaming.LimitPoolSizeToVRAM=1;----------⚫️DEF 1
+r.Streaming.MaxTempMemoryAllowed=800;----------⚫️DEF ❓ 🔵
+r.Streaming.PoolSize=1600;----------⚫️DEF -1 ⚪️EDITED 🔵
+r.Streaming.PoolSizeForMeshes=-1;----------⚫️DEF -1 ⚪️EDITED 🔵
+r.Streaming.MaxEffectiveScreenSize=0;----------⚫️DEF 0
+r.Streaming.FlushTimeOut=1;----------⚫️DEF 3 ⚪️EDITED
+r.Streaming.HiddenPrimitiveScale=1;----------⚫️DEF ❓ 🟢0.5 for PERFORMANCE ⚪️EDITED
+r.Streaming.FramesForFullUpdate=60;----------⚫️DEF 5 🟢60 for PERFORMANCE ⚪️EDITED
 r.Streaming.AmortizeCPUToGPUCopy=1;----------⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
-r.Streaming.MaxNumTexturesToStreamPerFrame=1;----------⚫️DEF ❓ 🟢1 for PERFORMANCE ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
-r.Streaming.NumStaticComponentsProcessedPerFrame=1;----------⚫️DEF ❓
+r.Streaming.MaxNumTexturesToStreamPerFrame=100;----------⚫️DEF ❓ 🟢1 for PERFORMANCE 🔵req AmortizeCPUToGPUCopy
+r.RenderTargetPoolMin=400;----------⚫️DEF ❓ 🔵
 ```
 
 ---
@@ -372,7 +397,7 @@ DetailMode=(Value=?);
 DFAO=?;
 DistanceFieldShadows=?;
 DlssQualitySetting=?;
-DoubleKeyPressTime=0.01;
+DoubleKeyPressTime=?;
 FoliageMinLOD=(Value=?);
 FrameRateLimit=?;
 FullscreenMode=?;
@@ -393,10 +418,10 @@ OverrideOptions=(("r.command",(Value=?,bModified=True)),("r.command",(Value=?,bM
 PostFX_Saturation=?;
 PostFX_Sharpness=?;
 ResolutionScaleModifier=?;
-ScreenPercentage=(Value=50);----------🟡set correctly
+ScreenPercentage=(Value=?);
 SkeletalMeshLODBias=(Value=?);
 TAASampleStorage=?;
-TemporalAASamples=(Value=2);----------🔵force 2 or any value you want
+TemporalAASamples=(Value=?);
 Tessellation=(Value=?);
 TessellationMode=(Value=?);
 TextureStreamPoolSizeStorage=(Value=?);
