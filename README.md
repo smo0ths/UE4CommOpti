@@ -1,4 +1,4 @@
-#### updated 1/1/2023 ✂️ 📋 :ramen: v0.6 release
+#### updated 1/2/2023 ✂️ 📋 :ramen: v0.7 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -49,7 +49,7 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50;----------⚫️DEF 70 🟢texturepool cache ⚪️EDITED 🔵
+PoolSizeVRAMPercentage=70;----------⚫️DEF 70 🟢texturepool cache
 
 [ConsoleVariables]
 sg.ResolutionQuality=50;----------🟡set correctly
@@ -64,24 +64,17 @@ sg.ShadingQuality=2;
 r.D3D12.GPUCrashDebuggingMode=0;----------⚫️DEF ❓
 r.gpucrash.collectionenable=0;----------⚫️DEF 1 ⚪️EDITED
 r.GPUCrashDebugging=0;----------⚫️DEF ❓
+r.Shaders.Optimize=1;----------⚫️DEF ❓
 r.ShaderDevelopmentMode=0;----------⚫️DEF 0
 r.CompileShadersForDevelopment=0;----------⚫️DEF 1 ⚪️EDITED
 r.CreateShadersOnLoad=1;----------⚫️DEF ❓ 🔵
-r.ShaderPipelineCache.Enabled=1;----------⚫️DEF ❓ 🔵
-r.LightPropagationVolume=0;----------⚫️DEF ❓ 🔵
-r.IndirectLightingCache=0;----------⚫️DEF 1 🔵
-r.LightCulling.Quality=1;----------⚫️DEF 1 🔵
 r.DoInitViewsLightingAfterPrepass=0;----------⚫️DEF 0 🔵experimental
 r.DoLazyStaticMeshUpdate=0;----------⚫️DEF 0 🔵experimental
-r.StencilForLODDither=0;----------⚫️DEF 1 🔵
-r.UseCachedLODSceneTreeVisibilityStates=1;----------⚫️DEF ❓ 🔵
-r.UseParallelLightVisibilityUpdates=1;----------⚫️DEF ❓ 🔵
-r.UniformBufferPooling=1;----------⚫️DEF ❓ 🔵
 r.AlsoUseSphereForFrustumCull=1;----------⚫️DEF 0 🟢1 for PERFORMANCE 🔵
+r.SplineMesh.NoRecreateProxy=1;----------⚫️DEF ❓ 🔵
 r.AllowOcclusionQueries=1;----------⚫️DEF ❓
 r.NumBufferedOcclusionQueries=2;----------⚫️DEF ❓ 🔵
 r.HZBOcclusion=0;----------⚫️DEF ❓ 🔵
-r.HZB.BuildUseCompute=1;----------⚫️DEF ❓ 🔵
 r.OneFrameThreadLag=1;----------⚫️DEF 1 🔵
 r.FinishCurrentFrame=0;----------⚫️DEF 0 🟢0 for PERFORMANCE 🔵improve latency
 r.GBufferFormat=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
@@ -93,7 +86,6 @@ r.DynamicRes.OperationMode=0;----------⚫️DEF 0
 r.DynamicRes.MaxScreenPercentage=67;----------⚫️DEF ❓ 🔵req DynamicRes
 r.DynamicRes.FrameTimeBudget=10;----------⚫️DEF ❓ 🔵req DynamicRes
 r.RenderTargetPool.TransientAliasingMode=2;----------⚫️DEF ❓ 🔵
-r.RenderTargetPoolMin=400;----------⚫️DEF ❓ 🔵
 r.SceneRenderTargetResizeMethodForceOverride=0;----------⚫️DEF 0 🔵
 r.SceneRenderTargetResizeMethod=0;----------⚫️DEF 0 🔵
 r.ScreenPercentage=50;----------🟡set correctly
@@ -127,7 +119,6 @@ p.AnimDynamics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
 p.RigidBodyNode=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
 p.ClothPhysics=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Tonemapper.Quality=1;----------⚫️DEF 5 ⚪️EDITED
-r.TonemapperFilm=0;----------⚫️DEF 0
 r.TonemapperGamma=2.2;----------⚫️DEF 0 ⚪️EDITED 🔵
 r.Tonemapper.Sharpen=0;----------⚫️DEF 2 ⚪️EDITED 🔵
 r.Tonemapper.GrainQuantization=1;----------⚫️DEF 1
@@ -136,6 +127,7 @@ r.Bloom.Cross=0;----------⚫️DEF 0 🟢0.7777 for anamorphic
 r.BloomQuality=4;----------⚫️DEF 4 🟢0 for PERFORMANCE ⚪️EDITED
 r.MotionBlurQuality=0;----------⚫️DEF 3 ⚪️EDITED
 r.SceneColorFringeQuality=0;----------⚫️DEF 1 ⚪️EDITED
+r.EyeAdaptationQuality=2;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE
 r.LensFlareQuality=1;----------⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
 r.DepthOfFieldQuality=1;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE ⚪️EDITED
 r.DOF.TemporalAAQuality=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
@@ -179,12 +171,14 @@ r.SSS.Quality=0;----------⚫️DEF 0
 r.SSS.SampleSet=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.SSS.Checkerboard=1;----------⚫️DEF ❓
 r.SSS.HalfRes=1;----------⚫️DEF 1
-r.SSS.Scale=2;----------⚫️DEF ❓
+r.SSS.Scale=1;----------⚫️DEF ❓
 r.SupportSkyAtmosphere=1;----------⚫️DEF ❓
 r.SupportSkyAtmosphereAffectsHeightFog=1;----------⚫️DEF 1
 r.SkyAtmosphere.FastSkyLUT=1;----------⚫️DEF 1
 r.SkyAtmosphere.FastSkyLUT.SampleCountMax=32;----------⚫️DEF 64 ⚪️EDITED 🟢32 for PERFORMANCE
 r.SkyAtmosphere.SampleCountMax=32;----------⚫️DEF 64 ⚪️EDITED 🟢32 for PERFORMANCE
+r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
+r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=1;----------⚫️DEF 0 🟢1 for PERFORMANCE
 r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=1;----------⚫️DEF ❓
 r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice=1;----------⚫️DEF 2 ⚪️EDITED
 r.AllowGlobalClipPlane=0;----------⚫️DEF ❓ 🔵
@@ -193,26 +187,29 @@ r.DoTiledReflections=1;----------⚫️DEF 1 🟢0 for PERFORMANCE 🔵
 r.ReflectionEnvironment=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixing=1;----------⚫️DEF ❓ 🔵
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;----------⚫️DEF 1
+r.Water.EnableShallowWaterSimulation=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.Water.ShallowWaterRenderTargetSize=1024;----------⚫️DEF 1024
+r.Water.EnableUnderwaterPostProcess=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.Water.SingleLayer.Reflection=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
+r.Water.SingleLayer.RefractionDownsampleFactor=2;----------⚫️DEF 2
 r.Water.SingleLayer.SSR=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.Water.SingleLayer.SSRTAA=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Water.SingleLayer.TiledComposite=1;----------⚫️DEF ❓
+r.Water.UseSplineKeyOptimization=1;----------⚫️DEF ❓
+r.Water.WaterSplineResampleMaxDistance=50;----------⚫️DEF 50
+r.Water.WaterMesh.LODScaleBias=-0.5;----------⚫️DEF 0 🟢-0.5 for PERFORMANCE ⚪️EDITED 🔵
+r.Water.WaterMesh.LODMorphEnabled=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Water.WaterMesh.TessFactorBias=-1;----------⚫️DEF 0 ⚪️EDITED 🔵
 r.MinRoughnessOverride=0.04;----------⚫️DEF 0 ⚪️EDITED 🔵
 r.SSR.MaxRoughness=0.4;----------⚫️DEF -1 ⚪️EDITED 🔵
 r.SSR.HalfResSceneColor=0;----------⚫️DEF 0
 r.SSR.Quality=2;----------⚫️DEF 2 🟢0 for PERFORMANCE
-r.SSR.Temporal=1;----------⚫️DEF 0 ⚪️EDITED
+r.SSR.Temporal=0;----------⚫️DEF 0
 r.HairStrands.Interpolation.UseSingleGuide=1;----------⚫️DEF 1
 r.HairStrands.SkyAO.SampleCount=4;----------⚫️DEF 4
 r.HairStrands.SkyLighting.IntegrationType=2;----------⚫️DEF 2
 r.HairStrands.SkyLighting=1;----------⚫️DEF 1
 r.HairStrands.Visibility.MSAA.SamplePerPixel=1;----------⚫️DEF 4 🟢1 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptation.MethodOverride=-2;----------⚫️DEF -1 ⚪️EDITED 🔵
-r.EyeAdaptationQuality=1;----------⚫️DEF 2 🟢0 or 1 for PERFORMANCE ⚪️EDITED
-r.EyeAdaptation.Basic.Compute=1;----------⚫️DEF 1
-r.UsePreExposure=1;----------⚫️DEF 1
-r.EyeAdaptation.PreExposureOverride=0;----------⚫️DEF 0
-r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=1;----------⚫️DEF ❓ 🔵
-r.DefaultFeature.AutoExposure.Method=1;----------⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED 🔵Basic AutoExposure
 r.VolumetricFog=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.VolumetricFog.GridPixelSize=8;----------⚫️DEF 16 🟢16 for PERFORMANCE ⚪️EDITED
 r.VolumetricFog.GridSizeZ=64;----------⚫️DEF 64
@@ -235,31 +232,25 @@ r.CapsuleShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.CapsuleShadowsFullResolution=0;----------⚫️DEF ❓ 🔵
 r.ContactShadows=0;----------⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
 r.ContactShadows.NonShadowCastingIntensity=0;----------⚫️DEF 0
-r.SupportPointLightWholeSceneShadows=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
 r.AllowPointLightCubemapShadows=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵
 r.AllowLandscapeShadows=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.ShadowQuality=4;----------⚫️DEF 5 🟢2 for PERFORMANCE ⚪️EDITED
+r.ShadowQuality=3;----------⚫️DEF 5 🟢3 for PERFORMANCE ⚪️EDITED
 r.Shadow.FilterMethod=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵PCSS shadows
-r.Shadow.DistanceScale=0.8;----------⚫️DEF 0.85 ⚪️EDITED
-r.Shadow.CSM.MaxCascades=2;----------⚫️DEF 4 🟢2 for PERFORMANCE
-r.Shadow.CSMDepthBias=6;----------⚫️DEF 0.025 ⚪️EDITED 🔵
-r.Shadow.CSMSlopeScaleDepthBias=5;----------⚫️DEF 2 ⚪️EDITED 🔵
-r.Shadow.CSM.TransitionScale=2;----------⚫️DEF 0.8 ⚪️EDITED
+r.Shadow.DistanceScale=1;----------⚫️DEF 0.85 ⚪️EDITED
+r.Shadow.CSM.MaxCascades=4;----------⚫️DEF 4 🟢1 for PERFORMANCE
+r.Shadow.CSM.TransitionScale=1;----------⚫️DEF 0.8 ⚪️EDITED
+r.Shadow.PreShadowResolutionFactor=0.5;----------⚫️DEF 0.5
 r.Shadow.MaxCSMResolution=2048;----------⚫️DEF 2048 🟢1024 for PERFORMANCE
 r.Shadow.MaxResolution=1024;----------⚫️DEF 2048 🟢512 or 1024 for PERFORMANCE ⚪️EDITED
 r.Shadow.RadiusThreshold=0.04;----------⚫️DEF 0.04
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE 🔵req some light shadows ⚪️EDITED
 r.Shadow.CacheWholeSceneShadows=1;----------⚫️DEF 1
-r.Shadow.WholeSceneShadowCacheMb=400;----------⚫️DEF ❓ 🔵
 r.Shadow.FadeExponent=1;----------⚫️DEF 0.25 ⚪️EDITED 🔵
 r.Shadow.UnbuiltPreviewInGame=0;----------⚫️DEF ❓
 r.LightFunctionQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1;----------⚫️DEF 1 🟢0.6 for PERFORMANCE
-r.MinScreenRadiusForLights=0.02;----------⚫️DEF 0.03 🟢0.04 or 0.06 for PERFORMANCE ⚪️EDITED 🔵
-r.MinScreenRadiusForCSMDepth=0.01;----------⚫️DEF ❓ 🔵
-r.MinScreenRadiusForDepthPrepass=0.03;----------⚫️DEF ❓ 🔵
+r.MinScreenRadiusForLights=0.03;----------⚫️DEF 0.03 🟢0.04 or 0.06 for PERFORMANCE ⚪️EDITED 🔵
 r.LightShaftQuality=1;----------⚫️DEF 1 🟢0 for PERFORMANCE
-r.LightShaftNumSamples=12;----------⚫️DEF ❓
 r.LightShaftFirstPassDistance=0.1;----------⚫️DEF 0.1
 r.LightShaftDownSampleFactor=2;----------⚫️DEF 2
 r.LightShaftBlurPasses=3;----------⚫️DEF ❓
@@ -268,8 +259,8 @@ r.GenerateLandscapeGIData=1;----------⚫️DEF ❓ 🔵req GenerateMeshDistance
 r.DistanceFieldGI=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.SSGI.Enable=0;----------⚫️DEF 0 🟢0 for PERFORMANCE
 r.SSGI.Quality=0;----------⚫️DEF 2 ⚪️EDITED
-r.AmbientOcclusionMipLevelFactor=1;----------⚫️DEF 0.6 🟢1 for PERFORMANCE ⚪️EDITED
-r.AmbientOcclusionMaxQuality=-50;----------⚫️DEF 100 ⚪️EDITED
+r.AmbientOcclusionMipLevelFactor=0.5;----------⚫️DEF ❓
+r.AmbientOcclusionMaxQuality=-25;----------⚫️DEF 100 ⚪️EDITED
 r.AmbientOcclusionLevels=1;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.AmbientOcclusionRadiusScale=1;----------⚫️DEF 1
 r.AmbientOcclusionStaticFraction=-1;----------⚫️DEF -1 🟢0 for PERFORMANCE
@@ -277,29 +268,15 @@ r.AmbientOcclusion.Compute=0;----------⚫️DEF 0 🔵WIP
 r.DistanceFieldAO=0;----------⚫️DEF ❓ 🟢0 for PERFORMANCE
 r.AOQuality=0;----------⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
 r.AOHeightfieldOcclusion=0;----------⚫️DEF ❓
-D3D12.AdjustTexturePoolSizeBasedOnBudget=1;----------⚫️DEF ❓ 🔵
-D3D12.DynamicTexturePoolSize=0;----------⚫️DEF ❓
-D3D12.TexturePoolOnlyAccountStreamableTexture=1;----------⚫️DEF ❓
-D3D12.UseUpdateTexture3DComputeShader=0;----------⚫️DEF 0
-D3D12.ZeroBufferSizeInMB=4;----------⚫️DEF 4
-r.MeshStreaming=1;----------⚫️DEF ❓ 🔵experimental
-r.TextureStreaming=1;----------⚫️DEF 1
-r.Streaming.Boost=1;----------⚫️DEF 1
-r.Streaming.LimitPoolSizeToVRAM=0;----------⚫️DEF 1 ⚪️EDITED 🔵
+r.LandscapeLODBias=-2;----------⚫️DEF 0 🟢1 for PERFORMANCE
+r.MipMapLODBias=-2;----------⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.SkeletalMeshLODBias=-2;----------⚫️DEF 0 🟢1 for PERFORMANCE
+r.ParticleLODBias=0;----------⚫️DEF 0
 r.Streaming.HiddenPrimitiveScale=0.5;----------⚫️DEF ❓ 🟢0.5 for PERFORMANCE
-r.Streaming.FramesForFullUpdate=60;----------⚫️DEF 5 ⚪️EDITED 🔵
-r.Streaming.PrioritizeMeshLODRetention=1;----------⚫️DEF ❓
-r.Streaming.MipBias=0;----------⚫️DEF 0
-r.Streaming.PoolSize=1600;----------⚫️DEF -1 ⚪️EDITED 🔵
-r.Streaming.PoolSizeForMeshes=-1;----------⚫️DEF -1 ⚪️EDITED 🔵
-r.Streaming.AmortizeCPUToGPUCopy=1;----------⚫️DEF 0 ⚪️EDITED 🔵
-r.Streaming.MaxNumTexturesToStreamPerFrame=20;----------⚫️DEF 0 ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
+r.Streaming.FramesForFullUpdate=5;----------⚫️DEF 5 🟢60 for PERFORMANCE
+r.Streaming.AmortizeCPUToGPUCopy=1;----------⚫️DEF 0 ⚪️EDITED
+r.Streaming.MaxNumTexturesToStreamPerFrame=1;----------⚫️DEF ❓ ⚪️EDITED 🔵req AmortizeCPUToGPUCopy
 r.Streaming.NumStaticComponentsProcessedPerFrame=1;----------⚫️DEF ❓
-r.Streaming.FullyLoadUsedTextures=0;----------⚫️DEF 0
-r.Streaming.DefragDynamicBounds=1;----------⚫️DEF ❓ 🔵
-r.Streaming.MaxEffectiveScreenSize=0;----------⚫️DEF 0 🔵
-r.Streaming.MinLevelRenderAssetScreenSize=100;----------⚫️DEF ❓ 🔵
-r.Streaming.MaxTempMemoryAllowed=800;----------⚫️DEF ❓ 🔵
 ```
 
 ---
@@ -321,18 +298,6 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-[ScalabilitySettings]
-PerfIndexThresholds_ResolutionQuality="GPU 1 2 2"
-PerfIndexThresholds_ViewDistanceQuality="Min 1 2 2"
-PerfIndexThresholds_AntiAliasingQuality="GPU 1 2 2"
-PerfIndexThresholds_ShadowQuality="Min 1 2 2"
-PerfIndexThresholds_PostProcessQuality="GPU 1 2 2"
-PerfIndexThresholds_TextureQuality="GPU 1 2 2"
-PerfIndexThresholds_EffectsQuality="Min 1 2 2"
-PerfIndexThresholds_FoliageQuality="GPU 1 2 2"
-PerfIndexThresholds_ShadingQuality="GPU 1 2 2"
-PerfIndexValues_ResolutionQuality="33 50 67 70 100"
-
 [AntiAliasingQuality@2]
 
 [ViewDistanceQuality@2]
@@ -385,13 +350,15 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-bDepthOfField=?;
-bMotionBlur=?;
-bBounceLightEnabled=?;
-bFlashlightShadowsEnabled=?;
 AmbientOcclusion=(Value=?);
 AntiAliasingMode=(Value=?);
 AudioQualityLevel=?;
+bBounceLightEnabled=?;
+bConsoleEnabled=1;
+bDepthOfField=?;
+bFlashlightShadowsEnabled=?;
+bFrameLimitEnabled=?;
+bMotionBlur=?;
 bRTXAmbientOcclusionEnabled=?;
 bRTXEnabled=?;
 bRTXReflectionsEnabled=?;
@@ -405,18 +372,20 @@ DetailMode=(Value=?);
 DFAO=?;
 DistanceFieldShadows=?;
 DlssQualitySetting=?;
+DoubleKeyPressTime=0.01;
 FoliageMinLOD=(Value=?);
+FrameRateLimit=?;
 FullscreenMode=?;
 Gamma=?;
 GlobalSensitivity=?;
-GraphicsQuality=?;
 GraphicsPresetIndex=?;
+GraphicsQuality=?;
 HDRDisplayOutputNits=?;
 HZBOcclusion=(Value=?);
+LastSavedAAQuality=?;
+LastSavedAASamples=?;
 MaxAnisotropy=(Value=?);
 MaxAnisotropy=?;
-bFrameLimitEnabled=?;
-FrameRateLimit=?;
 MaxFPS=?;
 MenuFrameRateLimit=?;
 OceanQuality=(Value=?);
@@ -424,18 +393,14 @@ OverrideOptions=(("r.command",(Value=?,bModified=True)),("r.command",(Value=?,bM
 PostFX_Saturation=?;
 PostFX_Sharpness=?;
 ResolutionScaleModifier=?;
-ScreenPercentage=(Value=?);
+ScreenPercentage=(Value=50);----------🟡set correctly
 SkeletalMeshLODBias=(Value=?);
+TAASampleStorage=?;
+TemporalAASamples=(Value=2);----------🔵force 2 or any value you want
 Tessellation=(Value=?);
 TessellationMode=(Value=?);
 TextureStreamPoolSizeStorage=(Value=?);
-TAASampleStorage=?;
 WakeSim=(Value=?)
-LastSavedAAQuality=?;
-LastSavedAASamples=?;
-ScreenPercentage=(Value=50);----------🟡set correctly
-TemporalAASamples=(Value=2);----------🔵force 2 or any value you want
-DoubleKeyPressTime=0.01;
 
 use these so my settings are actually being used:
 [ScalabilityGroups]
