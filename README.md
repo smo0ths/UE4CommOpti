@@ -1,4 +1,4 @@
-#### updated 1/5/2023 ✂️ 📋 :ramen: v0.9.7.1 release
+#### updated 1/5/2023 ✂️ 📋 :ramen: v0.9.7.2 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -255,8 +255,10 @@ r.Shadow.RectReceiverBias=0.5;
 r.Shadow.SpotReceiverBias=0.5;
 r.Shadow.Denoiser=0;
 r.ParallelShadow=1;---------------🟢 0 for PERFORMANCE
-r.ParallelShadowsNonWholeScene=0;
+r.ParallelShadowsNonWholeScene=0;---------------🟢 0 for PERFORMANCE
 r.ParallelTranslucency=1;
+r.ParallelGeometryCollectionBatchSize=1024;
+r.ParallelSingleLayerWaterPass=1;
 r.TranslucentLightingVolume=1;---------------🟢 0 for PERFORMANCE
 r.TranslucencyLightingVolumeDim=32;---------------🟢 32 for PERFORMANCE 🔵 EDITED
 r.TranslucencyVolumeBlur=1;---------------🟢 0 for PERFORMANCE
@@ -279,7 +281,7 @@ r.AOGlobalDFResolution=128;
 r.AOHeightfieldOcclusion=0;
 r.AOGlobalDistanceFieldRepresentHeightfields=0;
 r.AOGlobalDistanceFieldCacheMostlyStaticSeparately=1;
-r.AOGlobalDistanceField=0;---------------🔵 0 for adaptive method
+r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🔵 0 for adaptive method
 r.AOUseSurfaceCache=1;
 r.AOSampleSet=0;
 r.AOObjectDistanceField=1;
@@ -311,7 +313,7 @@ r.Streaming.FramesForFullUpdate=10;
 r.Streaming.AmortizeCPUToGPUCopy=1;---------------🟢 1 for PERFORMANCE 🔵 EDITED
 r.Streaming.MaxNumTexturesToStreamPerFrame=100;---------------🟢 1 for PERFORMANCE 🔵 EDITED 🔵 req AmortizeCPUToGPUCopy
 r.Streaming.NumStaticComponentsProcessedPerFrame=1;
-r.Streaming.MaxTempMemoryAllowed=50;
+r.Streaming.MaxTempMemoryAllowed=100;---------------🔵 EDITED
 r.Streaming.DropMips=2;
 r.Streaming.FullyLoadUsedTextures=0;
 r.NGX.LogLevel=0;---------------🔵 EDITED
