@@ -1,4 +1,4 @@
-#### updated 1/5/2023 ✂️ 📋 :ramen: v0.9.6 release
+#### updated 1/5/2023 ✂️ 📋 :ramen: v0.9.7 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -7,6 +7,10 @@
 ##### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
 ##### make sure your scaling % is set correctly! and match PIP(scope) resolution scaling in games (manually in graphic settings) for PERFORMANCE
+
+##### 2k use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/CAS/FSR123/XeSS)
+
+##### 4k use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/CAS/FSR123/XeSS)
 
 ---
 
@@ -290,9 +294,9 @@ D3D12.ZeroBufferSizeInMB=4;
 r.LandscapeLODDistributionScale=1;
 r.LandscapeLOD0DistributionScale=1;
 r.ParticleLODBias=0;
-r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
-r.SkeletalMeshLODBias=0;---------------🟢 1 for PERFORMANCE
-r.MipMapLODBias=0;
+r.LandscapeLODBias=0;
+r.SkeletalMeshLODBias=0;
+r.MipMapLODBias=0;---------------🟢 1 for PERFORMANCE
 r.RenderTargetPoolMin=200;
 r.Streaming.UsePerTextureBias=1;
 r.Streaming.UseFixedPoolSize=1;
