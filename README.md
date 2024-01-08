@@ -296,7 +296,6 @@ r.ParticleLODBias=0;
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
 r.SkeletalMeshLODRadiusScale=1;
-r.SkeletalMeshReductionModule=0;
 r.StaticMeshLODDistanceScale=1;
 r.RenderTargetPoolMin=400;
 r.D3D11.Depth24Bit=0;
