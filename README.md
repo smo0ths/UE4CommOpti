@@ -1,4 +1,4 @@
-#### updated 1/8/2023 ✂️ 📋 :ramen: v0.9.8.1 release
+#### updated 1/8/2023 ✂️ 📋 :ramen: v0.9.8.3 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -88,6 +88,7 @@ fx.MaxCPUParticlesPerEmitter=1;---------------🟢 1 for PERFORMANCE 🔵 EDITED
 fx.MaxGPUParticlesSpawnedPerFrame=30;---------------🟢 1 for PERFORMANCE 🔵 EDITED
 fx.GPUSimulationTextureSizeX=1024;
 fx.GPUSimulationTextureSizeY=1024;
+fx.EnableCircularAnimTrailDump=0;
 r.ParticleMinTimeBetweenTicks=16;
 grass.DensityScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
 grass.DisableDynamicShadows=1;---------------🟢 1 for PERFORMANCE 🔵 EDITED
@@ -95,11 +96,13 @@ grass.MaxAsyncTasks=4;
 grass.MaxCreatePerFrame=1;
 grass.DiscardDataOnLoad=0;
 r.WeatherAnimationTextureScale=128;
-p.AnimDynamics=1;---------------🟢 0 for PERFORMANCE
+p.AnimDynamics=0;---------------🟢 0 for PERFORMANCE
 p.AnimDynamicsWind=1;---------------🟢 0 for PERFORMANCE
+p.RigidBodyNode.EnableSimulation=1;---------------🟢 0 for PERFORMANCE
 p.RigidBodyNode=1;---------------🟢 0 for PERFORMANCE
 p.RigidBodyNode.DeferredSimulationDefault=0;
 p.ClothPhysics=1;---------------🟢 0 for PERFORMANCE
+p.Chaos.VisualDebuggerEnable=0;
 r.Tonemapper.Quality=2;---------------🔵 EDITED
 r.Tonemapper.GrainQuantization=0;---------------🔵 EDITED
 r.TonemapperGamma=0;---------------🔵 0 for linear gamma
@@ -182,8 +185,8 @@ r.ReflectionEnvironment=1;---------------🟢 0 for PERFORMANCE
 r.ReflectionEnvironmentLightmapMixing=1;
 r.ReflectionEnvironmentLightmapMixBasedOnRoughness=1;
 r.AllowGlobalClipPlane=0;---------------🟢 0 for PERFORMANCE 🔵 planar reflections
-r.MinRoughnessOverride=0.03;---------------🔵 EDITED 🔵 experimental
-r.SSR.MaxRoughness=0.5;---------------🔵 EDITED
+r.MinRoughnessOverride=0;---------------🔵 experimental
+r.SSR.MaxRoughness=0.4;---------------🔵 EDITED
 r.SSR.HalfResSceneColor=0;
 r.SSR.Quality=2;---------------🟢 0 for PERFORMANCE
 r.SSR.Temporal=0;
