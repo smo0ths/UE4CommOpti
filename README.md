@@ -1,4 +1,4 @@
-#### updated 1/8/2023 ✂️ 📋 :ramen: v0.9.8.3 release
+#### updated 1/8/2023 ✂️ 📋 :ramen: v0.9.8.4 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -360,12 +360,11 @@ r.HighQualityLightMaps=1;
 r.IrisNormal=1;---------------🟢 0 for PERFORMANCE
 r.NormalMapsForStaticLighting=1;
 r.AllowOcclusionQueries=1;
-r.NumBufferedOcclusionQueries=1;
+r.NumBufferedOcclusionQueries=2;
 r.HZBOcclusion=0;
 r.OneFrameThreadLag=1;
 r.FinishCurrentFrame=0;---------------🟢 0 for PERFORMANCE 🔵 latency
 r.GBufferFormat=1;---------------🟢 0 for PERFORMANCE
-r.ClearSceneMethod=1;
 r.UseClusteredDeferredShading=1;---------------🔵 EDITED
 r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 GPU lights
 r.TiledDeferredShading.MinimumCount=0;---------------🔵 EDITED
