@@ -108,6 +108,7 @@ r.Upscale.Quality=1;---------------🔵 EDITED
 r.Tonemapper.MergeWithUpscale.Mode=1;
 r.LensFlarequality=2;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.DepthOfFieldQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
+r.DepthOfField.FarBlur=0;---------------🔵 EDITED
 r.DOF.Gather.AccumulatorQuality=0;
 r.DOF.Gather.PostfilterMethod=1;---------------🔵 EDITED
 r.DOF.Gather.EnableBokehSettings=0;
@@ -434,7 +435,7 @@ DoubleClickTime=0.2;---------------🔵 EDITED
 
 ---
 
-<details><summary>Open DeviceProfiles.ini for textures lods, should lower gpu utilization, most MaxLODSize in games are 4096. Feel free to just skip this and use devs defaults</summary>
+<details><summary>Open DeviceProfiles.ini for textures lods, mess around or just skip this, could be more optimized</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
