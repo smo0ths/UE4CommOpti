@@ -1,4 +1,4 @@
-#### updated 1/17/2023 ✂️ 📋 :ramen: v0.9.9.4 release
+#### updated 1/19/2023 ✂️ 📋 :ramen: v0.9.9.5 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -45,20 +45,24 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=50;---------------⚫️DEF 70 🔵 EDITED 🔵 texturepool cache
+PoolSizeVRAMPercentage=50;---------------🔵 texturepool cache 🔵 EDITED
 
 [ConsoleVariables]
 sg.ResolutionQuality=50;---------------🟡 set correctly
-sg.ViewDistanceQuality=2;---------------🟢 0 for PERFORMANCE
-sg.AntiAliasingQuality=2;---------------🟢 0 for PERFORMANCE
-sg.ShadowQuality=2;---------------🟢 0 for PERFORMANCE
-sg.PostProcessQuality=2;---------------🟢 0 for PERFORMANCE
-sg.TextureQuality=2;---------------🟢 0 for PERFORMANCE
-sg.EffectsQuality=2;---------------🟢 0 for PERFORMANCE
-sg.FoliageQuality=2;---------------🟢 0 for PERFORMANCE
+sg.ViewDistanceQuality=0;---------------🔵 EDITED
+sg.AntiAliasingQuality=0;---------------🔵 EDITED
+sg.ShadowQuality=0;---------------🔵 EDITED
+sg.PostProcessQuality=0;---------------🔵 EDITED
+sg.TextureQuality=0;---------------🔵 EDITED
+sg.EffectsQuality=0;---------------🔵 EDITED
+sg.FoliageQuality=0;---------------🔵 EDITED
+sg.ShadingQuality=0;---------------🔵 EDITED
 r.ScreenPercentage=50;---------------🟡 set correctly
 r.SecondaryScreenPercentage.GameViewport=0;---------------🟢 83.33 for PERFORMANCE
+r.GTSyncType=0;
 r.VSync=0;
+rhi.SyncInterval=0;
+rhi.SyncSlackMS=0;
 r.MSAACount=0;---------------🔵 EDITED
 r.DynamicRes.OperationMode=0;
 r.SceneRenderTargetResizeMethodForceOverride=0;
@@ -126,6 +130,7 @@ r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.SupportAnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
 r.AnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
 r.MaxAnisotropy=8;---------------🟢 0 for PERFORMANCE
+r.VT.MaxAnisotropy=8;
 r.MaterialQualityLevel=1;---------------🟢 0,2 for PERFORMANCE
 r.SupportMaterialLayers=1;---------------🟢 0 for PERFORMANCE
 r.SubsurfaceScattering=1;---------------🟢 0 for PERFORMANCE
@@ -134,6 +139,8 @@ r.SSS.SampleSet=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.SSS.Checkerboard=1;---------------🟢 1 for PERFORMANCE
 r.SSS.HalfRes=1;
 r.SSS.Scale=1;
+r.SSGI.Enable=0;---------------🟢 0 for PERFORMANCE
+r.SSGI.Quality=0;---------------🟢 0,2 for PERFORMANCE 🔵 EDITED 🔵 req SSGI.Enable
 r.SceneColorFormat=3;---------------🟢 2,3 for PERFORMANCE
 r.HairStrands.Enable=0;---------------🟢 0 for PERFORMANCE
 r.TessellationAdaptivePixelsPerTriangle=999999;---------------🟢 999999 for PERFORMANCE 🔵 EDITED
@@ -173,7 +180,8 @@ r.SSR.HalfResSceneColor=1;---------------🟢 1 for PERFORMANCE
 r.SSR.Quality=2;---------------🟢 0 for PERFORMANCE
 r.SSR.Temporal=0;
 r.VolumetricFog=1;---------------🟢 0 for PERFORMANCE
-r.VolumetricFog.GridPixelSize=8;---------------🔵 EDITED
+r.VolumetricFog.InverseSquaredLightDistanceBiasScale=2;---------------🔵 EDITED
+r.VolumetricFog.GridPixelSize=16;
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.Jitter=1;
 r.VolumetricFog.TemporalReprojection=1;
@@ -185,9 +193,8 @@ r.DistanceFields.AtlasSizeXY=512;
 r.GenerateMeshDistanceFields=1;---------------🟢 0 for PERFORMANCE 🔵 1 builds DFS and DFAO mesh
 r.DistanceFieldShadowing=1;---------------🟢 0 for PERFORMANCE 🔵 req GenerateMeshDistanceFields
 r.DFShadowQuality=1;---------------🟢 0,1,2 for PERFORMANCE 🔵 EDITED 🔵 req DistanceFieldShadowing
-r.DFFullResolution=1;---------------🟢 0 for PERFORMANCE 🔵 EDITED
+r.DFFullResolution=0;---------------🟢 0 for PERFORMANCE
 r.DFShadowScatterTileCulling=1;---------------🟢 1 for PERFORMANCE
-r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
 r.CapsuleShadows=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.ContactShadows=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.AllowLandscapeShadows=1;---------------🟢 0 for PERFORMANCE
@@ -207,78 +214,72 @@ r.ParallelTranslucency=1;
 r.ParallelSingleLayerWaterPass=1;
 r.TranslucencyLightingVolumeDim=32;---------------🟢 32 for PERFORMANCE 🔵 EDITED
 r.TranslucencyVolumeBlur=1;---------------🟢 0 for PERFORMANCE
-r.SSGI.Enable=0;---------------🟢 0 for PERFORMANCE
-r.SSGI.Quality=0;---------------🟢 0,2 for PERFORMANCE 🔵 EDITED 🔵 req SSGI.Enable
 r.AmbientOcclusionMipLevelFactor=0.6;
 r.AmbientOcclusionMaxQuality=-25;---------------🔵 EDITED
 r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
 r.AmbientOcclusionRadiusScale=1;
 r.AmbientOcclusionStaticFraction=-1;---------------🟢 0 for PERFORMANCE
-r.DistanceFieldAO=1;---------------🟢 0 for PERFORMANCE 🔵 req GenerateMeshDistanceFields
-r.AOQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED 🔵 req DistanceFieldAO
+r.AmbientOcclusion.Method=0;
+r.DistanceFieldAO=0;---------------🟢 0 for PERFORMANCE 🔵 req GenerateMeshDistanceFields
+r.AOQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 req DistanceFieldAO
 r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🔵 0 for adaptive method
 r.NGX.DLSS.Sharpness=0;
-r.NGX.DLSS.AutoExposure=0;
+r.NGX.DLSS.AutoExposure=1;
 r.NGX.DLSS.Reflections.TemporalAA=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
-r.Streaming.MipBias=0;
-r.Streaming.HiddenPrimitiveScale=1;---------------🟢 0.5 for PERFORMANCE
-r.Streaming.PoolSize.VRAMPercentageClamp=1024;
-r.Streaming.UsePerTextureBias=1;
-r.Streaming.UseFixedPoolSize=1;
-r.Streaming.LimitPoolSizeToVRAM=0;
-r.Streaming.AmortizeCPUToGPUCopy=1;---------------🔵 EDITED
-r.Streaming.MaxNumTexturesToStreamPerFrame=5;---------------🔵 req AmortizeCPUToGPUCopy
-r.Streaming.FramesForFullUpdate=15;---------------🔵 EDITED
-r.Streaming.NumStaticComponentsProcessedPerFrame=20;---------------🔵 EDITED
+r.HLOD.DistanceOverrideScale=1;
+r.HLOD.DistanceOverride=5000;---------------🔵 req HLOD.DistanceOverrideScale
+r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
 r.MipMapLODBias=0;---------------🟢 1 for PERFORMANCE
 r.ParticleLODBias=0;
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
+r.Streaming.UseAsyncRequestsForDDC=0;---------------🔵 EDITED
+r.Streaming.MipBias=0;
+r.Streaming.AmortizeCPUToGPUCopy=0;
+r.Streaming.MaxNumTexturesToStreamPerFrame=0;
+r.Streaming.Boost=1;
+r.Streaming.LimitPoolSizeToVRAM=0;
+r.Streaming.UseFixedPoolSize=0;
+r.Streaming.PoolSize.Minimum=-1;
+r.Streaming.PoolSize.MinimumFreeMemory=-1;
+r.Streaming.PoolSize=2048;
+r.Streaming.PoolSizeForMeshes=-1;
+r.Streaming.HiddenPrimitiveScale=1;---------------🟢 0.5 for PERFORMANCE
+r.Streaming.MaxEffectiveScreenSize=0;
+r.Streaming.FramesForFullUpdate=12;---------------🔵 EDITED
+r.Streaming.NumStaticComponentsProcessedPerFrame=22;---------------🔵 EDITED
+r.CompileShadersForDevelopment=0;---------------🔴 DEBUG
+r.D3D12.GPUCrashDebuggingMode=0;---------------🔴 DEBUG
+r.gpucrash.collectionenable=0;---------------🔴 DEBUG
+r.GPUCrashDebugging=0;---------------🔴 DEBUG
+r.ShaderDevelopmentMode=0;---------------🔴 DEBUG
+r.AmbientOcclusion.Denoiser=0;---------------🔵 EDITED
+r.DiffuseIndirect.Denoiser=0;---------------🔵 EDITED
+r.Reflections.Denoiser=0;---------------🔵 EDITED
+r.Shadow.Denoiser=0;
+r.SSR.ExperimentalDenoiser=0;
 r.HZBOcclusion=0;
 r.AllowOcclusionQueries=1;
 r.NumBufferedOcclusionQueries=2;
-r.DownsampledOcclusionQueries=1;---------------🔵 EDITED
+r.DownsampledOcclusionQueries=1;
 r.OneFrameThreadLag=1;
 r.FinishCurrentFrame=0;
-fx.EnableCircularAnimTrailDump=0;---------------🔴 DEBUG
-fx.ParticlePerfStats.Enabled=0;---------------🔴 DEBUG
-memory.logGenericPlatformMemoryStats=0;---------------🔴 DEBUG
-p.Chaos.VisualDebuggerEnable=0;---------------🔴 DEBUG
-r.CompileShadersForDevelopment=0;---------------🔴 DEBUG
-r.D3D12.GPUCrashDebuggingMode=0;---------------🔴 DEBUG
-r.DX12NVAfterMathEnabled=0;---------------🔴 DEBUG
-r.EnableDebugSpam_GetObjectPositionAndScale=0;---------------🔴 DEBUG
-r.ForceAllCoresForShaderCompiling=0;---------------🔴 DEBUG
-r.gpucrash.collectionenable=0;---------------🔴 DEBUG
-r.GPUCrashDebugging=0;---------------🔴 DEBUG
-r.NGX.LogLevel=0;---------------🔴 DEBUG
-r.RHICmdBufferWriteLocks=0;---------------🔴 DEBUG
-r.ShaderDevelopmentMode=0;---------------🔴 DEBUG
-r.ShaderLibrary.PrintExtendedStats=0;---------------🔴 DEBUG
-r.UniformBufferPooling=1;---------------🔴 DEBUG
 r.AllowGlobalClipPlane=0;---------------🟢 0 for PERFORMANCE
 r.DBuffer=0;---------------🔵 EDITED
 r.GBufferFormat=1;
-r.GTSyncType=2;---------------🔵 EDITED
 r.ClearCoatNormal=1;---------------🟢 0 for PERFORMANCE
 r.IrisNormal=1;---------------🟢 0 for PERFORMANCE
-r.AllowDownsampledStandardTranslucency=1;---------------🔵 EDITED
-r.Translucency.StandardSeparated=1;
+r.DoTiledReflections=1;
 r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 GPU lights
-r.TiledDeferredShading.MinimumCount=1;---------------🔵 EDITED
-r.AlsoUseSphereForFrustumCull=1;
 r.DrawRectangleOptimization=1;
-LevelStreaming.UnloadNotVisibleLevelsWhenLowRAM=1;
-LevelStreaming.UnloadNotVisibleLevelsWhenLowRAMLodLevel=1;
-LevelStreaming.UnloadNotVisibleLevelsWhenLowRAMNormalizedPercentage=50;
-s.ContinuouslyIncrementalGCWhileLevelsPendingPurge=1;
-s.ForceGCAfterLevelStreamedOut=1;
+r.UniformBufferPooling=1;
+r.MeshDrawCommands.AllowOnDemandShaderCreation=1;
 ```
 
 ---
 
-<details><summary>in Scalability.ini put config under if settings dont load, or change cutscene dynamic Cine values</summary>
+<details><summary>the Scalability.ini way, set @ to what you use in game @0 low @1 med @2 high</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
@@ -295,52 +296,28 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-[AntiAliasingQuality@2]
+[AntiAliasingQuality@0]
 ✂️📋
 
-[ViewDistanceQuality@2]
+[ViewDistanceQuality@0]
 ✂️📋
 
-[ShadowQuality@2]
+[ShadowQuality@0]
 ✂️📋
 
-[PostProcessQuality@2]
+[PostProcessQuality@0]
 ✂️📋
 
-[TextureQuality@2]
+[TextureQuality@0]
 ✂️📋
 
-[EffectsQuality@2]
+[EffectsQuality@0]
 ✂️📋
 
-[FoliageQuality@2]
+[FoliageQuality@0]
 ✂️📋
 
-[ShadingQuality@2]
-✂️📋
-
-[AntiAliasingQuality@Cine]
-✂️📋
-
-[ViewDistanceQuality@Cine]
-✂️📋
-
-[ShadowQuality@Cine]
-✂️📋
-
-[PostProcessQuality@Cine]
-✂️📋
-
-[TextureQuality@Cine]
-✂️📋
-
-[EffectsQuality@Cine]
-✂️📋
-
-[FoliageQuality@Cine]
-✂️📋
-
-[ShadingQuality@Cine]
+[ShadingQuality@0]
 ✂️📋
 ```
 
