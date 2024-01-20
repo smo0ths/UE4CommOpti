@@ -235,7 +235,6 @@ r.MipMapLODBias=0;---------------🟢 1 for PERFORMANCE
 r.ParticleLODBias=0;
 r.LandscapeLODBias=0;
 r.SkeletalMeshLODBias=0;
-r.Streaming.UseAsyncRequestsForDDC=0;---------------🔵 EDITED
 r.Streaming.MipBias=0;
 r.Streaming.AmortizeCPUToGPUCopy=0;
 r.Streaming.MaxNumTexturesToStreamPerFrame=0;
@@ -275,7 +274,6 @@ r.DoTiledReflections=1;
 r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 GPU lights
 r.DrawRectangleOptimization=1;
 r.UniformBufferPooling=1;
-r.MeshDrawCommands.AllowOnDemandShaderCreation=1;
 ```
 
 ---
