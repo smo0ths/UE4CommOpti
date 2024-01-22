@@ -1,4 +1,4 @@
-#### updated 1/21/2023 ✂️ 📋 :ramen: v0.9.9.6 release
+#### updated 1/21/2023 ✂️ 📋 :ramen: v0.9.9.7 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -57,11 +57,11 @@ sg.TextureQuality=2;
 sg.EffectsQuality=2;
 sg.FoliageQuality=2;
 r.NGX.DLSS.Enable=1;---------------🔵 DLSS
-r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🔵 -2 ultra performance -1 performance 0 balanced 1 quality 🟡 set correctly
+r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🔵 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.NGX.DLSS.Quality.Auto=0;
 r.NGX.DLSS.Sharpness=0;
-r.NGX.DLSS.AutoExposure=0;---------------🟢 0 for PERFORMANCE
-r.NGX.DLSS.DilateMotionVectors=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
+r.NGX.DLSS.AutoExposure=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
+r.NGX.DLSS.DilateMotionVectors=1;---------------🟢 0 for PERFORMANCE
 r.NGX.DLAA.Enable=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.Reflections.TemporalAA=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
@@ -75,9 +75,9 @@ r.MSAACount=0;---------------🔵 EDITED
 r.DynamicRes.OperationMode=0;
 r.SceneRenderTargetResizeMethodForceOverride=0;
 r.SceneRenderTargetResizeMethod=0;
-r.PostProcessAAQuality=5;---------------🔵 EDITED 🔵 0 for off 1,2 for FXAA 3,4,5,6 for TAA
-r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🔵 1 for Gen5 TAAU
-r.TemporalAAFilterSize=0.1;---------------🔵 EDITED 🔵 req Gen5 TAAU
+r.PostProcessAAQuality=5;---------------🔵 EDITED 🔵 0 off 1,2 FXAA 3,4,5,6 TAA
+r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🔵 1 for gen5 TAAU
+r.TemporalAAFilterSize=0.1;---------------🔵 EDITED 🔵 req gen5 TAAU
 r.TemporalAA.Upsampling=1;---------------🔵 EDITED 🔵 TAAU
 r.TemporalAACurrentFrameWeight=0.03;
 r.TemporalAASamples=8;
@@ -204,13 +204,13 @@ r.ContactShadows=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.AllowLandscapeShadows=1;---------------🟢 0 for PERFORMANCE
 r.ShadowQuality=4;---------------🟢 3 for PERFORMANCE 🔵 EDITED
 r.Shadow.FilterMethod=0;---------------🟢 0 for PERFORMANCE 🔵 1 for PCSS shadows
-r.Shadow.DistanceScale=1;---------------🔵 EDITED
+r.Shadow.DistanceScale=2;---------------🔵 EDITED
 r.Shadow.CSM.MaxCascades=2;---------------🟢 1,2 for PERFORMANCE 🔵 EDITED
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.MaxCSMResolution=2048;---------------🟢 1024 for PERFORMANCE
 r.Shadow.MaxResolution=1024;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
 r.Shadow.RadiusThreshold=0.04;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0;---------------🟢 0 for PERFORMANCE 🔵 1 for light cast a shadow
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0;---------------🟢 0 for PERFORMANCE 🔵 1 movable light shadows
 r.Shadow.MaxNumFarShadowCascades=1;---------------🔵 EDITED
 r.ParallelShadow=1;---------------🟢 0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;---------------🟢 0 for PERFORMANCE
@@ -222,9 +222,9 @@ r.DistanceFieldAO=0;---------------🟢 0 for PERFORMANCE 🔵 req GenerateMeshD
 r.AOQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 req DistanceFieldAO
 r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🔵 0 for adaptive method
 r.AmbientOcclusionMipLevelFactor=1;---------------🔵 EDITED
-r.AmbientOcclusionMaxQuality=-25;---------------🔵 EDITED
-r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
-r.AmbientOcclusionRadiusScale=1.5;---------------🔵 EDITED
+r.AmbientOcclusionMaxQuality=-60;---------------🔵 EDITED
+r.AmbientOcclusionLevels=1;---------------🟢 0,1 for PERFORMANCE
+r.AmbientOcclusionRadiusScale=0.1;---------------🔵 EDITED
 r.AmbientOcclusionStaticFraction=-1;---------------🟢 0 for PERFORMANCE
 r.AmbientOcclusion.Method=0;
 r.MipMapLODBias=0;---------------🟢 1 for PERFORMANCE
@@ -285,7 +285,7 @@ r.RayTracing=0;
 r.SkeletalMeshLODRadiusScale=1;---------------🟢 0.5 for PERFORMANCE
 r.SkyAtmosphere.SampleLightShadowmap=0;---------------🔵 EDITED
 r.Streaming.UseAsyncRequestsForDDC=1;
-r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 GPU lights
+r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 gpu lights
 r.VolumetricFog.LightFunction=0;
 ```
 
