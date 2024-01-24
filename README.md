@@ -1,4 +1,4 @@
-#### updated 1/23/2023 ✂️ 📋 :ramen: v0.9.9.8 release
+#### updated 1/23/2023 ✂️ 📋 :ramen: v0.9.9.9 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -43,7 +43,7 @@ UseAudioThread=1;
 bSmoothFrameRate=0;
 bPauseOnLossOfFocus=0;
 bUseFixedFrameRate=0;
-DisplayGamma=2.1;
+DisplayGamma=2.2;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=50;---------------🔵 texturepool cache 🔵 EDITED
@@ -58,7 +58,8 @@ sg.EffectsQuality=2;
 sg.FoliageQuality=2;
 r.NGX.DLSS.Enable=1;---------------🔵 DLSS
 r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🔵 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
-r.NGX.DLSS.Quality.Auto=0;
+r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
+r.NGX.DLSS.PreferNISSharpen=0;---------------🔵 EDITED
 r.NGX.DLSS.Sharpness=0;
 r.NGX.DLSS.AutoExposure=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.NGX.DLSS.DilateMotionVectors=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
@@ -103,7 +104,6 @@ p.ClothPhysics.UseTaskThread=1;
 r.DefaultFeature.MotionBlur=0;---------------🔵 EDITED
 r.MotionBlurQuality=0;---------------🔵 EDITED
 r.FastBlurThreshold=7;
-r.SceneColorFringe.Max=0;---------------🔵 EDITED
 r.SceneColorFringeQuality=0;---------------🔵 EDITED
 r.FilmGrain=0;
 r.EyeAdaptationQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
@@ -113,13 +113,12 @@ r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=0;---------------🔵 EDITED
 r.Tonemapper.Sharpen=0;
 r.TonemapperFilm=0;
-r.TonemapperGamma=0;
+r.TonemapperGamma=2.5;---------------🔵 EDITED
 r.LensFlarequality=2;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.DepthOfFieldQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.DepthOfField.FarBlur=0;---------------🔵 EDITED
 r.Filter.LoopMode=0;
-r.Filter.NewMethod=0;
-r.DOF.Algorithm=0;
+r.Filter.NewMethod=0;---------------🔵 EDITED
 r.DOF.Gather.AccumulatorQuality=0;
 r.DOF.Gather.PostfilterMethod=1;---------------🔵 EDITED
 r.DOF.Gather.EnableBokehSettings=0;
@@ -199,7 +198,7 @@ r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.Jitter=1;
 r.VolumetricFog.TemporalReprojection=1;
 r.VolumetricFog.HistoryMissSupersampleCount=4;
-r.VolumetricFog.InverseSquaredLightDistanceBiasScale=1;
+r.VolumetricFog.InverseSquaredLightDistanceBiasScale=4;---------------🔵 EDITED
 r.VolumetricFog.LightFunction=1;
 r.GenerateMeshDistanceFields=1;---------------🟢 0 for PERFORMANCE 🔵 1 builds DFS and DFAO mesh
 r.DistanceFieldShadowing=1;---------------🟢 0 for PERFORMANCE 🔵 req GenerateMeshDistanceFields
@@ -209,12 +208,14 @@ r.DFShadowScatterTileCulling=1;---------------🟢 1 for PERFORMANCE
 r.CapsuleShadows=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.ContactShadows=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.AllowLandscapeShadows=1;---------------🟢 0 for PERFORMANCE
-r.ShadowQuality=4;---------------🟢 3 for PERFORMANCE 🔵 EDITED
+r.ShadowQuality=3;---------------🟢 3 for PERFORMANCE 🔵 EDITED
 r.Shadow.FilterMethod=0;---------------🟢 0 for PERFORMANCE 🔵 1 for PCSS shadows
-r.Shadow.DistanceScale=2;---------------🔵 EDITED
+r.Shadow.DistanceScale=1.5;---------------🔵 EDITED
+r.Shadow.CSMDepthBias=9;---------------🔵 EDITED
+r.Shadow.CSMSlopeScaleDepthBias=2;---------------🔵 EDITED
 r.Shadow.CSM.MaxCascades=2;---------------🟢 1,2 for PERFORMANCE 🔵 EDITED
 r.Shadow.CSM.TransitionScale=1;
-r.Shadow.MaxCSMResolution=2048;---------------🟢 1024 for PERFORMANCE
+r.Shadow.MaxCSMResolution=3072;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
 r.Shadow.MaxResolution=2048;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
 r.Shadow.SpotLightTransitionScale=70;---------------🔵 EDITED
 r.Shadow.SpotLightReceiverBias=0;---------------🔵 EDITED
@@ -235,7 +236,7 @@ r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🔵 0 for adapt
 r.AmbientOcclusionMipLevelFactor=1;---------------🔵 EDITED
 r.AmbientOcclusionMaxQuality=-60;---------------🔵 EDITED
 r.AmbientOcclusionLevels=1;---------------🟢 0,1 for PERFORMANCE
-r.AmbientOcclusionRadiusScale=0.1;---------------🔵 EDITED
+r.AmbientOcclusionRadiusScale=10;---------------🔵 EDITED
 r.AmbientOcclusionStaticFraction=-1;---------------🟢 0 for PERFORMANCE
 r.AmbientOcclusion.Method=0;
 r.MipMapLODBias=0;---------------🟢 1 for PERFORMANCE
@@ -255,7 +256,7 @@ r.Streaming.LimitPoolSizeToVRAM=0;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.PoolSize.Minimum=-1;
 r.Streaming.PoolSize.MinimumFreeMemory=-1;
-r.Streaming.PoolSize=6144;
+r.Streaming.PoolSize=2500;
 r.Streaming.PoolSizeForMeshes=-1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.MaxEffectiveScreenSize=0;
@@ -272,6 +273,7 @@ r.gpucrash.collectionenable=0;---------------🔴 DEBUG
 r.GPUCrashDebugging=0;---------------🔴 DEBUG
 r.ShaderDevelopmentMode=0;---------------🔴 DEBUG
 r.UniformBufferPooling=1;---------------🔴 DEBUG
+r.NGX.LogLevel=0;---------------🔴 DEBUG
 r.AmbientOcclusion.Denoiser=0;---------------🔴 Denoiser 🔵 EDITED
 r.DiffuseIndirect.Denoiser=0;---------------🔴 Denoiser 🔵 EDITED
 r.Reflections.Denoiser.TemporalAccumulation=0;---------------🔴 Denoiser
@@ -287,6 +289,9 @@ r.ClearCoatNormal=1;---------------🟢 0 for PERFORMANCE
 r.IrisNormal=1;---------------🟢 0 for PERFORMANCE
 r.Nanite=0;
 r.RayTracing=0;
+r.DynamicGlobalIlluminationMethod=0;
+r.GenerateLandscapeGIData=0;
+r.ReflectionMethod=0;
 ```
 
 ---
