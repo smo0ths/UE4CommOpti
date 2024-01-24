@@ -50,12 +50,12 @@ PoolSizeVRAMPercentage=50;---------------🔵 texturepool cache 🔵 EDITED
 
 [ConsoleVariables]
 sg.ResolutionQuality=50;---------------🟡 set correctly
-sg.ViewDistanceQuality=2;
-sg.ShadowQuality=2;
-sg.PostProcessQuality=2;
-sg.TextureQuality=2;
-sg.EffectsQuality=2;
-sg.FoliageQuality=2;
+sg.ViewDistanceQuality=2;---------------🟢 0 for PERFORMANCE
+sg.ShadowQuality=2;---------------🟢 0 for PERFORMANCE
+sg.PostProcessQuality=2;---------------🟢 0 for PERFORMANCE
+sg.TextureQuality=2;---------------🟢 0 for PERFORMANCE
+sg.EffectsQuality=2;---------------🟢 0 for PERFORMANCE
+sg.FoliageQuality=2;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.Enable=1;---------------🔵 DLSS
 r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🔵 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
@@ -293,51 +293,6 @@ r.DynamicGlobalIlluminationMethod=0;
 r.GenerateLandscapeGIData=0;
 r.ReflectionMethod=0;
 ```
-
----
-
-<details><summary>the Scalability.ini way, set @ to what you use in game @0 low @1 med @2 high</summary>
-<p>
-press <kbd>⊞ Win+R</kbd> then copy paste
-<br>
-%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Scalability.ini
-<br>
-%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Scalability.ini
-<br>
-%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Scalability.ini
-<br>
-%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Scalability.ini
-<br>
-%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Scalability.ini
-</p>
-</details>
-
-```python
-[AntiAliasingQuality@0]
-✂️📋
-
-[ViewDistanceQuality@0]
-✂️📋
-
-[ShadowQuality@0]
-✂️📋
-
-[PostProcessQuality@0]
-✂️📋
-
-[TextureQuality@0]
-✂️📋
-
-[EffectsQuality@0]
-✂️📋
-
-[FoliageQuality@0]
-✂️📋
-
-[ShadingQuality@0]
-✂️📋
-```
-
 ---
 
 <details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct check for new stuff after updates, good luck</summary>
@@ -409,16 +364,6 @@ Tessellation=(Value=?);
 TessellationMode=(Value=?);
 TextureStreamPoolSizeStorage=(Value=?);
 WakeSim=(Value=?)
-
-[ScalabilityGroups]
-sg.ResolutionQuality=50;---------------🟡 set correctly
-sg.ViewDistanceQuality=2;---------------🟢 0 for PERFORMANCE
-sg.AntiAliasingQuality=2;---------------🟢 0 for PERFORMANCE
-sg.ShadowQuality=2;---------------🟢 0 for PERFORMANCE
-sg.PostProcessQuality=2;---------------🟢 0 for PERFORMANCE
-sg.TextureQuality=2;---------------🟢 0 for PERFORMANCE
-sg.EffectsQuality=2;---------------🟢 0 for PERFORMANCE
-sg.FoliageQuality=2;---------------🟢 0 for PERFORMANCE
 ```
 
 ---
