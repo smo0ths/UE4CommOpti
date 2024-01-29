@@ -1,4 +1,4 @@
-#### updated 1/25/2023 ✂️ 📋 :ramen: v1.0 release
+#### updated 1/29/2023 ✂️ 📋 :ramen: v1.0 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -8,9 +8,11 @@
 
 ##### make sure your scaling % is set correctly! and match PIP(scope) resolution scaling in games (manually in graphic settings) for PERFORMANCE
 
-##### 2k use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/CAS/FSR123/XeSS)
+##### 2560x1440 use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### 4k use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/CAS/FSR123/XeSS)
+##### 3200x1800 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+
+##### 3840x2160 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ---
 
