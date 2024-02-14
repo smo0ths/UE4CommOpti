@@ -1,4 +1,4 @@
-#### updated 1/29/2024 ✂️ 📋 :ramen: v1.0 release
+#### updated 2/14/2024 ✂️ 📋 :ramen: v1.1 release
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -37,8 +37,8 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 Global=off;
 
 [Audio]
-MaxChannels=32;
-CommonAudioPoolSize=0;
+MaxChannels=64;---------------🔵 EDITED
+CommonAudioPoolSize=32;---------------🔵 EDITED
 UseAudioThread=1;
 
 [/Script/Engine.Engine]
@@ -52,14 +52,13 @@ PoolSizeVRAMPercentage=70;---------------🟣 texturepool cache
 
 [ConsoleVariables]
 sg.ResolutionQuality=50;---------------🟡 set correctly
-sg.AntiAliasingQuality=0;
-sg.ViewDistanceQuality=0;
-sg.ShadowQuality=0;
-sg.PostProcessQuality=0;
-sg.TextureQuality=0;
-sg.EffectsQuality=0;
-sg.FoliageQuality=0;
-sg.ShadingQuality=0;
+sg.ViewDistanceQuality=2;
+sg.ShadowQuality=2;
+sg.PostProcessQuality=2;
+sg.TextureQuality=2;
+sg.EffectsQuality=2;
+sg.FoliageQuality=2;
+sg.ShadingQuality=2;
 r.NGX.DLSS.Enable=1;---------------🔵 DLSS
 r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🟣 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
@@ -73,7 +72,7 @@ r.NGX.DLSS.WaterReflections.TemporalAA=0;
 r.DynamicRes.OperationMode=0;
 r.SecondaryScreenPercentage.GameViewport=0;---------------🟢 83.33 for PERFORMANCE
 r.MSAACount=0;---------------🔵 EDITED
-r.PostProcessAAQuality=5;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA
+r.PostProcessAAQuality=4;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA
 r.ScreenPercentage=50;---------------🟡 set correctly
 r.TemporalAA.Upsampling=1;---------------🔵 EDITED 🟣 TAAU
 r.TemporalAACurrentFrameWeight=0.03;
@@ -119,7 +118,7 @@ r.DOF.Kernel.MaxBackgroundRadius=0.006;---------------🔵 EDITED
 foliage.DensityScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
 foliage.DiscardDataOnLoad=0;
 foliage.DitheredLOD=1;
-foliage.LODDistanceScale=1;
+foliage.LODDistanceScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
 foliage.MinimumScreenSize=0.007;---------------🟢 0.007 for PERFORMANCE 🔵 EDITED
 grass.DensityScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
 grass.DisableDynamicShadows=1;---------------🟢 1 for PERFORMANCE 🔵 EDITED
@@ -137,13 +136,13 @@ r.SSS.Checkerboard=1;---------------🟢 1 for PERFORMANCE
 r.SSS.HalfRes=1;
 r.SSS.Scale=1;
 r.LightShaftQuality=1;---------------🟢 0 for PERFORMANCE
-r.ViewDistanceScale=1;---------------🟢 0.8 for PERFORMANCE
+r.ViewDistanceScale=1.3;---------------🟢 0.8 for PERFORMANCE 🔵 EDITED
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;---------------🟢 0 for PERFORMANCE
 r.DetailMode=2;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.SupportAnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
 r.AnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
-r.MaxAnisotropy=8;---------------🟢 0 for PERFORMANCE
+r.MaxAnisotropy=16;---------------🟢 0 for PERFORMANCE
 r.MaterialQualityLevel=3;---------------🟢 0,2 for PERFORMANCE 🔵 EDITED
 r.SupportMaterialLayers=1;---------------🟢 0 for PERFORMANCE
 r.AllowSimpleLights=1;---------------🟢 0 for PERFORMANCE
@@ -151,7 +150,9 @@ r.ParticleLightQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;---------------🟢 0.125,0.25 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=16;
 r.SSGI.Enable=0;---------------🟢 0 for PERFORMANCE
-r.SSGI.Quality=0;---------------🟢 0,2 for PERFORMANCE 🔵 EDITED 🟣 req ssgi enable
+r.SSGI.Quality=4;---------------🟢 0,2 for PERFORMANCE 🟣 req ssgi enable
+r.SSGI.HalfRes=1;---------------🟢 1 for PERFORMANCE 🔵 EDITED
+r.SSGI.LeakFreeReprojection=1;
 r.ClearCoatNormal=1;---------------🟢 0 for PERFORMANCE
 r.IrisNormal=1;---------------🟢 0 for PERFORMANCE
 r.HairStrands.Enable=0;---------------🟢 0 for PERFORMANCE
@@ -200,13 +201,13 @@ r.Water.WaterMesh.TessFactorBias=-1;---------------🟢 -1 for PERFORMANCE 🔵 
 r.Water.SingleLayer.TiledComposite=1;
 r.Water.SingleLayer.DepthPrepass=0;
 r.VolumetricFog=1;---------------🟢 0 for PERFORMANCE
-r.VolumetricFog.GridPixelSize=16;
+r.VolumetricFog.GridPixelSize=14;---------------🔵 EDITED
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.Jitter=1;
 r.VolumetricFog.TemporalReprojection=1;
-r.VolumetricFog.HistoryMissSupersampleCount=4;
+r.VolumetricFog.HistoryWeight=0.95;---------------🔵 EDITED
+r.VolumetricFog.HistoryMissSupersampleCount=1;---------------🔵 EDITED
 r.VolumetricFog.InverseSquaredLightDistanceBiasScale=4;---------------🔵 EDITED
-r.VolumetricFog.LightFunction=1;
 r.GenerateMeshDistanceFields=1;---------------🟢 0 for PERFORMANCE 🟣 dfs and dfao mesh
 r.DistanceFieldShadowing=1;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshdistancefields
 r.DFShadowQuality=1;---------------🟢 0,1,2 for PERFORMANCE 🔵 EDITED 🟣 req distancefieldshadowing
@@ -233,6 +234,9 @@ r.ParallelTranslucency=1;
 r.TranslucencyLightingVolumeDim=32;---------------🟢 32 for PERFORMANCE 🔵 EDITED
 r.TranslucencyVolumeBlur=1;---------------🟢 0 for PERFORMANCE
 r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
+r.HeightFieldShadowing=0;---------------🟢 0 for PERFORMANCE
+r.HFShadowQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED 🟣 req heightfieldshadowing
+r.HeightfieldGlobalIllumination=0;
 r.DistanceFieldAO=0;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshdistancefields
 r.AOQuality=0;---------------🟢 0,1 for PERFORMANCE 🟣 req distancefieldao
 r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🟣 adaptive method
@@ -240,8 +244,8 @@ r.AOApplyToStaticIndirect=0;
 r.AOMaxViewDistance=2500;---------------🟢 2500 for PERFORMANCE 🔵 EDITED
 r.AmbientOcclusionMipLevelFactor=1;---------------🔵 EDITED
 r.AmbientOcclusionMaxQuality=0;---------------🔵 EDITED
-r.AmbientOcclusionLevels=1;---------------🟢 0,1 for PERFORMANCE
-r.AmbientOcclusionRadiusScale=0.15;---------------🔵 EDITED
+r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
+r.AmbientOcclusionRadiusScale=0.5;---------------🔵 EDITED
 r.AmbientOcclusionStaticFraction=-1;---------------🟢 0 for PERFORMANCE
 r.AmbientOcclusion.Method=0;
 r.TextureStreaming=1;
