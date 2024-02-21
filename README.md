@@ -1,4 +1,4 @@
-#### updated 2/14/2024 ✂️ 📋 :ramen: v1.1 release
+#### updated 2/20/2024 ✂️ 📋 :ramen: v1.100.01
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -37,8 +37,6 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 Global=off;
 
 [Audio]
-MaxChannels=64;---------------🔵 EDITED
-CommonAudioPoolSize=32;---------------🔵 EDITED
 UseAudioThread=1;
 
 [/Script/Engine.Engine]
@@ -48,18 +46,17 @@ bUseFixedFrameRate=0;
 DisplayGamma=2.2;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70;---------------🟣 texturepool cache
+PoolSizeVRAMPercentage=60;---------------🔵 EDITED 🟣 texturepool cache
 
 [ConsoleVariables]
 sg.ResolutionQuality=50;---------------🟡 set correctly
-sg.ViewDistanceQuality=2;
-sg.ShadowQuality=2;
-sg.PostProcessQuality=2;
-sg.TextureQuality=2;
-sg.EffectsQuality=2;
-sg.FoliageQuality=2;
-sg.ShadingQuality=2;
-r.NGX.DLSS.Enable=1;---------------🔵 DLSS
+sg.ViewDistanceQuality=0;
+sg.ShadowQuality=0;
+sg.PostProcessQuality=0;
+sg.TextureQuality=0;
+sg.EffectsQuality=0;
+sg.FoliageQuality=0;
+sg.ShadingQuality=0;
 r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🟣 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.PreferNISSharpen=0;---------------🔵 EDITED
@@ -69,6 +66,7 @@ r.NGX.DLSS.DilateMotionVectors=0;---------------🟢 0 for PERFORMANCE 🔵 EDIT
 r.NGX.DLAA.Enable=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.Reflections.TemporalAA=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
+r.FidelityFX.FSR2.QualityMode=4;---------------🔵 EDITED 🟣 4,3,2,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.DynamicRes.OperationMode=0;
 r.SecondaryScreenPercentage.GameViewport=0;---------------🟢 83.33 for PERFORMANCE
 r.MSAACount=0;---------------🔵 EDITED
@@ -89,7 +87,6 @@ r.EyeAdaptation.Basic.Compute=1;---------------🟢 1 for PERFORMANCE
 r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=3;---------------🔵 EDITED
 r.Tonemapper.Sharpen=0;
-r.TonemapperFilm=0;
 r.TonemapperGamma=2.2;---------------🔵 EDITED
 r.FilmGrain=0;
 r.SceneColorFringeQuality=0;---------------🔵 EDITED
@@ -136,7 +133,7 @@ r.SSS.Checkerboard=1;---------------🟢 1 for PERFORMANCE
 r.SSS.HalfRes=1;
 r.SSS.Scale=1;
 r.LightShaftQuality=1;---------------🟢 0 for PERFORMANCE
-r.ViewDistanceScale=1.3;---------------🟢 0.8 for PERFORMANCE 🔵 EDITED
+r.ViewDistanceScale=1;---------------🟢 0.8 for PERFORMANCE 🔵 EDITED
 r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;---------------🟢 0 for PERFORMANCE
 r.DetailMode=2;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
@@ -150,7 +147,7 @@ r.ParticleLightQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;---------------🟢 0.125,0.25 for PERFORMANCE
 r.ParticleMinTimeBetweenTicks=16;
 r.SSGI.Enable=0;---------------🟢 0 for PERFORMANCE
-r.SSGI.Quality=4;---------------🟢 0,2 for PERFORMANCE 🟣 req ssgi enable
+r.SSGI.Quality=0;---------------🟢 0,2 for PERFORMANCE 🔵 EDITED 🟣 req ssgi enable
 r.SSGI.HalfRes=1;---------------🟢 1 for PERFORMANCE 🔵 EDITED
 r.SSGI.LeakFreeReprojection=1;
 r.ClearCoatNormal=1;---------------🟢 0 for PERFORMANCE
@@ -219,13 +216,13 @@ r.AllowLandscapeShadows=1;---------------🟢 0 for PERFORMANCE
 r.Shadow.FilterMethod=0;---------------🟢 0 for PERFORMANCE 🟣 PCSS shadows
 r.ShadowQuality=3;---------------🟢 3 for PERFORMANCE 🔵 EDITED
 r.Shadow.DistanceScale=1;
-r.Shadow.MaxCSMResolution=3072;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
+r.Shadow.MaxCSMResolution=2048;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
 r.Shadow.MaxResolution=1024;---------------🟢 512,1024 for PERFORMANCE
 r.Shadow.CSM.MaxCascades=2;---------------🟢 1,2 for PERFORMANCE 🔵 EDITED
 r.Shadow.MaxNumFarShadowCascades=1;---------------🔵 EDITED
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.RadiusThreshold=0.04;
-r.Shadow.CachedShadowsCastFromMovablePrimitives=0;---------------🟢 0 for PERFORMANCE 🟣 movable light shadows
+r.Shadow.CachedShadowsCastFromMovablePrimitives=1;---------------🟢 0 for PERFORMANCE 🟣 movable light shadows
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CacheWPOPrimitives=0;
 r.ParallelShadow=1;---------------🟢 0 for PERFORMANCE
@@ -267,18 +264,18 @@ r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.UseMaterialData=1;
-r.DiffuseIndirect.Denoiser=1;---------------🟢 1 for PERFORMANCE 🟣 Denoiser
-r.AmbientOcclusion.Denoiser=1;---------------🟢 1 for PERFORMANCE 🟣 Denoiser
-r.Shadow.Denoiser=0;---------------🟢 0 for PERFORMANCE 🟣 Denoiser
-r.Reflections.Denoiser.TemporalAccumulation=0;---------------🟣 Denoiser
-r.Reflections.Denoiser=0;---------------🔵 EDITED 🟣 Denoiser
-r.SSR.ExperimentalDenoiser=0;---------------🟣 Denoiser
-r.D3D12.GPUCrashDebuggingMode=0;---------------🟣 DEBUG
-r.gpucrash.collectionenable=0;---------------🟣 DEBUG
-r.GPUCrashDebugging=0;---------------🟣 DEBUG
-r.ShaderDevelopmentMode=0;---------------🟣 DEBUG
-r.UniformBufferPooling=1;---------------🟣 DEBUG
-r.NGX.LogLevel=0;---------------🟣 DEBUG
+r.DiffuseIndirect.Denoiser=1;---------------🟢 1 for PERFORMANCE 🟣 denoiser
+r.AmbientOcclusion.Denoiser=1;---------------🟢 1 for PERFORMANCE 🟣 denoiser
+r.Shadow.Denoiser=0;---------------🟢 0 for PERFORMANCE 🟣 denoiser
+r.Reflections.Denoiser.TemporalAccumulation=0;---------------🟣 denoiser
+r.Reflections.Denoiser=0;---------------🔵 EDITED 🟣 denoiser
+r.SSR.ExperimentalDenoiser=0;---------------🟣 denoiser
+r.D3D12.GPUCrashDebuggingMode=0;---------------🟣 debug
+r.gpucrash.collectionenable=0;---------------🟣 debug
+r.GPUCrashDebugging=0;---------------🟣 debug
+r.ShaderDevelopmentMode=0;---------------🟣 debug
+r.UniformBufferPooling=1;---------------🟣 debug
+r.NGX.LogLevel=0;---------------🟣 debug
 r.GTSyncType=0;
 r.VSync=0;
 rhi.SyncInterval=0;
