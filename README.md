@@ -1,4 +1,4 @@
-#### updated 2/28/2024 ✂️ 📋 :ramen: v1.100.03
+#### updated 2/28/2024 ✂️ 📋 :ramen: v1.100.04
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -289,6 +289,8 @@ r.HZBOcclusion=0;
 r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
 r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
 r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
+t.Streamline.Reflex.Enable=1;
+t.Streamline.Reflex.Mode=2;
 ```
 ---
 
