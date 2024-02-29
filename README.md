@@ -289,8 +289,8 @@ r.HZBOcclusion=0;
 r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
 r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
 r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
-t.Streamline.Reflex.Enable=1;
-t.Streamline.Reflex.Mode=2;
+t.Streamline.Reflex.Enable=1;---------------🟣 nvidia reflex
+t.Streamline.Reflex.Mode=2;---------------🟣 reflex on with boost
 ```
 ---
 
