@@ -297,7 +297,7 @@ fx.Niagara.QualityLevel=1;---------------🟣 wip
 r.Lumen.DiffuseIndirect.Allow=0;---------------🟣 wip
 r.Nanite=0;---------------🟣 wip
 r.RayTracing=0;---------------🟣 wip
-r.DynamicGlobalIlluminationMethod=0;----------------🟣 wip
+r.DynamicGlobalIlluminationMethod=0;---------------🟣 wip
 r.ReflectionMethod=0;---------------🟣 wip
 ```
 ---
