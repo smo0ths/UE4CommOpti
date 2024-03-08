@@ -1,4 +1,4 @@
-#### updated 3/7/2024 ✂️ 📋 :ramen: v1.100.08
+#### updated 3/7/2024 ✂️ 📋 :ramen: v1.100.09
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -186,7 +186,7 @@ r.Water.WaterMesh.LODMorphEnabled=0;---------------🟢 0 for PERFORMANCE 🔵 E
 r.Water.WaterMesh.TessFactorBias=-1;---------------🟢 -1 for PERFORMANCE 🔵 EDITED
 r.Water.SingleLayer.TiledComposite=1;
 r.Water.SingleLayer.DepthPrepass=0;
-r.VolumetricFog=1;---------------🟢 0 for PERFORMANCE
+r.VolumetricFog=0;---------------🟢 0 for PERFORMANCE
 r.VolumetricFog.GridPixelSize=16;---------------🔵 EDITED
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.Jitter=1;
@@ -240,8 +240,8 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=1;---------------🟢 0 for PERF
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CacheWPOPrimitives=0;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
-r.Shadow.FarShadowDistanceOverride=0;
-r.Shadow.FarShadowStaticMeshLODBias=1;
+r.Shadow.FarShadowDistanceOverride=5000;
+r.Shadow.FarShadowStaticMeshLODBias=0;
 r.ParallelShadow=1;---------------🟢 0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;---------------🟢 0 for PERFORMANCE
 r.ParallelTranslucency=1;
