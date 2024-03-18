@@ -1,4 +1,4 @@
-#### updated 3/7/2024 ✂️ 📋 :ramen: v1.100.09
+#### updated 3/18/2024 ✂️ 📋 :ramen: v1.100.10
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -121,6 +121,10 @@ foliage.DitheredLOD=1;---------------🟢 1 for PERFORMANCE
 grass.DensityScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
 grass.CullDistanceScale=1;
 grass.DisableDynamicShadows=1;---------------🟢 1 for PERFORMANCE 🔵 EDITED
+grass.MaxAsyncTasks=4;
+grass.MaxCreatePerFrame=1;
+grass.MaxUpdateFrequency=1;---------------🔵 EDITED
+grass.TickInterval=10;---------------🔵 EDITED
 r.MipMapLODBias=0;---------------🟢 1 for PERFORMANCE
 r.ParticleLODBias=0;
 r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
@@ -232,7 +236,6 @@ r.Shadow.DistanceScale=1;
 r.Shadow.MaxCSMResolution=2048;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
 r.Shadow.MaxResolution=1024;---------------🟢 512,1024 for PERFORMANCE
 r.Shadow.CSM.MaxCascades=2;---------------🟢 1,2 for PERFORMANCE 🔵 EDITED
-r.Shadow.MaxNumFarShadowCascades=2;---------------🔵 EDITED
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.PreShadowResolutionFactor=0.5;
 r.Shadow.RadiusThreshold=0.04;
@@ -240,14 +243,15 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=1;---------------🟢 0 for PERF
 r.Shadow.CacheWholeSceneShadows=1;
 r.Shadow.CacheWPOPrimitives=0;
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
-r.Shadow.FarShadowDistanceOverride=5000;
+r.Shadow.MaxNumFarShadowCascades=1;---------------🔵 EDITED
+r.Shadow.FarShadowDistanceOverride=0;
 r.Shadow.FarShadowStaticMeshLODBias=0;
 r.ParallelShadow=1;---------------🟢 0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;---------------🟢 0 for PERFORMANCE
 r.ParallelTranslucency=1;
 r.TranslucencyLightingVolumeDim=32;---------------🟢 32 for PERFORMANCE 🔵 EDITED
 r.TranslucencyVolumeBlur=1;---------------🟢 0 for PERFORMANCE
-r.HLOD.DistanceScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
+r.HLOD.DistanceScale=0.8;
 r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
 r.HeightFieldShadowing=0;---------------🟢 0 for PERFORMANCE
 r.HFShadowQuality=0;---------------🟢 0,1 for PERFORMANCE 🟣 req heightfieldshadowing
@@ -256,7 +260,7 @@ r.DistanceFieldAO=1;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshd
 r.AOQuality=1;---------------🟢 0,1 for PERFORMANCE 🟣 req distancefieldao
 r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🟣 adaptive method
 r.AOApplyToStaticIndirect=0;
-r.AOMaxViewDistance=10000;
+r.AOMaxViewDistance=10000;---------------🔵 EDITED
 r.AmbientOcclusionMipLevelFactor=1;---------------🔵 EDITED
 r.AmbientOcclusionMaxQuality=0;---------------🔵 EDITED
 r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
@@ -299,6 +303,8 @@ r.Nanite=0;---------------🟣 wip
 r.RayTracing=0;---------------🟣 wip
 r.DynamicGlobalIlluminationMethod=0;---------------🟣 wip
 r.ReflectionMethod=0;---------------🟣 wip
+r.SceneRenderTargetResizeMethodForceOverride=1;
+r.SceneRenderTargetResizeMethod=0;
 ```
 ---
 
