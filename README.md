@@ -1,4 +1,4 @@
-#### updated 3/18/2024 ✂️ 📋 :ramen: v1.100.10
+#### updated 3/21/2024 ✂️ 📋 :ramen: v1.100.12
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -43,7 +43,6 @@ UseAudioThread=1;
 bSmoothFrameRate=0;
 bPauseOnLossOfFocus=0;
 bUseFixedFrameRate=0;
-DisplayGamma=2.2;
 
 [TextureStreaming]
 PoolSizeVRAMPercentage=50;---------------🔵 EDITED 🟣 texturepool cache
@@ -88,7 +87,7 @@ p.ClothPhysics=1;
 r.EyeAdaptationQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.EyeAdaptation.Basic.Compute=1;---------------🟢 1 for PERFORMANCE
 r.Tonemapper.MergeWithUpscale.Mode=1;
-r.Tonemapper.Quality=3;---------------🔵 EDITED
+r.Tonemapper.Quality=0;---------------🔵 EDITED
 r.ToneMapper.Sharpen=0;
 r.Tonemapper.GrainQuantization=0;
 r.FilmGrain=0;
@@ -115,8 +114,8 @@ r.DOF.TemporalAAQuality=0;
 r.DOF.Kernel.MaxForegroundRadius=0.006;---------------🔵 EDITED
 r.DOF.Kernel.MaxBackgroundRadius=0.006;---------------🔵 EDITED
 foliage.DensityScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
-foliage.LODDistanceScale=0.8;
-foliage.MinimumScreenSize=0.0001;
+foliage.LODDistanceScale=1;
+foliage.MinimumScreenSize=0.0001;---------------🔵 EDITED
 foliage.DitheredLOD=1;---------------🟢 1 for PERFORMANCE
 grass.DensityScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
 grass.CullDistanceScale=1;
@@ -164,6 +163,9 @@ r.TessellationAdaptivePixelsPerTriangle=999999;---------------🟢 999999 for PE
 r.LightFunctionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1;---------------🟢 0.6 for PERFORMANCE
 r.LightShaftQuality=1;---------------🟢 0 for PERFORMANCE
+r.LightShaftFirstPassDistance=0.08;---------------🔵 EDITED
+r.LightShaftDownSampleFactor=2;
+r.LightShaftBlurPasses=2;---------------🔵 EDITED
 r.MinScreenRadiusForLights=0.03;---------------🟢 0.04,0.06 for PERFORMANCE 🔵 EDITED
 r.AllowGlobalClipPlane=0;---------------🟢 0 for PERFORMANCE
 r.chaos.ReflectionCaptureStaticSceneOnly=1;
@@ -256,8 +258,8 @@ r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
 r.HeightFieldShadowing=0;---------------🟢 0 for PERFORMANCE
 r.HFShadowQuality=0;---------------🟢 0,1 for PERFORMANCE 🟣 req heightfieldshadowing
 r.HeightfieldGlobalIllumination=0;---------------🟢 0 for PERFORMANCE
-r.DistanceFieldAO=1;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshdistancefields
-r.AOQuality=1;---------------🟢 0,1 for PERFORMANCE 🟣 req distancefieldao
+r.DistanceFieldAO=0;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshdistancefields
+r.AOQuality=0;---------------🟢 0,1 for PERFORMANCE 🟣 req distancefieldao
 r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🟣 adaptive method
 r.AOApplyToStaticIndirect=0;
 r.AOMaxViewDistance=10000;---------------🔵 EDITED
