@@ -1,4 +1,4 @@
-#### updated 3/21/2024 ✂️ 📋 :ramen: v1.100.12
+#### updated 4/6/2024 ✂️ 📋 :ramen: v1.100.14
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -13,6 +13,8 @@
 ##### 3200x1800 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ##### 3840x2160 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+
+##### Recommended negative LOD bias (quality 67% -0.5) (balance 58% -1) (performance 50% -1.5) (ultra performance 33% -2) or just set all to 0 for PERFORMANCE or -1 to cover most (set by nvidiaProfileInspector)
 
 ---
 
@@ -35,9 +37,6 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 ```python
 [Core.Log]
 Global=off;
-
-[Audio]
-UseAudioThread=1;
 
 [/Script/Engine.Engine]
 bSmoothFrameRate=0;
@@ -69,7 +68,6 @@ r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🟣 -2,-1,0,1 ultra perf,perf,
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.PreferNISSharpen=0;---------------🔵 EDITED
 r.NGX.DLSS.Sharpness=0;
-r.NGX.DLSS.AutoExposure=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.NGX.DLSS.DilateMotionVectors=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.NGX.DLAA.Enable=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.Reflections.TemporalAA=0;
@@ -84,8 +82,6 @@ p.AnimDynamics=0;---------------🟢 0 for PERFORMANCE
 p.AnimDynamicsWind=0;---------------🟢 0 for PERFORMANCE
 p.RigidBodyNode=0;---------------🟢 0 for PERFORMANCE
 p.ClothPhysics=1;
-r.EyeAdaptationQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
-r.EyeAdaptation.Basic.Compute=1;---------------🟢 1 for PERFORMANCE
 r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=0;---------------🔵 EDITED
 r.ToneMapper.Sharpen=0;
@@ -124,7 +120,7 @@ grass.MaxAsyncTasks=4;
 grass.MaxCreatePerFrame=1;
 grass.MaxUpdateFrequency=1;---------------🔵 EDITED
 grass.TickInterval=10;---------------🔵 EDITED
-r.MipMapLODBias=0;---------------🟢 1 for PERFORMANCE
+r.MipMapLODBias=0;
 r.ParticleLODBias=0;
 r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
 r.SkeletalMeshLODBias=0;---------------🟢 1 for PERFORMANCE
@@ -139,7 +135,7 @@ r.SupportMaterialLayers=1;---------------🟢 0 for PERFORMANCE
 r.SupportAnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
 r.AnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
 r.MaxAnisotropy=8;---------------🟢 0 for PERFORMANCE
-r.VT.MaxAnisotropy=8;
+r.VT.MaxAnisotropy=4;
 r.AllowSimpleLights=1;---------------🟢 0 for PERFORMANCE
 r.ParticleLightQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.EmitterSpawnRateScale=0.5;---------------🟢 0.125,0.25 for PERFORMANCE
@@ -307,6 +303,16 @@ r.DynamicGlobalIlluminationMethod=0;---------------🟣 wip
 r.ReflectionMethod=0;---------------🟣 wip
 r.SceneRenderTargetResizeMethodForceOverride=1;
 r.SceneRenderTargetResizeMethod=0;
+r.DefaultFeature.AutoExposure=0;---------------🟡 1 for engine 0 for scaler
+r.EyeAdaptationQuality=0;---------------🟡 1 for engine 0 for scaler
+r.FidelityFX.FSR2.AutoExposure=1;---------------🟡 0 for engine 1 for scaler
+r.NGX.DLSS.AutoExposure=1;---------------🟡 0 for engine 1 for scaler
+r.UsePreExposure=0;---------------🟡 1 for engine 0 for scaler
+r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
+r.DefaultFeature.AutoExposure.Method=1;
+r.EyeAdaptation.Basic.Compute=1;
+r.EyeAdaptation.MethodOverride=-1;
+r.EyeAdaptation.PreExposureOverride=0;
 ```
 ---
 
@@ -488,11 +494,12 @@ TextureLODGroups=(Group=TEXTUREGROUP_16BitData,                                 
 
 ##### 6. Preferred refresh rate:  Highest available
 
-##### 7. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game)
+##### 7. Texture filtering - anisotropic sample optimization:  on
 
 ##### 8. Texture filtering - negative LOD bias:  allow (allows a negative bias) clamp (0 mipmap bias) test yourself devs usually set slight negative clamps, also negative with DLSS/FSR2 upscaling
+##### 8a. use nvidiaProfileInspector and set Texture FIltering - LOD Bias (DX/OGL) to correct recommended scaling value or whatever you want
 
-##### 9. Texture filtering quality:  high performance
+##### 9. Texture filtering quality:  high performance (or high quality usually small fps loss)
 
 ##### 10. Texture filtering - trilinear optimization:  on
 
