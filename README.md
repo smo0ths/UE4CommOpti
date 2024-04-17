@@ -1,4 +1,4 @@
-#### updated 4/17/2024 ✂️ 📋 :ramen: v1.100.15
+#### updated 4/17/2024 ✂️ 📋 :ramen: v1.100.16
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -49,7 +49,7 @@ PoolSizeVRAMPercentage=50;---------------🔵 EDITED 🟣 texturepool cache
 [ConsoleVariables]
 sg.ResolutionQuality=50;---------------🟡 set correctly
 r.ScreenPercentage=50;---------------🟡 set correctly
-r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🟣 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
+r.NGX.DLSS.Quality=-1;---------------🔵 EDITED 🟣 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.PreferNISSharpen=0;---------------🔵 EDITED
 r.NGX.DLSS.Sharpness=0;
@@ -82,11 +82,12 @@ p.AnimDynamicsWind=0;---------------🟢 0 for PERFORMANCE
 p.RigidBodyNode=0;---------------🟢 0 for PERFORMANCE
 p.ClothPhysics=1;
 r.Tonemapper.MergeWithUpscale.Mode=1;
-r.Tonemapper.Quality=0;---------------🔵 EDITED
+r.Tonemapper.Quality=2;
 r.ToneMapper.Sharpen=0;
-r.Tonemapper.GrainQuantization=0;
+r.Tonemapper.GrainQuantization=1;
 r.FilmGrain=0;
-r.SceneColorFringeQuality=0;---------------🔵 EDITED
+r.SceneColorFringeQuality=1;
+r.SceneColorFringe.Max=0;---------------🔵 EDITED
 r.DefaultFeature.MotionBlur=0;---------------🔵 EDITED
 r.MotionBlurQuality=0;---------------🔵 EDITED
 r.BloomQuality=4;---------------🟢 0 for PERFORMANCE 🔵 EDITED
@@ -108,7 +109,7 @@ r.DOF.Recombine.Quality=0;
 r.DOF.TemporalAAQuality=0;
 r.DOF.Kernel.MaxForegroundRadius=0.006;---------------🔵 EDITED
 r.DOF.Kernel.MaxBackgroundRadius=0.006;---------------🔵 EDITED
-foliage.DensityScale=0.6;---------------🟢 0.6 for PERFORMANCE 🔵 EDITED
+foliage.DensityScale=1;---------------🟢 0.6 for PERFORMANCE
 foliage.LODDistanceScale=1;
 foliage.MinimumScreenSize=0.0001;---------------🔵 EDITED
 foliage.DitheredLOD=1;---------------🟢 1 for PERFORMANCE
@@ -128,7 +129,7 @@ r.ViewDistanceScale.FieldOfViewAffectsHLOD=0;---------------🟢 0 for PERFORMAN
 r.StaticMeshLODDistanceScale=1;
 r.SkeletalMeshLODRadiusScale=0.75;---------------🟢 0.5,0.75 for PERFORMANCE 🔵 EDITED
 r.DetailMode=1;---------------🟢 0,1 for PERFORMANCE
-r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
+r.RefractionQuality=2;---------------🟢 0,1 for PERFORMANCE
 r.MaterialQualityLevel=1;---------------🟢 0,2 for PERFORMANCE
 r.SupportMaterialLayers=1;---------------🟢 0 for PERFORMANCE
 r.SupportAnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
@@ -155,7 +156,7 @@ r.HairStrands.Enable=0;---------------🟢 0 for PERFORMANCE
 r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 gpu lights
 r.SceneColorFormat=3;---------------🟢 2,3 for PERFORMANCE
 r.TessellationAdaptivePixelsPerTriangle=999999;---------------🟢 999999 for PERFORMANCE 🔵 EDITED
-r.LightFunctionQuality=1;---------------🟢 0,1 for PERFORMANCE
+r.LightFunctionQuality=2;---------------🟢 0,1 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1;---------------🟢 0.6 for PERFORMANCE
 r.LightShaftQuality=1;---------------🟢 0 for PERFORMANCE
 r.LightShaftFirstPassDistance=0.08;---------------🔵 EDITED
@@ -262,7 +263,7 @@ r.AmbientOcclusionMipLevelFactor=1;---------------🔵 EDITED
 r.AmbientOcclusionMaxQuality=0;---------------🔵 EDITED
 r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
 r.AmbientOcclusionRadiusScale=0.5;---------------🔵 EDITED
-r.AmbientOcclusionStaticFraction=-1;---------------🟢 0 for PERFORMANCE
+r.AmbientOcclusionStaticFraction=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.AmbientOcclusion.Method=0;
 r.Streaming.MipBias=0;---------------🟢 1 for PERFORMANCE
 r.Streaming.AmortizeCPUToGPUCopy=0;
