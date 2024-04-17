@@ -1,4 +1,4 @@
-#### updated 4/17/2024 ✂️ 📋 :ramen: v1.100.16
+#### updated 4/17/2024 ✂️ 📋 :ramen: v1.100.17
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -94,7 +94,7 @@ r.BloomQuality=4;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.Bloom.Cross=0.4;---------------🔵 EDITED
 r.Filter.SizeScale=0.7;---------------🔵 EDITED
 r.Upscale.Quality=1;---------------🔵 EDITED
-r.LensFlareQuality=1;---------------🟢 0,1 for PERFORMANCE
+r.LensFlareQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.Filter.LoopMode=0;---------------🟢 0 for PERFORMANCE
 r.DepthOfFieldQuality=1;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.DOF.Gather.AccumulatorQuality=0;
