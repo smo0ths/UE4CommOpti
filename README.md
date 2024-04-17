@@ -1,12 +1,10 @@
-#### updated 4/6/2024 ✂️ 📋 :ramen: v1.100.14
+#### updated 4/17/2024 ✂️ 📋 :ramen: v1.100.15
 
 ##### for UE4 games for reference/customization/optimization/learning
 
 ##### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
 ##### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
-
-##### make sure your scaling % is set correctly! and match PIP(scope) resolution scaling in games (manually in graphic settings) for PERFORMANCE
 
 ##### 2560x1440 use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
@@ -15,6 +13,8 @@
 ##### 3840x2160 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ##### Recommended negative LOD bias (quality 67% -0.5) (balance 58% -1) (performance 50% -1.5) (ultra performance 33% -2) or just set all to 0 for PERFORMANCE or -1 to cover most (set by nvidiaProfileInspector)
+
+##### check 🟡 and set correctly according to recommendations
 
 ---
 
@@ -49,21 +49,6 @@ PoolSizeVRAMPercentage=50;---------------🔵 EDITED 🟣 texturepool cache
 [ConsoleVariables]
 sg.ResolutionQuality=50;---------------🟡 set correctly
 r.ScreenPercentage=50;---------------🟡 set correctly
-r.TemporalAA.Upsampling=1;---------------🔵 EDITED 🟣 TAAU
-r.TemporalAACurrentFrameWeight=0.03;
-r.TemporalAASamples=8;
-r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🟣 gen5 TAAU
-r.TemporalAAFilterSize=0.1;---------------🔵 EDITED 🟣 req gen5 TAAU
-r.SecondaryScreenPercentage.GameViewport=0;---------------🟢 83.33 for PERFORMANCE
-r.DynamicRes.OperationMode=0;
-r.MSAACount=0;---------------🔵 EDITED
-r.GTSyncType=0;
-r.VSync=0;
-rhi.SyncInterval=0;
-rhi.SyncSlackMS=0;
-r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
-r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
-r.FidelityFX.FSR2.QualityMode=4;---------------🔵 EDITED 🟣 4,3,2,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.NGX.DLSS.Quality=-2;---------------🔵 EDITED 🟣 -2,-1,0,1 ultra perf,perf,balanced,quality 🟡 set correctly
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.PreferNISSharpen=0;---------------🔵 EDITED
@@ -72,6 +57,20 @@ r.NGX.DLSS.DilateMotionVectors=0;---------------🟢 0 for PERFORMANCE 🔵 EDIT
 r.NGX.DLAA.Enable=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.Reflections.TemporalAA=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
+r.MSAACount=0;---------------🔵 EDITED
+r.TemporalAA.Upsampling=1;---------------🔵 EDITED 🟣 TAAU
+r.TemporalAACurrentFrameWeight=0.03;
+r.TemporalAASamples=8;
+r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🟣 gen5 TAAU
+r.TemporalAAFilterSize=0.1;---------------🔵 EDITED 🟣 req gen5 TAAU
+r.SecondaryScreenPercentage.GameViewport=0;---------------🟢 83.33 for PERFORMANCE
+r.DynamicRes.OperationMode=0;
+r.GTSyncType=0;---------------🟣 Sync
+r.VSync=0;---------------🟣 Sync
+rhi.SyncInterval=0;---------------🟣 Sync
+rhi.SyncSlackMS=0;---------------🟣 Sync
+r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
+r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
 t.Streamline.Reflex.Enable=1;---------------🟣 nvidia reflex
 t.Streamline.Reflex.Mode=2;---------------🟣 reflex on with boost
 r.CompileShadersForDevelopment=1;---------------🟢 1 for PERFORMANCE
@@ -272,7 +271,6 @@ r.Streaming.FramesForFullUpdate=15;---------------🔵 EDITED
 r.Streaming.HiddenPrimitiveScale=1;---------------🟢 0.5 for PERFORMANCE
 r.Streaming.EnableOptionalMips=0;
 r.Streaming.Boost=1;
-r.Streaming.MaxHiddenPrimitiveViewBoost=1.5;
 r.Streaming.LimitPoolSizeToVRAM=0;
 r.Streaming.UseFixedPoolSize=0;
 r.Streaming.PoolSize.Minimum=-1;
@@ -283,6 +281,14 @@ r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.UseNewMetrics=1;
 r.Streaming.UseMaterialData=1;
+r.EyeAdaptationQuality=1;---------------🟢 1 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure
+r.NGX.DLSS.AutoExposure=0;---------------🟢 0 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure
+r.DefaultFeature.AutoExposure=0;---------------🟣 EyeAdaptation/AutoExposure
+r.DefaultFeature.AutoExposure.Method=1;---------------🟣 EyeAdaptation/AutoExposure
+r.EyeAdaptation.Basic.Compute=1;---------------🟣 EyeAdaptation/AutoExposure
+r.EyeAdaptation.MethodOverride=-1;---------------🟣 EyeAdaptation/AutoExposure
+r.UsePreExposure=1;---------------🟣 EyeAdaptation/AutoExposure
+r.EyeAdaptation.PreExposureOverride=0;---------------🟣 EyeAdaptation/AutoExposure
 r.DiffuseIndirect.Denoiser=1;---------------🟢 1 for PERFORMANCE 🟣 denoiser
 r.AmbientOcclusion.Denoiser=1;---------------🟢 1 for PERFORMANCE 🟣 denoiser
 r.Shadow.Denoiser=0;---------------🟢 0 for PERFORMANCE 🟣 denoiser
@@ -295,24 +301,6 @@ r.GPUCrashDebugging=0;---------------🟣 debug
 r.ShaderDevelopmentMode=0;---------------🟣 debug
 r.UniformBufferPooling=1;---------------🟣 debug
 r.NGX.LogLevel=0;---------------🟣 debug
-fx.Niagara.QualityLevel=1;---------------🟣 wip
-r.Lumen.DiffuseIndirect.Allow=0;---------------🟣 wip
-r.Nanite=0;---------------🟣 wip
-r.RayTracing=0;---------------🟣 wip
-r.DynamicGlobalIlluminationMethod=0;---------------🟣 wip
-r.ReflectionMethod=0;---------------🟣 wip
-r.SceneRenderTargetResizeMethodForceOverride=1;
-r.SceneRenderTargetResizeMethod=0;
-r.DefaultFeature.AutoExposure=0;---------------🟡 1 for engine 0 for scaler
-r.EyeAdaptationQuality=0;---------------🟡 1 for engine 0 for scaler
-r.FidelityFX.FSR2.AutoExposure=1;---------------🟡 0 for engine 1 for scaler
-r.NGX.DLSS.AutoExposure=1;---------------🟡 0 for engine 1 for scaler
-r.UsePreExposure=0;---------------🟡 1 for engine 0 for scaler
-r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=0;
-r.DefaultFeature.AutoExposure.Method=1;
-r.EyeAdaptation.Basic.Compute=1;
-r.EyeAdaptation.MethodOverride=-1;
-r.EyeAdaptation.PreExposureOverride=0;
 ```
 ---
 
@@ -413,7 +401,7 @@ bEnableMouseSmoothing=0;
 bViewAccelerationEnabled=0;
 InitialButtonRepeatDelay=0.1;---------------🔵 EDITED
 ButtonRepeatDelay=0.1;
-DoubleClickTime=0.15;---------------🔵 EDITED
+DoubleClickTime=0.01;---------------🔵 EDITED
 ```
 
 ---
