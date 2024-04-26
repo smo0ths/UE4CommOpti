@@ -1,4 +1,4 @@
-#### updated 4/17/2024 ✂️ 📋 :ramen: v1.100.17
+#### updated 4/26/2024 ✂️ 📋 :ramen: v1.100.18
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -6,11 +6,15 @@
 
 ##### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
-##### 2560x1440 use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+##### 2560x1440 (~2k) use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### 3200x1800 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+##### 2816x1584 (3k UHD) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### 3840x2160 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+##### 3072x1728 (3K) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+
+##### 3328x1872 (3.5k UHD) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+
+##### 3840x2160 (4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ##### Recommended negative LOD bias (quality 67% -0.5) (balance 58% -1) (performance 50% -1.5) (ultra performance 33% -2) or just set all to 0 for PERFORMANCE or -1 to cover most (set by nvidiaProfileInspector)
 
