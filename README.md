@@ -8,13 +8,13 @@
 
 ##### 2560x1440 (~2k) use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### 2816x1584 (3k UHD) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+##### 2816x1584 (~3k UHD) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ##### 3072x1728 (3K) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### 3328x1872 (3.5k UHD) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+##### 3328x1872 (~3.5k) use 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### 3840x2160 (4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+##### 3840x2160 (~4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ##### Recommended negative LOD bias (quality 67% -0.5) (balance 58% -1) (performance 50% -1.5) (ultra performance 33% -2) or just set all to 0 for PERFORMANCE or -1 to cover most (set by nvidiaProfileInspector)
 
