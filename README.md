@@ -1,4 +1,4 @@
-#### updated 4/26/2024 ✂️ 📋 :ramen: v1.100.18
+#### updated 7/4/2024 ✂️ 📋 :ramen: v1.100.18.1
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -16,7 +16,9 @@
 
 ##### 3840x2160 (~4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### Recommended negative LOD bias (quality 67% -0.5) (balance 58% -1) (performance 50% -1.5) (ultra performance 33% -2) or just set all to 0 for PERFORMANCE or -1 to cover most (set by nvidiaProfileInspector)
+##### Recommended negative LOD bias (33%/-2) (50%/-1.5) (58%/-1) (67%/-0.5) says nvidia i say 0/-0.6/-1 for PERFORMANCE (set by nvidiaProfileInspector)
+
+##### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
 
 ##### check 🟡 and set correctly according to recommendations
 
@@ -464,56 +466,3 @@ TextureLODGroups=(Group=TEXTUREGROUP_16BitData,                                 
 ```
 
 ---
-
-#### Open NVIDIA Control Panel
-
-##### 1. 3D settings -> adjust image settings with preview -> use my preference emphasizing performance apply.
-
-##### 2. click on use the advanced 3D image settings and apply then click "take me there"
-
-##### 3. Anisotropic filtering:  set Application-controlled (you can force the setting in here if you can't notice it working in certain games)
-
-##### 4. Low latency mode (Only works with dx11 and lower api):
-
-###### Off and ~85% gpu usage for multiple frame buffers sacrificing latency (cap fps til gpu usage is ~85%) (for visual fluidity of frames)
-
-###### On forces 1 frame buffer (for lower latency than off) (for visual fluidity of frames and less latency)
-
-###### Ultra and high gpu usage for lowest latency
-
-###### Nvidia relfex is in-game and dx12 only and you should use it just like Ultra low latency mode with high gpu usage
-
-##### 5. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
-
-##### 6. Preferred refresh rate:  Highest available
-
-##### 7. Texture filtering - anisotropic sample optimization:  on
-
-##### 8. Texture filtering - negative LOD bias:  allow (allows a negative bias) clamp (0 mipmap bias) test yourself devs usually set slight negative clamps, also negative with DLSS/FSR2 upscaling
-##### 8a. use nvidiaProfileInspector and set Texture FIltering - LOD Bias (DX/OGL) to correct recommended scaling value or whatever you want
-
-##### 9. Texture filtering quality:  high performance (or high quality usually small fps loss)
-
-##### 10. Texture filtering - trilinear optimization:  on
-
-##### 11. Vertical sync:  Off
-
-##### 12. Display -> Adjust desktop size and position -> set Perform scaling on: Display
-
-#### Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method)
-
-###### NVCleanstall enabling it in advanced settings before installing or
-
-#### Manually enable Message-signaled interrupts (MSIs)
-
-###### win + r type cmd then press control+shift+enter (starts as admin) then add key. NVcleaninstall gives you more MSIs options. Newest drivers auto do this on 40 series cards.
-
-```python
-reg add "HKLM\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v MSISupported /t REG_DWORD /d 1 /f
-```
-
-###### restart
-
-###### in device manager/view/resources by connection/GPU name should have a negative number in parentheses if MSIs is enabled
-
-#### Disable HPET (High Precision event timer) in device manager/system devices and/or in your bios to get lower latency and more fps
