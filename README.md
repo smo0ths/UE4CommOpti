@@ -16,7 +16,7 @@
 
 ##### 3840x2160 (~4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### Recommended negative LOD bias (33%/-2) (50%/-1.5) (58%/-1) (67%/-0.5) says nvidia i say 0/-0.6/-1 for PERFORMANCE (set by nvidiaProfileInspector)
+##### Recommended negative LOD bias (33%/-2) (50%/-1.5) (58%/-1) (67%/-0.5) says nvidia i say -1/-0.6 or 0 for PERFORMANCE (set by nvidiaProfileInspector)
 
 ##### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
 
