@@ -1,4 +1,4 @@
-#### updated 7/29/2024 ✂️ 📋 :ramen: v1.100.19.0
+#### updated 7/31/2024 ✂️ 📋 :ramen: v1.100.19.2
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -77,7 +77,7 @@ p.RigidBodyNode=0;---------------🟢 0 for PERFORMANCE
 r.AllowGlobalClipPlane=0;---------------🟢 0 for PERFORMANCE
 r.AllowLandscapeShadows=1;---------------🟢 0 for PERFORMANCE
 r.AllowSimpleLights=1;---------------🟢 0 for PERFORMANCE
-r.AmbientOcclusion.Method=0;
+r.AmbientOcclusion.Method=0;---------------🟣 SSAO,GTAO
 r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=0;---------------🔵 EDITED
 r.AmbientOcclusionMipLevelFactor=1;---------------🔵 EDITED
@@ -102,6 +102,7 @@ r.ContactShadows=0;---------------🟢 0 for PERFORMANCE
 r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
 r.D3D12.GPUCrashDebuggingMode=0;---------------🟣 debug
 r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
+r.DefaultFeature.AmbientOcclusionStaticFraction=0;
 r.DefaultFeature.AutoExposure.Method=1;---------------🟣 EyeAdaptation/AutoExposure
 r.DefaultFeature.AutoExposure=1;---------------🟣 EyeAdaptation/AutoExposure 🟡 set correctly
 r.DefaultFeature.MotionBlur=0;---------------🔵 EDITED
@@ -132,13 +133,12 @@ r.DOF.TemporalAAQuality=0;
 r.DynamicRes.OperationMode=0;
 r.EmitterSpawnRateScale=0.5;---------------🟢 0.125,0.25 for PERFORMANCE
 r.EnableCameraAndMeshMotionBlur=0;
+r.EnableCameraAndMeshMotionBlur=0;
 r.EyeAdaptation.Basic.Compute=1;---------------🟣 EyeAdaptation/AutoExposure
 r.EyeAdaptation.MethodOverride=-1;---------------🟣 EyeAdaptation/AutoExposure
 r.EyeAdaptation.PreExposureOverride=0;---------------🟣 EyeAdaptation/AutoExposure
 r.EyeAdaptationQuality=1;---------------🟢 1 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure
-r.EnableCameraAndMeshMotionBlur=0;
 r.FilmGrain=0;
-r.Filter.LoopMode=0;---------------🟢 0 for PERFORMANCE
 r.Filter.SizeScale=0.7;---------------🔵 EDITED
 r.FinishCurrentFrame=0;
 r.GenerateLandscapeGIData=0;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshdistancefields
@@ -150,14 +150,13 @@ r.HairStrands.Enable=0;---------------🟢 0 for PERFORMANCE
 r.HeightfieldGlobalIllumination=0;---------------🟢 0 for PERFORMANCE
 r.HeightFieldShadowing=0;---------------🟢 0 for PERFORMANCE
 r.HFShadowQuality=0;---------------🟢 0,1 for PERFORMANCE 🟣 req heightfieldshadowing
-r.HighQualityLightMaps=1;
 r.HLOD.DistanceScale=0.8;
 r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
 r.HZBOcclusion=0;
 r.IrisNormal=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
 r.LensFlareQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
-r.LightFunctionQuality=2;---------------🟢 0,1 for PERFORMANCE
+r.LightFunctionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1;---------------🟢 0.6 for PERFORMANCE
 r.LightShaftBlurPasses=2;---------------🔵 EDITED
 r.LightShaftDownSampleFactor=2;
@@ -227,7 +226,7 @@ r.SSGI.Quality=0;---------------🟢 0,2 for PERFORMANCE 🔵 EDITED 🟣 req ss
 r.SSR.HalfResSceneColor=1;---------------🟢 1 for PERFORMANCE
 r.SSR.MaxRoughness=-1;
 r.SSR.Quality=2;---------------🟢 0 for PERFORMANCE
-r.SSR.Temporal=0;
+r.SSR.Temporal=0;---------------🔵 EDITED
 r.SSS.Checkerboard=1;---------------🟢 1 for PERFORMANCE
 r.SSS.HalfRes=1;
 r.SSS.Quality=0;
@@ -264,7 +263,7 @@ r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 gpu lights
 r.Tonemapper.GrainQuantization=1;
 r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=2;
-r.ToneMapper.Sharpen=0;
+r.ToneMapper.Sharpen=0;---------------🟡 set correctly
 r.TranslucencyLightingVolumeDim=32;---------------🟢 32 for PERFORMANCE 🔵 EDITED
 r.TranslucencyVolumeBlur=1;---------------🟢 0 for PERFORMANCE
 r.UniformBufferPooling=1;---------------🟣 debug
@@ -309,6 +308,7 @@ r.Water.WaterMesh.LODScaleBias=-0.5;---------------🟢 -0.5 for PERFORMANCE �
 r.Water.WaterMesh.TessFactorBias=-1;---------------🟢 -1 for PERFORMANCE 🔵 EDITED
 rhi.SyncInterval=0;---------------🟣 Sync
 rhi.SyncSlackMS=0;---------------🟣 Sync
+t.OverrideFPS=0;
 t.Streamline.Reflex.Enable=1;---------------🟣 nvidia reflex
 t.Streamline.Reflex.Mode=2;---------------🟣 reflex on with boost
 ```
@@ -419,9 +419,12 @@ DoubleClickTime=0.01;---------------🔵 EDITED
 
 #### Ultra config
 
-##### Use these when game is using DLSS
-##### r.DefaultFeature.AutoExposure=0;---------------🔵 EDITED 🟣 EyeAdaptation/AutoExposure 🟡 set correctly
-##### r.NGX.DLSS.AutoExposure=1;---------------🟢 0 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure 🟡 set correctly
+Use these when game is using DLSS
+r.DefaultFeature.AutoExposure=0;---------------🔵 EDITED 🟣 EyeAdaptation/AutoExposure 🟡 set correctly
+r.NGX.DLSS.AutoExposure=1;---------------🟢 0 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure 🟡 set correctly
+
+turn this off when using other sharpening methods
+r.ToneMapper.Sharpen=1;---------------🔵 EDITED 🟡 set correctly
 
 ```python
 [Core.Log]
@@ -441,15 +444,22 @@ sg.ShadingQuality=3;---------------🟣 Shading
 sg.ShadowQuality=3;
 sg.TextureQuality=3;
 sg.ViewDistanceQuality=3;
-r.AOApplyToStaticIndirect=0;
-r.AOGlobalDistanceField=0;---------------🟢 0 for PERFORMANCE 🟣 adaptive method
+r.AmbientOcclusion.Method=0;---------------🟣 SSAO,GTAO
+r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
+r.AmbientOcclusionMaxQuality=100;---------------🔵 EDITED
+r.AmbientOcclusionMipLevelFactor=0;---------------🔵 EDITED
+r.AmbientOcclusionRadiusScale=1;---------------🔵 EDITED
+r.AmbientOcclusionStaticFraction=1;---------------🟢 0 for PERFORMANCE
+r.AOQuality=2;---------------🟢 0,1 for PERFORMANCE 🟣 req distancefieldao
 r.CompileShadersForDevelopment=1;---------------🟢 1 for PERFORMANCE
 r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
 r.D3D12.GPUCrashDebuggingMode=0;---------------🟣 debug
 r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
+r.DefaultFeature.AmbientOcclusionStaticFraction=1;
 r.DefaultFeature.AutoExposure=1;---------------🟣 EyeAdaptation/AutoExposure 🟡 set correctly
 r.DefaultFeature.MotionBlur=0;---------------🔵 EDITED
 r.DepthOfFieldQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
+r.DistanceFieldAO=1;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshdistancefields
 r.DynamicRes.OperationMode=0;
 r.EnableCameraAndMeshMotionBlur=0;
 r.FilmGrain=0;
@@ -459,7 +469,7 @@ r.GPUCrashDebugging=0;---------------🟣 debug
 r.GTSyncType=0;---------------🟣 Sync
 r.HZBOcclusion=0;
 r.IrisNormal=1;---------------🟢 0 for PERFORMANCE
-r.LensFlareQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
+r.LensFlareQuality=3;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
 r.MinRoughnessOverride=0;
 r.MotionBlurQuality=0;---------------🔵 EDITED
 r.MSAACount=0;---------------🔵 EDITED
@@ -474,7 +484,7 @@ r.NGX.DLSS.Sharpness=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
 r.NGX.LogLevel=0;---------------🟣 debug
 r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
-r.PostProcessAAQuality=0;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA 🟡 set correctly
+r.PostProcessAAQuality=6;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA 🟡 set correctly
 r.RenderTargetPoolMin=1000;---------------🟢 300 for PERFORMANCE 🔵 EDITED
 r.SceneColorFringe.Max=0;---------------🔵 EDITED
 r.SceneColorFringeQuality=1;
@@ -487,19 +497,22 @@ r.Shadow.MaxResolution=2048;---------------🟢 512,1024 for PERFORMANCE 🔵 ED
 r.SSR.HalfResSceneColor=0;---------------🟢 1 for PERFORMANCE 🔵 EDITED
 r.SSR.MaxRoughness=-1;
 r.SSR.Quality=3;---------------🟢 0 for PERFORMANCE 🔵 EDITED
-r.SSR.Temporal=0;
+r.SSR.Temporal=1;
 r.Streaming.PoolSize=6000;---------------🔵 EDITED
 r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🟣 gen5 TAAU
 r.TemporalAA.Upsampling=0;---------------🟣 TAAU 🟡 set correctly
 r.TemporalAACurrentFrameWeight=0.03;
 r.TemporalAAFilterSize=0.1;---------------🔵 EDITED 🟣 req gen5 TAAU
 r.TemporalAASamples=8;
+r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=2;
-r.ToneMapper.Sharpen=0;
+r.ToneMapper.Sharpen=1;---------------🔵 EDITED 🟡 set correctly
 r.UniformBufferPooling=1;---------------🟣 debug
+r.Upscale.Quality=3;---------------🔵 EDITED
 r.VSync=0;---------------🟣 Sync
 rhi.SyncInterval=0;---------------🟣 Sync
 rhi.SyncSlackMS=0;---------------🟣 Sync
+t.OverrideFPS=0;
 t.Streamline.Reflex.Enable=1;---------------🟣 nvidia reflex
 t.Streamline.Reflex.Mode=2;---------------🟣 reflex on with boost
 ```
