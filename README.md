@@ -419,12 +419,14 @@ DoubleClickTime=0.01;---------------🔵 EDITED
 
 #### Ultra config
 
+```python
 Use these when game is using DLSS
 r.DefaultFeature.AutoExposure=0;---------------🔵 EDITED 🟣 EyeAdaptation/AutoExposure 🟡 set correctly
 r.NGX.DLSS.AutoExposure=1;---------------🟢 0 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure 🟡 set correctly
 
 turn this off when using other sharpening methods
 r.ToneMapper.Sharpen=1;---------------🔵 EDITED 🟡 set correctly
+```
 
 ```python
 [Core.Log]
