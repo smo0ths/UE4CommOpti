@@ -1,4 +1,4 @@
-#### updated 8/1/2024 ✂️ 📋 :ramen: v1.100.19.4
+#### updated 8/1/2024 ✂️ 📋 :ramen: v1.100.19.5
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -171,6 +171,8 @@ r.LightShaftQuality=1;---------------🟢 0 for PERFORMANCE
 r.MaterialQualityLevel=1;---------------🟢 0,2 for PERFORMANCE
 r.MaxAnisotropy=8;---------------🟢 0,4 for PERFORMANCE
 r.MinRoughnessOverride=0;
+r.MinScreenRadiusForCSMDepth=0.01;
+r.MinScreenRadiusForDepthPrepass=0.03;
 r.MinScreenRadiusForLights=0.03;---------------🟢 0.04,0.06 for PERFORMANCE 🔵 EDITED
 r.MipMapLODBias=0;
 r.MotionBlurQuality=0;---------------🔵 EDITED
@@ -264,6 +266,7 @@ r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=2;
 r.TranslucencyLightingVolumeDim=32;---------------🟢 32 for PERFORMANCE 🔵 EDITED
 r.TranslucencyVolumeBlur=1;---------------🟢 0 for PERFORMANCE
+r.UITextureLODBias=0;
 r.UniformBufferPooling=1;---------------🟣 debug
 r.Upscale.Quality=1;---------------🔵 EDITED
 r.UsePreExposure=1;---------------🟣 EyeAdaptation/AutoExposure
@@ -512,6 +515,7 @@ r.Streaming.MaxEffectiveScreenSize=0;
 r.Streaming.MipBias=0;---------------🟢 1 for PERFORMANCE
 r.Streaming.PoolSize.Minimum=-1;
 r.Streaming.PoolSize.MinimumFreeMemory=-1;
+r.Streaming.PoolSize.VRAMPercentageClamp=1024;
 r.Streaming.PoolSize=8000;---------------🔵 EDITED
 r.Streaming.PoolSizeForMeshes=-1;
 r.Streaming.UseFixedPoolSize=0;
