@@ -1,4 +1,4 @@
-#### updated 8/1/2024 ✂️ 📋 :ramen: v1.100.19.5
+#### updated 8/1/2024 ✂️ 📋 :ramen: v1.100.19.6
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -185,13 +185,12 @@ r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.Reflections.TemporalAA=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
 r.NGX.LogLevel=0;---------------🟣 debug
+r.NIS.Enable=0;
 r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
 r.ParallelShadow=1;---------------🟢 0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;---------------🟢 0 for PERFORMANCE
 r.ParallelTranslucency=1;
 r.ParticleLightQuality=1;---------------🟢 0,1 for PERFORMANCE
-r.ParticleLODBias=0;
-r.ParticleMinTimeBetweenTicks=16;
 r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.RenderTargetPoolMin=300;---------------🔵 EDITED
 r.SceneColorFormat=3;---------------🟢 2,3 for PERFORMANCE
@@ -443,7 +442,7 @@ sg.ResolutionQuality=100;---------------🟡 set correctly
 r.NGX.DLSS.Quality=1;---------------🔵 EDITED 🟣 -2,-1,0,1,2 ultra perf,perf,balanced,quality,ultra quality 🟡 set correctly
 r.NGX.DLSS.Sharpness=0;---------------🟡 set correctly
 r.PostProcessAAQuality=6;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA 🟡 set correctly
-r.ScreenPercentage=-1;---------------🟡 set correctly
+r.ScreenPercentage=100;---------------🟡 set correctly
 r.TemporalAA.Upsampling=0;---------------🟣 TAAU 🟡 set correctly
 r.ToneMapper.Sharpen=1;---------------🔵 EDITED 🟡 set correctly
 r.AmbientOcclusion.Method=0;---------------🟣 SSAO,GTAO
@@ -490,8 +489,8 @@ r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.Reflections.TemporalAA=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
 r.NGX.LogLevel=0;---------------🟣 debug
+r.NIS.Enable=0;
 r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
-r.ParticleLODBias=0;
 r.RenderTargetPoolMin=1000;---------------🔵 EDITED
 r.SceneColorFormat=4;---------------🟢 2,3 for PERFORMANCE 🔵 EDITED
 r.SceneColorFringe.Max=0;---------------🔵 EDITED
