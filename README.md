@@ -1,4 +1,4 @@
-#### updated 8/24/2024 ✂️ 📋 :ramen: v1.100.19.7
+#### updated 8/24/2024 ✂️ 📋 :ramen: v1.100.19.8
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -188,6 +188,7 @@ r.ParallelShadowsNonWholeScene=0;---------------🟢 0 for PERFORMANCE
 r.ParallelTranslucency=1;
 r.ParticleLightQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.PostProcessAAQuality=4;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA
+r.Reflections.Denoiser=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED 🟣 denoiser
 r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.RenderTargetPoolMin=300;---------------🔵 EDITED
 r.SceneColorFormat=3;---------------🟢 2,3 for PERFORMANCE
@@ -412,9 +413,9 @@ bAltEnterTogglesFullscreen=1;
 bEnableMouseSmoothing=0;
 bF11TogglesFullscreen=0;
 bViewAccelerationEnabled=0;
-InitialButtonRepeatDelay=0.1;---------------🔵 EDITED 🟡def 0.2
+InitialButtonRepeatDelay=0.1;---------------🔵 EDITED 🟡 def 0.2
 ButtonRepeatDelay=0.1;
-DoubleClickTime=0.01;---------------🔵 EDITED 🟡def 0.1
+DoubleClickTime=0.01;---------------🔵 EDITED 🟡 def 0.1
 ```
 
 ---
@@ -445,7 +446,7 @@ r.AmbientOcclusion.Method=0;---------------🟣 SSAO,GTAO
 r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=100;---------------🔵 EDITED
 r.AmbientOcclusionMipLevelFactor=0.4;---------------🔵 EDITED
-r.AmbientOcclusionRadiusScale=1;---------------🔵 EDITED
+r.AmbientOcclusionRadiusScale=0.75;---------------🔵 EDITED
 r.AmbientOcclusionStaticFraction=1;---------------🟢 0 for PERFORMANCE
 r.AOQuality=2;---------------🟢 0,1 for PERFORMANCE 🟣 req distancefieldao
 r.BlurGBuffer=0;---------------🔵 EDITED
@@ -490,6 +491,7 @@ r.NGX.LogLevel=0;---------------🟣 debug
 r.NIS.Enable=0;
 r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
 r.PostProcessAAQuality=6;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA
+r.Reflections.Denoiser=2;---------------🟢 0 for PERFORMANCE 🟣 denoiser
 r.RenderTargetPoolMin=1000;---------------🔵 EDITED
 r.SceneColorFormat=4;---------------🟢 2,3 for PERFORMANCE 🔵 EDITED
 r.SceneColorFringe.Max=0;---------------🔵 EDITED
@@ -506,7 +508,7 @@ r.Shadow.RadiusThreshold=0.03;---------------🟢 0.04,0.05 for PERFORMANCE 🔵
 r.ShadowQuality=4;---------------🟢 3 for PERFORMANCE 🔵 EDITED
 r.SkeletalMeshLODBias=0;---------------🟢 1 for PERFORMANCE
 r.SSR.HalfResSceneColor=0;---------------🟢 1 for PERFORMANCE 🔵 EDITED
-r.SSR.MaxRoughness=0.9;---------------🔵 EDITED
+r.SSR.MaxRoughness=0.7;---------------🔵 EDITED
 r.SSR.Quality=3;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.SSR.Temporal=1;
 r.Streaming.FramesForFullUpdate=10;---------------🔵 EDITED
