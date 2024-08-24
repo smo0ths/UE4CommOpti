@@ -1,4 +1,4 @@
-#### updated 8/1/2024 ✂️ 📋 :ramen: v1.100.19.6
+#### updated 8/24/2024 ✂️ 📋 :ramen: v1.100.19.7
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -18,8 +18,6 @@
 
 ##### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
 
-##### check 🟡 and set correctly according to recommendations
-
 ---
 
 <details><summary>Open Engine.ini and copy paste under lines in the file</summary>
@@ -35,6 +33,8 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini
 <br>
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini
 </p>
 </details>
 
@@ -57,13 +57,7 @@ sg.PostProcessQuality=2;---------------🟢 0 for PERFORMANCE
 sg.ShadowQuality=2;---------------🟢 0 for PERFORMANCE
 sg.TextureQuality=2;---------------🟢 0 for PERFORMANCE
 sg.ViewDistanceQuality=2;---------------🟢 0 for PERFORMANCE
-sg.ResolutionQuality=50;---------------🟡 set correctly
-r.NGX.DLSS.Quality=-1;---------------🔵 EDITED 🟣 -2,-1,0,1,2 ultra perf,perf,balanced,quality,ultra quality 🟡 set correctly
-r.NGX.DLSS.Sharpness=0;---------------🟡 set correctly
-r.PostProcessAAQuality=4;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA 🟡 set correctly
-r.ScreenPercentage=50;---------------🟡 set correctly
-r.TemporalAA.Upsampling=1;---------------🟣 TAAU 🟡 set correctly
-r.ToneMapper.Sharpen=0;---------------🟡 set correctly
+sg.ResolutionQuality=100;---------------🟢 50,70 for TAAU
 foliage.DensityScale=1;---------------🟢 0.6 for PERFORMANCE
 foliage.DitheredLOD=1;---------------🟢 1 for PERFORMANCE
 foliage.LODDistanceScale=1;
@@ -158,7 +152,7 @@ r.HeightFieldShadowing=0;---------------🟢 0 for PERFORMANCE
 r.HFShadowQuality=0;---------------🟢 0,1 for PERFORMANCE 🟣 req heightfieldshadowing
 r.HLOD.DistanceScale=0.8;
 r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
-r.HZBOcclusion=0;
+r.HZBOcclusion=1;---------------🟢 0 for PERFORMANCE
 r.IrisNormal=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
 r.LensFlareQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
@@ -182,7 +176,9 @@ r.NGX.DLSS.AutoExposure=1;---------------🟣 EyeAdaptation/AutoExposure
 r.NGX.DLSS.DilateMotionVectors=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.NGX.DLSS.PreferNISSharpen=0;---------------🔵 EDITED
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
+r.NGX.DLSS.Quality=-1;---------------🔵 EDITED 🟣 -2,-1,0,1,2 ultra perf,perf,balanced,quality,ultra quality
 r.NGX.DLSS.Reflections.TemporalAA=0;
+r.NGX.DLSS.Sharpness=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
 r.NGX.LogLevel=0;---------------🟣 debug
 r.NIS.Enable=0;
@@ -191,11 +187,13 @@ r.ParallelShadow=1;---------------🟢 0 for PERFORMANCE
 r.ParallelShadowsNonWholeScene=0;---------------🟢 0 for PERFORMANCE
 r.ParallelTranslucency=1;
 r.ParticleLightQuality=1;---------------🟢 0,1 for PERFORMANCE
+r.PostProcessAAQuality=4;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA
 r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.RenderTargetPoolMin=300;---------------🔵 EDITED
 r.SceneColorFormat=3;---------------🟢 2,3 for PERFORMANCE
 r.SceneColorFringe.Max=0;---------------🔵 EDITED
 r.SceneColorFringeQuality=1;
+r.ScreenPercentage=100;---------------🟢 50,70 for TAAU
 r.SecondaryScreenPercentage.GameViewport=0;---------------🟢 83.33 for PERFORMANCE
 r.ShaderDevelopmentMode=0;---------------🟣 debug
 r.Shadow.CachedShadowsCastFromMovablePrimitives=1;---------------🟢 0 for PERFORMANCE 🟣 movable light shadows
@@ -204,8 +202,6 @@ r.Shadow.CacheWPOPrimitives=0;
 r.Shadow.CSM.MaxCascades=2;---------------🟢 1,2 for PERFORMANCE 🔵 EDITED
 r.Shadow.CSM.TransitionScale=1;
 r.Shadow.DistanceScale=1;
-r.Shadow.FarShadowDistanceOverride=0;
-r.Shadow.FarShadowStaticMeshLODBias=0;
 r.Shadow.FilterMethod=0;---------------🟢 0 for PERFORMANCE 🟣 PCSS shadows
 r.Shadow.ForceSingleSampleShadowingFromStationary=1;
 r.Shadow.MaxCSMResolution=2048;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
@@ -255,6 +251,7 @@ r.SubsurfaceScattering=1;---------------🟢 0 for PERFORMANCE
 r.SupportAnisotropicMaterials=1;---------------🟢 0 for PERFORMANCE
 r.SupportMaterialLayers=1;---------------🟢 0 for PERFORMANCE
 r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🟣 gen5 TAAU
+r.TemporalAA.Upsampling=0;---------------🟣 TAAU
 r.TemporalAACurrentFrameWeight=0.03;
 r.TemporalAAFilterSize=0.1;---------------🔵 EDITED 🟣 req gen5 TAAU
 r.TemporalAASamples=8;
@@ -263,6 +260,7 @@ r.TiledDeferredShading=1;---------------🟢 0 for PERFORMANCE 🔵 gpu lights
 r.Tonemapper.GrainQuantization=1;
 r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=2;
+r.Tonemapper.Sharpen=2;---------------🔵 EDITED
 r.TranslucencyLightingVolumeDim=32;---------------🟢 32 for PERFORMANCE 🔵 EDITED
 r.TranslucencyVolumeBlur=1;---------------🟢 0 for PERFORMANCE
 r.UITextureLODBias=0;
@@ -328,6 +326,8 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 <br>
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
+%localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/GameUserSettings.ini
 </p>
 </details>
 
@@ -388,7 +388,7 @@ WakeSim=(Value=?)
 
 ---
 
-<details><summary>Open Input.ini and edit input commands or add them</summary>
+<details><summary>Open Input.ini and edit input commands or add, defaults are probably best</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
@@ -401,6 +401,8 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Input.ini
 <br>
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Input.ini
+<br>
+%localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Input.ini
 </p>
 </details>
 
@@ -410,9 +412,9 @@ bAltEnterTogglesFullscreen=1;
 bEnableMouseSmoothing=0;
 bF11TogglesFullscreen=0;
 bViewAccelerationEnabled=0;
-InitialButtonRepeatDelay=0.1;---------------🔵 EDITED
+InitialButtonRepeatDelay=0.1;---------------🔵 EDITED 🟡def 0.2
 ButtonRepeatDelay=0.1;
-DoubleClickTime=0.01;---------------🔵 EDITED
+DoubleClickTime=0.01;---------------🔵 EDITED 🟡def 0.1
 ```
 
 ---
@@ -438,13 +440,7 @@ sg.PostProcessQuality=3;---------------🟢 0 for PERFORMANCE
 sg.ShadowQuality=3;---------------🟢 0 for PERFORMANCE
 sg.TextureQuality=3;---------------🟢 0 for PERFORMANCE
 sg.ViewDistanceQuality=3;---------------🟢 0 for PERFORMANCE
-sg.ResolutionQuality=100;---------------🟡 set correctly
-r.NGX.DLSS.Quality=1;---------------🔵 EDITED 🟣 -2,-1,0,1,2 ultra perf,perf,balanced,quality,ultra quality 🟡 set correctly
-r.NGX.DLSS.Sharpness=0;---------------🟡 set correctly
-r.PostProcessAAQuality=6;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA 🟡 set correctly
-r.ScreenPercentage=100;---------------🟡 set correctly
-r.TemporalAA.Upsampling=0;---------------🟣 TAAU 🟡 set correctly
-r.ToneMapper.Sharpen=1;---------------🔵 EDITED 🟡 set correctly
+sg.ResolutionQuality=100;---------------🟢 50,70 for TAAU
 r.AmbientOcclusion.Method=0;---------------🟣 SSAO,GTAO
 r.AmbientOcclusionLevels=2;---------------🟢 0,1 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=100;---------------🔵 EDITED
@@ -469,7 +465,7 @@ r.FinishCurrentFrame=0;
 r.gpucrash.collectionenable=0;---------------🟣 debug
 r.GPUCrashDebugging=0;---------------🟣 debug
 r.GTSyncType=0;---------------🟣 Sync
-r.HZBOcclusion=0;
+r.HZBOcclusion=1;---------------🟢 0 for PERFORMANCE
 r.IrisNormal=1;---------------🟢 0 for PERFORMANCE
 r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
 r.LensFlareQuality=3;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
@@ -486,19 +482,24 @@ r.NGX.DLSS.AutoExposure=1;---------------🟣 EyeAdaptation/AutoExposure
 r.NGX.DLSS.DilateMotionVectors=1;---------------🟢 0 for PERFORMANCE
 r.NGX.DLSS.PreferNISSharpen=0;---------------🔵 EDITED
 r.NGX.DLSS.Quality.Auto=0;---------------🟢 0 for PERFORMANCE
+r.NGX.DLSS.Quality=1;---------------🔵 EDITED 🟣 -2,-1,0,1,2 ultra perf,perf,balanced,quality,ultra quality
 r.NGX.DLSS.Reflections.TemporalAA=0;
+r.NGX.DLSS.Sharpness=0;
 r.NGX.DLSS.WaterReflections.TemporalAA=0;
 r.NGX.LogLevel=0;---------------🟣 debug
 r.NIS.Enable=0;
 r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
+r.PostProcessAAQuality=6;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA
 r.RenderTargetPoolMin=1000;---------------🔵 EDITED
 r.SceneColorFormat=4;---------------🟢 2,3 for PERFORMANCE 🔵 EDITED
 r.SceneColorFringe.Max=0;---------------🔵 EDITED
 r.SceneColorFringeQuality=1;
+r.ScreenPercentage=100;---------------🟢 50,70 for TAAU
 r.SecondaryScreenPercentage.GameViewport=0;---------------🟢 83.33 for PERFORMANCE
 r.ShaderDevelopmentMode=0;---------------🟣 debug
 r.Shadow.CSM.MaxCascades=4;---------------🟢 1,2 for PERFORMANCE 🔵 EDITED
 r.Shadow.FarShadowStaticMeshLODBias=0;
+r.Shadow.FilterMethod=0;---------------🟢 0 for PERFORMANCE 🟣 PCSS shadows
 r.Shadow.MaxCSMResolution=2048;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
 r.Shadow.MaxResolution=2048;---------------🟢 512,1024 for PERFORMANCE 🔵 EDITED
 r.Shadow.RadiusThreshold=0.03;---------------🟢 0.04,0.05 for PERFORMANCE 🔵 EDITED
@@ -519,12 +520,13 @@ r.Streaming.PoolSize=8000;---------------🔵 EDITED
 r.Streaming.PoolSizeForMeshes=-1;
 r.Streaming.UseFixedPoolSize=0;
 r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🟣 gen5 TAAU
+r.TemporalAA.Upsampling=0;---------------🟣 TAAU
 r.TemporalAACurrentFrameWeight=0.03;
 r.TemporalAAFilterSize=0.1;---------------🔵 EDITED 🟣 req gen5 TAAU
 r.TemporalAASamples=8;
 r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=2;
-r.UITextureLODBias=0;
+r.Tonemapper.Sharpen=2;---------------🔵 EDITED
 r.UniformBufferPooling=1;---------------🟣 debug
 r.Upscale.Quality=3;---------------🔵 EDITED
 r.VSync=0;---------------🟣 Sync
@@ -550,6 +552,8 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 %localappdata%/SessionGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 <br>
 %localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+<br>
+%localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
 </p>
 </details>
 
