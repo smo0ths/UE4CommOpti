@@ -4,7 +4,7 @@
 
 ##### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
-##### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
+##### my configs are trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
 ##### 2560x1440 (~2k) use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
@@ -39,6 +39,8 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 %localappdata%/PostScriptum/Saved/Config/WindowsNoEditor/Engine.ini
 </p>
 </details>
+
+#### High config
 
 ```python
 [Core.Log]
