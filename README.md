@@ -1,4 +1,4 @@
-#### updated 8/25/2024 ✂️ 📋 :ramen: v1.100.19.9
+#### updated 8/30/2024 ✂️ 📋 :ramen: v1.100.19.9.001
 
 ##### for UE4 games for reference/customization/optimization/learning
 
@@ -15,6 +15,8 @@
 ##### Recommended negative LOD bias -1/-0.6 or 0 for PERFORMANCE (set by nvidiaProfileInspector)
 
 ##### 77%(ultra quality) 87%(ultra plus) are good options for small performance boosts
+
+##### test r.HZBOcclusion=?; (Hierarchical z-buffer occlusion culling) per game bias
 
 ##### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
 
@@ -102,11 +104,11 @@ r.ContactShadows=0;---------------🟢 0 for PERFORMANCE
 r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
 r.D3D12.GPUCrashDebuggingMode=0;---------------🟣 debug
 r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
-r.DefaultFeature.AmbientOcclusionStaticFraction=0;
+r.DefaultFeature.AmbientOcclusionStaticFraction=0;---------------🟢 0 for PERFORMANCE
 r.DefaultFeature.AutoExposure.Method=1;---------------🟣 EyeAdaptation/AutoExposure
 r.DefaultFeature.AutoExposure=1;---------------🟣 EyeAdaptation/AutoExposure
 r.DefaultFeature.MotionBlur=0;---------------🔵 EDITED
-r.DepthOfFieldQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
+r.DepthOfFieldQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.DetailMode=1;---------------🟢 0,1 for PERFORMANCE
 r.DFFullResolution=0;---------------🟢 0 for PERFORMANCE
 r.DFShadowQuality=1;---------------🟢 0,1,2 for PERFORMANCE 🔵 EDITED 🟣 req distancefieldshadowing
@@ -152,10 +154,10 @@ r.HeightFieldShadowing=0;---------------🟢 0 for PERFORMANCE
 r.HFShadowQuality=0;---------------🟢 0,1 for PERFORMANCE 🟣 req heightfieldshadowing
 r.HLOD.DistanceScale=0.8;
 r.HLOD.ForceDisableCastDynamicShadow=0;---------------🟢 1 for PERFORMANCE
-r.HZBOcclusion=1;---------------🟢 0 for PERFORMANCE
+r.HZBOcclusion=0;---------------🟢 0 for PERFORMANCE 🟣 Hierarchical z-buffer occlusion culling
 r.IrisNormal=0;---------------🟢 0 for PERFORMANCE 🔵 EDITED
 r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
-r.LensFlareQuality=0;---------------🟢 0,1 for PERFORMANCE 🔵 EDITED
+r.LensFlareQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.LightFunctionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1;---------------🟢 0.6 for PERFORMANCE
 r.LightShaftBlurPasses=2;---------------🔵 EDITED
@@ -432,7 +434,7 @@ bSmoothFrameRate=0;
 bUseFixedFrameRate=0;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=100;---------------🔵 EDITED 🟣 texturepool cache
+PoolSizeVRAMPercentage=90;---------------🔵 EDITED 🟣 texturepool cache
 
 [ConsoleVariables]
 sg.EffectsQuality=3;---------------🟢 0,1,2 for PERFORMANCE
@@ -454,14 +456,14 @@ r.CompileShadersForDevelopment=1;---------------🟢 1 for PERFORMANCE
 r.D3D11.UseAllowTearing=1;---------------🟣 dxgi flip mode
 r.D3D12.GPUCrashDebuggingMode=0;---------------🟣 debug
 r.D3D12.UseAllowTearing=1;---------------🟣 dxgi flip mode
-r.DefaultFeature.AmbientOcclusionStaticFraction=1;
+r.DefaultFeature.AmbientOcclusionStaticFraction=1;---------------🟢 0 for PERFORMANCE
 r.DefaultFeature.AutoExposure=1;---------------🟣 EyeAdaptation/AutoExposure
 r.DefaultFeature.MotionBlur=0;---------------🔵 EDITED
-r.DepthOfFieldQuality=2;---------------🟢 0,1 for PERFORMANCE
+r.DepthOfFieldQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.DistanceFieldAO=1;---------------🟢 0 for PERFORMANCE 🟣 req generatemeshdistancefields
 r.DynamicRes.OperationMode=0;
 r.EnableCameraAndMeshMotionBlur=0;
-r.EyeAdaptationQuality=2;---------------🟢 1 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure
+r.EyeAdaptationQuality=1;---------------🟢 1 for PERFORMANCE 🟣 EyeAdaptation/AutoExposure
 r.FilmGrain=0;
 r.FinishCurrentFrame=0;
 r.gpucrash.collectionenable=0;---------------🟣 debug
@@ -470,8 +472,8 @@ r.GTSyncType=0;---------------🟣 Sync
 r.HZBOcclusion=1;---------------🟢 0 for PERFORMANCE
 r.IrisNormal=1;---------------🟢 0 for PERFORMANCE
 r.LandscapeLODBias=0;---------------🟢 1 for PERFORMANCE
-r.LensFlareQuality=2;---------------🟢 0,1 for PERFORMANCE
-r.LightFunctionQuality=2;---------------🟢 0,1 for PERFORMANCE
+r.LensFlareQuality=1;---------------🟢 0,1 for PERFORMANCE
+r.LightFunctionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.MaxAnisotropy=16;---------------🟢 0,4 for PERFORMANCE
 r.MinRoughnessOverride=0;
 r.MinScreenRadiusForCSMDepth=0.01;
@@ -494,7 +496,7 @@ r.OneFrameThreadLag=1;---------------🟢 1 for PERFORMANCE
 r.PostProcessAAQuality=6;---------------🔵 EDITED 🟣 0 off 1,2 FXAA 3,4,5,6 TAA
 r.Reflections.Denoiser.TemporalAccumulation=0;
 r.Reflections.Denoiser=0;---------------🟢 0 for PERFORMANCE 🟣 denoiser
-r.RefractionQuality=2;---------------🟢 0,1 for PERFORMANCE
+r.RefractionQuality=1;---------------🟢 0,1 for PERFORMANCE
 r.RenderTargetPoolMin=1000;---------------🔵 EDITED
 r.SceneColorFormat=4;---------------🟢 2,3 for PERFORMANCE 🔵 EDITED
 r.SceneColorFringe.Max=0;---------------🔵 EDITED
@@ -522,7 +524,7 @@ r.Streaming.MipBias=0;---------------🟢 1 for PERFORMANCE
 r.Streaming.PoolSize.Minimum=-1;
 r.Streaming.PoolSize.MinimumFreeMemory=-1;
 r.Streaming.PoolSize.VRAMPercentageClamp=1024;
-r.Streaming.PoolSize=8000;---------------🔵 EDITED
+r.Streaming.PoolSize=6000;---------------🔵 EDITED
 r.Streaming.PoolSizeForMeshes=-1;
 r.Streaming.UseFixedPoolSize=0;
 r.TemporalAA.Algorithm=0;---------------🟢 0 for PERFORMANCE 🟣 gen5 TAAU
@@ -534,7 +536,7 @@ r.Tonemapper.MergeWithUpscale.Mode=1;
 r.Tonemapper.Quality=2;
 r.Tonemapper.Sharpen=2;---------------🔵 EDITED
 r.UniformBufferPooling=1;---------------🟣 debug
-r.Upscale.Quality=3;---------------🔵 EDITED
+r.Upscale.Quality=1;---------------🔵 EDITED
 r.VolumetricFog.GridPixelSize=16;---------------🔵 EDITED
 r.VolumetricFog.GridSizeZ=64;
 r.VolumetricFog.HistoryMissSupersampleCount=1;---------------🔵 EDITED
