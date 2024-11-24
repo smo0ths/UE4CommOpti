@@ -4,7 +4,7 @@
 
 #### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
-#### my config are trying to be quality and perform well for any UE4/5 game, it might not be perfectly optimal for a specific game
+#### my config is trying to be quality and perform well for any UE4/5 game, it might not be perfectly optimal for a specific game
 
 #### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
 
