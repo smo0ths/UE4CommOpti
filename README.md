@@ -1,30 +1,36 @@
-#### updated 11/24/2024 ✂️ 📋 :ramen: v1.200.02
----
-#### for UE4 and UE5* games for reference/customization/optimization/learning
----
+## updated 11/24/2024 ✂️ 📋 :ramen: v1.200.02
+
+### for UE4 and UE5* games for reference/customization/optimization/learning
+
 #### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
----
+
 #### my config are trying to be quality and perform well for any UE4/5 game, it might not be perfectly optimal for a specific game
----
-#### you will have to adjust settings most likely per game
----
+
 #### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
----
+
 #### 2560x1440 (~2k) use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
+
 #### 3328x1872 (3.25K) use 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
+
 #### 3840x2160 (~4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
+
 #### negative LOD bias -1/-0.6 or 0 for PERFORMANCE (0 is best on proper mipmaps/textures) (set by nvidiaProfileInspector)
-#### sg.ResolutionQuality=70; r.ScreenPercentage=70; r.ScreenPercentage.Default=70; r.SecondaryScreenPercentage.GameViewport=83.33; can help by forcing scaling on some games
-#### check 🟢 options for more fps
+
 ---
-#### Open Engine.ini and copy pasta %localappdata%
+
+## Open Engine.ini and copy pasta %localappdata%
+
 #### or UnrealPak method (pakchunk9999-Mods_CustomMod_P\Engine\Config\Windows\WindowsEngine.ini)
-#### High config (works with UE5*)
----
+
 #### Turn these off (0) in most games for performance unless its default in the project (game)
-#### r.Lumen.DiffuseIndirect.Allow=0; 🔵 UE5 🔵 lumen global illumination
-#### r.Lumen.Reflections.Allow=0; 🔵 UE5 🔵 lumen reflections
----
+```python
+r.Lumen.DiffuseIndirect.Allow=0; 🔵 UE5 🔵 lumen global illumination
+r.Lumen.Reflections.Allow=0; 🔵 UE5 🔵 lumen reflections
+```
+
+#### check 🟢 options for more fps
+
+#### High config (works with UE5*)
 
 ```python
 [Core.Log]
@@ -326,8 +332,8 @@ t.Streamline.Reflex.Mode=2; 🔵 reflex on with boost
 
 ---
 
-#### Open Input.ini and copy pasta %localappdata%
-#### or UnrealPak method (pakchunk9999-Mods_CustomMod_P\Engine\Config\Windows\WindowsInput.ini)
+### Open Input.ini and copy pasta %localappdata%
+### or UnrealPak method (pakchunk9999-Mods_CustomMod_P\Engine\Config\Windows\WindowsInput.ini)
 
 ```python
 [/Script/Engine.InputSettings]
@@ -342,8 +348,8 @@ DoubleClickTime=0.01; ⚪️ EDITED 🟡 def 0.1
 
 ---
 
-#### Open GameUserSettings.ini these commands can overwrite your config if they are here %localappdata%
-#### you can turn down used scalability groups here or in game if they are being used
+### Open GameUserSettings.ini these commands can overwrite your config if they are here %localappdata%
+### you can turn down used scalability groups here or in game if they are being used
 
 ```python
 [ScalabilityGroups]
@@ -429,7 +435,7 @@ WakeSim=(Value=?)
 
 ---
 
-#### Open DeviceProfiles.ini for textures lods, mess around or just skip %localappdata%
+### Open DeviceProfiles.ini for textures lods, mess around or just skip %localappdata%
 
 ```python
 [/Script/Engine.TextureLODSettings]
