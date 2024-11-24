@@ -1,15 +1,15 @@
-#### updated 11/23/2024 ✂️ 📋 :ramen: v1.200.00
-
-##### for UE4 and UE5* games for reference/customization/optimization/learning
-
-##### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
-
-##### my configs are trying to be quality and perform well for any UE4/5 game, it might not be perfectly optimal for a specific game
-
-##### you will have to adjust settings most likely per game
-
-##### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
-
+#### updated 11/24/2024 ✂️ 📋 :ramen: v1.200.01
+---
+#### for UE4 and UE5* games for reference/customization/optimization/learning
+---
+#### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
+---
+#### my config are trying to be quality and perform well for any UE4/5 game, it might not be perfectly optimal for a specific game
+---
+#### you will have to adjust settings most likely per game
+---
+#### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
+---
 #### 2560x1440 (~2k) use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
 #### 3328x1872 (3.25K) use 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
 #### 3840x2160 (~4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
@@ -17,19 +17,25 @@
 #### sg.ResolutionQuality=70; r.ScreenPercentage=70; r.ScreenPercentage.Default=70; r.SecondaryScreenPercentage.GameViewport=83.33; can help by forcing scaling on some games
 #### check 🟢 options for more fps
 ---
-
 #### Open Engine.ini and copy pasta %localappdata%
 #### or UnrealPak method (pakchunk9999-Mods_CustomMod_P\Engine\Config\Windows\WindowsEngine.ini)
-
-##### High config (works with UE5*)
-
-### Turn these off (0) in most games for performance unless its default in the project (game)
-### r.Lumen.DiffuseIndirect.Allow=0; 🔵 UE5 🔵 lumen global illumination
-### r.Lumen.Reflections.Allow=0; 🔵 UE5 🔵 lumen reflections
+#### High config (works with UE5*)
+---
+#### Turn these off (0) in most games for performance unless its default in the project (game)
+#### r.Lumen.DiffuseIndirect.Allow=0; 🔵 UE5 🔵 lumen global illumination
+#### r.Lumen.Reflections.Allow=0; 🔵 UE5 🔵 lumen reflections
+---
 
 ```python
 [Core.Log]
 Global=off;
+
+[Audio]
+bEnableBinauralRendering=1;
+bEnableHRTF=1;
+CommonAudioPoolSize=0; 🟡 def 0
+MaxChannels=0; 🟡 def 0
+UseAudioThread=1;
 
 [/Script/Engine.Engine]
 bPauseOnLossOfFocus=0;
@@ -45,7 +51,9 @@ foliage.DensityScale=1; 🟢 0.6 for PERFORMANCE 🟡 def 1
 foliage.DitheredLOD=1; 🟡 def 1
 foliage.LODDistanceScale=1; 🟡 def 1
 foliage.MinimumScreenSize=0.0001; ⚪️ EDITED
+fx.Budget.Enabled=1; 🔵 experimental
 fx.Niagara.QualityLevel=2; 🔵 0,1,2,3,4 low,med,high,ultra,cine
+fx.Niagara.UseGlobalFXBudget=1; 🔵 experimental
 fx.NiagaraAllowRuntimeScalabilityChanges=1;
 grass.CullDistanceScale=1; 🟡 def 1
 grass.DensityScale=0.8; 🟢 0.6 for PERFORMANCE
@@ -100,7 +108,7 @@ r.DistanceFieldAO=1; 🟢 0 for PERFORMANCE 🔵 req generatemeshdistancefields
 r.DistanceFields.AtlasSizeXY=512;
 r.DistanceFields.AtlasSizeZ=1024;
 r.DistanceFields.ForceMaxAtlasSize=1; ⚪️ EDITED
-r.DistanceFields.MaxPerMeshResolution=256; 🟢 128 for PERFORMANCE 🟡 def 256
+r.DistanceFields.MaxPerMeshResolution=128; 🟢 128 for PERFORMANCE ⚪️ EDITED 🟡 def 256
 r.DistanceFieldShadowing=1; 🟢 0 for PERFORMANCE 🔵 req generatemeshdistancefields
 r.DOF.Gather.AccumulatorQuality=0; ⚪️ EDITED 🟡 def 1
 r.DOF.Gather.EnableBokehSettings=0; ⚪️ EDITED 🟡 def 1
@@ -117,6 +125,7 @@ r.DOF.TemporalAAQuality=0; ⚪️ EDITED 🟡 def 1
 r.DynamicRes.OperationMode=0;
 r.EmitterSpawnRateScale=1; 🟢 0.125,0.25 for PERFORMANCE 🟡 def 1
 r.EnableCameraAndMeshMotionBlur=0;
+r.EyeAdaptationQuality=2; 🟡 def 2
 r.FilmGrain=0;
 r.Filter.SizeScale=1; 🟡 def 1
 r.FinishCurrentFrame=0;
@@ -159,24 +168,25 @@ r.MinScreenRadiusForLights=0.03; 🟢 0.04,0.06 for PERFORMANCE 🟡 def 0.03
 r.MipMapLODBias=0; 🟡 def 0
 r.MotionBlurQuality=0; ⚪️ EDITED
 r.Nanite=1; 🔵 UE5
+r.NGX.DLSS.AutoExposure=1; 🟡 def 1
 r.NGX.DLSS.DenoiserMode=0; 🟡 def 0 🔵 UE5
-r.NGX.DLSS.DilateMotionVectors=1; 🟢 0 for PERFORMANCE
-r.NGX.DLSS.PreferNISSharpen=0; ⚪️ EDITED
+r.NGX.DLSS.DilateMotionVectors=1; 🟢 0 for PERFORMANCE 🟡 def 1
+r.NGX.DLSS.PreferNISSharpen=0; ⚪️ EDITED 🟡 def 1
 r.NGX.DLSS.Quality.Auto=0; 🟢 0 for PERFORMANCE
-r.NGX.DLSS.Quality=1; ⚪️ EDITED 🔵 -2,-1,0,1,2 ultra perf,perf,balanced,quality,ultra quality
-r.NGX.DLSS.Reflections.TemporalAA=0;
-r.NGX.DLSS.Sharpness=0;
-r.NGX.DLSS.WaterReflections.TemporalAA=0;
-r.NGX.LogLevel=0; 🔵 debug
-r.NIS.Enable=0;
+r.NGX.DLSS.Quality=1; ⚪️ EDITED 🔵 -2,-1,0,1,2 ultra perf,perf,balanced,quality,ultra
+r.NGX.DLSS.Reflections.TemporalAA=1; 🔵 TAA pass on the denoised reflections
+r.NGX.DLSS.Sharpness=0; 🟡 def 0
+r.NGX.DLSS.WaterReflections.TemporalAA=1; 🔵 TAA pass on the denoised water reflections
+r.NGX.LogLevel=0; ⚪️ EDITED 🟡 def 1 🔵 debug
+r.NIS.Enable=0; 🔵 nvidia image scaling
 r.OneFrameThreadLag=1; 🟢 1 for PERFORMANCE
 r.ParallelShadow=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.ParallelShadowsNonWholeScene=0; 🟡 def 0
 r.ParallelTranslucency=1; 🟡 def 1
 r.ParticleLightQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
 r.PSOWarmup.WarmupMaterials=1; 🔵 after compiling shaders once set 0 for faster loading
-r.Reflections.Denoiser.TemporalAccumulation=0; ⚪️ EDITED 🟡 def 1 🔵 denoiser
-r.Reflections.Denoiser=0; 🟢 0 for PERFORMANCE ⚪️ EDITED 🟡 def 2 🔵 denoiser
+r.Reflections.Denoiser.TemporalAccumulation=1; 🟡 def 1 🔵 denoiser
+r.Reflections.Denoiser=1; 🟢 0 for PERFORMANCE ⚪️ EDITED 🟡 def 2 🔵 denoiser
 r.RefractionQuality=2; 🟢 0 for PERFORMANCE 🟡 def 2
 r.RenderTargetPoolMin=400; 🟡 def 400
 r.SceneColorFormat=3; 🟢 2,3 for PERFORMANCE ⚪️ EDITED 🟡 def 4
@@ -249,20 +259,19 @@ r.Streaming.UseNewMetrics=1; 🟡 def 1
 r.SubsurfaceScattering=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.SupportMaterialLayers=1; 🟢 0 for PERFORMANCE
 r.TemporalAA.Upsampling=1; 🟡 def 1 🔵 TAAU
-r.TemporalAACurrentFrameWeight=0.04; ⚪️ EDITED 🟡 def 0.04
+r.TemporalAACurrentFrameWeight=0.03; ⚪️ EDITED 🟡 def 0.04
 r.TemporalAAFilterSize=1; 🟡 def 1 🔵 req gen5 TAAU
 r.TemporalAASamples=8; 🟡 def 8
 r.TessellationAdaptivePixelsPerTriangle=999999; 🟢 999999 for PERFORMANCE ⚪️ EDITED 🟡 def 48
 r.TiledDeferredShading=1; 🟢 0 for PERFORMANCE 🔵 gpu lights
 r.Tonemapper.GrainQuantization=0; ⚪️ EDITED 🟡 def 1
-r.Tonemapper.MergeWithUpscale.Mode=1;
-r.Tonemapper.Quality=2;
+r.Tonemapper.Quality=2; ⚪️ EDITED 🟡 def 5
 r.Tonemapper.Sharpen=-1; 🟡 def -1
 r.TranslucencyLightingVolumeDim=48; 🟢 32,48 for PERFORMANCE ⚪️ EDITED 🟡 def 64
 r.TranslucencyVolumeBlur=1; 🟢 0 for PERFORMANCE
 r.UniformBufferPooling=1; 🔵 debug
 r.Upscale.Quality=3; 🟡 def 3
-r.UseClusteredDeferredShading=1; ⚪️ EDITED 🟡 def 0 🔵 UE5 🔵 with Shadow.Virtual.OnePassProjection
+r.UseClusteredDeferredShading=0; 🟡 def 0 🔵 UE5 🔵 with Shadow.Virtual.OnePassProjection
 r.ViewDistanceScale=0.8; 🟢 0.8 for PERFORMANCE
 r.VolumetricCloud.DisableCompute=0; 🟡 def 0
 r.VolumetricCloud.EnableAerialPerspectiveSampling=0; 🟡 def 0
@@ -270,19 +279,19 @@ r.VolumetricCloud.EnableAtmosphericLightsSampling=1; 🟢 0 for PERFORMANCE 🟡
 r.VolumetricCloud.EnableDistantSkyLightSampling=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.VolumetricCloud.EnableLocalLightsSampling=0; 🟡 def 0
 r.VolumetricCloud.HighQualityAerialPerspective=0; 🟡 def 0
-r.VolumetricCloud.Shadow.SampleAtmosphericLightShadowmap=1; 🟢 0 for PERFORMANCE 🟡 def 1
+r.VolumetricCloud.Shadow.SampleAtmosphericLightShadowmap=0; 🟢 0 for PERFORMANCE ⚪️ EDITED 🟡 def 1
 r.VolumetricCloud.ShadowMap=2048; 🟢 1024 for PERFORMANCE 🟡 def 2048
 r.VolumetricCloud.SkyAO=0; 🟢 0 for PERFORMANCE ⚪️ EDITED 🟡 def 1
 r.VolumetricFog.GridPixelSize=16; 🟡 def 16
 r.VolumetricFog.GridSizeZ=64; 🟡 def 64
-r.VolumetricFog.HistoryMissSupersampleCount=4; 🟢 1 for PERFORMANCE ⚪️ EDITED 🟡 def 4
-r.VolumetricFog.HistoryWeight=0.9; 🟡 def 0.9
+r.VolumetricFog.HistoryMissSupersampleCount=1; 🟢 1 for PERFORMANCE ⚪️ EDITED 🟡 def 4
+r.VolumetricFog.HistoryWeight=0.95; ⚪️ EDITED 🟡 def 0.9
 r.VolumetricFog.Jitter=1;
 r.VolumetricFog.TemporalReprojection=1; 🟡 def 1
 r.VolumetricFog=1; 🟢 0 for PERFORMANCE
 r.VSync=0; 🔵 Sync
 r.VT.MaxAnisotropy=4;
-r.Water.EnableShallowWaterSimulation=0; 🟢 0 for PERFORMANCE ⚪️ EDITED 🟡 def 1
+r.Water.EnableShallowWaterSimulation=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.Water.EnableUnderwaterPostProcess=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.Water.SingleLayer.DepthPrepass=1; 🟡 def 1
 r.Water.SingleLayer.Reflection=1; 🟢 0 for PERFORMANCE 🟡 def 1
