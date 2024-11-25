@@ -36,13 +36,6 @@ r.Lumen.Reflections.Allow=0; 🔵 UE5 🔵 lumen reflections
 [Core.Log]
 Global=off;
 
-[Audio]
-bEnableBinauralRendering=1;
-bEnableHRTF=1;
-CommonAudioPoolSize=0; 🟡 def 0
-MaxChannels=0; 🟡 def 0
-UseAudioThread=1;
-
 [/Script/Engine.Engine]
 bPauseOnLossOfFocus=0;
 bSmoothFrameRate=0;
