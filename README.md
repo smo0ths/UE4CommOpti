@@ -212,7 +212,6 @@ r.ReflectionEnvironment=1; 🟡 def 1
 r.Reflections.Denoiser.TemporalAccumulation=1; 🟡 def 1 🔵 denoiser
 r.Reflections.Denoiser=2; 🟢 0 for PERFORMANCE 🟡 def 2 🔵 denoiser
 r.RefractionQuality=2; 🟢 0 for PERFORMANCE 🟡 def 2
-r.RenderTargetPoolMin=400; 🟡 def 400
 r.SceneColorFormat=3; 🟢 2,3 for PERFORMANCE ⚪️ EDITED 🟡 def 4
 r.SceneColorFringe.Max=0; ⚪️ EDITED 🟡 def -1
 r.SceneColorFringeQuality=1; 🟡 def 1
