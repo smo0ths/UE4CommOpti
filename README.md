@@ -1,4 +1,4 @@
-## updated 11/25/2024 ✂️ 📋 :ramen: v1.200.04
+## updated 11/25/2024 ✂️ 📋 :ramen: v1.200.05
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -108,9 +108,6 @@ r.DFShadowQuality=3; 🟢 0,1,2 for PERFORMANCE 🟡 def 3 🔵 req distancefiel
 r.DFShadowScatterTileCulling=1; 🟢 1 for PERFORMANCE 🟡 def 1
 r.DiffuseIndirect.Denoiser=1; 🟢 1 for PERFORMANCE 🟡 def 1 🔵 denoiser
 r.DistanceFieldAO=0; 🟢 0 for PERFORMANCE 🔵 req generatemeshdistancefields
-r.DistanceFields.AtlasSizeXY=512;
-r.DistanceFields.AtlasSizeZ=1024;
-r.DistanceFields.ForceMaxAtlasSize=1; ⚪️ EDITED
 r.DistanceFields.MaxPerMeshResolution=128; 🟢 128 for PERFORMANCE ⚪️ EDITED 🟡 def 256
 r.DistanceFieldShadowing=1; 🟢 0 for PERFORMANCE 🔵 req generatemeshdistancefields
 r.DOF.Gather.AccumulatorQuality=0; ⚪️ EDITED 🟡 def 1
@@ -160,18 +157,18 @@ r.LightShaftFirstPassDistance=0.08; ⚪️ EDITED 🟡 def 0.1
 r.LightShaftQuality=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.Lumen.AsyncCompute=1; 🟡 def 1
 r.Lumen.DiffuseIndirect.Allow=1; 🔵 UE5 🔵 lumen global illumination
-r.Lumen.DiffuseIndirect.SSAO=1; 🟡 def 0 ⚪️ EDITED
+r.Lumen.DiffuseIndirect.SSAO=0; 🟡 def 0
 r.Lumen.HardwareRayTracing=0; 🟡 def 0 🔵 UE5
 r.Lumen.Reflections.Allow=1; 🔵 UE5 🔵 lumen reflections
 r.Lumen.Reflections.BilateralFilter=1; 🟡 def 1 🔵 UE5 🔵 denoiser
 r.Lumen.Reflections.DownsampleFactor=2; 🔵 2,1 high,ultra
 r.Lumen.Reflections.HardwareRayTracing=1; 🟡 def 1 🔵 UE5
 r.Lumen.Reflections.ScreenSpaceReconstruction.NumSamples=5; 🟡 def 5 🔵 UE5
-r.Lumen.Reflections.ScreenSpaceReconstruction=0; 🟡 def 1 ⚪️ EDITED 🔵 UE5
+r.Lumen.Reflections.ScreenSpaceReconstruction=0; ⚪️ EDITED 🟡 def 1 🔵 UE5
 r.Lumen.Reflections.ScreenTraces=1; 🟢 0 for PERFORMANCE 🟡 def 1 🔵 UE5
 r.Lumen.Reflections.SmoothBias=0; 🟡 def 0 🔵 overrides roughness
 r.Lumen.Reflections.Temporal=1; 🟡 def 1 🔵 UE5
-r.Lumen.ScreenProbeGather.ShortRangeAO=0; 🟡 def 1 ⚪️ EDITED
+r.Lumen.ScreenProbeGather.ShortRangeAO=1; 🟡 def 1
 r.Lumen.TranslucencyReflections.FrontLayer.Allow=0; 🔵 0,1 high,ultra
 r.MaterialQualityLevel=1; 🟢 0,2 for PERFORMANCE 🔵 0,1,2,3 low,high,med,epic
 r.MaxAnisotropy=16; 🟢 0,4,8 for PERFORMANCE
@@ -199,6 +196,9 @@ r.ParallelShadow=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.ParallelShadowsNonWholeScene=0; 🟡 def 0
 r.ParallelTranslucency=1; 🟡 def 1
 r.ParticleLightQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
+r.PostProcessing.PreferCompute=0; 🟡 def 0
+r.PostProcessing.PropagateAlpha=0; 🟡 def 0
+r.PostProcessingColorFormat=0; 🟡 def 0
 r.PSOWarmup.WarmupMaterials=1; 🔵 after compiling shaders once set 0 for faster loading
 r.Reflections.Denoiser.TemporalAccumulation=1; 🟡 def 1 🔵 denoiser
 r.Reflections.Denoiser=2; 🟢 0 for PERFORMANCE 🟡 def 2 🔵 denoiser
@@ -244,6 +244,7 @@ r.SkyAtmosphere.DistantSkyLightLUT=1; 🟡 def 1
 r.SkyAtmosphere.FastSkyLUT.SampleCountMax=32; 🟡 def 32
 r.SkyAtmosphere.FastSkyLUT.SampleCountMin=4; 🟡 def 4
 r.SkyAtmosphere.FastSkyLUT=1; 🟡 def 1
+r.SkyAtmosphere.LUT32=0; 🟡 def 0
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0; 🟡 def 0
 r.SkyAtmosphere.MultiScatteringLUT.SampleCount=15; ⚪️ EDITED 🟡 def 15
 r.SkyAtmosphere.SampleCountMax=32; 🟡 def 32
