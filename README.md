@@ -22,12 +22,6 @@
 
 #### or UnrealPak method (pakchunk9999-Mods_CustomMod_P\Engine\Config\Windows\WindowsEngine.ini)
 
-#### Turn these off (0) in most games for performance unless its default in the project (game)
-```python
-r.Lumen.DiffuseIndirect.Allow=0; 🔵 UE5 🔵 lumen global illumination
-r.Lumen.Reflections.Allow=0; 🔵 UE5 🔵 lumen reflections
-```
-
 #### check 🟢 options for more fps
 
 #### High config (works with UE5*)
