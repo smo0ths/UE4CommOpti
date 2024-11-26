@@ -105,7 +105,6 @@ r.DetailMode=2; 🟢 0,1 for PERFORMANCE ⚪️ EDITED 🟡 def 3 🔵 0,1,2,3 l
 r.DFFullResolution=0; 🟢 0 for PERFORMANCE 🟡 def 0
 r.DFShadowQuality=2; 🟢 0,1,2 for PERFORMANCE ⚪️ EDITED 🟡 def 3 🔵 req distancefieldshadowing
 r.DFShadowScatterTileCulling=1; 🟢 1 for PERFORMANCE 🟡 def 1
-r.DisableLandscapeNaniteGI=1; ⚪️ EDITED 🟡 def 0
 r.DistanceFieldAO=1; 🟢 0 for PERFORMANCE 🔵 req generatemeshdistancefields
 r.DistanceFields.MaxPerMeshResolution=128; 🟢 128 for PERFORMANCE ⚪️ EDITED 🟡 def 256
 r.DistanceFieldShadowing=1; 🟢 0 for PERFORMANCE 🔵 req generatemeshdistancefields
