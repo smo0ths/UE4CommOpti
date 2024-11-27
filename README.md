@@ -8,11 +8,11 @@
 
 #### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
 
-#### 2560x1440 (~2k) use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
+#### 2560x1440 (~2k) use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR/NIS/IS)
 
-#### 3328x1872 (3.25K) use 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
+#### 3328x1872 (3.25K) use 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR/NIS/IS)
 
-#### 3840x2160 (~4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR)
+#### 3840x2160 (~4K UHD) use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (higher if cpu bound) (DLSS123/TAAU/TSR/CAS/FSR123/XeSS/PSSR/NIS/IS)
 
 #### negative LOD bias -1/-0.6 or 0 for PERFORMANCE (0 is best on proper mipmaps/textures) (set by nvidiaProfileInspector)
 
@@ -152,7 +152,7 @@ r.Lumen.DiffuseIndirect.SSAO=0; 🟡 def 0
 r.Lumen.HardwareRayTracing=0; 🟡 def 0
 r.Lumen.Reflections.Allow=1; 🔵 lumen reflections
 r.Lumen.Reflections.Contrast=1; 🟡 def 1
-r.Lumen.Reflections.DownsampleFactor=2; 🔵 2,1 high,ultra
+r.Lumen.Reflections.DownsampleFactor=1; 🟢 2 for PERFORMANCE 🟡 def 1
 r.Lumen.Reflections.HardwareRayTracing=1; 🟡 def 1
 r.Lumen.Reflections.ScreenSpaceReconstruction.NumSamples=5; 🟡 def 5
 r.Lumen.Reflections.ScreenSpaceReconstruction=1; 🟢 0 for PERFORMANCE 🟡 def 1
