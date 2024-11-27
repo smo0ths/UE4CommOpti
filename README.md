@@ -1,4 +1,4 @@
-## updated 11/26/2024 ✂️ 📋 :ramen: v1.200.07
+## updated 11/27/2024 ✂️ 📋 :ramen: v1.200.08
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -153,15 +153,24 @@ r.Lumen.DiffuseIndirect.Allow=1; 🔵 lumen global illumination
 r.Lumen.DiffuseIndirect.SSAO=0; 🟡 def 0
 r.Lumen.HardwareRayTracing=0; 🟡 def 0
 r.Lumen.Reflections.Allow=1; 🔵 lumen reflections
+r.Lumen.Reflections.Contrast=1; 🟡 def 1
 r.Lumen.Reflections.DownsampleFactor=2; 🔵 2,1 high,ultra
 r.Lumen.Reflections.HardwareRayTracing=1; 🟡 def 1
 r.Lumen.Reflections.ScreenSpaceReconstruction.NumSamples=5; 🟡 def 5
-r.Lumen.Reflections.ScreenSpaceReconstruction=0; ⚪️ EDITED 🟡 def 1
+r.Lumen.Reflections.ScreenSpaceReconstruction=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.Lumen.Reflections.ScreenTraces=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.Lumen.Reflections.SmoothBias=0; 🟡 def 0 🔵 overrides roughness
-r.Lumen.Reflections.Temporal=0; ⚪️ EDITED 🟡 def 1
+r.Lumen.Reflections.Temporal=1; 🟡 def 1
+r.Lumen.SampleFog=0; 🟡 def 0
+r.Lumen.ScreenProbeGather.ShortRangeAO.ApplyDuringIntegration=0; 🟡 def 0
+r.Lumen.ScreenProbeGather.ShortRangeAO.HairScreenTrace=0;
 r.Lumen.ScreenProbeGather.ShortRangeAO=1; 🟡 def 1
-r.Lumen.TranslucencyReflections.FrontLayer.Allow=0; 🔵 0,1 high,ultra
+r.Lumen.ScreenProbeGather.Temporal=1; 🟡 def 1
+r.Lumen.ScreenProbeGather=1; 🟡 def 1
+r.Lumen.TranslucencyReflections.FrontLayer.Allow=0; 🟢 0 for PERFORMANCE
+r.Lumen.TranslucencyReflections.FrontLayer.Enable=0;  🟢 0 for PERFORMANCE
+r.Lumen.TranslucencyReflections.FrontLayer.EnableForProject=0;  🟢 0 for PERFORMANCE
+r.ManyLights=0; 🔵 experimental
 r.MaterialQualityLevel=1; 🟢 0,2 for PERFORMANCE 🔵 0,1,2,3 low,high,med,epic
 r.MaxAnisotropy=16; 🟢 0,4,8 for PERFORMANCE
 r.MinRoughnessOverride=0; 🟡 def 0
@@ -225,20 +234,20 @@ r.Shadow.Virtual.OnePassProjection=1; 🟡 def 1
 r.ShadowQuality=4; 🟢 3,4 for PERFORMANCE ⚪️ EDITED 🟡 def 5
 r.SkeletalMeshLODBias=0; 🟢 1 for PERFORMANCE 🔵 0,1,2 high,med,low
 r.SkipDrawOnPSOPrecaching=0; 🟡 def 0
-r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution=16; 🟢 8 for PERFORMANCE
+r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution=16; 🟢 8 for PERFORMANCE 🟡 def 16
 r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=1; 🟡 def 1
 r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice=2; 🟢 1 for PERFORMANCE 🟡 def 2
 r.SkyAtmosphere.DistantSkyLightLUT=1; 🟡 def 1
-r.SkyAtmosphere.FastSkyLUT.SampleCountMax=32; 🟡 def 32
-r.SkyAtmosphere.FastSkyLUT.SampleCountMin=4; 🟡 def 4
+r.SkyAtmosphere.FastSkyLUT.SampleCountMax=64; 🟢 16,32 for PERFORMANCE ⚪️ EDITED 🟡 def 32
+r.SkyAtmosphere.FastSkyLUT.SampleCountMin=4; 🟢 2 for PERFORMANCE 🟡 def 4
 r.SkyAtmosphere.FastSkyLUT=1; 🟡 def 1
 r.SkyAtmosphere.LUT32=0; 🟡 def 0
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0; 🟡 def 0
-r.SkyAtmosphere.MultiScatteringLUT.SampleCount=15; ⚪️ EDITED 🟡 def 15
-r.SkyAtmosphere.SampleCountMax=32; 🟡 def 32
-r.SkyAtmosphere.SampleCountMin=2; 🟡 def 2
+r.SkyAtmosphere.MultiScatteringLUT.SampleCount=15; 🟡 def 15
+r.SkyAtmosphere.SampleCountMax=64; 🟢 16,32 for PERFORMANCE ⚪️ EDITED 🟡 def 32
+r.SkyAtmosphere.SampleCountMin=4; 🟢 2 for PERFORMANCE ⚪️ EDITED 🟡 def 2
 r.SkyAtmosphere.SampleLightShadowmap=1; 🟢 0 for PERFORMANCE 🟡 def 1
-r.SkyAtmosphere.TransmittanceLUT.SampleCount=10; ⚪️ EDITED 🟡 def 10
+r.SkyAtmosphere.TransmittanceLUT.SampleCount=10; 🟡 def 10
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0; 🟢 1 for PERFORMANCE 🟡 def 0
 r.SkyAtmosphere.TransmittanceLUT=1; 🟡 def 1
 r.SkyLight.RealTimeReflectionCapture=1; 🟢 0 for PERFORMANCE
