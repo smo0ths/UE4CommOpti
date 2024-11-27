@@ -1,4 +1,4 @@
-## updated 11/27/2024 ✂️ 📋 :ramen: v1.200.08
+## updated 11/27/2024 ✂️ 📋 :ramen: v1.200.09
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -46,9 +46,7 @@ foliage.DensityScale=1; 🟢 0.6 for PERFORMANCE 🟡 def 1
 foliage.DitheredLOD=1; 🟡 def 1
 foliage.LODDistanceScale=1; 🟡 def 1
 foliage.MinimumScreenSize=0.0001; ⚪️ EDITED 🟡 def 0.000005
-fx.Budget.Enabled=1; 🔵 experimental
 fx.Niagara.QualityLevel=2; 🔵 0,1,2,3,4 low,med,high,ultra,cine
-fx.Niagara.UseGlobalFXBudget=1; 🔵 experimental
 fx.NiagaraAllowRuntimeScalabilityChanges=1;
 grass.CullDistanceScale=1; 🟡 def 1
 grass.DensityScale=0.8; 🟢 0.6 for PERFORMANCE
@@ -138,7 +136,7 @@ r.HFShadowQuality=0; 🟢 0,1 for PERFORMANCE 🟡 def 2 🔵 req heightfieldsha
 r.HighQualityLightMaps=1; 🟡 def 1
 r.HLOD.DistanceScale=0.8;
 r.HLOD.ForceDisableCastDynamicShadow=0; 🟡 def 0
-r.HZBOcclusion=1; 🟢 test 0 per game 🟡 def 1
+r.HZBOcclusion=0; 🟢 test 0 per game ⚪️ EDITED 🟡 def 1
 r.IrisNormal=0; 🟡 def 0
 r.LandscapeLODBias=0; 🟢 1 for PERFORMANCE
 r.LensFlareQuality=2; 🟢 0,1 for PERFORMANCE
