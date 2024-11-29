@@ -1,4 +1,4 @@
-## updated 11/29/2024 ✂️ 📋 :ramen: v1.200.10
+## updated 11/29/2024 ✂️ 📋 :ramen: v1.200.11
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -41,7 +41,7 @@ PoolSizeVRAMPercentage=90; ⚪️ EDITED 🟡 def 70 🔵 50 to lower vram usage
 [ConsoleVariables]
 au.RenderThreadPriority=3; 🟡 def 3
 Compat.UseDXT5NormalMaps=0; 🟡 def 0
-D3D12.InsertOuterOcclusionQuery=1; 🟢 1 for PERFORMANCE 🟡 def 0
+D3D12.InsertOuterOcclusionQuery=0; 🟢 1 for PERFORMANCE 🟡 def 0
 D3D12.MaximumFrameLatency=1;
 D3D12.PSOPrecache.KeepLowLevel=0; 🟡 def 0
 demo.LoadCheckpointGarbageCollect=0; ⚪️ EDITED 🟡 def 1
@@ -128,7 +128,7 @@ r.DoTiledReflections=1; 🟡 def 1
 r.DynamicRes.OperationMode=0;
 r.EmitterSpawnRateScale=1; 🟢 0.125,0.25 for PERFORMANCE 🟡 def 1
 r.EnableCameraAndMeshMotionBlur=0;
-r.EnableDebugSpam_GetObjectPositionAndScale=0; 🟡 def 1 🔵 debug
+r.EnableDebugSpam_GetObjectPositionAndScale=0; 🟡 def 1 ⚪️ EDITED 🔵 debug
 r.EyeAdaptation.Basic.Compute=1; 🟡 def 1 🔵 eyeadaptation,autoexposure
 r.EyeAdaptation.MethodOverride=-1; 🟡 def -1 🔵 eyeadaptation,autoexposure
 r.EyeAdaptation.PreExposureOverride=0; 🟡 def 0 🔵 eyeadaptation,autoexposure
@@ -147,7 +147,7 @@ r.HeightfieldGlobalIllumination=0; 🟢 0 for PERFORMANCE
 r.HeightFieldShadowing=0; 🟢 0 for PERFORMANCE
 r.HFShadowQuality=0; 🟢 0,1 for PERFORMANCE 🟡 def 2 🔵 req heightfieldshadowing
 r.HighQualityLightMaps=1; 🟡 def 1
-r.HZBOcclusion=0; 🟢 test 0 per game ⚪️ EDITED 🟡 def 1
+r.HZBOcclusion=1; 🟡 def 1 🔵 test
 r.InstanceCulling.OcclusionCull=0; 🟡 def 0
 r.IrisNormal=0; 🟡 def 0
 r.LandscapeLODBias=0; 🟢 1 for PERFORMANCE
