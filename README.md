@@ -36,7 +36,7 @@ bSmoothFrameRate=0;
 bUseFixedFrameRate=0;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70; 🟡 def 70 🔵 50 to lower vram usage 🔵 texturepool cache
+PoolSizeVRAMPercentage=70; 🟢 50 to lower vram usage 🟡 def 70 🔵 texturepool cache
 
 [ConsoleVariables]
 D3D12.InsertOuterOcclusionQuery=0; 🟢 1 for PERFORMANCE 🟡 def 0
