@@ -20,7 +20,7 @@
 
 ## Open Engine.ini and copy pasta %localappdata%
 
-#### or UnrealPak method (Engine\Config\Windows\WindowsInput.ini)
+#### or UnrealPak method (Engine\Config\Windows\WindowsEngine.ini)
 
 #### check 🟢 options for more fps
 
