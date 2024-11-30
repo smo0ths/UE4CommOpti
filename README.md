@@ -49,7 +49,6 @@ fx.Niagara.QualityLevel=2; 🟢 0 for PERFORMANCE 🟡 def 3 🔵 0,1,2,3,4 low,
 fx.ParticlePerfStats.Enabled=0; ⚪️ EDITED 🟡 def 1
 grass.DensityScale=0.8; 🟢 0.6 for PERFORMANCE ⚪️ EDITED 🟡 def 1
 grass.DisableDynamicShadows=0; 🟢 1 for PERFORMANCE 🟡 def 0
-grass.MaxUpdateFrequency=10; ⚪️ EDITED 🔵 20,30,40 med,high,ultra
 memory.logGenericPlatformMemoryStats=0; ⚪️ EDITED 🟡 def 1
 p.AnimDynamics=1; 🟢 0 for PERFORMANCE 🟡 def 1
 p.AnimDynamicsWind=1; 🟢 0 for PERFORMANCE 🟡 def 1
