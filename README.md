@@ -20,7 +20,7 @@
 
 ## Open Engine.ini and copy pasta %localappdata%
 
-#### or UnrealPak method (pakchunk9999-Mods_CustomMod_P\Engine\Config\Windows\WindowsEngine.ini)
+#### or UnrealPak method (Engine\Config\Windows\WindowsInput.ini)
 
 #### check 🟢 options for more fps
 
@@ -177,8 +177,9 @@ t.Streamline.Reflex.Mode=2; ⚪ EDITED 🟡 def 1 🔵 1,2 reflex,reflex with bo
 
 ---
 
-### Open Input.ini and copy pasta %localappdata%
-### or UnrealPak method (pakchunk9999-Mods_CustomMod_P\Engine\Config\Windows\WindowsInput.ini)
+#### Open Input.ini and copy pasta %localappdata%
+
+#### or UnrealPak method (Engine\Config\Windows\WindowsInput.ini)
 
 ```python
 [/Script/Engine.InputSettings]
@@ -193,8 +194,9 @@ InitialButtonRepeatDelay=0.1; ⚪️ EDITED 🟡 def 0.2
 
 ---
 
-### Open GameUserSettings.ini these commands can overwrite your config if they are here %localappdata%
-### you can turn down used scalability groups here or in game if they are being used
+#### Open GameUserSettings.ini these commands can overwrite your config if they are here %localappdata%
+
+#### you can turn down used scalability groups here or in game if they are being used
 
 ```python
 [ScalabilityGroups]
@@ -257,7 +259,7 @@ WakeSim=(Value=?)
 
 ---
 
-### Open DeviceProfiles.ini for textures lods, mess around or just skip %localappdata%
+#### Open DeviceProfiles.ini for textures lods, mess around or just skip %localappdata%
 
 ```python
 [/Script/Engine.TextureLODSettings]
