@@ -1,4 +1,4 @@
-## updated 11/29/2024 ✂️ 📋 :ramen: v1.200.16
+## updated 11/30/2024 ✂ 📋 :ramen: v1.200.20
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -55,11 +55,11 @@ p.AnimDynamicsWind=1; 🟢 0 for PERFORMANCE 🟡 def 1
 p.RigidBodyNode=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.AllowLandscapeShadows=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.AllowSimpleLights=1; 🟢 0 for PERFORMANCE 🟡 def 1
-r.AmbientOcclusionLevels=2; 🟢 0,1 for PERFORMANCE 🟡 def -1
+r.AmbientOcclusionLevels=-1; 🟢 0,1 for PERFORMANCE 🟡 def -1
 r.AmbientOcclusionStaticFraction=-1; 🟢 0 for PERFORMANCE 🟡 def -1
 r.AnisotropicMaterials=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.AOGlobalDistanceField.MipFactor=4; 🟢 8 for PERFORMANCE 🟡 def 4
-r.AOQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2 🔵 req distancefieldao
+r.AOQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
 r.BloomQuality=4; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 5
 r.BlurGBuffer=0; ⚪ EDITED 🟡 def -1
 r.CapsuleShadows=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
@@ -68,7 +68,7 @@ r.ContactShadows=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.DefaultFeature.MotionBlur=0; ⚪ EDITED 🟡 def 1
 r.DepthOfFieldQuality=1; 🟢 0,1 for PERFORMANCE ⚪ EDITED 🟡 def 2
 r.DetailMode=2; 🟢 0,1 for PERFORMANCE ⚪ EDITED 🟡 def 3 🔵 0,1,2,3 low,med,high,epic
-r.DFShadowQuality=2; 🟢 0,1,2 for PERFORMANCE ⚪ EDITED 🟡 def 3 🔵 req distancefieldshadowing
+r.DFShadowQuality=3; 🟢 0,1,2 for PERFORMANCE 🟡 def 3
 r.DistanceFields.MaxPerMeshResolution=128; 🟢 128 for PERFORMANCE ⚪ EDITED 🟡 def 256
 r.DOF.Gather.AccumulatorQuality=0; ⚪ EDITED 🟡 def 1
 r.DOF.Gather.EnableBokehSettings=0; ⚪ EDITED 🟡 def 1
@@ -81,17 +81,18 @@ r.DOF.Scatter.BackgroundCompositing=1; ⚪ EDITED 🟡 def 2
 r.DOF.Scatter.EnableBokehSettings=0; ⚪ EDITED 🟡 def 1
 r.DOF.Scatter.ForegroundCompositing=1; 🟡 def 1
 r.DOF.Scatter.MaxSpriteRatio=0.04; 🟡 def 0.1
-r.DOF.TemporalAAQuality=0; ⚪ EDITED 🟡 def 1
 r.EmitterSpawnRateScale=1; 🟢 0.125,0.25 for PERFORMANCE 🟡 def 1
 r.EnableDebugSpam_GetObjectPositionAndScale=0; ⚪ EDITED 🟡 def 1 🔵 debug
 r.EyeAdaptationQuality=2; 🟢 1 for PERFORMANCE 🟡 def 2 🔵 eyeadaptation,autoexposure
 r.FilmGrain=0; ⚪ EDITED 🟡 def 1
 r.gpucrash.collectionenable=0; ⚪ EDITED 🟡 def 1 🔵 debug
-r.HairStrands.Enable=1; 🟢 0 for PERFORMANCE 🟡 def 1
-r.HFShadowQuality=0; 🟢 0,1 for PERFORMANCE 🟡 def 2 🔵 req heightfieldshadowing
+r.HairStrands.Enable=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
+r.HairStrands.SkyAO=0; ⚪ EDITED 🟡 def 1
+r.HairStrands.UseCardsInsteadOfStrands=1; ⚪ EDITED 🟡 def 0
+r.HairStrands.Visibility.MSAA.SamplePerPixel=2; ⚪ EDITED 🟡 def 4
+r.HFShadowQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
 r.LandscapeLODBias=0; 🟢 1 for PERFORMANCE 🟡 def 0
 r.LensFlareQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
-r.LightFunctionQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
 r.LightMaxDrawDistanceScale=1; 🟢 0.5,0.6 for PERFORMANCE 🟡 def 1
 r.LightShaftBlurPasses=2; ⚪ EDITED 🟡 def 3
 r.LightShaftFirstPassDistance=0.08; ⚪ EDITED 🟡 def 0.1
@@ -144,11 +145,13 @@ r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0; 🟢 1 for PERFORMANCE 🟡 d
 r.SkyLight.RealTimeReflectionCapture=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.SSR.HalfResSceneColor=1; 🟢 1 for PERFORMANCE ⚪ EDITED 🟡 def 0
 r.SSR.Quality=3; 🟢 0,2 for PERFORMANCE 🟡 def 3
+r.SSS.Burley.Quality=0; ⚪ EDITED 🟡 def 1
 r.SSS.Checkerboard=1; 🟢 1 for PERFORMANCE ⚪ EDITED 🟡 def 2
+r.SSS.HalfRes=1; ⚪ EDITED 🟡 def 0
 r.Streaming.HiddenPrimitiveScale=0.5; 🟢 0.5 for PERFORMANCE 🟡 def 0.5
 r.Streaming.MipBias=0; 🟢 1 for PERFORMANCE 🟡 def 0
 r.SubsurfaceScattering=1; 🟢 0 for PERFORMANCE 🟡 def 1
-r.TemporalAACurrentFrameWeight=0.03; ⚪ EDITED 🟡 def 0.04
+r.TemporalAA.Upsampling=1; 🟢 0 for PERFORMANCE 🟡 def 1 🔵 TAAU
 r.TessellationAdaptivePixelsPerTriangle=999999; 🟢 999999 for PERFORMANCE ⚪ EDITED 🟡 def 48
 r.Tonemapper.GrainQuantization=0; ⚪ EDITED 🟡 def 1
 r.Tonemapper.Quality=2; ⚪ EDITED 🟡 def 5
@@ -163,8 +166,6 @@ r.VolumetricCloud.SkyAO=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
 r.VolumetricCloud=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.VolumetricFog.HistoryWeight=0.95; ⚪ EDITED 🟡 def 0.9
 r.VolumetricFog=1; 🟢 0 for PERFORMANCE 🟡 def 1
-r.VRS.Enable=1; ⚪ EDITED 🟡 def 0
-r.VRS.EnableSoftware=1; ⚪ EDITED 🟡 def 0
 r.Water.EnableShallowWaterSimulation=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.Water.EnableUnderwaterPostProcess=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.Water.SingleLayer.Reflection=1; 🟢 0 for PERFORMANCE 🟡 def 1
@@ -188,8 +189,8 @@ bEnableMouseSmoothing=0;
 bF11TogglesFullscreen=0;
 ButtonRepeatDelay=0.1;
 bViewAccelerationEnabled=0;
-DoubleClickTime=0.01; ⚪️ EDITED 🟡 def 0.1
-InitialButtonRepeatDelay=0.1; ⚪️ EDITED 🟡 def 0.2
+DoubleClickTime=0.01; ⚪ EDITED 🟡 def 0.1
+InitialButtonRepeatDelay=0.1; ⚪ EDITED 🟡 def 0.2
 ```
 
 ---
