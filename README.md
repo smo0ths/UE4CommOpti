@@ -139,7 +139,6 @@ r.SkeletalMeshLODBias=0; 🟢 1 for PERFORMANCE 🟡 def 0 🔵 0,1,2 high,med,l
 r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution=8; 🟢 8 for PERFORMANCE ⚪ EDITED 🟡 def 16
 r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=1; 🟢 1 for PERFORMANCE 🟡 def 1
 r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice=1; 🟢 1 for PERFORMANCE ⚪ EDITED 🟡 def 2
-r.SkyAtmosphere.DistantSkyLightLUT=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
 r.SkyAtmosphere.FastSkyLUT.SampleCountMax=32; 🟢 16,32 for PERFORMANCE ⚪ EDITED 🟡 def 128
 r.SkyAtmosphere.FastSkyLUT.SampleCountMin=2; 🟢 2 for PERFORMANCE ⚪ EDITED 🟡 def 4
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0; 🟢 0 for PERFORMANCE 🟡 def 0
