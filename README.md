@@ -1,4 +1,4 @@
-## updated 11/30/2024 ✂ 📋 :ramen: v1.200.20
+## updated 12/1/2024 ✂ 📋 :ramen: v1.200.21
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -86,10 +86,11 @@ r.EnableDebugSpam_GetObjectPositionAndScale=0; ⚪ EDITED 🟡 def 1 🔵 debug
 r.EyeAdaptationQuality=2; 🟢 1 for PERFORMANCE 🟡 def 2 🔵 eyeadaptation,autoexposure
 r.FilmGrain=0; ⚪ EDITED 🟡 def 1
 r.gpucrash.collectionenable=0; ⚪ EDITED 🟡 def 1 🔵 debug
-r.HairStrands.Enable=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
-r.HairStrands.SkyAO=0; ⚪ EDITED 🟡 def 1
-r.HairStrands.UseCardsInsteadOfStrands=1; ⚪ EDITED 🟡 def 0
-r.HairStrands.Visibility.MSAA.SamplePerPixel=2; ⚪ EDITED 🟡 def 4
+r.HairStrands.Enable=1; 🟢 0 for PERFORMANCE 🟡 def 1
+r.HairStrands.MinLOD=2; 🟢 2 for PERFORMANCE ⚪ EDITED 🟡 def 1
+r.HairStrands.SkyAO=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
+r.HairStrands.UseCardsInsteadOfStrands=1; 🟢 1 for PERFORMANCE ⚪ EDITED 🟡 def 0
+r.HairStrands.Visibility.MSAA.SamplePerPixel=2; 🟢 2 for PERFORMANCE ⚪ EDITED 🟡 def 4
 r.HFShadowQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
 r.LandscapeLODBias=0; 🟢 1 for PERFORMANCE 🟡 def 0
 r.LensFlareQuality=2; 🟢 0,1 for PERFORMANCE 🟡 def 2
@@ -134,7 +135,7 @@ r.Shadow.RadiusThreshold=0.04; 🟢 0.03,0.04,0.05,0.06 for PERFORMANCE ⚪ EDIT
 r.ShadowQuality=4; 🟢 3,4 for PERFORMANCE ⚪ EDITED 🟡 def 5
 r.SkeletalMeshLODBias=0; 🟢 1 for PERFORMANCE 🟡 def 0 🔵 0,1,2 high,med,low
 r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution=16; 🟢 8 for PERFORMANCE 🟡 def 16
-r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=1; 🟡 def 1
+r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=0; 🟢 1 for PERFORMANCE ⚪ EDITED 🟡 def 1
 r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice=2; 🟢 1 for PERFORMANCE 🟡 def 2
 r.SkyAtmosphere.FastSkyLUT.SampleCountMax=64; 🟢 16,32 for PERFORMANCE ⚪ EDITED 🟡 def 32
 r.SkyAtmosphere.FastSkyLUT.SampleCountMin=4; 🟢 2 for PERFORMANCE 🟡 def 4
@@ -143,6 +144,7 @@ r.SkyAtmosphere.SampleCountMin=4; 🟢 2 for PERFORMANCE ⚪ EDITED 🟡 def 2
 r.SkyAtmosphere.SampleLightShadowmap=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0; 🟢 1 for PERFORMANCE 🟡 def 0
 r.SkyLight.RealTimeReflectionCapture=1; 🟢 0 for PERFORMANCE 🟡 def 1
+r.SSGI.Enable=0; 🟢 0 for PERFORMANCE 🟡 def 0
 r.SSR.HalfResSceneColor=1; 🟢 1 for PERFORMANCE ⚪ EDITED 🟡 def 0
 r.SSR.Quality=3; 🟢 0,2 for PERFORMANCE 🟡 def 3
 r.SSS.Burley.Quality=0; ⚪ EDITED 🟡 def 1
