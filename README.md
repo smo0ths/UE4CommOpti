@@ -36,10 +36,11 @@ bSmoothFrameRate=0;
 bUseFixedFrameRate=0;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=70; 🟢 50 to lower vram usage 🟡 def 70 🔵 texturepool cache
+PoolSizeVRAMPercentage=90; 🟢 50 to lower vram usage ⚪ EDITED 🟡 def 70 🔵 texturepool cache
 
 [ConsoleVariables]
 D3D12.InsertOuterOcclusionQuery=0; 🟢 1 for PERFORMANCE 🟡 def 0
+D3D12.MaximumFrameLatency=1; ⚪ EDITED 🟡 def 3 🔵 frame latency
 demo.LoadCheckpointGarbageCollect=0; ⚪ EDITED 🟡 def 1
 foliage.DensityScale=1; 🟢 0.6 for PERFORMANCE 🟡 def 1
 foliage.MinimumScreenSize=0.0001; ⚪ EDITED 🟡 def 0.000005
@@ -171,6 +172,7 @@ r.Water.EnableShallowWaterSimulation=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 d
 r.Water.EnableUnderwaterPostProcess=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
 r.Water.SingleLayer.SSR=0; 🟢 0 for PERFORMANCE ⚪ EDITED 🟡 def 1
 r.Water.WaterMesh.TessFactorBias=0; 🟢 -1 for PERFORMANCE 🟡 def 0
+RHI.MaximumFrameLatency=1; ⚪ EDITED 🟡 def 3 🔵 frame latency
 t.Streamline.Reflex.Auto=0; ⚪ EDITED 🟡 def 1
 t.Streamline.Reflex.Enable=1; ⚪ EDITED 🟡 def 0 🔵 nvidia reflex
 t.Streamline.Reflex.Mode=2; ⚪ EDITED 🟡 def 1 🔵 1,2 reflex,reflex with boost
