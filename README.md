@@ -1,4 +1,4 @@
-## updated 12/2/2024 ✂ 📋 :ramen: v1.200.23
+## updated 12/2/2024 ✂ 📋 :ramen: v1.200.24
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -36,7 +36,7 @@ bSmoothFrameRate=0;
 bUseFixedFrameRate=0;
 
 [TextureStreaming]
-PoolSizeVRAMPercentage=90; 🟢 50 to lower vram usage ⚪ EDITED 🟡 def 70 🔵 texturepool cache
+PoolSizeVRAMPercentage=70; 🟢 50 to lower vram usage 🟡 def 70 🔵 texturepool cache
 
 [ConsoleVariables]
 D3D12.InsertOuterOcclusionQuery=0; 🟢 1 for PERFORMANCE 🟡 def 0
@@ -108,7 +108,6 @@ r.MaterialQualityLevel=1; 🟢 0,2 for PERFORMANCE 🟡 def 1 🔵 0,1,2,3 low,h
 r.MaxAnisotropy=16; 🟢 0,4,8 for PERFORMANCE ⚪ EDITED 🟡 def 8
 r.MinScreenRadiusForLights=0.03; 🟢 0.04,0.06 for PERFORMANCE 🟡 def 0.03
 r.MotionBlurQuality=0; ⚪ EDITED 🟡 def 4
-r.Nanite.Streaming.MaxPageInstallsPerFrame=64; 🟢 64 for PERFORMANCE ⚪ EDITED 🟡 def 128
 r.NGX.DLSS.DilateMotionVectors=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.NGX.DLSS.PreferNISSharpen=0; ⚪ EDITED 🟡 def 1
 r.NGX.DLSS.Quality.Auto=0; ⚪ EDITED 🟡 def 1
