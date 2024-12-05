@@ -1,4 +1,4 @@
-## updated 12/5/2024 ✂ 📋 :ramen: v0.201.30
+## updated 12/5/2024 ✂ 📋 :ramen: v0.201.31
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -277,9 +277,9 @@ r.VolumetricCloud.ShadowMap.MaxResolution=2048; 🟢 1024 for PERFORMANCE 🟡 d
 r.VolumetricCloud.ShadowMap.SpatialFiltering=1; 🟡 def 1
 r.VolumetricCloud.ShadowMap.TemporalFiltering.NewFrameWeight=1; 🟡 def 1 🔵 experimental
 r.VolumetricCloud.ShadowMap=1; 🟢 0 for PERFORMANCE 🟡 def 1 🔵 cloud shadows
-r.VolumetricCloud.SkyAO.MaxResolution=1024; 🟢 512,1024 for PERFORMANCE ⚪ EDITED 🟡 def 2048
+r.VolumetricCloud.SkyAO.MaxResolution=2048; ⚪ EDITED 🟡 def 2048
 r.VolumetricCloud.SkyAO=1; 🟢 0 for PERFORMANCE 🟡 def 1
-r.VolumetricCloud.ViewRaySampleMaxCount=128; 🟢 128 for PERFORMANCE ⚪ EDITED 🟡 def 768
+r.VolumetricCloud.ViewRaySampleMaxCount=768; 🟡 def 768
 r.VolumetricCloud=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.VolumetricFog.GridPixelSize=16; 🟡 def 16
 r.VolumetricFog.GridSizeZ=64; 🟡 def 64
