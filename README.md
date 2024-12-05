@@ -1,4 +1,4 @@
-## updated 12/5/2024 ✂ 📋 :ramen: v1.201.28
+## updated 12/5/2024 ✂ 📋 :ramen: v0.201.30
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -20,7 +20,7 @@
 
 ## Open Engine.ini and copy pasta %localappdata%
 
-#### or UnrealPak method (Engine\Config\Windows\WindowsEngine.ini)
+#### or Repak.bat method (zzz_ENGINE_INI\Engine\Config\Windows\WindowsEngine.ini)
 
 #### check 🟢 options for more fps
 
@@ -91,6 +91,7 @@ r.EnableDebugSpam_GetObjectPositionAndScale=0; ⚪ EDITED 🟡 def 1 🔵 debug
 r.EyeAdaptationQuality=2; 🟢 1 for PERFORMANCE 🟡 def 2 🔵 eyeadaptation,autoexposure
 r.FilmGrain=0; ⚪ EDITED 🟡 def 1
 r.Filter.SizeScale=1; 🟡 def 1
+r.Fog=1; 🟡 def 1 🔵 render fog
 r.FXAA.Quality=4; 🟡 def 4
 r.GBufferDiffuseSampleOcclusion=1; ⚪ EDITED 🟡 def 0 🔵 bent normal maps
 r.gpucrash.collectionenable=0; ⚪ EDITED 🟡 def 1 🔵 debug
@@ -266,6 +267,7 @@ r.VolumetricCloud.DistanceToSampleMaxCount=15; 🟡 def 15
 r.VolumetricCloud.EnableAtmosphericLightsSampling=1; 🟡 def 1
 r.VolumetricCloud.EnableDistantSkyLightSampling=1; 🟡 def 1
 r.VolumetricCloud.EnableLocalLightsSampling=0; 🟢 0 for PERFORMANCE 🟡 def 0 🔵 experimental
+r.VolumetricCloud.HzbCulling=0; 🔵 cloud hzb culling
 r.VolumetricCloud.ReflectionRaySampleMaxCount=1; 🔵 reflection ray sample max
 r.VolumetricCloud.SampleMinCount=2; 🟡 def 2
 r.VolumetricCloud.Shadow.ReflectionRaySampleMaxCount=24; 🟡 def 24
@@ -281,11 +283,10 @@ r.VolumetricCloud.ViewRaySampleMaxCount=128; 🟢 128 for PERFORMANCE ⚪ EDITED
 r.VolumetricCloud=1; 🟢 0 for PERFORMANCE 🟡 def 1
 r.VolumetricFog.GridPixelSize=16; 🟡 def 16
 r.VolumetricFog.GridSizeZ=64; 🟡 def 64
-r.VolumetricFog.HistoryWeight=0.95; ⚪ EDITED 🟡 def 0.9
 r.VolumetricFog=1; 🟢 0 for PERFORMANCE 🟡 def 1
-r.VolumetricRenderTarget.Mode=1; ⚪ EDITED 🟡 def 0
-r.VolumetricRenderTarget.UpsamplingMode=4; 🟡 def 4
-r.VolumetricRenderTarget=1; 🟡 def 1
+r.VolumetricRenderTarget.Mode=2; ⚪ EDITED 🟡 def 0
+r.VolumetricRenderTarget.ReprojectionBoxConstraint=1; ⚪ EDITED 🟡 def 0
+r.VolumetricRenderTarget.UpsamplingMode=2; ⚪ EDITED 🟡 def 4
 r.VT.MaxAnisotropy=8; 🟢 0,4 for PERFORMANCE 🟡 def 8
 r.VT.MaxTilesProducedPerFrame=30; 🟡 def 30
 r.VT.MaxUploadsPerFrame=8; 🟡 def 8
@@ -305,7 +306,7 @@ t.Streamline.Reflex.Mode=2; ⚪ EDITED 🟡 def 1 🔵 1,2 reflex,reflex with bo
 
 #### Open Input.ini and copy pasta %localappdata%
 
-#### or UnrealPak method (Engine\Config\Windows\WindowsInput.ini)
+#### or Repak.bat method (zzz_ENGINE_INI\Engine\Config\Windows\WindowsInput.ini)
 
 ```python
 [/Script/Engine.InputSettings]
