@@ -1,4 +1,4 @@
-## updated 12/6/2024 ✂ 📋 🌀 :ramen: v0.201.47
+## updated 12/6/2024 ✂ 📋 🌀 :ramen: v0.201.50
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -98,7 +98,6 @@ r.HairStrands.Visibility.MSAA.SamplePerPixel=2; 🔴 2 for PERFORMANCE
 r.HairStrands.Voxelization=0; 🔴 0 for PERFORMANCE 🔵 voxelization
 r.HeightFieldShadowing=0; 🔵 height field shadowing
 r.LandscapeLODBias=0; 🔴 1 for PERFORMANCE
-r.LensFlareQuality=2; 🔴 1 for PERFORMANCE
 r.LightMaxDrawDistanceScale=1; 🔴 0.5,0.6 for PERFORMANCE
 r.LightShaftBlurPasses=2;
 r.LightShaftFirstPassDistance=0.08;
@@ -123,7 +122,6 @@ r.MotionBlurQuality=0;
 r.NGX.DLSS.DilateMotionVectors=1; 🔴 0 for PERFORMANCE
 r.NGX.DLSS.PreferNISSharpen=0;
 r.NGX.DLSS.Quality.Auto=0;
-r.NGX.DLSS.Quality=1; 🔴 -2,-1,0,1 for PERFORMANCE 🔵 DLSS
 r.NGX.LogLevel=0; 🔵 debug
 r.ParallelShadows=1; 🔴 0 for PERFORMANCE
 r.ParticleLightQuality=1; 🔴 0,1 for PERFORMANCE
@@ -241,11 +239,7 @@ r.Water.EnableUnderwaterPostProcess=0; 🔴 0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0; 🔴 0 for PERFORMANCE
 r.Water.WaterMesh.TessFactorBias=0; 🔴 -1 for PERFORMANCE
 RHI.MaximumFrameLatency=1; 🔵 frame latency
-rhi.SyncInterval=1;
-rhi.SyncSlackMS=10;
 t.Streamline.Reflex.Auto=0;
-t.Streamline.Reflex.Enable=1; 🔵 nvidia reflex
-t.Streamline.Reflex.Mode=2;
 ```
 
 ---
