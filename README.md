@@ -83,7 +83,7 @@ r.DynamicRes.OperationMode=0;
 r.DynamicRes.TargetedGPUHeadRoomPercentage=10;
 r.EmitterSpawnRateScale=1; 🔴 0.125,0.25,0.5 for PERFORMANCE
 r.EnableDebugSpam_GetObjectPositionAndScale=0; 🔵 debug
-r.EyeAdaptationQuality=2; 🔴 1 for PERFORMANCE 🔵 eyeadaptation
+r.EyeAdaptationQuality=2; 🔴 1 for PERFORMANCE 🔵 eye adaptation
 r.FilmGrain=0;
 r.Filter.SizeScale=1;
 r.Fog=1; 🔵 render fog
@@ -136,7 +136,7 @@ r.Shadow.CachedShadowsCastFromMovablePrimitives=1; 🔴 0 for PERFORMANCE 🔵 m
 r.Shadow.CSM.MaxCascades=2; 🔴 1,2,4 for PERFORMANCE
 r.Shadow.CSMShadowDistanceFadeoutMultiplier=1;
 r.Shadow.DistanceScale=1; 🔴 0.7 for PERFORMANCE
-r.Shadow.FilterMethod=0; 🔴 0 for PERFORMANCE 🔵 pcss
+r.Shadow.FilterMethod=0; 🔴 0 for PERFORMANCE 🔵 PCSS
 r.Shadow.ForceSingleSampleShadowingFromStationary=0; 🔴 1 for PERFORMANCE
 r.Shadow.MaxCSMResolution=2048; 🔴 512,1024 for PERFORMANCE
 r.Shadow.MaxResolution=512; 🔴 512,1024 for PERFORMANCE
@@ -254,8 +254,8 @@ bEnableMouseSmoothing=0;
 bF11TogglesFullscreen=0;
 ButtonRepeatDelay=0.1;
 bViewAccelerationEnabled=0;
-DoubleClickTime=0.01; ⚫ EDITED ⚪ def 0.1
-InitialButtonRepeatDelay=0.1; ⚫ EDITED ⚪ def 0.2
+DoubleClickTime=0.01; def 0.1
+InitialButtonRepeatDelay=0.1; def 0.2
 ```
 
 ---
