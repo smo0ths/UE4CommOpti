@@ -89,7 +89,6 @@ r.Filter.SizeScale=1;
 r.Fog=1; 🔵 render fog
 r.GBufferDiffuseSampleOcclusion=1; 🔵 bent normal maps
 r.gpucrash.collectionenable=0; 🔵 debug
-r.GTSyncType=2;
 r.HairStrands.Enable=1; 🔴 0 for PERFORMANCE
 r.HairStrands.MinLOD=1; 🔴 2 for PERFORMANCE
 r.HairStrands.SkyAO=0; 🔴 0 for PERFORMANCE
