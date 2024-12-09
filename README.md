@@ -1,4 +1,4 @@
-## updated 12/6/2024 ✂ 📋 🌀 :ramen: v0.201.50
+## updated 12/9/2024 ✂ 📋 🌀 :ramen: v0.201.55
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -38,7 +38,7 @@ PoolSizeVRAMPercentage=70; 🔴 50 to lower vram usage 🔵 texturepool cache
 
 [ConsoleVariables]
 D3D12.InsertOuterOcclusionQuery=0; 🔴 1 for PERFORMANCE
-D3D12.MaximumFrameLatency=1; 🔵 frame latency
+D3D12.MaximumFrameLatency=3; 🔴 3 for PERFORMANCE 🔵 frame latency
 demo.LoadCheckpointGarbageCollect=0;
 foliage.DensityScale=0.8; 🔴 0.6,0.8 for PERFORMANCE
 foliage.MinimumScreenSize=0.0001;
@@ -77,10 +77,6 @@ r.DOF.Scatter.BackgroundCompositing=1;
 r.DOF.Scatter.EnableBokehSettings=0;
 r.DOF.Scatter.ForegroundCompositing=1;
 r.DOF.Scatter.MaxSpriteRatio=0.04;
-r.DynamicRes.FrameTimeBudget=33.3;
-r.DynamicRes.MinScreenPercentage=50;
-r.DynamicRes.OperationMode=0;
-r.DynamicRes.TargetedGPUHeadRoomPercentage=10;
 r.EmitterSpawnRateScale=1; 🔴 0.125,0.25,0.5 for PERFORMANCE
 r.EnableDebugSpam_GetObjectPositionAndScale=0; 🔵 debug
 r.EyeAdaptationQuality=2; 🔴 1 for PERFORMANCE 🔵 eye adaptation
@@ -89,6 +85,7 @@ r.Filter.SizeScale=1;
 r.Fog=1; 🔵 render fog
 r.GBufferDiffuseSampleOcclusion=1; 🔵 bent normal maps
 r.gpucrash.collectionenable=0; 🔵 debug
+r.GTSyncType=0;
 r.HairStrands.Enable=1; 🔴 0 for PERFORMANCE
 r.HairStrands.MinLOD=1; 🔴 2 for PERFORMANCE
 r.HairStrands.SkyAO=0; 🔴 0 for PERFORMANCE
@@ -104,16 +101,25 @@ r.LightShaftQuality=1; 🔴 0 for PERFORMANCE
 r.Lumen.DiffuseIndirect.Allow=1; 🔴 0 for PERFORMANCE 🔵 lumen global illumination
 r.Lumen.DiffuseIndirect.SSAO=0;
 r.Lumen.HardwareRayTracing=0; 🔴 0 for PERFORMANCE
+r.Lumen.IrradianceFieldGather=0; 🔵 experimental
 r.Lumen.Reflections.Allow=1; 🔴 0 for PERFORMANCE 🔵 lumen reflections
 r.Lumen.Reflections.DownsampleFactor=1; 🔴 2 for PERFORMANCE
+r.Lumen.Reflections.RadianceCache=1; 🔵 radiance cache
+r.Lumen.ScreenProbeGather.IrradianceFormat=0;
 r.Lumen.ScreenProbeGather.MaterialAO=1;
+r.Lumen.ScreenProbeGather.RadianceCache.GridResolution=48;
+r.Lumen.ScreenProbeGather.RadianceCache.NumProbesToTraceBudget=300; 🔵 lighting responsiveness
+r.Lumen.ScreenProbeGather.RadianceCache.ProbeAtlasResolutionInProbes=128;
+r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution=32;
+r.Lumen.ScreenProbeGather.RadianceCache=1; 🔵 persistent world space radiance cache
 r.Lumen.ScreenProbeGather.ScreenSpaceBentNormal=1; 🔵 bent normal maps
 r.Lumen.ScreenProbeGather.ShortRangeAO=1;
 r.Lumen.TranslucencyReflections.FrontLayer.Allow=1; 🔴 0 for PERFORMANCE
 r.Lumen.TranslucencyReflections.FrontLayer.Enable=1; 🔴 0 for PERFORMANCE
 r.Lumen.TranslucencyReflections.FrontLayer.EnableForProject=1; 🔴 0 for PERFORMANCE
+r.Lumen.TranslucencyVolume.GridPixelSize=64; 🔴 64 for PERFORMANCE
 r.MaterialQualityLevel=1; 🔴 0,2 for PERFORMANCE
-r.MaxAnisotropy=8; 🔴 0,4 for PERFORMANCE
+r.MaxAnisotropy=16; 🔴 0,4,8 for PERFORMANCE
 r.MeshStreaming=0; 🔵 experimental
 r.MinScreenRadiusForLights=0.03; 🔴 0.06,0.04 for PERFORMANCE
 r.MipMapLODBias=0;
@@ -140,7 +146,7 @@ r.Shadow.FilterMethod=0; 🔴 0 for PERFORMANCE 🔵 PCSS
 r.Shadow.ForceSingleSampleShadowingFromStationary=0; 🔴 1 for PERFORMANCE
 r.Shadow.MaxCSMResolution=2048; 🔴 512,1024 for PERFORMANCE
 r.Shadow.MaxResolution=512; 🔴 512,1024 for PERFORMANCE
-r.Shadow.Nanite=1; 🔴 0 for PERFORMANCE
+r.Shadow.Nanite=0; 🔴 0 for PERFORMANCE
 r.Shadow.NaniteLODBias=1; 🔴 1 for PERFORMANCE
 r.Shadow.PreShadowResolutionFactor=0.5;
 r.Shadow.RadiusThreshold=0.04; 🔴 0.06,0.05,0.04,0.03 for PERFORMANCE
@@ -203,7 +209,6 @@ r.TemporalAA.Upsampling=1; 🔴 0 for PERFORMANCE 🔵 TAAU
 r.TessellationAdaptivePixelsPerTriangle=999999; 🔴 999999 for PERFORMANCE
 r.Tonemapper.Quality=2;
 r.Tonemapper.Sharpen=-1;
-r.Translucency.DynamicRes.TimeBudget=0;
 r.TranslucencyLightingVolumeDim=48; 🔴 32,48 for PERFORMANCE
 r.TranslucencyVolumeBlur=1; 🔴 0 for PERFORMANCE
 r.Upscale.Quality=3; 🔴 1,2 for PERFORMANCE
@@ -231,13 +236,11 @@ r.VolumetricRenderTarget.Mode=2;
 r.VolumetricRenderTarget.ReprojectionBoxConstraint=1;
 r.VolumetricRenderTarget.UpsamplingMode=2;
 r.VT.MaxAnisotropy=8; 🔴 0,4 for PERFORMANCE
-r.VT.MaxTilesProducedPerFrame=30;
-r.VT.MaxUploadsPerFrame=8;
 r.Water.EnableShallowWaterSimulation=0; 🔴 0 for PERFORMANCE
 r.Water.EnableUnderwaterPostProcess=0; 🔴 0 for PERFORMANCE
 r.Water.SingleLayer.SSR=0; 🔴 0 for PERFORMANCE
-r.Water.WaterMesh.TessFactorBias=0; 🔴 -1 for PERFORMANCE
-RHI.MaximumFrameLatency=1; 🔵 frame latency
+r.Water.WaterMesh.TessFactorBias=-1; 🔴 -1 for PERFORMANCE
+RHI.MaximumFrameLatency=3; 🔴 3 for PERFORMANCE 🔵 frame latency
 t.Streamline.Reflex.Auto=0;
 ```
 
