@@ -1,4 +1,4 @@
-## updated 12/9/2024 ✂ 📋 🌀 :ramen: v0.201.55
+## updated 12/9/2024 ✂ 📋 🌀 :ramen: v0.300.00
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -105,6 +105,7 @@ r.Lumen.IrradianceFieldGather=0; 🔵 experimental
 r.Lumen.Reflections.Allow=1; 🔴 0 for PERFORMANCE 🔵 lumen reflections
 r.Lumen.Reflections.DownsampleFactor=1; 🔴 2 for PERFORMANCE
 r.Lumen.Reflections.RadianceCache=1; 🔵 radiance cache
+r.Lumen.Reflections.TraceMeshSDFs=0; 🔴 0 for PERFORMANCE
 r.Lumen.ScreenProbeGather.IrradianceFormat=0;
 r.Lumen.ScreenProbeGather.MaterialAO=1;
 r.Lumen.ScreenProbeGather.RadianceCache.GridResolution=48;
@@ -114,6 +115,7 @@ r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution=32;
 r.Lumen.ScreenProbeGather.RadianceCache=1; 🔵 persistent world space radiance cache
 r.Lumen.ScreenProbeGather.ScreenSpaceBentNormal=1; 🔵 bent normal maps
 r.Lumen.ScreenProbeGather.ShortRangeAO=1;
+r.Lumen.TraceMeshSDFs=0; 🔴 0 for PERFORMANCE
 r.Lumen.TranslucencyReflections.FrontLayer.Allow=1; 🔴 0 for PERFORMANCE
 r.Lumen.TranslucencyReflections.FrontLayer.Enable=1; 🔴 0 for PERFORMANCE
 r.Lumen.TranslucencyReflections.FrontLayer.EnableForProject=1; 🔴 0 for PERFORMANCE
@@ -157,17 +159,11 @@ r.Shadow.Virtual.ForceOnlyVirtualShadowMaps=1; 🔴 1 for PERFORMANCE
 r.Shadow.Virtual.MaxPhysicalPages=4096; 🔴 512,2048 to lower vram usage
 r.Shadow.Virtual.OnePassProjection.MaxLightsPerPixel=8; 🔴 8 for PERFORMANCE
 r.Shadow.Virtual.OnePassProjection=1; 🔴 1 for PERFORMANCE
-r.Shadow.Virtual.ResolutionLodBiasDirectional=0; 🔴 0,-0.5,-1 for PERFORMANCE
-r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving=0; 🔴 0,-0.5,-1 for PERFORMANCE
-r.Shadow.Virtual.ResolutionLodBiasLocal=1; 🔴 1 for PERFORMANCE
-r.Shadow.Virtual.SMRT.MaxRayAngleFromLight=0.03;
-r.Shadow.Virtual.SMRT.RayCountDirectional=4; 🔴 0,4 for PERFORMANCE
-r.Shadow.Virtual.SMRT.RayCountLocal=4; 🔴 0,4 for PERFORMANCE
-r.Shadow.Virtual.SMRT.RayLengthScaleDirectional=1;
-r.Shadow.Virtual.SMRT.SamplesPerRayDirectional=2; 🔴 2 for PERFORMANCE
-r.Shadow.Virtual.SMRT.SamplesPerRayLocal=2; 🔴 2 for PERFORMANCE
-r.Shadow.Virtual.SMRT.TexelDitherScaleDirectional=2;
-r.Shadow.Virtual.TranslucentQuality=0; 🔴 0 for PERFORMANCE
+r.Shadow.Virtual.ResolutionLodBiasDirectional=1; 🔴 1,0,-1 for PERFORMANCE
+r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving=1; 🔴 1,0,-1 for PERFORMANCE
+r.Shadow.Virtual.ResolutionLodBiasLocal=0; 🔴 1 for PERFORMANCE
+r.Shadow.Virtual.ResolutionLodBiasLocalMoving=1; 🔴 1,0,-1 for PERFORMANCE
+r.Shadow.Virtual.TranslucentQuality=1; 🔴 0 for PERFORMANCE
 r.ShadowQuality=5; 🔴 3,4 for PERFORMANCE
 r.SkeletalMeshLODBias=0; 🔴 2,1 for PERFORMANCE 🔵 skeletal mesh bias if supported
 r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution=8; 🔴 8 for PERFORMANCE
