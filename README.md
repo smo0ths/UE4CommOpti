@@ -1,4 +1,4 @@
-## updated 12/9/2024 ✂ 📋 🌀 :ramen: v0.300.00
+## updated 12/9/2024 ✂ 📋 🌀 :ramen: v0.300.03
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -134,7 +134,7 @@ r.ParallelShadows=1; 🔴 0 for PERFORMANCE
 r.ParticleLightQuality=1; 🔴 0,1 for PERFORMANCE
 r.PathTracing=0;
 r.RayTracing=0;
-r.ReflectionCaptureResolution=128;
+r.ReflectionCaptureResolution=128; 🔴 128 for PERFORMANCE
 r.RefractionQuality=1; 🔴 0,1 for PERFORMANCE
 r.RenderTargetPoolMin=400;
 r.SceneColorFormat=3; 🔴 2,3 for PERFORMANCE
@@ -166,13 +166,11 @@ r.Shadow.Virtual.ResolutionLodBiasLocalMoving=1; 🔴 1,0,-1 for PERFORMANCE
 r.Shadow.Virtual.TranslucentQuality=1; 🔴 0 for PERFORMANCE
 r.ShadowQuality=5; 🔴 3,4 for PERFORMANCE
 r.SkeletalMeshLODBias=0; 🔴 2,1 for PERFORMANCE 🔵 skeletal mesh bias if supported
-r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution=8; 🔴 8 for PERFORMANCE
-r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque=1; 🔴 1 for PERFORMANCE
-r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice=2; 🔴 2 for PERFORMANCE
 r.SkyAtmosphere.FastSkyLUT.SampleCountMax=32; 🔴 16,32,64 for PERFORMANCE
 r.SkyAtmosphere.FastSkyLUT.SampleCountMin=4; 🔴 1 for PERFORMANCE
 r.SkyAtmosphere.LUT32=0; 🔴 0 for PERFORMANCE
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0; 🔴 0 for PERFORMANCE
+r.SkyAtmosphere.MultiScatteringLUT.SampleCount=15;
 r.SkyAtmosphere.SampleCountMax=32; 🔴 16,32,64 for PERFORMANCE
 r.SkyAtmosphere.SampleCountMin=4; 🔴 1 for PERFORMANCE
 r.SkyAtmosphere.SampleLightShadowmap=1; 🔴 0 for PERFORMANCE 🔵 volumetric shadows
@@ -231,6 +229,7 @@ r.VolumetricFog=1; 🔴 0 for PERFORMANCE
 r.VolumetricRenderTarget.Mode=2;
 r.VolumetricRenderTarget.ReprojectionBoxConstraint=1;
 r.VolumetricRenderTarget.UpsamplingMode=2;
+r.VSync=0;
 r.VT.MaxAnisotropy=8; 🔴 0,4 for PERFORMANCE
 r.Water.EnableShallowWaterSimulation=0; 🔴 0 for PERFORMANCE
 r.Water.EnableUnderwaterPostProcess=0; 🔴 0 for PERFORMANCE
