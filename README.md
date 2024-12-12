@@ -1,4 +1,4 @@
-## updated 12/11/2024 ✂ 📋 🌀 :ramen: v0.300.06
+## updated 12/12/2024 ✂ 📋 🌀 :ramen: v0.300.10
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -154,11 +154,12 @@ r.Shadow.MaxCSMResolution=2048; 🔴 512,1024 for PERFORMANCE
 r.Shadow.MaxResolution=512; 🔴 512,1024 for PERFORMANCE
 r.Shadow.Nanite=0; 🔴 0 for PERFORMANCE
 r.Shadow.NaniteLODBias=1; 🔴 1 for PERFORMANCE
+r.Shadow.PerObject=1; 🔴 0 for PERFORMANCE
 r.Shadow.PreShadowResolutionFactor=0.5;
 r.Shadow.RadiusThreshold=0.04; 🔴 0.06,0.05,0.04,0.03 for PERFORMANCE
 r.Shadow.Virtual.Cache.StaticSeparate=0;
 r.Shadow.Virtual.Clipmap.FirstLevel=6;
-r.Shadow.Virtual.Enable=1; 🔴 0 for PERFORMANCE
+r.Shadow.Virtual.Enable=0; 🔴 0 for PERFORMANCE
 r.Shadow.Virtual.ForceOnlyVirtualShadowMaps=1; 🔴 1 for PERFORMANCE
 r.Shadow.Virtual.MaxPhysicalPages=4096; 🔴 512,2048 to lower vram usage
 r.Shadow.Virtual.OnePassProjection.MaxLightsPerPixel=8; 🔴 8 for PERFORMANCE
