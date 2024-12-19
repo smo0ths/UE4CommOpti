@@ -1,4 +1,4 @@
-## updated 12/18/2024 ✂ 📋 🌀 :ramen: v0.306.09
+## updated 12/19/2024 ✂ 📋 🌀 :ramen: v0.406.09
 
 ### for UE4 and UE5* games for reference/customization/optimization/learning
 
@@ -20,7 +20,7 @@
 
 ## Open Engine.ini and copy pasta %localappdata%
 
-#### or Repak.bat method (zzz_ENGINE_INI\Engine\Config\Windows\WindowsEngine.ini)
+#### or Repak.bat method (zzz_INIMODS\Engine\Config\Windows\WindowsEngine.ini)
 
 #### High config (works with UE5*)
 
@@ -37,56 +37,105 @@ bUseFixedFrameRate=0;
 PoolSizeVRAMPercentage=70; 🔴 50 to lower vram usage 🔵 texturepool cache
 
 [ConsoleVariables]
+
 ; test
 r.DistanceFields.MaxPerMeshResolution=128; 🟢 test
 r.Shadow.Virtual.ContactShadowLength=0; 🟢 test
 r.SkinCache.SceneMemoryLimitInMB=128; 🟢 test
-;
-; rtx
-r.PathTracing=0;
-r.RayTracing=0;
-;
-; volumetric effects
-r.VolumetricRenderTarget.Mode=2;
-r.VolumetricRenderTarget.ReprojectionBoxConstraint=0; 🔴 0 for PERFORMANCE
-r.VolumetricRenderTarget.UpsamplingMode=2;
-;
+r.Streaming.DropMips=3; 🔵 debug
+
 ; debug
+CauseHitches=0; 🔵 debug
+framegrabber.framelatency=0; 🔵 debug
+fx.EnableCircularAnimTrailDump=0; 🔵 debug
+fx.ParticlePerfStats.Enabled=0; 🔵 debug
+health.logHealthSnapshot=0; 🔵 debug
+r.EnableDebugSpam_GetObjectPositionAndScale=0; 🔵 debug
 r.gpucrash.collectionenable=0; 🔵 debug
-r.NGX.LogLevel=0; 🔵 debug
-;
+r.VsyncInformationInsights=0; 🔵 debug
+
+; denoisers
+r.AmbientOcclusion.Denoiser=2; 🔵 denoise
+r.DiffuseIndirect.Denoiser=1; 🔵 denoise
+r.Reflections.Denoiser=2; 🔵 denoise
+r.Shadow.Denoiser=2; 🔵 denoise
+
 ; latency
 D3D12.MaximumFrameLatency=1; 🔵 frame latency
 r.GTSyncType=0;
 r.VSync=0;
 RHI.MaximumFrameLatency=1; 🔵 frame latency
-t.Streamline.Reflex.Auto=0;
-;
+
+; DLSS/RTX
+r.NGX.DLSS.AutoExposure=0;
+r.NGX.DLSS.DenoiserMode=0; 🔵 ray reconstruction
+r.NGX.DLSS.DilateMotionVectors=1; 🔴 0 for PERFORMANCE
+r.NGX.DLSS.PreferNISSharpen=0;
+r.NGX.DLSS.Preset=5;
+r.NGX.DLSS.Quality.Auto=0;
+r.NGX.DLSS.Quality=1; 🔵 quality dlss
+r.NGX.DLSS.Reflections.TemporalAA=1; 🔵 TAA pass on denoise
+r.NGX.DLSS.WaterReflections.TemporalAA=1; 🔵 TAA pass on denoise
+r.NGX.LogLevel=0; 🔵 debug
+r.NIS.Enable=0;
+r.PathTracing=0; 🔵 RTXPT
+r.RayTracing=0; 🔵 RTX
+
+; reflection
+r.ReflectionCaptureResolution=128; 🔴 128 for PERFORMANCE
+r.ReflectionCaptureSupersampleFactor=1;
+
+; refraction
+r.Refraction.Blur.TemporalAA=1; 🔵 temporal filtering
+r.RefractionQuality=1; 🔴 0,1 for PERFORMANCE
+
+; SSGI
+r.SSGI.Enable=0; 🔴 0 for PERFORMANCE
+
+; SSR
+r.SSR.ExperimentalDenoiser=0; 🔵 denoise
+r.SSR.HalfResSceneColor=1; 🔴 1 for PERFORMANCE
+r.SSR.Quality=3; 🔴 0,2 for PERFORMANCE
+
+; SSS
+r.SSS.Burley.Quality=0; 🔴 0 for PERFORMANCE
+r.SSS.Checkerboard=1; 🔴 1 for PERFORMANCE
+r.SSS.HalfRes=1; 🔴 1 for PERFORMANCE
+r.SubsurfaceScattering=1; 🔴 0 for PERFORMANCE
+
+; volumetric effects
+r.VolumetricRenderTarget.Mode=2;
+r.VolumetricRenderTarget.ReprojectionBoxConstraint=0; 🔴 0 for PERFORMANCE
+r.VolumetricRenderTarget.UpsamplingMode=2;
+
 ; p
 p.AnimDynamics=1; 🔴 0 for PERFORMANCE
 p.AnimDynamicsWind=1; 🔴 0 for PERFORMANCE
 p.RigidBodyNode=1; 🔴 0 for PERFORMANCE
-;
+
 ; particle
 fx.Niagara.Collision.CPUEnabled=0; 🔴 0 for PERFORMANCE
 fx.Niagara.QualityLevel=2; 🔴 0,1,2 for PERFORMANCE
-fx.ParticlePerfStats.Enabled=0;
 r.AllowSimpleLights=1; 🔴 0 for PERFORMANCE
 r.EmitterSpawnRateScale=1; 🔴 0.125,0.25,0.5 for PERFORMANCE
 r.ParticleLightQuality=1; 🔴 0,1 for PERFORMANCE
-;
+
 ; foliage
 foliage.DensityScale=0.8; 🔴 0.6,0.8 for PERFORMANCE
 foliage.MinimumScreenSize=0.0001;
 grass.DensityScale=0.8; 🔴 0.6,0.8 for PERFORMANCE
 grass.DisableDynamicShadows=0; 🔴 1 for PERFORMANCE
-;
+
 ; SSAO
 r.AmbientOcclusionLevels=2; 🔴 0,1 for PERFORMANCE
 r.AmbientOcclusionMaxQuality=-60;
 r.AmbientOcclusionRadiusScale=0.75;
-;
-; DOF/bloom/blur/grain/tonemapper/exposure
+r.AmbientOcclusionStaticFraction=1; 🔴 1 for PERFORMANCE
+
+; DFAO
+r.AOQuality=2;
+
+; pp
 r.Bloom.ScreenPercentage=50;
 r.BloomQuality=4; 🔴 0 for PERFORMANCE
 r.BlurGBuffer=0;
@@ -102,24 +151,23 @@ r.DOF.Scatter.BackgroundCompositing=1;
 r.DOF.Scatter.EnableBokehSettings=0;
 r.DOF.Scatter.ForegroundCompositing=1;
 r.DOF.Scatter.MaxSpriteRatio=0.04;
-r.EyeAdaptationQuality=2; 🔴 1 for PERFORMANCE 🔵 eye adaptation
+r.EyeAdaptationQuality=2; 🔴 1 for PERFORMANCE
 r.FilmGrain=0;
 r.Filter.LoopMode=0; 🔴 0 for PERFORMANCE
 r.Filter.SizeScale=1;
+r.LightShaftBlurPasses=2;
+r.LightShaftFirstPassDistance=0.08;
 r.MotionBlurQuality=0;
 r.SceneColorFormat=3; 🔴 2,3 for PERFORMANCE
 r.SceneColorFringe.Max=0;
 r.Tonemapper.Quality=2;
 r.Tonemapper.Sharpen=-1;
-;
+r.Upscale.Quality=2; 🔴 1,2 for PERFORMANCE
+
 ; light
 r.LightMaxDrawDistanceScale=1; 🔴 0.5,0.6 for PERFORMANCE
-r.LightShaftBlurPasses=2;
-r.LightShaftFirstPassDistance=0.08;
 r.MinScreenRadiusForLights=0.03; 🔴 0.06,0.04 for PERFORMANCE
-r.TranslucencyLightingVolumeDim=48; 🔴 32,48 for PERFORMANCE
-r.TranslucencyVolumeBlur=1; 🔴 0 for PERFORMANCE
-;
+
 ; hair
 r.HairStrands.Enable=1; 🔴 0 for PERFORMANCE
 r.HairStrands.MinLOD=0;
@@ -134,7 +182,7 @@ r.HairStrands.SkyLighting=1;
 r.HairStrands.UseCardsInsteadOfStrands=0; 🔴 1 for PERFORMANCE
 r.HairStrands.Visibility.MSAA.SamplePerPixel=2;
 r.HairStrands.Voxelization=0;
-;
+
 ; lumen
 r.GBufferDiffuseSampleOcclusion=0; 🔵 bent normal maps
 r.Lumen.DiffuseIndirect.Allow=1; 🔴 0 for PERFORMANCE 🔵 lumen global illumination
@@ -153,9 +201,9 @@ r.Lumen.Reflections.RadianceCache=1; 🔵 radiance cache
 r.Lumen.Reflections.SampleSceneColorAtHit=1;
 r.Lumen.Reflections.SampleSceneColorNormalTreshold=85;
 r.Lumen.Reflections.SampleSceneColorRelativeDepthThickness=0.05;
-r.Lumen.Reflections.ScreenSpaceReconstruction=1;
+r.Lumen.Reflections.ScreenSpaceReconstruction=1; 🔵 reconstruction
 r.Lumen.Reflections.SmoothBias=0;
-r.Lumen.Reflections.Temporal=1;
+r.Lumen.Reflections.Temporal=1; 🔵 temporal filtering
 r.Lumen.Reflections.TraceMeshSDFs=0; 🔴 0 for PERFORMANCE
 r.Lumen.ReSTIRGather=0;
 r.Lumen.SampleFog=0;
@@ -174,7 +222,7 @@ r.Lumen.ScreenProbeGather.ShortRangeAO=0;
 r.Lumen.ScreenProbeGather.StochasticInterpolation=1; 🔴 1 for PERFORMANCE
 r.Lumen.ScreenProbeGather.Temporal.FractionOfLightingMovingForFastUpdateMode=0.1;
 r.Lumen.ScreenProbeGather.Temporal.MaxFramesAccumulated=10;
-r.Lumen.ScreenProbeGather.Temporal=1;
+r.Lumen.ScreenProbeGather.Temporal=1; 🔵 temporal filtering
 r.Lumen.ScreenProbeGather.TracingOctahedronResolution=8;
 r.Lumen.ScreenProbeGather.TwoSidedFoliageBackfaceDiffuse=1;
 r.Lumen.TraceMeshSDFs.Allow=0; 🔴 0 for PERFORMANCE 🔵 mesh signed distance fields
@@ -198,20 +246,7 @@ r.LumenScene.SurfaceCache.CardCaptureRefreshFraction=0.125;
 r.LumenScene.SurfaceCache.CardMinResolution=4;
 r.LumenScene.SurfaceCache.FarField.CardDistance=20000;
 r.LumenScene.SurfaceCache.MeshCardsMinSize=10;
-;
-; DLSS
-r.NGX.DLSS.DilateMotionVectors=1; 🔴 0 for PERFORMANCE
-r.NGX.DLSS.PreferNISSharpen=0;
-r.NGX.DLSS.Quality.Auto=0;
-;
-; reflection
-r.ReflectionCaptureResolution=128; 🔴 128 for PERFORMANCE
-r.ReflectionCaptureSupersampleFactor=1;
-;
-; refraction
-r.Refraction.Blur.TemporalAA=1;
-r.RefractionQuality=1; 🔴 0,1 for PERFORMANCE
-;
+
 ; shadow
 r.AllowLandscapeShadows=1; 🔴 0 for PERFORMANCE
 r.CapsuleShadows=0; 🔴 0 for PERFORMANCE
@@ -259,33 +294,22 @@ r.Shadow.Virtual.SMRT.TexelDitherScaleDirectional=2;
 r.Shadow.Virtual.SMRT.TexelDitherScaleLocal=2;
 r.Shadow.Virtual.TranslucentQuality=0; 🔴 0 for PERFORMANCE
 r.ShadowQuality=4; 🔴 3,4 for PERFORMANCE
+r.TranslucencyLightingVolumeDim=48; 🔴 32,48 for PERFORMANCE
+r.TranslucencyVolumeBlur=1; 🔴 0 for PERFORMANCE
 r.UseClusteredDeferredShading=1; 🔵 experimental one pass projection
-;
+
 ; sky
-r.SkyAtmosphere.FastSkyLUT.SampleCountMax=32; 🔴 16,32,64 for PERFORMANCE
+r.SkyAtmosphere.FastSkyLUT.SampleCountMax=128;
 r.SkyAtmosphere.FastSkyLUT.SampleCountMin=4; 🔴 1 for PERFORMANCE
 r.SkyAtmosphere.LUT32=0; 🔴 0 for PERFORMANCE
 r.SkyAtmosphere.MultiScatteringLUT.HighQuality=0; 🔴 0 for PERFORMANCE
 r.SkyAtmosphere.MultiScatteringLUT.SampleCount=15;
-r.SkyAtmosphere.SampleCountMax=32; 🔴 16,32,64 for PERFORMANCE
+r.SkyAtmosphere.SampleCountMax=128;
 r.SkyAtmosphere.SampleCountMin=4; 🔴 1 for PERFORMANCE
-r.SkyAtmosphere.SampleLightShadowmap=0; 🔴 0 for PERFORMANCE 🔵 volumetric shadows
+r.SkyAtmosphere.SampleLightShadowmap=1; 🔵 volumetric shadows
 r.SkyAtmosphere.TransmittanceLUT.SampleCount=10;
 r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat=0; 🔴 1 for PERFORMANCE
-;
-; SSGI
-r.SSGI.Enable=0; 🔴 0 for PERFORMANCE
-;
-; SSR
-r.SSR.HalfResSceneColor=1; 🔴 1 for PERFORMANCE
-r.SSR.Quality=3; 🔴 0,2 for PERFORMANCE
-;
-; SSS
-r.SSS.Burley.Quality=0; 🔴 0 for PERFORMANCE
-r.SSS.Checkerboard=1; 🔴 1 for PERFORMANCE
-r.SSS.HalfRes=1; 🔴 1 for PERFORMANCE
-r.SubsurfaceScattering=1; 🔴 0 for PERFORMANCE
-;
+
 ; texture ect
 r.AnisotropicMaterials=1; 🔴 0 for PERFORMANCE
 r.DetailMode=2; 🔴 0,1,2 for PERFORMANCE
@@ -295,7 +319,7 @@ r.MaterialQualityLevel=1; 🔴 0,2 for PERFORMANCE
 r.MaxAnisotropy=16; 🔴 0,4,8 for PERFORMANCE
 r.MipMapLODBias=0;
 r.Nanite.ProxyRenderMode=0;
-r.Nanite=1;
+r.Nanite=1; 🔵 virtualized geometry system
 r.RenderTargetPoolMin=400;
 r.SecondaryScreenPercentage.GameViewport=0;
 r.SkeletalMeshLODBias=0; 🔴 2,1 for PERFORMANCE 🔵 skeletal mesh bias if supported
@@ -313,10 +337,9 @@ r.Streaming.PoolSize=3000; 🔴 1000 to lower vram usage 🔵 texturepool size
 r.Streaming.UseFixedPoolSize=0; 🔵 change poolsize at runtime
 r.SupportMaterialLayers=1; 🔴 0 for PERFORMANCE
 r.TessellationAdaptivePixelsPerTriangle=999999; 🔴 999999 for PERFORMANCE
-r.Upscale.Quality=2; 🔴 1,2 for PERFORMANCE
 r.ViewDistanceScale=1; 🔴 0.8 for PERFORMANCE
 r.VT.MaxAnisotropy=8; 🔴 0,4 for PERFORMANCE
-;
+
 ; TAA
 r.PostProcessAAQuality=6;
 r.TemporalAA.Algorithm=0; 🔵 0,1 gen4,gen5 TAAU
@@ -326,55 +349,55 @@ r.TemporalAA.R11G11B10History=1;
 r.TemporalAA.Upsampling=1; 🔴 0 for PERFORMANCE 🔵 TAAU
 r.TemporalAACatmullRom=0;
 r.TemporalAACurrentFrameWeight=0.03;
-r.TemporalAAFilterSize=0.1; 🔵 requires gen5 TAAU
+r.TemporalAAFilterSize=0.1; 🔵 req gen5 TAAU
 r.TemporalAAPauseCorrect=1;
 r.TemporalAASamples=8;
-;
+
 ; clouds
 r.VolumetricCloud.DistanceToSampleMaxCount=15;
 r.VolumetricCloud.EnableAtmosphericLightsSampling=1;
 r.VolumetricCloud.EnableDistantSkyLightSampling=1;
 r.VolumetricCloud.EnableLocalLightsSampling=0; 🔴 0 for PERFORMANCE 🔵 experimental
-r.VolumetricCloud.ReflectionRaySampleMaxCount=64;
+r.VolumetricCloud.ReflectionRaySampleMaxCount=80;
 r.VolumetricCloud.SampleMinCount=2;
 r.VolumetricCloud.Shadow.ReflectionRaySampleMaxCount=24;
-r.VolumetricCloud.Shadow.SampleAtmosphericLightShadowmap=1; 🔴 0 for PERFORMANCE
-r.VolumetricCloud.Shadow.ViewRaySampleMaxCount=64;
+r.VolumetricCloud.Shadow.SampleAtmosphericLightShadowmap=1; 🔵 volumetric shadows
+r.VolumetricCloud.Shadow.ViewRaySampleMaxCount=80;
 r.VolumetricCloud.ShadowMap.MaxResolution=2048;
-r.VolumetricCloud.ShadowMap.RaySampleMaxCount=64;
-r.VolumetricCloud.ShadowMap.SpatialFiltering=1;
-r.VolumetricCloud.ShadowMap=1; 🔴 0 for PERFORMANCE 🔵 cloud shadows
+r.VolumetricCloud.ShadowMap.RaySampleMaxCount=128;
+r.VolumetricCloud.ShadowMap.SpatialFiltering=1; 🔵 cloud shadow blur
+r.VolumetricCloud.ShadowMap=1; 🔵 cloud shadows
 r.VolumetricCloud.SkyAO.MaxResolution=2048;
-r.VolumetricCloud.SkyAO=1; 🔴 0 for PERFORMANCE
+r.VolumetricCloud.SkyAO=1; 🔵 cloud ao
 r.VolumetricCloud.ViewRaySampleMaxCount=768;
 r.VolumetricCloud=1; 🔴 0 for PERFORMANCE
-;
+
 ; fog
 r.Fog=1; 🔵 render fog
 r.VolumetricFog.ConservativeDepth=0; 🔵 experimental
 r.VolumetricFog.GridPixelSize=16; 🔴 16 for PERFORMANCE
 r.VolumetricFog.GridSizeZ=64; 🔴 64 for PERFORMANCE
-r.VolumetricFog.HistoryMissSupersampleCount=1;
+r.VolumetricFog.HistoryMissSupersampleCount=1; 🔵 denoise
 r.VolumetricFog.HistoryWeight=0.9;
-r.VolumetricFog.Jitter=0;
+r.VolumetricFog.Jitter=1;
 r.VolumetricFog.LightScatteringSampleJitterMultiplier=0;
 r.VolumetricFog.UpsampleJitterMultiplier=0;
 r.VolumetricFog=0; 🔴 0 for PERFORMANCE
-;
+
 ; water
 r.Water.EnableShallowWaterSimulation=0; 🔴 0 for PERFORMANCE
 r.Water.EnableUnderwaterPostProcess=0; 🔴 0 for PERFORMANCE
 r.Water.SingleLayer.RefractionDownsampleFactor=1; 🔴 2 for PERFORMANCE
-r.Water.SingleLayer.SSR=0; 🔴 0 for PERFORMANCE
+r.Water.SingleLayer.SSR=1; 🔴 0 for PERFORMANCE
+r.Water.SingleLayer.SSRTAA=1; 🔵 denoise
 r.Water.WaterMesh.TessFactorBias=0; 🔴 -1 for PERFORMANCE
-;
 ```
 
 ---
 
 #### Open Input.ini and copy pasta %localappdata%
 
-#### or Repak.bat method (zzz_ENGINE_INI\Engine\Config\Windows\WindowsInput.ini)
+#### or Repak.bat method (zzz_INIMODS\Engine\Config\Windows\WindowsInput.ini)
 
 ```python
 [/Script/Engine.InputSettings]
