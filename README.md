@@ -8,6 +8,8 @@
 
 #### [Installing and optimizing nvidia drivers here](https://github.com/smo0ths/Installing-and-optimizing-new-nvidia-drivers-on-windows-11-gaming-PC)
 
+#### [Windows 11 Registry Tweaks](https://github.com/smo0ths/Registry-Tweaks-Refresh.bat)
+
 #### check 🔴 options for more fps (left to right, performance to quality)
 
 #### 2560x1440 use 🔴 58%,67%,70% for PERFORMANCE (higher when cpu bound) (DLSS/TAAU/TSR/CAS/FSR/XeSS/PSSR/NIS/IS)
